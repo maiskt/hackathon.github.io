@@ -42,8 +42,6 @@ intersect(mm_ke13$Variable, mm_bg18$Variable)
 cat_cross$coding_match <- sapply(cat_cross$Category, function(x) {
 })
 
-
-
 cross <- merge(Names_ke13, Names_bg18, by = "Variable", all = T, suffixes = c(".ke13", ".bg18"))
 mis_cross <- cross[which(!cross$Label.ke13 %in% cross$Label.bg18),]
 match_cross <- cross[which(cross$Label.ke13 %in% cross$Label.bg18),]
