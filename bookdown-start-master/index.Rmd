@@ -1,0 +1,18 @@
+--- 
+title: "FII Dataset Documentation"
+author: "Intermedia Survey Institute"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: FIIDatathon/Harmonization
+url: 'https://datathonfii.github.io/Harmonization/'
+description: "Documentation for the FII Datathon dataset."
+#cover image:
+---
+
+# Preface {-}
+
+This document serves as the codebook and documentation for the Financial Inclusion Insights datasets from 2013 to 2018.
