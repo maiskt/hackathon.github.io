@@ -1,7 +1,7 @@
 --- 
 title: "FII Dataset Documentation"
 author: "Intermedia Survey Institute"
-date: "TBD"
+date: "2019-04-23"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
