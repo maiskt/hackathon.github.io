@@ -1,5 +1,7 @@
 [
-["index.html", "A Minimal Bookdown Book Preface", " A Minimal Bookdown Book Sean Kross 2016-12-09 Preface This is the very first part of the book. "],
-["introduction.html", "Chapter 1 Introduction", " Chapter 1 Introduction This is the first real chapter. "],
-["diving-in.html", "Chapter 2 Diving In", " Chapter 2 Diving In Now let’s talk details. "]
+["index.html", "FII Dataset Documentation Preface", " FII Dataset Documentation Intermedia Survey Institute TBD Preface This document serves as the codebook and documentation for the Financial Inclusion Insights datasets from 2013 to 2018. "],
+["introduction.html", "Section 1 Introduction", " Section 1 Introduction This is the first real chapter. "],
+["diving-in.html", "Section 2 Diving In", " Section 2 Diving In Now let’s talk details. "],
+["technical-details.html", "Section 3 Technical Details", " Section 3 Technical Details Now I’ll teach you some crazy math, but I need to work it out first… "],
+["aa-survey-information.html", "Section 4 AA - Survey Information 4.1 Serial 4.2 AA1 4.3 AA2 4.4 Latitude &amp; Longitude", " Section 4 AA - Survey Information The inital section of the codebook contains 4.1 Serial 4.2 AA1 4.3 AA2 4.4 Latitude &amp; Longitude "]
 ]

@@ -1,17 +1,17 @@
 --- 
-title: "A Minimal Bookdown Book"
-author: "Sean Kross"
-date: "2016-12-09"
+title: "FII Dataset Documentation"
+author: "Intermedia Survey Institute"
+date: "TBD"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: seankross/bookdown-start
-url: 'http\://seankross.com/bookdown-start/'
-description: "Everything you need (and nothing more) to start a bookdown book."
+github-repo: FIIDatathon/Codebook
+url: 'http\://datathonfii.github.io/codebook/'
+description: "Documentation for the FII Datathon dataset"
 ---
 
 # Preface {-}
 
-This is the very first part of the book.
+This document serves as the codebook and documentation for the Financial Inclusion Insights datasets from 2013 to 2018.

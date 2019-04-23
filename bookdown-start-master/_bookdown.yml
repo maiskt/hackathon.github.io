@@ -1,6 +1,5 @@
 book_filename: "bookdown-start"
-chapter_name: "Chapter "
-repo: https://github.com/FIIDatathon/Harmonization
+chapter_name: "Section "
+repo: https://github.com/FIIDatathon/Codebook
 output_dir: docs
 clean: [packages.bib, bookdown.bbl]
-new_session: yes

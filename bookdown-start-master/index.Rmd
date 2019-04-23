@@ -1,16 +1,15 @@
 --- 
 title: "FII Dataset Documentation"
 author: "Intermedia Survey Institute"
-date: "`r Sys.Date()`"
+date: "TBD"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: FIIDatathon/Harmonization
-url: 'https://datathonfii.github.io/Harmonization/'
-description: "Documentation for the FII Datathon dataset."
-#cover image:
+github-repo: FIIDatathon/Codebook
+url: 'http\://datathonfii.github.io/codebook/'
+description: "Documentation for the FII Datathon dataset"
 ---
 
 # Preface {-}
