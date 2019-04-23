@@ -1,2 +1,3 @@
-# Harmonization
-The Repository to hold data and syntax as we merge our datasets
+# FII Datathon Homepage
+
+[**View the codebook here**](https://datathonfii.github.io/Codebook/)
