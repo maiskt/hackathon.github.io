@@ -19,7 +19,7 @@ Informal Financial Groups
 
 The following variables were coded in numeric order of which they were asked.
 
-### IFG1
+## IFG1
 
 A derived binary variable, IFG1 represents the respondent's belonging to an informal financial group (IFG). The definition varies by sophistication of village-level services, but the common institutions that qualify include:
 
@@ -27,11 +27,11 @@ A derived binary variable, IFG1 represents the respondent's belonging to an info
 * Village-level saving and lending group
 * Informal loan clubs or rotating savings and credit associations (ROSCAs, with [many regional names](http://www.gdrc.org/icm/rosca/rosca-names.html))
 
-### IFG2
+## IFG2
 These questions ask the importance of each reason for _not_ being a part of an IFG. 
 Responses lie on a Likert scale from 1, least important, to 5, most important for these four columns:
 
-##### How important or unimportant is the following reason for your decision not to join informal societies or group saving schemes?
+**How important or unimportant is the following reason for your decision not to join informal societies or group saving schemes?**
 
 Variable | Reason
 -------- | ---------------------------------------
@@ -40,7 +40,14 @@ IFG2_2   | Don't know about them
 IFG2_3   | Don't trust them/people steal your money
 IFG2_4   | Don't need any service from them/their services are better served by other financial service providers
 
-#### Nigeria
+### Bangladesh
+### Kenya
+### India
+### Indonesia
+### Nigeria
+### Pakistan
+### Tanzania
+### Uganda
 
   For 2016, the respondent was to choose their _most_ important reason from ten options, including a custom "other" option. To adjust, the reason given (if one of the four we account for)was coded as a "5" and all others were 
 ```{r IFG2, eval=F, echo=F}
