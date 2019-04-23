@@ -1,18 +1,6 @@
 # IFG - Section 9
 
-``` {r setup, eval=F, echo=F}
-library(knitr)
-knitr::opts_chunk$set(echo = TRUE)
-library(haven)
-library(readxl)
-library(dplyr)
-library(codebook)
-ng16 <- read_sav("//ARCHIVE/Works_In_Progress/GATES FII PROJECT FOLDERS/GATES FII WAVES 4 - 6 2016-2019/Final Data/In house/FII Nigeria 2016 (in house).sav")
-VL <- read_excel("Variable list_04182019.xlsx")
-vl_table <- table(VL[,1])%>%data.frame
-colnames(vl_table) <- c("Section", "Count")
-cb_ng16 <- codebook_table(ng16)[,-c(10:19)]
-```
+
 
 Informal Financial Groups
 ----
@@ -43,36 +31,11 @@ IFG2_4   | Don't need any service from them/their services are better served by 
 #### Nigeria
 
   For 2016, the respondent was to choose their _most_ important reason from ten options, including a custom "other" option. To adjust, the reason given (if one of the four we account for)was coded as a "5" and all others were 
-```{r IFG2, eval=F, echo=F}
-w_ifi24 <- strsplit(cb_ng16$value_labels[[which(cb_ng16$name=="IFI24")]], "\n")
-w_ifi24
-# 2, 3, 6, 5 correspond to IFG2_1 through IFI2_4 respectively
-ng16$IFG2_1 <- ifelse(ng16$IFI24 == 2, 5, 0)
-ng16$IFG2_2 <- ifelse(ng16$IFI24 == 3, 5, 0)
-ng16$IFG2_3 <- ifelse(ng16$IFI24 == 6, 5, 0)
-ng16$IFG2_4 <- ifelse(ng16$IFI24 == 5, 5, 0)
-```
+
 
 ### IFG3
 This subsection asks the respondent, if a member of an IFG, what services they are provided.
-```{r IFG3, eval=F, echo=F}
-#
-grep("IFI20",colnames(ng16))
-#
-w_ifi1 <- cb_ng16$label[grep("IFI1_", cb_ng16$name)]
-# 2, 3, 6, and 7 apply to IFG1
-grep("IFI1_", cb_ng16$name)
-ng16$IFG1 <- apply(ng16[,c(1040, 1044, 1054, 1056)], 1, function(x) ifelse(any(x == 1), 1, 0))
-#
-y <- names(attr(ng16$IFI21, "labels"))
-#verifying the labels are correct
-w_ifi20 <- grep("IFI20",cb_ng16$name)
-ifi20 <- cb_ng16$label[w_ifi20]
-ifi20 <- strsplit(ifi20, "\\? ")%>% unlist
-ifi20 <- ifi20[c(2,4,6,8,10,12,14,16)]
-# IFI20 is identical
-colnames(ng16[,grep("IFI20",colnames(ng16))]) <- sprintf("IFG3_[%s]", seq(1:8))
-```
+
 
 | Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to? |
 
@@ -93,7 +56,44 @@ IFG3_8   | We invest in the stock market as a group
 Nigeria 2016 only asked which reason for informal group financing was most important
 out of a list of 15, with an "other" option to describe.
 If their response was one of the four, it was categorized as a "5" (most important)
-```{r IFG4, eval=F, echo=F}
+
+### Appendix
+
+```r
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+library(haven)
+library(readxl)
+library(dplyr)
+library(codebook)
+ng16 <- read_sav("//ARCHIVE/Works_In_Progress/GATES FII PROJECT FOLDERS/GATES FII WAVES 4 - 6 2016-2019/Final Data/In house/FII Nigeria 2016 (in house).sav")
+VL <- read_excel("Variable list_04182019.xlsx")
+vl_table <- table(VL[,1])%>%data.frame
+colnames(vl_table) <- c("Section", "Count")
+cb_ng16 <- codebook_table(ng16)[,-c(10:19)]
+w_ifi24 <- strsplit(cb_ng16$value_labels[[which(cb_ng16$name=="IFI24")]], "\n")
+w_ifi24
+# 2, 3, 6, 5 correspond to IFG2_1 through IFI2_4 respectively
+ng16$IFG2_1 <- ifelse(ng16$IFI24 == 2, 5, 0)
+ng16$IFG2_2 <- ifelse(ng16$IFI24 == 3, 5, 0)
+ng16$IFG2_3 <- ifelse(ng16$IFI24 == 6, 5, 0)
+ng16$IFG2_4 <- ifelse(ng16$IFI24 == 5, 5, 0)
+#
+grep("IFI20",colnames(ng16))
+#
+w_ifi1 <- cb_ng16$label[grep("IFI1_", cb_ng16$name)]
+# 2, 3, 6, and 7 apply to IFG1
+grep("IFI1_", cb_ng16$name)
+ng16$IFG1 <- apply(ng16[,c(1040, 1044, 1054, 1056)], 1, function(x) ifelse(any(x == 1), 1, 0))
+#
+y <- names(attr(ng16$IFI21, "labels"))
+#verifying the labels are correct
+w_ifi20 <- grep("IFI20",cb_ng16$name)
+ifi20 <- cb_ng16$label[w_ifi20]
+ifi20 <- strsplit(ifi20, "\\? ")%>% unlist
+ifi20 <- ifi20[c(2,4,6,8,10,12,14,16)]
+# IFI20 is identical
+colnames(ng16[,grep("IFI20",colnames(ng16))]) <- sprintf("IFG3_[%s]", seq(1:8))
 # in its column.
 ng16$IFG4_1 <- NA
 ng16$IFG4_2 <- NA
@@ -108,8 +108,5 @@ for (i in 1:nrow(ng16)){
   else if (z == 3) {ng16$IFG4_3[i] <- 5}
   else if (z == 12) {ng16$IFG4_4[i] <- 5}
 }
-```
-### Appendix
-```{r all-code, ref.label=knitr::all_labels(), echo = TRUE, eval = FALSE}
 #this section puts all the code at the end of the document.
 ```
