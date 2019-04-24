@@ -1,4 +1,4 @@
-# IFG - Section 9
+# IFG
 
 
 
@@ -14,6 +14,9 @@ A derived binary variable, IFG1 represents the respondent's belonging to an info
 * Cooperatives
 * Village-level saving and lending group
 * Informal loan clubs or rotating savings and credit associations (ROSCAs, with [many regional names](http://www.gdrc.org/icm/rosca/rosca-names.html))
+
+### India
+For India datasets, 
 
 ## IFG2
 These questions ask the importance of each reason for _not_ being a part of an IFG. 
@@ -33,18 +36,19 @@ IFG2_4   | Don't need any service from them/their services are better served by 
 ### India
 ### Indonesia
 ### Nigeria
+  For 2016, the respondent was to choose their _most_ important reason from ten options, including a custom "other" option. To adjust, the reason given (if one of the four we account for)was coded as a "5" and all others were 
 ### Pakistan
 ### Tanzania
 ### Uganda
 
-  For 2016, the respondent was to choose their _most_ important reason from ten options, including a custom "other" option. To adjust, the reason given (if one of the four we account for)was coded as a "5" and all others were 
+
 
 
 ### IFG3
 This subsection asks the respondent, if a member of an IFG, what services they are provided.
 
 
-| Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to? |
+*Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to?*
 
 Variable | Reason
 -------- | -------------------------------------------------------------       
@@ -58,7 +62,7 @@ IFG3_7   | We make other kinds of investments as a group (e.g., property, busine
 IFG3_8   | We invest in the stock market as a group
 
 ### IFG4
-
+If the respondent confirmed their participation in a 
 #### Nigeria
 Nigeria 2016 only asked which reason for informal group financing was most important
 out of a list of 15, with an "other" option to describe.
