@@ -1,0 +1,50 @@
+---
+title: "DG - Section 3"
+author: "Shiyun Mai"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Demographic
+
+### DG1
+
+Description: Age
+
+### DG2
+
+* Description: Age groups in 5 categories
+* Levels 
+       + 15-24
+       + 25-34
+       + 35-44
+       + 45-54
+       + 50 and over
+
+### DG3 
+
+* Description: Age groups in 3 categories
+* Levels 
+       + 15-24
+       + 25-44
+       + 45 and over
+
+### DG4 
+
+* Description: Age groups in 2 categories
+* Levels
+       + 15-35
+       + 35 and over
+
+### DG5
+
+* Description: Eucation level
+* Levels 
+       + No formal education
+       + No formal education
+       + Secondary education
+       + Higher education
+       + Other
