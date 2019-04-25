@@ -16,19 +16,44 @@ cb_ng16 <- codebook_table(ng16)[,-c(10:19)]
 
 Informal Financial Groups
 ----
-
+### Bangladesh
+### Kenya
+### India
+### Indonesia
+### Nigeria
+### Pakistan
+### Tanzania
+### Uganda
 The following variables were coded in numeric order of which they were asked.
 
 ## IFG1
 
-A derived binary variable, IFG1 represents the respondent's belonging to an informal financial group (IFG). The definition varies by sophistication of village-level services, but the common institutions that qualify include:
+A derived binary variable, IFG1 represents the respondent's current or formal participation in an informal financial group (IFG). The definition varies by sophistication of village-level services, but the common institutions that qualify include:
 
 * Cooperatives
 * Village-level saving and lending group
 * Informal loan clubs or rotating savings and credit associations (ROSCAs, with [many regional names](http://www.gdrc.org/icm/rosca/rosca-names.html))
 
+### Bangladesh
+2013: IFI1
+2014: IFI1
+2015: IFI1
+2016: IFI1
+2017: IFI1
+2018: FN6.1
+### Kenya
+2013: None
+2014: IFI1
+2015: IFI1
+2016: IFI1
+2017: IFI1
 ### India
 For India datasets, 
+### Indonesia
+### Nigeria
+### Pakistan
+### Tanzania
+### Uganda
 
 ## IFG2
 These questions ask the importance of each reason for _not_ being a part of an IFG. 
