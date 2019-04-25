@@ -5,7 +5,13 @@
 *2013.
 
 *Bangladesh***.
-*2015.
+*2013.
+compute BELONG_INFML.
+
+*2014.
+compute BELONG_INFML.
+2015.
+compute BELONG_INFML.
 *2016.
 compute BELONG_INFML.
 if IFI18 > 0 BELONG_INFML=1.
@@ -23,15 +29,19 @@ if IFI18 > 0 BELONG_INFML=1.
 compute BELONG_INFML.
 if IFI18 > 0 BELONG_INFML=1.
 *2018.
+compute BELONG_INFML.
+if FN6_4 = 1 BELONG_INFML=1.
 
 *Indonesia***.
+*2014.
+compute BELONG_INFML.
+if IFI1_5=1 or IFI_6=1 BELONG_INFML=1.
 *2015.
 compute BELONG_INFML.
 if IFI19 > 0 BELONG_INFML=1.
 *2016.
 compute BELONG_INFML.
 if IFI18 > 0 BELONG_INFML=1.
-*2017.
 
 *Kenya***.
 * 2013 N/A.
