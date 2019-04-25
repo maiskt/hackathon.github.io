@@ -1,5 +1,4 @@
 # Informal Financial Groups
-----
 
 The following variables were coded in numeric order of which they were asked.
 
@@ -18,26 +17,51 @@ A derived binary variable, BELONG_INFML represents the respondent's current or f
 2016: IFI18
 2017: IFI18
 2018: FN6.1
+
 ### Kenya
 2013: None
 2014: IFI1
 2015: IFI18
 2016: IFI18
 2017: IFI18
+
 ### India
-For India datasets, 
+2013: FB7.(1-5).9
+2014: IFI1
+2015: IFI18
+2016: IFI18
+2017: IFI18
+2018: FN6.1
+
 ### Indonesia
+2015: IFI18
+2016: IFI18
+2017: IFI1.5
+
 ### Nigeria
+2013: IFI1
 2014: FL10_5 or FL13_5
 2015: IFI18
 2016: IFI18
 2017: IFI18
+
 ### Pakistan
+2013: IFI1
+2014: IFI1
+2015: IFI19 + FB16.7
+2016: IFI1
+2017: IFI1
+
 ### Tanzania
+2013: None
+2014: IFI1
 2015: IFI18
 2016: IFI18
 2017: IFI18
+
 ### Uganda
+2013: None
+2014: IFI1
 2015: IFI18
 2016: IFI18
 2017: IFI18
@@ -54,7 +78,11 @@ out of a list of 15, with an "other" option to describe.
 If their response was one of the four, it was categorized as a "5" (most important)
 ### Pakistan
 ### Tanzania
+2013: None
 ### Uganda
+2013: None
+
+----
 
 ## R_NOINFML
 These questions ask the importance of each reason for _not_ being a part of an IFG. 
@@ -76,8 +104,12 @@ IFG2_4   | Don't need any service from them/their services are better served by 
 ### Nigeria
   For 2016, the respondent was to choose their _most_ important reason from ten options, including a custom "other" option. To adjust, the reason given (if one of the four we account for)was coded as a "5" and all others were 
 ### Pakistan
+IFI21
 ### Tanzania
 ### Uganda
+2013: None
+
+----
 
 ### INFML_SERVICE
 This subsection asks the respondent, if a member of an IFG, what services they are provided.
@@ -95,3 +127,12 @@ IFG3_6   | We save together and put the money in an account
 IFG3_7   | We make other kinds of investments as a group (e.g., property, business)
 IFG3_8   | We invest in the stock market as a group
 
+### Bangladesh
+### Kenya
+### India
+### Indonesia
+### Nigeria
+### Pakistan
+### Tanzania
+### Uganda
+2013: None
