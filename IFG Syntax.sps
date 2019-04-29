@@ -1,66 +1,76 @@
 ﻿* Encoding: UTF-8.
 *IFG Syntax*
-** 2014-2017 IFG1 only
+** 2014-2017 for BELONG_INFML only for now?.
 **Ignoring IFG2&4 for 2017 for now.
 *2013.
 
 *Bangladesh***.
-*2015.
+*2013.
+compute BELONG_INFML.
+
+*2014.
+compute BELONG_INFML.
+2015.
+compute BELONG_INFML.
 *2016.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2017.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *India***.
 *2015.
-compute IFG1.
-if IFI189 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI19 > 0 BELONG_INFML=1.
 *2016.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2017.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2018.
+compute BELONG_INFML.
+if FN6_4 = 1 BELONG_INFML=1.
 
 *Indonesia***.
+*2014.
+compute BELONG_INFML.
+if IFI1_5=1 or IFI_6=1 BELONG_INFML=1.
 *2015.
-compute IFG1.
-if IFI19 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI19 > 0 BELONG_INFML=1.
 *2016.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
-*2017.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 
 *Kenya***.
 * 2013 N/A.
 * 2014.
-IF FL10_5 OR FL13_5 = 1 IFG1=1.
+IF FL10_5 OR FL13_5 = 1 BELONG_INFML=1.
 *2015.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2016.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2017.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 
 *Nigeria***.
 *2013.
 *2014.
-compute IFG1.
-IF FL10_5 OR FL13_5 = 1 IFG1=1.
+compute BELONG_INFML.
+IF FL10_5 OR FL13_5 = 1 BELONG_INFML=1.
 *2015.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2016.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2017.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 
 *Pakistan***.
 *2015.
@@ -69,22 +79,22 @@ if IFI18 > 0 IFG1=1.
 
 *Tanzania***.
 *2015.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2016.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2017.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 
 *Uganda***.
 *2015.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2016.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
 *2017.
-compute IFG1.
-if IFI18 > 0 IFG1=1.
+compute BELONG_INFML.
+if IFI18 > 0 BELONG_INFML=1.
