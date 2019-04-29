@@ -69,10 +69,19 @@ A derived binary variable, BELONG_INFML represents the respondent's current or f
 ### R_INFML
 If the respondent confirmed their past or present participation in an informal financial group, their main reason was asked from the following options:
 
+Value | Reason
+-------- | -------
+1 | To have a lump sum to use when it’s your turn
+2 | To help when there is a death in the family or any other emergency
+3 | To have access to loans or credit when needed
+4 | Easier to use or more accessible than other financial service providers
+
 In 2017, responses lie on a Likert scale from 1, least important, to 5, most important, for these four columns. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
 ### Bangladesh
 ### Kenya
 ### India
+2015: IFI22   
+2016: IFI21
 ### Indonesia
 #### Nigeria
 2013: IFI5
@@ -104,6 +113,8 @@ IFG2_4   | Don't need any service from them/their services are better served by 
 In 2013, there was no option for "Don't know about them".
 ### Kenya
 ### India
+2015: IFI25
+2016: IFI24
 ### Indonesia
 ### Nigeria
 2013:IFI3
