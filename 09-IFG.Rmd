@@ -11,60 +11,27 @@ A derived binary variable, BELONG_INFML represents the respondent's current or f
 * Informal loan clubs or rotating savings and credit associations (ROSCAs, with [many regional names](http://www.gdrc.org/icm/rosca/rosca-names.html))
 
 ### Bangladesh
-2013 and 2014: Village-level savings groups, money guards/collectors, savings collectors, and Hawla/Hundi networks
-
-2015:  Village-level savings group or another informal saving network, money guards/collectors, savings collectors, and Hawla/Hundi networks
-2016: IFI18
-2017: IFI18
-2018: FN6.1
-
+Only 2016 and 2017 data are available.
 ### Kenya
-2013: None
-2014: IFI1
-2015: IFI18
-2016: IFI18
-2017: IFI18
+Only 2015-2017 data are available.
 
 ### India
-2013: FB7.(1-5).9
-2014: IFI1
-2015: IFI18
-2016: IFI18
-2017: IFI18
-2018: FN6.1
+Only 2015-2017 data are available.
 
 ### Indonesia
-2015: IFI18
-2016: IFI18
-2017: IFI1.5
+Only 2015 and 2016 data are available.
 
 ### Nigeria
-2013: IFI1
-2014: FL10_5 or FL13_5
-2015: IFI18
-2016: IFI18
-2017: IFI18
+Only 2015-2017 data are available.
 
 ### Pakistan
-2013: IFI1
-2014: IFI1
-2015: IFI19 + FB16.7
-2016: IFI1
-2017: IFI1
+No data is available.
 
 ### Tanzania
-2013: None
-2014: IFI1
-2015: IFI18
-2016: IFI18
-2017: IFI18
+Only 2015-2017 data are available.
 
 ### Uganda
-2013: None
-2014: IFI1
-2015: IFI18
-2016: IFI18
-2017: IFI18
+Only 2015-2017 data are available.
 
 ### R_INFML
 If the respondent confirmed their past or present participation in an informal financial group, their main reason was asked from the following options:
