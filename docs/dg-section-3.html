@@ -101,6 +101,9 @@
 <li class="chapter" data-level="4.5" data-path="dg-section-3.html"><a href="dg-section-3.html#numeracy"><i class="fa fa-check"></i><b>4.5</b> NUMERACY</a></li>
 <li class="chapter" data-level="4.6" data-path="dg-section-3.html"><a href="dg-section-3.html#financial_literacy"><i class="fa fa-check"></i><b>4.6</b> FINANCIAL_LITERACY</a></li>
 <li class="chapter" data-level="4.7" data-path="dg-section-3.html"><a href="dg-section-3.html#digital_literacy_index"><i class="fa fa-check"></i><b>4.7</b> DIGITAL_LITERACY_INDEX</a></li>
+<li class="chapter" data-level="4.8" data-path="dg-section-3.html"><a href="dg-section-3.html#gender"><i class="fa fa-check"></i><b>4.8</b> GENDER</a></li>
+<li class="chapter" data-level="4.9" data-path="dg-section-3.html"><a href="dg-section-3.html#marriage"><i class="fa fa-check"></i><b>4.9</b> MARRIAGE</a></li>
+<li class="chapter" data-level="4.10" data-path="dg-section-3.html"><a href="dg-section-3.html#have_children"><i class="fa fa-check"></i><b>4.10</b> HAVE_CHILDREN</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html"><i class="fa fa-check"></i><b>5</b> Informal Financial Groups</a><ul>
 <li class="chapter" data-level="5.1" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#belong_infml"><i class="fa fa-check"></i><b>5.1</b> BELONG_INFML</a><ul>
@@ -167,18 +170,18 @@
 <div id="age" class="section level2">
 <h2><span class="header-section-number">4.1</span> AGE</h2>
 <ul>
-<li>Description: Age</li>
+<li>Description: Respondent age, derived from born year and survey year</li>
 <li>Note:
 <ul>
-<li>These contries have missing value: Nigeria, Tanzania, Indonesia 2015 Uganda 2014 Uganda 2013.</li>
-<li>Coded missing value into -2.</li>
+<li>These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.</li>
+<li>Coded missing value into DK=-2.</li>
 </ul></li>
 </ul>
 </div>
 <div id="age_group" class="section level2">
 <h2><span class="header-section-number">4.2</span> AGE_GROUP</h2>
 <ul>
-<li>Description: Age groups in 5 categories</li>
+<li>Description: Age groups, grouping respondent age every 10 years</li>
 <li>Levels
 <ul>
 <li>15-24</li>
@@ -186,19 +189,35 @@
 <li>35-44</li>
 <li>45-54</li>
 <li>50 and over</li>
-<li>NA</li>
+<li>DK</li>
 </ul></li>
 <li>Note:
 <ul>
-<li>These countries have missing value: Nigeria, Tanzania, Indonesia 2015 Uganda 2014 Uganda 2013.</li>
-<li>Coded missing value into -2.</li>
+<li>These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.</li>
+<li>Coded missing value into DK=-2.</li>
 </ul></li>
 </ul>
 </div>
 <div id="edu" class="section level2">
 <h2><span class="header-section-number">4.3</span> EDU</h2>
 <ul>
-<li>Description: Eucation level</li>
+<li>Description: Grouping highest education level for respondent into 5 categories, derived from DG4.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DG4</td>
+<td>What is your highest level of education?</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li>Levels
 <ul>
 <li>No formal education</li>
@@ -212,7 +231,39 @@
 <div id="literacy" class="section level2">
 <h2><span class="header-section-number">4.4</span> LITERACY</h2>
 <ul>
-<li>Description: Literacy</li>
+<li>Description: Literacy, derived from literal evaluation from surveyors and repondents themselves. Take Kenya 2017 as an example, LN1A and LN1B show evaluation from surveyors. LN2_1 and LN2_2 show evaluation from respondents themselves.</li>
+</ul>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LN1A</td>
+<td>Can you read this text for me, please? (Reading)</td>
+</tr>
+<tr class="even">
+<td>LN1B</td>
+<td>Can you read this text for me, please? (Understanding)</td>
+</tr>
+<tr class="odd">
+<td>LN2_1</td>
+<td>On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Reading in [questionnaire language]</td>
+</tr>
+<tr class="even">
+<td>LN2_2</td>
+<td>On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Writing in [questionnaire language]</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li>Levels
 <ul>
 <li>Basic literacy</li>
@@ -223,7 +274,39 @@
 <div id="numeracy" class="section level2">
 <h2><span class="header-section-number">4.5</span> NUMERACY</h2>
 <ul>
-<li>Description: numeracy</li>
+<li>Description: Numeracy, derived from 4 basic calculation questions. Take Bangladesh 2018 as an example. If respondents can answer one of these 4 questions, respondents will be defined as “having basic numeracy”.</li>
+</ul>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FL12</td>
+<td>Imagine you have 2,000 Taka.Somebody gave you 200 Taka.How much total money will you have?</td>
+</tr>
+<tr class="even">
+<td>FL13</td>
+<td>Imagine you have 1,000 Taka and you have to divide it among 5 people.How much money will each person receive if you divide it equally?</td>
+</tr>
+<tr class="odd">
+<td>FL16</td>
+<td>Suppose you need to borrow 100 Taka. Which is the lower amount to pay back: 105 Taka or 100 Taka plus 3 percent?</td>
+</tr>
+<tr class="even">
+<td>FL18</td>
+<td>Suppose you had 100 Taka. in a savings account and the bank adds 10 percent per year to the account. How much money would you have in the account after five years if you did not remove any money from the account?</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li>Levels
 <ul>
 <li>Basic numeracy</li>
@@ -234,7 +317,43 @@
 <div id="financial_literacy" class="section level2">
 <h2><span class="header-section-number">4.6</span> FINANCIAL_LITERACY</h2>
 <ul>
-<li>Description: Financial literacy</li>
+<li>Description: Financial literacy, derived from 5 basic calculation questions. Take Bangladesh 2018 as an example. Basing on the answer of these 5 questions, respondent will have a score respectively. Respondents who have 3 or more than 3 scores will be dedined as “having financial literacy”.</li>
+</ul>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FL14</td>
+<td>Is it safer to put your money into one business or investment, or to put your money into multiple businesses or investments?</td>
+</tr>
+<tr class="even">
+<td>FL15</td>
+<td>Suppose over the next 10 years the prices of the things you buy double.If your income also doubles, will you be able to buy less than you can buy today, the same as you can buy today, or more than you can buy today?</td>
+</tr>
+<tr class="odd">
+<td>FL16</td>
+<td>Suppose you need to borrow 100 Taka. Which is the lower amount to pay back: 105 Taka or 100 Taka plus 3 percent?</td>
+</tr>
+<tr class="even">
+<td>FL17</td>
+<td>Suppose you put money in the bank for two years and the bank agrees to add 15 percent per year to your account. Will the bank add more money to your account the second year than it did the first year, or will it add the same amount of money both year</td>
+</tr>
+<tr class="odd">
+<td>FL18</td>
+<td>Suppose you had 100 Taka. in a savings account and the bank adds 10 percent per year to the account. How much money would you have in the account after five years if you did not remove any money from the account?</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li>Levels
 <ul>
 <li>Yes</li>
@@ -242,14 +361,70 @@
 </ul></li>
 <li>Note:
 <ul>
-<li>Financial literacy questions only are only capture from 2016 to 2018.</li>
+<li>Financial literacy questions only are only captured from 2016 to 2018.</li>
 </ul></li>
 </ul>
 </div>
 <div id="digital_literacy_index" class="section level2">
 <h2><span class="header-section-number">4.7</span> DIGITAL_LITERACY_INDEX</h2>
 <ul>
-<li>Description: Digital literacy index</li>
+<li>Description: Digital literacy index, derived from questions about phone usage and activities. Take Banglsdesh 2018 as a example. If respondent never use a mobile phone(MT2, MT7), respondents will be defined as “no digital literacy”. If respondent only use mobile phone for calling(MT17_1, MT17_2), respondents will be defined as “low digital literacy”. If respondent also use mobile phone for texting(MT17_3), respondents will be defined as “moderate digital literacy”. If respondent also use mobile phone for advance activities(MT17_4-MT17_9), respondents will be defined as “high digital literacy”.</li>
+</ul>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MT2</td>
+<td>Do you personally own a mobile phone?</td>
+</tr>
+<tr class="even">
+<td>MT7</td>
+<td>Do you use a mobile phone that belongs to someone else or is shared?</td>
+</tr>
+<tr class="odd">
+<td>MT17_1</td>
+<td>When was the last time you used a mobile phone to do the following? Call someone</td>
+</tr>
+<tr class="even">
+<td>MT17_2</td>
+<td>When was the last time you used a mobile phone to do the following? Receive a call from someone</td>
+</tr>
+<tr class="odd">
+<td>MT17_3</td>
+<td>When was the last time you used a mobile phone to do the following? Send or receive a text message</td>
+</tr>
+<tr class="even">
+<td>MT17_4</td>
+<td>When was the last time you used a mobile phone to do the following? Search the internet</td>
+</tr>
+<tr class="odd">
+<td>MT17_5</td>
+<td>When was the last time you used a mobile phone to do the following? Download music, video or games</td>
+</tr>
+<tr class="even">
+<td>MT17_6</td>
+<td>When was the last time you used a mobile phone to do the following? Make a financial transaction such as send or receive money, or make a payment, or a bank transaction</td>
+</tr>
+<tr class="odd">
+<td>MT17_7</td>
+<td>When was the last time you used a mobile phone to do the following? Use Facebook, WhatsApp, Twitter, Instagram or another social networking application</td>
+</tr>
+<tr class="even">
+<td>MT17_9</td>
+<td>When was the last time you used a mobile phone to do the following? Download an application</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li>Levels
 <ul>
 <li>Not applicable</li>
@@ -259,9 +434,43 @@
 </ul></li>
 <li>Note:
 <ul>
+<li>Digital literacy questions only are only captured in several countries for 2013 including Kenya, Uganda, Tanzania and India.</li>
+</ul></li>
+</ul>
+</div>
+<div id="gender" class="section level2">
+<h2><span class="header-section-number">4.8</span> GENDER</h2>
+<ul>
+<li>Description: Gender for respondent</li>
+<li>Levels
+<ul>
+<li>Male</li>
+<li>Female</li>
+</ul></li>
+</ul>
+</div>
+<div id="marriage" class="section level2">
+<h2><span class="header-section-number">4.9</span> MARRIAGE</h2>
+<ul>
+<li>Description: Marriage status for respondent</li>
+<li>Levels
+<ul>
+<li>Single/never married</li>
+<li>Married</li>
+<li>Divorced/Separated</li>
+<li>Widowed</li>
+<li>Living together/Cohabiting</li>
+<li>Other</li>
+<li>DK</li>
+</ul></li>
+<li>Note:
+<ul>
 <li></li>
 </ul></li>
 </ul>
+</div>
+<div id="have_children" class="section level2">
+<h2><span class="header-section-number">4.10</span> HAVE_CHILDREN</h2>
 
 </div>
 </div>
