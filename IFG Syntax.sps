@@ -39,28 +39,34 @@ dataset name tza14.
 *2013.
 *2014.
 *2015.
-
-compute BELONG_INFML.
 *2016.
+dataset activate bng16.
 compute BELONG_INFML.
 if IFI18 > 0 and IFI18 ne 99 BELONG_INFML = 1.
-*2017.
-compute BELONG_INFML.
-if IFI18 > 0 and IFI18 ne 99 BELONG_INFML = 1.
-dataset activate bng18.
+compute country = "Bangladesh".
+compute year = 2016.
 
+*2017.
+dataset activate bng17.
+compute BELONG_INFML.
+if IFI18 > 0 and IFI18 ne 99 BELONG_INFML = 1.
+compute country = "Bangladesh".
+compute year = 2017.
 *India***.
 *2013.
 *2014.
 *2015.
 compute BELONG_INFML.
 if IFI19 > 0 and IFI19 ne 99 BELONG_INFML=1.
+compute country = "India".
 *2016.
 compute BELONG_INFML.
 if IFI18 > 0 and IFI18 ne 99 BELONG_INFML=1.
+compute country = "India".
 *2017.
 compute BELONG_INFML.
 if IFI18 > 0 and IFI18 ne 99 BELONG_INFML=1.
+compute country = "India".
 *2018.
 
 
@@ -69,13 +75,15 @@ if IFI18 > 0 and IFI18 ne 99 BELONG_INFML=1.
 *2015.
 compute BELONG_INFML.
 if IFI19 > 0 and IFI19 ne 99 BELONG_INFML=1.
+compute country = "Indonesia".
 *2016.
 compute BELONG_INFML.
 if IFI18 > 0 and IFI18 ne 99 BELONG_INFML=1.
+compute country = "Indonesia".
 
 *Kenya***.
-* 2013 N/A.
-* 2014.
+*2013 N/A.
+*2014.
 *2015.
 compute BELONG_INFML.
 if IFI18 > 0 and IFI18 ne 99 BELONG_INFML=1.
