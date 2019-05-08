@@ -209,3 +209,5 @@ get file = "//ARCHIVE/Sundries$/2017/FII final data/FII India 2017 final.sav".
     string COUNTRY (A10).
     compute COUNTRY = "Nigeria".
 execute.
+* When finished, run the following:
+dataset close ALL.
