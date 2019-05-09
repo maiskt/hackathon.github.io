@@ -83,7 +83,7 @@ get file = "//ARCHIVE/Sundries$/2017/FII final data/FII India 2017 final.sav".
     compute YEAR = 2017.
     string COUNTRY (A10).
     compute COUNTRY = "India".
- get file = "//ARCHIVE/Sundries$/India 2018 FII Wave 6- Final Data 20190227.sav".
+ get file = "//ARCHIVE/Sundries$/2018/FII India 2018 Final (public).sav".
     dataset name ind18.
     compute YEAR = 2018.
     string COUNTRY (A10).
