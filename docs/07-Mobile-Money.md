@@ -1,63 +1,65 @@
-#07-Mobile-Money
+# Mobile Money
 
-##AWARE_MM
-##AWARE_MM_PROVIDER
-##AWARE_NONUSER_MM
-##ACCESS_MM
-##REGISTERED_MM
-##ACTIVE_MM
-##ACTIVE30_MM
-##INACTIVE_MM
-##DORMANT_MM
-##OTC_MM
-##MM_BASIC
-##MM_ADV
-##REG_MM_BASIC
-##REG_MM_ADV
-##ACTIVE_MM_BASIC
-##ACTIVE_MM_ADV
-##ACTIVE30_MM_ADV
-##LENGTH_MM
-##MM_STAGE
-##MM_TRANSFER
+Mobile Money Services
+
+## AWARE_MM
+## AWARE_MM_PROVIDER
+## AWARE_NONUSER_MM
+## ACCESS_MM
+## REGISTERED_MM
+## ACTIVE_MM
+## ACTIVE30_MM
+## INACTIVE_MM
+## DORMANT_MM
+## OTC_MM
+## MM_BASIC
+## MM_ADV
+## REG_MM_BASIC
+## REG_MM_ADV
+## ACTIVE_MM_BASIC
+## ACTIVE_MM_ADV
+## ACTIVE30_MM_ADV
+## LENGTH_MM
+## MM_STAGE
+## MM_TRANSFER
 This mobile money question asks respondents if they have ever sent or recieved money from another person. 
-##MM_MERCHANT
+## MM_MERCHANT
 This question asks respondents if they have ever used mobily money to pay for goods and/or services.
-##MM_BILL
+## MM_BILL
 This question asks respondents they have ever paid for bills using mobile money.
-##MM_GOV
+## MM_GOV
 This question asks respondents they have ever paid for bills using mobile money.
-##MM_WAGE
+## MM_WAGE
 This question asks if respondents have ever recieved working wages via monbile money.
-##MM_INSURANCE
+## MM_INSURANCE
 This question asks respondents if they have ever used mobile money to either recieve or pay for insurance benefits.
-##MM_SAVE
+## MM_SAVE
 This question asks respondents if they have ever saved/deposited money electonically.
-##MM_INVEST
+## MM_INVEST
 This question asks respondents if they have ever made an investment using mobile money.
-##MM_LOAN
+## MM_LOAN
 This question asks respondents if they have ever borrowed money from someone outside their household or bought something on credit using mobile money.
-##MM_AIRTIME
+## MM_AIRTIME
 This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.
-##ACTIVE_MM_TRANSFER
+## ACTIVE_MM_TRANSFER
 This mobile money question asks respondents if they have, within the last 90 days, sent or recieved money from another person.
-##ACTIVE_MM_MERCHANT
+## ACTIVE_MM_MERCHANT
 This question asks respondents if they have, within the last 90 days, used mobily money to pay for goods and/or services.
-##ACTIVE_MM_BILL
+## ACTIVE_MM_BILL
 This question asks respondents they have, within the last 90 days, paid for bills using mobile money.
-##ACTIVE_MM_GOV
+## ACTIVE_MM_GOV
 This question asks respondents they have, within the last 90 days, paid for bills using mobile money.
-##ACTIVE_MM_WAGE
+## ACTIVE_MM_WAGE
 This question asks if respondents have, within the last 90 days, recieved working wages via monbile money.
-##ACTIVE_MM_INSURANCE
+## ACTIVE_MM_INSURANCE
 This question asks respondents if they have, within the last 90 days, used mobile money to either recieve or pay for insurance benefits.
-##ACTIVE_MM_SAVE
+## ACTIVE_MM_SAVE
 This question asks respondents if they have, within the last 90 days, saved/deposited money electonically.
-##ACTIVE_MM_INVEST
+## ACTIVE_MM_INVEST
 This question asks respondents if they have, within the last 90 days, made an investment using mobile money.
-##ACTIVE_MM_LOAN
+## ACTIVE_MM_LOAN
 This question asks respondents if they have, within the last 90 days, borrowed money from someone outside their household or bought something on credit using mobile money.
-##ACTIVE_MM_AIRTIME
+## ACTIVE_MM_AIRTIME
 This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.
 
 STM_MM1

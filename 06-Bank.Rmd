@@ -1,4 +1,4 @@
-# Bank - Section 6
+# Banking Services
 
 Bank
 

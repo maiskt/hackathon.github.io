@@ -1,4 +1,6 @@
-#Financial Situation Section 14
+# Financial Situation
+
+Financial Situation
 
 ## INCOME_EARNER
 ## MAIN_EARNER

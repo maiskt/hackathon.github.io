@@ -1,4 +1,4 @@
-# Financial inclusion
+# Financial Inclusion
 Formal financial institutions.
 
 ## ACCESS_FINANCIAL_ALL

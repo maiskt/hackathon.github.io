@@ -1,4 +1,7 @@
-#Insurance Section 12
+# Insurance
+
+Insurance
+
 ## INSURANCE
 ## INSUR_TYPE1
 ## INSUR_TYPE2
