@@ -55,7 +55,7 @@ Demographics
        
 ## NUMERACY
 
-* Description: Numeracy, derived from 4 basic calculation questions. Take Bangladesh 2018 as an example. If respondents can answer one of these 4 questions, respondents will be defined as "having basic numeracy". 
+* Description: Numeracy, derived from 4 questions. For example for Bangladesh 2018, a respondent who can answer one of the 4 following questions will be considered as "having basic numeracy skills". 
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -69,7 +69,7 @@ Demographics
        
 ## FINANCIAL_LITERACY
 
-* Description: Financial literacy, derived from 5 basic calculation questions. Take Bangladesh 2018 as an example. Basing on the answer of these 5 questions, respondent will have a score respectively. Respondents who have 3 or more than 3 scores will be dedined as "having financial literacy". 
+* Description: Financial literacy, derived from 5 questions. For example for Take Bangladesh 2018 as an example. Basing on the answer of these 5 questions, respondent will have a score respectively. Respondents who have 3 or more than 3 scores will be dedined as "having financial literacy". 
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
