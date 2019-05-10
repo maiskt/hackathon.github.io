@@ -1,6 +1,6 @@
-# DG - Section 3
+# Demographics
 
-Demographic
+Demographics
 
 ## AGE
 

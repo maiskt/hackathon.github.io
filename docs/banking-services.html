@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Section 2 Title Goes Here | FII Dataset Documentation</title>
+  <title>Section 5 Banking Services | FII Dataset Documentation</title>
   <meta name="description" content="Documentation for the FII Datathon dataset">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Section 2 Title Goes Here | FII Dataset Documentation" />
+  <meta property="og:title" content="Section 5 Banking Services | FII Dataset Documentation" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="http://datathonfii.github.io/codebook/" />
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="FIIDatathon/Codebook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Section 2 Title Goes Here | FII Dataset Documentation" />
+  <meta name="twitter:title" content="Section 5 Banking Services | FII Dataset Documentation" />
   
   <meta name="twitter:description" content="Documentation for the FII Datathon dataset" />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="aa-survey-information.html">
-<link rel="next" href="demographics.html">
+<link rel="prev" href="financial-inclusion.html">
+<link rel="next" href="mobile-money.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -441,100 +441,499 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="title-goes-here" class="section level1">
-<h1><span class="header-section-number">Section 2</span> Title Goes Here</h1>
-<p>When saving the file, use a two-digit number and a dash, followed by the title <em>without</em> spaces (for example, 07-Page-Title.Rmd).</p>
-<div id="r-markdown" class="section level2">
-<h2><span class="header-section-number">2.1</span> R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
-<p><strong>bolded table title</strong></p>
+<div id="banking-services" class="section level1">
+<h1><span class="header-section-number">Section 5</span> Banking Services</h1>
+<p>Bank</p>
+<div id="access_bank" class="section level2">
+<h2><span class="header-section-number">5.1</span> ACCESS_BANK</h2>
+<ul>
+<li>Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else’s name. Take Bangladesh 2018 as an example, ACCESS_BANK is derived from following questions.</li>
+</ul>
 <table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th>Table</th>
-<th>Header</th>
+<th>Question Index</th>
+<th>Question</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A</td>
-<td>B</td>
+<td>FN1_1</td>
+<td>Have you ever used a bank?</td>
+</tr>
+<tr class="even">
+<td>FN1_2</td>
+<td>Do you have a bank account that is registered in your name?</td>
+</tr>
+<tr class="odd">
+<td>FN1_3</td>
+<td>Do you have a bank account that is registered jointly in your name and someone else’s name?</td>
 </tr>
 </tbody>
 </table>
-<p>If the above seems tedious or you have a long table, try <a href="http://www.tablesgenerator.com/markdown_tables" class="uri">http://www.tablesgenerator.com/markdown_tables</a></p>
 <ul>
-<li>list example
-<ul>
-<li>sub-list example</li>
-</ul></li>
-<li>pretty simple</li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ About full-service filter, followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.</p></li>
 </ul>
 </div>
-<div id="variable-subsection-1" class="section level2">
-<h2><span class="header-section-number">2.2</span> Variable Subsection 1</h2>
-<div id="bangladesh" class="section level3">
-<h3><span class="header-section-number">2.2.1</span> Bangladesh</h3>
+<div id="registered_bank" class="section level2">
+<h2><span class="header-section-number">5.2</span> REGISTERED_BANK</h2>
+<ul>
+<li>Description: Individuals who hold an account with a bank that provides a full suite of financial services. Take Bangladesh 2018 as an example, REGISTERED_BANK is derived from following questions.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FN1_2</td>
+<td>Do you have a bank account that is registered in your name?</td>
+</tr>
+<tr class="even">
+<td>FN1_3</td>
+<td>Do you have a bank account that is registered jointly in your name and someone else’s name?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ About full-service filter, followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.</p></li>
+</ul>
 </div>
-<div id="kenya" class="section level3">
-<h3><span class="header-section-number">2.2.2</span> Kenya</h3>
+<div id="active_bank" class="section level2">
+<h2><span class="header-section-number">5.3</span> ACTIVE_BANK</h2>
+<ul>
+<li>Description: Grouping highest education level for respondent into 5 categories, derived from DG4.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DG4</td>
+<td>What is your highest level of education?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ No formal education
++ Primary education
++ Secondary education
++ Higher education
++ Other</li>
+</ul>
 </div>
-<div id="india" class="section level3">
-<h3><span class="header-section-number">2.2.3</span> India</h3>
+<div id="literacy-1" class="section level2">
+<h2><span class="header-section-number">5.4</span> LITERACY</h2>
+<ul>
+<li><p>Description: Literacy, derived from literal evaluation from surveyors and repondents themselves. Take Kenya 2017 as an example, LN1A and LN1B show evaluation from surveyors. LN2_1 and LN2_2 show evaluation from respondents themselves.</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LN1A</td>
+<td>Can you read this text for me, please? (Reading)</td>
+</tr>
+<tr class="even">
+<td>LN1B</td>
+<td>Can you read this text for me, please? (Understanding)</td>
+</tr>
+<tr class="odd">
+<td>LN2_1</td>
+<td>On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Reading in [questionnaire language]</td>
+</tr>
+<tr class="even">
+<td>LN2_2</td>
+<td>On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Writing in [questionnaire language]</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Levels
++ Basic literacy
++ Lack of basic literacy</p></li>
+</ul>
 </div>
-<div id="indonesia" class="section level3">
-<h3><span class="header-section-number">2.2.4</span> Indonesia</h3>
+<div id="numeracy-1" class="section level2">
+<h2><span class="header-section-number">5.5</span> NUMERACY</h2>
+<ul>
+<li>Description: Numeracy, derived from 4 basic calculation questions. Take Bangladesh 2018 as an example. If respondents can answer one of these 4 questions, respondents will be defined as “having basic numeracy”.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FL12</td>
+<td>Imagine you have 2,000 Taka.Somebody gave you 200 Taka.How much total money will you have?</td>
+</tr>
+<tr class="even">
+<td>FL13</td>
+<td>Imagine you have 1,000 Taka and you have to divide it among 5 people.How much money will each person receive if you divide it equally?</td>
+</tr>
+<tr class="odd">
+<td>FL16</td>
+<td>Suppose you need to borrow 100 Taka. Which is the lower amount to pay back: 105 Taka or 100 Taka plus 3 percent?</td>
+</tr>
+<tr class="even">
+<td>FL18</td>
+<td>Suppose you had 100 Taka. in a savings account and the bank adds 10 percent per year to the account. How much money would you have in the account after five years if you did not remove any money from the account?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Basic numeracy
++ Lack of basic numeracy</li>
+</ul>
 </div>
-<div id="nigeria" class="section level3">
-<h3><span class="header-section-number">2.2.5</span> Nigeria</h3>
+<div id="financial_literacy-1" class="section level2">
+<h2><span class="header-section-number">5.6</span> FINANCIAL_LITERACY</h2>
+<ul>
+<li>Description: Financial literacy, derived from 5 basic calculation questions. Take Bangladesh 2018 as an example. Basing on the answer of these 5 questions, respondent will have a score respectively. Respondents who have 3 or more than 3 scores will be dedined as “having financial literacy”.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FL14</td>
+<td>Is it safer to put your money into one business or investment, or to put your money into multiple businesses or investments?</td>
+</tr>
+<tr class="even">
+<td>FL15</td>
+<td>Suppose over the next 10 years the prices of the things you buy double.If your income also doubles, will you be able to buy less than you can buy today, the same as you can buy today, or more than you can buy today?</td>
+</tr>
+<tr class="odd">
+<td>FL16</td>
+<td>Suppose you need to borrow 100 Taka. Which is the lower amount to pay back: 105 Taka or 100 Taka plus 3 percent?</td>
+</tr>
+<tr class="even">
+<td>FL17</td>
+<td>Suppose you put money in the bank for two years and the bank agrees to add 15 percent per year to your account. Will the bank add more money to your account the second year than it did the first year, or will it add the same amount of money both year</td>
+</tr>
+<tr class="odd">
+<td>FL18</td>
+<td>Suppose you had 100 Taka. in a savings account and the bank adds 10 percent per year to the account. How much money would you have in the account after five years if you did not remove any money from the account?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Yes
++ No</li>
+<li>Note:
++ Financial literacy questions only are only collected from 2016 to 2018.</li>
+</ul>
 </div>
-<div id="pakistan" class="section level3">
-<h3><span class="header-section-number">2.2.6</span> Pakistan</h3>
+<div id="digital_literacy_index-1" class="section level2">
+<h2><span class="header-section-number">5.7</span> DIGITAL_LITERACY_INDEX</h2>
+<ul>
+<li>Description: Digital literacy index, derived from questions about phone usage and activities. Take Banglsdesh 2018 as a example. If respondent never use a mobile phone(MT2, MT7), respondents will be defined as “no digital literacy”. If respondent only use mobile phone for calling(MT17_1, MT17_2), respondents will be defined as “low digital literacy”. If respondent also use mobile phone for texting(MT17_3), respondents will be defined as “moderate digital literacy”. If respondent also use mobile phone for advance activities(MT17_4-MT17_9), respondents will be defined as “high digital literacy”.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MT2</td>
+<td>Do you personally own a mobile phone?</td>
+</tr>
+<tr class="even">
+<td>MT7</td>
+<td>Do you use a mobile phone that belongs to someone else or is shared?</td>
+</tr>
+<tr class="odd">
+<td>MT17_1</td>
+<td>When was the last time you used a mobile phone to do the following? Call someone</td>
+</tr>
+<tr class="even">
+<td>MT17_2</td>
+<td>When was the last time you used a mobile phone to do the following? Receive a call from someone</td>
+</tr>
+<tr class="odd">
+<td>MT17_3</td>
+<td>When was the last time you used a mobile phone to do the following? Send or receive a text message</td>
+</tr>
+<tr class="even">
+<td>MT17_4</td>
+<td>When was the last time you used a mobile phone to do the following? Search the internet</td>
+</tr>
+<tr class="odd">
+<td>MT17_5</td>
+<td>When was the last time you used a mobile phone to do the following? Download music, video or games</td>
+</tr>
+<tr class="even">
+<td>MT17_6</td>
+<td>When was the last time you used a mobile phone to do the following? Make a financial transaction such as send or receive money, or make a payment, or a bank transaction</td>
+</tr>
+<tr class="odd">
+<td>MT17_7</td>
+<td>When was the last time you used a mobile phone to do the following? Use Facebook, WhatsApp, Twitter, Instagram or another social networking application</td>
+</tr>
+<tr class="even">
+<td>MT17_9</td>
+<td>When was the last time you used a mobile phone to do the following? Download an application</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Not applicable
++ Low
++ Moderate
++ High</li>
+<li>Note:
++ Digital literacy questions only are only captured in several countries for 2013 including Kenya, Uganda, Tanzania and India.</li>
+</ul>
 </div>
-<div id="tanzania" class="section level3">
-<h3><span class="header-section-number">2.2.7</span> Tanzania</h3>
+<div id="gender-1" class="section level2">
+<h2><span class="header-section-number">5.8</span> GENDER</h2>
+<ul>
+<li>Description: Gender for respondent</li>
+<li>Levels
++ Male
++ Female</li>
+</ul>
 </div>
-<div id="uganda-1" class="section level3">
-<h3><span class="header-section-number">2.2.8</span> Uganda</h3>
+<div id="marriage-1" class="section level2">
+<h2><span class="header-section-number">5.9</span> MARRIAGE</h2>
+<ul>
+<li>Description: Marriage status for respondent</li>
+<li>Levels
++ Single/never married
++ Married
++ Divorced/Separated
++ Widowed
++ Living together/Cohabiting
++ Other
++ DK</li>
+<li>Note:
++ Pakistan(2017,2016,2015), Bangladesh(2017,2016,2015,2014,2013) do not have category “Living together/Cohabiting”.
++ There is no data in category “Living together/Cohabiting” for Pakistan(2013) .</li>
+</ul>
 </div>
+<div id="have_children-1" class="section level2">
+<h2><span class="header-section-number">5.10</span> HAVE_CHILDREN</h2>
+<ul>
+<li>Description: HAVE_CHILDREN shows whether there is child(under 18 years old) in Houldhold. For 2017 and 2018, it derives from household information section which include ages for each family members. For 2016 and 2015, it derives from two questions about children’s age.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DG8B</td>
+<td>How many adults and children do you have in the household? (999 for DK/Refused): Number of children (boys) (Below 18 years)</td>
+</tr>
+<tr class="even">
+<td>DGBC</td>
+<td>How many adults and children do you have in the household? (999 for DK/Refused): Number of children (girls) (Below 18 years)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Yes
++ No</li>
+<li>Note:
++ No houldhold informations in Paksitan 2017, need comfirm.
++ Questions about children are not collected in 2013 and 2014 survey.</li>
+</ul>
 </div>
-<div id="variable-subsection-2" class="section level2">
-<h2><span class="header-section-number">2.3</span> Variable Subsection 2</h2>
-<div id="country" class="section level3">
-<h3><span class="header-section-number">2.3.1</span> Country</h3>
-<div id="year-if-necessary" class="section level4">
-<h4><span class="header-section-number">2.3.1.1</span> Year (if necessary)</h4>
-<p>Add pictures (note the file location):
-<img src="https://datathonfii.github.io/Codebook/docs/media/fii.jpg" alt="hover text" /></p>
-<p>This is how we can add our SPSS syntax to the end:</p>
-<pre><code>compute access_dfs=0.
-if (FN1_1=1 or FN1_2=1 or FN1_3=1 or
-    FN2_1=1 or
-   (FN3_1=1 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and (FN3_8=1 or FN3_9=1 or FN3_10=1 or FN3_11=1)) or
-   (FN4_1=1 and (FN4_4=1 or FN4_5=1 or FN4_6=1 or FN4_7=1) and (FN4_8=1 or FN4_9=1 or FN4_10=1 or FN4_11=1)) or
-    FN7_1=1) access_dfs=1. 
-variable labels access_dfs &quot;Ever accessed a digital stored value account&quot;.
-value labels access_dfs 0&quot;No&quot;1&quot;Yes&quot;.</code></pre>
+<div id="school_fee-1" class="section level2">
+<h2><span class="header-section-number">5.11</span> SCHOOL_FEE</h2>
+<ul>
+<li>Description: Respondent has ever paid school fee or not, derived from two types of questions base on different years.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2018</td>
+<td>Have you ever paid a fee for school, education, or training?</td>
+</tr>
+<tr class="even">
+<td>2016,2015</td>
+<td>What type of school do the children go to? I pay a fee for the school</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Yes
++ No</li>
+<li>Note:
++ 2013, 2014 and 2017 survey does not include questions about school fee payment.</li>
+</ul>
+</div>
+<div id="employment-1" class="section level2">
+<h2><span class="header-section-number">5.12</span> EMPLOYMENT</h2>
+<ul>
+<li><p>Description: Employment status</p></li>
+<li><p>Levels
++ Working full-time for a regular salary
++ Working part-time for a regular salary
++ Working occasionally, irregular pay (whenever the work is available)
++ Working per season (e.g., only during the harvest season)
++ Self-employed, working for yourself
++ Not working but looking for a job
++ Housewife or stay-at-home husband doing household chores
++ Full-time student
++ Not working because of retirement
++ Not working because of sickness, disability, etc.
++ Other
++ DK</p></li>
+<li><p>Note:
++ Pakistan(2015) has one more category “Landlord”, which is recoded into “Other”.
++ 2013 survey does not include this quesion.</p></li>
+</ul>
+</div>
+<div id="invol_agri-1" class="section level2">
+<h2><span class="header-section-number">5.13</span> INVOL_AGRI</h2>
+<ul>
+<li>Description: Respondent include one of following features: be a farmer or farm worker, respondents or their family own a farm, got money from any farming activities in the past 12 monthes. Take Bangladesh 2018 as an example, INVOL_AGRI are derived from following quesions.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DL2</td>
+<td>What is your primary job (i.e., the job where you spend most of your time)?</td>
+</tr>
+<tr class="even">
+<td>DL6</td>
+<td>Does anyone in your household own or lease a farm/farmland?</td>
+</tr>
+<tr class="odd">
+<td>DL4_1</td>
+<td>Please tell me in which of the following ways you got money in the past 12 months? Sold products of agriculture or reared livestock</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ For 2018 and 2017, only 1 option is correlated with farm in DL4 set questions. But for 2016 and 2015, serveral options are correlated with farm in DL4 set questions.
++ For Bangladesh 2015, only 1 option is correlated with farm in DL4 set questions, which is different ftom other countries in 2015. Need confirm.</p></li>
+</ul>
+</div>
+<div id="own_farm-1" class="section level2">
+<h2><span class="header-section-number">5.14</span> OWN_FARM</h2>
+<ul>
+<li><p>Description: Respondents or their household own or lease a farm/farmland, derived from DL6.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ 2013 and 2014 surveys do not include this quesion.</p></li>
+</ul>
+</div>
+<div id="work_farm-1" class="section level2">
+<h2><span class="header-section-number">5.15</span> WORK_FARM</h2>
+<ul>
+<li><p>Description: Respondents work on the farm that someone in their household owned or leased, derived from DL7.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ 2013 and 2014 surveys do not include this quesion.</p></li>
+</ul>
+</div>
+<div id="sell_crop-1" class="section level2">
+<h2><span class="header-section-number">5.16</span> SELL_CROP</h2>
+<ul>
+<li><p>Description: Respondents sell products of agriculture or rearing livestock, derived from DL4 set quesions.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ 2013 and 2014 surveys do not include this quesion.</p></li>
+</ul>
 
-<p>#Identifying Characteristics
-##SBJNUM
-##COUNTRY
-##YEAR
-##UR
-##CLUSTER
-##ANON_LAT
-##ANON_LONG</p>
-
-</div>
-</div>
 </div>
 </div>
             </section>
@@ -542,8 +941,8 @@ value labels access_dfs 0&quot;No&quot;1&quot;Yes&quot;.</code></pre>
           </div>
         </div>
       </div>
-<a href="aa-survey-information.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="demographics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="financial-inclusion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="mobile-money.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
