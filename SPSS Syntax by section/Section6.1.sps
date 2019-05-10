@@ -203,6 +203,9 @@ IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
 compute REGISTERED_BANK=0.
 IF (FF1=1 and FF5=1) REGISTERED_BANK=1.
 
+compute ACTIVE_BANK=0.
+IF (FF1=1 and FF5=1 and FF9<=4) ACTIVE_BANK=1.
+
 
 *16Kenya.
 *Section 6.1.
@@ -215,6 +218,9 @@ IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
 compute REGISTERED_BANK=0.
 IF (FF1=1 and FF5=1) REGISTERED_BANK=1.
 
+compute ACTIVE_BANK=0.
+IF (FF1=1 and FF5=1 and FF9<=4) ACTIVE_BANK=1.
+
 *16Nigeria.
 compute YEAR=2016.
 compute COUNTRY=Nigeria.
@@ -224,6 +230,9 @@ IF (((FF1_1=1 or FF1_2=1 or FF1_3=1 or FF1_4=1) or FF4=1) and FF5=1) ACCESS_BANK
 
 compute REGISTERED_BANK=0.
 IF ((FF1_1=1 or FF1_2=1 or FF1_3=1 or FF1_4=1) and FF5=1) REGISTERED_BANK=1.
+
+compute ACTIVE_BANK=0.
+IF ((FF1_1=1 or FF1_2=1 or FF1_3=1 or FF1_4=1) and FF5=1 and FF9<=4) ACTIVE_BANK=1.
 
 *16Pakistan.
 compute YEAR=2016.
@@ -235,6 +244,9 @@ IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
 compute REGISTERED_BANK=0.
 IF (FF1=1 and FF5=1) REGISTERED_BANK=1.
 
+compute ACTIVE_BANK=0.
+IF (FF1=1 and FF5=1 and FF9<=4) ACTIVE_BANK=1.
+
 *16Tanzania.
 compute YEAR=2016.
 compute COUNTRY=Tanzania.
@@ -244,6 +256,9 @@ IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
 
 compute REGISTERED_BANK=0.
 IF (FF1=1 and FF5=1) REGISTERED_BANK=1.
+
+compute ACTIVE_BANK=0.
+IF (FF1=1 and FF5=1 and FF9<=4) ACTIVE_BANK=1.
 
 
 *16Uganda.
@@ -257,6 +272,9 @@ IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
 compute REGISTERED_BANK=0.
 IF (FF1=1 and FF5=1) REGISTERED_BANK=1.
 
+compute ACTIVE_BANK=0.
+IF (FF1=1 and FF5=1 and FF9<=4) ACTIVE_BANK=1.
+
 
 *15Bangladesh.
 compute YEAR=2015.
@@ -266,6 +284,8 @@ compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff5=1).
 
+compute ACTIVE_BANK = (FF1=1 and ff5=1 and FF9<=4). 
+
 *15India.
 compute YEAR=2015.
 compute COUNTRY=India.
@@ -274,6 +294,8 @@ compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff5=1).
 
+compute ACTIVE_BANK = (FF1=1 and ff5=1 and FF9<=4). 
+
 *15Indonesia.
 compute YEAR=2015.
 compute COUNTRY=Indonesia.
@@ -281,6 +303,8 @@ compute COUNTRY=Indonesia.
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff5=1).
+
+compute ACTIVE_BANK = (FF1=1 and ff5=1 and FF9<=4). 
 
 
 *15Kenya.
@@ -291,6 +315,8 @@ compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff5=1).
 
+compute ACTIVE_BANK = (FF1=1 and ff5=1 and FF9<=4). 
+
 *15Nigeria.
 compute YEAR=2015.
 compute COUNTRY=Nigeria.
@@ -298,6 +324,8 @@ compute COUNTRY=Nigeria.
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff5=1).
+
+compute ACTIVE_BANK = (FF1=1 and ff5=1 and FF9<=4). 
 
 *15Pakistan.
 compute YEAR=2015.
@@ -307,6 +335,8 @@ compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff5=1).
 
+compute ACTIVE_BANK = (FF1=1 and ff5=1 and FF9<=4). 
+
 *15Tanzania.
 compute YEAR=2015.
 compute COUNTRY=Tanzania.
@@ -314,6 +344,8 @@ compute COUNTRY=Tanzania.
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff5=1).
+
+compute ACTIVE_BANK = (FF1=1 and ff5=1 and FF9<=4). 
 
 *15Uganda.
 compute YEAR=2015.
@@ -323,6 +355,8 @@ compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff5=1).
 
+compute ACTIVE_BANK = (FF1=1 and ff5=1 and FF9<=4). 
+
 *14Bangladesh.
 compute YEAR=2014.
 compute COUNTRY=Bangladesh.
@@ -330,6 +364,8 @@ compute COUNTRY=Bangladesh.
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff9=1).
+
+compute ACTIVE_BANK = (FF1=1 and FF9=1 and FF14<=4). 
 
 *14India.
 compute YEAR=2014.
@@ -339,6 +375,8 @@ compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff9=1).
 
+compute ACTIVE_BANK = (FF1=1 and FF9=1 and FF14<=4). 
+
 *14Indonesia.
 compute YEAR=2014.
 compute COUNTRY=Indonesia.
@@ -346,6 +384,8 @@ compute COUNTRY=Indonesia.
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff9=1).
+
+compute ACTIVE_BANK = (FF1=1 and FF9=1 and FF14<=4). 
 
 *14Kenya.
 compute YEAR=2014.
@@ -355,6 +395,7 @@ compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff9=1).
 
+compute ACTIVE_BANK = (FF1=1 and FF9=1 and FF14<=4). 
 
 *14Nigeria.
 compute YEAR=2014.
@@ -364,6 +405,8 @@ compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff9=1).
 
+compute ACTIVE_BANK = (FF1=1 and FF9=1 and FF14<=4). 
+
 
 *14Pakistan.
 compute YEAR=2014.
@@ -372,6 +415,8 @@ compute COUNTRY=Pakistan.
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff9=1).
+
+compute ACTIVE_BANK = (FF1=1 and FF9=1 and FF14<=4). 
 
 
 
@@ -383,6 +428,8 @@ compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff9=1).
 
+compute ACTIVE_BANK = (FF1=1 and FF9=1 and FF14<=4). 
+
 
 *14Uganda.
 compute YEAR=2014.
@@ -392,6 +439,8 @@ compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
 compute REGISTERED_BANK=(FF1=1 and ff9=1).
 
+compute ACTIVE_BANK = (FF1=1 and FF9=1 and FF14<=4). 
+
 
 *13Bangladesh.
 compute YEAR=2013.
@@ -400,6 +449,8 @@ compute COUNTRY=Bangladesh.
 compute ACCESS_BANK=(FFI1=1 or FFI3=1).
 
 compute REGISTERED_BANK=(FFI1=1).
+
+compute ACTIVE_BANK = (FFi1=1 and FFi9<=4). 
 
 
 *13India.
