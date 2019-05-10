@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Section 73 # R_STOPMFI3 | FII Dataset Documentation</title>
+  <meta name="description" content="Documentation for the FII Datathon dataset">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Section 73 # R_STOPMFI3 | FII Dataset Documentation" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="http://datathonfii.github.io/codebook/" />
+  
+  <meta property="og:description" content="Documentation for the FII Datathon dataset" />
+  <meta name="github-repo" content="FIIDatathon/Codebook" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 73 # R_STOPMFI3 | FII Dataset Documentation" />
+  
+  <meta name="twitter:description" content="Documentation for the FII Datathon dataset" />
+  
+
+<meta name="author" content="Intermedia Survey Institute">
+
+
+<meta name="date" content="2019-04-23">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="r-stopmfi2.html">
+<link rel="next" href="r-stopmfi4.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://datathonfii.github.io/Codebook/" target="blank">FII Dataset Documentation</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="aa-survey-information.html"><a href="aa-survey-information.html"><i class="fa fa-check"></i><b>2</b> AA - Survey Information</a><ul>
+<li class="chapter" data-level="2.1" data-path="aa-survey-information.html"><a href="aa-survey-information.html#serial"><i class="fa fa-check"></i><b>2.1</b> Serial</a></li>
+<li class="chapter" data-level="2.2" data-path="aa-survey-information.html"><a href="aa-survey-information.html#aa1"><i class="fa fa-check"></i><b>2.2</b> AA1</a></li>
+<li class="chapter" data-level="2.3" data-path="aa-survey-information.html"><a href="aa-survey-information.html#aa2"><i class="fa fa-check"></i><b>2.3</b> AA2</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="aa-survey-information.html"><a href="aa-survey-information.html#uganda"><i class="fa fa-check"></i><b>2.3.1</b> Uganda</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="aa-survey-information.html"><a href="aa-survey-information.html#latitude-longitude"><i class="fa fa-check"></i><b>2.4</b> Latitude &amp; Longitude</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="title-goes-here.html"><a href="title-goes-here.html"><i class="fa fa-check"></i><b>3</b> Title Goes Here</a><ul>
+<li class="chapter" data-level="3.1" data-path="title-goes-here.html"><a href="title-goes-here.html#r-markdown"><i class="fa fa-check"></i><b>3.1</b> R Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="title-goes-here.html"><a href="title-goes-here.html#variable-subsection-1"><i class="fa fa-check"></i><b>3.2</b> Variable Subsection 1</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="title-goes-here.html"><a href="title-goes-here.html#bangladesh"><i class="fa fa-check"></i><b>3.2.1</b> Bangladesh</a></li>
+<li class="chapter" data-level="3.2.2" data-path="title-goes-here.html"><a href="title-goes-here.html#kenya"><i class="fa fa-check"></i><b>3.2.2</b> Kenya</a></li>
+<li class="chapter" data-level="3.2.3" data-path="title-goes-here.html"><a href="title-goes-here.html#india"><i class="fa fa-check"></i><b>3.2.3</b> India</a></li>
+<li class="chapter" data-level="3.2.4" data-path="title-goes-here.html"><a href="title-goes-here.html#indonesia"><i class="fa fa-check"></i><b>3.2.4</b> Indonesia</a></li>
+<li class="chapter" data-level="3.2.5" data-path="title-goes-here.html"><a href="title-goes-here.html#nigeria"><i class="fa fa-check"></i><b>3.2.5</b> Nigeria</a></li>
+<li class="chapter" data-level="3.2.6" data-path="title-goes-here.html"><a href="title-goes-here.html#pakistan"><i class="fa fa-check"></i><b>3.2.6</b> Pakistan</a></li>
+<li class="chapter" data-level="3.2.7" data-path="title-goes-here.html"><a href="title-goes-here.html#tanzania"><i class="fa fa-check"></i><b>3.2.7</b> Tanzania</a></li>
+<li class="chapter" data-level="3.2.8" data-path="title-goes-here.html"><a href="title-goes-here.html#uganda-1"><i class="fa fa-check"></i><b>3.2.8</b> Uganda</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="title-goes-here.html"><a href="title-goes-here.html#variable-subsection-2"><i class="fa fa-check"></i><b>3.3</b> Variable Subsection 2</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="title-goes-here.html"><a href="title-goes-here.html#country"><i class="fa fa-check"></i><b>3.3.1</b> Country</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="dg-section-3.html"><a href="dg-section-3.html"><i class="fa fa-check"></i><b>4</b> DG - Section 3</a><ul>
+<li class="chapter" data-level="4.1" data-path="dg-section-3.html"><a href="dg-section-3.html#age"><i class="fa fa-check"></i><b>4.1</b> AGE</a></li>
+<li class="chapter" data-level="4.2" data-path="dg-section-3.html"><a href="dg-section-3.html#age_group"><i class="fa fa-check"></i><b>4.2</b> AGE_GROUP</a></li>
+<li class="chapter" data-level="4.3" data-path="dg-section-3.html"><a href="dg-section-3.html#edu"><i class="fa fa-check"></i><b>4.3</b> EDU</a></li>
+<li class="chapter" data-level="4.4" data-path="dg-section-3.html"><a href="dg-section-3.html#literacy"><i class="fa fa-check"></i><b>4.4</b> LITERACY</a></li>
+<li class="chapter" data-level="4.5" data-path="dg-section-3.html"><a href="dg-section-3.html#numeracy"><i class="fa fa-check"></i><b>4.5</b> NUMERACY</a></li>
+<li class="chapter" data-level="4.6" data-path="dg-section-3.html"><a href="dg-section-3.html#financial_literacy"><i class="fa fa-check"></i><b>4.6</b> FINANCIAL_LITERACY</a></li>
+<li class="chapter" data-level="4.7" data-path="dg-section-3.html"><a href="dg-section-3.html#digital_literacy_index"><i class="fa fa-check"></i><b>4.7</b> DIGITAL_LITERACY_INDEX</a></li>
+<li class="chapter" data-level="4.8" data-path="dg-section-3.html"><a href="dg-section-3.html#gender"><i class="fa fa-check"></i><b>4.8</b> GENDER</a></li>
+<li class="chapter" data-level="4.9" data-path="dg-section-3.html"><a href="dg-section-3.html#marriage"><i class="fa fa-check"></i><b>4.9</b> MARRIAGE</a></li>
+<li class="chapter" data-level="4.10" data-path="dg-section-3.html"><a href="dg-section-3.html#have_children"><i class="fa fa-check"></i><b>4.10</b> HAVE_CHILDREN</a></li>
+<li class="chapter" data-level="4.11" data-path="dg-section-3.html"><a href="dg-section-3.html#school_fee"><i class="fa fa-check"></i><b>4.11</b> SCHOOL_FEE</a></li>
+<li class="chapter" data-level="4.12" data-path="dg-section-3.html"><a href="dg-section-3.html#employment"><i class="fa fa-check"></i><b>4.12</b> EMPLOYMENT</a></li>
+<li class="chapter" data-level="4.13" data-path="dg-section-3.html"><a href="dg-section-3.html#invol_agri"><i class="fa fa-check"></i><b>4.13</b> INVOL_AGRI</a></li>
+<li class="chapter" data-level="4.14" data-path="dg-section-3.html"><a href="dg-section-3.html#own_farm"><i class="fa fa-check"></i><b>4.14</b> OWN_FARM</a></li>
+<li class="chapter" data-level="4.15" data-path="dg-section-3.html"><a href="dg-section-3.html#work_farm"><i class="fa fa-check"></i><b>4.15</b> WORK_FARM</a></li>
+<li class="chapter" data-level="4.16" data-path="dg-section-3.html"><a href="dg-section-3.html#sell_crop"><i class="fa fa-check"></i><b>4.16</b> SELL_CROP</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="financial-inclusion.html"><a href="financial-inclusion.html"><i class="fa fa-check"></i><b>5</b> Financial inclusion</a><ul>
+<li class="chapter" data-level="5.1" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_financial_all"><i class="fa fa-check"></i><b>5.1</b> ACCESS_FINANCIAL_ALL</a></li>
+<li class="chapter" data-level="5.2" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_financial"><i class="fa fa-check"></i><b>5.2</b> ACCESS_FINANCIAL</a></li>
+<li class="chapter" data-level="5.3" data-path="financial-inclusion.html"><a href="financial-inclusion.html#fi"><i class="fa fa-check"></i><b>5.3</b> FI</a></li>
+<li class="chapter" data-level="5.4" data-path="financial-inclusion.html"><a href="financial-inclusion.html#active_financial"><i class="fa fa-check"></i><b>5.4</b> ACTIVE_FINANCIAL</a></li>
+<li class="chapter" data-level="5.5" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_dfs"><i class="fa fa-check"></i><b>5.5</b> ACCESS_DFS</a></li>
+<li class="chapter" data-level="5.6" data-path="financial-inclusion.html"><a href="financial-inclusion.html#registered_dfs"><i class="fa fa-check"></i><b>5.6</b> REGISTERED_DFS</a></li>
+<li class="chapter" data-level="5.7" data-path="financial-inclusion.html"><a href="financial-inclusion.html#active_dfs"><i class="fa fa-check"></i><b>5.7</b> ACTIVE_DFS</a></li>
+<li class="chapter" data-level="5.8" data-path="financial-inclusion.html"><a href="financial-inclusion.html#active_dfs_adv"><i class="fa fa-check"></i><b>5.8</b> ACTIVE_DFS_ADV</a></li>
+<li class="chapter" data-level="5.9" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_dfs_payment_transfer"><i class="fa fa-check"></i><b>5.9</b> ACCESS_DFS_PAYMENT_TRANSFER</a></li>
+<li class="chapter" data-level="5.10" data-path="financial-inclusion.html"><a href="financial-inclusion.html#advanced_active_financial"><i class="fa fa-check"></i><b>5.10</b> ADVANCED_ACTIVE_FINANCIAL</a></li>
+<li class="chapter" data-level="5.11" data-path="financial-inclusion.html"><a href="financial-inclusion.html#advanced_active_financial30"><i class="fa fa-check"></i><b>5.11</b> ADVANCED_ACTIVE_FINANCIAL30</a></li>
+<li class="chapter" data-level="5.12" data-path="financial-inclusion.html"><a href="financial-inclusion.html#financial_stage"><i class="fa fa-check"></i><b>5.12</b> FINANCIAL_STAGE</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bank-section-6.html"><a href="bank-section-6.html"><i class="fa fa-check"></i><b>6</b> Bank - Section 6</a><ul>
+<li class="chapter" data-level="6.1" data-path="bank-section-6.html"><a href="bank-section-6.html#access_bank"><i class="fa fa-check"></i><b>6.1</b> ACCESS_BANK</a></li>
+<li class="chapter" data-level="6.2" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_bank"><i class="fa fa-check"></i><b>6.2</b> REGISTERED_BANK</a></li>
+<li class="chapter" data-level="6.3" data-path="bank-section-6.html"><a href="bank-section-6.html#active_bank"><i class="fa fa-check"></i><b>6.3</b> ACTIVE_BANK</a></li>
+<li class="chapter" data-level="6.4" data-path="bank-section-6.html"><a href="bank-section-6.html#literacy-1"><i class="fa fa-check"></i><b>6.4</b> LITERACY</a></li>
+<li class="chapter" data-level="6.5" data-path="bank-section-6.html"><a href="bank-section-6.html#numeracy-1"><i class="fa fa-check"></i><b>6.5</b> NUMERACY</a></li>
+<li class="chapter" data-level="6.6" data-path="bank-section-6.html"><a href="bank-section-6.html#financial_literacy-1"><i class="fa fa-check"></i><b>6.6</b> FINANCIAL_LITERACY</a></li>
+<li class="chapter" data-level="6.7" data-path="bank-section-6.html"><a href="bank-section-6.html#digital_literacy_index-1"><i class="fa fa-check"></i><b>6.7</b> DIGITAL_LITERACY_INDEX</a></li>
+<li class="chapter" data-level="6.8" data-path="bank-section-6.html"><a href="bank-section-6.html#gender-1"><i class="fa fa-check"></i><b>6.8</b> GENDER</a></li>
+<li class="chapter" data-level="6.9" data-path="bank-section-6.html"><a href="bank-section-6.html#marriage-1"><i class="fa fa-check"></i><b>6.9</b> MARRIAGE</a></li>
+<li class="chapter" data-level="6.10" data-path="bank-section-6.html"><a href="bank-section-6.html#have_children-1"><i class="fa fa-check"></i><b>6.10</b> HAVE_CHILDREN</a></li>
+<li class="chapter" data-level="6.11" data-path="bank-section-6.html"><a href="bank-section-6.html#school_fee-1"><i class="fa fa-check"></i><b>6.11</b> SCHOOL_FEE</a></li>
+<li class="chapter" data-level="6.12" data-path="bank-section-6.html"><a href="bank-section-6.html#employment-1"><i class="fa fa-check"></i><b>6.12</b> EMPLOYMENT</a></li>
+<li class="chapter" data-level="6.13" data-path="bank-section-6.html"><a href="bank-section-6.html#invol_agri-1"><i class="fa fa-check"></i><b>6.13</b> INVOL_AGRI</a></li>
+<li class="chapter" data-level="6.14" data-path="bank-section-6.html"><a href="bank-section-6.html#own_farm-1"><i class="fa fa-check"></i><b>6.14</b> OWN_FARM</a></li>
+<li class="chapter" data-level="6.15" data-path="bank-section-6.html"><a href="bank-section-6.html#work_farm-1"><i class="fa fa-check"></i><b>6.15</b> WORK_FARM</a></li>
+<li class="chapter" data-level="6.16" data-path="bank-section-6.html"><a href="bank-section-6.html#sell_crop-1"><i class="fa fa-check"></i><b>6.16</b> SELL_CROP</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="access-nbfi.html"><a href="access-nbfi.html"><i class="fa fa-check"></i><b>7</b> # ACCESS_NBFI</a></li>
+<li class="chapter" data-level="8" data-path="access-nbfi-all.html"><a href="access-nbfi-all.html"><i class="fa fa-check"></i><b>8</b> # ACCESS_NBFI_ALL</a></li>
+<li class="chapter" data-level="9" data-path="registered-nbfi.html"><a href="registered-nbfi.html"><i class="fa fa-check"></i><b>9</b> # REGISTERED_NBFI</a></li>
+<li class="chapter" data-level="10" data-path="registered-nbfi-all.html"><a href="registered-nbfi-all.html"><i class="fa fa-check"></i><b>10</b> # REGISTERED_NBFI_ALL</a></li>
+<li class="chapter" data-level="11" data-path="reg-dfs-nbfi.html"><a href="reg-dfs-nbfi.html"><i class="fa fa-check"></i><b>11</b> # REG_DFS_NBFI</a></li>
+<li class="chapter" data-level="12" data-path="active-nbfi.html"><a href="active-nbfi.html"><i class="fa fa-check"></i><b>12</b> # ACTIVE_NBFI</a></li>
+<li class="chapter" data-level="13" data-path="active-nbfi-all.html"><a href="active-nbfi-all.html"><i class="fa fa-check"></i><b>13</b> # ACTIVE_NBFI_ALL</a></li>
+<li class="chapter" data-level="14" data-path="active30-nbfi.html"><a href="active30-nbfi.html"><i class="fa fa-check"></i><b>14</b> # ACTIVE30_NBFI</a></li>
+<li class="chapter" data-level="15" data-path="inactive-nbfi.html"><a href="inactive-nbfi.html"><i class="fa fa-check"></i><b>15</b> # INACTIVE_NBFI</a></li>
+<li class="chapter" data-level="16" data-path="dormant-nbfi.html"><a href="dormant-nbfi.html"><i class="fa fa-check"></i><b>16</b> # DORMANT_NBFI</a></li>
+<li class="chapter" data-level="17" data-path="otc-nbfi.html"><a href="otc-nbfi.html"><i class="fa fa-check"></i><b>17</b> # OTC_NBFI</a></li>
+<li class="chapter" data-level="18" data-path="nbfi-basic.html"><a href="nbfi-basic.html"><i class="fa fa-check"></i><b>18</b> # NBFI_BASIC</a></li>
+<li class="chapter" data-level="19" data-path="nbfi-adv.html"><a href="nbfi-adv.html"><i class="fa fa-check"></i><b>19</b> # NBFI_ADV</a></li>
+<li class="chapter" data-level="20" data-path="reg-nbfi-basic.html"><a href="reg-nbfi-basic.html"><i class="fa fa-check"></i><b>20</b> # REG_NBFI_BASIC</a></li>
+<li class="chapter" data-level="21" data-path="reg-nbf-adv.html"><a href="reg-nbf-adv.html"><i class="fa fa-check"></i><b>21</b> # REG_NBF_ADV</a></li>
+<li class="chapter" data-level="22" data-path="active-nbfi-basic.html"><a href="active-nbfi-basic.html"><i class="fa fa-check"></i><b>22</b> # ACTIVE_NBFI_BASIC</a></li>
+<li class="chapter" data-level="23" data-path="active-nbfi-adv.html"><a href="active-nbfi-adv.html"><i class="fa fa-check"></i><b>23</b> # ACTIVE_NBFI_ADV</a></li>
+<li class="chapter" data-level="24" data-path="active30-nbfi-adv.html"><a href="active30-nbfi-adv.html"><i class="fa fa-check"></i><b>24</b> # ACTIVE30_NBFI_ADV</a></li>
+<li class="chapter" data-level="25" data-path="nbfi-stage.html"><a href="nbfi-stage.html"><i class="fa fa-check"></i><b>25</b> # NBFI_STAGE</a></li>
+<li class="chapter" data-level="26" data-path="access-mfi.html"><a href="access-mfi.html"><i class="fa fa-check"></i><b>26</b> # ACCESS_MFI</a></li>
+<li class="chapter" data-level="27" data-path="registered-mfi.html"><a href="registered-mfi.html"><i class="fa fa-check"></i><b>27</b> # REGISTERED_MFI</a></li>
+<li class="chapter" data-level="28" data-path="active-mfi.html"><a href="active-mfi.html"><i class="fa fa-check"></i><b>28</b> # ACTIVE_MFI</a></li>
+<li class="chapter" data-level="29" data-path="access-coop.html"><a href="access-coop.html"><i class="fa fa-check"></i><b>29</b> # ACCESS_COOP</a></li>
+<li class="chapter" data-level="30" data-path="registered-coop.html"><a href="registered-coop.html"><i class="fa fa-check"></i><b>30</b> # REGISTERED_COOP</a></li>
+<li class="chapter" data-level="31" data-path="active-coop.html"><a href="active-coop.html"><i class="fa fa-check"></i><b>31</b> # ACTIVE_COOP</a></li>
+<li class="chapter" data-level="32" data-path="access-post.html"><a href="access-post.html"><i class="fa fa-check"></i><b>32</b> # ACCESS_POST</a></li>
+<li class="chapter" data-level="33" data-path="registered-post.html"><a href="registered-post.html"><i class="fa fa-check"></i><b>33</b> # REGISTERED_POST</a></li>
+<li class="chapter" data-level="34" data-path="active-post.html"><a href="active-post.html"><i class="fa fa-check"></i><b>34</b> # ACTIVE_POST</a></li>
+<li class="chapter" data-level="35" data-path="access-sacco.html"><a href="access-sacco.html"><i class="fa fa-check"></i><b>35</b> # ACCESS_SACCO</a></li>
+<li class="chapter" data-level="36" data-path="registered-sacco.html"><a href="registered-sacco.html"><i class="fa fa-check"></i><b>36</b> # REGISTERED_SACCO</a></li>
+<li class="chapter" data-level="37" data-path="active-sacco.html"><a href="active-sacco.html"><i class="fa fa-check"></i><b>37</b> # ACTIVE_SACCO</a></li>
+<li class="chapter" data-level="38" data-path="access-bpr.html"><a href="access-bpr.html"><i class="fa fa-check"></i><b>38</b> # ACCESS_BPR</a></li>
+<li class="chapter" data-level="39" data-path="registered-bpr.html"><a href="registered-bpr.html"><i class="fa fa-check"></i><b>39</b> # REGISTERED_BPR</a></li>
+<li class="chapter" data-level="40" data-path="active-bpr.html"><a href="active-bpr.html"><i class="fa fa-check"></i><b>40</b> # ACTIVE_BPR</a></li>
+<li class="chapter" data-level="41" data-path="access-pawnshop.html"><a href="access-pawnshop.html"><i class="fa fa-check"></i><b>41</b> # ACCESS_PAWNSHOP</a></li>
+<li class="chapter" data-level="42" data-path="registered-pawnshop.html"><a href="registered-pawnshop.html"><i class="fa fa-check"></i><b>42</b> # REGISTERED_PAWNSHOP</a></li>
+<li class="chapter" data-level="43" data-path="active-pawnshop.html"><a href="active-pawnshop.html"><i class="fa fa-check"></i><b>43</b> # ACTIVE_PAWNSHOP</a></li>
+<li class="chapter" data-level="44" data-path="aware-payment-bank-provider.html"><a href="aware-payment-bank-provider.html"><i class="fa fa-check"></i><b>44</b> # AWARE_PAYMENT_BANK_PROVIDER</a></li>
+<li class="chapter" data-level="45" data-path="access-payment.html"><a href="access-payment.html"><i class="fa fa-check"></i><b>45</b> # ACCESS_PAYMENT</a></li>
+<li class="chapter" data-level="46" data-path="registered-payment.html"><a href="registered-payment.html"><i class="fa fa-check"></i><b>46</b> # REGISTERED_PAYMENT</a></li>
+<li class="chapter" data-level="47" data-path="active-payment.html"><a href="active-payment.html"><i class="fa fa-check"></i><b>47</b> # ACTIVE_PAYMENT</a></li>
+<li class="chapter" data-level="48" data-path="access-group.html"><a href="access-group.html"><i class="fa fa-check"></i><b>48</b> # ACCESS_GROUP</a></li>
+<li class="chapter" data-level="49" data-path="registered-group.html"><a href="registered-group.html"><i class="fa fa-check"></i><b>49</b> # REGISTERED_GROUP</a></li>
+<li class="chapter" data-level="50" data-path="active-group.html"><a href="active-group.html"><i class="fa fa-check"></i><b>50</b> # ACTIVE_GROUP</a></li>
+<li class="chapter" data-level="51" data-path="nbfi-transfer.html"><a href="nbfi-transfer.html"><i class="fa fa-check"></i><b>51</b> # NBFI_TRANSFER</a></li>
+<li class="chapter" data-level="52" data-path="nbfi-merchant.html"><a href="nbfi-merchant.html"><i class="fa fa-check"></i><b>52</b> # NBFI_MERCHANT</a></li>
+<li class="chapter" data-level="53" data-path="nbfi-bill.html"><a href="nbfi-bill.html"><i class="fa fa-check"></i><b>53</b> # NBFI_BILL</a></li>
+<li class="chapter" data-level="54" data-path="nbfi-gov.html"><a href="nbfi-gov.html"><i class="fa fa-check"></i><b>54</b> # NBFI_GOV</a></li>
+<li class="chapter" data-level="55" data-path="nbfi-wage.html"><a href="nbfi-wage.html"><i class="fa fa-check"></i><b>55</b> # NBFI WAGE</a></li>
+<li class="chapter" data-level="56" data-path="nbfi-insurance.html"><a href="nbfi-insurance.html"><i class="fa fa-check"></i><b>56</b> # NBFI_INSURANCE</a></li>
+<li class="chapter" data-level="57" data-path="nbfi-save.html"><a href="nbfi-save.html"><i class="fa fa-check"></i><b>57</b> # NBFI_SAVE</a></li>
+<li class="chapter" data-level="58" data-path="nbfi-invest.html"><a href="nbfi-invest.html"><i class="fa fa-check"></i><b>58</b> # NBFI_INVEST</a></li>
+<li class="chapter" data-level="59" data-path="nbfi-loan.html"><a href="nbfi-loan.html"><i class="fa fa-check"></i><b>59</b> # NBFI_LOAN</a></li>
+<li class="chapter" data-level="60" data-path="nbfi-airtime.html"><a href="nbfi-airtime.html"><i class="fa fa-check"></i><b>60</b> # NBFI_AIRTIME</a></li>
+<li class="chapter" data-level="61" data-path="active-nbfi-transfer.html"><a href="active-nbfi-transfer.html"><i class="fa fa-check"></i><b>61</b> # ACTIVE_NBFI_TRANSFER</a></li>
+<li class="chapter" data-level="62" data-path="active-nbfi-merchant.html"><a href="active-nbfi-merchant.html"><i class="fa fa-check"></i><b>62</b> # ACTIVE_NBFI_MERCHANT</a></li>
+<li class="chapter" data-level="63" data-path="active-nbfi-bill.html"><a href="active-nbfi-bill.html"><i class="fa fa-check"></i><b>63</b> # ACTIVE_NBFI_BILL</a></li>
+<li class="chapter" data-level="64" data-path="active-nbfi-gov.html"><a href="active-nbfi-gov.html"><i class="fa fa-check"></i><b>64</b> # ACTIVE_NBFI_GOV</a></li>
+<li class="chapter" data-level="65" data-path="active-nbfi-wage.html"><a href="active-nbfi-wage.html"><i class="fa fa-check"></i><b>65</b> # ACTIVE_NBFI WAGE</a></li>
+<li class="chapter" data-level="66" data-path="active-nbfi-insurance.html"><a href="active-nbfi-insurance.html"><i class="fa fa-check"></i><b>66</b> # ACTIVE_NBFI_INSURANCE</a></li>
+<li class="chapter" data-level="67" data-path="active-nbfi-save.html"><a href="active-nbfi-save.html"><i class="fa fa-check"></i><b>67</b> # ACTIVE_NBFI_SAVE</a></li>
+<li class="chapter" data-level="68" data-path="active-nbfi-invest.html"><a href="active-nbfi-invest.html"><i class="fa fa-check"></i><b>68</b> # ACTIVE_NBFI_INVEST</a></li>
+<li class="chapter" data-level="69" data-path="active-nbfi-loan.html"><a href="active-nbfi-loan.html"><i class="fa fa-check"></i><b>69</b> # ACTIVE_NBFI_LOAN</a></li>
+<li class="chapter" data-level="70" data-path="active-nbfi-airtime.html"><a href="active-nbfi-airtime.html"><i class="fa fa-check"></i><b>70</b> # ACTIVE_NBFI_AIRTIME</a></li>
+<li class="chapter" data-level="71" data-path="r-stopmfi1.html"><a href="r-stopmfi1.html"><i class="fa fa-check"></i><b>71</b> # R_STOPMFI1</a></li>
+<li class="chapter" data-level="72" data-path="r-stopmfi2.html"><a href="r-stopmfi2.html"><i class="fa fa-check"></i><b>72</b> # R_STOPMFI2</a></li>
+<li class="chapter" data-level="73" data-path="r-stopmfi3.html"><a href="r-stopmfi3.html"><i class="fa fa-check"></i><b>73</b> # R_STOPMFI3</a></li>
+<li class="chapter" data-level="74" data-path="r-stopmfi4.html"><a href="r-stopmfi4.html"><i class="fa fa-check"></i><b>74</b> # R_STOPMFI4</a></li>
+<li class="chapter" data-level="75" data-path="r-stopmfi5.html"><a href="r-stopmfi5.html"><i class="fa fa-check"></i><b>75</b> # R_STOPMFI5</a></li>
+<li class="chapter" data-level="76" data-path="r-stopmfi6.html"><a href="r-stopmfi6.html"><i class="fa fa-check"></i><b>76</b> # R_STOPMFI6</a></li>
+<li class="chapter" data-level="77" data-path="r-stopmfi7.html"><a href="r-stopmfi7.html"><i class="fa fa-check"></i><b>77</b> # R_STOPMFI7</a></li>
+<li class="chapter" data-level="78" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html"><i class="fa fa-check"></i><b>78</b> Informal Financial Groups</a><ul>
+<li class="chapter" data-level="78.1" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#belong_infml"><i class="fa fa-check"></i><b>78.1</b> BELONG_INFML</a><ul>
+<li class="chapter" data-level="78.1.1" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#bangladesh-1"><i class="fa fa-check"></i><b>78.1.1</b> Bangladesh</a></li>
+<li class="chapter" data-level="78.1.2" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#india-1"><i class="fa fa-check"></i><b>78.1.2</b> India</a></li>
+<li class="chapter" data-level="78.1.3" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#indonesia-1"><i class="fa fa-check"></i><b>78.1.3</b> Indonesia</a></li>
+<li class="chapter" data-level="78.1.4" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#nigeria-1"><i class="fa fa-check"></i><b>78.1.4</b> Nigeria</a></li>
+<li class="chapter" data-level="78.1.5" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#pakistan-1"><i class="fa fa-check"></i><b>78.1.5</b> Pakistan</a></li>
+<li class="chapter" data-level="78.1.6" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#tanzania-1"><i class="fa fa-check"></i><b>78.1.6</b> Tanzania</a></li>
+<li class="chapter" data-level="78.1.7" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#uganda-2"><i class="fa fa-check"></i><b>78.1.7</b> Uganda</a></li>
+<li class="chapter" data-level="78.1.8" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#r_infml"><i class="fa fa-check"></i><b>78.1.8</b> R_INFML</a></li>
+</ul></li>
+<li class="chapter" data-level="78.2" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#r_noinfml"><i class="fa fa-check"></i><b>78.2</b> R_NOINFML</a><ul>
+<li class="chapter" data-level="78.2.1" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#bangladesh-2"><i class="fa fa-check"></i><b>78.2.1</b> Bangladesh</a></li>
+<li class="chapter" data-level="78.2.2" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#infml_service"><i class="fa fa-check"></i><b>78.2.2</b> INFML_SERVICE</a></li>
+<li class="chapter" data-level="78.2.3" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#bangladesh-3"><i class="fa fa-check"></i><b>78.2.3</b> Bangladesh</a></li>
+</ul></li>
+<li class="chapter" data-level="78.3" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#income_earner"><i class="fa fa-check"></i><b>78.3</b> INCOME_EARNER</a></li>
+<li class="chapter" data-level="78.4" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#main_earner"><i class="fa fa-check"></i><b>78.4</b> MAIN_EARNER</a></li>
+<li class="chapter" data-level="78.5" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_situation"><i class="fa fa-check"></i><b>78.5</b> FIN_SITUATION</a></li>
+<li class="chapter" data-level="78.6" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_att1"><i class="fa fa-check"></i><b>78.6</b> FIN_ATT1</a></li>
+<li class="chapter" data-level="78.7" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_att2"><i class="fa fa-check"></i><b>78.7</b> FIN_ATT2</a></li>
+<li class="chapter" data-level="78.8" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_att3"><i class="fa fa-check"></i><b>78.8</b> FIN_ATT3</a></li>
+<li class="chapter" data-level="78.9" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_att4"><i class="fa fa-check"></i><b>78.9</b> FIN_ATT4</a></li>
+<li class="chapter" data-level="78.10" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_att5"><i class="fa fa-check"></i><b>78.10</b> FIN_ATT5</a></li>
+<li class="chapter" data-level="78.11" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_att6"><i class="fa fa-check"></i><b>78.11</b> FIN_ATT6</a></li>
+<li class="chapter" data-level="78.12" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_att7"><i class="fa fa-check"></i><b>78.12</b> FIN_ATT7</a></li>
+<li class="chapter" data-level="78.13" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#sch_fee_prb1"><i class="fa fa-check"></i><b>78.13</b> SCH_FEE_PRB1</a></li>
+<li class="chapter" data-level="78.14" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#sch_fee_prb2"><i class="fa fa-check"></i><b>78.14</b> SCH_FEE_PRB2</a></li>
+<li class="chapter" data-level="78.15" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#sch_fee_prb3"><i class="fa fa-check"></i><b>78.15</b> SCH_FEE_PRB3</a></li>
+<li class="chapter" data-level="78.16" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#sch_fee_prb4"><i class="fa fa-check"></i><b>78.16</b> SCH_FEE_PRB4</a></li>
+<li class="chapter" data-level="78.17" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#sch_fee_prb5"><i class="fa fa-check"></i><b>78.17</b> SCH_FEE_PRB5</a></li>
+<li class="chapter" data-level="78.18" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#have_plan"><i class="fa fa-check"></i><b>78.18</b> HAVE_PLAN</a></li>
+<li class="chapter" data-level="78.19" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#follow_plan"><i class="fa fa-check"></i><b>78.19</b> FOLLOW_PLAN</a></li>
+<li class="chapter" data-level="78.20" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#eco_vul"><i class="fa fa-check"></i><b>78.20</b> ECO_VUL</a></li>
+<li class="chapter" data-level="78.21" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_shock"><i class="fa fa-check"></i><b>78.21</b> FIN_SHOCK</a></li>
+<li class="chapter" data-level="78.22" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#budget_income"><i class="fa fa-check"></i><b>78.22</b> BUDGET_INCOME</a></li>
+<li class="chapter" data-level="78.23" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#budget_stay"><i class="fa fa-check"></i><b>78.23</b> BUDGET_STAY</a></li>
+<li class="chapter" data-level="78.24" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea1"><i class="fa fa-check"></i><b>78.24</b> FIN_HEA1</a></li>
+<li class="chapter" data-level="78.25" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea2"><i class="fa fa-check"></i><b>78.25</b> FIN_HEA2</a></li>
+<li class="chapter" data-level="78.26" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea3"><i class="fa fa-check"></i><b>78.26</b> FIN_HEA3</a></li>
+<li class="chapter" data-level="78.27" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea4"><i class="fa fa-check"></i><b>78.27</b> FIN_HEA4</a></li>
+<li class="chapter" data-level="78.28" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea5"><i class="fa fa-check"></i><b>78.28</b> FIN_HEA5</a></li>
+<li class="chapter" data-level="78.29" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea6"><i class="fa fa-check"></i><b>78.29</b> FIN_HEA6</a></li>
+<li class="chapter" data-level="78.30" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea7"><i class="fa fa-check"></i><b>78.30</b> FIN_HEA7</a></li>
+<li class="chapter" data-level="78.31" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea8"><i class="fa fa-check"></i><b>78.31</b> FIN_HEA8</a></li>
+<li class="chapter" data-level="78.32" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea9"><i class="fa fa-check"></i><b>78.32</b> FIN_HEA9</a></li>
+<li class="chapter" data-level="78.33" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_hea10"><i class="fa fa-check"></i><b>78.33</b> FIN_HEA10</a></li>
+<li class="chapter" data-level="78.34" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_sho1"><i class="fa fa-check"></i><b>78.34</b> FIN_SHO1</a></li>
+<li class="chapter" data-level="78.35" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_sho2"><i class="fa fa-check"></i><b>78.35</b> FIN_SHO2</a></li>
+<li class="chapter" data-level="78.36" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_sho3"><i class="fa fa-check"></i><b>78.36</b> FIN_SHO3</a></li>
+<li class="chapter" data-level="78.37" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_sho4"><i class="fa fa-check"></i><b>78.37</b> FIN_SHO4</a></li>
+<li class="chapter" data-level="78.38" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_sho5"><i class="fa fa-check"></i><b>78.38</b> FIN_SHO5</a></li>
+<li class="chapter" data-level="78.39" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_sho6"><i class="fa fa-check"></i><b>78.39</b> FIN_SHO6</a></li>
+<li class="chapter" data-level="78.40" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_sho7"><i class="fa fa-check"></i><b>78.40</b> FIN_SHO7</a></li>
+<li class="chapter" data-level="78.41" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#fin_sho8"><i class="fa fa-check"></i><b>78.41</b> FIN_SHO8</a></li>
+<li class="chapter" data-level="78.42" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou1"><i class="fa fa-check"></i><b>78.42</b> MONEY_SOU1</a></li>
+<li class="chapter" data-level="78.43" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou2"><i class="fa fa-check"></i><b>78.43</b> MONEY_SOU2</a></li>
+<li class="chapter" data-level="78.44" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou3"><i class="fa fa-check"></i><b>78.44</b> MONEY_SOU3</a></li>
+<li class="chapter" data-level="78.45" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou4"><i class="fa fa-check"></i><b>78.45</b> MONEY_SOU4</a></li>
+<li class="chapter" data-level="78.46" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou5"><i class="fa fa-check"></i><b>78.46</b> MONEY_SOU5</a></li>
+<li class="chapter" data-level="78.47" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou6"><i class="fa fa-check"></i><b>78.47</b> MONEY_SOU6</a></li>
+<li class="chapter" data-level="78.48" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou7"><i class="fa fa-check"></i><b>78.48</b> MONEY_SOU7</a></li>
+<li class="chapter" data-level="78.49" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou8"><i class="fa fa-check"></i><b>78.49</b> MONEY_SOU8</a></li>
+<li class="chapter" data-level="78.50" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou9"><i class="fa fa-check"></i><b>78.50</b> MONEY_SOU9</a></li>
+<li class="chapter" data-level="78.51" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#money_sou10"><i class="fa fa-check"></i><b>78.51</b> MONEY_SOU10</a></li>
+<li class="chapter" data-level="78.52" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#expense1"><i class="fa fa-check"></i><b>78.52</b> EXPENSE1</a></li>
+<li class="chapter" data-level="78.53" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#expense2"><i class="fa fa-check"></i><b>78.53</b> EXPENSE2</a></li>
+<li class="chapter" data-level="78.54" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#expense3"><i class="fa fa-check"></i><b>78.54</b> EXPENSE3</a></li>
+</ul></li>
+<li class="chapter" data-level="79" data-path="economic-empowerment-section-16.html"><a href="economic-empowerment-section-16.html"><i class="fa fa-check"></i><b>79</b> Economic Empowerment Section 16</a></li>
+<li class="chapter" data-level="80" data-path="financial-access-distance-section-17.html"><a href="financial-access-distance-section-17.html"><i class="fa fa-check"></i><b>80</b> Financial Access: Distance. Section 17</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">FII Dataset Documentation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="r_stopmfi3" class="section level1">
+<h1><span class="header-section-number">Section 73</span> # R_STOPMFI3</h1>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="r-stopmfi2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="r-stopmfi4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
