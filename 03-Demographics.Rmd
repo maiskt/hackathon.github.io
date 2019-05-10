@@ -44,8 +44,8 @@ Demographics
 
   Question Index  |                       Question
   ----------------|-------------------------------------------------------------
-      LN1A        |  Can you read this text for me, please? (Reading)
-      LN1B        |  Can you read this text for me, please? (Understanding)
+      LN1A        |  Reading ability
+      LN1B        |  Reading comprehension 
       LN2_1       |  On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Reading in [questionnaire language]
       LN2_2       |  On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Writing in [questionnaire language]
 * Levels 
