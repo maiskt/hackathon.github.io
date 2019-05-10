@@ -4,14 +4,14 @@ Demographics
 
 ## AGE
 
-* Description: Respondent age, derived from born year and survey year
+* Description: Respondent's age, derived from birth year and survey year
 * Note: 
        + These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
        + Coded missing value into DK=-2.
 
 ## AGE_GROUP
 
-* Description: Age groups, grouping respondent age every 10 years
+* Description: 10 year age group, derived from AGE
 * Levels 
        + 15-24
        + 25-34
@@ -40,7 +40,7 @@ Demographics
 
 ## LITERACY
 
-* Description: Literacy, derived from literal evaluation from surveyors and repondents themselves. Take Kenya 2017 as an example, LN1A and LN1B show evaluation from surveyors. LN2_1 and LN2_2 show evaluation from respondents themselves.
+* Description: Literacy, derived from literary questions. For example, for Kenya 2017, LN1A and LN1B show evaluation from surveyors. LN2_1 and LN2_2 show evaluation from respondents themselves.
 
   Question Index  |                       Question
   ----------------|-------------------------------------------------------------
