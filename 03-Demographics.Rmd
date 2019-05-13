@@ -119,7 +119,7 @@ Demographics
 
 ## MARRIAGE
 
-* Description: Respondent Marital status
+* Description: Respondent's Marital status
 * Levels 
        + Single/never married
        + Married
@@ -133,7 +133,7 @@ Demographics
 
 ## HAVE_CHILDREN
 
-* Description: HAVE_CHILDREN is about whether households contain children under 18 years of age. For 2017 and 2018 surveys, this information was derived from the household roster which listed all household members with their individual characteristics including their ages For 2016 and 2015 surveys, it is derived from the following 2 questions: 
+* Description: HAVE_CHILDREN specifies whether households contain children under 18 years of age. For 2017 and 2018 surveys, this information was derived from the household roster which listed all household members with their individual characteristics including their ages. For 2016 and 2015 surveys, it was derived from the following 2 questions: 
 
 Question Index    |                       Question
   ----------------|-------------------------------------------------------------
@@ -145,12 +145,12 @@ Question Index    |                       Question
        + Yes
        + No
 * Note:
-       + No household information avialable for 2017 Pakistan.
+       + No household information available for 2017 Pakistan.
        + Questions about children were not collected in 2013 and 2014 surveys.
        
 ## SCHOOL_FEE
 
-* Description: Respondent has ever paid school fee or not, derived from two types of questions base on different years.
+* Description: Respondent has ever paid school fee or not, derived from two types of questions depending on the survey year.
 
 Year              |                       Question
   ----------------|-------------------------------------------------------------
@@ -161,7 +161,7 @@ Year              |                       Question
        + Yes
        + No
 * Note:
-       + 2013, 2014 and 2017 survey does not include questions about school fee payment.
+       + 2013, 2014 and 2017 surveys didn't include questions on school fee.
 
 ## EMPLOYMENT
 
@@ -183,11 +183,11 @@ Year              |                       Question
        
 * Note:
        + Pakistan(2015) has one more category "Landlord", which is recoded into "Other".
-       + 2013 survey does not include this quesion.
+       + 2013 surveys didn't include this quesion.
        
 ## INVOL_AGRI
 
-* Description: Respondent include one of following features: be a farmer or farm worker, respondents or their family own a farm, got money from any farming activities in the past 12 monthes. Take Bangladesh 2018 as an example, INVOL_AGRI are derived from following quesions.
+* Description: Specifies whether respondents are involved in agriculture. Derived from questions about respondent's primary job (farmer or farm worker), household's ownership of a farm, or income from any farming activities in the past 12 monthes. For example, for the 2018 Bangladesh survey, INVOL_AGRI was derived from the following questions.
 
 Question Index    |                       Question
   ----------------|-------------------------------------------------------------
@@ -199,9 +199,6 @@ Question Index    |                       Question
        + Yes
        + No
        
-* Note:
-       + For 2018 and 2017, only 1 option is correlated with farm in DL4 set questions. But for 2016 and 2015, serveral options are correlated with farm in DL4 set questions.
-       + For Bangladesh 2015, only 1 option is correlated with farm in DL4 set questions, which is different ftom other countries in 2015. Need confirm.
        
 ## OWN_FARM
 
@@ -212,29 +209,29 @@ Question Index    |                       Question
        + No
        
 * Note:
-       + 2013 and 2014 surveys do not include this quesion.
+       + 2013 and 2014 surveys didn't include this quesion.
 
 ## WORK_FARM
 
-* Description: Respondents work on the farm that someone in their household owned or leased, derived from DL7.
+* Description: Respondents work on the farm that someone in their household owns or leases, derived from DL7.
 
 * Levels 
        + Yes
        + No
        
 * Note:
-       + 2013 and 2014 surveys do not include this quesion.
+       + 2013 and 2014 surveys didn't include this question.
        
 ## SELL_CROP
 
-* Description: Respondents sell products of agriculture or rearing livestock, derived from DL4 set quesions.
+* Description: Respondents sell agricultural products or livestock reared, derived from DL4 set quesions.
 
 * Levels 
        + Yes
        + No
        
 * Note:
-       + 2013 and 2014 surveys do not include this quesion.
+       + 2013 and 2014 surveys didn't include this quesion.
 
        
 ```{r setup, include=FALSE}
