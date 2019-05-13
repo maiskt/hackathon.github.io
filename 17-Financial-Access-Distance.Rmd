@@ -1,12 +1,12 @@
-# Financial Access: Distance. Section 17
+# Financial Service Distance
 
-##POS
-##BBKM
-##ATMKM
-##MMKM
-##BAKM
-##RSKM
-##MFIKM
-##GRPKM
-##INFMLKM
-##POSTKM
+## POS
+## BBKM
+## ATMKM
+## MMKM
+## BAKM
+## RSKM
+## MFIKM
+## GRPKM
+## INFMLKM
+## POSTKM

@@ -4,14 +4,14 @@ Demographics
 
 ## AGE
 
-* Description: Respondent age, derived from born year and survey year
+* Description: Respondent's age, derived from birth year and survey year
 * Note: 
        + These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
        + Coded missing value into DK=-2.
 
 ## AGE_GROUP
 
-* Description: Age groups, grouping respondent age every 10 years
+* Description: 10 year age group, derived from AGE
 * Levels 
        + 15-24
        + 25-34
@@ -40,7 +40,7 @@ Demographics
 
 ## LITERACY
 
-* Description: Literacy, derived from literal evaluation from surveyors and repondents themselves. Take Kenya 2017 as an example, LN1A and LN1B show evaluation from surveyors. LN2_1 and LN2_2 show evaluation from respondents themselves.
+* Description: Literacy, derived from literary questions. For example, for Kenya 2017, LN1A and LN1B show evaluation from surveyors. LN2_1 and LN2_2 show evaluation from respondents themselves.
 
   Question Index  |                       Question
   ----------------|-------------------------------------------------------------
@@ -55,7 +55,7 @@ Demographics
        
 ## NUMERACY
 
-* Description: Numeracy, derived from 4 basic calculation questions. Take Bangladesh 2018 as an example. If respondents can answer one of these 4 questions, respondents will be defined as "having basic numeracy". 
+* Description: Numeracy, derived from 4 questions. For example for Bangladesh 2018, a respondent who can answer one of the 4 following questions will be considered as "having basic numeracy skills". 
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -69,7 +69,7 @@ Demographics
        
 ## FINANCIAL_LITERACY
 
-* Description: Financial literacy, derived from 5 basic calculation questions. Take Bangladesh 2018 as an example. Basing on the answer of these 5 questions, respondent will have a score respectively. Respondents who have 3 or more than 3 scores will be dedined as "having financial literacy". 
+* Description: Financial literacy, derived from 5 questions. For example for Take Bangladesh 2018 as an example. Basing on the answer of these 5 questions, respondent will have a score respectively. Respondents who have 3 or more than 3 scores will be dedined as "having financial literacy". 
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
