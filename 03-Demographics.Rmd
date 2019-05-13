@@ -40,7 +40,7 @@ Demographics
 
 ## LITERACY
 
-* Description: Literacy, derived from literary questions. For example, Kenya 2017 uses the following questions.
+* Description: Literacy, derived from literary questions. For example, Kenya 2017 uses the following questions. Respondents ae considered as having basic literacy skills if they can write or read with understanding in the survey language. 
 
   Question Index  |                       Question
   ----------------|-------------------------------------------------------------
@@ -71,7 +71,7 @@ Demographics
        
 ## FINANCIAL_LITERACY
 
-* Description: Financial literacy, derived from 5 questions. For example Bangladesh 2018 uses the following 5 questions. For each correct answer, the first 3 questions are each assigned 1 point and the last 2 questions are assigned each 0.5 point.  Respondents with a score of 3 points or more are considered to be financial literate. 
+* Description: Financial literacy, derived from 5 questions. For example Bangladesh 2018 uses the following 5 questions. For each correct answer, the first 3 questions are each assigned 1 point and the last 2 questions are assigned each 0.5 point.  Respondents with a score of 3 points or more are considered to be financially literate. 
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -88,7 +88,7 @@ Demographics
 
 ## DIGITAL_LITERACY_INDEX
 
-* Description: Digital literacy index, derived from questions about phone usage and activities. Take Banglsdesh 2018 as a example. If respondent never use a mobile phone(MT2, MT7), respondents will be defined as "no digital literacy". If respondent only use mobile phone for calling(MT17_1, MT17_2), respondents will be defined as "low digital literacy". If respondent also use mobile phone for texting(MT17_3), respondents will be defined as "moderate digital literacy". If respondent also use mobile phone for advance activities(MT17_4-MT17_9), respondents will be defined as "high digital literacy".
+* Description: Digital literacy index, derived from questions on mobile phone ownership and usage. Using Bangladesh 2018 as an example, respondents who never use a mobile phone(MT2, MT7) are defined as having "no digital literacy" skills. Respondents who only use a mobile phone to make or receive a call(MT17_1, MT17_2) have "low digital literacy" skills.  Respondents who also use a mobile phone for texting(MT17_3) have "moderate digital literacy" skills. Respondents who also use a mobile phone for advanced activities(MT17_4-MT17_9) have "high digital literacy" skills.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -99,8 +99,8 @@ Demographics
       MT17_3      |  When was the last time you used a mobile phone to do the following? Send or receive a text message
       MT17_4      |  When was the last time you used a mobile phone to do the following? Search the internet
       MT17_5      |  When was the last time you used a mobile phone to do the following? Download music, video or games
-      MT17_6      |  When was the last time you used a mobile phone to do the following? Make a financial transaction such as send or receive money, or make a payment, or a bank transaction
-      MT17_7      |  When was the last time you used a mobile phone to do the following? Use Facebook, WhatsApp, Twitter, Instagram or another social networking application
+      MT17_6      |  When was the last time you used a mobile phone to do the following? Make a financial transaction such as send or                        receive money, or make a payment, or a bank transaction
+      MT17_7      |  When was the last time you used a mobile phone to do the following? Use Facebook, WhatsApp, Twitter, Instagram or                        another social networking application
       MT17_9      |  When was the last time you used a mobile phone to do the following? Download an application
 * Levels 
        + Not applicable
@@ -108,18 +108,18 @@ Demographics
        + Moderate
        + High
 * Note:
-       + Digital literacy questions only are only captured in several countries for 2013 including Kenya, Uganda, Tanzania and India.
+       + Digital literacy questions are only available for 2013 Kenya, Uganda, Tanzania and India surveys.
        
 ## GENDER
 
-* Description: Gender for respondent
+* Description: Gender of the respondent
 * Levels 
        + Male
        + Female
 
 ## MARRIAGE
 
-* Description: Marriage status for respondent
+* Description: Respondent Marital status
 * Levels 
        + Single/never married
        + Married
@@ -129,23 +129,24 @@ Demographics
        + Other
        + DK
 * Note:
-       + Pakistan(2017,2016,2015), Bangladesh(2017,2016,2015,2014,2013) do not have category "Living together/Cohabiting".
-       + There is no data in category "Living together/Cohabiting" for Pakistan(2013) .
+       + There is no data for the "Living together/Cohabiting" category in Pakistan and Bangladesh.
 
 ## HAVE_CHILDREN
 
-* Description: HAVE_CHILDREN shows whether there is child(under 18 years old) in Houldhold. For 2017 and 2018, it derives from household information section which include ages for each family members. For 2016 and 2015, it derives from two questions about children's age.
+* Description: HAVE_CHILDREN is about whether households contain children under 18 years of age. For 2017 and 2018 surveys, this information was derived from the household roster which listed all household members with their individual characteristics including their ages For 2016 and 2015 surveys, it is derived from the following 2 questions: 
 
 Question Index    |                       Question
   ----------------|-------------------------------------------------------------
-      DG8B        |  How many adults and children do you have in the household? (999 for DK/Refused): Number of children (boys) (Below 18 years)
-      DGBC        |  How many adults and children do you have in the household? (999 for DK/Refused): Number of children (girls) (Below 18 years)
+      DG8B        |  How many adults and children do you have in the household? (999 for DK/Refused): 
+                     Number of children (boys) (Below 18 years)
+      DGBC        |  How many adults and children do you have in the household? (999 for DK/Refused): 
+                     Number of children (girls) (Below 18 years)
 * Levels 
        + Yes
        + No
 * Note:
-       + No houldhold informations in Paksitan 2017, need comfirm.
-       + Questions about children are not collected in 2013 and 2014 survey.
+       + No household information avialable for 2017 Pakistan.
+       + Questions about children were not collected in 2013 and 2014 surveys.
        
 ## SCHOOL_FEE
 
