@@ -1,6 +1,8 @@
 ﻿* Encoding: UTF-8.
-*18Bangladesh.
+
 *Section 3.
+**************************************************************************************************************************************************.
+*18Bangladesh.
 compute YEAR=2018.
 compute COUNTRY=Bangladesh.
 
@@ -37,15 +39,18 @@ compute GENDER=dg2.
 
 compute MARRIAGE=dg3.
 
+*Review.
 count HAVE_CHILDREN=I_1_D3 I_2_D3 I_3_D3 I_4_D3 I_5_D3 I_6_D3 I_7_D3 I_8_D3 I_9_D3 I_10_D3 I_11_D3 I_12_D3
 I_13_D3 I_14_D3 I_15_D3 I_16_D3 I_17_D3 I_18_D3 I_19_D3 I_20_D3 I_21_D3 I_22_D3 I_23_D3 I_24_D3 I_25_D3(0 thru 17).
 recode HAVE_CHILDREN (1 thru highest=1).
 
+*Review.
 compute SCHOOL_FEE=0.
 if ad4=1 SCHOOL_FEE=1.
 
 compute EMPLOYMENT=dl1.
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or DL4_1=1 INVOL_AGRI=1.
 
@@ -57,9 +62,8 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *18India.
-*Section 3.
 compute YEAR=2018.
 compute COUNTRY=India.
 
@@ -96,15 +100,18 @@ compute GENDER=dg2.
 
 compute MARRIAGE=dg3.
 
+*Review.
 count HAVE_CHILDREN=I_1_D3 I_2_D3 I_3_D3 I_4_D3 I_5_D3 I_6_D3 I_7_D3 I_8_D3 I_9_D3 I_10_D3 I_11_D3 I_12_D3
 I_13_D3 I_14_D3 I_15_D3 I_16_D3 I_17_D3 I_18_D3 I_19_D3 I_20_D3 I_21_D3 I_22_D3 I_23_D3 I_24_D3 I_25_D3(0 thru 17).
 recode HAVE_CHILDREN (1 thru highest=1).
 
+*Review.
 compute SCHOOL_FEE=0.
 if ad4=1 SCHOOL_FEE=1.
 
 compute EMPLOYMENT=dl1.
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or DL4_1=1 INVOL_AGRI=1.
 
@@ -116,7 +123,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *17Bangladesh.
 *Section 3.
 compute YEAR=2017.
@@ -155,13 +162,18 @@ compute GENDER=dg2.
 compute MARRIAGE=dg3.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(96=96)(99=-2).
 
+*Review.
 count HAVE_CHILDREN=I_1_HH2_2 I_2_HH2_2 I_3_HH2_2 I_4_HH2_2 I_5_HH2_2 I_6_HH2_2 
 I_7_HH2_2 I_8_HH2_2 I_9_HH2_2 I_10_HH2_2(0 thru 17).
 recode HAVE_CHILDREN (1 thru highest=1).
 
+*Review: 2017 survey does not include questions about school fee payment. Need confirm.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or DL4_1=1 INVOL_AGRI=1.
 
@@ -173,7 +185,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *17India.
 *Section 3.
 compute YEAR=2017.
@@ -213,15 +225,19 @@ compute GENDER=dg2.
 compute MARRIAGE=dg3.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 count HAVE_CHILDREN=I_1_HH2_2 I_2_HH2_2 I_3_HH2_2 I_4_HH2_2 I_5_HH2_2 I_6_HH2_2 
 I_7_HH2_2 I_8_HH2_2 I_9_HH2_2 I_10_HH2_2 I_11_HH2_2 I_12_HH2_2 
 I_13_HH2_2 I_14_HH2_2 I_15_HH2_2 I_16_HH2_2 I_17_HH2_2 I_18_HH2_2
 I_19_HH2_2 I_20_HH2_2 I_21_HH2_2 I_22_HH2_2 I_23_HH2_2 I_24_HH2_2 I_25_HH2_2(0 thru 17).
 recode HAVE_CHILDREN (1 thru highest=1).
 
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or DL4_1=1 INVOL_AGRI=1.
 
@@ -233,7 +249,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *17Kenya.
 *Section 3.
 compute YEAR=2017.
@@ -273,13 +289,17 @@ compute GENDER=dg2.
 compute MARRIAGE=dg3.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 count HAVE_CHILDREN=I_1_HH2_2 I_2_HH2_2 I_3_HH2_2 I_4_HH2_2 I_5_HH2_2 I_6_HH2_2 
 I_7_HH2_2 I_8_HH2_2 I_9_HH2_2 I_10_HH2_2 I_11_HH2_2 I_12_HH2_2 (0 thru 17).
 recode HAVE_CHILDREN (1 thru highest=1).
 
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or DL4_1=1 INVOL_AGRI=1.
 
@@ -291,7 +311,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *17Nigeria.
 *Section 3.
 compute YEAR=2017.
@@ -331,15 +351,19 @@ compute GENDER=dg2.
 compute MARRIAGE=dg3.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 count HAVE_CHILDREN=I_1_HH2_2 I_2_HH2_2 I_3_HH2_2 I_4_HH2_2 I_5_HH2_2 I_6_HH2_2 
 I_7_HH2_2 I_8_HH2_2 I_9_HH2_2 I_10_HH2_2 I_11_HH2_2 I_12_HH2_2 
 I_13_HH2_2 I_14_HH2_2 I_15_HH2_2 I_16_HH2_2 I_17_HH2_2 I_18_HH2_2
 I_19_HH2_2 I_20_HH2_2 I_21_HH2_2 I_22_HH2_2 I_23_HH2_2 I_24_HH2_2 I_25_HH2_2(0 thru 17).
 recode HAVE_CHILDREN (1 thru highest=1).
 
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or DL4_1=1 INVOL_AGRI=1.
 
@@ -351,7 +375,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *17Paksitan.
 *Section 3.
 compute YEAR=2017.
@@ -392,9 +416,13 @@ compute GENDER=dg2.
 compute MARRIAGE=dg3.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(96=96)(99=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or DL4_1=1 INVOL_AGRI=1.
 
@@ -406,7 +434,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *17Tanzania.
 *Section 3.
 compute YEAR=2017.
@@ -446,15 +474,19 @@ compute GENDER=dg2.
 compute MARRIAGE=dg3.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 count HAVE_CHILDREN=I_1_HH2_2 I_2_HH2_2 I_3_HH2_2 I_4_HH2_2 I_5_HH2_2 I_6_HH2_2 
 I_7_HH2_2 I_8_HH2_2 I_9_HH2_2 I_10_HH2_2 I_11_HH2_2 I_12_HH2_2 
 I_13_HH2_2 I_14_HH2_2 I_15_HH2_2 I_16_HH2_2 I_17_HH2_2 I_18_HH2_2
 I_19_HH2_2 I_20_HH2_2 I_21_HH2_2 I_22_HH2_2 I_23_HH2_2 I_24_HH2_2 I_25_HH2_2(0 thru 17).
 recode HAVE_CHILDREN (1 thru highest=1).
 
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or DL4_1=1 INVOL_AGRI=1.
 
@@ -466,8 +498,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
-
-
+**************************************************************************************************************************************************.
 *17Uganda.
 *Section 3.
 compute YEAR=2017.
@@ -507,15 +538,19 @@ compute GENDER=dg2.
 compute MARRIAGE=dg3.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 count HAVE_CHILDREN=I_1_HH2_2 I_2_HH2_2 I_3_HH2_2 I_4_HH2_2 I_5_HH2_2 I_6_HH2_2 
 I_7_HH2_2 I_8_HH2_2 I_9_HH2_2 I_10_HH2_2 I_11_HH2_2 I_12_HH2_2 
 I_13_HH2_2 I_14_HH2_2 I_15_HH2_2 I_16_HH2_2 I_17_HH2_2 I_18_HH2_2
 I_19_HH2_2 I_20_HH2_2(0 thru 17).
 recode HAVE_CHILDREN (1 thru highest=1).
 
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or DL4_1=1 INVOL_AGRI=1.
 
@@ -527,7 +562,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *16Bangladesh.
 compute YEAR=2016.
 compute COUNTRY=Bangladesh.
@@ -583,15 +618,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(96=96)(99=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -605,7 +643,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *16India.
 compute YEAR=2016.
 compute COUNTRY=Inida.
@@ -644,15 +682,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7,8=5)(96=96)(99=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -666,7 +707,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *16Indonesia.
 compute YEAR=2016.
 compute COUNTRY=Indonesia.
@@ -712,15 +753,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -734,7 +778,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *16Kenya.
 *Section 3.
 compute YEAR=2016.
@@ -786,15 +830,18 @@ compute GENDER=dg2.
 compute MARRIAGE=dg3.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -808,7 +855,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *16Nigeria.
 compute YEAR=2016.
 compute COUNTRY=Nigeria.
@@ -861,15 +908,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -883,7 +933,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *16Pakistan.
 compute YEAR=2016.
 compute COUNTRY=Pakistan.
@@ -923,15 +973,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(96=96)(99=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -945,7 +998,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *16Tanzania.
 compute YEAR=2016.
 compute COUNTRY=Tanzania.
@@ -984,15 +1037,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -1006,8 +1062,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
-
+**************************************************************************************************************************************************.
 *16Uganda.
 *Section 3.
 compute YEAR=2016.
@@ -1059,15 +1114,18 @@ compute GENDER=dg2.
 compute MARRIAGE=dg3.
 recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(6=5)(96=96)(99=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -1081,8 +1139,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
-
+**************************************************************************************************************************************************.
 *15Bangladesh.
 compute YEAR=2015.
 compute COUNTRY=Bangladesh.
@@ -1094,6 +1151,8 @@ compute LN2=max(LN2_1 to LN2_4).
 compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
 compute NUMERACY=(FL14=1 OR FL15=1 OR FL16=1 OR FL17=1).
+
+numeric FINANCIAL_LITERACY.
 
 count digital_call=mt22_1 mt22_2 (1 thru 5).
 count digital_text=mt22_3 (1 thru 5).
@@ -1110,15 +1169,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(8=96)(9=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<999) or (dg8c>0 and dg8c<999) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg11d_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(12=-2)(11=96).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or  DL4_15=1 INVOL_AGRI=1.
 
@@ -1130,7 +1192,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_15=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *15India.
 compute YEAR=2015.
 compute COUNTRY=India.
@@ -1142,6 +1204,8 @@ compute LN2=max(LN2_1 to LN2_4).
 compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
 compute NUMERACY=(FL14=1 OR FL15=1 OR FL16=1 OR FL17=1).
+
+numeric FINANCIAL_LITERACY.
 
 count digital_call=mt17_1 mt17_2 (1 thru 5).
 count digital_text=mt17_3 (1 thru 5).
@@ -1158,15 +1222,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg11d_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2)(11=96).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -1180,7 +1247,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *15Indonesia.
 compute YEAR=2015.
 compute COUNTRY=Indonesia.
@@ -1194,6 +1261,8 @@ compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
 compute NUMERACY=(FL12=1 OR FL13=1 OR FL14=1 OR FL15=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt17_1 mt17_2 (1 thru 5).
 count digital_text=mt17_3 (1 thru 5).
 count digital_adv=mt17_4 mt17_5 mt17_6 mt17_7 mt17_8 mt17_9 mt17_11 mt17_13(1 thru 5).
@@ -1209,15 +1278,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0) or (dg8c>0) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg11d_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(12=-2)(11=96).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -1231,7 +1303,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *15Kenya.
 compute YEAR=2015.
 compute COUNTRY=Kenya.
@@ -1244,6 +1316,8 @@ compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
 compute NUMERACY=(FL12=1 OR FL13=1 OR FL14=1 OR FL15=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt17_1 mt17_2 (1 thru 5).
 count digital_text=mt17_3 (1 thru 5).
 count digital_adv=mt17_4 mt17_5 mt17_6 mt17_7 mt17_8 mt17_9 mt17_11 mt17_13(1 thru 5).
@@ -1259,15 +1333,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<999) or (dg8c>0 and dg8c<999) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(12=-2)(11=96).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -1281,7 +1358,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *15Nigeria.
 compute YEAR=2015.
 compute COUNTRY=Nigeria.
@@ -1295,6 +1372,8 @@ compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
 compute NUMERACY=(FL12=1 OR FL13=1 OR FL14=1 OR FL15=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt17_1 mt17_2 (1 thru 5).
 count digital_text=mt17_3 (1 thru 5).
 count digital_adv=mt17_4 mt17_5 mt17_6 mt17_7 mt17_8 mt17_9 mt17_11 mt17_13(1 thru 5).
@@ -1310,15 +1389,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<999) or (dg8c>0 and dg8c<999) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(12=-2)(11=96).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -1332,7 +1414,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *15Pakistan.
 compute YEAR=2015.
 compute COUNTRY=Pakistan.
@@ -1344,6 +1426,8 @@ compute  LN2=max(LN3_1 to LN3_18).
 compute LITERACY=0.
 if (((Ln1_1<=3 or ln1a_1<=3 or ln1b_1<=3) and ln2>=3) or ((Ln1_2<=3 or ln1a_2<=3 or ln1b_2<=3) and ln2>=3)) LITERACY=1.
 compute NUMERACY=(FL14=1 OR FL15=1 OR FL16=1 OR FL17=1).
+
+numeric FINANCIAL_LITERACY.
 
 count digital_call=mt22_1 mt22_2 (1 thru 5).
 count digital_text=mt22_3 (1 thru 5).
@@ -1360,15 +1444,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(8=96)(9=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<999) or (dg8c>0 and dg8c<999) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg11d_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(99=-2)(13,97=96).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -1382,7 +1469,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *15Tanzania.
 compute YEAR=2015.
 compute COUNTRY=Tanzania.
@@ -1396,6 +1483,8 @@ compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
 compute NUMERACY=(FL12=1 OR FL13=1 OR FL14=1 OR FL15=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt17_1 mt17_2 (1 thru 5).
 count digital_text=mt17_3 (1 thru 5).
 count digital_adv=mt17_4 mt17_5 mt17_6 mt17_7 mt17_8 mt17_9 mt17_11 mt17_13(1 thru 5).
@@ -1411,15 +1500,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<999) or (dg8c>0 and dg8c<999) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(12=-2)(11=96).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -1433,7 +1525,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
+**************************************************************************************************************************************************.
 *15Uganda.
 compute YEAR=2015.
 compute COUNTRY=Uganda.
@@ -1446,6 +1538,8 @@ compute LITERACY=0.
 if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
 compute NUMERACY=(FL12=1 OR FL13=1 OR FL14=1 OR FL15=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt17_1 mt17_2 (1 thru 5).
 count digital_text=mt17_3 (1 thru 5).
 count digital_adv=mt17_4 mt17_5 mt17_6 mt17_7 mt17_8 mt17_9 mt17_11 mt17_13(1 thru 5).
@@ -1461,15 +1555,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+*Review.
 compute HAVE_CHILDREN=0.
 if (dg8b>0) or (dg8c>0) HAVE_CHILDREN=1.
 
+*Review.
 compute SCHOOL_FEE=0.
 if dg12_2=1 SCHOOL_FEE=1.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(12=-2)(11=96).
 
+*Review.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL6=1 or 
 DL4_6=1 or DL4_7=1 or DL4_8=1 or DL4_9=1 or DL4_10=1 or 
@@ -1483,8 +1580,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
-
+**************************************************************************************************************************************************.
 *14Bangladesh.
 compute YEAR=2014.
 compute COUNTRY=Bangladesh.
@@ -1498,6 +1594,8 @@ compute LITERACY=0.
 if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
 
 compute NUMERACY=(FL19=1 OR FL20=1 OR FL21=1 OR FL22=1).
+
+numeric FINANCIAL_LITERACY.
 
 count digital_call=mt10_1 mt10_2 (1 thru 5).
 count digital_text=mt10_3 (1 thru 5).
@@ -1514,9 +1612,18 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(8=96)(9=-2).
 
+*Review: No questions related with children, shcool fee and farm. Need confirm.
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *14India.
 compute YEAR=2014.
 compute COUNTRY=India.
@@ -1530,6 +1637,8 @@ compute LITERACY=0.
 if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
 
 compute NUMERACY=(FL20=1 OR FL21=1 OR FL22=1 OR FL23=1).
+
+numeric FINANCIAL_LITERACY.
 
 count digital_call=mt10_1 mt10_2 (1 thru 5).
 count digital_text=mt10_3 (1 thru 5).
@@ -1546,9 +1655,17 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *14Indonesia.
 compute YEAR=2014.
 compute COUNTRY=Indonesia.
@@ -1563,6 +1680,8 @@ if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
 
 compute NUMERACY=(FL20=1 OR FL21=1 OR FL22=1 OR FL23=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt10_1 mt10_2 (1 thru 5).
 count digital_text=mt10_3 (1 thru 5).
 count digital_adv=mt10_4 mt10_5 mt10_6 mt10_7 mt10_8 mt10_9 mt10_11(1 thru 5).
@@ -1578,9 +1697,17 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *14Kenya.
 compute YEAR=2014.
 compute COUNTRY=Kenya.
@@ -1594,6 +1721,8 @@ if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY
 
 compute NUMERACY=(FL19=1 OR FL20=1 OR FL21=1 OR FL22=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt10_1 mt10_2 (1 thru 5).
 count digital_text=mt10_3 (1 thru 5).
 count digital_adv=mt10_4 mt10_5 mt10_6 mt10_7 mt10_8 mt10_9 mt10_11(1 thru 5).
@@ -1609,9 +1738,17 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *14Nigeria.
 compute YEAR=2014.
 compute COUNTRY=Nigeria.
@@ -1626,6 +1763,8 @@ if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
 
 compute NUMERACY=(FL19=1 OR FL20=1 OR FL21=1 OR FL22=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt10_1 mt10_2 (1 thru 5).
 count digital_text=mt10_3 (1 thru 5).
 count digital_adv=mt10_4 mt10_5 mt10_6 mt10_7 mt10_8 mt10_9 mt10_11(1 thru 5).
@@ -1641,9 +1780,17 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *14Pakistan.
 compute YEAR=2014.
 compute COUNTRY=Pakistan.
@@ -1658,6 +1805,8 @@ if (((Ln1_1<=3) and ln2>=3) or ((ln1_1b<=3) and ln2>=3)) LITERACY=1.
 
 compute NUMERACY=(FL19=1 OR FL20=1 OR FL21=1 OR FL22=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt10_1 mt10_2 (1 thru 5).
 count digital_text=mt10_3 (1 thru 5).
 count digital_adv=mt10_4 mt10_5 mt10_6 mt10_7 mt10_8 mt10_9 mt10_11(1 thru 5).
@@ -1673,9 +1822,17 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *14Tanzania.
 compute YEAR=2014.
 compute COUNTRY=Tanzania.
@@ -1690,6 +1847,8 @@ if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
 
 compute NUMERACY=(FL19=1 OR FL20=1 OR FL21=1 OR FL22=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt10_1 mt10_2 (1 thru 5).
 count digital_text=mt10_3 (1 thru 5).
 count digital_adv=mt10_4 mt10_5 mt10_6 mt10_7 mt10_8 mt10_9 mt10_11(1 thru 5).
@@ -1705,9 +1864,17 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *14Uganda.
 compute YEAR=2014.
 compute COUNTRY=Uganda.
@@ -1724,6 +1891,8 @@ if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
 
 compute NUMERACY=(FL19=1 OR FL20=1 OR FL21=1 OR FL22=1).
 
+numeric FINANCIAL_LITERACY.
+
 count digital_call=mt10_1 mt10_2 (1 thru 5).
 count digital_text=mt10_3 (1 thru 5).
 count digital_adv=mt10_4 mt10_5 mt10_6 mt10_7 mt10_8 mt10_9 mt10_11(1 thru 5).
@@ -1739,9 +1908,17 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *13Bangladesh.
 compute YEAR=2013.
 compute COUNTRY=Bangladesh.
@@ -1754,6 +1931,8 @@ compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
 compute NUMERACY=(LN2=1 OR LN3=1 OR LN4=1).
+
+numeric FINANCIAL_LITERACY.
 
 count digital_call=mt11_1 mt11_2 (1).
 count digital_text=mt11_3 (1).
@@ -1770,6 +1949,14 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2=2)(3,4=3)(5=4)(6=96)(7=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+numeric EMPLOYMENT.
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *13India.
 compute YEAR=2013.
 compute COUNTRY=India.
@@ -1783,11 +1970,23 @@ if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
 compute NUMERACY=(LN2=1 OR LN3=1 OR LN4=1).
 
+numeric FINANCIAL_LITERACY.
+
+numeric DIGITAL_LITERACY_INDEX.
+
 compute GENDER=dg2.
 
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+numeric EMPLOYMENT.
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *13Kenya.
 compute YEAR=2013.
 compute COUNTRY=Kenya.
@@ -1801,11 +2000,23 @@ if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
 compute NUMERACY=(LN2=1 OR LN3=1 OR LN4=1).
 
+numeric FINANCIAL_LITERACY.
+
+numeric DIGITAL_LITERACY_INDEX.
+
 compute GENDER=dg2.
 
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+numeric EMPLOYMENT.
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *13Nigeria.
 compute YEAR=2013.
 compute COUNTRY=Nigeria.
@@ -1818,6 +2029,8 @@ compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
 compute NUMERACY=(LN2=1 OR LN3=1 OR LN4=1).
+
+numeric FINANCIAL_LITERACY.
 
 count digital_call=mt11a mt11b (1 thru 5).
 count digital_text=mt11c (1 thru 5).
@@ -1834,6 +2047,14 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+numeric EMPLOYMENT.
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *13Pakistan.
 compute YEAR=2013.
 compute COUNTRY=Pakistan.
@@ -1846,6 +2067,8 @@ compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
 compute NUMERACY=(LN2=1 OR LN3=1 OR LN4=1).
+
+numeric FINANCIAL_LITERACY.
 
 count digital_call=mt11_1 mt11_2 (1).
 count digital_text=mt11_3 (1).
@@ -1862,6 +2085,14 @@ compute GENDER=dg2.
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+numeric EMPLOYMENT.
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *13Tanzania.
 compute YEAR=2013.
 compute COUNTRY=Tanzaina.
@@ -1875,11 +2106,23 @@ if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
 compute NUMERACY=(LN2=1 OR LN3=1 OR LN4=1).
 
+numeric FINANCIAL_LITERACY.
+
+numeric DIGITAL_LITERACY_INDEX.
+
 compute GENDER=dg2.
 
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+numeric EMPLOYMENT.
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
+**************************************************************************************************************************************************.
 *13Uganda.
 compute YEAR=2013.
 compute COUNTRY=Uganda.
@@ -1894,14 +2137,26 @@ if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
 compute NUMERACY=(LN2=1 OR LN3=1 OR LN4=1).
 
+numeric FINANCIAL_LITERACY.
+
+numeric DIGITAL_LITERACY_INDEX.
+
 compute GENDER=dg2.
 
 rename variables dg3=MARRIAGE.
 recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 
-
+numeric HAVE_CHILDREN.
+numeric SCHOOL_FEE.
+numeric EMPLOYMENT.
+numeric INVOL_AGRI.
+numeric OWN_FARM.
+numeric WORK_FARM.
+numeric SELL_CROP.
 *****************************************************************************************************************************.
 *Labels.
+value labels AGE -2"DK".
+
 value labels AGE_GROUP 1"15-24" 2"25-34" 3"35-44" 4"45-54" 5"55 and over" -2"DK".
 
 value labels EDU 1"No formal education" 2"Primary education" 3"Secondary education" 4"Higher education" 5"Other".
