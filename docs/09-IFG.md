@@ -12,6 +12,7 @@ A derived binary variable, BELONG_INFML represents the respondent's current or f
 
 ### Bangladesh
 Only 2016 and 2017 data are available.
+
 ### Kenya
 Only 2015-2017 data are available.
 
@@ -37,7 +38,7 @@ Only 2015-2017 data are available.
 If the respondent confirmed their past or present participation in an informal financial group, their main reason was asked from the following options:
 
 Value | Reason
--------- | -------
+----- | -------
 1 | To have a lump sum to use when it’s your turn
 2 | To help when there is a death in the family or any other emergency
 3 | To have access to loans or credit when needed
@@ -45,17 +46,20 @@ Value | Reason
 
 In 2017, responses lie on a Likert scale from 1, least important, to 5, most important, for these four columns. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
 ### Bangladesh
-### Kenya
+2013: IFI5, but are aren't equivalent response choices.
+
 ### India
-2015: IFI22   
+2015: IFI22
+ 15 options were originally given for this question. 
+ Because there was no direct equivalent for value 3, several options were combined that were relevant to financial access. (10- To increase income by lending, 11- Because you could not get money or help anywhere else)
 2016: IFI21
 ### Indonesia
+### Kenya
 #### Nigeria
 2013: IFI5
-Nigeria 2013, 2016 only asked which reason for informal group financing was most important
-out of a list of 15, with an "other" option to describe.
-If their response was one of the four, it was categorized as a "5" (most important)
+
 ### Pakistan
+2015: ifi22
 ### Tanzania
 2013: None
 ### Uganda
@@ -65,16 +69,16 @@ If their response was one of the four, it was categorized as a "5" (most importa
 
 ## R_NOINFML
 These questions ask the importance of each reason for _not_ being a part of an IFG. 
-In 2017, responses lie on a Likert scale from 1, least important, to 5, most important, for these four columns. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
 
-**How important or unimportant is the following reason for your decision not to join informal societies or group saving schemes?**
 
-Variable | Reason
--------- | ---------------------------------------
-IFG2_1   | Don't have any money left for savings
-IFG2_2   | Don't know about them
-IFG2_3   | Don't trust them/people steal your money
-IFG2_4   | Don't need any service from them/their services are better served by other financial service providers
+**What is the most important reason for your decision not to join informal societies or group saving schemes?**
+
+Value | Reason
+----- | -------
+1  | Don't have any money left for savings
+2  | Don't know about them
+3  | Don't trust them/people steal your money
+4  | Don't need any service from them/their services are better served by other financial service providers
 
 ### Bangladesh
 In 2013, there was no option for "Don't know about them".
@@ -84,10 +88,11 @@ In 2013, there was no option for "Don't know about them".
 2016: IFI24
 ### Indonesia
 ### Nigeria
-2013:IFI3
+2013: IFI3. Responses available did not include 2- "Don't know about them".
   For 2016, the respondent was to choose their _most_ important reason from ten options, including a custom "other" option. To adjust, the reason given (if one of the four we account for)was coded as a "5" and all others were 
 ### Pakistan
 IFI21
+2015:ifi25
 ### Tanzania
 ### Uganda
 2013: None

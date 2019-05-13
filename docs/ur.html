@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Section 17 Economic Empowerment Section 16 | FII Dataset Documentation</title>
+  <title>Section 2 UR | FII Dataset Documentation</title>
   <meta name="description" content="Documentation for the FII Datathon dataset">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Section 17 Economic Empowerment Section 16 | FII Dataset Documentation" />
+  <meta property="og:title" content="Section 2 UR | FII Dataset Documentation" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="http://datathonfii.github.io/codebook/" />
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="FIIDatathon/Codebook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Section 17 Economic Empowerment Section 16 | FII Dataset Documentation" />
+  <meta name="twitter:title" content="Section 2 UR | FII Dataset Documentation" />
   
   <meta name="twitter:description" content="Documentation for the FII Datathon dataset" />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="financial-health.html">
-<link rel="next" href="financial-service-distance.html">
+<link rel="prev" href="survey-dataset-identification.html">
+<link rel="next" href="poverty-index.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -523,32 +523,22 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="economic-empowerment-section-16" class="section level1">
-<h1><span class="header-section-number">Section 17</span> Economic Empowerment Section 16</h1>
-<p>Economic Empowerment</p>
-<div id="eco_emp1" class="section level2">
-<h2><span class="header-section-number">17.1</span> ECO_EMP1</h2>
+<div id="ur" class="section level1">
+<h1><span class="header-section-number">Section 2</span> UR</h1>
+<p>Type of place residence where the respondent resides as either urban or rural.
+Urban | Rural
+—| —
+1 | 2</p>
+<div id="cluster" class="section level2">
+<h2><span class="header-section-number">2.1</span> CLUSTER</h2>
+<p>The cluster number is the number identifiying the sample point as used during the filedwork. Clusters with names have been converted to numbers.</p>
+<p>Due to inadequate data, clusters for Nigeria in 2013 are unavailable.</p>
 </div>
-<div id="eco_emp2" class="section level2">
-<h2><span class="header-section-number">17.2</span> ECO_EMP2</h2>
-</div>
-<div id="eco_emp3" class="section level2">
-<h2><span class="header-section-number">17.3</span> ECO_EMP3</h2>
-</div>
-<div id="eco_emp4" class="section level2">
-<h2><span class="header-section-number">17.4</span> ECO_EMP4</h2>
-</div>
-<div id="eco_emp5" class="section level2">
-<h2><span class="header-section-number">17.5</span> ECO_EMP5</h2>
-</div>
-<div id="eco_emp6" class="section level2">
-<h2><span class="header-section-number">17.6</span> ECO_EMP6</h2>
-</div>
-<div id="eco_emp7" class="section level2">
-<h2><span class="header-section-number">17.7</span> ECO_EMP7</h2>
-</div>
-<div id="eco_emp8" class="section level2">
-<h2><span class="header-section-number">17.8</span> ECO_EMP8</h2>
+<div id="anon_lat-anon_long" class="section level2">
+<h2><span class="header-section-number">2.2</span> ANON_LAT, ANON_LONG</h2>
+<p>Anonymized latitude and longitude of the approximate housheold location.</p>
+<p>The method of anonymization is very similar to the one practiced by the Demographic Health Surveys project. All respondents within a cluster share the same coordinates. Cluster centers were initially calculated by averaging all longitudes and latitudes, then displacing the point randomly within a radius inside the second-level geographic area (e.g. counties). The maximum radius for displacement is within 2km for an urban area and 5km for a rural area, with a 1/100 chance of the maximum rural radius being 10km. This method is intended to preserve location anonymity while still being usable for basic spatial analysis purposes.</p>
+<p>Due to inadequate data, 2013 GPS data for Nigeria and Tanzania are unavailable.</p>
 
 </div>
 </div>
@@ -557,8 +547,8 @@
           </div>
         </div>
       </div>
-<a href="financial-health.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="financial-service-distance.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="survey-dataset-identification.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="poverty-index.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
