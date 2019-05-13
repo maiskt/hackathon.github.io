@@ -22,9 +22,9 @@ This is the year in which data collection place. It runs from 2013 to 2018, exce
 
 Other variables
 
-Each individual survey dataset also includes the following variables
+Each individual survey dataset also includes the following variables:
 
-# UR
+## UR
 
 Type of place residence where the respondent resides as either urban or rural.
 
