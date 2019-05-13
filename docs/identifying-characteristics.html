@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Section 13 Insurance | FII Dataset Documentation</title>
+  <title>Section 1 Identifying Characteristics | FII Dataset Documentation</title>
   <meta name="description" content="Documentation for the FII Datathon dataset">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Section 13 Insurance | FII Dataset Documentation" />
+  <meta property="og:title" content="Section 1 Identifying Characteristics | FII Dataset Documentation" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="http://datathonfii.github.io/codebook/" />
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="FIIDatathon/Codebook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Section 13 Insurance | FII Dataset Documentation" />
+  <meta name="twitter:title" content="Section 1 Identifying Characteristics | FII Dataset Documentation" />
   
   <meta name="twitter:description" content="Documentation for the FII Datathon dataset" />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="investments.html">
-<link rel="next" href="financial-situation.html">
+<link rel="prev" href="index.html">
+<link rel="next" href="poverty-index.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -519,41 +519,61 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="insurance" class="section level1">
-<h1><span class="header-section-number">Section 13</span> Insurance</h1>
-<p>Insurance</p>
-<div id="insurance-1" class="section level2">
-<h2><span class="header-section-number">13.1</span> INSURANCE</h2>
+<div id="identifying-characteristics" class="section level1">
+<h1><span class="header-section-number">Section 1</span> Identifying Characteristics</h1>
+<p>The primary identification variables used for organizing and filtering the datasets.</p>
+<div id="sbjnum" class="section level2">
+<h2><span class="header-section-number">1.1</span> SBJNUM</h2>
+<p>The original ID for individual respondants. There is no standard length across datasets, and two different responses across datasets may share the same Subject Number. When examining single observations, make sure to filter by SBJNUM, COUNTRY, and YEAR at the same time.</p>
 </div>
-<div id="insur_type1" class="section level2">
-<h2><span class="header-section-number">13.2</span> INSUR_TYPE1</h2>
+<div id="country" class="section level2">
+<h2><span class="header-section-number">1.2</span> COUNTRY</h2>
+<p>The country where the collection program took place.
+Countries include:</p>
+<ul>
+<li>Bangladesh</li>
+<li>India</li>
+<li>Indonesia</li>
+<li>Kenya</li>
+<li>Nigeria</li>
+<li>Pakistan</li>
+<li>Tanzania</li>
+<li>Uganda</li>
+</ul>
 </div>
-<div id="insur_type2" class="section level2">
-<h2><span class="header-section-number">13.3</span> INSUR_TYPE2</h2>
+<div id="year" class="section level2">
+<h2><span class="header-section-number">1.3</span> YEAR</h2>
+<p>The year when the collection program took place.
+Time frames range from 2013 to 2018. Indonesia only has data from 2014 to 2016.</p>
 </div>
-<div id="insur_type3" class="section level2">
-<h2><span class="header-section-number">13.4</span> INSUR_TYPE3</h2>
+<div id="ur" class="section level2">
+<h2><span class="header-section-number">1.4</span> UR</h2>
+<p>This variable categorizes the respondent as living in an urban or rural area. While exact boundaries vary by country, access to city resources is the primary factor considered.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Urban</th>
+<th>Rural</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="insur_type4" class="section level2">
-<h2><span class="header-section-number">13.5</span> INSUR_TYPE4</h2>
+<div id="cluster" class="section level2">
+<h2><span class="header-section-number">1.5</span> CLUSTER</h2>
+<p>A geographic grouping of respondents, typically representing a single area where interviews were taken. Clusters with names have been converted to numbers.</p>
+<p>Due to inadequate data, clusters for Nigeria in 2013 are unavailable.</p>
 </div>
-<div id="insur_type5" class="section level2">
-<h2><span class="header-section-number">13.6</span> INSUR_TYPE5</h2>
-</div>
-<div id="insur_type6" class="section level2">
-<h2><span class="header-section-number">13.7</span> INSUR_TYPE6</h2>
-</div>
-<div id="insur_type7" class="section level2">
-<h2><span class="header-section-number">13.8</span> INSUR_TYPE7</h2>
-</div>
-<div id="insur_type8" class="section level2">
-<h2><span class="header-section-number">13.9</span> INSUR_TYPE8</h2>
-</div>
-<div id="insur_type9" class="section level2">
-<h2><span class="header-section-number">13.10</span> INSUR_TYPE9</h2>
-</div>
-<div id="insur_type10" class="section level2">
-<h2><span class="header-section-number">13.11</span> INSUR_TYPE10</h2>
+<div id="anon_lat-anon_long" class="section level2">
+<h2><span class="header-section-number">1.6</span> ANON_LAT, ANON_LONG</h2>
+<p>Anonymized latitude and longitude of the approximate housheold location.</p>
+<p>The method of anonymization is very similar to the one practiced by the Demographic Health Surveys project. All respondents within a cluster share the same coordinates. Cluster centers were initially calculated by averaging all longitudes and latitudes, then displacing the point randomly within a radius inside the second-level geographic area (e.g. counties). The maximum radius for displacement is within 2km for an urban area and 5km for a rural area, with a 1/100 chance of the maximum rural radius being 10km. This method is intended to preserve location anonymity while still being usable for basic spatial analysis purposes.</p>
+<p>Due to inadequate data, 2013 data for Nigeria and Tanzania are unavailable.</p>
 
 </div>
 </div>
@@ -562,8 +582,8 @@
           </div>
         </div>
       </div>
-<a href="investments.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="financial-situation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="poverty-index.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
