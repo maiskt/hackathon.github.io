@@ -1,0 +1,19 @@
+# Financial Situation
+
+Financial Situation
+
+## INCOME_EARNER
+## MAIN_EARNER
+## FIN_SITUATION
+## FIN_ATT1
+## FIN_ATT2
+## FIN_ATT3
+## FIN_ATT4
+## FIN_ATT5
+## FIN_ATT6
+## FIN_ATT7
+## SCH_FEE_PRB1
+## SCH_FEE_PRB2
+## SCH_FEE_PRB3
+## SCH_FEE_PRB4
+## SCH_FEE_PRB5

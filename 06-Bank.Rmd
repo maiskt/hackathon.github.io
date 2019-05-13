@@ -1,0 +1,47 @@
+# Banking Services
+
+Bank
+
+## ACCESS_BANK
+
+* Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else's name. Take Bangladesh 2018 as an example, ACCESS_BANK is derived from following questions.
+
+ Question Index   |                       Question
+  ----------------|-------------------------------------------------------------
+      FN1_1       |  Have you ever used a bank?
+      FN1_2       |  Do you have a bank account that is registered in your name?
+      FN1_3       |  Do you have a bank account that is registered jointly in your name and someone else's name?
+      
+* Levels 
+       + Yes
+       + No
+
+* Note: 
+       + About full-service filter, followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.
+
+## REGISTERED_BANK
+
+* Description: Individuals who hold an account with a bank that provides a full suite of financial services. Take Bangladesh 2018 as an example, REGISTERED_BANK is derived from following questions.
+
+ Question Index   |                       Question
+  ----------------|-------------------------------------------------------------
+      FN1_2       |  Do you have a bank account that is registered in your name?
+      FN1_3       |  Do you have a bank account that is registered jointly in your name and someone else's name?
+
+* Levels 
+       + Yes
+       + No
+       
+* Note: 
+       + About full-service filter, followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.
+       
+## ACTIVE_BANK
+
+* Description: An individual who has an account registered in their name with a full-service bank and has used it in the last 90 days. 
+
+       
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+ 
+       

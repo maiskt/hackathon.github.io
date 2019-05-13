@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Section 6 Bank - Section 6 | FII Dataset Documentation</title>
+  <meta name="description" content="Documentation for the FII Datathon dataset">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Section 6 Bank - Section 6 | FII Dataset Documentation" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="http://datathonfii.github.io/codebook/" />
+  
+  <meta property="og:description" content="Documentation for the FII Datathon dataset" />
+  <meta name="github-repo" content="FIIDatathon/Codebook" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 6 Bank - Section 6 | FII Dataset Documentation" />
+  
+  <meta name="twitter:description" content="Documentation for the FII Datathon dataset" />
+  
+
+<meta name="author" content="Intermedia Survey Institute">
+
+
+<meta name="date" content="2019-04-23">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="financial-inclusion.html">
+<link rel="next" href="loans.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://datathonfii.github.io/Codebook/" target="blank">FII Dataset Documentation</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="aa-survey-information.html"><a href="aa-survey-information.html"><i class="fa fa-check"></i><b>2</b> AA - Survey Information</a><ul>
+<li class="chapter" data-level="2.1" data-path="aa-survey-information.html"><a href="aa-survey-information.html#serial"><i class="fa fa-check"></i><b>2.1</b> Serial</a></li>
+<li class="chapter" data-level="2.2" data-path="aa-survey-information.html"><a href="aa-survey-information.html#aa1"><i class="fa fa-check"></i><b>2.2</b> AA1</a></li>
+<li class="chapter" data-level="2.3" data-path="aa-survey-information.html"><a href="aa-survey-information.html#aa2"><i class="fa fa-check"></i><b>2.3</b> AA2</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="aa-survey-information.html"><a href="aa-survey-information.html#uganda"><i class="fa fa-check"></i><b>2.3.1</b> Uganda</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="aa-survey-information.html"><a href="aa-survey-information.html#latitude-longitude"><i class="fa fa-check"></i><b>2.4</b> Latitude &amp; Longitude</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="title-goes-here.html"><a href="title-goes-here.html"><i class="fa fa-check"></i><b>3</b> Title Goes Here</a><ul>
+<li class="chapter" data-level="3.1" data-path="title-goes-here.html"><a href="title-goes-here.html#r-markdown"><i class="fa fa-check"></i><b>3.1</b> R Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="title-goes-here.html"><a href="title-goes-here.html#variable-subsection-1"><i class="fa fa-check"></i><b>3.2</b> Variable Subsection 1</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="title-goes-here.html"><a href="title-goes-here.html#bangladesh"><i class="fa fa-check"></i><b>3.2.1</b> Bangladesh</a></li>
+<li class="chapter" data-level="3.2.2" data-path="title-goes-here.html"><a href="title-goes-here.html#kenya"><i class="fa fa-check"></i><b>3.2.2</b> Kenya</a></li>
+<li class="chapter" data-level="3.2.3" data-path="title-goes-here.html"><a href="title-goes-here.html#india"><i class="fa fa-check"></i><b>3.2.3</b> India</a></li>
+<li class="chapter" data-level="3.2.4" data-path="title-goes-here.html"><a href="title-goes-here.html#indonesia"><i class="fa fa-check"></i><b>3.2.4</b> Indonesia</a></li>
+<li class="chapter" data-level="3.2.5" data-path="title-goes-here.html"><a href="title-goes-here.html#nigeria"><i class="fa fa-check"></i><b>3.2.5</b> Nigeria</a></li>
+<li class="chapter" data-level="3.2.6" data-path="title-goes-here.html"><a href="title-goes-here.html#pakistan"><i class="fa fa-check"></i><b>3.2.6</b> Pakistan</a></li>
+<li class="chapter" data-level="3.2.7" data-path="title-goes-here.html"><a href="title-goes-here.html#tanzania"><i class="fa fa-check"></i><b>3.2.7</b> Tanzania</a></li>
+<li class="chapter" data-level="3.2.8" data-path="title-goes-here.html"><a href="title-goes-here.html#uganda-1"><i class="fa fa-check"></i><b>3.2.8</b> Uganda</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="title-goes-here.html"><a href="title-goes-here.html#variable-subsection-2"><i class="fa fa-check"></i><b>3.3</b> Variable Subsection 2</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="title-goes-here.html"><a href="title-goes-here.html#country"><i class="fa fa-check"></i><b>3.3.1</b> Country</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="dg-section-3.html"><a href="dg-section-3.html"><i class="fa fa-check"></i><b>4</b> DG - Section 3</a><ul>
+<li class="chapter" data-level="4.1" data-path="dg-section-3.html"><a href="dg-section-3.html#age"><i class="fa fa-check"></i><b>4.1</b> AGE</a></li>
+<li class="chapter" data-level="4.2" data-path="dg-section-3.html"><a href="dg-section-3.html#age_group"><i class="fa fa-check"></i><b>4.2</b> AGE_GROUP</a></li>
+<li class="chapter" data-level="4.3" data-path="dg-section-3.html"><a href="dg-section-3.html#edu"><i class="fa fa-check"></i><b>4.3</b> EDU</a></li>
+<li class="chapter" data-level="4.4" data-path="dg-section-3.html"><a href="dg-section-3.html#literacy"><i class="fa fa-check"></i><b>4.4</b> LITERACY</a></li>
+<li class="chapter" data-level="4.5" data-path="dg-section-3.html"><a href="dg-section-3.html#numeracy"><i class="fa fa-check"></i><b>4.5</b> NUMERACY</a></li>
+<li class="chapter" data-level="4.6" data-path="dg-section-3.html"><a href="dg-section-3.html#financial_literacy"><i class="fa fa-check"></i><b>4.6</b> FINANCIAL_LITERACY</a></li>
+<li class="chapter" data-level="4.7" data-path="dg-section-3.html"><a href="dg-section-3.html#digital_literacy_index"><i class="fa fa-check"></i><b>4.7</b> DIGITAL_LITERACY_INDEX</a></li>
+<li class="chapter" data-level="4.8" data-path="dg-section-3.html"><a href="dg-section-3.html#gender"><i class="fa fa-check"></i><b>4.8</b> GENDER</a></li>
+<li class="chapter" data-level="4.9" data-path="dg-section-3.html"><a href="dg-section-3.html#marriage"><i class="fa fa-check"></i><b>4.9</b> MARRIAGE</a></li>
+<li class="chapter" data-level="4.10" data-path="dg-section-3.html"><a href="dg-section-3.html#have_children"><i class="fa fa-check"></i><b>4.10</b> HAVE_CHILDREN</a></li>
+<li class="chapter" data-level="4.11" data-path="dg-section-3.html"><a href="dg-section-3.html#school_fee"><i class="fa fa-check"></i><b>4.11</b> SCHOOL_FEE</a></li>
+<li class="chapter" data-level="4.12" data-path="dg-section-3.html"><a href="dg-section-3.html#employment"><i class="fa fa-check"></i><b>4.12</b> EMPLOYMENT</a></li>
+<li class="chapter" data-level="4.13" data-path="dg-section-3.html"><a href="dg-section-3.html#invol_agri"><i class="fa fa-check"></i><b>4.13</b> INVOL_AGRI</a></li>
+<li class="chapter" data-level="4.14" data-path="dg-section-3.html"><a href="dg-section-3.html#own_farm"><i class="fa fa-check"></i><b>4.14</b> OWN_FARM</a></li>
+<li class="chapter" data-level="4.15" data-path="dg-section-3.html"><a href="dg-section-3.html#work_farm"><i class="fa fa-check"></i><b>4.15</b> WORK_FARM</a></li>
+<li class="chapter" data-level="4.16" data-path="dg-section-3.html"><a href="dg-section-3.html#sell_crop"><i class="fa fa-check"></i><b>4.16</b> SELL_CROP</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="financial-inclusion.html"><a href="financial-inclusion.html"><i class="fa fa-check"></i><b>5</b> Financial inclusion</a><ul>
+<li class="chapter" data-level="5.1" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_financial_all"><i class="fa fa-check"></i><b>5.1</b> ACCESS_FINANCIAL_ALL</a></li>
+<li class="chapter" data-level="5.2" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_financial"><i class="fa fa-check"></i><b>5.2</b> ACCESS_FINANCIAL</a></li>
+<li class="chapter" data-level="5.3" data-path="financial-inclusion.html"><a href="financial-inclusion.html#fi"><i class="fa fa-check"></i><b>5.3</b> FI</a></li>
+<li class="chapter" data-level="5.4" data-path="financial-inclusion.html"><a href="financial-inclusion.html#active_financial"><i class="fa fa-check"></i><b>5.4</b> ACTIVE_FINANCIAL</a></li>
+<li class="chapter" data-level="5.5" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_dfs"><i class="fa fa-check"></i><b>5.5</b> ACCESS_DFS</a></li>
+<li class="chapter" data-level="5.6" data-path="financial-inclusion.html"><a href="financial-inclusion.html#registered_dfs"><i class="fa fa-check"></i><b>5.6</b> REGISTERED_DFS</a></li>
+<li class="chapter" data-level="5.7" data-path="financial-inclusion.html"><a href="financial-inclusion.html#active_dfs"><i class="fa fa-check"></i><b>5.7</b> ACTIVE_DFS</a></li>
+<li class="chapter" data-level="5.8" data-path="financial-inclusion.html"><a href="financial-inclusion.html#active_dfs_adv"><i class="fa fa-check"></i><b>5.8</b> ACTIVE_DFS_ADV</a></li>
+<li class="chapter" data-level="5.9" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_dfs_payment_transfer"><i class="fa fa-check"></i><b>5.9</b> ACCESS_DFS_PAYMENT_TRANSFER</a></li>
+<li class="chapter" data-level="5.10" data-path="financial-inclusion.html"><a href="financial-inclusion.html#advanced_active_financial"><i class="fa fa-check"></i><b>5.10</b> ADVANCED_ACTIVE_FINANCIAL</a></li>
+<li class="chapter" data-level="5.11" data-path="financial-inclusion.html"><a href="financial-inclusion.html#advanced_active_financial30"><i class="fa fa-check"></i><b>5.11</b> ADVANCED_ACTIVE_FINANCIAL30</a></li>
+<li class="chapter" data-level="5.12" data-path="financial-inclusion.html"><a href="financial-inclusion.html#financial_stage"><i class="fa fa-check"></i><b>5.12</b> FINANCIAL_STAGE</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bank-section-6.html"><a href="bank-section-6.html"><i class="fa fa-check"></i><b>6</b> Bank - Section 6</a><ul>
+<li class="chapter" data-level="6.1" data-path="bank-section-6.html"><a href="bank-section-6.html#access_bank"><i class="fa fa-check"></i><b>6.1</b> ACCESS_BANK</a></li>
+<li class="chapter" data-level="6.2" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_bank"><i class="fa fa-check"></i><b>6.2</b> REGISTERED_BANK</a></li>
+<li class="chapter" data-level="6.3" data-path="bank-section-6.html"><a href="bank-section-6.html#active_bank"><i class="fa fa-check"></i><b>6.3</b> ACTIVE_BANK</a></li>
+<li class="chapter" data-level="6.4" data-path="bank-section-6.html"><a href="bank-section-6.html#literacy-1"><i class="fa fa-check"></i><b>6.4</b> LITERACY</a></li>
+<li class="chapter" data-level="6.5" data-path="bank-section-6.html"><a href="bank-section-6.html#numeracy-1"><i class="fa fa-check"></i><b>6.5</b> NUMERACY</a></li>
+<li class="chapter" data-level="6.6" data-path="bank-section-6.html"><a href="bank-section-6.html#financial_literacy-1"><i class="fa fa-check"></i><b>6.6</b> FINANCIAL_LITERACY</a></li>
+<li class="chapter" data-level="6.7" data-path="bank-section-6.html"><a href="bank-section-6.html#digital_literacy_index-1"><i class="fa fa-check"></i><b>6.7</b> DIGITAL_LITERACY_INDEX</a></li>
+<li class="chapter" data-level="6.8" data-path="bank-section-6.html"><a href="bank-section-6.html#gender-1"><i class="fa fa-check"></i><b>6.8</b> GENDER</a></li>
+<li class="chapter" data-level="6.9" data-path="bank-section-6.html"><a href="bank-section-6.html#marriage-1"><i class="fa fa-check"></i><b>6.9</b> MARRIAGE</a></li>
+<li class="chapter" data-level="6.10" data-path="bank-section-6.html"><a href="bank-section-6.html#have_children-1"><i class="fa fa-check"></i><b>6.10</b> HAVE_CHILDREN</a></li>
+<li class="chapter" data-level="6.11" data-path="bank-section-6.html"><a href="bank-section-6.html#school_fee-1"><i class="fa fa-check"></i><b>6.11</b> SCHOOL_FEE</a></li>
+<li class="chapter" data-level="6.12" data-path="bank-section-6.html"><a href="bank-section-6.html#employment-1"><i class="fa fa-check"></i><b>6.12</b> EMPLOYMENT</a></li>
+<li class="chapter" data-level="6.13" data-path="bank-section-6.html"><a href="bank-section-6.html#invol_agri-1"><i class="fa fa-check"></i><b>6.13</b> INVOL_AGRI</a></li>
+<li class="chapter" data-level="6.14" data-path="bank-section-6.html"><a href="bank-section-6.html#own_farm-1"><i class="fa fa-check"></i><b>6.14</b> OWN_FARM</a></li>
+<li class="chapter" data-level="6.15" data-path="bank-section-6.html"><a href="bank-section-6.html#work_farm-1"><i class="fa fa-check"></i><b>6.15</b> WORK_FARM</a></li>
+<li class="chapter" data-level="6.16" data-path="bank-section-6.html"><a href="bank-section-6.html#sell_crop-1"><i class="fa fa-check"></i><b>6.16</b> SELL_CROP</a></li>
+<li class="chapter" data-level="6.17" data-path="bank-section-6.html"><a href="bank-section-6.html#access_nbfi"><i class="fa fa-check"></i><b>6.17</b> ACCESS_NBFI</a></li>
+<li class="chapter" data-level="6.18" data-path="bank-section-6.html"><a href="bank-section-6.html#access_nbfi_all"><i class="fa fa-check"></i><b>6.18</b> ACCESS_NBFI_ALL</a></li>
+<li class="chapter" data-level="6.19" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_nbfi"><i class="fa fa-check"></i><b>6.19</b> REGISTERED_NBFI</a></li>
+<li class="chapter" data-level="6.20" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_nbfi_all"><i class="fa fa-check"></i><b>6.20</b> REGISTERED_NBFI_ALL</a></li>
+<li class="chapter" data-level="6.21" data-path="bank-section-6.html"><a href="bank-section-6.html#reg_dfs_nbfi"><i class="fa fa-check"></i><b>6.21</b> REG_DFS_NBFI</a></li>
+<li class="chapter" data-level="6.22" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi"><i class="fa fa-check"></i><b>6.22</b> ACTIVE_NBFI</a></li>
+<li class="chapter" data-level="6.23" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_all"><i class="fa fa-check"></i><b>6.23</b> ACTIVE_NBFI_ALL</a></li>
+<li class="chapter" data-level="6.24" data-path="bank-section-6.html"><a href="bank-section-6.html#active30_nbfi"><i class="fa fa-check"></i><b>6.24</b> ACTIVE30_NBFI</a></li>
+<li class="chapter" data-level="6.25" data-path="bank-section-6.html"><a href="bank-section-6.html#inactive_nbfi"><i class="fa fa-check"></i><b>6.25</b> INACTIVE_NBFI</a></li>
+<li class="chapter" data-level="6.26" data-path="bank-section-6.html"><a href="bank-section-6.html#dormant_nbfi"><i class="fa fa-check"></i><b>6.26</b> DORMANT_NBFI</a></li>
+<li class="chapter" data-level="6.27" data-path="bank-section-6.html"><a href="bank-section-6.html#otc_nbfi"><i class="fa fa-check"></i><b>6.27</b> OTC_NBFI</a></li>
+<li class="chapter" data-level="6.28" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_basic"><i class="fa fa-check"></i><b>6.28</b> NBFI_BASIC</a></li>
+<li class="chapter" data-level="6.29" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_adv"><i class="fa fa-check"></i><b>6.29</b> NBFI_ADV</a></li>
+<li class="chapter" data-level="6.30" data-path="bank-section-6.html"><a href="bank-section-6.html#reg_nbfi_basic"><i class="fa fa-check"></i><b>6.30</b> REG_NBFI_BASIC</a></li>
+<li class="chapter" data-level="6.31" data-path="bank-section-6.html"><a href="bank-section-6.html#reg_nbf_adv"><i class="fa fa-check"></i><b>6.31</b> REG_NBF_ADV</a></li>
+<li class="chapter" data-level="6.32" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_basic"><i class="fa fa-check"></i><b>6.32</b> ACTIVE_NBFI_BASIC</a></li>
+<li class="chapter" data-level="6.33" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_adv"><i class="fa fa-check"></i><b>6.33</b> ACTIVE_NBFI_ADV</a></li>
+<li class="chapter" data-level="6.34" data-path="bank-section-6.html"><a href="bank-section-6.html#active30_nbfi_adv"><i class="fa fa-check"></i><b>6.34</b> ACTIVE30_NBFI_ADV</a></li>
+<li class="chapter" data-level="6.35" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_stage"><i class="fa fa-check"></i><b>6.35</b> NBFI_STAGE</a></li>
+<li class="chapter" data-level="6.36" data-path="bank-section-6.html"><a href="bank-section-6.html#access_mfi"><i class="fa fa-check"></i><b>6.36</b> ACCESS_MFI</a></li>
+<li class="chapter" data-level="6.37" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_mfi"><i class="fa fa-check"></i><b>6.37</b> REGISTERED_MFI</a></li>
+<li class="chapter" data-level="6.38" data-path="bank-section-6.html"><a href="bank-section-6.html#active_mfi"><i class="fa fa-check"></i><b>6.38</b> ACTIVE_MFI</a></li>
+<li class="chapter" data-level="6.39" data-path="bank-section-6.html"><a href="bank-section-6.html#access_coop"><i class="fa fa-check"></i><b>6.39</b> ACCESS_COOP</a></li>
+<li class="chapter" data-level="6.40" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_coop"><i class="fa fa-check"></i><b>6.40</b> REGISTERED_COOP</a></li>
+<li class="chapter" data-level="6.41" data-path="bank-section-6.html"><a href="bank-section-6.html#active_coop"><i class="fa fa-check"></i><b>6.41</b> ACTIVE_COOP</a></li>
+<li class="chapter" data-level="6.42" data-path="bank-section-6.html"><a href="bank-section-6.html#access_post"><i class="fa fa-check"></i><b>6.42</b> ACCESS_POST</a></li>
+<li class="chapter" data-level="6.43" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_post"><i class="fa fa-check"></i><b>6.43</b> REGISTERED_POST</a></li>
+<li class="chapter" data-level="6.44" data-path="bank-section-6.html"><a href="bank-section-6.html#active_post"><i class="fa fa-check"></i><b>6.44</b> ACTIVE_POST</a></li>
+<li class="chapter" data-level="6.45" data-path="bank-section-6.html"><a href="bank-section-6.html#access_sacco"><i class="fa fa-check"></i><b>6.45</b> ACCESS_SACCO</a></li>
+<li class="chapter" data-level="6.46" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_sacco"><i class="fa fa-check"></i><b>6.46</b> REGISTERED_SACCO</a></li>
+<li class="chapter" data-level="6.47" data-path="bank-section-6.html"><a href="bank-section-6.html#active_sacco"><i class="fa fa-check"></i><b>6.47</b> ACTIVE_SACCO</a></li>
+<li class="chapter" data-level="6.48" data-path="bank-section-6.html"><a href="bank-section-6.html#access_bpr"><i class="fa fa-check"></i><b>6.48</b> ACCESS_BPR</a></li>
+<li class="chapter" data-level="6.49" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_bpr"><i class="fa fa-check"></i><b>6.49</b> REGISTERED_BPR</a></li>
+<li class="chapter" data-level="6.50" data-path="bank-section-6.html"><a href="bank-section-6.html#active_bpr"><i class="fa fa-check"></i><b>6.50</b> ACTIVE_BPR</a></li>
+<li class="chapter" data-level="6.51" data-path="bank-section-6.html"><a href="bank-section-6.html#access_pawnshop"><i class="fa fa-check"></i><b>6.51</b> ACCESS_PAWNSHOP</a></li>
+<li class="chapter" data-level="6.52" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_pawnshop"><i class="fa fa-check"></i><b>6.52</b> REGISTERED_PAWNSHOP</a></li>
+<li class="chapter" data-level="6.53" data-path="bank-section-6.html"><a href="bank-section-6.html#active_pawnshop"><i class="fa fa-check"></i><b>6.53</b> ACTIVE_PAWNSHOP</a></li>
+<li class="chapter" data-level="6.54" data-path="bank-section-6.html"><a href="bank-section-6.html#aware_payment_bank_provider"><i class="fa fa-check"></i><b>6.54</b> AWARE_PAYMENT_BANK_PROVIDER</a></li>
+<li class="chapter" data-level="6.55" data-path="bank-section-6.html"><a href="bank-section-6.html#access_payment"><i class="fa fa-check"></i><b>6.55</b> ACCESS_PAYMENT</a></li>
+<li class="chapter" data-level="6.56" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_payment"><i class="fa fa-check"></i><b>6.56</b> REGISTERED_PAYMENT</a></li>
+<li class="chapter" data-level="6.57" data-path="bank-section-6.html"><a href="bank-section-6.html#active_payment"><i class="fa fa-check"></i><b>6.57</b> ACTIVE_PAYMENT</a></li>
+<li class="chapter" data-level="6.58" data-path="bank-section-6.html"><a href="bank-section-6.html#access_group"><i class="fa fa-check"></i><b>6.58</b> ACCESS_GROUP</a></li>
+<li class="chapter" data-level="6.59" data-path="bank-section-6.html"><a href="bank-section-6.html#registered_group"><i class="fa fa-check"></i><b>6.59</b> REGISTERED_GROUP</a></li>
+<li class="chapter" data-level="6.60" data-path="bank-section-6.html"><a href="bank-section-6.html#active_group"><i class="fa fa-check"></i><b>6.60</b> ACTIVE_GROUP</a></li>
+<li class="chapter" data-level="6.61" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_transfer"><i class="fa fa-check"></i><b>6.61</b> NBFI_TRANSFER</a></li>
+<li class="chapter" data-level="6.62" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_merchant"><i class="fa fa-check"></i><b>6.62</b> NBFI_MERCHANT</a></li>
+<li class="chapter" data-level="6.63" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_bill"><i class="fa fa-check"></i><b>6.63</b> NBFI_BILL</a></li>
+<li class="chapter" data-level="6.64" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_gov"><i class="fa fa-check"></i><b>6.64</b> NBFI_GOV</a></li>
+<li class="chapter" data-level="6.65" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi-wage"><i class="fa fa-check"></i><b>6.65</b> NBFI WAGE</a></li>
+<li class="chapter" data-level="6.66" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_insurance"><i class="fa fa-check"></i><b>6.66</b> NBFI_INSURANCE</a></li>
+<li class="chapter" data-level="6.67" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_save"><i class="fa fa-check"></i><b>6.67</b> NBFI_SAVE</a></li>
+<li class="chapter" data-level="6.68" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_invest"><i class="fa fa-check"></i><b>6.68</b> NBFI_INVEST</a></li>
+<li class="chapter" data-level="6.69" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_loan"><i class="fa fa-check"></i><b>6.69</b> NBFI_LOAN</a></li>
+<li class="chapter" data-level="6.70" data-path="bank-section-6.html"><a href="bank-section-6.html#nbfi_airtime"><i class="fa fa-check"></i><b>6.70</b> NBFI_AIRTIME</a></li>
+<li class="chapter" data-level="6.71" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_transfer"><i class="fa fa-check"></i><b>6.71</b> ACTIVE_NBFI_TRANSFER</a></li>
+<li class="chapter" data-level="6.72" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_merchant"><i class="fa fa-check"></i><b>6.72</b> ACTIVE_NBFI_MERCHANT</a></li>
+<li class="chapter" data-level="6.73" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_bill"><i class="fa fa-check"></i><b>6.73</b> ACTIVE_NBFI_BILL</a></li>
+<li class="chapter" data-level="6.74" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_gov"><i class="fa fa-check"></i><b>6.74</b> ACTIVE_NBFI_GOV</a></li>
+<li class="chapter" data-level="6.75" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi-wage"><i class="fa fa-check"></i><b>6.75</b> ACTIVE_NBFI WAGE</a></li>
+<li class="chapter" data-level="6.76" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_insurance"><i class="fa fa-check"></i><b>6.76</b> ACTIVE_NBFI_INSURANCE</a></li>
+<li class="chapter" data-level="6.77" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_save"><i class="fa fa-check"></i><b>6.77</b> ACTIVE_NBFI_SAVE</a></li>
+<li class="chapter" data-level="6.78" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_invest"><i class="fa fa-check"></i><b>6.78</b> ACTIVE_NBFI_INVEST</a></li>
+<li class="chapter" data-level="6.79" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_loan"><i class="fa fa-check"></i><b>6.79</b> ACTIVE_NBFI_LOAN</a></li>
+<li class="chapter" data-level="6.80" data-path="bank-section-6.html"><a href="bank-section-6.html#active_nbfi_airtime"><i class="fa fa-check"></i><b>6.80</b> ACTIVE_NBFI_AIRTIME</a></li>
+<li class="chapter" data-level="6.81" data-path="bank-section-6.html"><a href="bank-section-6.html#r_stopmfi1"><i class="fa fa-check"></i><b>6.81</b> R_STOPMFI1</a></li>
+<li class="chapter" data-level="6.82" data-path="bank-section-6.html"><a href="bank-section-6.html#r_stopmfi2"><i class="fa fa-check"></i><b>6.82</b> R_STOPMFI2</a></li>
+<li class="chapter" data-level="6.83" data-path="bank-section-6.html"><a href="bank-section-6.html#r_stopmfi3"><i class="fa fa-check"></i><b>6.83</b> R_STOPMFI3</a></li>
+<li class="chapter" data-level="6.84" data-path="bank-section-6.html"><a href="bank-section-6.html#r_stopmfi4"><i class="fa fa-check"></i><b>6.84</b> R_STOPMFI4</a></li>
+<li class="chapter" data-level="6.85" data-path="bank-section-6.html"><a href="bank-section-6.html#r_stopmfi5"><i class="fa fa-check"></i><b>6.85</b> R_STOPMFI5</a></li>
+<li class="chapter" data-level="6.86" data-path="bank-section-6.html"><a href="bank-section-6.html#r_stopmfi6"><i class="fa fa-check"></i><b>6.86</b> R_STOPMFI6</a></li>
+<li class="chapter" data-level="6.87" data-path="bank-section-6.html"><a href="bank-section-6.html#r_stopmfi7"><i class="fa fa-check"></i><b>6.87</b> R_STOPMFI7</a></li>
+<li class="chapter" data-level="6.88" data-path="bank-section-6.html"><a href="bank-section-6.html#belong_infml"><i class="fa fa-check"></i><b>6.88</b> BELONG_INFML</a><ul>
+<li class="chapter" data-level="6.88.1" data-path="bank-section-6.html"><a href="bank-section-6.html#bangladesh-1"><i class="fa fa-check"></i><b>6.88.1</b> Bangladesh</a></li>
+<li class="chapter" data-level="6.88.2" data-path="bank-section-6.html"><a href="bank-section-6.html#india-1"><i class="fa fa-check"></i><b>6.88.2</b> India</a></li>
+<li class="chapter" data-level="6.88.3" data-path="bank-section-6.html"><a href="bank-section-6.html#indonesia-1"><i class="fa fa-check"></i><b>6.88.3</b> Indonesia</a></li>
+<li class="chapter" data-level="6.88.4" data-path="bank-section-6.html"><a href="bank-section-6.html#nigeria-1"><i class="fa fa-check"></i><b>6.88.4</b> Nigeria</a></li>
+<li class="chapter" data-level="6.88.5" data-path="bank-section-6.html"><a href="bank-section-6.html#pakistan-1"><i class="fa fa-check"></i><b>6.88.5</b> Pakistan</a></li>
+<li class="chapter" data-level="6.88.6" data-path="bank-section-6.html"><a href="bank-section-6.html#tanzania-1"><i class="fa fa-check"></i><b>6.88.6</b> Tanzania</a></li>
+<li class="chapter" data-level="6.88.7" data-path="bank-section-6.html"><a href="bank-section-6.html#uganda-2"><i class="fa fa-check"></i><b>6.88.7</b> Uganda</a></li>
+<li class="chapter" data-level="6.88.8" data-path="bank-section-6.html"><a href="bank-section-6.html#r_infml"><i class="fa fa-check"></i><b>6.88.8</b> R_INFML</a></li>
+</ul></li>
+<li class="chapter" data-level="6.89" data-path="bank-section-6.html"><a href="bank-section-6.html#r_noinfml"><i class="fa fa-check"></i><b>6.89</b> R_NOINFML</a><ul>
+<li class="chapter" data-level="6.89.1" data-path="bank-section-6.html"><a href="bank-section-6.html#bangladesh-2"><i class="fa fa-check"></i><b>6.89.1</b> Bangladesh</a></li>
+<li class="chapter" data-level="6.89.2" data-path="bank-section-6.html"><a href="bank-section-6.html#infml_service"><i class="fa fa-check"></i><b>6.89.2</b> INFML_SERVICE</a></li>
+<li class="chapter" data-level="6.89.3" data-path="bank-section-6.html"><a href="bank-section-6.html#bangladesh-3"><i class="fa fa-check"></i><b>6.89.3</b> Bangladesh</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="loans.html"><a href="loans.html"><i class="fa fa-check"></i><b>7</b> Loans</a><ul>
+<li class="chapter" data-level="7.1" data-path="loans.html"><a href="loans.html#save"><i class="fa fa-check"></i><b>7.1</b> SAVE</a></li>
+<li class="chapter" data-level="7.2" data-path="loans.html"><a href="loans.html#save_know_interest"><i class="fa fa-check"></i><b>7.2</b> SAVE_KNOW_INTEREST</a></li>
+<li class="chapter" data-level="7.3" data-path="loans.html"><a href="loans.html#save_infml"><i class="fa fa-check"></i><b>7.3</b> SAVE_INFML</a></li>
+<li class="chapter" data-level="7.4" data-path="loans.html"><a href="loans.html#save_formal"><i class="fa fa-check"></i><b>7.4</b> SAVE_FORMAL</a></li>
+<li class="chapter" data-level="7.5" data-path="loans.html"><a href="loans.html#save_bank"><i class="fa fa-check"></i><b>7.5</b> SAVE_BANK</a></li>
+<li class="chapter" data-level="7.6" data-path="loans.html"><a href="loans.html#save_mm"><i class="fa fa-check"></i><b>7.6</b> SAVE_MM</a></li>
+<li class="chapter" data-level="7.7" data-path="loans.html"><a href="loans.html#save_mfi"><i class="fa fa-check"></i><b>7.7</b> SAVE_MFI</a></li>
+<li class="chapter" data-level="7.8" data-path="loans.html"><a href="loans.html#save_coop"><i class="fa fa-check"></i><b>7.8</b> SAVE_COOP</a></li>
+<li class="chapter" data-level="7.9" data-path="loans.html"><a href="loans.html#save_group"><i class="fa fa-check"></i><b>7.9</b> SAVE_GROUP</a></li>
+<li class="chapter" data-level="7.10" data-path="loans.html"><a href="loans.html#save_post"><i class="fa fa-check"></i><b>7.10</b> SAVE_POST</a></li>
+<li class="chapter" data-level="7.11" data-path="loans.html"><a href="loans.html#save_cash_property"><i class="fa fa-check"></i><b>7.11</b> SAVE_CASH_PROPERTY</a></li>
+<li class="chapter" data-level="7.12" data-path="loans.html"><a href="loans.html#pps_save1"><i class="fa fa-check"></i><b>7.12</b> PPS_SAVE1</a></li>
+<li class="chapter" data-level="7.13" data-path="loans.html"><a href="loans.html#pps_save2"><i class="fa fa-check"></i><b>7.13</b> PPS_SAVE2</a></li>
+<li class="chapter" data-level="7.14" data-path="loans.html"><a href="loans.html#pps_save3"><i class="fa fa-check"></i><b>7.14</b> PPS_SAVE3</a></li>
+<li class="chapter" data-level="7.15" data-path="loans.html"><a href="loans.html#pps_save4"><i class="fa fa-check"></i><b>7.15</b> PPS_SAVE4</a></li>
+<li class="chapter" data-level="7.16" data-path="loans.html"><a href="loans.html#pps_save5"><i class="fa fa-check"></i><b>7.16</b> PPS_SAVE5</a></li>
+<li class="chapter" data-level="7.17" data-path="loans.html"><a href="loans.html#pps_save6"><i class="fa fa-check"></i><b>7.17</b> PPS_SAVE6</a></li>
+<li class="chapter" data-level="7.18" data-path="loans.html"><a href="loans.html#pps_save7"><i class="fa fa-check"></i><b>7.18</b> PPS_SAVE7</a></li>
+<li class="chapter" data-level="7.19" data-path="loans.html"><a href="loans.html#pps_save8"><i class="fa fa-check"></i><b>7.19</b> PPS_SAVE8</a></li>
+<li class="chapter" data-level="7.20" data-path="loans.html"><a href="loans.html#pps_save9"><i class="fa fa-check"></i><b>7.20</b> PPS_SAVE9</a></li>
+<li class="chapter" data-level="7.21" data-path="loans.html"><a href="loans.html#pps_save10"><i class="fa fa-check"></i><b>7.21</b> PPS_SAVE10</a></li>
+<li class="chapter" data-level="7.22" data-path="loans.html"><a href="loans.html#pps_save11"><i class="fa fa-check"></i><b>7.22</b> PPS_SAVE11</a></li>
+<li class="chapter" data-level="7.23" data-path="loans.html"><a href="loans.html#insurance"><i class="fa fa-check"></i><b>7.23</b> INSURANCE</a></li>
+<li class="chapter" data-level="7.24" data-path="loans.html"><a href="loans.html#insur_type1"><i class="fa fa-check"></i><b>7.24</b> INSUR_TYPE1</a></li>
+<li class="chapter" data-level="7.25" data-path="loans.html"><a href="loans.html#insur_type2"><i class="fa fa-check"></i><b>7.25</b> INSUR_TYPE2</a></li>
+<li class="chapter" data-level="7.26" data-path="loans.html"><a href="loans.html#insur_type3"><i class="fa fa-check"></i><b>7.26</b> INSUR_TYPE3</a></li>
+<li class="chapter" data-level="7.27" data-path="loans.html"><a href="loans.html#insur_type4"><i class="fa fa-check"></i><b>7.27</b> INSUR_TYPE4</a></li>
+<li class="chapter" data-level="7.28" data-path="loans.html"><a href="loans.html#insur_type5"><i class="fa fa-check"></i><b>7.28</b> INSUR_TYPE5</a></li>
+<li class="chapter" data-level="7.29" data-path="loans.html"><a href="loans.html#insur_type6"><i class="fa fa-check"></i><b>7.29</b> INSUR_TYPE6</a></li>
+<li class="chapter" data-level="7.30" data-path="loans.html"><a href="loans.html#insur_type7"><i class="fa fa-check"></i><b>7.30</b> INSUR_TYPE7</a></li>
+<li class="chapter" data-level="7.31" data-path="loans.html"><a href="loans.html#insur_type8"><i class="fa fa-check"></i><b>7.31</b> INSUR_TYPE8</a></li>
+<li class="chapter" data-level="7.32" data-path="loans.html"><a href="loans.html#insur_type9"><i class="fa fa-check"></i><b>7.32</b> INSUR_TYPE9</a></li>
+<li class="chapter" data-level="7.33" data-path="loans.html"><a href="loans.html#insur_type10"><i class="fa fa-check"></i><b>7.33</b> INSUR_TYPE10</a></li>
+<li class="chapter" data-level="7.34" data-path="loans.html"><a href="loans.html#income_earner"><i class="fa fa-check"></i><b>7.34</b> INCOME_EARNER</a></li>
+<li class="chapter" data-level="7.35" data-path="loans.html"><a href="loans.html#main_earner"><i class="fa fa-check"></i><b>7.35</b> MAIN_EARNER</a></li>
+<li class="chapter" data-level="7.36" data-path="loans.html"><a href="loans.html#fin_situation"><i class="fa fa-check"></i><b>7.36</b> FIN_SITUATION</a></li>
+<li class="chapter" data-level="7.37" data-path="loans.html"><a href="loans.html#fin_att1"><i class="fa fa-check"></i><b>7.37</b> FIN_ATT1</a></li>
+<li class="chapter" data-level="7.38" data-path="loans.html"><a href="loans.html#fin_att2"><i class="fa fa-check"></i><b>7.38</b> FIN_ATT2</a></li>
+<li class="chapter" data-level="7.39" data-path="loans.html"><a href="loans.html#fin_att3"><i class="fa fa-check"></i><b>7.39</b> FIN_ATT3</a></li>
+<li class="chapter" data-level="7.40" data-path="loans.html"><a href="loans.html#fin_att4"><i class="fa fa-check"></i><b>7.40</b> FIN_ATT4</a></li>
+<li class="chapter" data-level="7.41" data-path="loans.html"><a href="loans.html#fin_att5"><i class="fa fa-check"></i><b>7.41</b> FIN_ATT5</a></li>
+<li class="chapter" data-level="7.42" data-path="loans.html"><a href="loans.html#fin_att6"><i class="fa fa-check"></i><b>7.42</b> FIN_ATT6</a></li>
+<li class="chapter" data-level="7.43" data-path="loans.html"><a href="loans.html#fin_att7"><i class="fa fa-check"></i><b>7.43</b> FIN_ATT7</a></li>
+<li class="chapter" data-level="7.44" data-path="loans.html"><a href="loans.html#sch_fee_prb1"><i class="fa fa-check"></i><b>7.44</b> SCH_FEE_PRB1</a></li>
+<li class="chapter" data-level="7.45" data-path="loans.html"><a href="loans.html#sch_fee_prb2"><i class="fa fa-check"></i><b>7.45</b> SCH_FEE_PRB2</a></li>
+<li class="chapter" data-level="7.46" data-path="loans.html"><a href="loans.html#sch_fee_prb3"><i class="fa fa-check"></i><b>7.46</b> SCH_FEE_PRB3</a></li>
+<li class="chapter" data-level="7.47" data-path="loans.html"><a href="loans.html#sch_fee_prb4"><i class="fa fa-check"></i><b>7.47</b> SCH_FEE_PRB4</a></li>
+<li class="chapter" data-level="7.48" data-path="loans.html"><a href="loans.html#sch_fee_prb5"><i class="fa fa-check"></i><b>7.48</b> SCH_FEE_PRB5</a></li>
+<li class="chapter" data-level="7.49" data-path="loans.html"><a href="loans.html#have_plan"><i class="fa fa-check"></i><b>7.49</b> HAVE_PLAN</a></li>
+<li class="chapter" data-level="7.50" data-path="loans.html"><a href="loans.html#follow_plan"><i class="fa fa-check"></i><b>7.50</b> FOLLOW_PLAN</a></li>
+<li class="chapter" data-level="7.51" data-path="loans.html"><a href="loans.html#eco_vul"><i class="fa fa-check"></i><b>7.51</b> ECO_VUL</a></li>
+<li class="chapter" data-level="7.52" data-path="loans.html"><a href="loans.html#fin_shock"><i class="fa fa-check"></i><b>7.52</b> FIN_SHOCK</a></li>
+<li class="chapter" data-level="7.53" data-path="loans.html"><a href="loans.html#budget_income"><i class="fa fa-check"></i><b>7.53</b> BUDGET_INCOME</a></li>
+<li class="chapter" data-level="7.54" data-path="loans.html"><a href="loans.html#budget_stay"><i class="fa fa-check"></i><b>7.54</b> BUDGET_STAY</a></li>
+<li class="chapter" data-level="7.55" data-path="loans.html"><a href="loans.html#fin_hea1"><i class="fa fa-check"></i><b>7.55</b> FIN_HEA1</a></li>
+<li class="chapter" data-level="7.56" data-path="loans.html"><a href="loans.html#fin_hea2"><i class="fa fa-check"></i><b>7.56</b> FIN_HEA2</a></li>
+<li class="chapter" data-level="7.57" data-path="loans.html"><a href="loans.html#fin_hea3"><i class="fa fa-check"></i><b>7.57</b> FIN_HEA3</a></li>
+<li class="chapter" data-level="7.58" data-path="loans.html"><a href="loans.html#fin_hea4"><i class="fa fa-check"></i><b>7.58</b> FIN_HEA4</a></li>
+<li class="chapter" data-level="7.59" data-path="loans.html"><a href="loans.html#fin_hea5"><i class="fa fa-check"></i><b>7.59</b> FIN_HEA5</a></li>
+<li class="chapter" data-level="7.60" data-path="loans.html"><a href="loans.html#fin_hea6"><i class="fa fa-check"></i><b>7.60</b> FIN_HEA6</a></li>
+<li class="chapter" data-level="7.61" data-path="loans.html"><a href="loans.html#fin_hea7"><i class="fa fa-check"></i><b>7.61</b> FIN_HEA7</a></li>
+<li class="chapter" data-level="7.62" data-path="loans.html"><a href="loans.html#fin_hea8"><i class="fa fa-check"></i><b>7.62</b> FIN_HEA8</a></li>
+<li class="chapter" data-level="7.63" data-path="loans.html"><a href="loans.html#fin_hea9"><i class="fa fa-check"></i><b>7.63</b> FIN_HEA9</a></li>
+<li class="chapter" data-level="7.64" data-path="loans.html"><a href="loans.html#fin_hea10"><i class="fa fa-check"></i><b>7.64</b> FIN_HEA10</a></li>
+<li class="chapter" data-level="7.65" data-path="loans.html"><a href="loans.html#fin_sho1"><i class="fa fa-check"></i><b>7.65</b> FIN_SHO1</a></li>
+<li class="chapter" data-level="7.66" data-path="loans.html"><a href="loans.html#fin_sho2"><i class="fa fa-check"></i><b>7.66</b> FIN_SHO2</a></li>
+<li class="chapter" data-level="7.67" data-path="loans.html"><a href="loans.html#fin_sho3"><i class="fa fa-check"></i><b>7.67</b> FIN_SHO3</a></li>
+<li class="chapter" data-level="7.68" data-path="loans.html"><a href="loans.html#fin_sho4"><i class="fa fa-check"></i><b>7.68</b> FIN_SHO4</a></li>
+<li class="chapter" data-level="7.69" data-path="loans.html"><a href="loans.html#fin_sho5"><i class="fa fa-check"></i><b>7.69</b> FIN_SHO5</a></li>
+<li class="chapter" data-level="7.70" data-path="loans.html"><a href="loans.html#fin_sho6"><i class="fa fa-check"></i><b>7.70</b> FIN_SHO6</a></li>
+<li class="chapter" data-level="7.71" data-path="loans.html"><a href="loans.html#fin_sho7"><i class="fa fa-check"></i><b>7.71</b> FIN_SHO7</a></li>
+<li class="chapter" data-level="7.72" data-path="loans.html"><a href="loans.html#fin_sho8"><i class="fa fa-check"></i><b>7.72</b> FIN_SHO8</a></li>
+<li class="chapter" data-level="7.73" data-path="loans.html"><a href="loans.html#money_sou1"><i class="fa fa-check"></i><b>7.73</b> MONEY_SOU1</a></li>
+<li class="chapter" data-level="7.74" data-path="loans.html"><a href="loans.html#money_sou2"><i class="fa fa-check"></i><b>7.74</b> MONEY_SOU2</a></li>
+<li class="chapter" data-level="7.75" data-path="loans.html"><a href="loans.html#money_sou3"><i class="fa fa-check"></i><b>7.75</b> MONEY_SOU3</a></li>
+<li class="chapter" data-level="7.76" data-path="loans.html"><a href="loans.html#money_sou4"><i class="fa fa-check"></i><b>7.76</b> MONEY_SOU4</a></li>
+<li class="chapter" data-level="7.77" data-path="loans.html"><a href="loans.html#money_sou5"><i class="fa fa-check"></i><b>7.77</b> MONEY_SOU5</a></li>
+<li class="chapter" data-level="7.78" data-path="loans.html"><a href="loans.html#money_sou6"><i class="fa fa-check"></i><b>7.78</b> MONEY_SOU6</a></li>
+<li class="chapter" data-level="7.79" data-path="loans.html"><a href="loans.html#money_sou7"><i class="fa fa-check"></i><b>7.79</b> MONEY_SOU7</a></li>
+<li class="chapter" data-level="7.80" data-path="loans.html"><a href="loans.html#money_sou8"><i class="fa fa-check"></i><b>7.80</b> MONEY_SOU8</a></li>
+<li class="chapter" data-level="7.81" data-path="loans.html"><a href="loans.html#money_sou9"><i class="fa fa-check"></i><b>7.81</b> MONEY_SOU9</a></li>
+<li class="chapter" data-level="7.82" data-path="loans.html"><a href="loans.html#money_sou10"><i class="fa fa-check"></i><b>7.82</b> MONEY_SOU10</a></li>
+<li class="chapter" data-level="7.83" data-path="loans.html"><a href="loans.html#expense1"><i class="fa fa-check"></i><b>7.83</b> EXPENSE1</a></li>
+<li class="chapter" data-level="7.84" data-path="loans.html"><a href="loans.html#expense2"><i class="fa fa-check"></i><b>7.84</b> EXPENSE2</a></li>
+<li class="chapter" data-level="7.85" data-path="loans.html"><a href="loans.html#expense3"><i class="fa fa-check"></i><b>7.85</b> EXPENSE3</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="economic-empowerment-section-16.html"><a href="economic-empowerment-section-16.html"><i class="fa fa-check"></i><b>8</b> Economic Empowerment Section 16</a></li>
+<li class="chapter" data-level="9" data-path="financial-access-distance-section-17.html"><a href="financial-access-distance-section-17.html"><i class="fa fa-check"></i><b>9</b> Financial Access: Distance. Section 17</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">FII Dataset Documentation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="bank---section-6" class="section level1">
+<h1><span class="header-section-number">Section 6</span> Bank - Section 6</h1>
+<p>Bank</p>
+<div id="access_bank" class="section level2">
+<h2><span class="header-section-number">6.1</span> ACCESS_BANK</h2>
+<ul>
+<li>Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else’s name. Take Bangladesh 2018 as an example, ACCESS_BANK is derived from following questions.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FN1_1</td>
+<td>Have you ever used a bank?</td>
+</tr>
+<tr class="even">
+<td>FN1_2</td>
+<td>Do you have a bank account that is registered in your name?</td>
+</tr>
+<tr class="odd">
+<td>FN1_3</td>
+<td>Do you have a bank account that is registered jointly in your name and someone else’s name?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ About full-service filter, followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.</p></li>
+</ul>
+</div>
+<div id="registered_bank" class="section level2">
+<h2><span class="header-section-number">6.2</span> REGISTERED_BANK</h2>
+<ul>
+<li>Description: Individuals who hold an account with a bank that provides a full suite of financial services. Take Bangladesh 2018 as an example, REGISTERED_BANK is derived from following questions.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FN1_2</td>
+<td>Do you have a bank account that is registered in your name?</td>
+</tr>
+<tr class="even">
+<td>FN1_3</td>
+<td>Do you have a bank account that is registered jointly in your name and someone else’s name?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ About full-service filter, followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.</p></li>
+</ul>
+</div>
+<div id="active_bank" class="section level2">
+<h2><span class="header-section-number">6.3</span> ACTIVE_BANK</h2>
+<ul>
+<li>Description: Grouping highest education level for respondent into 5 categories, derived from DG4.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DG4</td>
+<td>What is your highest level of education?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ No formal education
++ Primary education
++ Secondary education
++ Higher education
++ Other</li>
+</ul>
+</div>
+<div id="literacy-1" class="section level2">
+<h2><span class="header-section-number">6.4</span> LITERACY</h2>
+<ul>
+<li><p>Description: Literacy, derived from literal evaluation from surveyors and repondents themselves. Take Kenya 2017 as an example, LN1A and LN1B show evaluation from surveyors. LN2_1 and LN2_2 show evaluation from respondents themselves.</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LN1A</td>
+<td>Can you read this text for me, please? (Reading)</td>
+</tr>
+<tr class="even">
+<td>LN1B</td>
+<td>Can you read this text for me, please? (Understanding)</td>
+</tr>
+<tr class="odd">
+<td>LN2_1</td>
+<td>On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Reading in [questionnaire language]</td>
+</tr>
+<tr class="even">
+<td>LN2_2</td>
+<td>On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Writing in [questionnaire language]</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Levels
++ Basic literacy
++ Lack of basic literacy</p></li>
+</ul>
+</div>
+<div id="numeracy-1" class="section level2">
+<h2><span class="header-section-number">6.5</span> NUMERACY</h2>
+<ul>
+<li>Description: Numeracy, derived from 4 basic calculation questions. Take Bangladesh 2018 as an example. If respondents can answer one of these 4 questions, respondents will be defined as “having basic numeracy”.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FL12</td>
+<td>Imagine you have 2,000 Taka.Somebody gave you 200 Taka.How much total money will you have?</td>
+</tr>
+<tr class="even">
+<td>FL13</td>
+<td>Imagine you have 1,000 Taka and you have to divide it among 5 people.How much money will each person receive if you divide it equally?</td>
+</tr>
+<tr class="odd">
+<td>FL16</td>
+<td>Suppose you need to borrow 100 Taka. Which is the lower amount to pay back: 105 Taka or 100 Taka plus 3 percent?</td>
+</tr>
+<tr class="even">
+<td>FL18</td>
+<td>Suppose you had 100 Taka. in a savings account and the bank adds 10 percent per year to the account. How much money would you have in the account after five years if you did not remove any money from the account?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Basic numeracy
++ Lack of basic numeracy</li>
+</ul>
+</div>
+<div id="financial_literacy-1" class="section level2">
+<h2><span class="header-section-number">6.6</span> FINANCIAL_LITERACY</h2>
+<ul>
+<li>Description: Financial literacy, derived from 5 basic calculation questions. Take Bangladesh 2018 as an example. Basing on the answer of these 5 questions, respondent will have a score respectively. Respondents who have 3 or more than 3 scores will be dedined as “having financial literacy”.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FL14</td>
+<td>Is it safer to put your money into one business or investment, or to put your money into multiple businesses or investments?</td>
+</tr>
+<tr class="even">
+<td>FL15</td>
+<td>Suppose over the next 10 years the prices of the things you buy double.If your income also doubles, will you be able to buy less than you can buy today, the same as you can buy today, or more than you can buy today?</td>
+</tr>
+<tr class="odd">
+<td>FL16</td>
+<td>Suppose you need to borrow 100 Taka. Which is the lower amount to pay back: 105 Taka or 100 Taka plus 3 percent?</td>
+</tr>
+<tr class="even">
+<td>FL17</td>
+<td>Suppose you put money in the bank for two years and the bank agrees to add 15 percent per year to your account. Will the bank add more money to your account the second year than it did the first year, or will it add the same amount of money both year</td>
+</tr>
+<tr class="odd">
+<td>FL18</td>
+<td>Suppose you had 100 Taka. in a savings account and the bank adds 10 percent per year to the account. How much money would you have in the account after five years if you did not remove any money from the account?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Yes
++ No</li>
+<li>Note:
++ Financial literacy questions only are only collected from 2016 to 2018.</li>
+</ul>
+</div>
+<div id="digital_literacy_index-1" class="section level2">
+<h2><span class="header-section-number">6.7</span> DIGITAL_LITERACY_INDEX</h2>
+<ul>
+<li>Description: Digital literacy index, derived from questions about phone usage and activities. Take Banglsdesh 2018 as a example. If respondent never use a mobile phone(MT2, MT7), respondents will be defined as “no digital literacy”. If respondent only use mobile phone for calling(MT17_1, MT17_2), respondents will be defined as “low digital literacy”. If respondent also use mobile phone for texting(MT17_3), respondents will be defined as “moderate digital literacy”. If respondent also use mobile phone for advance activities(MT17_4-MT17_9), respondents will be defined as “high digital literacy”.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MT2</td>
+<td>Do you personally own a mobile phone?</td>
+</tr>
+<tr class="even">
+<td>MT7</td>
+<td>Do you use a mobile phone that belongs to someone else or is shared?</td>
+</tr>
+<tr class="odd">
+<td>MT17_1</td>
+<td>When was the last time you used a mobile phone to do the following? Call someone</td>
+</tr>
+<tr class="even">
+<td>MT17_2</td>
+<td>When was the last time you used a mobile phone to do the following? Receive a call from someone</td>
+</tr>
+<tr class="odd">
+<td>MT17_3</td>
+<td>When was the last time you used a mobile phone to do the following? Send or receive a text message</td>
+</tr>
+<tr class="even">
+<td>MT17_4</td>
+<td>When was the last time you used a mobile phone to do the following? Search the internet</td>
+</tr>
+<tr class="odd">
+<td>MT17_5</td>
+<td>When was the last time you used a mobile phone to do the following? Download music, video or games</td>
+</tr>
+<tr class="even">
+<td>MT17_6</td>
+<td>When was the last time you used a mobile phone to do the following? Make a financial transaction such as send or receive money, or make a payment, or a bank transaction</td>
+</tr>
+<tr class="odd">
+<td>MT17_7</td>
+<td>When was the last time you used a mobile phone to do the following? Use Facebook, WhatsApp, Twitter, Instagram or another social networking application</td>
+</tr>
+<tr class="even">
+<td>MT17_9</td>
+<td>When was the last time you used a mobile phone to do the following? Download an application</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Not applicable
++ Low
++ Moderate
++ High</li>
+<li>Note:
++ Digital literacy questions only are only captured in several countries for 2013 including Kenya, Uganda, Tanzania and India.</li>
+</ul>
+</div>
+<div id="gender-1" class="section level2">
+<h2><span class="header-section-number">6.8</span> GENDER</h2>
+<ul>
+<li>Description: Gender for respondent</li>
+<li>Levels
++ Male
++ Female</li>
+</ul>
+</div>
+<div id="marriage-1" class="section level2">
+<h2><span class="header-section-number">6.9</span> MARRIAGE</h2>
+<ul>
+<li>Description: Marriage status for respondent</li>
+<li>Levels
++ Single/never married
++ Married
++ Divorced/Separated
++ Widowed
++ Living together/Cohabiting
++ Other
++ DK</li>
+<li>Note:
++ Pakistan(2017,2016,2015), Bangladesh(2017,2016,2015,2014,2013) do not have category “Living together/Cohabiting”.
++ There is no data in category “Living together/Cohabiting” for Pakistan(2013) .</li>
+</ul>
+</div>
+<div id="have_children-1" class="section level2">
+<h2><span class="header-section-number">6.10</span> HAVE_CHILDREN</h2>
+<ul>
+<li>Description: HAVE_CHILDREN shows whether there is child(under 18 years old) in Houldhold. For 2017 and 2018, it derives from household information section which include ages for each family members. For 2016 and 2015, it derives from two questions about children’s age.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DG8B</td>
+<td>How many adults and children do you have in the household? (999 for DK/Refused): Number of children (boys) (Below 18 years)</td>
+</tr>
+<tr class="even">
+<td>DGBC</td>
+<td>How many adults and children do you have in the household? (999 for DK/Refused): Number of children (girls) (Below 18 years)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Yes
++ No</li>
+<li>Note:
++ No houldhold informations in Paksitan 2017, need comfirm.
++ Questions about children are not collected in 2013 and 2014 survey.</li>
+</ul>
+</div>
+<div id="school_fee-1" class="section level2">
+<h2><span class="header-section-number">6.11</span> SCHOOL_FEE</h2>
+<ul>
+<li>Description: Respondent has ever paid school fee or not, derived from two types of questions base on different years.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2018</td>
+<td>Have you ever paid a fee for school, education, or training?</td>
+</tr>
+<tr class="even">
+<td>2016,2015</td>
+<td>What type of school do the children go to? I pay a fee for the school</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Levels
++ Yes
++ No</li>
+<li>Note:
++ 2013, 2014 and 2017 survey does not include questions about school fee payment.</li>
+</ul>
+</div>
+<div id="employment-1" class="section level2">
+<h2><span class="header-section-number">6.12</span> EMPLOYMENT</h2>
+<ul>
+<li><p>Description: Employment status</p></li>
+<li><p>Levels
++ Working full-time for a regular salary
++ Working part-time for a regular salary
++ Working occasionally, irregular pay (whenever the work is available)
++ Working per season (e.g., only during the harvest season)
++ Self-employed, working for yourself
++ Not working but looking for a job
++ Housewife or stay-at-home husband doing household chores
++ Full-time student
++ Not working because of retirement
++ Not working because of sickness, disability, etc.
++ Other
++ DK</p></li>
+<li><p>Note:
++ Pakistan(2015) has one more category “Landlord”, which is recoded into “Other”.
++ 2013 survey does not include this quesion.</p></li>
+</ul>
+</div>
+<div id="invol_agri-1" class="section level2">
+<h2><span class="header-section-number">6.13</span> INVOL_AGRI</h2>
+<ul>
+<li>Description: Respondent include one of following features: be a farmer or farm worker, respondents or their family own a farm, got money from any farming activities in the past 12 monthes. Take Bangladesh 2018 as an example, INVOL_AGRI are derived from following quesions.</li>
+</ul>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question Index</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DL2</td>
+<td>What is your primary job (i.e., the job where you spend most of your time)?</td>
+</tr>
+<tr class="even">
+<td>DL6</td>
+<td>Does anyone in your household own or lease a farm/farmland?</td>
+</tr>
+<tr class="odd">
+<td>DL4_1</td>
+<td>Please tell me in which of the following ways you got money in the past 12 months? Sold products of agriculture or reared livestock</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ For 2018 and 2017, only 1 option is correlated with farm in DL4 set questions. But for 2016 and 2015, serveral options are correlated with farm in DL4 set questions.
++ For Bangladesh 2015, only 1 option is correlated with farm in DL4 set questions, which is different ftom other countries in 2015. Need confirm.</p></li>
+</ul>
+</div>
+<div id="own_farm-1" class="section level2">
+<h2><span class="header-section-number">6.14</span> OWN_FARM</h2>
+<ul>
+<li><p>Description: Respondents or their household own or lease a farm/farmland, derived from DL6.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ 2013 and 2014 surveys do not include this quesion.</p></li>
+</ul>
+</div>
+<div id="work_farm-1" class="section level2">
+<h2><span class="header-section-number">6.15</span> WORK_FARM</h2>
+<ul>
+<li><p>Description: Respondents work on the farm that someone in their household owned or leased, derived from DL7.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ 2013 and 2014 surveys do not include this quesion.</p></li>
+</ul>
+</div>
+<div id="sell_crop-1" class="section level2">
+<h2><span class="header-section-number">6.16</span> SELL_CROP</h2>
+<ul>
+<li><p>Description: Respondents sell products of agriculture or rearing livestock, derived from DL4 set quesions.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ 2013 and 2014 surveys do not include this quesion.</p></li>
+</ul>
+
+<p>#Mobile Money</p>
+<p>##AWARE_MM
+##AWARE_MM_PROVIDER
+##AWARE_NONUSER_MM
+##ACCESS_MM
+##REGISTERED_MM
+##ACTIVE_MM
+##ACTIVE30_MM
+##INACTIVE_MM
+##DORMANT_MM
+##OTC_MM
+##MM_BASIC
+##MM_ADV
+##REG_MM_BASIC
+##REG_MM_ADV
+##ACTIVE_MM_BASIC
+##ACTIVE_MM_ADV
+##ACTIVE30_MM_ADV
+##LENGTH_MM
+##MM_STAGE
+##MM_TRANSFER
+This mobile money question asks respondents if they have ever sent or recieved money from another person.
+##MM_MERCHANT
+This question asks respondents if they have ever used mobily money to pay for goods and/or services.
+##MM_BILL
+This question asks respondents they have ever paid for bills using mobile money.
+##MM_GOV
+This question asks respondents they have ever paid for bills using mobile money.
+##MM_WAGE
+This question asks if respondents have ever recieved working wages via monbile money.
+##MM_INSURANCE
+This question asks respondents if they have ever used mobile money to either recieve or pay for insurance benefits.
+##MM_SAVE
+This question asks respondents if they have ever saved/deposited money electonically.
+##MM_INVEST
+This question asks respondents if they have ever made an investment using mobile money.
+##MM_LOAN
+This question asks respondents if they have ever borrowed money from someone outside their household or bought something on credit using mobile money.
+##MM_AIRTIME
+This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.
+##ACTIVE_MM_TRANSFER
+This mobile money question asks respondents if they have, within the last 90 days, sent or recieved money from another person.
+##ACTIVE_MM_MERCHANT
+This question asks respondents if they have, within the last 90 days, used mobily money to pay for goods and/or services.
+##ACTIVE_MM_BILL
+This question asks respondents they have, within the last 90 days, paid for bills using mobile money.
+##ACTIVE_MM_GOV
+This question asks respondents they have, within the last 90 days, paid for bills using mobile money.
+##ACTIVE_MM_WAGE
+This question asks if respondents have, within the last 90 days, recieved working wages via monbile money.
+##ACTIVE_MM_INSURANCE
+This question asks respondents if they have, within the last 90 days, used mobile money to either recieve or pay for insurance benefits.
+##ACTIVE_MM_SAVE
+This question asks respondents if they have, within the last 90 days, saved/deposited money electonically.
+##ACTIVE_MM_INVEST
+This question asks respondents if they have, within the last 90 days, made an investment using mobile money.
+##ACTIVE_MM_LOAN
+This question asks respondents if they have, within the last 90 days, borrowed money from someone outside their household or bought something on credit using mobile money.
+##ACTIVE_MM_AIRTIME
+This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.</p>
+<p>STM_MM1
+STM_MM2
+STM_MM3
+STM_MM4
+STM_MM5
+STM_MM6
+STM_MM7
+STM_MM8
+EXP_MA1
+EXP_MA2
+EXP_MA3
+EXP_MA4
+EXP_MA5
+EXP_MA6
+EXP_MA7
+EXP_MA8
+EXP_MA9
+EXP_MA10
+EXP_MA11
+EXP_MA12
+EXP_MA13
+EXP_MA14
+EXP_MA15
+EXP_MA16
+EXP_MA17
+EXP_MA18
+EXPSV_MA1
+EXPSV_MA2
+EXPSV_MA3
+EXPSV_MA4
+EXPSV_MA5
+EXPSV_MA6
+EXPSV_MA7
+EXPSV_MA8
+EXPSV_MA9
+EXPSV_MA10
+EXPSV_MA11
+EXPSV_MA12
+EXPSV_MA13
+EXPSV_MA14
+EXPSV_MA15
+EXPSV_MA16
+EXPSV_MA17
+R_NOTUSE_MM1
+R_NOTUSE_MM2
+R_NOTUSE_MM3
+R_NOTUSE_MM4
+R_NOTUSE_MM5
+R_NOTUSE_MM6
+R_NOTUSE_MM7
+R_NOTUSE_MM8
+R_NOTUSE_MM9
+R_NOTUSE_MM10
+R_NOTUSE_MM11
+R_NOTUSE_MM12
+R_NOTUSE_MM13
+R_NOTUSE_MM14
+R_NOTUSE_MM15
+R_NOTUSE_MM16
+R_NOTUSE_MM17
+R_NOTUSE_MM18
+R_NOTUSE_MM19
+R_USE_MM1
+R_USE_MM2
+R_USE_MM3
+R_USE_MM4
+R_USE_MM5
+R_USE_MM6
+R_USE_MM7
+R_USE_MM8
+R_USE_MM9
+ACTION_MM1
+ACTION_MM2
+ACTION_MM3
+ACTION_MM4
+ACTION_MM5
+ACTION_MM6
+OPN_MM1
+OPN_MM2
+OPN_MM3
+OPN_MM4
+OPN_MM5
+OPN_MM6
+AWARE_MMP
+ACCESS_MMP
+REGISTERED_MMP</p>
+
+<p>#Non-Bank Financial Institutions Section 8</p>
+</div>
+<div id="access_nbfi" class="section level2">
+<h2><span class="header-section-number">6.17</span> ACCESS_NBFI</h2>
+</div>
+<div id="access_nbfi_all" class="section level2">
+<h2><span class="header-section-number">6.18</span> ACCESS_NBFI_ALL</h2>
+</div>
+<div id="registered_nbfi" class="section level2">
+<h2><span class="header-section-number">6.19</span> REGISTERED_NBFI</h2>
+</div>
+<div id="registered_nbfi_all" class="section level2">
+<h2><span class="header-section-number">6.20</span> REGISTERED_NBFI_ALL</h2>
+</div>
+<div id="reg_dfs_nbfi" class="section level2">
+<h2><span class="header-section-number">6.21</span> REG_DFS_NBFI</h2>
+</div>
+<div id="active_nbfi" class="section level2">
+<h2><span class="header-section-number">6.22</span> ACTIVE_NBFI</h2>
+</div>
+<div id="active_nbfi_all" class="section level2">
+<h2><span class="header-section-number">6.23</span> ACTIVE_NBFI_ALL</h2>
+</div>
+<div id="active30_nbfi" class="section level2">
+<h2><span class="header-section-number">6.24</span> ACTIVE30_NBFI</h2>
+</div>
+<div id="inactive_nbfi" class="section level2">
+<h2><span class="header-section-number">6.25</span> INACTIVE_NBFI</h2>
+</div>
+<div id="dormant_nbfi" class="section level2">
+<h2><span class="header-section-number">6.26</span> DORMANT_NBFI</h2>
+</div>
+<div id="otc_nbfi" class="section level2">
+<h2><span class="header-section-number">6.27</span> OTC_NBFI</h2>
+</div>
+<div id="nbfi_basic" class="section level2">
+<h2><span class="header-section-number">6.28</span> NBFI_BASIC</h2>
+</div>
+<div id="nbfi_adv" class="section level2">
+<h2><span class="header-section-number">6.29</span> NBFI_ADV</h2>
+</div>
+<div id="reg_nbfi_basic" class="section level2">
+<h2><span class="header-section-number">6.30</span> REG_NBFI_BASIC</h2>
+</div>
+<div id="reg_nbf_adv" class="section level2">
+<h2><span class="header-section-number">6.31</span> REG_NBF_ADV</h2>
+</div>
+<div id="active_nbfi_basic" class="section level2">
+<h2><span class="header-section-number">6.32</span> ACTIVE_NBFI_BASIC</h2>
+</div>
+<div id="active_nbfi_adv" class="section level2">
+<h2><span class="header-section-number">6.33</span> ACTIVE_NBFI_ADV</h2>
+</div>
+<div id="active30_nbfi_adv" class="section level2">
+<h2><span class="header-section-number">6.34</span> ACTIVE30_NBFI_ADV</h2>
+</div>
+<div id="nbfi_stage" class="section level2">
+<h2><span class="header-section-number">6.35</span> NBFI_STAGE</h2>
+</div>
+<div id="access_mfi" class="section level2">
+<h2><span class="header-section-number">6.36</span> ACCESS_MFI</h2>
+</div>
+<div id="registered_mfi" class="section level2">
+<h2><span class="header-section-number">6.37</span> REGISTERED_MFI</h2>
+</div>
+<div id="active_mfi" class="section level2">
+<h2><span class="header-section-number">6.38</span> ACTIVE_MFI</h2>
+</div>
+<div id="access_coop" class="section level2">
+<h2><span class="header-section-number">6.39</span> ACCESS_COOP</h2>
+</div>
+<div id="registered_coop" class="section level2">
+<h2><span class="header-section-number">6.40</span> REGISTERED_COOP</h2>
+</div>
+<div id="active_coop" class="section level2">
+<h2><span class="header-section-number">6.41</span> ACTIVE_COOP</h2>
+</div>
+<div id="access_post" class="section level2">
+<h2><span class="header-section-number">6.42</span> ACCESS_POST</h2>
+</div>
+<div id="registered_post" class="section level2">
+<h2><span class="header-section-number">6.43</span> REGISTERED_POST</h2>
+</div>
+<div id="active_post" class="section level2">
+<h2><span class="header-section-number">6.44</span> ACTIVE_POST</h2>
+</div>
+<div id="access_sacco" class="section level2">
+<h2><span class="header-section-number">6.45</span> ACCESS_SACCO</h2>
+</div>
+<div id="registered_sacco" class="section level2">
+<h2><span class="header-section-number">6.46</span> REGISTERED_SACCO</h2>
+</div>
+<div id="active_sacco" class="section level2">
+<h2><span class="header-section-number">6.47</span> ACTIVE_SACCO</h2>
+</div>
+<div id="access_bpr" class="section level2">
+<h2><span class="header-section-number">6.48</span> ACCESS_BPR</h2>
+</div>
+<div id="registered_bpr" class="section level2">
+<h2><span class="header-section-number">6.49</span> REGISTERED_BPR</h2>
+</div>
+<div id="active_bpr" class="section level2">
+<h2><span class="header-section-number">6.50</span> ACTIVE_BPR</h2>
+</div>
+<div id="access_pawnshop" class="section level2">
+<h2><span class="header-section-number">6.51</span> ACCESS_PAWNSHOP</h2>
+</div>
+<div id="registered_pawnshop" class="section level2">
+<h2><span class="header-section-number">6.52</span> REGISTERED_PAWNSHOP</h2>
+</div>
+<div id="active_pawnshop" class="section level2">
+<h2><span class="header-section-number">6.53</span> ACTIVE_PAWNSHOP</h2>
+</div>
+<div id="aware_payment_bank_provider" class="section level2">
+<h2><span class="header-section-number">6.54</span> AWARE_PAYMENT_BANK_PROVIDER</h2>
+</div>
+<div id="access_payment" class="section level2">
+<h2><span class="header-section-number">6.55</span> ACCESS_PAYMENT</h2>
+</div>
+<div id="registered_payment" class="section level2">
+<h2><span class="header-section-number">6.56</span> REGISTERED_PAYMENT</h2>
+</div>
+<div id="active_payment" class="section level2">
+<h2><span class="header-section-number">6.57</span> ACTIVE_PAYMENT</h2>
+</div>
+<div id="access_group" class="section level2">
+<h2><span class="header-section-number">6.58</span> ACCESS_GROUP</h2>
+</div>
+<div id="registered_group" class="section level2">
+<h2><span class="header-section-number">6.59</span> REGISTERED_GROUP</h2>
+</div>
+<div id="active_group" class="section level2">
+<h2><span class="header-section-number">6.60</span> ACTIVE_GROUP</h2>
+</div>
+<div id="nbfi_transfer" class="section level2">
+<h2><span class="header-section-number">6.61</span> NBFI_TRANSFER</h2>
+</div>
+<div id="nbfi_merchant" class="section level2">
+<h2><span class="header-section-number">6.62</span> NBFI_MERCHANT</h2>
+</div>
+<div id="nbfi_bill" class="section level2">
+<h2><span class="header-section-number">6.63</span> NBFI_BILL</h2>
+</div>
+<div id="nbfi_gov" class="section level2">
+<h2><span class="header-section-number">6.64</span> NBFI_GOV</h2>
+</div>
+<div id="nbfi-wage" class="section level2">
+<h2><span class="header-section-number">6.65</span> NBFI WAGE</h2>
+</div>
+<div id="nbfi_insurance" class="section level2">
+<h2><span class="header-section-number">6.66</span> NBFI_INSURANCE</h2>
+</div>
+<div id="nbfi_save" class="section level2">
+<h2><span class="header-section-number">6.67</span> NBFI_SAVE</h2>
+</div>
+<div id="nbfi_invest" class="section level2">
+<h2><span class="header-section-number">6.68</span> NBFI_INVEST</h2>
+</div>
+<div id="nbfi_loan" class="section level2">
+<h2><span class="header-section-number">6.69</span> NBFI_LOAN</h2>
+</div>
+<div id="nbfi_airtime" class="section level2">
+<h2><span class="header-section-number">6.70</span> NBFI_AIRTIME</h2>
+</div>
+<div id="active_nbfi_transfer" class="section level2">
+<h2><span class="header-section-number">6.71</span> ACTIVE_NBFI_TRANSFER</h2>
+</div>
+<div id="active_nbfi_merchant" class="section level2">
+<h2><span class="header-section-number">6.72</span> ACTIVE_NBFI_MERCHANT</h2>
+</div>
+<div id="active_nbfi_bill" class="section level2">
+<h2><span class="header-section-number">6.73</span> ACTIVE_NBFI_BILL</h2>
+</div>
+<div id="active_nbfi_gov" class="section level2">
+<h2><span class="header-section-number">6.74</span> ACTIVE_NBFI_GOV</h2>
+</div>
+<div id="active_nbfi-wage" class="section level2">
+<h2><span class="header-section-number">6.75</span> ACTIVE_NBFI WAGE</h2>
+</div>
+<div id="active_nbfi_insurance" class="section level2">
+<h2><span class="header-section-number">6.76</span> ACTIVE_NBFI_INSURANCE</h2>
+</div>
+<div id="active_nbfi_save" class="section level2">
+<h2><span class="header-section-number">6.77</span> ACTIVE_NBFI_SAVE</h2>
+</div>
+<div id="active_nbfi_invest" class="section level2">
+<h2><span class="header-section-number">6.78</span> ACTIVE_NBFI_INVEST</h2>
+</div>
+<div id="active_nbfi_loan" class="section level2">
+<h2><span class="header-section-number">6.79</span> ACTIVE_NBFI_LOAN</h2>
+</div>
+<div id="active_nbfi_airtime" class="section level2">
+<h2><span class="header-section-number">6.80</span> ACTIVE_NBFI_AIRTIME</h2>
+</div>
+<div id="r_stopmfi1" class="section level2">
+<h2><span class="header-section-number">6.81</span> R_STOPMFI1</h2>
+</div>
+<div id="r_stopmfi2" class="section level2">
+<h2><span class="header-section-number">6.82</span> R_STOPMFI2</h2>
+</div>
+<div id="r_stopmfi3" class="section level2">
+<h2><span class="header-section-number">6.83</span> R_STOPMFI3</h2>
+</div>
+<div id="r_stopmfi4" class="section level2">
+<h2><span class="header-section-number">6.84</span> R_STOPMFI4</h2>
+</div>
+<div id="r_stopmfi5" class="section level2">
+<h2><span class="header-section-number">6.85</span> R_STOPMFI5</h2>
+</div>
+<div id="r_stopmfi6" class="section level2">
+<h2><span class="header-section-number">6.86</span> R_STOPMFI6</h2>
+</div>
+<div id="r_stopmfi7" class="section level2">
+<h2><span class="header-section-number">6.87</span> R_STOPMFI7</h2>
+
+<p>#Informal Financial Groups</p>
+<p>The following variables were coded in numeric order of which they were asked.</p>
+</div>
+<div id="belong_infml" class="section level2">
+<h2><span class="header-section-number">6.88</span> BELONG_INFML</h2>
+<p>A derived binary variable, BELONG_INFML represents the respondent’s current or formal participation in an informal financial group (IFG). The definition varies by sophistication of village-level services, but the common institutions that qualify include:</p>
+<ul>
+<li>Cooperatives</li>
+<li>Village-level saving and lending group</li>
+<li>Informal loan clubs or rotating savings and credit associations (ROSCAs, with <a href="http://www.gdrc.org/icm/rosca/rosca-names.html">many regional names</a>)</li>
+</ul>
+<div id="bangladesh-1" class="section level3">
+<h3><span class="header-section-number">6.88.1</span> Bangladesh</h3>
+<p>Only 2016 and 2017 data are available.
+### Kenya
+Only 2015-2017 data are available.</p>
+</div>
+<div id="india-1" class="section level3">
+<h3><span class="header-section-number">6.88.2</span> India</h3>
+<p>Only 2015-2017 data are available.</p>
+</div>
+<div id="indonesia-1" class="section level3">
+<h3><span class="header-section-number">6.88.3</span> Indonesia</h3>
+<p>Only 2015 and 2016 data are available.</p>
+</div>
+<div id="nigeria-1" class="section level3">
+<h3><span class="header-section-number">6.88.4</span> Nigeria</h3>
+<p>Only 2015-2017 data are available.</p>
+</div>
+<div id="pakistan-1" class="section level3">
+<h3><span class="header-section-number">6.88.5</span> Pakistan</h3>
+<p>No data is available.</p>
+</div>
+<div id="tanzania-1" class="section level3">
+<h3><span class="header-section-number">6.88.6</span> Tanzania</h3>
+<p>Only 2015-2017 data are available.</p>
+</div>
+<div id="uganda-2" class="section level3">
+<h3><span class="header-section-number">6.88.7</span> Uganda</h3>
+<p>Only 2015-2017 data are available.</p>
+</div>
+<div id="r_infml" class="section level3">
+<h3><span class="header-section-number">6.88.8</span> R_INFML</h3>
+<p>If the respondent confirmed their past or present participation in an informal financial group, their main reason was asked from the following options:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>To have a lump sum to use when it’s your turn</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>To help when there is a death in the family or any other emergency</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>To have access to loans or credit when needed</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Easier to use or more accessible than other financial service providers</td>
+</tr>
+</tbody>
+</table>
+<p>In 2017, responses lie on a Likert scale from 1, least important, to 5, most important, for these four columns. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
+### Bangladesh
+### Kenya
+### India
+2015: IFI22<br />
+2016: IFI21
+### Indonesia
+#### Nigeria
+2013: IFI5
+Nigeria 2013, 2016 only asked which reason for informal group financing was most important
+out of a list of 15, with an “other” option to describe.
+If their response was one of the four, it was categorized as a “5” (most important)
+### Pakistan
+### Tanzania
+2013: None
+### Uganda
+2013: None</p>
+<hr />
+</div>
+</div>
+<div id="r_noinfml" class="section level2">
+<h2><span class="header-section-number">6.89</span> R_NOINFML</h2>
+<p>These questions ask the importance of each reason for <em>not</em> being a part of an IFG.
+In 2017, responses lie on a Likert scale from 1, least important, to 5, most important, for these four columns. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.</p>
+<p><strong>How important or unimportant is the following reason for your decision not to join informal societies or group saving schemes?</strong></p>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="82%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IFG2_1</td>
+<td>Don’t have any money left for savings</td>
+</tr>
+<tr class="even">
+<td>IFG2_2</td>
+<td>Don’t know about them</td>
+</tr>
+<tr class="odd">
+<td>IFG2_3</td>
+<td>Don’t trust them/people steal your money</td>
+</tr>
+<tr class="even">
+<td>IFG2_4</td>
+<td>Don’t need any service from them/their services are better served by other financial service providers</td>
+</tr>
+</tbody>
+</table>
+<div id="bangladesh-2" class="section level3">
+<h3><span class="header-section-number">6.89.1</span> Bangladesh</h3>
+<p>In 2013, there was no option for “Don’t know about them”.
+### Kenya
+### India
+2015: IFI25
+2016: IFI24
+### Indonesia
+### Nigeria
+2013:IFI3
+For 2016, the respondent was to choose their <em>most</em> important reason from ten options, including a custom “other” option. To adjust, the reason given (if one of the four we account for)was coded as a “5” and all others were
+### Pakistan
+IFI21
+### Tanzania
+### Uganda
+2013: None</p>
+<hr />
+</div>
+<div id="infml_service" class="section level3">
+<h3><span class="header-section-number">6.89.2</span> INFML_SERVICE</h3>
+<p>This subsection asks the respondent, if a member of an IFG, what services they are provided.</p>
+<p><em>Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to?</em></p>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="88%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IFG3_1</td>
+<td>Welfare/clan group - we help each other out for things like funerals</td>
+</tr>
+<tr class="even">
+<td>IFG3_2</td>
+<td>We receive loan/credit</td>
+</tr>
+<tr class="odd">
+<td>IFG3_3</td>
+<td>We collect money and give to each member a lump sum (pot) or gift in turn</td>
+</tr>
+<tr class="even">
+<td>IFG3_4</td>
+<td>We save and lend money to members and/or non-members to be repaid with interest</td>
+</tr>
+<tr class="odd">
+<td>IFG3_5</td>
+<td>We periodically distribute all monies held by the group to its members</td>
+</tr>
+<tr class="even">
+<td>IFG3_6</td>
+<td>We save together and put the money in an account</td>
+</tr>
+<tr class="odd">
+<td>IFG3_7</td>
+<td>We make other kinds of investments as a group (e.g., property, business)</td>
+</tr>
+<tr class="even">
+<td>IFG3_8</td>
+<td>We invest in the stock market as a group</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="bangladesh-3" class="section level3">
+<h3><span class="header-section-number">6.89.3</span> Bangladesh</h3>
+<p>2013:
+IFI5
+### Kenya
+### India
+### Indonesia
+### Nigeria
+### Pakistan
+### Tanzania
+### Uganda
+2013: None</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="financial-inclusion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="loans.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
