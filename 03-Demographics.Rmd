@@ -11,7 +11,7 @@ Demographics
 
 ## AGE_GROUP
 
-* Description: 10 year age group, derived from AGE
+* Description: 10-year age group, derived from AGE
 * Levels 
        + 15-24
        + 25-34
@@ -26,7 +26,7 @@ Demographics
        
 ## EDU
 
-* Description: Grouping highest education level for respondent into 5 categories, derived from DG4. 
+* Description: Grouping highest level of education into 5 categories, derived from DG4. 
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -44,10 +44,12 @@ Demographics
 
   Question Index  |                       Question
   ----------------|-------------------------------------------------------------
-      LN1A        |  Reading ability
-      LN1B        |  Reading comprehension 
-      LN2_1       |  On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Reading in [questionnaire language]
-      LN2_2       |  On a scale from 1 (cannot do at all) to 5 (excellent), please evaluate how you perform in the following areas: Writing in [questionnaire language]
+      LN1A        |  Reading ability (1=Read fluently with no help;   2=Read well with little help; 
+                                      3= Struggle to read even with help;  4= Unable to read
+      LN1B        |  Reading comprehension (1= Read with full understanding;   2= Read with good understanding but needed some help
+                                            3= Struggle to understand; 4=Unable to understand)
+      LN2_1       |  Reading in (survey language):  1=cannot do at all; 2=Very badly; 3=Somewhat badly; 4= Good; 5=Excellent
+      LN2_2       |  Writing in (survey language): 1=cannot do at all; 2=Very badly; 3=Somewhat badly; 4= Good; 5=Excellent
 * Levels 
        + Basic literacy
        + Lack of basic literacy
