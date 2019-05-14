@@ -46,22 +46,10 @@ Value | Reason
 
 Between 12 and 15 options were originally given for this question. In 2017, respondents were asked about the importance of these factors on a Likert scale from 1, least important, to 5, most important. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
 
-### India
-2015: IFI22
- Because there was no direct equivalent for value 3, several options were combined that were relevant to financial access. (10- To increase income by lending, 11- Because you could not get money or help anywhere else)
-2016: IFI21
-### Indonesia
-### Kenya
-#### Nigeria
-### Pakistan
-### Tanzania
-### Uganda
-
 ----
 
 ## R_NOINFML
 These questions ask the importance of each reason for _not_ being a part of an IFG. 
-
 
 **What is the most important reason for your decision not to join informal societies or group saving schemes?**
 
