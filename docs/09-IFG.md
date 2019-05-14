@@ -34,7 +34,7 @@ Only 2015-2017 data are available.
 ### Uganda
 Only 2015-2017 data are available.
 
-### R_INFML
+## R_INFML
 If the respondent confirmed their past or present participation in an informal financial group, their main reason was asked from the following options:
 
 Value | Reason
@@ -44,32 +44,12 @@ Value | Reason
 3 | To have access to loans or credit when needed
 4 | Easier to use or more accessible than other financial service providers
 
-In 2017, responses lie on a Likert scale from 1, least important, to 5, most important, for these four columns. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
-### Bangladesh
-2013: IFI5, but are aren't equivalent response choices.
-
-### India
-2015: IFI22
- 15 options were originally given for this question. 
- Because there was no direct equivalent for value 3, several options were combined that were relevant to financial access. (10- To increase income by lending, 11- Because you could not get money or help anywhere else)
-2016: IFI21
-### Indonesia
-### Kenya
-#### Nigeria
-2013: IFI5
-
-### Pakistan
-2015: ifi22
-### Tanzania
-2013: None
-### Uganda
-2013: None
+Between 12 and 15 options were originally given for this question. In 2017, respondents were asked about the importance of these factors on a Likert scale from 1, least important, to 5, most important. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
 
 ----
 
 ## R_NOINFML
 These questions ask the importance of each reason for _not_ being a part of an IFG. 
-
 
 **What is the most important reason for your decision not to join informal societies or group saving schemes?**
 
@@ -84,45 +64,54 @@ Value | Reason
 In 2013, there was no option for "Don't know about them".
 ### Kenya
 ### India
-2015: IFI25
-2016: IFI24
 ### Indonesia
 ### Nigeria
-2013: IFI3. Responses available did not include 2- "Don't know about them".
-  For 2016, the respondent was to choose their _most_ important reason from ten options, including a custom "other" option. To adjust, the reason given (if one of the four we account for)was coded as a "5" and all others were 
+In 2013, there was no option for "Don't know about them".
 ### Pakistan
-IFI21
-2015:ifi25
 ### Tanzania
 ### Uganda
-2013: None
 
 ----
 
 ### INFML_SERVICE
 This subsection asks the respondent, if a member of an IFG, what services they are provided.
-
+These questions are all binary, with 1 meaning "Yes" and 2 meaning "No".
 *Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to?*
 
 Variable | Reason
 -------- | -------------------------------------------------------------       
-IFG3_1   | Welfare/clan group - we help each other out for things like funerals
-IFG3_2   | We receive loan/credit
-IFG3_3   | We collect money and give to each member a lump sum (pot) or gift in turn
-IFG3_4   | We save and lend money to members and/or non-members to be repaid with interest
-IFG3_5   | We periodically distribute all monies held by the group to its members
-IFG3_6   | We save together and put the money in an account
-IFG3_7   | We make other kinds of investments as a group (e.g., property, business)
-IFG3_8   | We invest in the stock market as a group
+INFML_SERVICE_1   | Welfare/clan group - we help each other out for things like funerals
+INFML_SERVICE_2   | We receive loan/credit
+INFML_SERVICE_3   | We collect money and give to each member a lump sum (pot) or gift in turn
+INFML_SERVICE_4   | We save and lend money to members and/or non-members to be repaid with interest
+INFML_SERVICE_5   | We periodically distribute all monies held by the group to its members
+INFML_SERVICE_6   | We save together and put the money in an account
+INFML_SERVICE_7   | We make other kinds of investments as a group (e.g., property, business)
+INFML_SERVICE_8   | We invest in the stock market as a group
 
+**Number of service options asked, by country and year**
+country     | 2015 | 2016 | 2017
+----
+  Bangladesh  |  0  |  5  |  8
+  India       |  0  |  9  |  8
+  Indonesia   |  0  |  9  |  0
+  Kenya       |  7  |  8  |  8
+  Nigeria     |  7  |  8  |  8
+  Pakistan    |  0  |  7  |  7
+  Tanzania    |  7  |  8  |  8
+  Uganda      |  7  |  8  |  8
+  
 ### Bangladesh
-2013: 
-IFI5
-### Kenya
+In 2016, serivces 1 and 5 were not asked about.
 ### India
 ### Indonesia
+### Kenya
+In 2015, service 2 was not asked about.
 ### Nigeria
+In 2015, service 2 was not asked about.
 ### Pakistan
+In 2015, this question was not asked. In 2016 and 2017, only services 1, 3, 4, and 6 were asked. Other, more specific ROSCA-related questions were asked.
 ### Tanzania
+In 2015, service 2 was not asked about.
 ### Uganda
-2013: None
+In 2015, service 2 was not asked about.
