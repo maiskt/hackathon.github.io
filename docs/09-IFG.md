@@ -4,7 +4,7 @@ The following variables were coded in numeric order of which they were asked.
 
 ## BELONG_INFML
 
-A derived binary variable, BELONG_INFML represents the respondent's current or formal participation in an informal financial group (IFG). The definition varies by sophistication of village-level services, but the common institutions that qualify include:
+A derived binary variable, BELONG_INFML represents the respondent's participation in informal societies or group saving schemes. The definition varies by sophistication of village-level services, but the common institutions that qualify include:
 
 * Cooperatives
 * Village-level saving and lending group
@@ -35,30 +35,30 @@ Only 2015-2017 data are available.
 Only 2015-2017 data are available.
 
 ## R_INFML
-If the respondent confirmed their past or present participation in an informal financial group, their main reason was asked from the following options:
+For respondents who belong to informal societies or group saving schemes, R_INFML captures the importance of the following reasons for thier decision to join:
 
 Value | Reason
 ----- | -------
-1 | To have a lump sum to use when it’s your turn
-2 | To help when there is a death in the family or any other emergency
-3 | To have access to loans or credit when needed
-4 | Easier to use or more accessible than other financial service providers
+    1 | To have a lump sum to use when it’s your turn
+    2 | To help when there is a death in the family or any other emergency
+    3 | To have access to loans or credit when needed
+    4 | Easier to use or more accessible than other financial service providers
 
 Between 12 and 15 options were originally given for this question. In 2017, respondents were asked about the importance of these factors on a Likert scale from 1, least important, to 5, most important. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
 
 ----
 
 ## R_NOINFML
-These questions ask the importance of each reason for _not_ being a part of an IFG. 
+These questions ask the importance of each reason for _not_ being a part of an Informal Financial Group. 
 
 **What is the most important reason for your decision not to join informal societies or group saving schemes?**
 
 Value | Reason
 ----- | -------
-1  | Don't have any money left for savings
-2  | Don't know about them
-3  | Don't trust them/people steal your money
-4  | Don't need any service from them/their services are better served by other financial service providers
+1     | Don't have any money left for savings
+2     | Don't know about them
+3     | Don't trust them/people steal your money
+4     | Don't need any service from them/their services are better served by other financial service providers
 
 ### Bangladesh
 In 2013, there was no option for "Don't know about them".
@@ -74,8 +74,8 @@ In 2013, there was no option for "Don't know about them".
 ----
 
 ## INFML_SERVICE
-This subsection asks the respondent, if a member of an IFG, what services they are provided.
-These questions are all binary, with 1 meaning "Yes" and 2 meaning "No".
+This subsection asks about the services provided to the respondent by the informal societies or group saving schemes they belong to.
+These questions are all binary, with values 1 for "Yes" and 2 for "No".
 *Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to?*
 
 Variable | Reason
@@ -89,7 +89,7 @@ INFML_SERVICE_6   | We save together and put the money in an account
 INFML_SERVICE_7   | We make other kinds of investments as a group (e.g., property, business)
 INFML_SERVICE_8   | We invest in the stock market as a group
 
-**Number of service options asked, by country and year**
+**Number of service options in the questionnaire, by country and year**
 country     | 2015 | 2016 | 2017
 ----
   Bangladesh  |  0  |  5  |  8
@@ -102,7 +102,7 @@ country     | 2015 | 2016 | 2017
   Uganda      |  7  |  8  |  8
   
 ### Bangladesh
-In 2016, serivces 1 and 5 were not asked about.
+In 2016, services 1 and 5 were not asked about.
 
 ### Kenya
 In 2015, service 2 was not asked about.

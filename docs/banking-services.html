@@ -72,9 +72,10 @@
 <li class="chapter" data-level="1.1" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#sbjnum"><i class="fa fa-check"></i><b>1.1</b> SBJNUM</a></li>
 <li class="chapter" data-level="1.2" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#country"><i class="fa fa-check"></i><b>1.2</b> COUNTRY</a></li>
 <li class="chapter" data-level="1.3" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#year"><i class="fa fa-check"></i><b>1.3</b> YEAR</a></li>
-<li class="chapter" data-level="1.4" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#ur"><i class="fa fa-check"></i><b>1.4</b> UR</a></li>
-<li class="chapter" data-level="1.5" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#cluster"><i class="fa fa-check"></i><b>1.5</b> CLUSTER</a></li>
-<li class="chapter" data-level="1.6" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#anon_lat-anon_long"><i class="fa fa-check"></i><b>1.6</b> ANON_LAT, ANON_LONG</a></li>
+<li class="chapter" data-level="1.4" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#weigth"><i class="fa fa-check"></i><b>1.4</b> WEIGTH</a></li>
+<li class="chapter" data-level="1.5" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#ur"><i class="fa fa-check"></i><b>1.5</b> UR</a></li>
+<li class="chapter" data-level="1.6" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#cluster"><i class="fa fa-check"></i><b>1.6</b> CLUSTER</a></li>
+<li class="chapter" data-level="1.7" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#anon_lat-anon_long"><i class="fa fa-check"></i><b>1.7</b> ANON_LAT, ANON_LONG</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="poverty-index.html"><a href="poverty-index.html"><i class="fa fa-check"></i><b>2</b> Poverty Index</a><ul>
 <li class="chapter" data-level="2.1" data-path="poverty-index.html"><a href="poverty-index.html#ppi_score"><i class="fa fa-check"></i><b>2.1</b> PPI_SCORE</a></li>
@@ -563,12 +564,12 @@
 <div id="access_bank" class="section level2">
 <h2><span class="header-section-number">6.1</span> ACCESS_BANK</h2>
 <ul>
-<li>Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else’s name. For example, Kenya 2017 uses following questions.</li>
+<li>Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else’s name. For example, Kenya 2017 uses the following questions.</li>
 </ul>
 <table>
 <colgroup>
-<col width="21%" />
-<col width="78%" />
+<col width="20%" />
+<col width="79%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -596,26 +597,22 @@
 </tbody>
 </table>
 <ul>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
-<li>Note:
-<ul>
-<li>About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.</li>
-</ul></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.</p></li>
 </ul>
 </div>
 <div id="registered_bank" class="section level2">
 <h2><span class="header-section-number">6.2</span> REGISTERED_BANK</h2>
 <ul>
-<li>Description: Individuals who hold an account with a bank that provides a full suite of financial services. For example, Kenya 2017 uses following questions.</li>
+<li>Description: Counts individuals who hold an account with a bank that provides a full suite of financial services. For example, Kenya 2017 uses the following questions.</li>
 </ul>
 <table>
 <colgroup>
-<col width="21%" />
-<col width="78%" />
+<col width="20%" />
+<col width="79%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -639,26 +636,22 @@
 </tbody>
 </table>
 <ul>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
-<li>Note:
-<ul>
-<li>About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.</li>
-</ul></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.</p></li>
 </ul>
 </div>
 <div id="active_bank" class="section level2">
 <h2><span class="header-section-number">6.3</span> ACTIVE_BANK</h2>
 <ul>
-<li>Description: An individual who has an account registered in their name with a full-service bank and has used it in the last 90 days. For example, Kenya 2017 uses following questions.</li>
+<li>Description: counts individual who have an account registered in their name with a full-service bank and have used it in the last 90 days before the survey. For example, Kenya 2017 uses the following questions.</li>
 </ul>
 <table>
 <colgroup>
-<col width="21%" />
-<col width="78%" />
+<col width="20%" />
+<col width="79%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -686,26 +679,22 @@
 </tbody>
 </table>
 <ul>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
-<li>Note:
-<ul>
-<li>About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.</li>
-</ul></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.</p></li>
 </ul>
 </div>
 <div id="active30_bank" class="section level2">
 <h2><span class="header-section-number">6.4</span> ACTIVE30_BANK</h2>
 <ul>
-<li>Description: An individual who has an account registered in their name with a full-service bank and has used it in the last 30 days. For example, Kenya 2017 uses following questions.</li>
+<li>Description: Counts individuals who have an account registered in their name with a full-service bank and have used it in the last 30 days before the survey. For example, Kenya 2017 uses the following questions.</li>
 </ul>
 <table>
 <colgroup>
-<col width="21%" />
-<col width="78%" />
+<col width="20%" />
+<col width="79%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -733,26 +722,22 @@
 </tbody>
 </table>
 <ul>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
-<li>Note:
-<ul>
-<li>About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.</li>
-</ul></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.</p></li>
 </ul>
 </div>
 <div id="inactive_bank" class="section level2">
 <h2><span class="header-section-number">6.5</span> INACTIVE_BANK</h2>
 <ul>
-<li>Description: An individual who has an account registered in their name with a full-service bank and has not used it in the last 90 days. For example, Kenya 2017 uses following questions.</li>
+<li>Description: Counts individuals who have an account registered in their name with a full-service bank but have not used it in the last 90 days before the survey. For example, Kenya 2017 uses the following questions.</li>
 </ul>
 <table>
 <colgroup>
-<col width="21%" />
-<col width="78%" />
+<col width="20%" />
+<col width="79%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -780,37 +765,31 @@
 </tbody>
 </table>
 <ul>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
-<li>Note:
-<ul>
-<li>About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.</li>
-</ul></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.</p></li>
 </ul>
 </div>
 <div id="dormant_bank" class="section level2">
 <h2><span class="header-section-number">6.6</span> DORMANT_BANK</h2>
 <ul>
-<li><p>Description: An individual who has an account registered in their name with a full-service bank but never it. DORMANT_BANK was derived from ACCESS_BANK and REGISTERED_BANK.</p></li>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
+<li><p>Description: Counts individuals who have an account registered in their name with a full-service bank but never used it. DORMANT_BANK was derived from ACCESS_BANK and REGISTERED_BANK (see above).</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
 </ul>
 </div>
 <div id="bank_basic" class="section level2">
 <h2><span class="header-section-number">6.7</span> BANK_BASIC</h2>
 <ul>
-<li>Description: An individual who has used bank account for cash-in (deposit) or cash-out (withdraw), transfer money to another individual, or conduct account maintenance. For example, Bangladesh 2016 uses following questions.</li>
+<li>Description: Counts individuals who have used a bank account to cash-in (deposit), cash-out (withdraw), transfer money to another individual, or conduct account maintenance. For example, Bangladesh 2016 uses the following questions.</li>
 </ul>
 <table>
 <colgroup>
-<col width="21%" />
-<col width="78%" />
+<col width="20%" />
+<col width="79%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -842,27 +821,23 @@
 </tbody>
 </table>
 <ul>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
-<li>Note:
-<ul>
-<li>For 2018 survey, questions about cash-in (deposit) or cash-out (withdraw) and conduct account maintenance are not available.</li>
-<li>For 2013, 2014, 2017 survey, questions about conduct account maintenance are not available.</li>
-</ul></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++ 2018 surveys didn’t include questions on cash-in (deposit), cash-out (withdraw) and conducting account maintenance.
++ 2013, 2014, and 2017 surveys didn’t include questions on conducting account maintenance.</p></li>
 </ul>
 </div>
 <div id="bank_adv" class="section level2">
 <h2><span class="header-section-number">6.8</span> BANK_ADV</h2>
 <ul>
-<li>Description: An individual who has used bank account for csaving, borrowing, insurance, investment, paying bills or receiving wages or government benefits. Take Bangladesh 2017 as an example, BANK_ADV was derived from FF14 set questions, FF22_1 and FB16A_1.</li>
+<li>Description: Counts individuals who have used a bank account for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. Using Bangladesh 2017 as an example, BANK_ADV was derived from questions FF14, FF22_1 and FB16A_1.</li>
 </ul>
 <table>
 <colgroup>
-<col width="21%" />
-<col width="78%" />
+<col width="20%" />
+<col width="79%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -897,7 +872,7 @@
 </tr>
 <tr class="odd">
 <td>FF14_9</td>
-<td>Paid a bill for medical expenses, housing, rent or utilities,</td>
+<td>Paid a bill for medical expenses, housing, rent or utilities</td>
 </tr>
 <tr class="even">
 <td>FF14_10,FB16A_1</td>
@@ -919,76 +894,63 @@
 </table>
 <ul>
 <li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
++ Yes
++ No</li>
 </ul>
 </div>
 <div id="reg_bank_basic" class="section level2">
 <h2><span class="header-section-number">6.9</span> REG_BANK_BASIC</h2>
 <ul>
-<li><p>Description: An individual who has an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdraw), transfer money to another individual, or conduct account maintenance. REG_BANK_BASIC was derived from REGISTERED_BANK and BANK_BASIC.</p></li>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
+<li><p>Description: counts individuals who have an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance. REG_BANK_BASIC was derived from REGISTERED_BANK and BANK_BASIC.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
 </ul>
 </div>
 <div id="reg_bank_adv" class="section level2">
 <h2><span class="header-section-number">6.10</span> REG_BANK_ADV</h2>
 <ul>
-<li><p>Description: An individual who has an account registered in their name with a full-service bank and used it for csaving, borrowing, insurance, investment, paying bills or receiving wages or government benefits. REG_BANK_ADV was derived from REGISTERED_BANK and BANK_ADV.</p></li>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
+<li><p>Description: counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. REG_BANK_ADV was derived from REGISTERED_BANK and BANK_ADV.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
 </ul>
 </div>
 <div id="active_bank_basic" class="section level2">
 <h2><span class="header-section-number">6.11</span> ACTIVE_BANK_BASIC</h2>
 <ul>
-<li><p>Description: An individual who has an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdraw), transfer money to another individual, or conduct account maintenance in the last 90 days. ACTIVE_BANK_BASIC was derived from ACTIVE_BANK and BANK_BASIC.</p></li>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
+<li><p>Description: counts individuals who have an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance in the last 90 days. ACTIVE_BANK_BASIC was derived from ACTIVE_BANK and BANK_BASIC.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
 </ul>
 </div>
 <div id="active_bank_adv" class="section level2">
 <h2><span class="header-section-number">6.12</span> ACTIVE_BANK_ADV</h2>
 <ul>
-<li><p>Description: An individual who has an account registered in their name with a full-service bank and used it for csaving, borrowing, insurance, investment, paying bills or receiving wages or government benefits in the last 90 days. ACTIVE_BANK_ADV was derived from ACTIVE_BANK and BANK_ADV.</p></li>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
+<li><p>Description: counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits in the last 90 days. ACTIVE_BANK_ADV was derived from ACTIVE_BANK and BANK_ADV.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
 </ul>
 </div>
 <div id="active30_bank_adv" class="section level2">
 <h2><span class="header-section-number">6.13</span> ACTIVE30_BANK_ADV</h2>
 <ul>
-<li><p>Description: An individual who has an account registered in their name with a full-service bank and used it for csaving, borrowing, insurance, investment, paying bills or receiving wages or government benefits in the last 30 days. ACTIVE30_BANK_ADV was derived from ACTIVE30_BANK and BANK_ADV.</p></li>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
+<li><p>Description: counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits in the last 30 days. ACTIVE30_BANK_ADV was derived from ACTIVE30_BANK and BANK_ADV.</p></li>
+<li><p>Levels
++ Yes
++ No</p></li>
 </ul>
 </div>
 <div id="bank_stage" class="section level2">
 <h2><span class="header-section-number">6.14</span> BANK_STAGE</h2>
 <ul>
-<li>Description: A series of progressive stages through which individuals become more active users of more sophisticated financial services.</li>
-</ul>
+<li><p>Description: A series of progressive stages through which individuals become more active users of more sophisticated financial services.</p>
 <table>
 <colgroup>
-<col width="35%" />
-<col width="64%" />
+<col width="34%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -999,50 +961,43 @@
 <tbody>
 <tr class="odd">
 <td>Bank nonuser</td>
-<td>did not have a bank account registered in their name or a joint account in their and someone else’s name or never use a bank</td>
+<td>did not have a bank account registered in their name or a joint account in their and someone else’s name or never used a bank.</td>
 </tr>
 <tr class="even">
 <td>Unregistered bank user</td>
-<td>did not have a bank account registered in their name or a joint account in their and someone else’s name but ever used it</td>
+<td>did not have a bank account registered in their name or a joint account in their and someone else’s name but ever used it.</td>
 </tr>
 <tr class="odd">
 <td>Registered inactive bank user</td>
-<td>had a bank account registered in their name or a joint account in their and someone else’s name but did not use it in the last 90 days</td>
+<td>had a bank account registered in their name or a joint account in their and someone else’s name but did not use it in the last 90 days.</td>
 </tr>
 <tr class="even">
 <td>Basic only active bank user</td>
-<td>had a bank account registered in their name or a joint account in their and someone else’s name and only used it in the last 90 days for basic activities(cash-in (deposit) or cash-out (withdraw), transfer money to another individual, or conduct account maintenance)</td>
+<td>had a bank account registered in their name or a joint account in their and someone else’s name and only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out (withdraw), money transfer to another individual, or conducting account maintenance.</td>
 </tr>
 <tr class="odd">
-<td>Adavanced active bank user</td>
-<td>had a bank account registered in their name or a joint account in their and someone else’s name and used it in the last 90 days for advanced activities(csaving, borrowing, insurance, investment, paying bills or receiving wages or government benefits)</td>
+<td>Advanced active bank user</td>
+<td>had a bank account registered in their name or a joint account in their and someone else’s name and used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment, paying bills or receiving wages or government benefits).</td>
 </tr>
 </tbody>
-</table>
-<ul>
-<li>Levels
-<ul>
-<li>Bank nonuser</li>
-<li>Unregistered bank user</li>
-<li>Registered inactive bank user</li>
-<li>Basic only active bank user</li>
-<li>Adavanced active bank user</li>
-</ul></li>
+</table></li>
+<li><p>Levels
++ Bank nonuser
++ Unregistered bank user
++ Registered inactive bank user
++ Basic only active bank user
++ Advanced active bank user</p></li>
 </ul>
 </div>
 <div id="bank_transfer" class="section level2">
 <h2><span class="header-section-number">6.15</span> BANK_TRANSFER</h2>
 <ul>
 <li><p>Description:</p></li>
-<li>Levels
-<ul>
-<li>Yes</li>
-<li>No</li>
-</ul></li>
-<li>Note:
-<ul>
-<li></li>
-</ul></li>
+<li><p>Levels
++ Yes
++ No</p></li>
+<li><p>Note:
++</p></li>
 </ul>
 </div>
 <div id="bank_merchant" class="section level2">

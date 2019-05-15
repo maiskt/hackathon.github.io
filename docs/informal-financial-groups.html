@@ -72,9 +72,10 @@
 <li class="chapter" data-level="1.1" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#sbjnum"><i class="fa fa-check"></i><b>1.1</b> SBJNUM</a></li>
 <li class="chapter" data-level="1.2" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#country"><i class="fa fa-check"></i><b>1.2</b> COUNTRY</a></li>
 <li class="chapter" data-level="1.3" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#year"><i class="fa fa-check"></i><b>1.3</b> YEAR</a></li>
-<li class="chapter" data-level="1.4" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#ur"><i class="fa fa-check"></i><b>1.4</b> UR</a></li>
-<li class="chapter" data-level="1.5" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#cluster"><i class="fa fa-check"></i><b>1.5</b> CLUSTER</a></li>
-<li class="chapter" data-level="1.6" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#anon_lat-anon_long"><i class="fa fa-check"></i><b>1.6</b> ANON_LAT, ANON_LONG</a></li>
+<li class="chapter" data-level="1.4" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#weigth"><i class="fa fa-check"></i><b>1.4</b> WEIGTH</a></li>
+<li class="chapter" data-level="1.5" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#ur"><i class="fa fa-check"></i><b>1.5</b> UR</a></li>
+<li class="chapter" data-level="1.6" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#cluster"><i class="fa fa-check"></i><b>1.6</b> CLUSTER</a></li>
+<li class="chapter" data-level="1.7" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#anon_lat-anon_long"><i class="fa fa-check"></i><b>1.7</b> ANON_LAT, ANON_LONG</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="poverty-index.html"><a href="poverty-index.html"><i class="fa fa-check"></i><b>2</b> Poverty Index</a><ul>
 <li class="chapter" data-level="2.1" data-path="poverty-index.html"><a href="poverty-index.html#ppi_score"><i class="fa fa-check"></i><b>2.1</b> PPI_SCORE</a></li>
@@ -562,7 +563,7 @@
 <p>The following variables were coded in numeric order of which they were asked.</p>
 <div id="belong_infml" class="section level2">
 <h2><span class="header-section-number">9.1</span> BELONG_INFML</h2>
-<p>A derived binary variable, BELONG_INFML represents the respondent’s current or formal participation in an informal financial group (IFG). The definition varies by sophistication of village-level services, but the common institutions that qualify include:</p>
+<p>A derived binary variable, BELONG_INFML represents the respondent’s participation in informal societies or group saving schemes. The definition varies by sophistication of village-level services, but the common institutions that qualify include:</p>
 <ul>
 <li>Cooperatives</li>
 <li>Village-level saving and lending group</li>
@@ -603,7 +604,7 @@
 </div>
 <div id="r_infml" class="section level2">
 <h2><span class="header-section-number">9.2</span> R_INFML</h2>
-<p>If the respondent confirmed their past or present participation in an informal financial group, their main reason was asked from the following options:</p>
+<p>For respondents who belong to informal societies or group saving schemes, R_INFML captures the importance of the following reasons for thier decision to join:</p>
 <table>
 <thead>
 <tr class="header">
@@ -635,12 +636,12 @@
 </div>
 <div id="r_noinfml" class="section level2">
 <h2><span class="header-section-number">9.3</span> R_NOINFML</h2>
-<p>These questions ask the importance of each reason for <em>not</em> being a part of an IFG.</p>
+<p>These questions ask the importance of each reason for <em>not</em> being a part of an Informal Financial Group.</p>
 <p><strong>What is the most important reason for your decision not to join informal societies or group saving schemes?</strong></p>
-<table style="width:19%;">
+<table>
 <colgroup>
-<col width="8%" />
-<col width="11%" />
+<col width="41%" />
+<col width="58%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -669,17 +670,27 @@
 </table>
 <div id="bangladesh-1" class="section level3">
 <h3><span class="header-section-number">9.3.1</span> Bangladesh</h3>
-<p>In 2013, there was no option for “Don’t know about them”. ### Kenya ### India ### Indonesia ### Nigeria In 2013, there was no option for “Don’t know about them”. ### Pakistan ### Tanzania ### Uganda</p>
+<p>In 2013, there was no option for “Don’t know about them”.
+### Kenya
+### India
+### Indonesia
+### Nigeria
+In 2013, there was no option for “Don’t know about them”.
+### Pakistan
+### Tanzania
+### Uganda</p>
 <hr />
 </div>
 </div>
 <div id="infml_service" class="section level2">
 <h2><span class="header-section-number">9.4</span> INFML_SERVICE</h2>
-<p>This subsection asks the respondent, if a member of an IFG, what services they are provided. These questions are all binary, with 1 meaning “Yes” and 2 meaning “No”. <em>Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to?</em></p>
-<table style="width:99%;">
+<p>This subsection asks about the services provided to the respondent by the informal societies or group saving schemes they belong to.
+These questions are all binary, with values 1 for “Yes” and 2 for “No”.
+<em>Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to?</em></p>
+<table>
 <colgroup>
-<col width="12%" />
-<col width="86%" />
+<col width="11%" />
+<col width="88%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -722,10 +733,20 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Number of service options asked, by country and year</strong> country | 2015 | 2016 | 2017 —- Bangladesh | 0 | 5 | 8 India | 0 | 9 | 8 Indonesia | 0 | 9 | 0 Kenya | 7 | 8 | 8 Nigeria | 7 | 8 | 8 Pakistan | 0 | 7 | 7 Tanzania | 7 | 8 | 8 Uganda | 7 | 8 | 8</p>
+<p><strong>Number of service options in the questionnaire, by country and year</strong>
+country | 2015 | 2016 | 2017
+—-
+Bangladesh | 0 | 5 | 8
+India | 0 | 9 | 8
+Indonesia | 0 | 9 | 0
+Kenya | 7 | 8 | 8
+Nigeria | 7 | 8 | 8
+Pakistan | 0 | 7 | 7
+Tanzania | 7 | 8 | 8
+Uganda | 7 | 8 | 8</p>
 <div id="bangladesh-2" class="section level3">
 <h3><span class="header-section-number">9.4.1</span> Bangladesh</h3>
-<p>In 2016, serivces 1 and 5 were not asked about.</p>
+<p>In 2016, services 1 and 5 were not asked about.</p>
 </div>
 <div id="kenya-1" class="section level3">
 <h3><span class="header-section-number">9.4.2</span> Kenya</h3>
