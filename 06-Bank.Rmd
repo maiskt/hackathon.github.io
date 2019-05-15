@@ -122,17 +122,17 @@ Bank
 
 ## BANK_ADV
 
-* Description: An individual who has used bank account for csaving, borrowing, insurance, investment, paying bills or receiving wages or government benefits. Take Bangladesh 2017 as an example, BANK_ADV was derived from FF14 set questions, FF22_1 and FB16A_1. 
+* Description: Counts individuals who have used a bank account for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. Using Bangladesh 2017 as an example, BANK_ADV was derived from questions FF14, FF22_1 and FB16A_1. 
 
  Question Index   |                       Activities
   ----------------|-------------------------------------------------------------
       FF14_2      |  Bought airtime top-ups or paid a mobile phone bill
       FF14_3      |  Paid a school fee
-      FF14_4      |  Paid a bill for medical expenses, housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
+      FF14_4      |  Paid a bill for medical expenses, housing, rent or utilities, such as electricity, water, solar, satellite TV or                        cable TV
       FF14_5      |  Paid a government bill, including tax, fine or fee
       FF14_7      |  Received a welfare, pension or other benefit payment from the government
       FF14_8      |  Received wages for your primary or secondary job
-      FF14_9      |  Paid a bill for medical expenses, housing, rent or utilities,
+      FF14_9      |  Paid a bill for medical expenses, housing, rent or utilities
  FF14_10,FB16A_1  |  Took a loan or made payments on a loan
  FF14_11,FB22_1   |  Saved money for any reason
       FF14_12     |  Made an investment, including bought stock or shares
