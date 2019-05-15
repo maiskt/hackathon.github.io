@@ -22,7 +22,7 @@ Bank
 
 ## REGISTERED_BANK
 
-* Description: Count individuals who hold an account with a bank that provides a full suite of financial services. For example, Kenya 2017 uses the following questions.
+* Description: Counts individuals who hold an account with a bank that provides a full suite of financial services. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -53,47 +53,47 @@ Bank
        + No
        
 * Note: 
-       + About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.
+       + The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
        
 ## ACTIVE30_BANK
 
-* Description: An individual who has an account registered in their name with a full-service bank and has used it in the last 30 days. For example, Kenya 2017 uses following questions.
+* Description: Counts individuals who have an account registered in their name with a full-service bank and have used it in the last 30 days before the survey. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
       FF1         |  Do you personally have a bank account that is registered in your name?
       FF1A        |  Do you have a bank account that is registered jointly in your name and someone else's name?
-      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It does not matter if you use those services, I just want to know whether they are offered
-      FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any other financial activity, other than today?
+      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
+      FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any                      other financial activity, other than today?
 
 * Levels 
        + Yes
        + No
        
 * Note: 
-       + About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.
+       + The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
        
 ## INACTIVE_BANK
 
-* Description: An individual who has an account registered in their name with a full-service bank and has not used it in the last 90 days. For example, Kenya 2017 uses following questions.
+* Description: Counts individuals who have an account registered in their name with a full-service bank but have not used it in the last 90 days before the survey. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
       FF1         |  Do you personally have a bank account that is registered in your name?
       FF1A        |  Do you have a bank account that is registered jointly in your name and someone else's name?
-      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It does not matter if you use those services, I just want to know whether they are offered
-      FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any other financial activity, other than today?
+      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
+      FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any                      other financial activity, other than today?
 
 * Levels 
        + Yes
        + No
        
 * Note: 
-       + About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.
+       + The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
 
 ## DORMANT_BANK
 
-* Description: An individual who has an account registered in their name with a full-service bank but never it. DORMANT_BANK was derived from ACCESS_BANK and REGISTERED_BANK.
+* Description: Counts individuals who have an account registered in their name with a full-service bank but never used it. DORMANT_BANK was derived from ACCESS_BANK and REGISTERED_BANK (see above).
 
 * Levels 
        + Yes
@@ -101,23 +101,23 @@ Bank
        
 ## BANK_BASIC
 
-* Description: An individual who has used bank account for cash-in (deposit) or cash-out (withdraw), transfer money to another individual, or conduct account maintenance. For example, Bangladesh 2016 uses following questions.
+* Description: Counts individuals who have used a bank account to cash-in (deposit), cash-out (withdraw), transfer money to another individual, or conduct account maintenance. For example, Bangladesh 2016 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
       FF14_1      |  Which of the following have you ever done using a bank account? Deposited money
       FF14_2      |  Which of the following have you ever done using a bank account? Withdrew money
-      FF14_9      |  Which of the following have you ever done using a bank account? Sent money to family members, friends, workmates or other acquaintances for regular support/allowances, to help with emergencies, or for other reasons (outside household)
-      FF14_10     |  Which of the following have you ever done using a bank account? Received money from family members, friends, workmates or other acquaintances for regular support/allowances, to help with emergencies, or for other reasons (outside household)
-      FF14_11     |  Which of the following have you ever done using a bank account? Account maintenance: Checked your account balance, changed PIN, received mini-statement, etc.
+      FF14_9      |  Which of the following have you ever done using a bank account? Sent money to family members, friends, workmates or                      other acquaintances for regular support/allowances, to help with emergencies, or for other reasons (outside                              household)
+      FF14_10     |  Which of the following have you ever done using a bank account? Received money from family members, friends,                            workmates or other acquaintances for regular support/allowances, to help with emergencies, or for other reasons                          (outside household)
+      FF14_11     |  Which of the following have you ever done using a bank account? Account maintenance: Checked your account balance,                      changed PIN, received mini-statement, etc.
       
 * Levels 
        + Yes
        + No
 
 * Note: 
-       + For 2018 survey, questions about cash-in (deposit) or cash-out (withdraw) and conduct account maintenance are not available.
-       + For 2013, 2014, 2017 survey, questions about conduct account maintenance are not available.
+       + 2018 surveys didn't include questions on cash-in (deposit), cash-out (withdraw) and conducting account maintenance.
+       + 2013, 2014, and 2017 surveys didn't include questions on conducting account maintenance.
 
 
 ## BANK_ADV
