@@ -24,6 +24,10 @@ Other variables
 
 Each individual survey dataset also includes the following variables:
 
+## WEIGTH
+
+This is the survey weight to use in analyses.  Each survey dataset contains its own set of weights. 
+
 ## UR
 
 Type of place residence where the respondent resides as either urban or rural.
