@@ -73,7 +73,7 @@ In 2013, there was no option for "Don't know about them".
 
 ----
 
-### INFML_SERVICE
+## INFML_SERVICE
 This subsection asks the respondent, if a member of an IFG, what services they are provided.
 These questions are all binary, with 1 meaning "Yes" and 2 meaning "No".
 *Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to?*
@@ -103,15 +103,18 @@ country     | 2015 | 2016 | 2017
   
 ### Bangladesh
 In 2016, serivces 1 and 5 were not asked about.
-### India
-### Indonesia
+
 ### Kenya
 In 2015, service 2 was not asked about.
+
 ### Nigeria
 In 2015, service 2 was not asked about.
+
 ### Pakistan
 In 2015, this question was not asked. In 2016 and 2017, only services 1, 3, 4, and 6 were asked. Other, more specific ROSCA-related questions were asked.
+
 ### Tanzania
 In 2015, service 2 was not asked about.
+
 ### Uganda
 In 2015, service 2 was not asked about.
