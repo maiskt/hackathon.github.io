@@ -1,13 +1,12 @@
-# Identifying Characteristics
+# Survey Dataset Identification
 
-The primary identification variables used for organizing and filtering the datasets.
+Any given survey dataset can be identified using together the following 3 variables: SBJNUM, COUNTRY, and YEAR. 
 
 ## SBJNUM
-The original ID for individual respondants. There is no standard length across datasets, and two different responses across datasets may share the same Subject Number. When examining single observations, make sure to filter by SBJNUM, COUNTRY, and YEAR at the same time.
+This is the identification variable that uniquely identifies each respondent within an individual survey dataset.  It is worth noting that two respondents from two different survey datasets can have the same SBJNUM value. For this reason, it is important to use variables SBJNUM, COUNTRY, and YEAR at the same time when using multiple survey datasets.
 
 ## COUNTRY
-The country where the collection program took place.
-Countries include:
+This is the name of the country where the survey was conducted. the following countries were surveyed:
 
 * Bangladesh
 * India
@@ -19,25 +18,25 @@ Countries include:
 * Uganda
 
 ## YEAR
-The year when the collection program took place. 
-Time frames range from 2013 to 2018. Indonesia only has data from 2014 to 2016.
+This is the year in which data collection place. It runs from 2013 to 2018, except for Indonesia where it ranges from 2014 to 2016.
+
+Other variables
+
+Each individual survey dataset also includes the following variables:
 
 ## UR
-This variable categorizes the respondent as living in an urban or rural area. While exact boundaries vary by country, access to city resources is the primary factor considered.
 
-Urban | Rural
----| ---
-1 | 2
+Type of place residence where the respondent resides as either urban or rural.
 
 ## CLUSTER
 
-A geographic grouping of respondents, typically representing a single area where interviews were taken. Clusters with names have been converted to numbers.
+The cluster number is the number identifiying the sample point as used during the filedwork. Clusters with names have been converted to numbers.
 
-Due to inadequate data, clusters for Nigeria in 2013 are unavailable.
+Due to inadequate data, cluster numbers for the 2013 Nigeria survey are not available.
 
 ## ANON_LAT, ANON_LONG
-Anonymized latitude and longitude of the approximate housheold location.
+Anonymized latitude and longitude of the approximate household location.
 
 The method of anonymization is very similar to the one practiced by the Demographic Health Surveys project. All respondents within a cluster share the same coordinates. Cluster centers were initially calculated by averaging all longitudes and latitudes, then displacing the point randomly within a radius inside the second-level geographic area (e.g. counties). The maximum radius for displacement is within 2km for an urban area and 5km for a rural area, with a 1/100 chance of the maximum rural radius being 10km. This method is intended to preserve location anonymity while still being usable for basic spatial analysis purposes. 
 
-Due to inadequate data, 2013 data for Nigeria and Tanzania are unavailable.
+Due to inadequate data, 2013 GPS data for Nigeria and Tanzania are unavailable.
