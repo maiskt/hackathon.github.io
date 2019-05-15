@@ -4,49 +4,49 @@ Bank
 
 ## ACCESS_BANK
 
-* Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else's name. For example, Kenya 2017 uses following questions.
+* Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else's name. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
       FF1         |  Do you personally have a bank account that is registered in your name?
       FF1A        |  Do you have a bank account that is registered jointly in your name and someone else's name?
       FF4         |  Do you use a bank account that belongs to somebody else if you need to?
-      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It does not matter if you use those services, I just want to know whether they are offered
+      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
       
 * Levels 
        + Yes
        + No
 
 * Note: 
-       + About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.
+       + The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
 
 ## REGISTERED_BANK
 
-* Description: Individuals who hold an account with a bank that provides a full suite of financial services. For example, Kenya 2017 uses following questions.
+* Description: Count individuals who hold an account with a bank that provides a full suite of financial services. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
       FF1         |  Do you personally have a bank account that is registered in your name?
       FF1A        |  Do you have a bank account that is registered jointly in your name and someone else's name?
-      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It does not matter if you use those services, I just want to know whether they are offered
+      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
 
 * Levels 
        + Yes
        + No
        
 * Note: 
-       + About full-service filter(FF5), followings are derived without full-service filter: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), 2013 surveys.
+       + The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
        
 ## ACTIVE_BANK
 
-* Description: An individual who has an account registered in their name with a full-service bank and has used it in the last 90 days. For example, Kenya 2017 uses following questions.
+* Description: counts individual who have an account registered in their name with a full-service bank and have used it in the last 90 days before the survey. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
       FF1         |  Do you personally have a bank account that is registered in your name?
       FF1A        |  Do you have a bank account that is registered jointly in your name and someone else's name?
-      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It does not matter if you use those services, I just want to know whether they are offered
-      FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any other financial activity, other than today?
+      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
+      FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any                      other financial activity, other than today?
       
 * Levels 
        + Yes
