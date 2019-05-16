@@ -305,7 +305,7 @@ Question Index    |                       Questions
        + No
 
 ## BANK_AIRTIME
-* Description: counts individuals who ever Bought airtime top-ups or paid a mobile phone bill using a bank. For example, Bangladesh 2017 derives from FF14_10 and FB16A_1.
+* Description: counts individuals who ever Bought airtime top-ups or paid a mobile phone bill using a bank. For example, Bangladesh 2017 derives from FF14_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -330,19 +330,136 @@ Question Index    |                       Questions
        + No
        
 * Note:
-       + In 2015 survey, there is no question like the question above. Can we derive ACTIVE_BANK_TRANSFER by "FF16.11.How often do you use a bank account for this activity?Send money to family members, friends, workmates or other acquaintances for regular support/allowances or to help with emergencies, or for other reasons" and "FF16.12.How often do you use a bank account for this activity?Receive money from family members, friends, workmates or other acquaintances for regular support/allowances or to help with emergencies, or for other reasons"? Need confirm.
+       + In 2015 survey, there is no question like the question above. Can we derive ACTIVE_BANK_TRANSFER by "FF16.11.How often do you use a bank account for this activity?Send money to family members, friends, workmates or other acquaintances for regular support/allowances or to help with emergencies, or for other reasons" and "FF16.12.How often do you use a bank account for this activity?Receive money from family members, friends, workmates or other acquaintances for regular support/allowances or to help with emergencies, or for other reasons"?(same questions for all active bank activities variables) Need confirm.
        + ACTIVE_BANK_TRANSFER questions are not available on 2013 and 2014 survey. Need confirm.
        
 
 ## ACTIVE_BANK_MERCHANT
+* Description: counts individuals who ever paid for goods or services at a store, shop, restaurant or other place of business using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_13.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_13     |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid for goods or services at a grocery store, clothing shop or any other store/shop store/shop
+
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_MERCHANT questions are not available on 2013 and 2014 survey.
+              
+
 ## ACTIVE_BANK_BILL
+* Description: counts individuals who ever paid for a bill using a bank in the last 90 days. For example, Bangladesh 2017 uses the following questions.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_3      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a school fee
+      FF16_4      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a bill for medical expenses, housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
+      FF16_5      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a government bill, including tax, fine or fee
+      
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_BILL questions are not available on 2013 and 2014 survey.       
+
 ## ACTIVE_BANK_GOV
+* Description: counts individuals who ever received money from the government using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_7.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_7      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received a welfare, pension or other benefit payment from the government  
+      
+* Levels 
+       + Yes
+       + No
+* Note:
+       + ACTIVE_BANK_GOV questions are not available on 2013 and 2014 survey.  
+
 ## ACTIVE_BANK_WAGE
+* Description: counts individuals who ever received payment from an employer using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_8.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_8      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received wages for your primary or secondary job
+      
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_WAGE questions are not available on 2013 and 2014 survey.        
+
 ## ACTIVE_BANK_INSURANCE
+* Description: counts individuals who ever paid for insurance or received payment from insurance using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_9.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_9      |  Please tell me when was the last time you used a bank account for this activity, other than today? Made insurance payments or received claims on insurance
+      
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_INSURANCE questions are not available on 2013 and 2014 survey.  
+
 ## ACTIVE_BANK_SAVE
+* Description: counts individuals who ever saved using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_11.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_11     |  Please tell me when was the last time you used a bank account for this activity, other than today? Saved money for any reason
+      
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_SAVE questions are not available on 2013 and 2014 survey.         
+
 ## ACTIVE_BANK_INVEST
+* Description: counts individuals who ever made an investment using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_12.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_12     |  Please tell me when was the last time you used a bank account for this activity, other than today? Made an investment, including bought stock or shares
+      
+* Levels 
+       + Yes
+       + No
+
+* Note:
+       + ACTIVE_BANK_INVEST questions are not available on 2013 and 2014 survey.           
+
 ## ACTIVE_BANK_LOAN
+* Description: counts individuals who ever borrowed money from someone outside your household or bought something on credit using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_10.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_10     |  Please tell me when was the last time you used a bank account for this activity, other than today? Took a loan or made payments on a loan
+      
+* Levels 
+       + Yes
+       + No
+* Note:
+       + ACTIVE_BANK_LOAN questions are not available on 2013 and 2014 survey.         
+
 ## ACTIVE_BANK_AIRTIME
+* Description: counts individuals who ever Bought airtime top-ups or paid a mobile phone bill using a bank. For example, Bangladesh 2017 derives from FF16_2.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_2      |  Please tell me when was the last time you used a bank account for this activity, other than today? Bought airtime top-ups or paid a mobile phone bill
+      
+* Levels 
+       + Yes
+       + No
+
+* Note:
+       + ACTIVE_BANK_AIRTIME questions are not available on 2013 and 2014 survey.
 
 
 

@@ -2080,21 +2080,161 @@ numeric ACTIVE_BANK_AIRTIME.
 compute YEAR=2013.
 compute COUNTRY=Pakistan.
 
+count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF16X=1 BANK_MERCHANT=1.
+
+count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=FFI16L FFI16M (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=FFI16N FFI16O (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=FFI16Q FFI16R(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=FFI16U FFI16V (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FFI16W=1 BANK_INVEST=1.
+
+count BANK_LOAN=FFI16S FFI16T (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FFI16C=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *13Tanzania.
 compute YEAR=2013.
 compute COUNTRY=Tanzaina.
 
+count BANK_TRANSFER = FFI16_8 FFI16_9 FFI16_10 FFI16_11 (1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FFI16_24=1 BANK_MERCHANT=1.
+
+count BANK_BILL=FFI16_4 FFI16_5 FFI16_6 FFI16_7 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=FFI16_12 FFI16_13 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=FFI16_14 FFI16_15 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=FFI16_17 FFI16_18(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=FFI16_21 FFI16_22 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FFI16_23=1 BANK_INVEST=1.
+
+count BANK_LOAN=FFI16_19 FFI16_20 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FFI16_3=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
+
 *******************************************************************************************************************************************************************.
 *13Uganda.
 compute YEAR=2013.
 compute COUNTRY=Uganda.
 
+count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
+recode BANK_TRANSFER (1 thru highest=1).
 
+compute BANK_MERCHANT=0.
+if FF16X=1 BANK_MERCHANT=1.
 
+count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
 
+count BANK_GOV=FFI16L FFI16M (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=FFI16N FFI16O (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=FFI16Q FFI16R(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=FFI16U FFI16V (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FFI16W=1 BANK_INVEST=1.
+
+count BANK_LOAN=FFI16S FFI16T (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FFI16C=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 *****************************************************************************************************************************.
 *Labels.
+value labels BANK_TRANSFER 1"Yes" 0"No".
+value labels BANK_MERCHANT 1"Yes" 0"No".
+value labels BANK_BILL 1"Yes" 0"No".
+value labels BANK_GOV 1"Yes" 0"No".
+value labels BANK_WAGE 1"Yes" 0"No".
+value labels BANK_INSURANCE 1"Yes" 0"No".
+value labels BANK_SAVE 1"Yes" 0"No".
+value labels BANK_INVEST 1"Yes" 0"No".
+value labels BANK_LOAN 1"Yes" 0"No".
+value labels BANK_AIRTIME 1"Yes" 0"No".
+
+value labels ACTIVE_BANK_TRANSFER 1"Yes" 0"No".
+value labels ACTIVE_BANK_MERCHANT 1"Yes" 0"No".
+value labels ACTIVE_BANK_BILL 1"Yes" 0"No".
+value labels ACTIVE_BANK_GOV 1"Yes" 0"No".
+value labels ACTIVE_BANK_WAGE 1"Yes" 0"No".
+value labels ACTIVE_BANK_INSURANCE 1"Yes" 0"No".
+value labels ACTIVE_BANK_SAVE 1"Yes" 0"No".
+value labels ACTIVE_BANK_INVEST 1"Yes" 0"No".
+value labels ACTIVE_BANK_LOAN 1"Yes" 0"No".
+value labels ACTIVE_BANK_AIRTIME 1"Yes" 0"No".
 
