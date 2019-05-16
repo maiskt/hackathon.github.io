@@ -18,7 +18,10 @@ Financially included - counts respondents who:
     
 
 ## ACTIVE_FINANCIAL		
-Active full service registered account owners
+Active full service registered account owners- Counts respondents who: 
+    Have an account registered in thier name or a joint account registered in their name and someone's else in a full-service           bank and have used the account in the last 90 days before the survey, or
+    Have a mobile money account registered in their name and have used it in the last 90 days before the survey, or
+    Have an account/membership in a full-service non-bank financial institution and have used it in the last 90 days before the         survey.
 
 ## ACCESS_DFS		
 Ever used a digital stored value account
