@@ -1059,15 +1059,15 @@ recode BANK_BILL (1 thru highest=1)(else=0).
 
 *Review.
 compute BANK_GOV=0.
-if FF14_11=1 BANK_GOV=1.
+if FF14_12=1 BANK_GOV=1.
 
 *Review.
 compute BANK_WAGE=0.
-if FF14_12=1 BANK_WAGE=1.
+if FF14_13=1 BANK_WAGE=1.
 
 *Review.
 compute BANK_INSURANCE=0.
-if FF14_14=1 BANK_INSURANCE=1.
+if FF14_15=1 BANK_INSURANCE=1.
 
 count BANK_SAVE=ff14_17 ff14_18 fb22_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
@@ -1078,45 +1078,23 @@ if FF14_19=1 BANK_INVEST=1.
 
 *Review.
 compute BANK_LOAN=0.
-if (FF14_15=1 or FB16_1=1) BANK_LOAN=1.
+if (FF14_16=1 or FB16_1=1) BANK_LOAN=1.
 
 *Review.
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
-*Review.
-count ACTIVE_BANK_TRANSFER=FF16_9 FF16_10(1 thru 4).
-recode ACTIVE_BANK_TRANSFER (1 thru highest=1).
-
-*Review.
-count ACTIVE_BANK_MERCHANT=FF16_20 (1 thru 4).
-
-*Review.
-count ACTIVE_BANK_BILL=FF16_4 FF16_5 FF16_6 FF16_7 FF16_8 (1 thru 4).
-recode ACTIVE_BANK_BILL (1 thru highest=1).
-
-*Review.
-count ACTIVE_BANK_GOV=FF16_11 (1 thru 4).
-
-*Review.
-count ACTIVE_BANK_WAGE=FF16_12 (1 thru 4).
-
-*Review.
-count ACTIVE_BANK_INSURANCE=FF16_14 (1 thru 4).
-
-*Review.
-count ACTIVE_BANK_SAVE=FF16_16 (1 thru 4).
-
-*Review.
-count ACTIVE_BANK_INVEST=FF16_19 (1 thru 4).
-
-*Review.
-count ACTIVE_BANK_LOAN=FF16_15 (1 thru 4).
-
-*Review.
-count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
-
-
+*Review.In 2015 survey, FF16_11 FF16_12.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *15India.
@@ -1126,6 +1104,52 @@ compute COUNTRY=India.
 *Review.
 count BANK_TRANSFER=FF14_10 FF14_11(1).
 recode BANK_TRANSFER (1 thru highest=1).
+
+*Review.
+compute BANK_MERCHANT=0.
+if FF14_20=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff14_4 to ff14_9 ff14_25 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_GOV=0.
+if FF14_12=1 BANK_GOV=1.
+
+*Review.
+compute BANK_WAGE=0.
+if FF14_13=1 BANK_WAGE=1.
+
+*Review.
+compute BANK_INSURANCE=0.
+if FF14_15=1 BANK_INSURANCE=1.
+
+count BANK_SAVE=ff14_17 ff14_18 FB22_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FF14_19=1 BANK_INVEST=1.
+
+*Review.
+compute BANK_LOAN=0.
+if (FF14_16=1 or FB16_1=1) BANK_LOAN=1.
+
+compute BANK_AIRTIME=0.
+if FF14_3=1 BANK_AIRTIME=1.
+
+*Review.In 2015 survey, FF16_11 FF16_12.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
 
 
 *******************************************************************************************************************************************************************.
@@ -1137,6 +1161,52 @@ compute COUNTRY=Indonesia.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
+compute BANK_MERCHANT=0.
+if FF14_22=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_GOV=0.
+if FF14_13=1 BANK_GOV=1.
+
+*Review.
+compute BANK_WAGE=0.
+if FF14_14=1 BANK_WAGE=1.
+
+*Review.
+compute BANK_INSURANCE=0.
+if FF14_16=1 BANK_INSURANCE=1.
+
+*Review.
+count BANK_SAVE=ff14_18 ff14_19 ff14_20 fb22_1(1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FF14_21=1 BANK_INVEST=1.
+
+*Review.
+compute BANK_LOAN=0.
+if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
+
+compute BANK_AIRTIME=0.
+if FF14_3=1 BANK_AIRTIME=1.
+
+*Review.In 2015 survey, FF16_11 FF16_12.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
 
 *******************************************************************************************************************************************************************.
 *15Kenya.
@@ -1147,6 +1217,51 @@ compute COUNTRY=Kenya.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
+compute BANK_MERCHANT=0.
+if FF14_22=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_GOV=0.
+if FF14_13=1 BANK_GOV=1.
+
+*Review.
+compute BANK_WAGE=0.
+if FF14_14=1 BANK_WAGE=1.
+
+*Review.
+compute BANK_INSURANCE=0.
+if FF14_16=1 BANK_INSURANCE=1.
+
+count BANK_SAVE=ff14_18 ff14_19 ff14_20 fb22_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FF14_21=1 BANK_INVEST=1.
+
+*Review.
+compute BANK_LOAN=0.
+if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
+
+compute BANK_AIRTIME=0.
+if FF14_3=1 BANK_AIRTIME=1.
+
+*Review.In 2015 survey, FF16_11 FF16_12.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
 
 *******************************************************************************************************************************************************************.
 *15Nigeria.
@@ -1156,6 +1271,51 @@ compute COUNTRY=Nigeria.
 *Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
+
+*Review.
+compute BANK_MERCHANT=0.
+if FF14_22=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_GOV=0.
+if FF14_13=1 BANK_GOV=1.
+
+*Review.
+compute BANK_WAGE=0.
+if FF14_14=1 BANK_WAGE=1.
+
+*Review.
+compute BANK_INSURANCE=0.
+if FF14_16=1 BANK_INSURANCE=1.
+
+count BANK_SAVE=ff14_18 ff14_19 ff14_20 fb22_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FF14_21=1 BANK_INVEST=1.
+
+*Review.
+compute BANK_LOAN=0.
+if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
+
+compute BANK_AIRTIME=0.
+if FF14_3=1 BANK_AIRTIME=1.
+
+*Review.In 2015 survey, FF16_11 FF16_12.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 
 
@@ -1168,6 +1328,51 @@ compute COUNTRY=Pakistan.
 count BANK_TRANSFER=FF14_10 FF14_11(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
+compute BANK_MERCHANT=0.
+if FF14_20=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff14_4 to ff14_9 ff14_25 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_GOV=0.
+if FF14_12=1 BANK_GOV=1.
+
+*Review.
+compute BANK_WAGE=0.
+if FF14_13=1 BANK_WAGE=1.
+
+*Review.
+compute BANK_INSURANCE=0.
+if FF14_15=1 BANK_INSURANCE=1.
+
+count BANK_SAVE=ff14_17 ff14_18 fb22_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FF14_19=1 BANK_INVEST=1.
+
+*Review.
+compute BANK_LOAN=0.
+if (FF14_16=1 or FB16_1=1) BANK_LOAN=1.
+
+compute BANK_AIRTIME=0.
+if FF14_3=1 BANK_AIRTIME=1.
+
+*Review.In 2015 survey, FF16_11 FF16_12.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
 
 
 *******************************************************************************************************************************************************************.
@@ -1179,6 +1384,50 @@ compute COUNTRY=Tanzania.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
+compute BANK_MERCHANT=0.
+if FF14_22=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_GOV=0.
+if FF14_13=1 BANK_GOV=1.
+
+*Review.
+compute BANK_WAGE=0.
+if FF14_14=1 BANK_WAGE=1.
+
+*Review.
+compute BANK_INSURANCE=0.
+if FF14_16=1 BANK_INSURANCE=1.
+
+count BANK_SAVE=ff14_18 ff14_19 ff14_20 FB22_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FF14_21=1 BANK_INVEST=1.
+
+*Review.
+compute BANK_LOAN=0.
+if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
+
+compute BANK_AIRTIME=0.
+if FF14_3=1 BANK_AIRTIME=1.
+
+*Review.In 2015 survey, FF16_11 FF16_12.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *15Uganda.
@@ -1189,11 +1438,101 @@ compute COUNTRY=Uganda.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
+compute BANK_MERCHANT=0.
+if FF14_22=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_GOV=0.
+if FF14_13=1 BANK_GOV=1.
+
+*Review.
+compute BANK_WAGE=0.
+if FF14_14=1 BANK_WAGE=1.
+
+*Review.
+compute BANK_INSURANCE=0.
+if FF14_16=1 BANK_INSURANCE=1.
+
+count BANK_SAVE=ff14_18 ff14_19 ff14_20 fb22_1(1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FF14_21=1 BANK_INVEST=1.
+
+*Review.
+compute BANK_LOAN=0.
+if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
+
+compute BANK_AIRTIME=0.
+if FF14_3=1 BANK_AIRTIME=1.
+
+*Review.In 2015 survey, FF16_11 FF16_12.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14Bangladesh.
 compute YEAR=2014.
 compute COUNTRY=Bangladesh.
+
+*Review.
+count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+*Review.
+compute BANK_MERCHANT=0.
+if FF19_28=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff19_4 ff19_5 ff19_6 ff19_7 ff19_8 ff19_9 ff19_10 ff19_32 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=ff19_15 ff19_16 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=ff19_17 ff19_18 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=ff19_20 ff19_21(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FF19_27=1 BANK_INVEST=1.
+
+count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_AIRTIME=0.
+if FF19_3=1 BANK_AIRTIME=1.
+
+*Review.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 
 *******************************************************************************************************************************************************************.
@@ -1201,11 +1540,93 @@ compute COUNTRY=Bangladesh.
 compute YEAR=2014.
 compute COUNTRY=India.
 
+count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF19_28=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff19_4 to ff19_10(1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=ff19_15 ff19_16 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=ff19_17 ff19_18 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=ff19_20 ff19_21(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FF19_27=1 BANK_INVEST=1.
+
+count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FF19_3=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14Indonesia.
 compute YEAR=2014.
 compute COUNTRY=Indonesia.
+
+count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF19_28=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff19_4 to ff19_10(1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=ff19_15 ff19_16 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=ff19_17 ff19_18 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=ff19_20 ff19_21(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FF19_27=1 BANK_INVEST=1.
+
+count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FF19_3=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
 
 
 *******************************************************************************************************************************************************************.
@@ -1213,11 +1634,94 @@ compute COUNTRY=Indonesia.
 compute YEAR=2014.
 compute COUNTRY=Kenya.
 
+count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF19_28=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff19_4 ff19_5 ff19_6 ff19_7 ff19_8 ff19_9 ff19_10 ff19_32 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=ff19_15 ff19_16 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=ff19_17 ff19_18 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=ff19_20 ff19_21(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FF19_27=1 BANK_INVEST=1.
+
+count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FF19_3=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
+
 
 *******************************************************************************************************************************************************************.
 *14Nigeria.
 compute YEAR=2014.
 compute COUNTRY=Nigeria.
+
+count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF19_28=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff19_4 ff19_5 ff19_6 ff19_7 ff19_8 ff19_9 ff19_10 ff19_32 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=ff19_15 ff19_16 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=ff19_17 ff19_18 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=ff19_20 ff19_21(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FF19_27=1 BANK_INVEST=1.
+
+count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FF19_3=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 
 *******************************************************************************************************************************************************************.
@@ -1225,11 +1729,93 @@ compute COUNTRY=Nigeria.
 compute YEAR=2014.
 compute COUNTRY=Pakistan.
 
+count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF19_28=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff19_4 ff19_5 ff19_6 ff19_7 ff19_8 ff19_9 ff19_10 ff19_32 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=ff19_15 ff19_16 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=ff19_17 ff19_18 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=ff19_20 ff19_21(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FF19_27=1 BANK_INVEST=1.
+
+count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FF19_3=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
 
 *******************************************************************************************************************************************************************.
 *14Tanzania.
 compute YEAR=2014.
 compute COUNTRY=Tanzania.
+
+count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF19_28=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff19_4 ff19_5 ff19_6 ff19_7 ff19_8 ff19_9 ff19_10 ff19_32 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=ff19_15 ff19_16 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=ff19_17 ff19_18 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=ff19_20 ff19_21(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FF19_27=1 BANK_INVEST=1.
+
+count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FF19_3=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 
 *******************************************************************************************************************************************************************.
@@ -1237,11 +1823,104 @@ compute COUNTRY=Tanzania.
 compute YEAR=2014.
 compute COUNTRY=Uganda.
 
+count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF19_28=1 BANK_MERCHANT=1.
+
+count BANK_BILL=ff19_4 ff19_5 ff19_6 ff19_7 ff19_8 ff19_9 ff19_10 ff19_32 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=ff19_15 ff19_16 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=ff19_17 ff19_18 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=ff19_20 ff19_21(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FF19_27=1 BANK_INVEST=1.
+
+count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FF19_3=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
 
 *******************************************************************************************************************************************************************.
 *13Bangladesh.
 compute YEAR=2013.
 compute COUNTRY=Bangladesh.
+
+*Review.
+count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+*Review.
+compute BANK_MERCHANT=0.
+if FF16X=1 BANK_MERCHANT=1.
+
+*Review.
+count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+*Review.
+count BANK_GOV=FFI16L FFI16M (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+*Review.
+count BANK_WAGE=FFI16N FFI16O (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+*Review.
+count BANK_INSURANCE=FFI16Q FFI16R(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+*Review.
+count BANK_SAVE=FFI16U FFI16V (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FFI16W=1 BANK_INVEST=1.
+
+*Review.
+count BANK_LOAN=FFI16S FFI16T (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_AIRTIME=0.
+if FFI16C=1 BANK_AIRTIME=1.
+
+*Review.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 
 *******************************************************************************************************************************************************************.
@@ -1249,17 +1928,151 @@ compute COUNTRY=Bangladesh.
 compute YEAR=2013.
 compute COUNTRY=India.
 
+*Review.
+count BANK_TRANSFER = FFI16_8 FFI16_9 FFI16_10 FFI16_11 (1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+*Review.
+count BANK_MERCHANT = FFI16_24 FFI16_25 (1).
+recode BANK_MERCHANT (1 thru highest=1).
+
+*Review.
+count BANK_BILL=FFI16_4 FFI16_5 FFI16_6 FFI16_7 (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+*Review.
+count BANK_GOV=FFI16_12 FFI16_13 (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+*Review.
+count BANK_WAGE=FFI16_14 FFI16_15 (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+*Review.
+count BANK_INSURANCE=FFI16_17 FFI16_18(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+*Review.
+count BANK_SAVE=FFI16_21 FFI16_22 (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_INVEST=0.
+if FFI16_23=1 BANK_INVEST=1.
+
+*Review.
+count BANK_LOAN=FFI16_19 FFI16_20 (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+*Review.
+compute BANK_AIRTIME=0.
+if FFI16_3=1 BANK_AIRTIME=1.
+
+*Review.
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
 
 *******************************************************************************************************************************************************************.
 *13Kenya.
 compute YEAR=2013.
 compute COUNTRY=Kenya.
 
+count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF16X=1 BANK_MERCHANT=1.
+
+count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=FFI16L FFI16M (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=FFI16N FFI16O (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=FFI16Q FFI16R(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=FFI16U FFI16V (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FFI16W=1 BANK_INVEST=1.
+
+count BANK_LOAN=FFI16S FFI16T (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FFI16C=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
+
 
 *******************************************************************************************************************************************************************.
 *13Nigeria.
 compute YEAR=2013.
 compute COUNTRY=Nigeria.
+
+count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
+recode BANK_TRANSFER (1 thru highest=1).
+
+compute BANK_MERCHANT=0.
+if FF16X=1 BANK_MERCHANT=1.
+
+count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
+recode BANK_BILL (1 thru highest=1)(else=0).
+
+count BANK_GOV=FFI16L FFI16M (1).
+recode BANK_GOV (1 thru highest=1)(else=0).
+
+count BANK_WAGE=FFI16N FFI16O (1).
+recode BANK_WAGE (1 thru highest=1)(else=0).
+
+count BANK_INSURANCE=FFI16Q FFI16R(1).
+recode BANK_INSURANCE (1 thru highest=1)(else=0).
+
+count BANK_SAVE=FFI16U FFI16V (1).
+recode BANK_SAVE (1 thru highest=1)(else=0).
+
+compute BANK_INVEST=0.
+if FFI16W=1 BANK_INVEST=1.
+
+count BANK_LOAN=FFI16S FFI16T (1).
+recode BANK_LOAN (1 thru highest=1)(else=0).
+
+compute BANK_AIRTIME=0.
+if FFI16C=1 BANK_AIRTIME=1.
+
+numeric ACTIVE_BANK_TRANSFER.
+numeric ACTIVE_BANK_MERCHANT.
+numeric ACTIVE_BANK_BILL.
+numeric ACTIVE_BANK_GOV.
+numeric ACTIVE_BANK_WAGE.
+numeric ACTIVE_BANK_INSURANCE.
+numeric ACTIVE_BANK_SAVE.
+numeric ACTIVE_BANK_INVEST.
+numeric ACTIVE_BANK_LOAN.
+numeric ACTIVE_BANK_AIRTIME.
 
 
 *******************************************************************************************************************************************************************.
