@@ -24,7 +24,11 @@ Active full service registered account owners- Counts respondents who:
     Have an account/membership in a full-service non-bank financial institution and have used it in the last 90 days before the         survey.
 
 ## ACCESS_DFS		
-Ever used a digital stored value account
+Ever used a digital stored value account - Counts respondents who: 
+    Have an account registered in thier name or a joint account registered in their name and someone's else in a full-service           bank that offers a digital platform, or  use an account that belongs to someone else, or 
+    Have ever used a mobile money service for any financial activity or,
+    Have ever used an account/membership in a full-service non-bank financial institution that offers a digital platform.
+    
 
 ## REGISTERED_DFS		
 Digitally included
