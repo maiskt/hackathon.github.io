@@ -1,14 +1,13 @@
 # Informal Financial Groups
 
-The following variables were coded in numeric order of which they were asked.
-
 ## BELONG_INFML
-
-A derived binary variable, BELONG_INFML represents the respondent's participation in informal societies or group saving schemes. The definition varies by sophistication of village-level services, but the common institutions that qualify include:
+A derived binary variable, BELONG_INFML represents the respondent's participation in informal societies or group saving schemes. The definition of "informal" varies by sophistication of village-level services, but the common institutions that qualify include:
 
 * Cooperatives
 * Village-level saving and lending group
 * Informal loan clubs or rotating savings and credit associations (ROSCAs, with [many regional names](http://www.gdrc.org/icm/rosca/rosca-names.html))
+
+If the respondent is part of one or more IFGs, BELONG_INFML = 1. Otherwise it is 0.
 
 ### Bangladesh
 Only 2016 and 2017 data are available.
@@ -35,7 +34,7 @@ Only 2015-2017 data are available.
 Only 2015-2017 data are available.
 
 ## R_INFML
-For respondents who belong to informal societies or group saving schemes, R_INFML captures the importance of the following reasons for thier decision to join:
+If the respondent belongs to one or more IFGs, R_INFML asks for the most important reason from the following:
 
 Value | Reason
 ----- | -------
@@ -49,7 +48,7 @@ Between 12 and 15 options were originally given for this question. In 2017, resp
 ----
 
 ## R_NOINFML
-These questions ask the importance of each reason for _not_ being a part of an Informal Financial Group. 
+If the respondent does _not_ belong in an IFG, R_NOINFML asks for the most important reason from the following:
 
 **What is the most important reason for your decision not to join informal societies or group saving schemes?**
 
@@ -90,16 +89,16 @@ INFML_SERVICE_7   | We make other kinds of investments as a group (e.g., propert
 INFML_SERVICE_8   | We invest in the stock market as a group
 
 **Number of service options in the questionnaire, by country and year**
-country     | 2015 | 2016 | 2017
-----
-  Bangladesh  |  0  |  5  |  8
-  India       |  0  |  9  |  8
-  Indonesia   |  0  |  9  |  0
-  Kenya       |  7  |  8  |  8
-  Nigeria     |  7  |  8  |  8
-  Pakistan    |  0  |  7  |  7
-  Tanzania    |  7  |  8  |  8
-  Uganda      |  7  |  8  |  8
+Country       | 2015 | 2016 | 2017
+------------- | ---- | ---- | ----
+  Bangladesh  |  0   |  5   |  8
+  India       |  0   |  9   |  8
+  Indonesia   |  0   |  9   |  0
+  Kenya       |  7   |  8   |  8
+  Nigeria     |  7   |  8   |  8
+  Pakistan    |  0   |  7   |  7
+  Tanzania    |  7   |  8   |  8
+  Uganda      |  7   |  8   |  8
   
 ### Bangladesh
 In 2016, services 1 and 5 were not asked about.
@@ -107,11 +106,17 @@ In 2016, services 1 and 5 were not asked about.
 ### Kenya
 In 2015, service 2 was not asked about.
 
+### India
+In 2016, the 9th option was "none of these".
+
+### Indonesia
+In 2016, the 9th option was "none of these".
+
 ### Nigeria
 In 2015, service 2 was not asked about.
 
 ### Pakistan
-In 2015, this question was not asked. In 2016 and 2017, only services 1, 3, 4, and 6 were asked. Other, more specific ROSCA-related questions were asked.
+In 2016 and 2017, only services 1, 3, 4, and 6 were asked. Other, more specific ROSCA-related questions were asked instead.
 
 ### Tanzania
 In 2015, service 2 was not asked about.
