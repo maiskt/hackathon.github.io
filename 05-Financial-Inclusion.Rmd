@@ -6,11 +6,16 @@ Ever used formal financial services - counts respondents who:
     Have a bank account registered in thier name or a joint account registered in their name and someone's else or 
     Use a bank account that belongs to someone else or 
     Ever used a mobile money service or a non-bank financial institution for any financial activity. 
+    
 ## ACCESS_FINANCIALuse 
-Ever used full service formal financial services
+Ever used full-service formal financial services: counts the same respondents as for variable ACCESS_FINANCIAL_ALL but uses only full-service banks and non-bank financial institutions. 
 
 ## FI
-Financially included 
+Financially included - counts respondents who: 
+    Have an account registered in thier name or a joint account registered in their name and someone's else in a full-service           bank or
+    Have a mobile money account registered in their name or
+    Have an account/membership in a full-service non-bank financial institution. 
+    
 
 ## ACTIVE_FINANCIAL		
 Active full service registered account owners
