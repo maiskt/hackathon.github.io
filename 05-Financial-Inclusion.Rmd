@@ -40,6 +40,8 @@ Actively use digital stored-value accounts - Counts the same respondents as vari
 ## ACTIVE_DFS_ADV		
 Actively use digital stored-value accounts and have used at least one advanced financial service (beyond basic wallet & P2P)
 
+Counts the same respondents as variable ACCESS_DFS but who used their account in the last 90 days before the survey to conduct an advanced activity (i.e., activity other than deposit, withdrawal, sending an receiving money). 
+
 ## ACCESS_DFS_PAYMENT_TRANSFER		
 Used bank or mobile money for digital payment or transfering
 
