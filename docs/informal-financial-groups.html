@@ -139,7 +139,7 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="financial-inclusion.html"><a href="financial-inclusion.html"><i class="fa fa-check"></i><b>5</b> Financial Inclusion</a><ul>
 <li class="chapter" data-level="5.1" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_financial_all"><i class="fa fa-check"></i><b>5.1</b> ACCESS_FINANCIAL_ALL</a></li>
-<li class="chapter" data-level="5.2" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_financial"><i class="fa fa-check"></i><b>5.2</b> ACCESS_FINANCIAL</a></li>
+<li class="chapter" data-level="5.2" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_financialuse"><i class="fa fa-check"></i><b>5.2</b> ACCESS_FINANCIALuse</a></li>
 <li class="chapter" data-level="5.3" data-path="financial-inclusion.html"><a href="financial-inclusion.html#fi"><i class="fa fa-check"></i><b>5.3</b> FI</a></li>
 <li class="chapter" data-level="5.4" data-path="financial-inclusion.html"><a href="financial-inclusion.html#active_financial"><i class="fa fa-check"></i><b>5.4</b> ACTIVE_FINANCIAL</a></li>
 <li class="chapter" data-level="5.5" data-path="financial-inclusion.html"><a href="financial-inclusion.html#access_dfs"><i class="fa fa-check"></i><b>5.5</b> ACCESS_DFS</a></li>
@@ -386,10 +386,12 @@
 <li class="chapter" data-level="9.4" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#infml_service"><i class="fa fa-check"></i><b>9.4</b> INFML_SERVICE</a><ul>
 <li class="chapter" data-level="9.4.1" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#bangladesh-2"><i class="fa fa-check"></i><b>9.4.1</b> Bangladesh</a></li>
 <li class="chapter" data-level="9.4.2" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#kenya-1"><i class="fa fa-check"></i><b>9.4.2</b> Kenya</a></li>
-<li class="chapter" data-level="9.4.3" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#nigeria-1"><i class="fa fa-check"></i><b>9.4.3</b> Nigeria</a></li>
-<li class="chapter" data-level="9.4.4" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#pakistan-1"><i class="fa fa-check"></i><b>9.4.4</b> Pakistan</a></li>
-<li class="chapter" data-level="9.4.5" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#tanzania-1"><i class="fa fa-check"></i><b>9.4.5</b> Tanzania</a></li>
-<li class="chapter" data-level="9.4.6" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#uganda-1"><i class="fa fa-check"></i><b>9.4.6</b> Uganda</a></li>
+<li class="chapter" data-level="9.4.3" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#india-1"><i class="fa fa-check"></i><b>9.4.3</b> India</a></li>
+<li class="chapter" data-level="9.4.4" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#indonesia-1"><i class="fa fa-check"></i><b>9.4.4</b> Indonesia</a></li>
+<li class="chapter" data-level="9.4.5" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#nigeria-1"><i class="fa fa-check"></i><b>9.4.5</b> Nigeria</a></li>
+<li class="chapter" data-level="9.4.6" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#pakistan-1"><i class="fa fa-check"></i><b>9.4.6</b> Pakistan</a></li>
+<li class="chapter" data-level="9.4.7" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#tanzania-1"><i class="fa fa-check"></i><b>9.4.7</b> Tanzania</a></li>
+<li class="chapter" data-level="9.4.8" data-path="informal-financial-groups.html"><a href="informal-financial-groups.html#uganda-1"><i class="fa fa-check"></i><b>9.4.8</b> Uganda</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="loans.html"><a href="loans.html"><i class="fa fa-check"></i><b>10</b> Loans</a><ul>
@@ -560,15 +562,15 @@
             <section class="normal" id="section-">
 <div id="informal-financial-groups" class="section level1">
 <h1><span class="header-section-number">Section 9</span> Informal Financial Groups</h1>
-<p>The following variables were coded in numeric order of which they were asked.</p>
 <div id="belong_infml" class="section level2">
 <h2><span class="header-section-number">9.1</span> BELONG_INFML</h2>
-<p>A derived binary variable, BELONG_INFML represents the respondent’s participation in informal societies or group saving schemes. The definition varies by sophistication of village-level services, but the common institutions that qualify include:</p>
+<p>A derived binary variable, BELONG_INFML represents the respondent’s participation in informal societies or group saving schemes. The definition of “informal” varies by sophistication of village-level services, but the common institutions that qualify include:</p>
 <ul>
 <li>Cooperatives</li>
 <li>Village-level saving and lending group</li>
 <li>Informal loan clubs or rotating savings and credit associations (ROSCAs, with <a href="http://www.gdrc.org/icm/rosca/rosca-names.html">many regional names</a>)</li>
 </ul>
+<p>If the respondent is part of one or more IFGs, BELONG_INFML = 1. Otherwise it is 0.</p>
 <div id="bangladesh" class="section level3">
 <h3><span class="header-section-number">9.1.1</span> Bangladesh</h3>
 <p>Only 2016 and 2017 data are available.</p>
@@ -604,7 +606,7 @@
 </div>
 <div id="r_infml" class="section level2">
 <h2><span class="header-section-number">9.2</span> R_INFML</h2>
-<p>For respondents who belong to informal societies or group saving schemes, R_INFML captures the importance of the following reasons for thier decision to join:</p>
+<p>If the respondent belongs to one or more IFGs, R_INFML asks for the most important reason from the following:</p>
 <table>
 <thead>
 <tr class="header">
@@ -636,7 +638,7 @@
 </div>
 <div id="r_noinfml" class="section level2">
 <h2><span class="header-section-number">9.3</span> R_NOINFML</h2>
-<p>These questions ask the importance of each reason for <em>not</em> being a part of an Informal Financial Group.</p>
+<p>If the respondent does <em>not</em> belong in an IFG, R_NOINFML asks for the most important reason from the following:</p>
 <p><strong>What is the most important reason for your decision not to join informal societies or group saving schemes?</strong></p>
 <table>
 <colgroup>
@@ -734,8 +736,8 @@ These questions are all binary, with values 1 for “Yes” and 2 for “No”.
 </tbody>
 </table>
 <p><strong>Number of service options in the questionnaire, by country and year</strong>
-country | 2015 | 2016 | 2017
-—-
+Country | 2015 | 2016 | 2017
+————- | —- | —- | —-
 Bangladesh | 0 | 5 | 8
 India | 0 | 9 | 8
 Indonesia | 0 | 9 | 0
@@ -752,20 +754,28 @@ Uganda | 7 | 8 | 8</p>
 <h3><span class="header-section-number">9.4.2</span> Kenya</h3>
 <p>In 2015, service 2 was not asked about.</p>
 </div>
+<div id="india-1" class="section level3">
+<h3><span class="header-section-number">9.4.3</span> India</h3>
+<p>In 2016, the 9th option was “none of these”.</p>
+</div>
+<div id="indonesia-1" class="section level3">
+<h3><span class="header-section-number">9.4.4</span> Indonesia</h3>
+<p>In 2016, the 9th option was “none of these”.</p>
+</div>
 <div id="nigeria-1" class="section level3">
-<h3><span class="header-section-number">9.4.3</span> Nigeria</h3>
+<h3><span class="header-section-number">9.4.5</span> Nigeria</h3>
 <p>In 2015, service 2 was not asked about.</p>
 </div>
 <div id="pakistan-1" class="section level3">
-<h3><span class="header-section-number">9.4.4</span> Pakistan</h3>
-<p>In 2015, this question was not asked. In 2016 and 2017, only services 1, 3, 4, and 6 were asked. Other, more specific ROSCA-related questions were asked.</p>
+<h3><span class="header-section-number">9.4.6</span> Pakistan</h3>
+<p>In 2016 and 2017, only services 1, 3, 4, and 6 were asked. Other, more specific ROSCA-related questions were asked instead.</p>
 </div>
 <div id="tanzania-1" class="section level3">
-<h3><span class="header-section-number">9.4.5</span> Tanzania</h3>
+<h3><span class="header-section-number">9.4.7</span> Tanzania</h3>
 <p>In 2015, service 2 was not asked about.</p>
 </div>
 <div id="uganda-1" class="section level3">
-<h3><span class="header-section-number">9.4.6</span> Uganda</h3>
+<h3><span class="header-section-number">9.4.8</span> Uganda</h3>
 <p>In 2015, service 2 was not asked about.</p>
 
 </div>
