@@ -24,19 +24,16 @@ Other variables
 
 Each individual survey dataset also includes the following variables:
 
-## WEIGTH
-
-This is the survey weight to use in analyses.  Each survey dataset contains its own set of weights. 
+## WEIGHT
+This is the survey weight to use in analyses.  Each survey dataset contains its own set of weights. The weight, when implemented, increases or increases the influence of a specific subgroup based on sample size. Weights were originally calculated in proportion to key regional or demographic census data.
 
 ## UR
-
 Type of place residence where the respondent resides as either urban or rural.
 
 ## CLUSTER
-
 The cluster number is the number identifiying the sample point as used during the filedwork. Clusters with names have been converted to numbers.
 
-Due to inadequate data, cluster numbers for the 2013 Nigeria survey are not available.
+Due to inadequate data, cluster data for Nigeria in 2013 are not available.
 
 ## ANON_LAT, ANON_LONG
 Anonymized latitude and longitude of the approximate household location.
