@@ -64,6 +64,10 @@ Used own account at a full-service NBFI in the last 30 days to conduct at least 
 Levels: 1 ="Yes" 0 ="No"
 
 ## NBFI_STAGE
+Customer journey segmentation for NBFI users: classifies non-bank financial institution (NBFI) users into 5 mutually exclusive groups.
+Levels:  0= "NBFI nonuser" ; 1= "Unregistered NBFI user"; 2="Inactive registered NBFI user" 
+         3="Active NBFI basic user"; 4="Active NBFI advanced user"
+
 ## ACCESS_MFI
 ## REGISTERED_MFI
 ## ACTIVE_MFI
