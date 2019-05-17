@@ -73,7 +73,7 @@ Ever used a full-service microfinance institution (MFI): counts respondents who 
 Levels: 1 ="Yes" 0 ="No"
 
 ## REGISTERED_MFI
-Have an account at a full-service MFI: counts respondents who have an account/membership at a full-service microfinance institution
+Full-service MFI account ownership: counts respondents who have an account/membership in their name at a full-service microfinance institution.
 Levels: 1 ="Yes" 0 ="No"
 
 ## ACTIVE_MFI
@@ -85,10 +85,13 @@ Ever used a full-service cooperative: counts respondents who have ever used a fu
 Levels: 1 ="Yes" 0 ="No"
 
 ## REGISTERED_COOP
-Full-service cooperative account ownership: counts respondents who have an account/membership with a full-service cooperative,
+Full-service cooperative account ownership: counts respondents who have an account/membership in their name at a full-service cooperative.
 Levels: 1 ="Yes" 0 ="No"
 
 ## ACTIVE_COOP
+Active registered cooperative users: counts respondents who have an account/membership in thier name at a full-service cooperative and have used it in the last 90 days. 
+Levels: 1 ="Yes" 0 ="No"
+
 ## ACCESS_POST
 ## REGISTERED_POST
 ## ACTIVE_POST
