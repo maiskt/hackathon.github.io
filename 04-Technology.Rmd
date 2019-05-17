@@ -4,19 +4,19 @@ Technology literacy
 
 ## ACCESS_PHONE
 
-* Description: Respondents who use a mobile phone.
+* Respondents who use a mobile phone.
 
 ## OWN_PHONE
 
-* Description: Respondents who personally own a mobile phone.
+* Respondents who personally own a mobile phone.
 
 ## BORROW_PHONE
 
-* Description: Respondents who use a mobile phone that belongs to another individual or is shared with another individual.
+* Respondents who use a mobile phone that belongs to another individual or is shared with another individual.
 
 ## BASIC_PHONE
 
-* Description: Respondents who own a mobile phone with basic features.
+* Respondents who own a mobile phone with basic features.
 
 ## FEATURE_PHONE
 ## SMART_PHONE

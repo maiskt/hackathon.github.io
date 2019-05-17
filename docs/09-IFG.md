@@ -25,7 +25,7 @@ Only 2015 and 2016 data are available.
 Only 2015-2017 data are available.
 
 ### Pakistan
-No data is available.
+Only 2015-2017 data are available.
 
 ### Tanzania
 Only 2015-2017 data are available.
@@ -89,6 +89,7 @@ INFML_SERVICE_7   | We make other kinds of investments as a group (e.g., propert
 INFML_SERVICE_8   | We invest in the stock market as a group
 
 **Number of service options in the questionnaire, by country and year**
+
 Country       | 2015 | 2016 | 2017
 ------------- | ---- | ---- | ----
   Bangladesh  |  0   |  5   |  8

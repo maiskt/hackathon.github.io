@@ -72,7 +72,7 @@
 <li class="chapter" data-level="1.1" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#sbjnum"><i class="fa fa-check"></i><b>1.1</b> SBJNUM</a></li>
 <li class="chapter" data-level="1.2" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#country"><i class="fa fa-check"></i><b>1.2</b> COUNTRY</a></li>
 <li class="chapter" data-level="1.3" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#year"><i class="fa fa-check"></i><b>1.3</b> YEAR</a></li>
-<li class="chapter" data-level="1.4" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#weigth"><i class="fa fa-check"></i><b>1.4</b> WEIGTH</a></li>
+<li class="chapter" data-level="1.4" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#weight"><i class="fa fa-check"></i><b>1.4</b> WEIGHT</a></li>
 <li class="chapter" data-level="1.5" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#ur"><i class="fa fa-check"></i><b>1.5</b> UR</a></li>
 <li class="chapter" data-level="1.6" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#cluster"><i class="fa fa-check"></i><b>1.6</b> CLUSTER</a></li>
 <li class="chapter" data-level="1.7" data-path="survey-dataset-identification.html"><a href="survey-dataset-identification.html#anon_lat-anon_long"><i class="fa fa-check"></i><b>1.7</b> ANON_LAT, ANON_LONG</a></li>
@@ -593,7 +593,7 @@
 </div>
 <div id="pakistan" class="section level3">
 <h3><span class="header-section-number">9.1.6</span> Pakistan</h3>
-<p>No data is available.</p>
+<p>Only 2015-2017 data are available.</p>
 </div>
 <div id="tanzania" class="section level3">
 <h3><span class="header-section-number">9.1.7</span> Tanzania</h3>
@@ -640,10 +640,10 @@
 <h2><span class="header-section-number">9.3</span> R_NOINFML</h2>
 <p>If the respondent does <em>not</em> belong in an IFG, R_NOINFML asks for the most important reason from the following:</p>
 <p><strong>What is the most important reason for your decision not to join informal societies or group saving schemes?</strong></p>
-<table>
+<table style="width:19%;">
 <colgroup>
-<col width="41%" />
-<col width="58%" />
+<col width="8%" />
+<col width="11%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -672,27 +672,17 @@
 </table>
 <div id="bangladesh-1" class="section level3">
 <h3><span class="header-section-number">9.3.1</span> Bangladesh</h3>
-<p>In 2013, there was no option for “Don’t know about them”.
-### Kenya
-### India
-### Indonesia
-### Nigeria
-In 2013, there was no option for “Don’t know about them”.
-### Pakistan
-### Tanzania
-### Uganda</p>
+<p>In 2013, there was no option for “Don’t know about them”. ### Kenya ### India ### Indonesia ### Nigeria In 2013, there was no option for “Don’t know about them”. ### Pakistan ### Tanzania ### Uganda</p>
 <hr />
 </div>
 </div>
 <div id="infml_service" class="section level2">
 <h2><span class="header-section-number">9.4</span> INFML_SERVICE</h2>
-<p>This subsection asks about the services provided to the respondent by the informal societies or group saving schemes they belong to.
-These questions are all binary, with values 1 for “Yes” and 2 for “No”.
-<em>Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to?</em></p>
-<table>
+<p>This subsection asks about the services provided to the respondent by the informal societies or group saving schemes they belong to. These questions are all binary, with values 1 for “Yes” and 2 for “No”. <em>Do you receive the following services through any of the informal societies or group saving schemes that you personally belong to?</em></p>
+<table style="width:99%;">
 <colgroup>
-<col width="11%" />
-<col width="88%" />
+<col width="12%" />
+<col width="86%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -735,17 +725,67 @@ These questions are all binary, with values 1 for “Yes” and 2 for “No”.
 </tr>
 </tbody>
 </table>
-<p><strong>Number of service options in the questionnaire, by country and year</strong>
-Country | 2015 | 2016 | 2017
-————- | —- | —- | —-
-Bangladesh | 0 | 5 | 8
-India | 0 | 9 | 8
-Indonesia | 0 | 9 | 0
-Kenya | 7 | 8 | 8
-Nigeria | 7 | 8 | 8
-Pakistan | 0 | 7 | 7
-Tanzania | 7 | 8 | 8
-Uganda | 7 | 8 | 8</p>
+<p><strong>Number of service options in the questionnaire, by country and year</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Country</th>
+<th>2015</th>
+<th>2016</th>
+<th>2017</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bangladesh</td>
+<td>0</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>India</td>
+<td>0</td>
+<td>9</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>Indonesia</td>
+<td>0</td>
+<td>9</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Kenya</td>
+<td>7</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>Nigeria</td>
+<td>7</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>Pakistan</td>
+<td>0</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>Tanzania</td>
+<td>7</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>Uganda</td>
+<td>7</td>
+<td>8</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
 <div id="bangladesh-2" class="section level3">
 <h3><span class="header-section-number">9.4.1</span> Bangladesh</h3>
 <p>In 2016, services 1 and 5 were not asked about.</p>
