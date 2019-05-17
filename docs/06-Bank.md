@@ -13,10 +13,10 @@ Bank
       FF4         |  Do you use a bank account that belongs to somebody else if you need to?
       FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
       
-* Levels 
-       + Yes
-       + No
-       + na
+- Levels 
+       - Yes
+       - No
+       - na
 
 * Note: 
        + The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
