@@ -16,11 +16,15 @@ Ever used a non-bank financial institution: counts respondents who have ever use
 Levels:  
 
 1 ="Yes" 
-0="No"
+0 ="No"
 
 ## REGISTERED_NBFI
-Have an account at a full-service non-bank financial institution: counts respondents with an account at a full-service non-bank financial institution
-Levels: 1 ="Yes"  0 ="No"
+Have an account at a full-service non-bank financial institution: counts respondents with an account at a full-service non-bank financial institution.
+
+Levels: 
+ 
+ 1 ="Yes"  
+ 0 ="No"
 
 ## REGISTERED_NBFI_ALL
 Have an account with a non-bank financial institution:  counts respondents with an account with any non-bank financial institution
