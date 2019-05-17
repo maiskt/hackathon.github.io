@@ -4,7 +4,7 @@ Bank
 
 ## ACCESS_BANK
 
-* Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else's name. For example, Kenya 2017 uses the following questions.
+- Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else's name. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -14,9 +14,9 @@ Bank
       FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
       
 - Levels 
-       - Yes
-       - No
-       - na
+  - Yes
+  - No
+  - na
 
 * Note: 
        + The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
