@@ -21,14 +21,14 @@ Levels:
 ## REGISTERED_NBFI_ALL
 Have an account with a non-bank financial institution:  counts respondents with an account with any non-bank financial institution
 Levels: 
-    +1 ="Yes" 
-    +0 ="No"
+* 1 ="Yes" 
+* 0 ="No"
 
 ## REG_DFS_NBFI
 Have a digital stored-value account at a non-bank financial institution: counts respondents with an account/membership at a full-service non-bank financial institution that offers digital features.
 Levels: 
-    +1 ="Yes" 
-    +0 ="No"
+- 1 ="Yes" 
+- 0 ="No"
 
 ## ACTIVE_NBFI
 ## ACTIVE_NBFI_ALL
