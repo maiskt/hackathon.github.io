@@ -69,9 +69,21 @@ Levels:  0= "NBFI nonuser" ; 1= "Unregistered NBFI user"; 2="Inactive registered
          3="Active NBFI basic user"; 4="Active NBFI advanced user"
 
 ## ACCESS_MFI
+Ever used a full-service microfinance institution (MFI): counts respondents who have ever used a full-service MFI.
+Levels: 1 ="Yes" 0 ="No"
+
 ## REGISTERED_MFI
+Have an account at a full-service MFI: counts respondents who have an account/membership at a full-service microfinance institution
+Levels: 1 ="Yes" 0 ="No"
+
 ## ACTIVE_MFI
+Active registered MFI users: counts respondents who have an account/membership at a full-service microfinance institution and have used it in the last 90 days. 
+Levels: 1 ="Yes" 0 ="No"
+
 ## ACCESS_COOP
+Ever used a full-service cooperative: counts respondents who have ever used a full-service cooperative for any financial activity.
+Levels: 1 ="Yes" 0 ="No"
+
 ## REGISTERED_COOP
 ## ACTIVE_COOP
 ## ACCESS_POST
