@@ -4,7 +4,7 @@ Bank
 
 ## ACCESS_BANK
 
-- Description: Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else's name. For example, Kenya 2017 uses the following questions.
+* Counts individuals who have ever used a bank, or who have a bank account registered in their name or a joint account in their and someone else's name. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -13,17 +13,16 @@ Bank
       FF4         |  Do you use a bank account that belongs to somebody else if you need to?
       FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
       
-- Levels 
-  - Yes
-  - No
-  - na
+* Levels
+  - 1=Yes
+  - 0=No
 
 * Note: 
-       + The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
+  - The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
 
 ## REGISTERED_BANK
 
-* Description: Counts individuals who hold an account with a bank that provides a full suite of financial services. For example, Kenya 2017 uses the following questions.
+Counts individuals who hold an account with a bank that provides a full suite of financial services. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -31,16 +30,16 @@ Bank
       FF1A        |  Do you have a bank account that is registered jointly in your name and someone else's name?
       FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
 
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
        
-* Note: 
-       + The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
+Note: 
+* The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
        
 ## ACTIVE_BANK
 
-* Description: counts individual who have an account registered in their name with a full-service bank and have used it in the last 90 days before the survey. For example, Kenya 2017 uses the following questions.
+Counts individual who have an account registered in their name with a full-service bank and have used it in the last 90 days before the survey. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -49,16 +48,16 @@ Bank
       FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
       FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any                      other financial activity, other than today?
       
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
        
-* Note: 
-       + The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
+Note: 
+* The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
        
 ## ACTIVE30_BANK
 
-* Description: Counts individuals who have an account registered in their name with a full-service bank and have used it in the last 30 days before the survey. For example, Kenya 2017 uses the following questions.
+Counts individuals who have an account registered in their name with a full-service bank and have used it in the last 30 days before the survey. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -67,16 +66,16 @@ Bank
       FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
       FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any                      other financial activity, other than today?
 
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
        
-* Note: 
-       + The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
+Note: 
+* The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
        
 ## INACTIVE_BANK
 
-* Description: Counts individuals who have an account registered in their name with a full-service bank but have not used it in the last 90 days before the survey. For example, Kenya 2017 uses the following questions.
+Counts individuals who have an account registered in their name with a full-service bank but have not used it in the last 90 days before the survey. For example, Kenya 2017 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -85,24 +84,24 @@ Bank
       FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
       FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any                      other financial activity, other than today?
 
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
        
-* Note: 
-       + The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
+Note: 
+* The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
 
 ## DORMANT_BANK
 
-* Description: Counts individuals who have an account registered in their name with a full-service bank but never used it. DORMANT_BANK was derived from ACCESS_BANK and REGISTERED_BANK (see above).
+Counts individuals who have an account registered in their name with a full-service bank but never used it. DORMANT_BANK was derived from ACCESS_BANK and REGISTERED_BANK (see above).
 
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
        
 ## BANK_BASIC
 
-* Description: Counts individuals who have used a bank account to cash-in (deposit), cash-out (withdraw), transfer money to another individual, or conduct account maintenance. For example, Bangladesh 2016 uses the following questions.
+Counts individuals who have used a bank account to cash-in (deposit), cash-out (withdraw), transfer money to another individual, or conduct account maintenance. For example, Bangladesh 2016 uses the following questions.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -112,18 +111,18 @@ Bank
       FF14_10     |  Which of the following have you ever done using a bank account? Received money from family members, friends,                            workmates or other acquaintances for regular support/allowances, to help with emergencies, or for other reasons                          (outside household)
       FF14_11     |  Which of the following have you ever done using a bank account? Account maintenance: Checked your account balance,                      changed PIN, received mini-statement, etc.
       
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
 
-* Note: 
-       + 2018 surveys didn't include questions on cash-in (deposit), cash-out (withdraw) and conducting account maintenance.
-       + 2013, 2014, and 2017 surveys didn't include questions on conducting account maintenance.
+Note: 
+* 2018 surveys didn't include questions on cash-in (deposit), cash-out (withdraw) and conducting account maintenance.
+* 2013, 2014, and 2017 surveys didn't include questions on conducting account maintenance.
 
 
 ## BANK_ADV
 
-* Description: Counts individuals who have used a bank account for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. Using Bangladesh 2017 as an example, BANK_ADV was derived from questions FF14, FF22_1 and FB16A_1. 
+Counts individuals who have used a bank account for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. Using Bangladesh 2017 as an example, BANK_ADV was derived from questions FF14, FF22_1 and FB16A_1. 
 
  Question Index   |                       Activities
   ----------------|-------------------------------------------------------------
@@ -139,53 +138,53 @@ Bank
       FF14_12     |  Made an investment, including bought stock or shares
       FF14_13     |  Paid for goods or services at a grocery store, clothing shop or any other store/shop
       
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
 
 ## REG_BANK_BASIC
 
-* Description: counts individuals who have an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance. REG_BANK_BASIC was derived from REGISTERED_BANK and BANK_BASIC.
+Counts individuals who have an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance. REG_BANK_BASIC was derived from REGISTERED_BANK and BANK_BASIC.
       
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
        
 ## REG_BANK_ADV
 
-* Description: counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. REG_BANK_ADV was derived from REGISTERED_BANK and BANK_ADV.
+Counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. REG_BANK_ADV was derived from REGISTERED_BANK and BANK_ADV.
 
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
 
 ## ACTIVE_BANK_BASIC
 
-* Description: counts individuals who have an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance in the last 90 days. ACTIVE_BANK_BASIC was derived from ACTIVE_BANK and BANK_BASIC.
+Counts individuals who have an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance in the last 90 days. ACTIVE_BANK_BASIC was derived from ACTIVE_BANK and BANK_BASIC.
 
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
 
 ## ACTIVE_BANK_ADV
 
-* Description: counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits in the last 90 days. ACTIVE_BANK_ADV was derived from ACTIVE_BANK and BANK_ADV.
+Counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits in the last 90 days. ACTIVE_BANK_ADV was derived from ACTIVE_BANK and BANK_ADV.
 
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
        
 ## ACTIVE30_BANK_ADV
 
-* Description: counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits in the last 30 days. ACTIVE30_BANK_ADV was derived from ACTIVE30_BANK and BANK_ADV.
+Counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits in the last 30 days. ACTIVE30_BANK_ADV was derived from ACTIVE30_BANK and BANK_ADV.
 
-* Levels 
-       + Yes
-       + No
+Levels
+* 1=Yes
+* 0=No
 
 ## BANK_STAGE
 
-* Description: A series of progressive stages through which individuals become more active users of more sophisticated financial services. 
+A series of progressive stages through which individuals become more active users of more sophisticated financial services. 
 
   Bank stages                  |                       Descriptions
   -----------------------------|------------------------------------------------------
@@ -195,12 +194,12 @@ Bank
   Basic only active bank user  |  had a bank account registered in their name or a joint account in their and someone else's name and                                     only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out (withdraw),                                         money transfer to another individual, or conducting account maintenance.
   Advanced active bank user   |  had a bank account registered in their name or a joint account in their and someone else's name and                                     used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment, paying                                   bills or receiving wages or government benefits).
 
-* Levels 
-       + Bank nonuser
-       + Unregistered bank user
-       + Registered inactive bank user
-       + Basic only active bank user
-       + Advanced active bank user
+Levels 
+* Bank nonuser
+* Unregistered bank user
+* Registered inactive bank user
+* Basic only active bank user
+* Advanced active bank user
 
 ## BANK_TRANSFER
 * Description: counts individuals who ever sent money to, or received money from someone using a bank. For example, Bangladesh 2017 derives from FF14_6.
