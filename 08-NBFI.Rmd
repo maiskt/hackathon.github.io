@@ -5,8 +5,8 @@ NBFIs
 ## ACCESS_NBFI 
 Access to full-service non-bank financial institutions: counts respondents who have ever used a full-service non-bank financial institution for any financial activity. 
 Levels:  
-    +1 ="Yes" 
-    +0 ="No"
+    + 1 ="Yes" 
+    + 0 ="No"
 
 ## ACCESS_NBFI_ALL
 Ever used a non-bank financial institution: counts respondents who have ever used a non-bank financial institution for any financial activity
