@@ -1,8 +1,9 @@
 ﻿* Encoding: UTF-8.
+*Encoding: UTF-8.
 *Dataset loading syntax.
 
 *Bangladesh.
-get file = "Z:\ANONGPS data\FII Bangladesh 2013 (public+ANONGPS).sav"
+get file = "Z:\ANONGPS data\FII Bangladesh 2013 (public+ANONGPS).sav".
     dataset name bng13.
     compute YEAR = 2013.
     string COUNTRY (A10). 
