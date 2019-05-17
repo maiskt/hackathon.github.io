@@ -16,6 +16,7 @@ Bank
 * Levels 
        + Yes
        + No
+       + na
 
 * Note: 
        + The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
