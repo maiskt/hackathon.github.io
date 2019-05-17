@@ -1,7 +1,7 @@
 ﻿* Encoding: UTF-8.
 *IFG Syntax*
 ** 2014-2017 for BELONG_INFML, IFI18/19 only. 
-
+cd "C:/Users/shueym/Documents".
 *2017***.
 dataset activate bng17.
 compute BELONG_INFML = 0.
@@ -78,6 +78,10 @@ INFML_SERVICE_5 INFML_SERVICE_6 INFML_SERVICE_7 INFML_SERVICE_8.
 
 *2017!!.
 dataset activate pak17.
+
+
+compute BELONG_INFML = 0.
+if IFI18 > 1 and IFI18 ne 99 BELONG_INFML = 1.
 
 RENAME VARIABLES IFI20_1 = INFML_SERVICE_1.
 RENAME VARIABLES IFI20_2 = INFML_SERVICE_3.
@@ -290,6 +294,10 @@ INFML_SERVICE_5 INFML_SERVICE_6 INFML_SERVICE_7 INFML_SERVICE_8.
 
 *!.
 dataset activate pak16.
+
+compute BELONG_INFML = 0.
+if IFI18 > 1 and IFI18 ne 99 BELONG_INFML = 1.
+
 compute R_INFML = 0.
 if IFI21 = 1 R_INFML = 1.
 if IFI21 = 4 R_INFML = 2.
@@ -488,6 +496,10 @@ INFML_SERVICE_5 INFML_SERVICE_6 INFML_SERVICE_7 INFML_SERVICE_8.
 
 
 dataset activate pak15.
+
+compute BELONG_INFML = 0.
+if ifi19 > 1 and ifi19 ne 99 BELONG_INFML = 1.
+
 compute R_INFML = 0.
 if ifi22 = 1 R_INFML = 1.
 if ifi22 = 3 or ifi22 = 4 R_INFML = 2.
