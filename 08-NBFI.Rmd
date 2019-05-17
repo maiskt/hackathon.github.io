@@ -4,47 +4,50 @@ NBFIs
 
 ## ACCESS_NBFI 
 Access to full-service non-bank financial institutions: counts respondents who have ever used a full-service non-bank financial institution for any financial activity. 
-Levels:  
-
-* 1 = "Yes" 
-* 0 = "No"
+Levels: 1 ="Yes"  0 ="No"
 
 ## ACCESS_NBFI_ALL
-Ever used a non-bank financial institution: counts respondents who have ever used a non-bank financial institution for any financial activity.
-
-Levels:
-* 1 = "Yes"
-* 0 = "No"
+Ever used a non-bank financial institution: counts respondents who have ever used a non-bank financial institution for any financial activity
+Levels:  1 ="Yes" 0="No"
 
 ## REGISTERED_NBFI
 Have an account at a full-service non-bank financial institution: counts respondents with an account at a full-service non-bank financial institution
-Levels: 
-
-+ 1 = "Yes" 
-+ 0 = "No"
+Levels: 1 ="Yes"  0 ="No"
 
 ## REGISTERED_NBFI_ALL
 Have an account with a non-bank financial institution:  counts respondents with an account with any non-bank financial institution
-Levels: 
-
-* 1 = "Yes" 
-* 0 = "No"
+Levels: 1 ="Yes" 0 ="No"
 
 ## REG_DFS_NBFI
 Have a digital stored-value account at a non-bank financial institution: counts respondents with an account/membership at a full-service non-bank financial institution that offers digital features.
-Levels: 
-
-- 1 = "Yes" 
-- 0 = "No"
+Levels: 1 ="Yes" 0 ="No"
 
 ## ACTIVE_NBFI
+Used a full-service non-bank financial account in the past 90 days: counts respondents who have an account/membership with a full-service non-bank financial institution and have used their account in the last 90 days before the survey.
+Levels: 1 ="Yes" 0 ="No"
+
 ## ACTIVE_NBFI_ALL
+Used a non-bank financial institution in the last 90 days: counts respondents who have an account/membership with any non-bank financial institution and have used their account in the last 90 days before the survey.
+Levels: 1 ="Yes" 0 ="No"
+
 ## ACTIVE30_NBFI
+
 ## INACTIVE_NBFI
+
 ## DORMANT_NBFI
+
 ## OTC_NBFI
+Nonregistered users of non-bank financial institutions: counts respondents who don't have an account/membership with a non-bank financial institution (NBFI) but have ever used an NBFI for any financial activity. 
+Levels: 1 ="Yes"  0 ="No"
+
 ## NBFI_BASIC
+
 ## NBFI_ADV
+Ever used a non-bank financial institution (NBFI) for advanced activities: counts respondents who ever used an NBFI for any advanced financial activity (other than deposit, withdrawal, sending or receiving money, or account maintenance). 
+
+Levels: 1 ="Yes"  0 ="No"
+
+
 ## REG_NBFI_BASIC
 ## REG_NBF_ADV
 ## ACTIVE_NBFI_BASIC
