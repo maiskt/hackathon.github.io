@@ -35,6 +35,8 @@ Levels: 1 ="Yes" 0 ="No"
 ## INACTIVE_NBFI
 
 ## DORMANT_NBFI
+Dormant NBFI account: counts respondants who have an account with a full-service non-bank financial institution (NBFI) but have never used it for any financial activity.  
+Levels: 1 ="Yes"  0 ="No"
 
 ## OTC_NBFI
 Nonregistered users of non-bank financial institutions: counts respondents who don't have an account/membership with a non-bank financial institution (NBFI) but have ever used an NBFI for any financial activity. 
@@ -44,15 +46,23 @@ Levels: 1 ="Yes"  0 ="No"
 
 ## NBFI_ADV
 Ever used a non-bank financial institution (NBFI) for advanced activities: counts respondents who ever used an NBFI for any advanced financial activity (other than deposit, withdrawal, sending or receiving money, or account maintenance). 
-
 Levels: 1 ="Yes"  0 ="No"
 
 
 ## REG_NBFI_BASIC
+
 ## REG_NBF_ADV
+
 ## ACTIVE_NBFI_BASIC
+
 ## ACTIVE_NBFI_ADV
+Advanced active NBFI account holder: counts respondents who have an account/membership with a full-service non-bank financial institution and have used their account in the last 90 days before the survey to conduct an advanced activity (i.e., activity other than deposit, withdrawal, sending and receiving money.
+Levels: 1 ="Yes" 0 ="No"
+
 ## ACTIVE30_NBFI_ADV
+Used own account at a full-service NBFI in the last 30 days to conduct at least one advanced financial service: counts respondents who have a registered account/membership in their name at a full-service NBFI and have used their account in the last 30 days to conduct at least one financial service other than a deposit, withdrawal, sending or receiving money.
+Levels: 1 ="Yes" 0 ="No"
+
 ## NBFI_STAGE
 ## ACCESS_MFI
 ## REGISTERED_MFI
