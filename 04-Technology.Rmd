@@ -16,7 +16,7 @@ Technology literacy
 
 ## BASIC_PHONE
 
-* Description: Respondents who own a basic mobile phone.
+* Description: Respondents who own a mobile phone with basic features.
 
 ## FEATURE_PHONE
 ## SMART_PHONE
