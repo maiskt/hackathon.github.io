@@ -509,7 +509,7 @@ save outfile = "data/pak15.sav"
 
 dataset activate tza15.
 compute BELONG_INFML = 0.
-if IFI18 > 0 and IFI18 ne 99 BELONG_INFML=1.
+if IFI18 > 0 and IFI18 ne 999 BELONG_INFML=1.
 
 compute R_INFML = 0.
 if IFI21 = 1 R_INFML = 1.
@@ -541,7 +541,7 @@ INFML_SERVICE_5 INFML_SERVICE_6 INFML_SERVICE_7 INFML_SERVICE_8.
 
 dataset activate uga15.
 compute BELONG_INFML = 0.
-if IFI18 > 0 and IFI18 ne 99 BELONG_INFML=1.
+if IFI18 > 0 and IFI18 ne 999 BELONG_INFML=1.
 
 compute R_INFML = 0.
 if IFI21 = 1 R_INFML = 1.

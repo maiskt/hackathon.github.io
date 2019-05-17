@@ -202,35 +202,264 @@ Bank
        + Advanced active bank user
 
 ## BANK_TRANSFER
-* Description: 
+* Description: counts individuals who ever sent money to, or received money from someone using a bank. For example, Bangladesh 2017 derives from FF14_6.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_6      |  Which of the following activities have you ever done using a bank account? Sent money to, or received money from, family members, friends, workmates or other acquaintances
+
+* Levels 
+       + Yes
+       + No
+
+## BANK_MERCHANT
+* Description: counts individuals who ever paid for goods or services at a store, shop, restaurant or other place of business using a bank. For example, Bangladesh 2017 derives from FF14_13.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_13     |  Which of the following activities have you ever done using a bank account? Paid for goods or services at a grocery store, clothing shop or any other store/shop
+
+* Levels 
+       + Yes
+       + No
+
+## BANK_BILL
+* Description: counts individuals who ever paid for a bill using a bank. For example, Bangladesh 2017 uses the following questions.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_3      |  Which of the following activities have you ever done using a bank account? Paid a school fee
+      FF14_4      |  Which of the following activities have you ever done using a bank account? Paid a bill for medical expenses, housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
+      FF14_5      |  Which of the following activities have you ever done using a bank account? Paid a government bill, including tax, fine or fee
+      
+* Levels 
+       + Yes
+       + No
+
+## BANK_GOV
+* Description: counts individuals who ever received money from the government using a bank. For example, Bangladesh 2017 derives from FF14_7.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_7      |  Which of the following activities have you ever done using a bank account? Received a welfare, pension or other benefit payment from the government 
+      
+* Levels 
+       + Yes
+       + No
+
+## BANK_WAGE
+* Description: counts individuals who ever received payment from an employer using a bank. For example, Bangladesh 2017 derives from FF14_8.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_8      |  Which of the following activities have you ever done using a bank account? Received wages for your primary or secondary job
+      
+* Levels 
+       + Yes
+       + No
+
+## BANK_INSURANCE
+* Description: counts individuals who ever paid for insurance or received payment from insurance using a bank. For example, Bangladesh 2017 derives from FF14_9.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_9      |  Which of the following activities have you ever done using a bank account? Made insurance payments or received claims on insurance
+      
+* Levels 
+       + Yes
+       + No
+
+## BANK_SAVE
+* Description: counts individuals who ever saved using a bank. For example, Bangladesh 2017 derives from FF14_11 and FB22_1.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_11     |  Which of the following activities have you ever done using a bank account? Saved money for any reason
+      FB22_1      |  Do you save with any of the following? Bank
+      
+* Levels 
+       + Yes
+       + No
+       
+## BANK_INVEST
+* Description: counts individuals who ever made an investment using a bank. For example, Bangladesh 2017 derives from FF14_12.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_12     |  Which of the following activities have you ever done using a bank account? Made an investment, including bought stock or shares
+      
+* Levels 
+       + Yes
+       + No
+
+## BANK_LOAN
+* Description: counts individuals who ever borrowed money from someone outside your household or bought something on credit using a bank. For example, Bangladesh 2017 derives from FF14_10 and FB16A_1.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_10     |  Which of the following activities have you ever done using a bank account? Took a loan or made payments on a loan
+      FB16A_1     |  Do you currently have a loan with this organization? Bank, personal or business loans
+      
+* Levels 
+       + Yes
+       + No
+
+## BANK_AIRTIME
+* Description: counts individuals who ever Bought airtime top-ups or paid a mobile phone bill using a bank. For example, Bangladesh 2017 derives from FF14_2.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_2      |  Which of the following activities have you ever done using a bank account? Bought airtime top-ups or paid a mobile phone bill
+      
+* Levels 
+       + Yes
+       + No
+
+* Note:
+       + BANK_AIRTIME questions are not available on 2018 survey.
+
+## ACTIVE_BANK_TRANSFER
+* Description: counts individuals who ever sent money to, or received money from someone using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_6.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF14_6      |  Please tell me when was the last time you used a bank account for this activity, other than today? Sent money to, or received money from, family members, friends, workmates or other acquaintances
 
 * Levels 
        + Yes
        + No
        
-* Note: 
-       + 
+* Note:
+       + In 2015 survey, there is no question like the question above. Can we derive ACTIVE_BANK_TRANSFER by "FF16.11.How often do you use a bank account for this activity?Send money to family members, friends, workmates or other acquaintances for regular support/allowances or to help with emergencies, or for other reasons" and "FF16.12.How often do you use a bank account for this activity?Receive money from family members, friends, workmates or other acquaintances for regular support/allowances or to help with emergencies, or for other reasons"?(same questions for all active bank activities variables) Need confirm.
+       + ACTIVE_BANK_TRANSFER questions are not available on 2013 and 2014 survey. Need confirm.
        
 
-## BANK_MERCHANT
-## BANK_BILL
-## BANK_GOV
-## BANK_WAGE
-## BANK_INSURANCE
-## BANK_SAVE
-## BANK_INVEST
-## BANK_LOAN
-## BANK_AIRTIME
-## ACTIVE_BANK_TRANSFER
 ## ACTIVE_BANK_MERCHANT
+* Description: counts individuals who ever paid for goods or services at a store, shop, restaurant or other place of business using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_13.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_13     |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid for goods or services at a grocery store, clothing shop or any other store/shop store/shop
+
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_MERCHANT questions are not available on 2013 and 2014 survey.
+              
+
 ## ACTIVE_BANK_BILL
+* Description: counts individuals who ever paid for a bill using a bank in the last 90 days. For example, Bangladesh 2017 uses the following questions.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_3      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a school fee
+      FF16_4      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a bill for medical expenses, housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
+      FF16_5      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a government bill, including tax, fine or fee
+      
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_BILL questions are not available on 2013 and 2014 survey.       
+
 ## ACTIVE_BANK_GOV
+* Description: counts individuals who ever received money from the government using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_7.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_7      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received a welfare, pension or other benefit payment from the government  
+      
+* Levels 
+       + Yes
+       + No
+* Note:
+       + ACTIVE_BANK_GOV questions are not available on 2013 and 2014 survey.  
+
 ## ACTIVE_BANK_WAGE
+* Description: counts individuals who ever received payment from an employer using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_8.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_8      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received wages for your primary or secondary job
+      
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_WAGE questions are not available on 2013 and 2014 survey.        
+
 ## ACTIVE_BANK_INSURANCE
+* Description: counts individuals who ever paid for insurance or received payment from insurance using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_9.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_9      |  Please tell me when was the last time you used a bank account for this activity, other than today? Made insurance payments or received claims on insurance
+      
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_INSURANCE questions are not available on 2013 and 2014 survey.  
+
 ## ACTIVE_BANK_SAVE
+* Description: counts individuals who ever saved using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_11.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_11     |  Please tell me when was the last time you used a bank account for this activity, other than today? Saved money for any reason
+      
+* Levels 
+       + Yes
+       + No
+       
+* Note:
+       + ACTIVE_BANK_SAVE questions are not available on 2013 and 2014 survey.         
+
 ## ACTIVE_BANK_INVEST
+* Description: counts individuals who ever made an investment using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_12.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_12     |  Please tell me when was the last time you used a bank account for this activity, other than today? Made an investment, including bought stock or shares
+      
+* Levels 
+       + Yes
+       + No
+
+* Note:
+       + ACTIVE_BANK_INVEST questions are not available on 2013 and 2014 survey.           
+
 ## ACTIVE_BANK_LOAN
+* Description: counts individuals who ever borrowed money from someone outside your household or bought something on credit using a bank in the last 90 days. For example, Bangladesh 2017 derives from FF16_10.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_10     |  Please tell me when was the last time you used a bank account for this activity, other than today? Took a loan or made payments on a loan
+      
+* Levels 
+       + Yes
+       + No
+* Note:
+       + ACTIVE_BANK_LOAN questions are not available on 2013 and 2014 survey.         
+
 ## ACTIVE_BANK_AIRTIME
+* Description: counts individuals who ever Bought airtime top-ups or paid a mobile phone bill using a bank. For example, Bangladesh 2017 derives from FF16_2.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_2      |  Please tell me when was the last time you used a bank account for this activity, other than today? Bought airtime top-ups or paid a mobile phone bill
+      
+* Levels 
+       + Yes
+       + No
+
+* Note:
+       + ACTIVE_BANK_AIRTIME questions are not available on 2013 and 2014 survey.
 
 
 
