@@ -85,6 +85,9 @@ Ever used a full-service cooperative: counts respondents who have ever used a fu
 Levels: 1 ="Yes" 0 ="No"
 
 ## REGISTERED_COOP
+Full-service cooperative account ownership: counts respondents who have an account/membership with a full-service cooperative,
+Levels: 1 ="Yes" 0 ="No"
+
 ## ACTIVE_COOP
 ## ACCESS_POST
 ## REGISTERED_POST
