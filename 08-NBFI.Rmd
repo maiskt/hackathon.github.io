@@ -162,8 +162,26 @@ Levels:
  0 ="No"
 
 ## ACCESS_POST
+Ever used a full-service post office bank: counts respondents who have ever used a full-service post office bank for any financial activity.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## REGISTERED_POST
+Have a full-service post office bank account:  counts respondents who have an account/membership in their name at a full-service post office bank.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACTIVE_POST
+Active registered post office bank users: counts respondents who have an account/membership in thier name at a full-service post office bank and have used it in the last 90 days. 
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+
 ## ACCESS_SACCO
 ## REGISTERED_SACCO
 ## ACTIVE_SACCO
