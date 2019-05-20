@@ -246,9 +246,28 @@ Levels:
  0 ="No"
  
 ## AWARE_PAYMENT_BANK_PROVIDER
+
 ## ACCESS_PAYMENT
+Ever used a full-service Payment Bank: counts respondents who have ever used a full-service Payment Bank.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## REGISTERED_PAYMENT
+Have a full-service payment bank account:  counts respondents who have an account registered in their name or a joint account registered in their name and someone else's at a full-service payment bank.
+
+Levels: 
+ 1 ="Yes" 
+  0 ="No"
+  
 ## ACTIVE_PAYMENT
+Active registered payment bank users: counts respondents who have an account in thier name at a full-service payment bank and have used it in the last 90 days. 
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACCESS_GROUP
 ## REGISTERED_GROUP
 ## ACTIVE_GROUP
