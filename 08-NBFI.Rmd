@@ -271,15 +271,48 @@ Levels:
 ## ACCESS_GROUP
 ## REGISTERED_GROUP
 ## ACTIVE_GROUP
+
 ## NBFI_TRANSFER
 ## NBFI_MERCHANT
+
 ## NBFI_BILL
+Ever used non-bank financial institutions (NBFI) to pay bills: counts respondents who have used their NBFI account to pay bills.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_GOV
 ## NBFI WAGE
+
 ## NBFI_INSURANCE
+Ever used non-bank financial institutions (NBFI) for insurance: counts respondents who have ever used their NBFI account to pay insurance or receive insurance claims.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_SAVE
+Ever used non-bank financial institutions (NBFI) to save: counts respondents who have ever used their NBFI account to save.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_INVEST
+Ever used non-bank financial institutions (NBFI) for investments: counts respondents who have ever used their NBFI account to make investments.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_LOAN
+Ever used non-bank financial institutions (NBFI) for loans: counts respondents who have ever used their NBFI account to take or repay a loan. 
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_AIRTIME
 ## ACTIVE_NBFI_TRANSFER
 ## ACTIVE_NBFI_MERCHANT
