@@ -196,6 +196,7 @@ save outfile = "data/ken13.sav"
 /keep= SBJNUM COUNTRY YEAR UR CLUSTER .
 
 DATASET ACTIVATE nga13.
+*Bad cluster data.
 RENAME VARIABLES AA7 = UR.
 save outfile = "data/nga13.sav"
 /keep = SBJNUM COUNTRY YEAR UR
