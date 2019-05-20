@@ -204,9 +204,28 @@ Levels:
  0 ="No"
 
 ## ACCESS_BPR
+Ever used a full-service Bank Perkreditan Rakyat(BPR): counts respondents who have ever used a full-service BPR.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+
 ## REGISTERED_BPR
+Have a full-service Bank Perkreditan Rakyat(BPR):  counts respondents who have an account/membership in their name at a full-service BPR.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACTIVE_BPR
+Active registered Bank Perkreditan Rakyat(BPR) users: counts respondents who have an account/membership in thier name at a full-service Bank Perkreditan Rakyat(BPR) and have used it in the last 90 days. 
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACCESS_PAWNSHOP
+
 ## REGISTERED_PAWNSHOP
 ## ACTIVE_PAWNSHOP
 ## AWARE_PAYMENT_BANK_PROVIDER
