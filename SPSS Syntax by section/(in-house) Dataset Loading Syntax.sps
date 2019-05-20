@@ -99,7 +99,7 @@ get file = "W:/GATES FII PROJECT FOLDERS/DATATHON/Data/Public data with GPS/FII 
     DATASET NAME ken13.
     compute YEAR = 2013.
     string COUNTRY (A10). 
-    rename variables QN = SBJNUM.
+    rename variables SERIAL = SBJNUM.
     compute COUNTRY = "Kenya".
 get file = "//archive/Sundries$/2016 and before/FII Kenya/Year 2014/FSP-Kenya-w2-12092014.sav" .
     dataset name ken14.
@@ -223,7 +223,7 @@ get file = "//ARCHIVE/Sundries$/2017/FII final data/FII Kenya 2017 final.sav".
     dataset name uga13.
     compute YEAR = 2013.
     string COUNTRY (A10). 
-    rename variables serial = SBJNUM.
+    rename variables fserial = SBJNUM.
     compute COUNTRY  = "Uganda".
  get file = "//ARCHIVE/Sundries$/2016 and before/FII Uganda/Year 2014/FSP_Final_Uganda_W2_10312014(in house).sav".
     dataset name uga14.
