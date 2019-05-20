@@ -225,9 +225,26 @@ Levels:
  0 ="No"
  
 ## ACCESS_PAWNSHOP
+Ever used a full-service Pawnshop: counts respondents who have ever used a full-service Pawnshop.
 
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## REGISTERED_PAWNSHOP
+Have a full-service Pawshop:  counts respondents who have an account/membership in their name at a full-service Pawshop.
+
+Levels: 
+ 1 ="Yes" 
+  0 ="No"
+  
 ## ACTIVE_PAWNSHOP
+Active registered Pawnshop users: counts respondents who have an account/membership in thier name at a full-service Pawnshop and have used it in the last 90 days. 
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## AWARE_PAYMENT_BANK_PROVIDER
 ## ACCESS_PAYMENT
 ## REGISTERED_PAYMENT
