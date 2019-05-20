@@ -183,8 +183,26 @@ Levels:
  0 ="No"
 
 ## ACCESS_SACCO
+Ever used a full-service SACCO: counts respondents who have ever used a full-service SACCO for any financial activity.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## REGISTERED_SACCO
+Have a full-service SACCO account:  counts respondents who have an account/membership in their name at a full-service SACCO.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACTIVE_SACCO
+Active registered SACCO users: counts respondents who have an account/membership in thier name at a full-service SACCO and have used it in the last 90 days. 
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+
 ## ACCESS_BPR
 ## REGISTERED_BPR
 ## ACTIVE_BPR
