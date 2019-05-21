@@ -504,25 +504,59 @@ Note:
 * ACTIVE_BANK_AIRTIME questions are not available on 2013 and 2014 survey.
 
 ## R_NOBANK1
+Counts individuals who ever Bought airtime top-ups or paid a mobile phone bill using a bank. For example, Bangladesh 2017 derives from FF16_2.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF16_2      |  Please tell me when was the last time you used a bank account for this activity, other than today? Bought airtime top-ups or paid a mobile phone bill
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+* ACTIVE_BANK_AIRTIME questions are not available on 2013 and 2014 survey.
+
+
 ## R_NOBANK2
+
 ## R_NOBANK3
+
 ## R_NOBANK4
+
 ## R_NOBANK5
+
 ## R_NOBANK6
+
 ## EXP_BANK1
+
 ## EXP_BANK2
+
 ## EXP_BANK3
+
 ## EXP_BANK4
+
 ## EXP_BANK5
+
 ## EXP_BANK6
+
 ## EXP_BANK7
+
 ## EXP_BANK8
+
 ## EXP_BANK9
+
 ## LCT_BANK1
+
 ## LCT_BANK2
+
 ## LCT_BANK3
+
 ## LCT_BANK4
+
 ## LCT_BANK5
+
 ## LCT_BANK6
 
 

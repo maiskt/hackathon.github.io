@@ -246,31 +246,108 @@ Levels:
  0 ="No"
  
 ## AWARE_PAYMENT_BANK_PROVIDER
+
 ## ACCESS_PAYMENT
+Ever used a full-service Payment Bank: counts respondents who have ever used a full-service Payment Bank.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## REGISTERED_PAYMENT
+Have a full-service payment bank account:  counts respondents who have an account registered in their name or a joint account registered in their name and someone else's at a full-service payment bank.
+
+Levels: 
+ 1 ="Yes" 
+  0 ="No"
+  
 ## ACTIVE_PAYMENT
+Active registered payment bank users: counts respondents who have an account in thier name at a full-service payment bank and have used it in the last 90 days. 
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACCESS_GROUP
 ## REGISTERED_GROUP
 ## ACTIVE_GROUP
+
 ## NBFI_TRANSFER
 ## NBFI_MERCHANT
+
 ## NBFI_BILL
+Ever used non-bank financial institutions (NBFI) to pay bills: counts respondents who have used their NBFI account to pay bills.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_GOV
 ## NBFI WAGE
+
 ## NBFI_INSURANCE
+Ever used non-bank financial institutions (NBFI) for insurance: counts respondents who have ever used their NBFI account to pay insurance or receive insurance claims.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_SAVE
+Ever used non-bank financial institutions (NBFI) to save: counts respondents who have ever used their NBFI account to save.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_INVEST
+Ever used non-bank financial institutions (NBFI) for investments: counts respondents who have ever used their NBFI account to make investments.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_LOAN
+Ever used non-bank financial institutions (NBFI) for loans: counts respondents who have ever used their NBFI account to take or repay a loan. 
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## NBFI_AIRTIME
 ## ACTIVE_NBFI_TRANSFER
 ## ACTIVE_NBFI_MERCHANT
 ## ACTIVE_NBFI_BILL
 ## ACTIVE_NBFI_GOV
 ## ACTIVE_NBFI WAGE
+
 ## ACTIVE_NBFI_INSURANCE
+Active use of non-bank financial institutions (NBFI) for insurance: counts respondents who used their NBFI account to pay insurance or receive insurance claims in the last 90 days.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACTIVE_NBFI_SAVE
+Active use of non-bank financial institutions (NBFI) for saving: counts respondents who used their NBFI account to save money for any reason in the last 90 days.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACTIVE_NBFI_INVEST
+Active use of non-bank financial institutions (NBFI) for investmentse: counts respondents who used their NBFI account for investments in the last 90 days.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACTIVE_NBFI_LOAN
+Active use of non-bank financial institutions (NBFI) for loans: counts respondents who used their NBFI account to take or repay a loan in the last 90 days.
+
+Levels: 
+ 1 ="Yes" 
+ 0 ="No"
+ 
 ## ACTIVE_NBFI_AIRTIME
 ## R_STOPMFI1
 ## R_STOPMFI2
