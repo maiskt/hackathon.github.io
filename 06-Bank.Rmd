@@ -203,7 +203,7 @@ Levels
 
 ## BANK_STAGE
 
-A series of progressive stages through which individuals become more active users of more sophisticated financial services. 
+Customer journey segmentation of bank: A series of progressive stages through which individuals become more active users of more sophisticated financial services. 
 
   Bank stages                  |                       Descriptions
   -----------------------------|------------------------------------------------------
@@ -215,18 +215,18 @@ A series of progressive stages through which individuals become more active user
 
 Levels 
 
-* Bank nonuser
-* Unregistered bank user
-* Registered inactive bank user
-* Basic only active bank user
-* Advanced active bank user
+* 0=Bank nonuser
+* 1=Unregistered bank user
+* 2=Registered inactive bank user
+* 3=Basic only active bank user
+* 4=Advanced active bank user
 
 ## BANK_TRANSFER
-Counts individuals who ever sent money to, or received money from someone using a bank. For example, Bangladesh 2017 derives from FF14_6.
+Ever use of bank transfer: Counts individuals who ever sent money to, or received money from someone using a bank. For example, Bangladesh 2017 derives from FF14_6.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF14_6      |  Which of the following activities have you ever done using a bank account? Sent money to, or received money from, family members, friends, workmates or other acquaintances
+      FF14_6      |  Which of the following activities have you ever done using a bank account? Sent money to, or received money                          from, family members, friends, workmates or other acquaintances
 
 Levels
 
@@ -234,11 +234,11 @@ Levels
 * 0=No
 
 ## BANK_MERCHANT
-Counts individuals who ever paid for goods or services at a store, shop, restaurant or other place of business using a bank. For example, Bangladesh 2017 derives from FF14_13.
+Ever use a bank to buy goods and services: Counts individuals who ever paid for goods or services at a store, shop, restaurant or other place of business using a bank. For example, Bangladesh 2017 derives from FF14_13.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF14_13     |  Which of the following activities have you ever done using a bank account? Paid for goods or services at a grocery store, clothing shop or any other store/shop
+      FF14_13     |  Which of the following activities have you ever done using a bank account? Paid for goods or services at a                          grocery store, clothing shop or any other store/shop
 
 Levels
 
