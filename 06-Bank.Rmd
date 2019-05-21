@@ -89,8 +89,8 @@ Inactive bank account for last 90 days: Counts individuals who have an account r
   ----------------|-------------------------------------------------------------
       FF1         |  Do you personally have a bank account that is registered in your name?
       FF1A        |  Do you have a bank account that is registered jointly in your name and someone else's name?
-      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or investment? It                      does not matter if you use those services, I just want to know whether they are offered
-      FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for any                      other financial activity, other than today?
+      FF5         |  Does your bank offer at least one of the following services: savings, money transfers, insurance, or                                investment? It does not matter if you use those services, I just want to know whether they are offered
+      FF9         |  When was the last time you made a deposit or withdrawal using a bank account, or maintained a bank account for                      any other financial activity, other than today?
 
 Levels
 
@@ -207,11 +207,11 @@ A series of progressive stages through which individuals become more active user
 
   Bank stages                  |                       Descriptions
   -----------------------------|------------------------------------------------------
-  Bank nonuser                 |  did not have a bank account registered in their name or a joint account in their and someone                                         else's name or never used a bank.
-  Unregistered bank user       |  did not have a bank account registered in their name or a joint account in their and someone                                         else's name but ever used it.
-  Registered inactive bank user|  had a bank account registered in their name or a joint account in their and someone else's name                                     but did not use it in the last 90 days.
-  Basic only active bank user  |  had a bank account registered in their name or a joint account in their and someone else's name                                     and only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out                                             (withdraw), money transfer to another individual, or conducting account maintenance.
-  Advanced active bank user   |   had a bank account registered in their name or a joint account in their and someone else's name                                     and used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment,                                   paying bills or receiving wages or government benefits).
+  Bank nonuser                 |  Don't have a bank account registered in their name or a joint account in their and someone                                         else's name or never used a bank.
+  Unregistered bank user       |  Don't have a bank account registered in their name or a joint account in their and someone                                         else's name but use a bank via another person's account.
+  Registered inactive bank user|  Have a bank account registered in their name or a joint account in their and someone else's name                                     but have not used it in the last 90 days.
+  Basic only active bank user  |  Have a bank account registered in their name or a joint account in their and someone else's name                                     and only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out                                             (withdraw), money transfer to another individual, or conducting account maintenance.
+  Advanced active bank user   |   Have a bank account registered in their name or a joint account in their and someone else's name                                     and used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment,                                   paying bills or receiving wages or government benefits).
 
 Levels 
 
