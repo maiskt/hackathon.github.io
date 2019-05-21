@@ -296,7 +296,7 @@ Levels
 * 0=No
 
 ## BANK_SAVE
-Counts individuals who ever saved using a bank. For example, Bangladesh 2017 derives from FF14_11 and FB22_1.
+Ever use of bank for savings: Counts individuals who ever saved using a bank. For example, Bangladesh 2017 derives from FF14_11 and FB22_1.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -309,7 +309,7 @@ Levels
 * 0=No
        
 ## BANK_INVEST
-Counts individuals who ever made an investment using a bank. For example, Bangladesh 2017 derives from FF14_12.
+Ever use of bank for investment: Counts individuals who ever made an investment using a bank. For example, Bangladesh 2017 derives from FF14_12.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -321,7 +321,7 @@ Levels
 * 0=No
 
 ## BANK_LOAN
-Counts individuals who ever borrowed money from someone outside your household or bought something on credit using a bank. For example, Bangladesh 2017 derives from FF14_10 and FB16A_1.
+Ever use of bank for loans: Counts individuals who ever borrowed money using a bank. For example, Bangladesh 2017 derives from FF14_10 and FB16A_1.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
