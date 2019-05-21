@@ -158,7 +158,7 @@ Levels
 
 ## REG_BANK_BASIC
 
-Counts individuals who have an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance. REG_BANK_BASIC was derived from REGISTERED_BANK and BANK_BASIC.
+Basic use of registered bank account: Counts individuals who have an account registered in their name with a full-service bank and use it for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance. REG_BANK_BASIC was derived from REGISTERED_BANK and BANK_BASIC.
       
 Levels
 
@@ -167,7 +167,7 @@ Levels
        
 ## REG_BANK_ADV
 
-Counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. REG_BANK_ADV was derived from REGISTERED_BANK and BANK_ADV.
+Advance use of registered bank account: Counts individuals who have an account registered in their name with a full-service bank and use it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. REG_BANK_ADV was derived from REGISTERED_BANK and BANK_ADV.
 
 Levels
 
@@ -176,7 +176,7 @@ Levels
 
 ## ACTIVE_BANK_BASIC
 
-Counts individuals who have an account registered in their name with a full-service bank and used it for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance in the last 90 days. ACTIVE_BANK_BASIC was derived from ACTIVE_BANK and BANK_BASIC.
+Basic use of registered bank account in last 90 days: Counts individuals who have an account registered in their name with a full-service bank and have used it in the last 90 days for cash-in (deposit) or cash-out (withdrawal), or to transfer money to another individual, or conduct account maintenance. ACTIVE_BANK_BASIC was derived from ACTIVE_BANK and BANK_BASIC.
 
 Levels
 
@@ -185,7 +185,7 @@ Levels
 
 ## ACTIVE_BANK_ADV
 
-Counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits in the last 90 days. ACTIVE_BANK_ADV was derived from ACTIVE_BANK and BANK_ADV.
+Advance use of registered bank account in the last 90 days: Counts individuals who have an account registered in their name with a full-service bank and have used it in the last 90 days for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. ACTIVE_BANK_ADV was derived from ACTIVE_BANK and BANK_ADV.
 
 Levels
 
@@ -194,7 +194,7 @@ Levels
        
 ## ACTIVE30_BANK_ADV
 
-Counts individuals who have an account registered in their name with a full-service bank and used it for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits in the last 30 days. ACTIVE30_BANK_ADV was derived from ACTIVE30_BANK and BANK_ADV.
+Advance use of registered bank account in the last 30 days:Counts individuals who have an account registered in their name with a full-service bank and have used it in the last 30 days for saving, borrowing, insurance, investment, bill payment or receiving wages or government benefits. ACTIVE30_BANK_ADV was derived from ACTIVE30_BANK and BANK_ADV.
 
 Levels
 
@@ -207,11 +207,11 @@ A series of progressive stages through which individuals become more active user
 
   Bank stages                  |                       Descriptions
   -----------------------------|------------------------------------------------------
-  Bank nonuser                 |  did not have a bank account registered in their name or a joint account in their and someone else's                                     name or never used a bank.
-  Unregistered bank user       |  did not have a bank account registered in their name or a joint account in their and someone else's                                     name but ever used it.
-  Registered inactive bank user|  had a bank account registered in their name or a joint account in their and someone else's name but                                     did not use it in the last 90 days.
-  Basic only active bank user  |  had a bank account registered in their name or a joint account in their and someone else's name and                                     only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out (withdraw),                                         money transfer to another individual, or conducting account maintenance.
-  Advanced active bank user   |  had a bank account registered in their name or a joint account in their and someone else's name and                                     used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment, paying                                   bills or receiving wages or government benefits).
+  Bank nonuser                 |  did not have a bank account registered in their name or a joint account in their and someone                                         else's name or never used a bank.
+  Unregistered bank user       |  did not have a bank account registered in their name or a joint account in their and someone                                         else's name but ever used it.
+  Registered inactive bank user|  had a bank account registered in their name or a joint account in their and someone else's name                                     but did not use it in the last 90 days.
+  Basic only active bank user  |  had a bank account registered in their name or a joint account in their and someone else's name                                     and only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out                                             (withdraw), money transfer to another individual, or conducting account maintenance.
+  Advanced active bank user   |   had a bank account registered in their name or a joint account in their and someone else's name                                     and used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment,                                   paying bills or receiving wages or government benefits).
 
 Levels 
 
