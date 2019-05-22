@@ -98,5 +98,7 @@ Levels:
 Customer journey segmentation
 
 Levels:
-+ 0="Nonusers
++ 0="Nonuser"
++ 1="Nonregistered user"
++ 2="Inactive registered user
 
