@@ -84,13 +84,13 @@ compute COUNTRY=Bangladesh.
 compute R_NOBANK1=ff3_1.
 recode R_NOBANK1(4,5=1)(else=0).
 compute R_NOBANK2=ff3_2.
-recode R_NOBANK2(sysmis=-2).
+recode R_NOBANK2(4,5=1)(else=0).
 compute R_NOBANK3=ff3_4.
-recode R_NOBANK3(sysmis=-2).
+recode R_NOBANK3(4,5=1)(else=0).
 compute R_NOBANK4=ff3_5.
-recode R_NOBANK4(sysmis=-2).
+recode R_NOBANK4(4,5=1)(else=0).
 compute R_NOBANK5=ff3_3.
-recode R_NOBANK5(sysmis=-2).
+recode R_NOBANK5(4,5=1)(else=0).
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -119,15 +119,15 @@ compute YEAR=2017.
 compute COUNTRY=India.
 
 compute R_NOBANK1=ff3_1.
-recode R_NOBANK1(sysmis=-2).
+recode R_NOBANK1(4,5=1)(else=0).
 compute R_NOBANK2=ff3_2.
-recode R_NOBANK2(sysmis=-2).
+recode R_NOBANK2(4,5=1)(else=0).
 compute R_NOBANK3=ff3_4.
-recode R_NOBANK3(sysmis=-2).
+recode R_NOBANK3(4,5=1)(else=0).
 compute R_NOBANK4=ff3_5.
-recode R_NOBANK4(sysmis=-2).
+recode R_NOBANK4(4,5=1)(else=0).
 compute R_NOBANK5=ff3_3.
-recode R_NOBANK5(sysmis=-2).
+recode R_NOBANK5(4,5=1)(else=0).
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -156,15 +156,15 @@ compute YEAR=2017.
 compute COUNTRY=Kenya.
 
 compute R_NOBANK1=ff3_1.
-recode R_NOBANK1(sysmis=-2).
+recode R_NOBANK1(4,5=1)(else=0).
 compute R_NOBANK2=ff3_2.
-recode R_NOBANK2(sysmis=-2).
+recode R_NOBANK2(4,5=1)(else=0).
 compute R_NOBANK3=ff3_4.
-recode R_NOBANK3(sysmis=-2).
+recode R_NOBANK3(4,5=1)(else=0).
 compute R_NOBANK4=ff3_5.
-recode R_NOBANK4(sysmis=-2).
+recode R_NOBANK4(4,5=1)(else=0).
 compute R_NOBANK5=ff3_3.
-recode R_NOBANK5(sysmis=-2).
+recode R_NOBANK5(4,5=1)(else=0).
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -193,15 +193,15 @@ compute YEAR=2017.
 compute COUNTRY=Nigeria.
 
 compute R_NOBANK1=ff3_1.
-recode R_NOBANK1(sysmis=-2).
+recode R_NOBANK1(4,5=1)(else=0).
 compute R_NOBANK2=ff3_2.
-recode R_NOBANK2(sysmis=-2).
+recode R_NOBANK2(4,5=1)(else=0).
 compute R_NOBANK3=ff3_4.
-recode R_NOBANK3(sysmis=-2).
+recode R_NOBANK3(4,5=1)(else=0).
 compute R_NOBANK4=ff3_5.
-recode R_NOBANK4(sysmis=-2).
+recode R_NOBANK4(4,5=1)(else=0).
 compute R_NOBANK5=ff3_3.
-recode R_NOBANK5(sysmis=-2).
+recode R_NOBANK5(4,5=1)(else=0).
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -230,15 +230,15 @@ compute YEAR=2017.
 compute COUNTRY=Paksitan.
 
 compute R_NOBANK1=ff3_1.
-recode R_NOBANK1(sysmis=-2).
+recode R_NOBANK1(4,5=1)(else=0).
 compute R_NOBANK2=ff3_2.
-recode R_NOBANK2(sysmis=-2).
+recode R_NOBANK2(4,5=1)(else=0).
 compute R_NOBANK3=ff3_4.
-recode R_NOBANK3(sysmis=-2).
+recode R_NOBANK3(4,5=1)(else=0).
 compute R_NOBANK4=ff3_5.
-recode R_NOBANK4(sysmis=-2).
+recode R_NOBANK4(4,5=1)(else=0).
 compute R_NOBANK5=ff3_3.
-recode R_NOBANK5(sysmis=-2).
+recode R_NOBANK5(4,5=1)(else=0).
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -267,15 +267,15 @@ compute YEAR=2017.
 compute COUNTRY=Tanzania.
 
 compute R_NOBANK1=ff3_1.
-recode R_NOBANK1(sysmis=-2).
+recode R_NOBANK1(4,5=1)(else=0).
 compute R_NOBANK2=ff3_2.
-recode R_NOBANK2(sysmis=-2).
+recode R_NOBANK2(4,5=1)(else=0).
 compute R_NOBANK3=ff3_4.
-recode R_NOBANK3(sysmis=-2).
+recode R_NOBANK3(4,5=1)(else=0).
 compute R_NOBANK4=ff3_5.
-recode R_NOBANK4(sysmis=-2).
+recode R_NOBANK4(4,5=1)(else=0).
 compute R_NOBANK5=ff3_3.
-recode R_NOBANK5(sysmis=-2).
+recode R_NOBANK5(4,5=1)(else=0).
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -304,15 +304,15 @@ compute YEAR=2017.
 compute COUNTRY=Uganda.
 
 compute R_NOBANK1=ff3_1.
-recode R_NOBANK1(sysmis=-2).
+recode R_NOBANK1(4,5=1)(else=0).
 compute R_NOBANK2=ff3_2.
-recode R_NOBANK2(sysmis=-2).
+recode R_NOBANK2(4,5=1)(else=0).
 compute R_NOBANK3=ff3_4.
-recode R_NOBANK3(sysmis=-2).
+recode R_NOBANK3(4,5=1)(else=0).
 compute R_NOBANK4=ff3_5.
-recode R_NOBANK4(sysmis=-2).
+recode R_NOBANK4(4,5=1)(else=0).
 compute R_NOBANK5=ff3_3.
-recode R_NOBANK5(sysmis=-2).
+recode R_NOBANK5(4,5=1)(else=0).
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
