@@ -20,8 +20,9 @@ This is the name of the country where the survey was conducted. the following co
 ## YEAR
 This is the year in which data collection place. It runs from 2013 to 2018, except for Indonesia where it ranges from 2014 to 2016.
 
+----
 Other variables
-
+----
 Each individual survey dataset also includes the following variables:
 
 ## WEIGHT
