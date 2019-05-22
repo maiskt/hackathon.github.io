@@ -600,11 +600,11 @@ Note:
 * For 2017 survey, FF3 set questions are a little different from 2018 survey. 2017 survey asks in this way, "FF3.3.How much you agree or disagree the reason why people do not register bank accounts in their name applies to your situation? Lack of money to use the account". And levels are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. We reode level 4 and 5 into "Yes" and recode other levels as well as system missing into "No".
 
 ## R_NOBANK_BUSI1
-Reasons for NO bank account (You don't have enough money to use the account): Counts individuals who do not have a bank account since do not have enough money. For example, Bangladesh 2018 uses FF3_6.
+Reasons for NOT use bank for business payments/purchases (Have to pay extra taxes): Counts individuals who do not use bank for business payments/purchases since need to pay extra taxes. For example, Bangladesh 2015 uses FF18_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF3_6       |  Is this a reason why you do not have a bank account? You don't have enough money to use the account
+      FF18_2      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?I will have to pay extra taxes
       
 Levels
 
@@ -616,14 +616,84 @@ Note:
 * R_NOBANK_BUSI1 questions are only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI2
+Reasons for NOT use bank for business payments/purchases (Have to pay bribes to government officials to avoid taxation/licensing/paper work): Counts individuals who do not use bank for business payments/purchases since need to pay bribes to government officials to avoid taxation/licensing/paper work. For example, Bangladesh 2015 uses FF18_3.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF18_3      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?I will have to pay bribes to government officials to avoid taxation/licensing/paper work
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* R_NOBANK_BUSI2 questions are only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI3
+Reasons for NOT use bank for business payments/purchases (Business is not registered, it is not formal): Counts individuals who do not use bank for business payments/purchases since business is not registered. For example, Bangladesh 2015 uses FF18_4.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF18_4      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?My business is not registered, it is not formal
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* R_NOBANK_BUSI3 questions are only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI4
+Reasons for NOT use bank for business payments/purchases (Have to raise prices to pay account fees and people won't buy): Counts individuals who do not use bank for business payments/purchases since need to raise prices to pay account fees. For example, Bangladesh 2015 uses FF18_5.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF18_5      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?To pay account fees I will have to raise prices and people won't buy from me
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* R_NOBANK_BUSI4 questions are only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI5
+Reasons for NOT use bank for business payments/purchases (Business is too small to need a bank account): Counts individuals who do not use bank for business payments/purchases since business is too small to need a bank account. For example, Bangladesh 2015 uses FF18_6.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF18_6      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?My business is too small to need a bank account
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* R_NOBANK_BUSI4 questions are only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI6
+Reasons for NOT use bank for business payments/purchases (Use other methods of payment): Counts individuals who do not use bank for business payments/purchases since they use other methods of payment. For example, Bangladesh 2015 uses FF18_7.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF18_7      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?I use other methods of payment
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* R_NOBANK_BUSI6 questions are only available for 2013, 2014 and 2015 surveys.
 
 ## EXP_BANK1
 
