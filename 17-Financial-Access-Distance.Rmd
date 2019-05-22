@@ -64,5 +64,27 @@ Levels:
  + 99="Don't Know"
 
 ## GRPKM
+Distance from residence to a VSLA: measures the distance from the responden't home to a village savings and loan association (VSLA).
+
+Levels:
+ + 1="<=1 Km"
+ + 2=">1 Km but <=5Km"
+ + 3="> 5Km"
+ + 99="Don't Know"
+ 
 ## INFMLKM
+Distance from residence to an informal self-help or savings group.
+Levels:
+ + 1="<=1 Km"
+ + 2=">1 Km but <=5Km"
+ + 3="> 5Km"
+ + 99="Don't Know"
+ 
 ## POSTKM
+Distance from residence to the post offfice bank.
+
+Levels:
+ + 1="<=1 Km"
+ + 2=">1 Km but <=5Km"
+ + 3="> 5Km"
+ + 99="Don't Know"
