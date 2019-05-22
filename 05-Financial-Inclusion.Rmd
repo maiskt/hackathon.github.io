@@ -101,6 +101,7 @@ Levels:
 + 0="Nonuser"
 + 1="Nonregistered user"
 + 2="Inactive registered user
-+ 3="Active basic user
++ 3="Active basic user"
++ 4="Active advanced user"
 
 
