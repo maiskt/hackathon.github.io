@@ -96,36 +96,6 @@ DATASET NAME u14.
 get file 'FII Uganda 2013 (public+ANONGPS).sav'.
 DATASET NAME u13.
 
-*Label.
-variable labels SBJNUM"Subject ID"
-COUNTRY "COUNTRY"
-YEAR "YEAR"
-ACCESS_FINANCIAL"Ever used full service formal financial services"
-FI"Financially included"
-ACTIVE_FINANCIAL"Used own full service registered account in past 90 days"
-ACCESS_FINANCIAL_ALL"Ever used formal financial services"
-ACTIVE_FINANCIAL_ADV"Used own full service accounts in past 90 days and have used at least one advanced financial service "
-ACTIVE30_FINANCIAL_ADV"Used own full service accounts in past 30 days and have used at least one advanced financial service"
-ACCESS_DFS_PAYMENT_TRANSFER"Ever used bank or mobile money for digital payment or transfering"
-ACCESS_DFS"Ever used a digital stored value account"
-REGISTERED_DFS"Digitally included"
-ACTIVE_DFS"Used own digital stored-value accounts in past 90 days"
-ACTIVE_DFS_ADV"Used own digital stored-value accounts in past 90 days and have used at least one advanced financial service"
-FINANCIAL_STAGE"Customer journey segmentation".
-
-value labels ACCESS_FINANCIAL 1 "Yes" 0 "No".
-value labels FI 1 "Financial included" 0 "Financial excluded".
-value labels ACTIVE_FINANCIAL 1"Yes" 0"No".
-Value labels ACCESS_FINANCIAL_ALL 1 "Yes" 0 "No".
-Value labels ACTIVE_FINANCIAL_ADV 1 "Yes" 0 "No".
-Value labels ACTIVE30_FINANCIAL_ADV 1 "Yes" 0 "No".
-value labels ACCESS_DFS 1 "Yes" 0 "No".
-value labels ACCESS_DFS_PAYMENT_TRANSFER 1"Yes" 0"No".
-Value labels REGISTERED_DFS 1 "Yes" 0 "No".
-Value labels ACTIVE_DFS 1 "Yes" 0 "No".
-Value labels ACTIVE_DFS_ADV 1 "Yes" 0 "No".
-Value labels FINANCIAL_STAGE 0"Nonuser" 1"Nonregistered User" 2"Inactive registered user" 3"Basic only active user" 4"Advanced active user".
-
 
 cd 'Z:\Ask permission from Xiaoyan\FII 2019\Datathon\Section 5 data'.
 save outfile="Uganda 2013 datathon all.sav".
