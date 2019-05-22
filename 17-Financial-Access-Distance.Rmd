@@ -2,18 +2,66 @@
 
 ## POS
 Distance from residence to a point of service(POS): measures the distance from the respondent's home to a bank branch, an ATM, a mobile money agent, a bank agent, a retail store/kiosk with over-the-counter mobile money services, MFI, SACCO or a semi-formal/informal financial or savings group. 
-Level:
+
+Levels:
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
  + 99="Don't Know"
  
 ## BBKM
+Distance from residence to a bank branch: measures the distance from the respondent'home to a bank branch.
+
+Levels:
+ + 1="<=1 Km"
+ + 2=">1 Km but <=5Km"
+ + 3="> 5Km"
+ + 99="Don't Know"
+ 
 ## ATMKM
+Distance from residence to an ATM: measures the distance from the respondent's home to an ATM.
+
+Levels:
+ + 1="<=1 Km"
+ + 2=">1 Km but <=5Km"
+ + 3="> 5Km"
+ + 99="Don't Know"
+ 
 ## MMKM
+Distance from residence to a mobile money agent: measures the distance from the respondent's home to a mobile money agent. 
+
+Levels:
+ + 1="<=1 Km"
+ + 2=">1 Km but <=5Km"
+ + 3="> 5Km"
+ + 99="Don't Know"
+ 
 ## BAKM
+Distance from residence to a bank agent: measures the distance from the respondent's home to a bank agent. 
+
+Levels:
+ + 1="<=1 Km"
+ + 2=">1 Km but <=5Km"
+ + 3="> 5Km"
+ + 99="Don't Know"
+ 
 ## RSKM
+Distance from residence to a point of service(POS): measures the distance from the respondent's home to a bank branch, an ATM, a mobile money agent, a bank agent, a retail store/kiosk with over-the-counter mobile money services, MFI, SACCO or a semi-formal/informal financial or savings group. 
+
+Levels:
+ + 1="<=1 Km"
+ + 2=">1 Km but <=5Km"
+ + 3="> 5Km"
+ + 99="Don't Know"
 ## MFIKM
+Distance from residence to a point of service(POS): measures the distance from the respondent's home to a bank branch, an ATM, a mobile money agent, a bank agent, a retail store/kiosk with over-the-counter mobile money services, MFI, SACCO or a semi-formal/informal financial or savings group. 
+
+Levels:
+ + 1="<=1 Km"
+ + 2=">1 Km but <=5Km"
+ + 3="> 5Km"
+ + 99="Don't Know"
+
 ## GRPKM
 ## INFMLKM
 ## POSTKM
