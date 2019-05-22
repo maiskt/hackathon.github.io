@@ -3,6 +3,23 @@
 cd "C:/Users/shueym/Documents".
 *2018---------------------------------------------------------------------***.
 DATASET ACTIVATE bng18.
+compute MM_TRANSFER = 99.
+if AD1_4 = 1 or AD1_4 = 1 MM_TRANSFER = 1.
+if AD1_4 = 2 or AD1_4 = 2 MM_TRANSFER = 0.
+MISSING VALUES MM_TRANSFER (99).
+
+compute MM_MERCHANT = 99.
+if AD2_4 = 1 MM_MERCHANT = 1. 
+if AD2_4 = 2 MM_MERCHANT = 0.
+MISSING VALUES MM_MERCHANT (99).
+
+compute MM_BILL = 99.
+if AD3_4 = 1 MM_BILL = 1. 
+if AD3_4 = 2 MM_BILL = 0.
+MISSING VALUES MM_BILL (99).
+
+compute MM_GOV = 99.
+if AD
 
 save outfile = "data/bng18.sav"
 /keep= SBJNUM COUNTRY YEAR UR CLUSTER Latitude Longitude.
@@ -14,6 +31,8 @@ save outfile = "data/ind18.sav"
 
 *2017---------------------------------------------------------------------***.
 DATASET ACTIVATE bng17.
+compute MM_TRANSFER = 0.
+if MM18_1 ne 5 AND MM18_1 ne 99 AND MM18_2 ne 5 AND MM18_2 ne 99 MM_TRANSFER = 1.
 
 save outfile = "data/bng17.sav"
 /keep= SBJNUM COUNTRY YEAR UR CLUSTER Latitude Longitude.
