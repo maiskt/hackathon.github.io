@@ -4,3 +4,12 @@ repo: https://github.com/FIIDatathon/Codebook
 output_dir: docs
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
+rmd_files: ["index.Rmd", "01-Identifying-Charcteristics.Rmd", "02-Poverty.Rmd",                  
+"03-Demographics.Rmd", "04-Technology.Rmd", 
+"05-Financial-Inclusion.Rmd", "06-Bank.Rmd",                      
+"07-Mobile-Money.Rmd", "08-NBFI.Rmd",                      
+"09-IFG.Rmd",  "10-Loans.Rmd",                     
+"11-Savings.Rmd",  "12-Investments.Rmd",               
+"13-Insurance.Rmd",   "14-Financial-Situation.Rmd",       
+"15-Financial-Health.Rmd", "16-Economic-Empowerment.Rmd",      
+"17-Financial-Access-Distance.Rmd"]
