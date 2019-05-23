@@ -19,6 +19,12 @@ Levels:
 + 99= "Don't know"
 
 ## LOAN_INTEREST
+Know interest rate paid on loans: counts who currently have a loan and know the interest rate thier pay on the loan.
+Levels: 
++ 1="Yes"
++ 0= "No"
++ 99= "Don't know"
+
 ## LOAN_INFML
 ## LOAN_FORMAL
 ## LOAN_STORE
