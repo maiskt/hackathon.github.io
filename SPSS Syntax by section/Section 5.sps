@@ -1,4 +1,4 @@
-* Encoding: windows-1252.
+* Encoding: UTF-8.
 variable labels SBJNUM"Subject ID"
 COUNTRY "COUNTRY"
 YEAR "YEAR"
@@ -98,7 +98,6 @@ IF ((FN1_6<=4 and
 (FN7_3<=4 and 
      (AD2_9=1 or AD3_9=1 or AD4_9=1 or AD5_9=1 or AD6_9=1 or AD7_9=1 or AD8_9=1 or AD9_9=1 or AD10_25=1 or AD11_13=1))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FN1_6<=3 and 
      (AD2_1=1 or AD2_2=1 or AD2_3=1 or AD2_10=1 or 
@@ -232,7 +231,6 @@ AD10_19=1 or AD10_23=1 or AD10_24=1 or AD10_25=1 or AD10_26=1 or AD11_2=1 or AD1
    (AD2_3=1 or AD3_3=1 or AD4_3=1 or AD5_3=1 or AD6_3=1 or AD7_3=1 or AD8_3=1 or AD9_3=1 or AD10_21=1 or AD11_9=1 or AD11_10=1)) or
   (FN6_1=1 and FN6_3=1 and FN6_4<=4 and (AD9_6=1 or AD10_28=1 or AD11_6=1))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FN1_6<=3 and 
    (AD2_1=1 or AD2_5=1 or AD2_6=1 or AD2_7=1 or AD2_8=1 or AD3_1=1 or AD3_5=1 or AD3_6=1 or AD3_7=1 or AD3_8=1 or 
@@ -385,7 +383,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=4 and IFI5_4=1 
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7 or fb22_3=1))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF (((ff1d_1=1 or ff1d_2=1 or ff1d_3=1 or ff1d_4=1 or ff1d_5=1 or ff1d_6=1 or ff1d_7=1 or ff1d_9=1 
 or ff1d_10=1 or ff1d_11=1 or ff1d_12=1 or ff1d_14=1 or ff1d_15=1 or ff1d_16=1 or ff1d_17=1 
@@ -408,7 +405,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=3 and IFI5_4=1 
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7 or fb22_3=1)))  ACTIVE30_FINANCIAL_ADV=1.
 
-*double check.
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_13=1) or
 (MM15_3=1 or MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_13=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -539,7 +535,6 @@ and (IFI11_3<7 or IFI11_4<7 or IFI11_5<7 or IFI11_6<7 or IFI11_7<7 or IFI11_8<7 
 or (IFI4_3<=4 and IFI5_3=1 
 and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 or FB16A_5=1 or FB22_5=1))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF (((FF1=1 or FF1A=1) and FF9<=3 and 
 (FF14_2=1 or FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_13=1
@@ -555,7 +550,6 @@ and (IFI11_3<7 or IFI11_4<7 or IFI11_5<7 or IFI11_6<7 or IFI11_7<7 or IFI11_8<7 
 or (IFI4_3<=3 and IFI5_3=1 
 and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 or FB16A_5=1 or FB22_5=1)))  ACTIVE30_FINANCIAL_ADV=1.
 
-*double check.
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_13=1) or
 (MM15_3=1 or MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_13=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -657,7 +651,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=4 and IFI5_4=1 
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF (((FF1=1 or FF1A=1) and FF5=1 and FF9<=3 and 
 (FF14_2=1 or FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 
@@ -674,7 +667,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=3 and IFI5_4=1 
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7)))  ACTIVE30_FINANCIAL_ADV=1.
 
-*double check.
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_13=1) or
 (MM15_3=1 or MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_13=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -780,7 +772,6 @@ and (IFI10_3<7 or IFI10_4<7 or IFI10_5<7 or IFI10_6<7 or IFI10_7<7 or IFI10_8<7 
 or (IFI4_2<=4 and IFI5_2=1 
 and (IFI11_3<7 or IFI11_4<7 or IFI11_5<7 or IFI11_6<7 or IFI11_7<7 or IFI11_8<7))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF  (((ff1d_1=1 or ff1d_2=1 or ff1d_3=1 or ff1d_4=1 or ff1d_5=1 or ff1d_6=1 or ff1d_7=1 or ff1d_8=1 or ff1d_9=1 or ff1d_10=1 or ff1d_11=1 or ff1d_12=1 or 
 ff1d_13=1 or ff1d_14=1 or ff1d_15=1 or ff1d_16=1 or ff1d_17=1 or ff1d_18=1 or ff1d_19=1 or ff1d_20=1 or ff1d_21=1 or ff1d_22=1)  and FF9<=3 and 
@@ -795,7 +786,6 @@ and (IFI10_3<7 or IFI10_4<7 or IFI10_5<7 or IFI10_6<7 or IFI10_7<7 or IFI10_8<7 
 or (IFI4_2<=3 and IFI5_2=1 
 and (IFI11_3<7 or IFI11_4<7 or IFI11_5<7 or IFI11_6<7 or IFI11_7<7 or IFI11_8<7))) ACTIVE30_FINANCIAL_ADV=1.
 
-*double check.
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_13=1) or
 (MM15_3=1 or MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_13=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -925,7 +915,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=4 and IFI5_4=1 
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF (((ff1d_1=1 or ff1d_2=1 or ff1d_3=1 or ff1d_4=1 or ff1d_5=1 or ff1d_6=1 or ff1d_7=1 or ff1d_8=1 or ff1d_9=1 or ff1d_10=1 
 or ff1d_11=1 or ff1d_12=1 or ff1d_13=1 or ff1d_14=1 or ff1d_15=1 or ff1d_16=1 or ff1d_17=1 or ff1d_18=1 or ff1d_19=1 or ff1d_20=1 
@@ -948,7 +937,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=3 and IFI5_4=1 
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7)))  ACTIVE30_FINANCIAL_ADV=1.
 
-*double check.
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_13=1) or
 (MM15_3=1 or MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_13=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -1074,7 +1062,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=4 and IFI5_4=1
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF (((FF1=1 or FF1A=1) and FF5=1 and FF9<=3 and 
 (FF14_2=1 or FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 
@@ -1091,7 +1078,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=3 and IFI5_4=1
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7)))  ACTIVE30_FINANCIAL_ADV=1.
 
-*double check.
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_13=1) or
 (MM15_3=1 or MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_13=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -1194,7 +1180,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=4 and IFI5_4=1 
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF (((FF1=1 or FF1A=1) and FF5=1 and FF9<=3 and 
 (FF14_2=1 or FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 
@@ -1211,7 +1196,6 @@ and (IFI12_3<7 or IFI12_4<7 or IFI12_5<7 or IFI12_6<7 or IFI12_7<7 or IFI12_8<7 
 or (IFI4_4<=3 and IFI5_4=1 
 and (IFI13_3<7 or IFI13_4<7 or IFI13_5<7 or IFI13_6<7 or IFI13_7<7 or IFI13_8<7)))  ACTIVE30_FINANCIAL_ADV=1.
 
-*double check.
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_13=1) or
 (MM15_3=1 or MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_13=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -1319,7 +1303,6 @@ or (IFI4_4<=4 and IFI5_4=1
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1 or fb16_4=1 or fb22_3=1))) ACTIVE_FINANCIAL_ADV=1.
 
-*double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF9<=3 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or
@@ -1340,7 +1323,6 @@ or (IFI4_4<=3 and IFI5_4=1
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1 or fb16_4=1 or fb22_3=1)))  ACTIVE30_FINANCIAL_ADV=1.
 
-*double check.
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_20=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_20=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -1353,7 +1335,6 @@ or (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1.
 
-*double check.
 compute REGISTERED_DFS=0.
 if ((FF1=1 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or 
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_96=1) or
@@ -1450,7 +1431,7 @@ IFI11_11=1 or IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1
 or (IFI4_3<=4 and IFI5_3=1 
 and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or 
 IFI12_11=1 or IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1 or IFI12_18=1 or IFI12_19=1 or IFI12_20=1 or IFI12_21=1 or IFI12_22=1 or fb16_6=1 or fb22_9=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF9<=3 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or 
@@ -1468,7 +1449,7 @@ IFI11_11=1 or IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1
 or (IFI4_3<=3 and IFI5_3=1 
 and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or 
 IFI12_11=1 or IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1 or IFI12_18=1 or IFI12_19=1 or IFI12_20=1 or IFI12_21=1 or IFI12_22=1 or fb16_6=1 or fb22_9=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_20=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_20=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -1481,7 +1462,6 @@ MM4_11=1 or MM4_12=1 or MM4_13=1 or MM4_14=1 or MM4_15=1 or MM4_16=1) or
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)))) ACCESS_DFS=1. 
 
-*double check.
 compute REGISTERED_DFS=0.
 if ((FF1=1 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or 
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1 or 
@@ -1559,7 +1539,7 @@ compute ACCESS_FINANCIAL_ALL=0.
 IF ((FF1=1 or FF4=1) or
 (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or MM4_8=1 or MM4_9=1 or MM4_10=1 or MM4_11=1 or MM4_96=1) or
 (ifi1_1=1 or ifi1_2=1 or ifi1_3=1 or ifi1_4=1)) ACCESS_FINANCIAL_ALL=1.
-*double check.
+
 compute ACTIVE_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=4 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or 
@@ -1587,7 +1567,7 @@ and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or 
 IFI13_21=1 or IFI13_22=1 or FB16_6=1))) 
 ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or 
@@ -1614,7 +1594,7 @@ or (IFI4_4<=3 and IFI5_4=1
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or 
 IFI13_21=1 or IFI13_22=1 or FB16_6=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_20=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_20=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -1627,7 +1607,7 @@ MM4_7=1 or MM4_8=1 or MM4_9=1 or MM4_10=1 or MM4_11=1 or MM4_96=1) or
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if (((FF1=1 and FF5=1) and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or 
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1 or MM6_9=1 or MM6_10=1 or MM6_11=1 or MM6_96=1) or
@@ -1644,7 +1624,7 @@ or (IFI4_1<=4 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1))
 or (IFI4_2<=4 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) 
 or (IFI4_3<=4 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) 
 or (IFI4_4<=4 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))  ACTIVE_DFS=1.
-*double check.
+
 Compute ACTIVE_DFS_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=4 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1) and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or 
@@ -1737,7 +1717,7 @@ or fb16_4=1 or fb22_3=1))
 or (IFI4_4<=4 and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or
@@ -1761,7 +1741,7 @@ or fb16_4=1 or fb22_3=1))
 or (IFI4_4<=3 and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_20=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_20=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -1773,7 +1753,7 @@ if (((FF1=1 or FF4=1) and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1. 
-*double check.
+
 compute REGISTERED_DFS=0.
 if (((FF1=1 and FF5=1) and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or 
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_96=1) or
@@ -1873,7 +1853,7 @@ IFI10_11=1 or IFI10_12=1 or IFI10_13=1 or IFI10_14=1 or IFI10_15=1 or IFI10_16=1
 or (IFI4_2<=4 and IFI5_2=1 
 and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or 
 IFI11_11=1 or IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1 or IFI11_18=1 or IFI11_19=1 or IFI11_20=1 or IFI11_21=1 or IFI11_22=1 or fb16_4=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF (((FF1_1=1 or FF1_2=1 or FF1_3=1 or FF1_4=1) and FF5=1 and FF9<=3 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or
@@ -1889,7 +1869,7 @@ IFI10_11=1 or IFI10_12=1 or IFI10_13=1 or IFI10_14=1 or IFI10_15=1 or IFI10_16=1
 or (IFI4_2<=3 and IFI5_2=1 
 and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or 
 IFI11_11=1 or IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1 or IFI11_18=1 or IFI11_19=1 or IFI11_20=1 or IFI11_21=1 or IFI11_22=1 or fb16_4=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_20=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_20=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -1901,7 +1881,7 @@ MM4_11=1 or MM4_12=1 or MM4_13=1 or MM4_14=1 or MM4_15=1 or MM4_16=1 or MM4_17=1
 MM4_21=1 or MM4_22=1 or MM4_23=1 or MM4_24=1 or MM4_25=1 or MM4_96=1) or
 ((IFI1_1=1 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1)) or 
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((((FF1_1=1 or FF1_2=1 or FF1_3=1 or FF1_4=1) and FF5=1) and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or 
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1 or MM6_9=1 or MM6_10=1 or 
@@ -1995,7 +1975,7 @@ IFI12_11=1 or IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1
 or (IFI4_4<=4 and IFI5_4=1
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or
@@ -2015,7 +1995,7 @@ IFI12_11=1 or IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1
 or (IFI4_4<=3 and IFI5_4=1
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_20=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_20=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -2027,7 +2007,7 @@ or (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF5=1 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or 
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1 or MM6_96=1) or
@@ -2132,7 +2112,7 @@ or fb16_4=1 or fb22_3=1))
 or (IFI4_4<=4 and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or
@@ -2156,7 +2136,7 @@ or fb16_4=1 or fb22_3=1))
 or (IFI4_4<=3 and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_20=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_20=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -2168,7 +2148,7 @@ or (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_96=1) 
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if (((FF1=1 and FF5=1) and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or 
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_96=1) or
@@ -2273,7 +2253,7 @@ IFI12_11=1 or IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1
 or (IFI4_4<=4 and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or
@@ -2405,7 +2385,7 @@ IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1
 or (IFI4_4<=4 and IFI5_4=1 
 and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_25=1 or 
 IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1 or IFI11_18=1 or IFI11_19=1 or IFI11_20=1 or IFI11_21=1 or IFI11_22=1 or IFI11_23=1 or IFI11_24=1 or fb16_3=1 or fb22_3=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_25=1 or 
@@ -2425,7 +2405,7 @@ IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1
 or (IFI4_4<=3 and IFI5_4=1 
 and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_25=1 or 
 IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1 or IFI11_18=1 or IFI11_19=1 or IFI11_20=1 or IFI11_21=1 or IFI11_22=1 or IFI11_23=1 or IFI11_24=1 or fb16_3=1 or fb22_3=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_20=1 or FF14_25=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_20=1 or MM15_25=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -2438,7 +2418,7 @@ MM4_7=1 or MM4_8=1 or MM4_9=1 or MM4_10=1) or
 (IFI1_2=1 and IFI5_2=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF5=1 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) 
 or (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1 or MM6_9=1 or MM6_10=1)
@@ -2533,7 +2513,7 @@ IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1
 or (IFI4_3<=4 and IFI5_3=1 
 and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_25=1 or 
 IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1 or IFI12_18=1 or IFI12_19=1 or IFI12_20=1 or IFI12_21=1 or IFI12_22=1 or IFI12_23=1 or IFI12_24=1 OR FB16_6=1 or FB22_9=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_25=1 or 
@@ -2550,7 +2530,7 @@ IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1
 or (IFI4_3<=3 and IFI5_3=1 
 and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_25=1 or 
 IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1 or IFI12_18=1 or IFI12_19=1 or IFI12_20=1 or IFI12_21=1 or IFI12_22=1 or IFI12_23=1 or IFI12_24=1 OR FB16_6=1 or FB22_9=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_20=1 or FF14_25=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_20=1 or MM15_25=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -2561,7 +2541,7 @@ or (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or
 or ((IFI1_1=1 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1)) or 
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
 or (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1 or MM6_9=1 or MM6_10=1 or MM6_11=1 or MM6_12=1 or MM6_13=1 or MM6_14=1 or MM6_15=1 or MM6_16=1 or MM6_17=1)
@@ -2635,7 +2615,7 @@ compute ACCESS_FINANCIAL_ALL=0.
 IF ((FF1=1 or FF4=1) or
 (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or MM4_8=1 or MM4_9=1) or
 (ifi1_1=1 or ifi1_2=1 or ifi1_3=1 or ifi1_4=1)) ACCESS_FINANCIAL_ALL=1.
-*double check.
+
 compute ACTIVE_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=4 
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or 
@@ -2661,7 +2641,7 @@ or (IFI4_4<=4 and IFI5_4=1
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or 
 IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or 
 IFI13_21=1 or IFI13_22=1 or IFI13_23=1 or IFI13_24=1 or IFI13_25=1 or IFI13_26=1 or IFI13_27=1 or FB16_6=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or 
@@ -2687,7 +2667,7 @@ or (IFI4_4<=3 and IFI5_4=1
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or 
 IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or 
 IFI13_21=1 or IFI13_22=1 or IFI13_23=1 or IFI13_24=1 or IFI13_25=1 or IFI13_26=1 or IFI13_27=1 or FB16_6=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_14=1 or FF14_22=1 or FF14_27=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_14=1 or MM15_22=1 or MM15_27=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -2699,7 +2679,7 @@ or (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
 or (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1 or MM6_9=1) or 
@@ -2715,7 +2695,7 @@ or (IFI4_1<=4 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1))
 or (IFI4_2<=4 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) 
 or (IFI4_3<=4 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) 
 or (IFI4_4<=4 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))  ACTIVE_DFS=1.
-*double check.
+
 compute ACTIVE_DFS_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=4 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1) 
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or 
@@ -2807,7 +2787,7 @@ or fb16_4=1 or fb22_3=1)) or
 ((IFI4_4=1 or IFI4_4=2 or IFI4_4=3 or IFI4_4=4) and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1 or 
 IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1 or IFI13_23=1 or IFI13_24=1 or IFI13_25=1 or IFI13_26=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF  ((FF1=1 and FF5=1 and FF9<=3 
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_27=1 or  FF14_13=1 or  FF14_14=1 
@@ -2831,7 +2811,7 @@ or fb16_4=1 or fb22_3=1)) or
 ((IFI4_4=1 or IFI4_4=2 or IFI4_4=3 or IFI4_4=4) and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1 or 
 IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1 or IFI13_23=1 or IFI13_24=1 or IFI13_25=1 or IFI13_26=1)))) ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_14=1 or FF14_22=1 or FF14_27=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_14=1 or MM15_22=1 or MM15_27=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -2843,7 +2823,7 @@ or ((IFI1_1=1  and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1)) 
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
 or (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1)
@@ -2937,7 +2917,7 @@ IFI10_13=1 or IFI10_14=1 or IFI10_15=1 or IFI10_16=1 or IFI10_17=1 or IFI10_18=1
 or (ifi4_2<=4 and ifi5_2=1
 and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_27=1 or 
 IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1 or IFI11_18=1 or IFI11_19=1 or IFI11_20=1 or IFI11_21=1 or IFI11_22=1 or IFI11_23=1 or IFI11_24=1 or IFI11_25=1 or IFI11_26=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_27=1 or 
@@ -2951,7 +2931,7 @@ IFI10_13=1 or IFI10_14=1 or IFI10_15=1 or IFI10_16=1 or IFI10_17=1 or IFI10_18=1
 or (ifi4_2<=3 and ifi5_2=1
 and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_27=1 or 
 IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1 or IFI11_18=1 or IFI11_19=1 or IFI11_20=1 or IFI11_21=1 or IFI11_22=1 or IFI11_23=1 or IFI11_24=1 or IFI11_25=1 or IFI11_26=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_14=1 or FF14_22=1 or FF14_27=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_14=1 or MM15_22=1 or MM15_27=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -2961,7 +2941,7 @@ if (((FF1=1 or FF4=1) and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
 (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or MM4_8=1 or MM4_9=1 or MM4_10=1 or MM4_11=1 or MM4_12=1 or MM4_13=1 or MM4_14=1) or
 ((IFI1_1=1 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1)) or 
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1))) ) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) or
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1 or MM6_9=1 or MM6_10=1 or 
@@ -3044,7 +3024,7 @@ IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1
 (IFI4_3<=4 and IFI5_3=1 
 and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_25=1 or 
 IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1 or IFI12_18=1 or IFI12_19=1 or IFI12_20=1 or IFI12_21=1 or IFI12_22=1 or IFI12_23=1 or IFI12_24=1)))  ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_25=1 or 
@@ -3061,7 +3041,7 @@ IFI11_12=1 or IFI11_13=1 or IFI11_14=1 or IFI11_15=1 or IFI11_16=1 or IFI11_17=1
 (IFI4_3<=3 and IFI5_3=1 
 and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_25=1 or 
 IFI12_12=1 or IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1 or IFI12_18=1 or IFI12_19=1 or IFI12_20=1 or IFI12_21=1 or IFI12_22=1 or IFI12_23=1 or IFI12_24=1))))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_20=1 or FF14_25=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_20=1 or MM15_25=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -3072,7 +3052,7 @@ or (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or
 ((IFI1_1=1 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1)) or 
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
 or (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1 or MM6_9=1 or MM6_10=1) or 
@@ -3173,7 +3153,7 @@ or fb16_4=1 or fb22_3=1))
 or (IFI4_4<=4 and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1 or 
 IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1 or IFI13_23=1 or IFI13_24=1 or IFI13_25=1 or IFI13_26=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_27=1 or 
@@ -3197,7 +3177,7 @@ or fb16_4=1 or fb22_3=1))
 or (IFI4_4<=3 and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1 or 
 IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1 or IFI13_23=1 or IFI13_24=1 or IFI13_25=1 or IFI13_26=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_14=1 or FF14_22=1 or FF14_27=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_14=1 or MM15_22=1 or MM15_27=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -3209,7 +3189,7 @@ or (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1) or
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
 or (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1) or 
@@ -3316,7 +3296,7 @@ IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1 or IFI12_18=1
 or (IFI4_4<=4 and IFI5_4=1
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1 or 
 IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1 or IFI13_23=1 or IFI13_24=1 or IFI13_25=1 or IFI13_26=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF5=1 and FF9<=3 
 and (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1
@@ -3338,7 +3318,7 @@ IFI12_13=1 or IFI12_14=1 or IFI12_15=1 or IFI12_16=1 or IFI12_17=1 or IFI12_18=1
 or (IFI4_4<=3 and IFI5_4=1
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1 or 
 IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1 or IFI13_23=1 or IFI13_24=1 or IFI13_25=1 or IFI13_26=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF14_10=1 or FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_14=1 or FF14_22=1 or FF14_27=1) or
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_14=1 or MM15_22=1 or MM15_27=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
@@ -3350,7 +3330,7 @@ or ((IFI1_1=1  and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1)) 
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
 (IFI1_3=1 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1)) or 
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
 or (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_8=1)
@@ -3445,7 +3425,7 @@ or FL10_3=1 OR FL13_3=1)) or
  (ifi4_2<=4 and ifi5_2=1 and (ifi11_3=1 or ifi11_4=1 or ifi11_5=1 or ifi11_6=1 or ifi11_7=1 or ifi11_8=1 or ifi11_9=1 or ifi11_10=1 or ifi11_11=1)) or
  (ifi4_3<=4 and ifi5_3=1 and (ifi12_3=1 or ifi12_4=1 or ifi12_5=1 or ifi12_6=1 or ifi12_7=1 or ifi12_8=1 or ifi12_9=1 or ifi12_10=1 or ifi12_11=1)) or   
  (ifi4_4<=4 and ifi5_4=1 and (ifi13_3=1 or ifi13_4=1 or ifi13_5=1 or ifi13_6=1 or ifi13_7=1 or ifi13_8=1 or ifi13_9=1 or ifi13_10=1 or ifi13_11=1)))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1  and FF9=1 and FF14<=3 
 and (FF19_3=1 or FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or FF19_32=1 or 
@@ -3459,7 +3439,7 @@ or FL10_3=1 OR FL13_3=1)) or
  (ifi4_2<=3 and ifi5_2=1 and (ifi11_3=1 or ifi11_4=1 or ifi11_5=1 or ifi11_6=1 or ifi11_7=1 or ifi11_8=1 or ifi11_9=1 or ifi11_10=1 or ifi11_11=1)) or
  (ifi4_3<=3 and ifi5_3=1 and (ifi12_3=1 or ifi12_4=1 or ifi12_5=1 or ifi12_6=1 or ifi12_7=1 or ifi12_8=1 or ifi12_9=1 or ifi12_10=1 or ifi12_11=1)) or   
  (ifi4_4<=3 and ifi5_4=1 and (ifi13_3=1 or ifi13_4=1 or ifi13_5=1 or ifi13_6=1 or ifi13_7=1 or ifi13_8=1 or ifi13_9=1 or ifi13_10=1 or ifi13_11=1))))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or 
 FF19_11=1 or FF19_12=1 or FF19_13=1 or FF19_14=1 or FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or 
@@ -3475,7 +3455,7 @@ if (((FF1=1 or FF6=1) and FF9=1 and (FF10_1=1 or FF10_2=1 or FF10_3=1)) or
  (IFI1_2=1 and IFI5_2=1 and (ifi7_1=1 or ifi7_2=1 or ifi7_3=1)) or
  (IFI1_3=1 and IFI5_3=1 and (ifi8_1=1 or ifi8_2=1 or ifi8_3=1)) or 
  (IFI1_4=1 and IFI5_4=1 and (ifi9_1=1 or ifi9_2=1 or ifi9_3=1)))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1and FF9=1 and (FF10_1=1 or FF10_2=1 or FF10_3=1)) or
 (MM8_1=1 or MM8_2=1 or MM8_3=1 or MM8_4=1 or MM8_5=1 or MM8_6=1 or MM8_7=1) or
@@ -3548,7 +3528,7 @@ IF ((FF1=1 or FF6=1) or
 (MM5_1=1 or MM5_2=1 or MM5_3=1 or MM5_4=1 or MM5_5=1 or MM5_6=1 or MM5_7=1 or MM5_8=1 or MM5_9=1  or MM5_10=1
  or MM5_11=1 or MM5_12=1 or MM5_13=1 or MM5_14=1 or MM5_15=1 or MM5_16=1 or MM5_17=1) or
 (ifi1_1=1 or ifi1_2=1 or ifi1_4=1)) ACCESS_FINANCIAL_ALL=1.
-*double check.
+
 compute ACTIVE_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF9=1 and FF14<=4
 and (FF19_3=1 or FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or 
@@ -3563,7 +3543,7 @@ MM19_21=1 or MM19_22=1 or MM19_23=1 or MM19_24=1 or MM19_25=1 or MM19_26=1 or MM
 (ifi4_1<=4 and ifi5_1=1 and (ifi10_3=1 or ifi10_4=1 or ifi10_5=1 or ifi10_6=1 or ifi10_7=1 or ifi10_8=1 or ifi10_9=1 or ifi10_10=1 or ifi10_11=1 or fl10_2=1 or fl13_2=1)) or 
 (ifi4_2<=4 and ifi5_2=1 and (ifi11_3=1 or ifi11_4=1 or ifi11_5=1 or ifi11_6=1 or ifi11_7=1 or ifi11_8=1 or ifi11_9=1 or ifi11_10=1 or ifi11_11=1 or fl10_3=1 or fl13_3=1)) or
 (ifi4_4<=4 and ifi5_3=1 and (ifi12_3=1 or ifi12_4=1 or ifi12_5=1 or ifi12_6=1 or ifi12_7=1 or ifi12_8=1 or ifi12_9=1 or ifi12_10=1 or ifi12_11=1 or fl10_6=1 or fl13_9=1))) ACTIVE_FINANCIAL_ADV=1.
-*double check.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF9=1 and FF14<=3 
 and (FF19_3=1 or FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or 
@@ -3576,7 +3556,7 @@ or fl10_4=1 or fl13_5=1)) or
 (ifi4_1<=3 and ifi5_1=1 and (ifi10_3=1 or ifi10_4=1 or ifi10_5=1 or ifi10_6=1 or ifi10_7=1 or ifi10_8=1 or ifi10_9=1 or ifi10_10=1 or ifi10_11=1 or fl10_2=1 or fl13_2=1)) or 
 (ifi4_2<=3 and ifi5_2=1 and (ifi11_3=1 or ifi11_4=1 or ifi11_5=1 or ifi11_6=1 or ifi11_7=1 or ifi11_8=1 or ifi11_9=1 or ifi11_10=1 or ifi11_11=1 or fl10_3=1 or fl13_3=1)) or
 (ifi4_4<=3 and ifi5_3=1 and (ifi12_3=1 or ifi12_4=1 or ifi12_5=1 or ifi12_6=1 or ifi12_7=1 or ifi12_8=1 or ifi12_9=1 or ifi12_10=1 or ifi12_11=1 or fl10_6=1 or fl13_9=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or 
 FF19_11=1 or FF19_12=1 or FF19_13=1 or FF19_14=1 or FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or 
@@ -3590,7 +3570,7 @@ if (((FF1=1 or FF6=1) and FF9=1 and (FF10_1=1 or FF10_2=1 or FF10_3=1)) or
 (IFI1_1=1 and IFI5_1=1 and (ifi6_1=1 or ifi6_2=1 or ifi6_3=1)) or 
 (IFI1_2=1 and IFI5_2=1 and (ifi7_1=1 or ifi7_2=1 or ifi7_3=1)) or
 (ifi1_4=1 and IFI5_3=1 and (ifi8_1=1 or ifi8_2=1 or ifi8_3=1))) ACCESS_DFS=1.
-*double check.
+
 compute REGISTERED_DFS=0.
 if ((FF1=1 and FF9=1 and (FF10_1=1 or FF10_2=1 or FF10_3=1)) or
 (MM8_1=1 or MM8_2=1 or MM8_3=1 or MM8_4=1 or MM8_5=1 or MM8_6=1 or MM8_7=1 or MM8_8=1 or MM8_9=1 or MM8_10=1 
@@ -3664,35 +3644,37 @@ IF ((FF1=1 or FF6=1) or
 compute ACTIVE_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF9=1 and FF14<=4 
 and (FF19_3=1 or FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or 
-FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or FF19_19=1 or FF19_20=1 or FF19_21=1 or FF19_22=1 or FF19_23=1 or FF19_24=1 or FF19_25=1 or FF19_26=1 or FF19_27=1 or FF19_28=1 or FF19_29=1 or FF19_30=1 or FF19_31=1)) 
+FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or FF19_19=1 or FF19_20=1 or FF19_21=1 or FF19_22=1 or FF19_23=1 or FF19_24=1 or FF19_25=1 or FF19_26=1 or FF19_27=1 or FF19_28=1 or FF19_29=1 or FF19_30=1 or FF19_31=1 or fl10_1=1 or fl13_1=1)) 
 or ((MM14_1<=4 or MM14_2<=4 or MM14_3<=4 or MM14_4<=4 or MM14_5<=4 or MM14_6<=4 or MM14_7<=4)
 and (MM19_4=1 or MM19_5=1 or MM19_6=1 or MM19_7=1 or MM19_8=1 or MM19_9=1 or MM19_10=1 or MM19_11=1 or 
-MM19_16=1 or MM19_17=1 or MM19_18=1 or MM19_19=1 or MM19_20=1 or MM19_21=1 or MM19_22=1 or MM19_23=1 or MM19_24=1 or MM19_25=1 or MM19_26=1 or MM19_27=1 or MM19_28=1 or MM19_29=1 or MM19_30=1 or MM19_31=1 or MM19_32=1))
+MM19_16=1 or MM19_17=1 or MM19_18=1 or MM19_19=1 or MM19_20=1 or MM19_21=1 or MM19_22=1 or MM19_23=1 or MM19_24=1 or MM19_25=1 or MM19_26=1 or MM19_27=1 or MM19_28=1 or MM19_29=1 or MM19_30=1 or MM19_31=1 or MM19_32=1 
+or fl10_5=1 or fl13_4=1))
 or (IFI4_1<=4 and IFI5_1=1 
-and (IFI10_3=1 or IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_11=1)) 
+and (IFI10_3=1 or IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_11=1 or fl10_2=1 or fl13_2=1)) 
 or (IFI4_2<=4 and IFI5_2=1 
-and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_11=1)) 
+and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_11=1 or fl10_3=1 or fl13_3=1)) 
 or (IFI2_3<=4 and IFI5_3=1 
-and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_11=1)) 
+and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_11=1 or fl10_4=1)) 
 or (IFI2_4<=4 and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_11=1))) ACTIVE_FINANCIAL_ADV=1.
 *double check.
 compute ACTIVE30_FINANCIAL_ADV=0.
 IF ((FF1=1 and FF9=1 and FF14<=3 
 and (FF19_3=1 or FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or 
-FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or FF19_19=1 or FF19_20=1 or FF19_21=1 or FF19_22=1 or FF19_23=1 or FF19_24=1 or FF19_25=1 or FF19_26=1 or FF19_27=1 or FF19_28=1 or FF19_29=1 or FF19_30=1 or FF19_31=1)) 
+FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or FF19_19=1 or FF19_20=1 or FF19_21=1 or FF19_22=1 or FF19_23=1 or FF19_24=1 or FF19_25=1 or FF19_26=1 or FF19_27=1 or FF19_28=1 or FF19_29=1 or FF19_30=1 or FF19_31=1 or fl10_1=1 or fl13_1=1)) 
 or ((MM14_1<=3 or MM14_2<=3 or MM14_3<=3 or MM14_4<=3 or MM14_5<=3 or MM14_6<=3 or MM14_7<=3)
 and (MM19_4=1 or MM19_5=1 or MM19_6=1 or MM19_7=1 or MM19_8=1 or MM19_9=1 or MM19_10=1 or MM19_11=1 or 
-MM19_16=1 or MM19_17=1 or MM19_18=1 or MM19_19=1 or MM19_20=1 or MM19_21=1 or MM19_22=1 or MM19_23=1 or MM19_24=1 or MM19_25=1 or MM19_26=1 or MM19_27=1 or MM19_28=1 or MM19_29=1 or MM19_30=1 or MM19_31=1 or MM19_32=1))
+MM19_16=1 or MM19_17=1 or MM19_18=1 or MM19_19=1 or MM19_20=1 or MM19_21=1 or MM19_22=1 or MM19_23=1 or MM19_24=1 or MM19_25=1 or MM19_26=1 or MM19_27=1 or MM19_28=1 or MM19_29=1 or MM19_30=1 or MM19_31=1 or MM19_32=1 
+or fl10_5=1 or fl13_4=1))
 or (IFI4_1<=3 and IFI5_1=1 
-and (IFI10_3=1 or IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_11=1)) 
+and (IFI10_3=1 or IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_11=1 or fl10_2=1 or fl13_2=1)) 
 or (IFI4_2<=3 and IFI5_2=1 
-and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_11=1)) 
+and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_11=1 or fl10_3=1 or fl13_3=1)) 
 or (IFI2_3<=3 and IFI5_3=1 
-and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_11=1)) 
+and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_11=1 or fl10_4=1)) 
 or (IFI2_4<=3 and IFI5_4=1 
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_11=1)))  ACTIVE30_FINANCIAL_ADV=1.
-*double check.
+
 compute ACCESS_DFS_PAYMENT_TRANSFER=0.
 if ((FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or 
 FF19_11=1 or FF19_12=1 or FF19_13=1 or FF19_14=1 or FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or 
@@ -3724,20 +3706,21 @@ or (IFI4_1<=4 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1))
 or (IFI4_2<=4 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1)) 
 or (IFI2_3<=4 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1)) 
 or (IFI2_4<=4 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1)))  ACTIVE_DFS=1.
-
+*double check.
 Compute ACTIVE_DFS_ADV=0.
 IF ((FF1=1 and FF9=1 and FF14<=4 and (FF10_1=1 or FF10_2=1 or FF10_3=1) 
 and (FF19_3=1 or FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or 
-FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or FF19_19=1 or FF19_20=1 or FF19_21=1 or FF19_22=1 or FF19_23=1 or FF19_24=1 or FF19_25=1 or FF19_26=1 or FF19_27=1 or FF19_28=1 or FF19_29=1 or FF19_30=1 or FF19_31=1)) 
+FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or FF19_19=1 or FF19_20=1 or FF19_21=1 or FF19_22=1 or FF19_23=1 or FF19_24=1 or FF19_25=1 or FF19_26=1 or FF19_27=1 or FF19_28=1 or FF19_29=1 or FF19_30=1 or FF19_31=1 or fl10_1=1 or fl13_1=1)) 
 or ((MM14_1<=4 or MM14_2<=4 or MM14_3<=4 or MM14_4<=4 or MM14_5<=4 or MM14_6<=4 or MM14_7<=4)
 and (MM19_4=1 or MM19_5=1 or MM19_6=1 or MM19_7=1 or MM19_8=1 or MM19_9=1 or MM19_10=1 or MM19_11=1 or 
-MM19_16=1 or MM19_17=1 or MM19_18=1 or MM19_19=1 or MM19_20=1 or MM19_21=1 or MM19_22=1 or MM19_23=1 or MM19_24=1 or MM19_25=1 or MM19_26=1 or MM19_27=1 or MM19_28=1 or MM19_29=1 or MM19_30=1 or MM19_31=1 or MM19_32=1))
+MM19_16=1 or MM19_17=1 or MM19_18=1 or MM19_19=1 or MM19_20=1 or MM19_21=1 or MM19_22=1 or MM19_23=1 or MM19_24=1 or MM19_25=1 or MM19_26=1 or MM19_27=1 or MM19_28=1 or MM19_29=1 or MM19_30=1 or MM19_31=1 or MM19_32=1
+or fl10_5=1 or fl13_4=1))
 or (IFI4_1<=4 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1) 
-and (IFI10_3=1 or IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_11=1)) 
+and (IFI10_3=1 or IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_11=1 or fl10_2=1 or fl13_2=1)) 
 or (IFI4_2<=4 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1)
-and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_11=1)) 
+and (IFI11_3=1 or IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_11=1 or fl10_3=1 or fl13_3=1)) 
 or (IFI2_3<=4 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1) 
-and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_11=1)) 
+and (IFI12_3=1 or IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_11=1 or fl10_4=1)) 
 or (IFI2_4<=4 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1)
 and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_11=1))) ACTIVE_DFS_ADV=1.
 
