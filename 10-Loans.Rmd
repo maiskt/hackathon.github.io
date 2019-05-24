@@ -26,9 +26,28 @@ Levels:
 + 99= "Don't know"
 
 ## LOAN_INFML
+Ever borrowed from a informal source: counts respondents who ever borrowed from a store, shopkeeper, private moneylender, pawnshop or a self help group or cooperative.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_FORMAL
+
 ## LOAN_STORE
+Ever borrowed from a store or shopkeeper: counts respondents who ever purchased something from a store or shopkeeper using credit. 
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_CREDITCARD
+Ever purchased using a credit card: counts respondents who ever purchased something using a credit card.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_BANK
 ## LOAN_MM
 ## LOAN_MFI
