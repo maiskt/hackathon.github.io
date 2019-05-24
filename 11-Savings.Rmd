@@ -135,18 +135,21 @@ Levels:
 + 0= "No"
 
 ## SAVE_CHILDREN_EDU
-Save for childrenS education: counts respondents who save to build their children's education fund.
+Save for children's education: counts respondents who save to build their children's education fund.
 
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_WEDDING
+Save for wedding: counts respondents who save to build children's fund for wedding (ceremony and/dowry).
+
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_HOUSE
+Save for house: counts respondents who save to buy or build a house
 Levels: 
 + 1="Yes"
 + 0= "No"
