@@ -45,10 +45,40 @@ Levels:
 + 0= "No"
 
 ## SAVE_MFI
+Ever saved with a microfinance institution (MFI): counts respondents who ever saved using an MFI.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_COOP
+Ever saved with a cooperative: counts respondents who ever saved using a cooperative.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_GROUP
+Ever saved with a saving groups
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_POST
+Ever saved with post office bank: counts respondents who ever saved with a post office bank
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_CASH_PROPERTY
+Ever saved wiht cash or property: counts respondents who save through buying something (e.g., agricultural inputs, livestock, gold or other valuable things) or in cash at home or on themselves. 
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## PPS_SAVE1
 ## PPS_SAVE2
 ## PPS_SAVE3
