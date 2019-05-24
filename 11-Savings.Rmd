@@ -24,6 +24,12 @@ Levels:
 + 0= "No"
 
 ## SAVE_FORMAL 
+Ever saved with formal institutions: counts respondents who have ever saved with a bank, payments bank, post office bank, microfinance institution, mobile money service, smartphone application, or their account at a self-help group or cooperative. 
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_BANK
 ## SAVE_MM
 ## SAVE_MFI
