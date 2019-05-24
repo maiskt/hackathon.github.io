@@ -87,38 +87,49 @@ Levels:
 + 0= "No"
 
 ## SAVE_EDUCATION
+Save for own education: counts respondents who save for their educational purposes.
 
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_RETIREMENT
-
+Save for retirement: counts respondents who save in order to get ready for retirement.
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_PRESTIGE
+Save for prestige: counts respondents who save in order to buy expensive and prestigious things such as an expensive car, jewelry, designer clothes, high-end electonics or a big house. 
+
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_FAMILY
+Save for family: counts respondents who save to protect their families from poverty and crime or protect their belongings.
+
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_EMERGENCY
+Save for emergencies: counts respondents who save for emergency expenses.
+
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_DAILY
+Save for dialy expenses: counts respondents who save to just make ends meet on a daily basis
+
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_COMMUNITY
+Save for community: counts respondents who save money to give back to their community or create a charitable organization. 
+
 Levels: 
 + 1="Yes"
 + 0= "No"
