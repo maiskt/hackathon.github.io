@@ -49,10 +49,39 @@ Levels:
 + 0= "No"
 
 ## LOAN_BANK
+Ever borrowed money or used credit from a bank
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_MM
+Ever borrowed money or used credit from a mobile money service.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_MFI
+Ever borrowed money or used credit from a microfinance institution
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_COOP
+Ever borrowed money or used credit from a cooperative
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_MLENDER
+Ever borrowed money from a private moneylender
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_PAWN
 ## LOAN_GROUP
 ## LOAN_POST
