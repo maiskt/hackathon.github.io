@@ -3,16 +3,82 @@
 Savings
 
 ## SAVE
+Ever saved money
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_KNOW_INTEREST
+Know interest rate on saving: counts repondents who have ever saved money and know the interest rate earned on their savings.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_INFML
-## SAVE_FORMAL
+Ever saved with informal channels: counts respondents  who ever saved money with people they trust (e.g., family, friends, neighbors, shopkeepers, money guards, savings collectors) or with a self-help group or cooperative without membership.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_FORMAL 
+Ever saved with formal institutions: counts respondents who have ever saved with a bank, payments bank, post office bank, microfinance institution, mobile money service, smartphone application, or their account at a self-help group or cooperative. 
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_BANK
+Ever saved with a bank: counts respondents who have ever saved with a bank, or put money in savings using a smartphone application or the menu of a mobile phone.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_MM
+Ever saved using mobile money: counts respondents who ever saved using a mobile money service.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_MFI
+Ever saved with a microfinance institution (MFI): counts respondents who ever saved using an MFI.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_COOP
+Ever saved with a cooperative: counts respondents who ever saved using a cooperative.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_GROUP
+Ever saved with a saving groups
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_POST
+Ever saved with post office bank: counts respondents who ever saved with a post office bank
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_CASH_PROPERTY
+Ever saved wiht cash or property: counts respondents who save through buying something (e.g., agricultural inputs, livestock, gold or other valuable things) or in cash at home or on themselves. 
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## PPS_SAVE1
 ## PPS_SAVE2
 ## PPS_SAVE3
