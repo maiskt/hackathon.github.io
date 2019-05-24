@@ -83,10 +83,40 @@ Levels:
 + 0= "No"
 
 ## LOAN_PAWN
+Ever borrowed money from a pawnshop
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_GROUP
+Ever borrowed money from a village savings and loan association
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_POST
+Ever borrowed money from a post office bank
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_PAYBANK
+Ever borrowed money from a payments bank
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## LOAN_SACCO
+Ever borrowed money from a SACCO
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## R_LOAN1
 ## R_LOAN2
 ## R_LOAN3
