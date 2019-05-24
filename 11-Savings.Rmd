@@ -31,7 +31,19 @@ Levels:
 + 0= "No"
 
 ## SAVE_BANK
+Ever saved with a bank: counts respondents who have ever saved with a bank, or put money in savings using a smartphone application or the menu of a mobile phone.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_MM
+Ever saved using mobile money: counts respondents who ever saved using a mobile money service.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_MFI
 ## SAVE_COOP
 ## SAVE_GROUP
