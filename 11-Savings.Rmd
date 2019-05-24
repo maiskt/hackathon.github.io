@@ -79,14 +79,61 @@ Levels:
 + 1="Yes"
 + 0= "No"
 
-## PPS_SAVE1
-## PPS_SAVE2
-## PPS_SAVE3
-## PPS_SAVE4
-## PPS_SAVE5
-## PPS_SAVE6
-## PPS_SAVE7
-## PPS_SAVE8
-## PPS_SAVE9
-## PPS_SAVE10
-## PPS_SAVE11
+## SAVE_BUSINESS
+Save for business: counts respondents who save to start or expand their own business.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_EDUCATION
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_RETIREMENT
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_PRESTIGE
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_FAMILY
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_EMERGENCY
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_DAILY
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_COMMUNITY
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_CHILDREN_EDU
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_WEDDING
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_HOUSE
+Levels: 
++ 1="Yes"
++ 0= "No"
