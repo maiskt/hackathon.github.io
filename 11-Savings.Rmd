@@ -3,9 +3,27 @@
 Savings
 
 ## SAVE
+Ever saved money
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_KNOW_INTEREST
+Know interest rate on saving: counts repondents who have ever saved money and know the interest rate earned on their savings.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_INFML
-## SAVE_FORMAL
+Ever saved with informal channels: counts respondents  who ever saved money with people they trust (e.g., family, friends, neighbors, shopkeepers, money guards, savings collectors) or with a self-help group or cooperative without membership.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_FORMAL 
 ## SAVE_BANK
 ## SAVE_MM
 ## SAVE_MFI
