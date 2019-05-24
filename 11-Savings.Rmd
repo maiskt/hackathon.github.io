@@ -3,7 +3,19 @@
 Savings
 
 ## SAVE
+Ever saved money
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_KNOW_INTEREST
+Know interest rate on saving: counts repondents who have ever saved money and know the interest rate earned on their savings.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
 ## SAVE_INFML
 ## SAVE_FORMAL
 ## SAVE_BANK
