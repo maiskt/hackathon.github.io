@@ -26,7 +26,7 @@ Levels:
 + 99= "Don't know"
 
 ## LOAN_INFML
-Ever borrowed from a informal source: counts respondents who ever borrowed from a store, shopkeeper, private moneylender, pawnshop or a self help group or cooperative.
+Ever borrowed from a informal source: counts respondents who ever borrowed from a store, shopkeeper, private moneylender, pawnshop or a self help group or cooperative without a member.
 
 Levels: 
 + 1="Yes"
