@@ -121,7 +121,19 @@ Levels:
 + 0= "No"
 
 ## PHONE_MMS
+Ever sent or received a photo using a mobile phone
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_VIDEO
+Ever used a phone for videos: counts respondents who ever used “Call Tunes” or other audio/video on-demand from operator services with a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_TSCREEN
 ## PHONE_MAP
 ## R_NOPHONE1
