@@ -8,7 +8,7 @@ PPI probability score:  poverty likelihood value using the corresponding PPI loo
 
 
 ## POVERTY1
-PPI cut off: groups responents into 2 poverty classes as follows.
+PPI cut off: groups respondents into 2 poverty classes as follows.
 
 Levels:
 + 0 ="Above poverty line of USD 2.5/day"
