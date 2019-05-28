@@ -10,7 +10,6 @@ Levels:
 + 0="Nonuser"
 
 ## OWN_PHONE
-
 Own a phone: counts respondents who personally own a mobile phone.
 
 Levels:
@@ -18,7 +17,6 @@ Levels:
 + 0= "No"
 
 ## BORROW_PHONE
-
 Borrow a phone: counts respondents who use a mobile phone that belongs to another individual or is shared with another individual.
 
 Levels:
@@ -26,11 +24,26 @@ Levels:
 + 0= "No"
 
 ## BASIC_PHONE
+Own a basic phone: counts respondents who own a mobile phone with basic features (i.e. only allows calling, messaging and saving phone numbers).
 
-* Respondents who own a mobile phone with basic features.
+Levels:
++ 1= "Yes"
++ 0= "No"
 
 ## FEATURE_PHONE
+Own a feature phone: counts respondents who own a feature phone (i.e., phone wiht camera, radio)
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## SMART_PHONE
+Own a smartphone: counts respondents who own a smartphone (i.e., phone with email access, mobile applications)
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## OWN_SIM
 ## PHONE_ADV
 ## PHONE_CALL
