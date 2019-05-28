@@ -199,6 +199,24 @@ Ability for sms: counts respondents who have the ability to send and receive a t
 Levels:
 + 1= "Yes"
 + 0= "No"
+
 ## ABLE_INTERNET
+Ability for internet: counts respondents who have the ability to use the internet on a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## ABLE_TRANSACT
+Ability for financial transactions: counts respondents who are able to make a financial transaction such as send/receive money, make a payment, or banking transaction using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## ABLE_APP
+Ability to download applications: counts respondents who have the ability to download an application with a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
