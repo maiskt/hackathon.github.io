@@ -3,25 +3,61 @@
 Technology literacy
 
 ## ACCESS_PHONE
+Access to phone: counts respondents who own a personnal mobile phone or use a mobile phone that belongs to someone else or is shared.
 
-* Respondents who use a mobile phone.
+Levels: 
++ 1="Phone user"
++ 0="Nonuser"
 
 ## OWN_PHONE
+Own a phone: counts respondents who personally own a mobile phone.
 
-* Respondents who personally own a mobile phone.
+Levels:
++ 1= "Yes"
++ 0= "No"
 
 ## BORROW_PHONE
+Borrow a phone: counts respondents who use a mobile phone that belongs to another individual or is shared with another individual.
 
-* Respondents who use a mobile phone that belongs to another individual or is shared with another individual.
+Levels:
++ 1= "Yes"
++ 0= "No"
 
 ## BASIC_PHONE
+Own a basic phone: counts respondents who own a mobile phone with basic features (i.e. only allows calling, messaging and saving phone numbers).
 
-* Respondents who own a mobile phone with basic features.
+Levels:
++ 1= "Yes"
++ 0= "No"
 
 ## FEATURE_PHONE
+Own a feature phone: counts respondents who own a feature phone (i.e., phone wiht camera, radio)
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## SMART_PHONE
+Own a smartphone: counts respondents who own a smartphone (i.e., phone with email access, mobile applications)
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## OWN_SIM
+Own a SIM card: counts respondents who have an active/working SIM card. 
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_ADV
+Use phone advanced functions: counts respondents who use on their phone advanced functions other than calling, receiving calls, and text messaging.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_CALL
 ## PHONE_R_CALL
 ## PHONE_SMS
