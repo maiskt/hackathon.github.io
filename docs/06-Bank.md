@@ -677,7 +677,7 @@ Levels
 
 Note:
 
-* R_NOBANK_BUSI4 questions are only available for 2013, 2014 and 2015 surveys.
+* R_NOBANK_BUSI5 questions are only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI6
 Reasons for NOT use bank for business payments/purchases (Use other methods of payment): Counts individuals who do not use bank for business payments/purchases since they use other methods of payment. For example, Bangladesh 2015 uses FF18_7.
@@ -693,37 +693,217 @@ Levels
 
 Note:
 
-* R_NOBANK_BUSI6 questions are only available for 2013, 2014 and 2015 surveys.
+* R_NOBANK_BUSI6 questions are only available for 2014 and 2015 surveys.
 
 ## EXP_BANK1
+Experience using a bank account (Unexpected charges): Counts individuals who had unexpected charges when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_1.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF19_1      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Unexpected charges
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* EXP_BANK1 questions are only available for 2015 and 2016 surveys.
 
 ## EXP_BANK2
+Experience using a bank account (Lost money): Counts individuals who have ever lost money when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_2.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF19_2      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Lost money - Drop in available funds in bank account (Because of Bank mishandling or fraudulent activities by anyone)
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* EXP_BANK2 questions are only available for 2015 and 2016 surveys.
 
 ## EXP_BANK3
+Experience using a bank account (Registered a complaint or called a customer care line): Counts individuals who have ever registered a complaint or called a customer care line when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_3.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF19_3      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Registered a complaint or called a customer care line
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* EXP_BANK3 questions are only available for 2015 and 2016 surveys.
 
 ## EXP_BANK4
+Experience using a bank account (ATM not working): Counts individuals who have ever met unworking ATM when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_4.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF19_4      |  In the past 6 months, have you ever experienced any of the following when using a bank account? ATM not working
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* EXP_BANK4 questions are only available for 2015 and 2016 surveys.
 
 ## EXP_BANK5
+Experience using a bank account (Debit/credit card did not work when paying for goods/services): Counts individuals who have ever got unworking ATM/ Debit/credit card when paying for goods/services in the past 6 months. For example, Bangladesh 2016 uses FF19_5.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF19_5      |  In the past 6 months, have you ever experienced any of the following when using a bank account? ATM/ Debit/credit card did not work when paying for goods/services
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* EXP_BANK5 questions are only available for 2015 and 2016 surveys.
 
 ## EXP_BANK6
+Experience using a bank account (Could not use your bank account because of system outages (online/offline)): Counts individuals who could not use bank account because of system outages (online/offline). For example, Bangladesh 2016 uses FF19_6 and FF19_7.
 
-## EXP_BANK7
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF19_6      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your bank account because of system outages (online)
+      FF19_7      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your bank account because of system outages (offline)
+      
+Levels
 
-## EXP_BANK8
+* 1=Yes
+* 0=No
 
-## EXP_BANK9
+Note:
+
+* EXP_BANK6 questions are only available for 2015 and 2016 surveys.
 
 ## LCT_BANK1
+Location for bank activities (Over the counter at a bank branch): Counts individuals who ever used a bank account for any financial activity over the counter at a bank branch. For example, India 2015 uses FF10_1.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF10_1      |  When you use a bank account for any financial activity, do you use any of the following? Over the counter at a bank branch
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* LCT_BANK1 questions are not available for 2017 and 2018 surveys.
 
 ## LCT_BANK2
+Location for bank activities (ATM): Counts individuals who ever used a bank account for any financial activity at an ATM. For example, India 2015 uses FF10_2.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF10_2      |  When you use a bank account for any financial activity, do you use any of the following? ATM
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* LCT_BANK2 questions are not available for 2017 and 2018 surveys.
 
 ## LCT_BANK3
+Location for bank activities (Bank deposits or withdrawals over the counter at a retail store): Counts individuals who ever used a bank account for any financial activity in bank deposits or withdrawals over the counter at a retail store. For example, India 2015 uses FF10_3.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF10_3      |  When you use a bank account for any financial activity, do you use any of the following? Bank deposits or withdrawals over the counter at a retail store
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* LCT_BANK3 questions are not available for 2017 and 2018 surveys.
+* LCT_BANK3 questions are not available for 2016 Bangladesh survey.
 
 ## LCT_BANK4
+Location for bank activities (Bank's website/online banking): Counts individuals who ever used a bank account for any financial activity on Bank's website/online banking. For example, India 2015 uses FF10_4.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF10_4      |  When you use a bank account for any financial activity, do you use any of the following? Bank's website/online banking
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* LCT_BANK4 questions are not available for 2017 and 2018 surveys.
 
 ## LCT_BANK5
+Location for bank activities (Mobile app/mobile banking): Counts individuals who ever used a bank account for any financial activity on Bank's website/online banking. For example, India 2015 uses FF10_5.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF10_5      |  When you use a bank account for any financial activity, do you use any of the following? Bank's website/online banking
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* LCT_BANK5 questions are not available for 2017 and 2018 surveys.
 
 ## LCT_BANK6
+Location for bank activities (A door-to-door banking agent or another person who is associated with this bank or MFI/money collector/banking agent): Counts individuals who ever used a bank account for any financial activity at a door-to-door banking agent or  with another person who is associated with this bank or MFI/money collector/banking agent. For example, India 2015 uses FF10_6.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF10_6      |  When you use a bank account for any financial activity, do you use any of the following? A door-to-door banking agent or another person who is associated with this bank
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* LCT_BANK6 questions are not available for 2017 and 2018 surveys.
+
+## LCT_BANK7
+Location for bank activities (Mobile wallet): Counts individuals who ever used a bank account for any financial activity with mobile wallet. For example, India 2015 uses FF10_7.
+
+Question Index    |                       Questions 
+  ----------------|-------------------------------------------------------------
+      FF10_7      |  When you use a bank account for any financial activity, do you use any of the following? Through a mobile money by transferring money from my bank account to my phone and then withdrawing from a mobile money agent or vice versa
+      
+Levels
+
+* 1=Yes
+* 0=No
+
+Note:
+
+* LCT_BANK7 questions are only available for 2014 and 2015 surveys.
 
 
 
