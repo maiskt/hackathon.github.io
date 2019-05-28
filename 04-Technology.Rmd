@@ -59,24 +59,54 @@ Levels:
 + 0= "No"
 
 ## PHONE_CALL
-Used phone to call: counts respondents who used a mobile phone to call someone.
+Ever used phone to call: counts respondents who used a mobile phone to call someone.
 
 Levels:
 + 1= "Yes"
 + 0= "No"
 
 ## PHONE_R_CALL
-Received a phone call: counts respondents who received a call on a mobile phone.
+Ever received a phone call: counts respondents who received a call on a mobile phone.
 
 Levels:
 + 1= "Yes"
 + 0= "No"
 
 ## PHONE_SMS
+Ever sent or received a text message: counts respondents who sent or received a text message on a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_INTERNET
+Ever browsed internet: counts respondents who used/browsed internet using a mobile phone
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_MVG
+Ever donwloaded music, video and games: counts respondents who downloaded music, video or games using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_TRANSACT
+Ever made a financial transaction: counts respondents who made a financial transaction such as send/receive money, make a payment, or banking transaction using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_SOCIAL
+Ever used social media on a phone: counts respondents who used Facebook, WhatsApp, Twitter, Instagram or another social networking site using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_PICTURE
 ## PHONE_APP
 ## PHONE_MMS
