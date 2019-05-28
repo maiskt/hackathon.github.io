@@ -3,8 +3,10 @@
 *Section 6.1.
 
 *18Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2018.
-compute COUNTRY=Bangladesh.
 
 compute ACCESS_BANK=0.
 IF fn1_1=1 or fn1_2=1 or fn1_3=1 ACCESS_BANK=1.
@@ -61,8 +63,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *18India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2018.
-compute COUNTRY=India.
 
 compute ACCESS_BANK=0.
 IF FN1_1=1 or FN1_2=1 or FN1_3=1 ACCESS_BANK=1.
@@ -120,8 +124,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *17Bangladesh.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2017.
-compute COUNTRY=Bangladesh.
 
 compute ACCESS_BANK=0.
 IF (FF4=1 or ff1d_1=1 or ff1d_2=1 or ff1d_3=1 or ff1d_4=1 or ff1d_5=1 or ff1d_6=1 or ff1d_7=1 or ff1d_9=1 
@@ -205,8 +211,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *17India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2017.
-compute COUNTRY=India.
 
 compute ACCESS_BANK=0.
 IF (FF1=1 or FF1A=1 or FF4=1) ACCESS_BANK=1.
@@ -256,8 +264,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *17Kenya.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2017.
-compute COUNTRY=Kenya.
 
 compute ACCESS_BANK=0.
 IF ((FF1=1 or FF1A=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
@@ -307,8 +317,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *17Nigeria.
+rename variables SbjNum=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2017.
-compute COUNTRY=Nigeria.
 
 compute ACCESS_BANK=0.
 IF ((ff1d_1=1 or ff1d_2=1 or ff1d_3=1 or ff1d_4=1 or ff1d_5=1 or ff1d_6=1 or ff1d_7=1  or ff1d_8=1 or ff1d_9=1 or ff1d_10=1 
@@ -367,8 +379,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *17Paksitan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2017.
-compute COUNTRY=Paksitan.
 
 compute ACCESS_BANK=0.
 IF ((ff1d_1=1 or ff1d_2=1 or ff1d_3=1 or ff1d_4=1 or ff1d_5=1 or ff1d_6=1 or ff1d_7=1 or ff1d_8=1 or ff1d_9=1 or ff1d_10=1 
@@ -443,8 +457,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *17Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2017.
-compute COUNTRY=Tanzania.
 
 compute ACCESS_BANK=0.
 IF ((FF1=1 or FF1A=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
@@ -494,8 +510,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *17Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2017.
-compute COUNTRY=Uganda.
 
 compute ACCESS_BANK=0.
 IF ((FF1=1 or FF1A=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
@@ -544,8 +562,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *16Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2016.
-compute COUNTRY=Bangladesh.
 
 compute ACCESS_BANK=0.
 IF (FF1=1 or FF4=1) ACCESS_BANK=1.
@@ -594,8 +614,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *16India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2016.
-compute COUNTRY=Inida.
 
 compute ACCESS_BANK=0.
 IF (FF1=1 or FF4=1) ACCESS_BANK=1.
@@ -646,8 +668,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *16Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2016.
-compute COUNTRY=Indonesia.
 
 compute ACCESS_BANK=0.
 IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
@@ -699,8 +723,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *16Kenya.
 *Section 6.1.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2016.
-compute COUNTRY=Kenya.
 
 compute ACCESS_BANK=0.
 IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
@@ -750,8 +776,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *16Nigeria.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2016.
-compute COUNTRY=Nigeria.
 
 compute ACCESS_BANK=0.
 IF (((FF1_1=1 or FF1_2=1 or FF1_3=1 or FF1_4=1) or FF4=1) and FF5=1) ACCESS_BANK=1.
@@ -801,8 +829,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *16Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2016.
-compute COUNTRY=Pakistan.
 
 compute ACCESS_BANK=0.
 IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
@@ -852,8 +882,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *16Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2016.
-compute COUNTRY=Tanzania.
 
 compute ACCESS_BANK=0.
 IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
@@ -905,8 +937,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *16Uganda.
 *Section 6.1.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2016.
-compute COUNTRY=Uganda.
 
 compute ACCESS_BANK=0.
 IF ((FF1=1 or FF4=1) and FF5=1) ACCESS_BANK=1.
@@ -957,8 +991,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *15Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2015.
-compute COUNTRY=Bangladesh.
 
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
@@ -1001,8 +1037,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *15India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2015.
-compute COUNTRY=India.
 
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
@@ -1045,8 +1083,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *15Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2015.
-compute COUNTRY=Indonesia.
 
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
@@ -1091,8 +1131,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *15Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2015.
-compute COUNTRY=Kenya.
 
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
@@ -1135,8 +1177,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *15Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2015.
-compute COUNTRY=Nigeria.
 
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
@@ -1179,8 +1223,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *15Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2015.
-compute COUNTRY=Pakistan.
 
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
@@ -1223,8 +1269,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *15Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2015.
-compute COUNTRY=Tanzania.
 
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
@@ -1267,8 +1315,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *15Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2015.
-compute COUNTRY=Uganda.
 
 compute ACCESS_BANK=((ff1=1 or ff4=1) and ff5=1).
 
@@ -1311,8 +1361,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *14Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2014.
-compute COUNTRY=Bangladesh.
 
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
@@ -1357,8 +1409,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *14India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2014.
-compute COUNTRY=India.
 
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
@@ -1401,8 +1455,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *14Indonesia.
+rename variables ID=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2014.
-compute COUNTRY=Indonesia.
 
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
@@ -1447,8 +1503,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *14Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2014.
-compute COUNTRY=Kenya.
 
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
@@ -1492,8 +1550,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *14Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2014.
-compute COUNTRY=Nigeria.
 
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
@@ -1539,8 +1599,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *14Pakistan.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2014.
-compute COUNTRY=Pakistan.
 
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
@@ -1584,8 +1646,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *14Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2014.
-compute COUNTRY=Tanzania.
 
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
@@ -1630,8 +1694,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *14Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2014.
-compute COUNTRY=Uganda.
 
 compute ACCESS_BANK=((FF1=1 or FF6=1) and FF9=1).
 
@@ -1676,8 +1742,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *13Bangladesh.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2013.
-compute COUNTRY=Bangladesh.
 
 compute ACCESS_BANK=(FFI1=1 or FFI3=1).
 
@@ -1721,8 +1789,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *13India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2013.
-compute COUNTRY=India.
 
 compute ACCESS_BANK=(FFI1=1 or FFI3=1).
 
@@ -1766,8 +1836,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *13Kenya.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2013.
-compute COUNTRY=Kenya.
 
 compute ACCESS_BANK=(FFI1=1 or FFI3=1).
 
@@ -1810,8 +1882,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *13Nigeria.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2013.
-compute COUNTRY=Nigeria.
 
 compute ACCESS_BANK=(FFI1=1 or FFI3=1).
 
@@ -1855,8 +1929,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *13Pakistan.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2013.
-compute COUNTRY=Pakistan.
 
 compute ACCESS_BANK=(FFI1=1 or FFI3=1).
 
@@ -1900,8 +1976,10 @@ if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 
 *13Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2013.
-compute COUNTRY=Tanzaina.
 
 compute ACCESS_BANK=(FFI1=1 or FFI3=1).
 
@@ -1944,8 +2022,10 @@ if (BANK_STAGE=2 and ACTIVE_BANK=1) BANK_STAGE=3.
 if (BANK_STAGE=3 and ACTIVE_BANK_ADV=1) BANK_STAGE=4.
 
 *13Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2013.
-compute COUNTRY=Uganda.
 
 compute ACCESS_BANK=(FFI1=1 or FFI3=1).
 
