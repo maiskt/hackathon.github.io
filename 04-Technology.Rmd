@@ -108,7 +108,18 @@ Levels:
 + 0= "No"
 
 ## PHONE_PICTURE
+Ever took a picture using a phone: counts respondents who took a color picture using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_APP
+Ever downloaded or used an application using a mobile phone.
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_MMS
 ## PHONE_VIDEO
 ## PHONE_TSCREEN
