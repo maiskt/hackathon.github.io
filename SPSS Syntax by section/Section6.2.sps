@@ -1604,12 +1604,14 @@ recode BANK_WAGE (1 thru highest=1)(else=0).
 count BANK_INSURANCE=ff19_20 ff19_21(1).
 recode BANK_INSURANCE (1 thru highest=1)(else=0).
 
+*Review.
 count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
 compute BANK_INVEST=0.
 if FF19_27=1 BANK_INVEST=1.
 
+*Review.
 count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
 recode BANK_LOAN (1 thru highest=1)(else=0).
 
@@ -1952,16 +1954,17 @@ recode BANK_WAGE (1 thru highest=1)(else=0).
 count BANK_INSURANCE=FFI16_17 FFI16_18(1).
 recode BANK_INSURANCE (1 thru highest=1)(else=0).
 
-*Review.
-count BANK_SAVE=FFI16_21 FFI16_22 (1).
+*Review. Add FB.
+*In 2013, only India have FB section for bank. Need confirm.
+count BANK_SAVE=FFI16_21 FFI16_22 FB7_3_1 FB7_4_1(1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
 *Review.
 compute BANK_INVEST=0.
 if FFI16_23=1 BANK_INVEST=1.
 
-*Review.
-count BANK_LOAN=FFI16_19 FFI16_20 (1).
+*Review. Add FB.
+count BANK_LOAN=FFI16_19 FFI16_20 FB7_1_1 (1).
 recode BANK_LOAN (1 thru highest=1)(else=0).
 
 *Review.
