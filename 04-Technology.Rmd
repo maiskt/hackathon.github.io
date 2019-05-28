@@ -3,16 +3,27 @@
 Technology literacy
 
 ## ACCESS_PHONE
+Access to phone: counts respondents who own a personnal mobile phone or use a mobile phone that belongs to someone else or is shared.
 
-* Respondents who use a mobile phone.
+Levels: 
++ 1="Phone user"
++ 0="Nonuser"
 
 ## OWN_PHONE
 
-* Respondents who personally own a mobile phone.
+Own a phone: counts respondents who personally own a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
 
 ## BORROW_PHONE
 
-* Respondents who use a mobile phone that belongs to another individual or is shared with another individual.
+Borrow a phone: counts respondents who use a mobile phone that belongs to another individual or is shared with another individual.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
 
 ## BASIC_PHONE
 
