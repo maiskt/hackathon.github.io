@@ -59,7 +59,19 @@ Levels:
 + 0= "No"
 
 ## PHONE_CALL
+Used phone to call: counts respondents who used a mobile phone to call someone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_R_CALL
+Received a phone call: counts respondents who received a call on a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_SMS
 ## PHONE_INTERNET
 ## PHONE_MVG
