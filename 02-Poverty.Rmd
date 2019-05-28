@@ -1,6 +1,12 @@
-# Poverty Index
+# Poverty Probability Index (PPI)
 
 ## PPI_SCORE
+PPI score: sum of response values for all PPI 10 questions.  Value ranges between 0 and 100.
+
 ## PPI_PROB
+PPI probability score
+
 ## PPI_CUTOFF
+PPI cut off value
+
 ## POVERTY

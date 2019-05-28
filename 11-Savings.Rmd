@@ -79,14 +79,77 @@ Levels:
 + 1="Yes"
 + 0= "No"
 
-## PPS_SAVE1
-## PPS_SAVE2
-## PPS_SAVE3
-## PPS_SAVE4
-## PPS_SAVE5
-## PPS_SAVE6
-## PPS_SAVE7
-## PPS_SAVE8
-## PPS_SAVE9
-## PPS_SAVE10
-## PPS_SAVE11
+## SAVE_BUSINESS
+Save for business: counts respondents who save to start or expand their own business.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_EDUCATION
+Save for own education: counts respondents who save for their educational purposes.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_RETIREMENT
+Save for retirement: counts respondents who save in order to get ready for retirement.
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_PRESTIGE
+Save for prestige: counts respondents who save in order to buy expensive and prestigious things such as an expensive car, jewelry, designer clothes, high-end electonics or a big house. 
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_FAMILY
+Save for family: counts respondents who save to protect their families from poverty and crime or protect their belongings.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_EMERGENCY
+Save for emergencies: counts respondents who save for emergency expenses.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_DAILY
+Save for dialy expenses: counts respondents who save to just make ends meet on a daily basis
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_COMMUNITY
+Save for community: counts respondents who save money to give back to their community or create a charitable organization. 
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_CHILDREN_EDU
+Save for children's education: counts respondents who save to build their children's education fund.
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_WEDDING
+Save for wedding: counts respondents who save to build children's fund for wedding (ceremony and/dowry).
+
+Levels: 
++ 1="Yes"
++ 0= "No"
+
+## SAVE_HOUSE
+Save for house: counts respondents who save to buy or build a house
+Levels: 
++ 1="Yes"
++ 0= "No"
