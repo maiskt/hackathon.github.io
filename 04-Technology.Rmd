@@ -45,7 +45,19 @@ Levels:
 + 0= "No"
 
 ## OWN_SIM
+Own a SIM card: counts respondents who have an active/working SIM card. 
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_ADV
+Use phone advanced functions: counts respondents who use on their phone advanced functions other than calling, receiving calls, and text messaging.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_CALL
 ## PHONE_R_CALL
 ## PHONE_SMS
