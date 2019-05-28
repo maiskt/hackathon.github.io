@@ -59,28 +59,164 @@ Levels:
 + 0= "No"
 
 ## PHONE_CALL
+Ever used phone to call: counts respondents who used a mobile phone to call someone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_R_CALL
+Ever received a phone call: counts respondents who received a call on a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_SMS
+Ever sent or received a text message: counts respondents who sent or received a text message on a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_INTERNET
+Ever browsed internet: counts respondents who used/browsed internet using a mobile phone
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_MVG
+Ever donwloaded music, video and games: counts respondents who downloaded music, video or games using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_TRANSACT
+Ever made a financial transaction: counts respondents who made a financial transaction such as send/receive money, make a payment, or banking transaction using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_SOCIAL
+Ever used social media on a phone: counts respondents who used Facebook, WhatsApp, Twitter, Instagram or another social networking site using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_PICTURE
+Ever took a picture using a phone: counts respondents who took a color picture using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_APP
+Ever downloaded or used an application using a mobile phone.
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_MMS
+Ever sent or received a photo using a mobile phone
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_VIDEO
+Ever used a phone for videos: counts respondents who ever used “Call Tunes” or other audio/video on-demand from operator services with a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## PHONE_TSCREEN
 ## PHONE_MAP
+
+
 ## R_NOPHONE1
+Reason for no phone: lack of money to buy a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE2
+Reason for no phone: No need for a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE3
+Reason for no phone: Mobile phone lost, broken or stopped working.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE4
+Reason for no phone: Family members do not want me to have a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE5
+Reason for no phone: No mobile phone network where I live.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE6
-## ABLE_SMS
+Reason for no phone: Don't know how to use a mobile phone.
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## ABLE_CALL
+Ability for calls: counts respondents who have the ability to make and receive a call on a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## ABLE_MENU
+Ability to navigate the menu: counts respondents who have the ability to navigate the menu on a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## ABLE_SMS
+Ability for sms: counts respondents who have the ability to send and receive a text message using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## ABLE_INTERNET
+Ability for internet: counts respondents who have the ability to use the internet on a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## ABLE_TRANSACT
+Ability for financial transactions: counts respondents who are able to make a financial transaction such as send/receive money, make a payment, or banking transaction using a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## ABLE_APP
+Ability to download applications: counts respondents who have the ability to download an application with a mobile phone.
+
+Levels:
++ 1= "Yes"
++ 0= "No"
