@@ -1,4 +1,4 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 
 *Section 3.
 **************************************************************************************************************************************************.
@@ -1572,7 +1572,7 @@ numeric SCHOOL_FEE.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
-*check.
+
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1 or
 DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
@@ -1580,7 +1580,7 @@ DL4_15=1 or DL6_15=1 or DL20=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
 numeric WORK_FARM.
-*check.
+
 compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
@@ -1622,7 +1622,6 @@ numeric SCHOOL_FEE.
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
-*check.
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
 if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
@@ -1630,7 +1629,7 @@ DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
 numeric WORK_FARM.
-*check.
+
 compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
@@ -1670,11 +1669,17 @@ numeric SCHOOL_FEE.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
+if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 
-numeric INVOL_AGRI.
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+*Review.
+compute SELL_CROP=0.
+if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Kenya.
 compute YEAR=2014.
@@ -1711,11 +1716,17 @@ numeric SCHOOL_FEE.
 
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
+if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 
-numeric INVOL_AGRI.
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+*Review.
+compute SELL_CROP=0.
+if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Nigeria.
 compute YEAR=2014.
@@ -1754,10 +1765,17 @@ numeric SCHOOL_FEE.
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
+if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+*Review.
+compute SELL_CROP=0.
+if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Pakistan.
 compute YEAR=2014.
@@ -1796,10 +1814,17 @@ numeric SCHOOL_FEE.
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
+if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+*Review.
+compute SELL_CROP=0.
+if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Tanzania.
 compute YEAR=2014.
@@ -1838,10 +1863,17 @@ numeric SCHOOL_FEE.
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
+if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+DL4_15=1 or DL6_12=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+*Review.
+compute SELL_CROP=0.
+if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Uganda.
 compute YEAR=2014.
@@ -1882,10 +1914,17 @@ numeric SCHOOL_FEE.
 rename variables dl1=EMPLOYMENT.
 recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
+if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+*Review.
+compute SELL_CROP=0.
+if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *13Bangladesh.
 compute YEAR=2013.
