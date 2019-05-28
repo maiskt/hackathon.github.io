@@ -1,4 +1,4 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 
 *Section 3.
 **************************************************************************************************************************************************.
@@ -1583,6 +1583,7 @@ numeric WORK_FARM.
 
 compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
+freq SELL_CROP.
 **************************************************************************************************************************************************.
 *14India.
 string COUNTRY (A10).
@@ -1624,7 +1625,7 @@ recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
-if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+or DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
 DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
@@ -1672,7 +1673,7 @@ recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
-if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+or DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
 DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
@@ -1719,7 +1720,7 @@ recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
-if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+or DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
 DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
@@ -1767,7 +1768,7 @@ recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
-if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+or DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
 DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
@@ -1815,7 +1816,7 @@ recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
-if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+or DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
 DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
@@ -1863,7 +1864,7 @@ recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
-if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+or DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
 DL4_15=1 or DL6_12=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
@@ -1913,7 +1914,7 @@ recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
-if DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
+or DL7_1=1 or DL7_2=1 or DL7_3=1 or DL7_4=1 or DL7_5=1 or DL7_6=1 or DL7_7=1 or DL7_8=1 or DL7_9=1 or 
 DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
@@ -1955,7 +1956,11 @@ recode MARRIAGE(1=1)(2=2)(3,4=3)(5=4)(6=96)(7=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 numeric EMPLOYMENT.
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3A=1 or DL3B=1
+or DL6=12 or DL6=13 or DL6=14 or DL7L=1 or DL7M=1 or DL7N=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
 numeric SELL_CROP.
@@ -1985,7 +1990,11 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 numeric EMPLOYMENT.
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
+or DL6=11 or DL6=12 or DL6=13 or DL7_11=1 or DL7_12=1 or DL7_13=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
 numeric SELL_CROP.
@@ -2015,7 +2024,11 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 numeric EMPLOYMENT.
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3A=1 or DL3B=1
+or DL6=12 or DL6=13 or DL6=14 or DL7L=1 or DL7M=1 or DL7N=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
 numeric SELL_CROP.
@@ -2053,7 +2066,11 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 numeric EMPLOYMENT.
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3A=1 or DL3B=1
+or DL6=12 or DL6=13 or DL6=14 or DL7L=1 or DL7M=1 or DL7N=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
 numeric SELL_CROP.
@@ -2091,7 +2108,11 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 numeric EMPLOYMENT.
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3A=1 or DL3B=1
+or DL6=12 or DL6=13 or DL6=14 or DL6=21 or DL7L=1 or DL7M=1 or DL7N=1 or DL7R=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
 numeric SELL_CROP.
@@ -2121,7 +2142,11 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 numeric EMPLOYMENT.
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
+or DL6=12 or DL6=13 or DL6=14 or DL7_12=1 or DL7_13=1 or DL7_14=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
 numeric SELL_CROP.
@@ -2152,7 +2177,11 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 numeric EMPLOYMENT.
-numeric INVOL_AGRI.
+*Review.
+compute INVOL_AGRI=0.
+if DL2=1 or DL2=2 or DL3A=1 or DL3B=1
+or DL6=12 or DL6=13 or DL6=14 or DL7L=1 or DL7M=1 or DL7N=1 INVOL_AGRI=1.
+
 numeric OWN_FARM.
 numeric WORK_FARM.
 numeric SELL_CROP.
