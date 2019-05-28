@@ -136,12 +136,44 @@ Levels:
 
 ## PHONE_TSCREEN
 ## PHONE_MAP
+
+
 ## R_NOPHONE1
+Reason for no phone: lack of money to buy a mobile phone.
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE2
+Reason for no phone: No need for a mobile phone.
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE3
+Reason for no phone: Mobile phone lost, broken or stopped working.
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE4
+Reason for no phone: Family members do not want me to have a mobile phone.
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE5
+Reason for no phone: No mobile phone network where I live.
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## R_NOPHONE6
+Reason for no phone: Don't know how to use a mobile phone.
+Levels:
++ 1= "Yes"
++ 0= "No"
+
 ## ABLE_SMS
 ## ABLE_CALL
 ## ABLE_MENU
