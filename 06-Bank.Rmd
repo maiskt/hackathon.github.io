@@ -705,14 +705,14 @@ Levels
 
 Note:
 
-* EXP_BANK1 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK1 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK2
 Experience using a bank account (Lost money): Counts individuals who have ever lost money when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF19_2      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Lost money - Drop in available funds in bank account (Because of Bank mishandling or fraudulent activities by anyone)
+      FF19_2      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Lost money - Drop in                      available funds in bank account (Because of Bank mishandling or fraudulent activities by anyone)
       
 Levels
 
@@ -721,14 +721,14 @@ Levels
 
 Note:
 
-* EXP_BANK2 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK2 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK3
-Experience using a bank account (Registered a complaint or called a customer care line): Counts individuals who have ever registered a complaint or called a customer care line when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_3.
+Experience using a bank account (complaints): Counts individuals who have ever registered a complaint or called a customer care line when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_3.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF19_3      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Registered a complaint or called a customer care line
+      FF19_3      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Registered a                              complaint or called a customer care line
       
 Levels
 
@@ -737,10 +737,10 @@ Levels
 
 Note:
 
-* EXP_BANK3 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK3 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK4
-Experience using a bank account (ATM not working): Counts individuals who have ever met unworking ATM when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_4.
+Experience using a bank account (ATM not working): Counts individuals who have ever experienced an ATM not working when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_4.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -753,14 +753,14 @@ Levels
 
 Note:
 
-* EXP_BANK4 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK4 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK5
-Experience using a bank account (Debit/credit card did not work when paying for goods/services): Counts individuals who have ever got unworking ATM/ Debit/credit card when paying for goods/services in the past 6 months. For example, Bangladesh 2016 uses FF19_5.
+Experience using a bank account (Debit/credit card not working): Counts individuals who have experienced an ATM/ Debit/credit card ntot working when paying for goods/services in the past 6 months. For example, Bangladesh 2016 uses FF19_5.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF19_5      |  In the past 6 months, have you ever experienced any of the following when using a bank account? ATM/ Debit/credit card did not work when paying for goods/services
+      FF19_5      |  In the past 6 months, have you ever experienced any of the following when using a bank account? ATM/ Debit/credit                          card did not work when paying for goods/services
       
 Levels
 
@@ -769,15 +769,15 @@ Levels
 
 Note:
 
-* EXP_BANK5 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK5 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK6
-Experience using a bank account (Could not use your bank account because of system outages (online/offline)): Counts individuals who could not use bank account because of system outages (online/offline). For example, Bangladesh 2016 uses FF19_6 and FF19_7.
+Experience using a bank account (system outages): Counts individuals who could not use a bank account because of system outages (online/offline). For example, Bangladesh 2016 uses FF19_6 and FF19_7.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF19_6      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your bank account because of system outages (online)
-      FF19_7      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your bank account because of system outages (offline)
+      FF19_6      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your                        bank account because of system outages (online)
+      FF19_7      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your                        bank account because of system outages (offline)
       
 Levels
 
@@ -786,7 +786,7 @@ Levels
 
 Note:
 
-* EXP_BANK6 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK6 is only available for 2015 and 2016 surveys.
 
 ## LCT_BANK1
 Location for bank activities (Over the counter at a bank branch): Counts individuals who ever used a bank account for any financial activity over the counter at a bank branch. For example, India 2015 uses FF10_1.
