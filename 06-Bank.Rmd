@@ -789,11 +789,11 @@ Note:
 * EXP_BANK6 is only available for 2015 and 2016 surveys.
 
 ## USE_BANK_OTC
-Location for bank activities (Over the counter at a bank branch): Counts individuals who ever used a bank account for any financial activity over the counter at a bank branch. For example, India 2015 uses FF10_1.
+Use over the counter at a bank branch: Counts individuals who use a bank account for any financial activity over the counter at a bank branch. For example, India 2015 uses FF10_1.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_1      |  When you use a bank account for any financial activity, do you use any of the following? Over the counter at a bank branch
+      FF10_1      |  When you use a bank account for any financial activity, do you use any of the following? Over the counter at                      a bank branch
       
 Levels
 
@@ -802,10 +802,10 @@ Levels
 
 Note:
 
-* LCT_BANK1 questions are not available for 2017 and 2018 surveys.
+* USE_BANK_OTC is available only for 2017 and 2018 surveys.
 
 ## USE_BANK_ATM
-Location for bank activities (ATM): Counts individuals who ever used a bank account for any financial activity at an ATM. For example, India 2015 uses FF10_2.
+Use bank ATM: Counts individuals who use a bank account for any financial activity via an ATM. For example, India 2015 uses FF10_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -818,14 +818,14 @@ Levels
 
 Note:
 
-* LCT_BANK2 questions are not available for 2017 and 2018 surveys.
+* USE_BANK_ATM is only available for 2017 and 2018 surveys.
 
 ## USE_BANK_RETAIL
-Location for bank activities (Bank deposits or withdrawals over the counter at a retail store): Counts individuals who ever used a bank account for any financial activity in bank deposits or withdrawals over the counter at a retail store. For example, India 2015 uses FF10_3.
+Use bank at retail store: Counts individuals who use a bank account for any financial activity through deposits or withdrawals over the counter at a retail store. For example, India 2015 uses FF10_3.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_3      |  When you use a bank account for any financial activity, do you use any of the following? Bank deposits or withdrawals over the counter at a retail store
+      FF10_3      |  When you use a bank account for any financial activity, do you use any of the following? Bank deposits or                          withdrawals over the counter at a retail store
       
 Levels
 
@@ -834,15 +834,14 @@ Levels
 
 Note:
 
-* LCT_BANK3 questions are not available for 2017 and 2018 surveys.
-* LCT_BANK3 questions are not available for 2016 Bangladesh survey.
+* USE_BANK_RETAIL is not available for 2017 and 2018 surveys, and 2016 Bangladesh survey.
 
 ## USE_BANK_ONLINE
-Location for bank activities (Bank's website/online banking): Counts individuals who ever used a bank account for any financial activity on Bank's website/online banking. For example, India 2015 uses FF10_4.
+Use bank online: Counts individuals who use a bank account for any financial activity via the bank's website/online banking. For example, India 2015 uses FF10_4.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_4      |  When you use a bank account for any financial activity, do you use any of the following? Bank's website/online banking
+      FF10_4      |  When you use a bank account for any financial activity, do you use any of the following? Bank's                                    website/online banking
       
 Levels
 
@@ -854,11 +853,11 @@ Note:
 * LCT_BANK4 questions are not available for 2017 and 2018 surveys.
 
 ## USE_BANK_MOBILE
-Location for bank activities (Mobile app/mobile banking): Counts individuals who ever used a bank account for any financial activity on Bank's website/online banking. For example, India 2015 uses FF10_5.
+Use bank via mobile: Counts individuals who use a bank account for any financial activity via a mobile application or mobile banking. For example, India 2015 uses FF10_5.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_5      |  When you use a bank account for any financial activity, do you use any of the following? Bank's website/online banking
+      FF10_5      |  When you use a bank account for any financial activity, do you use any of the following? Mobile                                    application/mobile banking
       
 Levels
 
@@ -867,14 +866,14 @@ Levels
 
 Note:
 
-* LCT_BANK5 questions are not available for 2017 and 2018 surveys.
+* USE_BANK_MOBILE is not available for 2017 and 2018 surveys.
 
 ## USE_BANK_AGENT
-Location for bank activities (A door-to-door banking agent or another person who is associated with this bank or MFI/money collector/banking agent): Counts individuals who ever used a bank account for any financial activity at a door-to-door banking agent or  with another person who is associated with this bank or MFI/money collector/banking agent. For example, India 2015 uses FF10_6.
+Use banking agent: Counts individuals who use a bank account for any financial activity through a door-to-door banking agent or  with another person who is associated with the bank or MFI/money collector/banking agent. For example, India 2015 uses FF10_6.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_6      |  When you use a bank account for any financial activity, do you use any of the following? A door-to-door banking agent or another person who is associated with this bank
+      FF10_6      |  When you use a bank account for any financial activity, do you use any of the following? A door-to-door                            banking agent or another person who is associated with the bank
       
 Levels
 
@@ -883,14 +882,14 @@ Levels
 
 Note:
 
-* LCT_BANK6 questions are not available for 2017 and 2018 surveys.
+* USE_BANK_AGENT is not available for 2017 and 2018 surveys.
 
 ## USE_BANK_WALLET
-Location for bank activities (Mobile wallet): Counts individuals who ever used a bank account for any financial activity with mobile wallet. For example, India 2015 uses FF10_7.
+Use bank mobile wallet: Counts individuals who use a bank account for any financial activity via a mobile wallet. For example, India 2015 uses FF10_7.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_7      |  When you use a bank account for any financial activity, do you use any of the following? Through a mobile money by transferring money from my bank account to my phone and then withdrawing from a mobile money agent or vice versa
+      FF10_7      |  When you use a bank account for any financial activity, do you use any of the following? Through a mobile                          money by transferring money from my bank account to my phone and then withdrawing from a mobile money agent                        or vice versa
       
 Levels
 
@@ -899,7 +898,7 @@ Levels
 
 Note:
 
-* LCT_BANK7 questions are only available for 2014 and 2015 surveys.
+* USE_BANK_WALLET is only available for 2014 and 2015 surveys.
 
 
 
