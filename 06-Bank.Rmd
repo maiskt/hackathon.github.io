@@ -788,7 +788,7 @@ Note:
 
 * EXP_BANK6 is only available for 2015 and 2016 surveys.
 
-## LCT_BANK1
+## USE_BANK_OTC
 Location for bank activities (Over the counter at a bank branch): Counts individuals who ever used a bank account for any financial activity over the counter at a bank branch. For example, India 2015 uses FF10_1.
 
 Question Index    |                       Questions 
@@ -804,7 +804,7 @@ Note:
 
 * LCT_BANK1 questions are not available for 2017 and 2018 surveys.
 
-## LCT_BANK2
+## USE_BANK_ATM
 Location for bank activities (ATM): Counts individuals who ever used a bank account for any financial activity at an ATM. For example, India 2015 uses FF10_2.
 
 Question Index    |                       Questions 
@@ -820,7 +820,7 @@ Note:
 
 * LCT_BANK2 questions are not available for 2017 and 2018 surveys.
 
-## LCT_BANK3
+## USE_BANK_RETAIL
 Location for bank activities (Bank deposits or withdrawals over the counter at a retail store): Counts individuals who ever used a bank account for any financial activity in bank deposits or withdrawals over the counter at a retail store. For example, India 2015 uses FF10_3.
 
 Question Index    |                       Questions 
@@ -837,7 +837,7 @@ Note:
 * LCT_BANK3 questions are not available for 2017 and 2018 surveys.
 * LCT_BANK3 questions are not available for 2016 Bangladesh survey.
 
-## LCT_BANK4
+## USE_BANK_ONLINE
 Location for bank activities (Bank's website/online banking): Counts individuals who ever used a bank account for any financial activity on Bank's website/online banking. For example, India 2015 uses FF10_4.
 
 Question Index    |                       Questions 
@@ -853,7 +853,7 @@ Note:
 
 * LCT_BANK4 questions are not available for 2017 and 2018 surveys.
 
-## LCT_BANK5
+## USE_BANK_MOBILE
 Location for bank activities (Mobile app/mobile banking): Counts individuals who ever used a bank account for any financial activity on Bank's website/online banking. For example, India 2015 uses FF10_5.
 
 Question Index    |                       Questions 
@@ -869,7 +869,7 @@ Note:
 
 * LCT_BANK5 questions are not available for 2017 and 2018 surveys.
 
-## LCT_BANK6
+## USE_BANK_AGENT
 Location for bank activities (A door-to-door banking agent or another person who is associated with this bank or MFI/money collector/banking agent): Counts individuals who ever used a bank account for any financial activity at a door-to-door banking agent or  with another person who is associated with this bank or MFI/money collector/banking agent. For example, India 2015 uses FF10_6.
 
 Question Index    |                       Questions 
@@ -885,7 +885,7 @@ Note:
 
 * LCT_BANK6 questions are not available for 2017 and 2018 surveys.
 
-## LCT_BANK7
+## USE_BANK_WALLET
 Location for bank activities (Mobile wallet): Counts individuals who ever used a bank account for any financial activity with mobile wallet. For example, India 2015 uses FF10_7.
 
 Question Index    |                       Questions 
