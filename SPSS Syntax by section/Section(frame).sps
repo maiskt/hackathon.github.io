@@ -1,250 +1,285 @@
 ﻿* Encoding: UTF-8.
 
-*Section 6.2.
-
+*Section *.
+**************************************************************************************************************************************************.
 *18Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2018.
-compute COUNTRY=Bangladesh.
 
-
-
+**************************************************************************************************************************************************.
 *18India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2018.
-compute COUNTRY=India.
 
-
-
+**************************************************************************************************************************************************.
 *17Bangladesh.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2017.
-compute COUNTRY=Bangladesh.
 
-
+**************************************************************************************************************************************************.
 *17India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2017.
-compute COUNTRY=India.
 
-
-
-
+**************************************************************************************************************************************************.
 *17Kenya.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2017.
-compute COUNTRY=Kenya.
 
-
-
+**************************************************************************************************************************************************.
 *17Nigeria.
+rename variables SbjNum=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2017.
-compute COUNTRY=Nigeria.
 
-
-
+**************************************************************************************************************************************************.
 *17Paksitan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2017.
-compute COUNTRY=Paksitan.
 
-
-
+**************************************************************************************************************************************************.
 *17Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2017.
-compute COUNTRY=Tanzania.
 
-
-
+**************************************************************************************************************************************************.
 *17Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2017.
-compute COUNTRY=Uganda.
 
-
-
+**************************************************************************************************************************************************.
 *16Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2016.
-compute COUNTRY=Bangladesh.
 
-
-
+**************************************************************************************************************************************************.
 *16India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2016.
-compute COUNTRY=Inida.
 
-
-
-
+**************************************************************************************************************************************************.
 *16Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2016.
-compute COUNTRY=Indonesia.
 
-
-
+**************************************************************************************************************************************************.
 *16Kenya.
-*Section 6.1.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2016.
-compute COUNTRY=Kenya.
 
-
-
+**************************************************************************************************************************************************.
 *16Nigeria.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2016.
-compute COUNTRY=Nigeria.
 
-
+**************************************************************************************************************************************************.
 *16Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2016.
-compute COUNTRY=Pakistan.
 
-
-
+**************************************************************************************************************************************************.
 *16Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2016.
-compute COUNTRY=Tanzania.
 
-
-
-
+**************************************************************************************************************************************************.
 *16Uganda.
-*Section 6.1.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2016.
-compute COUNTRY=Uganda.
 
-
-
+**************************************************************************************************************************************************.
 *15Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2015.
-compute COUNTRY=Bangladesh.
 
-
-
+**************************************************************************************************************************************************.
 *15India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2015.
-compute COUNTRY=India.
 
-
-
+**************************************************************************************************************************************************.
 *15Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2015.
-compute COUNTRY=Indonesia.
 
-
-
+**************************************************************************************************************************************************.
 *15Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2015.
-compute COUNTRY=Kenya.
 
-
-
+**************************************************************************************************************************************************.
 *15Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2015.
-compute COUNTRY=Nigeria.
 
-
-
+**************************************************************************************************************************************************.
 *15Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2015.
-compute COUNTRY=Pakistan.
 
-
-
+**************************************************************************************************************************************************.
 *15Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2015.
-compute COUNTRY=Tanzania.
 
-
-
+**************************************************************************************************************************************************.
 *15Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2015.
-compute COUNTRY=Uganda.
 
-
-
+**************************************************************************************************************************************************.
 *14Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2014.
-compute COUNTRY=Bangladesh.
 
-
-
+**************************************************************************************************************************************************.
 *14India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2014.
-compute COUNTRY=India.
 
-
-
+**************************************************************************************************************************************************.
 *14Indonesia.
+rename variables ID=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2014.
-compute COUNTRY=Indonesia.
 
-
-
+**************************************************************************************************************************************************.
 *14Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2014.
-compute COUNTRY=Kenya.
 
-
-
+**************************************************************************************************************************************************.
 *14Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2014.
-compute COUNTRY=Nigeria.
 
-
-
+**************************************************************************************************************************************************.
 *14Pakistan.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2014.
-compute COUNTRY=Pakistan.
 
-
-
+**************************************************************************************************************************************************.
 *14Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2014.
-compute COUNTRY=Tanzania.
 
-
-
+**************************************************************************************************************************************************.
 *14Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2014.
-compute COUNTRY=Uganda.
 
-
-
+**************************************************************************************************************************************************.
 *13Bangladesh.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2013.
-compute COUNTRY=Bangladesh.
 
-
-
+**************************************************************************************************************************************************.
 *13India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2013.
-compute COUNTRY=India.
 
-
-
+**************************************************************************************************************************************************.
 *13Kenya.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2013.
-compute COUNTRY=Kenya.
 
-
-
+**************************************************************************************************************************************************.
 *13Nigeria.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2013.
-compute COUNTRY=Nigeria.
 
-
-
+**************************************************************************************************************************************************.
 *13Pakistan.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2013.
-compute COUNTRY=Pakistan.
 
-
-
+**************************************************************************************************************************************************.
 *13Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2013.
-compute COUNTRY=Tanzaina.
 
-
+**************************************************************************************************************************************************.
 *13Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2013.
-compute COUNTRY=Uganda.
-
-
-
-
 
 *****************************************************************************************************************************.
 *Labels.

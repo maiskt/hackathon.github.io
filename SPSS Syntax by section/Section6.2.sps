@@ -3,8 +3,10 @@
 *Section 6.2.
 *******************************************************************************************************************************************************************.
 *18Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2018.
-compute COUNTRY=Bangladesh.
 
 count BANK_TRANSFER=AD1_1 AD1_2 AD1_3(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -74,8 +76,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *18India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2018.
-compute COUNTRY=India.
 
 count BANK_TRANSFER=AD1_1 AD1_5 AD1_6 AD1_7(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -145,8 +149,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *17Bangladesh.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2017.
-compute COUNTRY=Bangladesh.
 
 *Review. 
 compute BANK_TRANSFER=0.
@@ -211,8 +217,10 @@ count ACTIVE_BANK_AIRTIME=FF16_2 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *17India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2017.
-compute COUNTRY=India.
 
 compute BANK_TRANSFER=0.
 if FF14_6=1 BANK_TRANSFER=1.
@@ -267,8 +275,10 @@ count ACTIVE_BANK_AIRTIME=FF16_2 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *17Kenya.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2017.
-compute COUNTRY=Kenya.
 
 compute BANK_TRANSFER=0.
 if FF14_6=1 BANK_TRANSFER=1.
@@ -324,8 +334,10 @@ count ACTIVE_BANK_AIRTIME=FF16_2 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *17Nigeria.
+rename variables SbjNum=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2017.
-compute COUNTRY=Nigeria.
 
 compute BANK_TRANSFER=0.
 if FF14_6=1 BANK_TRANSFER=1.
@@ -381,8 +393,10 @@ count ACTIVE_BANK_AIRTIME=FF16_2 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *17Paksitan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2017.
-compute COUNTRY=Paksitan.
 
 compute BANK_TRANSFER=0.
 if FF14_6=1 BANK_TRANSFER=1.
@@ -438,8 +452,10 @@ count ACTIVE_BANK_AIRTIME=FF16_2 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *17Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2017.
-compute COUNTRY=Tanzania.
 
 compute BANK_TRANSFER=0.
 if FF14_6=1 BANK_TRANSFER=1.
@@ -495,8 +511,10 @@ count ACTIVE_BANK_AIRTIME=FF16_2 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *17Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2017.
-compute COUNTRY=Uganda.
 
 compute BANK_TRANSFER=0.
 if FF14_6=1 BANK_TRANSFER=1.
@@ -552,8 +570,10 @@ count ACTIVE_BANK_AIRTIME=FF16_2 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *16Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2016.
-compute COUNTRY=Bangladesh.
 
 *Review.
 count BANK_TRANSFER=FF14_9 FF14_10(1).
@@ -629,8 +649,10 @@ count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *16India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2016.
-compute COUNTRY=Inida.
 
 count BANK_TRANSFER=FF14_9 FF14_10(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -688,8 +710,10 @@ count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *16Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2016.
-compute COUNTRY=Indonesia.
 
 count BANK_TRANSFER=FF14_9 FF14_10(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -751,8 +775,10 @@ count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 *******************************************************************************************************************************************************************.
 *16Kenya.
 *Section 6.1.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2016.
-compute COUNTRY=Kenya.
 
 count BANK_TRANSFER=FF14_9 FF14_10(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -810,8 +836,10 @@ count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *16Nigeria.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2016.
-compute COUNTRY=Nigeria.
 
 count BANK_TRANSFER=FF14_9 FF14_10(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -868,8 +896,10 @@ count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *16Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2016.
-compute COUNTRY=Pakistan.
 
 count BANK_TRANSFER=FF14_9 FF14_10(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -926,8 +956,10 @@ count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *16Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2016.
-compute COUNTRY=Tanzania.
 
 count BANK_TRANSFER=FF14_9 FF14_10(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -985,8 +1017,10 @@ count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 *******************************************************************************************************************************************************************.
 *16Uganda.
 *Section 6.1.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2016.
-compute COUNTRY=Uganda.
 
 count BANK_TRANSFER=FF14_9 FF14_10(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -1043,8 +1077,10 @@ count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *15Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2015.
-compute COUNTRY=Bangladesh.
 
 *Review.
 count BANK_TRANSFER=FF14_10 FF14_11(1).
@@ -1098,8 +1134,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *15India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2015.
-compute COUNTRY=India.
 
 *Review.
 count BANK_TRANSFER=FF14_10 FF14_11(1).
@@ -1154,8 +1192,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *15Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2015.
-compute COUNTRY=Indonesia.
 
 *Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
@@ -1210,8 +1250,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *15Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2015.
-compute COUNTRY=Kenya.
 
 *Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
@@ -1265,8 +1307,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *15Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2015.
-compute COUNTRY=Nigeria.
 
 *Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
@@ -1321,8 +1365,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *15Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2015.
-compute COUNTRY=Pakistan.
 
 *Review.
 count BANK_TRANSFER=FF14_10 FF14_11(1).
@@ -1377,8 +1423,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *15Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2015.
-compute COUNTRY=Tanzania.
 
 *Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
@@ -1431,8 +1479,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *15Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2015.
-compute COUNTRY=Uganda.
 
 *Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
@@ -1485,8 +1535,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2014.
-compute COUNTRY=Bangladesh.
 
 *Review.
 count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
@@ -1537,8 +1589,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2014.
-compute COUNTRY=India.
 
 count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -1583,8 +1637,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14Indonesia.
+rename variables ID=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2014.
-compute COUNTRY=Indonesia.
 
 count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -1633,8 +1689,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2014.
-compute COUNTRY=Kenya.
 
 count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -1681,8 +1739,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2014.
-compute COUNTRY=Nigeria.
 
 count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -1728,8 +1788,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14Pakistan.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2014.
-compute COUNTRY=Pakistan.
 
 count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -1775,8 +1837,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2014.
-compute COUNTRY=Tanzania.
 
 count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -1822,8 +1886,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *14Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2014.
-compute COUNTRY=Uganda.
 
 count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -1873,8 +1939,10 @@ compute YEAR=2013.
 compute COUNTRY=Bangladesh.
 
 *Review.
-count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
-recode BANK_TRANSFER (1 thru highest=1).
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
+compute YEAR=2013.
 
 *Review.
 compute BANK_MERCHANT=0.
@@ -1927,8 +1995,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *13India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2013.
-compute COUNTRY=India.
 
 *Review.
 count BANK_TRANSFER = FFI16_8 FFI16_9 FFI16_10 FFI16_11 (1).
@@ -1986,8 +2056,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *13Kenya.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2013.
-compute COUNTRY=Kenya.
 
 count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -2033,8 +2105,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *13Nigeria.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2013.
-compute COUNTRY=Nigeria.
 
 count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -2080,8 +2154,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *13Pakistan.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2013.
-compute COUNTRY=Pakistan.
 
 count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -2126,8 +2202,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *13Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2013.
-compute COUNTRY=Tanzaina.
 
 count BANK_TRANSFER = FFI16_8 FFI16_9 FFI16_10 FFI16_11 (1).
 recode BANK_TRANSFER (1 thru highest=1).
@@ -2173,8 +2251,10 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *13Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2013.
-compute COUNTRY=Uganda.
 
 count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
 recode BANK_TRANSFER (1 thru highest=1).

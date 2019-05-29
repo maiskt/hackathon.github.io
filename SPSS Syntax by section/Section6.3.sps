@@ -1,10 +1,12 @@
 ﻿* Encoding: UTF-8.
 
 *Section 6.3.
-
+**************************************************************************************************************************************************.
 *18Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2018.
-compute COUNTRY=Bangladesh.
 
 compute R_NOBANK1=ff3_1.
 recode R_NOBANK1(sysmis=-2).
@@ -38,10 +40,12 @@ numeric LCT_BANK4.
 numeric LCT_BANK5.
 numeric LCT_BANK6.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *18India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2018.
-compute COUNTRY=India.
 
 compute R_NOBANK1=ff3_1.
 recode R_NOBANK1(sysmis=-2).
@@ -75,10 +79,12 @@ numeric LCT_BANK4.
 numeric LCT_BANK5.
 numeric LCT_BANK6.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *17Bangladesh.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2017.
-compute COUNTRY=Bangladesh.
 
 *Review.
 compute R_NOBANK1=ff3_1.
@@ -113,10 +119,12 @@ numeric LCT_BANK4.
 numeric LCT_BANK5.
 numeric LCT_BANK6.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *17India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2017.
-compute COUNTRY=India.
 
 compute R_NOBANK1=ff3_1.
 recode R_NOBANK1(4,5=1)(else=0).
@@ -150,10 +158,12 @@ numeric LCT_BANK4.
 numeric LCT_BANK5.
 numeric LCT_BANK6.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *17Kenya.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2017.
-compute COUNTRY=Kenya.
 
 compute R_NOBANK1=ff3_1.
 recode R_NOBANK1(4,5=1)(else=0).
@@ -187,10 +197,12 @@ numeric LCT_BANK4.
 numeric LCT_BANK5.
 numeric LCT_BANK6.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *17Nigeria.
+rename variables SbjNum=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2017.
-compute COUNTRY=Nigeria.
 
 compute R_NOBANK1=ff3_1.
 recode R_NOBANK1(4,5=1)(else=0).
@@ -224,10 +236,12 @@ numeric LCT_BANK4.
 numeric LCT_BANK5.
 numeric LCT_BANK6.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *17Paksitan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2017.
-compute COUNTRY=Paksitan.
 
 compute R_NOBANK1=ff3_1.
 recode R_NOBANK1(4,5=1)(else=0).
@@ -261,10 +275,12 @@ numeric LCT_BANK4.
 numeric LCT_BANK5.
 numeric LCT_BANK6.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *17Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2017.
-compute COUNTRY=Tanzania.
 
 compute R_NOBANK1=ff3_1.
 recode R_NOBANK1(4,5=1)(else=0).
@@ -298,10 +314,12 @@ numeric LCT_BANK4.
 numeric LCT_BANK5.
 numeric LCT_BANK6.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *17Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2017.
-compute COUNTRY=Uganda.
 
 compute R_NOBANK1=ff3_1.
 recode R_NOBANK1(4,5=1)(else=0).
@@ -335,10 +353,12 @@ numeric LCT_BANK4.
 numeric LCT_BANK5.
 numeric LCT_BANK6.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *16Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2016.
-compute COUNTRY=Bangladesh.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -380,10 +400,12 @@ compute LCT_BANK6=0.
 if ff10_5=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *16India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2016.
-compute COUNTRY=Inida.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -426,10 +448,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *16Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2016.
-compute COUNTRY=Indonesia.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -471,11 +495,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *16Kenya.
-*Section 6.1.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2016.
-compute COUNTRY=Kenya.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -516,10 +541,12 @@ if ff10_5=1 LCT_BANK5=1.
 compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *16Nigeria.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2016.
-compute COUNTRY=Nigeria.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -561,10 +588,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *16Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2016.
-compute COUNTRY=Pakistan.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -606,10 +635,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *16Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2016.
-compute COUNTRY=Tanzania.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -651,10 +682,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *16Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2016.
-compute COUNTRY=Uganda.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -696,10 +729,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *15Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2015.
-compute COUNTRY=Bangladesh.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -747,10 +782,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff10_7=1 LCT_BANK7=1.
-
+**************************************************************************************************************************************************.
 *15India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2015.
-compute COUNTRY=India.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -799,10 +836,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff10_7=1 LCT_BANK7=1.
-
+**************************************************************************************************************************************************.
 *15Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2015.
-compute COUNTRY=Indonesia.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -851,10 +890,12 @@ if ff10_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff10_7=1 LCT_BANK7=1.
 
-
+**************************************************************************************************************************************************.
 *15Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2015.
-compute COUNTRY=Kenya.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -903,10 +944,12 @@ if ff10_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff10_7=1 LCT_BANK7=1.
 
-
+**************************************************************************************************************************************************.
 *15Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2015.
-compute COUNTRY=Nigeria.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -954,10 +997,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff10_7=1 LCT_BANK7=1.
-
+**************************************************************************************************************************************************.
 *15Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2015.
-compute COUNTRY=Pakistan.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1006,10 +1051,12 @@ if ff10_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff10_7=1 LCT_BANK7=1.
 
-
+**************************************************************************************************************************************************.
 *15Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2015.
-compute COUNTRY=Tanzania.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1057,10 +1104,12 @@ compute LCT_BANK6=0.
 if ff10_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff10_7=1 LCT_BANK7=1.
-
+**************************************************************************************************************************************************.
 *15Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2015.
-compute COUNTRY=Uganda.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1109,10 +1158,12 @@ if ff10_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff10_7=1 LCT_BANK7=1.
 
-
+**************************************************************************************************************************************************.
 *14Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2014.
-compute COUNTRY=Bangladesh.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1156,10 +1207,12 @@ if ff15_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff15_7=1 LCT_BANK7=1.
 
-
+**************************************************************************************************************************************************.
 *14India.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2014.
-compute COUNTRY=India.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1201,10 +1254,12 @@ compute LCT_BANK6=0.
 if ff15_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff15_7=1 LCT_BANK7=1.
-
+**************************************************************************************************************************************************.
 *14Indonesia.
+rename variables ID=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2014.
-compute COUNTRY=Indonesia.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1245,10 +1300,12 @@ if ff15_5=1 LCT_BANK5=1.
 compute LCT_BANK6=0.
 if ff15_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *14Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2014.
-compute COUNTRY=Kenya.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1290,10 +1347,12 @@ compute LCT_BANK6=0.
 if ff15_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff15_7=1 LCT_BANK7=1.
-
+**************************************************************************************************************************************************.
 *14Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2014.
-compute COUNTRY=Nigeria.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1335,10 +1394,12 @@ compute LCT_BANK6=0.
 if ff15_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff15_7=1 LCT_BANK7=1.
-
+**************************************************************************************************************************************************.
 *14Pakistan.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2014.
-compute COUNTRY=Pakistan.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1381,10 +1442,12 @@ if ff15_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff15_7=1 LCT_BANK7=1.
 
-
+**************************************************************************************************************************************************.
 *14Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2014.
-compute COUNTRY=Tanzania.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1427,10 +1490,12 @@ if ff15_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff15_7=1 LCT_BANK7=1.
 
-
+**************************************************************************************************************************************************.
 *14Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2014.
-compute COUNTRY=Uganda.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1473,10 +1538,12 @@ if ff15_6=1 LCT_BANK6=1.
 compute LCT_BANK7=0.
 if ff15_7=1 LCT_BANK7=1.
 
-
+**************************************************************************************************************************************************.
 *13Bangladesh.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2013.
-compute COUNTRY=Bangladesh.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1517,10 +1584,12 @@ if ffi11_4=1 LCT_BANK5=1.
 compute LCT_BANK6=0.
 if ffi11_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *13India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2013.
-compute COUNTRY=India.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1561,10 +1630,12 @@ compute LCT_BANK6=0.
 if ffi11_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *13Kenya.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2013.
-compute COUNTRY=Kenya.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1604,10 +1675,12 @@ if ffi11d=1 LCT_BANK5=1.
 compute LCT_BANK6=0.
 if ffi11f=1 LCT_BANK6=1.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *13Nigeria.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2013.
-compute COUNTRY=Nigeria.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1647,10 +1720,12 @@ if ffi11d=1 LCT_BANK5=1.
 compute LCT_BANK6=0.
 if ffi11f=1 LCT_BANK6=1.
 numeric LCT_BANK7.
-
+**************************************************************************************************************************************************.
 *13Pakistan.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2013.
-compute COUNTRY=Pakistan.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1691,10 +1766,12 @@ compute LCT_BANK6=0.
 if ffi11f=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *13Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2013.
-compute COUNTRY=Tanzaina.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
@@ -1735,10 +1812,12 @@ compute LCT_BANK6=0.
 if ffi11_6=1 LCT_BANK6=1.
 numeric LCT_BANK7.
 
-
+**************************************************************************************************************************************************.
 *13Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2013.
-compute COUNTRY=Uganda.
 
 numeric R_NOBANK1.
 numeric R_NOBANK2.
