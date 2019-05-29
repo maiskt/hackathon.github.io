@@ -384,13 +384,13 @@ Note:
               
 
 ## ACTIVE_BANK_BILL
-Active use of bank for bill payment: Counts individuals who paid bills using a bank in the last 90 days. For example, Bangladesh 2017 uses the following questions.
+Active use of bank for bill payment: Counts individuals who paid bills using a bank account in the last 90 days. For example, Bangladesh 2017 uses the following questions.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_3      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a                            school fee.
-      FF16_4      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a bill                      for medical expenses, housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
-      FF16_5      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a                            government bill, including tax, fine or fee.
+      FF16_3      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a                                  school fee.
+      FF16_4      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a bill                            for medical expenses, housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
+      FF16_5      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a                                  government bill, including tax, fine or fee.
       
 Levels
 
@@ -402,11 +402,11 @@ Note:
 * ACTIVE_BANK_BILL questions are not available for 2013 and 2014 surveys.       
 
 ## ACTIVE_BANK_GOV
-Active use of bank for receiving money: Counts individuals who received money from the government using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_7.
+Active use of bank for receiving money: Counts individuals who received money from the government using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_7.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_7      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received a                        welfare, pension or other benefit payment from the government.  
+      FF16_7      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received a                              welfare, pension or other benefit payment from the government.  
       
 Levels
 
@@ -418,11 +418,11 @@ Note:
 * ACTIVE_BANK_GOV questions are not available for 2013 and 2014 surveys.  
 
 ## ACTIVE_BANK_WAGE
-Active use of bank for wages: Counts individuals who received payment from an employer using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_8.
+Active use of bank for wages: Counts individuals who received a payment from an employer using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_8.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_8      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received                          wages for your primary or secondary job.
+      FF16_8      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received                                wages for your primary or secondary job.
       
 Levels
 
@@ -434,7 +434,7 @@ Note:
 * ACTIVE_BANK_WAGE questions are not available for 2013 and 2014 surveys.        
 
 ## ACTIVE_BANK_INSURANCE
-Active use of bank fro insurance: Counts individuals who paid for insurance or received payment from insurance using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_9.
+Active use of bank for insurance: Counts individuals who paid for insurance or received payment from insurance using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_9.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -450,11 +450,11 @@ Note:
 * ACTIVE_BANK_INSURANCE questions are not available for 2013 and 2014 surveys.  
 
 ## ACTIVE_BANK_SAVE
-Active of bank for saving: Counts individuals who saved using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_11.
+Active use of bank for saving: Counts individuals who saved using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_11.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_11     |  Please tell me when was the last time you used a bank account for this activity, other than today? Saved money                      for any reason.
+      FF16_11     |  Please tell me when was the last time you used a bank account for this activity, other than today? Saved money                            for any reason.
       
 Levels
 
@@ -466,11 +466,11 @@ Note:
 * ACTIVE_BANK_SAVE questions are not available for 2013 and 2014 surveys.         
 
 ## ACTIVE_BANK_INVEST
-Active use of bank for investment: Counts individuals who made an investment using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_12.
+Active use of bank for investment: Counts individuals who made an investment using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_12.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_12     |  Please tell me when was the last time you used a bank account for this activity, other than today? Made an                          investment, including bought stock or shares.
+      FF16_12     |  Please tell me when was the last time you used a bank account for this activity, other than today? Made an                                investment, including bought stock or shares.
       
 Levels
 
@@ -486,7 +486,7 @@ Active use of bank for loans: Counts individuals who borrowed money from a bank 
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_10     |  Please tell me when was the last time you used a bank account for this activity, other than today? Took a loan                      or made payments on a loan.
+      FF16_10     |  Please tell me when was the last time you used a bank account for this activity, other than today? Took a loan                            or made payments on a loan.
       
 Levels
 
@@ -498,11 +498,11 @@ Note:
 * ACTIVE_BANK_LOAN questions are not available for 2013 and 2014 surveys.         
 
 ## ACTIVE_BANK_AIRTIME
-Active use of bank for airtime top-ups: Counts individuals who bought airtime top-ups or paid a mobile phone bill in the last 90 days using a bank. For example, Bangladesh 2017 uses FF16_2.
+Active use of bank for airtime top-ups: Counts individuals who bought airtime top-ups or paid a mobile phone bill in the last 90 days using a bank account. For example, Bangladesh 2017 uses FF16_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_2      |  Please tell me when was the last time you used a bank account for this activity, other than today? Bought                            airtime top-ups or paid a mobile phone bill. 
+      FF16_2      |  Please tell me when was the last time you used a bank account for this activity, other than today? Bought                                  airtime top-ups or paid a mobile phone bill. 
       
 Levels
 
@@ -514,7 +514,7 @@ Note:
 * ACTIVE_BANK_AIRTIME questions are not available for 2013 and 2014 surveys.
 
 ## R_NOBANK1
-Reasons for NO bank account (You don't have the required documents): Counts individuals who do not have a bank account since lack of required documents. For example, Bangladesh 2018 uses FF3_1.
+No bank account due lack of required documents: Counts individuals who do not have a bank account because of the lack of required documents. For example, Bangladesh 2018 uses FF3_1.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -527,8 +527,7 @@ Levels
 
 Note:
 
-* R_NOBANK1 questions are only available for 2017 and 2018 surveys.
-* For 2017 survey, FF3 set questions are a little different from 2018 survey. 2017 survey asks in this way, "FF3.1.How much you agree or disagree the reason why people do not register bank accounts in their name applies to your situation? Lack of official identification or other required documents". And levels are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. We reode level 4 and 5 into "Yes" and recode other levels as well as system missing into "No".
+* R_NOBANK1 questions are only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Lack of official identification or other required documents".  Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
 
 
 ## R_NOBANK2
