@@ -207,26 +207,26 @@ Customer journey segmentation of bank: A series of progressive stages through wh
 
   Bank stages                  |                       Descriptions
   -----------------------------|------------------------------------------------------
-  Bank nonuser                 |  Don't have a bank account registered in their name or a joint account in their and someone                                         else's name or never used a bank.
-  Unregistered bank user       |  Don't have a bank account registered in their name or a joint account in their and someone                                         else's name but use a bank via another person's account.
-  Registered inactive bank user|  Have a bank account registered in their name or a joint account in their and someone else's name                                     but have not used it in the last 90 days.
-  Basic only active bank user  |  Have a bank account registered in their name or a joint account in their and someone else's name                                     and only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out                                             (withdraw), money transfer to another individual, or conducting account maintenance.
-  Advanced active bank user   |   Have a bank account registered in their name or a joint account in their and someone else's name                                     and used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment,                                   paying bills or receiving wages or government benefits).
+  Bank nonuser                 |  Don't have a bank account registered in their name or a joint account in their and someone                                                 else's name or never used a bank.
+  Unregistered bank user       |  Don't have a bank account registered in their name or a joint account in their and someone                                                 else's name but use a bank via another person's account.
+  Inactive registered bank user|  Have a bank account registered in their name or a joint account in their and someone else's name                                           but have not used it in the last 90 days.
+  Active bank basic user       |  Have a bank account registered in their name or a joint account in their and someone else's name                                           and only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out                                                   (withdraw), money transfer to another individual, or conducting account maintenance.
+  Active bank advanced user   |   Have a bank account registered in their name or a joint account in their and someone else's name                                           and used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment,                                         paying bills or receiving wages or government benefits).
 
 Levels 
 
 * 0=Bank nonuser
 * 1=Unregistered bank user
-* 2=Registered inactive bank user
-* 3=Basic only active bank user
-* 4=Advanced active bank user
+* 2=Inactive registered bank user
+* 3=Active bank basic user
+* 4=Active bank advanced user
 
 ## BANK_TRANSFER
-Ever used a bank for transfers: Counts individuals who ever sent money to, or received money from someone using a bank. For example, Bangladesh 2017 uses FF14_6.
+Ever used a bank for transfers: Counts individuals who ever sent money to, or received money from someone using a bank account. For example, Bangladesh 2017 uses FF14_6.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF14_6      |  Which of the following activities have you ever done using a bank account? Sent money to, or received money                          from, family members, friends, workmates or other acquaintances.
+      FF14_6      |  Which of the following activities have you ever done using a bank account? Sent money to, or received money                                from, family members, friends, workmates or other acquaintances.
 
 Levels
 
@@ -234,11 +234,11 @@ Levels
 * 0=No
 
 ## BANK_MERCHANT
-Ever used a bank to buy goods and services: Counts individuals who ever paid for goods or services at a store, shop, restaurant or other place of business using a bank. For example, Bangladesh 2017 uses FF14_13.
+Ever used a bank to buy goods and services: Counts individuals who ever paid for goods or services at a store, shop, restaurant or other place of business using a bank account. For example, Bangladesh 2017 uses FF14_13.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF14_13     |  Which of the following activities have you ever done using a bank account? Paid for goods or services at a                          grocery store, clothing shop or any other store/shop.
+      FF14_13     |  Which of the following activities have you ever done using a bank account? Paid for goods or services at a                                grocery store, clothing shop or any other store/shop.
 
 Levels
 
@@ -246,13 +246,13 @@ Levels
 * 0=No
 
 ## BANK_BILL
-Ever used a bank for bill payment: Counts individuals who ever paid for a bill using a bank. For example, Bangladesh 2017 uses the following questions.
+Ever used a bank for bill payment: Counts individuals who ever paid for a bill using a bank account. For example, Bangladesh 2017 uses the following questions.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
       FF14_3      |  Which of the following activities have you ever done using a bank account? Paid a school fee
-      FF14_4      |  Which of the following activities have you ever done using a bank account? Paid a bill for medical expenses,                        housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
-      FF14_5      |  Which of the following activities have you ever done using a bank account? Paid a government bill, including                        tax, fine or fee.
+      FF14_4      |  Which of the following activities have you ever done using a bank account? Paid a bill for medical expenses,                              housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
+      FF14_5      |  Which of the following activities have you ever done using a bank account? Paid a government bill, including                              tax, fine or fee.
       
 Levels
 
@@ -260,7 +260,7 @@ Levels
 * 0=No
 
 ## BANK_GOV
-Ever used a bank to receive money from the government: Counts individuals who ever received money from the government using a bank. For example, Bangladesh 2017 uses FF14_7.
+Ever used a bank to receive money from the government: Counts individuals who ever received money from the government using a bank account. For example, Bangladesh 2017 uses FF14_7.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -272,11 +272,11 @@ Levels
 * 0=No
 
 ## BANK_WAGE
-Ever used a bank for wages:  Counts individuals who ever received payment from an employer using a bank. For example, Bangladesh 2017 uses FF14_8.
+Ever used a bank for wages:  Counts individuals who ever received payment from an employer using a bank account. For example, Bangladesh 2017 uses FF14_8.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF14_8      |  Which of the following activities have you ever done using a bank account? Received wages for your primary or                        secondary job.
+      FF14_8      |  Which of the following activities have you ever done using a bank account? Received wages for your primary or                              secondary job.
       
 Levels
 
@@ -284,11 +284,11 @@ Levels
 * 0=No
 
 ## BANK_INSURANCE
-Ever used a bank for insurance: Counts individuals who ever paid for insurance or received payment from insurance using a bank. For example, Bangladesh 2017 uses FF14_9.
+Ever used a bank for insurance: Counts individuals who ever paid for insurance or received payment from insurance using a bank account. For example, Bangladesh 2017 uses FF14_9.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF14_9      |  Which of the following activities have you ever done using a bank account? Made insurance payments or received                      claims on insurance.
+      FF14_9      |  Which of the following activities have you ever done using a bank account? Made insurance payments or received                            claims on insurance.
       
 Levels
 
@@ -296,7 +296,7 @@ Levels
 * 0=No
 
 ## BANK_SAVE
-Ever used a bank for savings: Counts individuals who ever saved using a bank. For example, Bangladesh 2017 uses FF14_11 and FB22_1.
+Ever used a bank for savings: Counts individuals who ever saved using a bank account. For example, Bangladesh 2017 uses FF14_11 and FB22_1.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -309,7 +309,7 @@ Levels
 * 0=No
        
 ## BANK_INVEST
-Ever used a bank for investment: Counts individuals who ever made an investment using a bank. For example, Bangladesh 2017 uses FF14_12.
+Ever used a bank for investments: Counts individuals who ever made an investment using a bank account. For example, Bangladesh 2017 uses FF14_12.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -321,11 +321,11 @@ Levels
 * 0=No
 
 ## BANK_LOAN
-Ever used a bank for loans: Counts individuals who ever borrowed money using a bank. For example, Bangladesh 2017 uses FF14_10 and FB16A_1.
+Ever used a bank for loans: Counts individuals who ever borrowed money using a bank account. For example, Bangladesh 2017 uses FF14_10 and FB16A_1.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF14_10     |  Which of the following activities have you ever done using a bank account? Took a loan or made payments on a                        loan
+      FF14_10     |  Which of the following activities have you ever done using a bank account? Took a loan or made payments on a                              loan
       FB16A_1     |  Do you currently have a loan with this organization? Bank, personal or business loans.
       
 Levels
@@ -334,11 +334,11 @@ Levels
 * 0=No
 
 ## BANK_AIRTIME
-Ever used a bank for airtime top-up:  Counts individuals who ever bought airtime top-ups or paid a mobile phone bill using a bank. For example, Bangladesh 2017 uses from FF14_2.
+Ever used a bank for airtime top-up:  Counts individuals who ever bought airtime top-ups or paid a mobile phone bill using a bank account. For example, Bangladesh 2017 uses from FF14_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF14_2      |  Which of the following activities have you ever done using a bank account? Bought airtime top-ups or paid a                         mobile phone bill.
+      FF14_2      |  Which of the following activities have you ever done using a bank account? Bought airtime top-ups or paid a                                mobile phone bill.
       
 Levels
 
@@ -371,7 +371,7 @@ Active use of bank for purchases: Counts individuals who paid for goods or servi
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_13     |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid for                          goods or services at a grocery store, clothing shop or any other store/shop store/shop
+      FF16_13     |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid for                                goods or services at a grocery store, clothing shop or any other store/shop store/shop
 
 Levels
 
