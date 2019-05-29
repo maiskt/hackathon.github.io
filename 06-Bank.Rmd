@@ -514,7 +514,7 @@ Note:
 * ACTIVE_BANK_AIRTIME questions are not available for 2013 and 2014 surveys.
 
 ## R_NOBANK1
-No bank account due lack of required documents: Counts individuals who do not have a bank account because of the lack of required documents. For example, Bangladesh 2018 uses FF3_1.
+Have no bank account due lack of required documents: Counts individuals who do not have a bank account because of the lack of required documents. For example, Bangladesh 2018 uses FF3_1.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -527,11 +527,11 @@ Levels
 
 Note:
 
-* R_NOBANK1 questions are only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Lack of official identification or other required documents".  Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
+* R_NOBANK1 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Lack of official identification or other required documents".  Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
 
 
 ## R_NOBANK2
-Reasons for NO bank account (Fees and expenses for using banks are too high): Counts individuals who do not have a bank account since fees and expenses for using banks are too high. For example, Bangladesh 2018 uses FF3_2.
+Have no bank account due to high costs: Counts individuals who do not have a bank account because since fees and expenses for using banks are too high. For example, Bangladesh 2018 uses FF3_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -544,8 +544,7 @@ Levels
 
 Note:
 
-* R_NOBANK2 questions are only available for 2017 and 2018 surveys.
-* For 2017 survey, FF3 set questions are a little different from 2018 survey. 2017 survey asks in this way, "FF3.2.How much you agree or disagree the reason why people do not register bank accounts in their name applies to your situation? Fees and expenses for owning an account are too high". And levels are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. We reode level 4 and 5 into "Yes" and recode other levels as well as system missing into "No".
+* R_NOBANK2 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Fees and expenses for owning an account are too high FF3". Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
 
 ## R_NOBANK3
 Reasons for NO bank account (You don't need a bank account): Counts individuals who do not have a bank account since do not need one. For example, Bangladesh 2018 uses FF3_3.
