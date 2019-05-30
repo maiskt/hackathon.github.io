@@ -120,13 +120,36 @@ Levels:
 + 99=Missing
 
 ## MM_BILL
-This question asks respondents they have ever paid for bills using mobile money.
+Ever use of mobile money for bill payment: counts respondents who have ever paid for bills using mobile money.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_GOV
-This question asks respondents they have ever paid for bills using mobile money.
+Ever used mobile money to receive money from the government using mobile money.
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_WAGE
-This question asks if respondents have ever recieved working wages via monbile money.
+Ever used mobile money to recieve working wages.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_INSURANCE
-This question asks respondents if they have ever used mobile money to either recieve or pay for insurance benefits.
+Ever use mobile money to pay for insurance or receive benefits.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_SAVE
 This question asks respondents if they have ever saved/deposited money electonically.
 ## MM_INVEST
