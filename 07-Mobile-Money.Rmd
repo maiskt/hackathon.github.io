@@ -112,7 +112,7 @@ Levels:
 + 99=Missing
 
 ## MM_MERCHANT
-Ever use of mobile money for purchase: counts respondents who have ever used mobily money to pay for goods and/or services.
+Ever use of mobile money for purchases: counts respondents who have ever used mobily money to pay for goods and/or services.
 
 Levels:
 + 1=Yes
@@ -167,7 +167,7 @@ Levels:
 + 99=Missing
 
 ## MM_LOAN
-Ever use mobile money for laons: counts respondents who have ever borrowed money from someone outside their household or bought something on credit using mobile money.
+Ever use mobile money for loans: counts respondents who have ever borrowed money from someone outside their household or bought something on credit using mobile money.
 
 Levels:
 + 1=Yes
@@ -175,17 +175,53 @@ Levels:
 + 99=Missing
 
 ## MM_AIRTIME
-This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.
+Ever used mobile money to purchase airtime top-ups or pay for a mobile phone bill.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_TRANSFER
-This mobile money question asks respondents if they have, within the last 90 days, sent or recieved money from another person.
+Active use of mobile money transfer: counts respondents who sent or recieved money using mobile money in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_MERCHANT
-This question asks respondents if they have, within the last 90 days, used mobily money to pay for goods and/or services.
+Active use of mobile money for purchases: counts respondents who used mobily money to pay for goods and/or services in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_BILL
-This question asks respondents they have, within the last 90 days, paid for bills using mobile money.
+Active use of mobile money for bill payment: counts respondents who paid for bills using mobile money in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_GOV
-This question asks respondents they have, within the last 90 days, paid for bills using mobile money.
+Used mobile money to receive money from the government in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_WAGE
-This question asks if respondents have, within the last 90 days, recieved working wages via monbile money.
+Used mobile money in the last 90 days to recieve working wages from an employer.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_INSURANCE
 This question asks respondents if they have, within the last 90 days, used mobile money to either recieve or pay for insurance benefits.
 ## ACTIVE_MM_SAVE
