@@ -72,9 +72,16 @@ Levels:
 + 0=No
 
 ## MM_BASIC
+Ever use mobile money for basic activities: counts respondents who have used a mobile money account for cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## MM_ADV
 ## REG_MM_BASIC
 ## REG_MM_ADV
+
 ## ACTIVE_MM_BASIC
 ## ACTIVE_MM_ADV
 ## ACTIVE30_MM_ADV
