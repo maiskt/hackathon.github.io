@@ -104,9 +104,21 @@ Levels:
 + 4="Active mobile money advanced user"
 
 ## MM_TRANSFER
-This mobile money question asks respondents if they have ever sent or recieved money from another person. 
+Ever use mobile money for transfer: counts respondents who have ever used mobile money to send or receive money.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_MERCHANT
-This question asks respondents if they have ever used mobily money to pay for goods and/or services.
+Ever use of mobile money for purchase: counts respondents who have ever used mobily money to pay for goods and/or services.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_BILL
 This question asks respondents they have ever paid for bills using mobile money.
 ## MM_GOV
