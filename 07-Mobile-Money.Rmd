@@ -3,15 +3,74 @@
 Mobile Money Services
 
 ## AWARE_MM
+Mobile money awareness: counts respondents who are aware of mobile money service.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## AWARE_MM_PROVIDER
+Mobile money provider awareness: counts respondents who know at least one mobile money provider.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## AWARE_NONUSER_MM
+Nonuser but aware of mobile money: counts respondents who are aware of mobile money service but have never used it.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## ACCESS_MM
+Ever use of mobile money: counts respondents who have ever used mobile money service for any financial activity. 
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## REGISTERED_MM
+Have a mobile money account: counts respondents who have a mobile money registered in their name. 
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## ACTIVE_MM
+Mobile money use in last 90 days: counts respondents who used their registered mobile money account in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## ACTIVE30_MM
+Mobile money use in last 30 days: counts respondents who used their registered mobile money account in the last 30 days.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## INACTIVE_MM
+Inactive mobile user: counts respondents who have not used their mobile money account for any activity in the last 90 days.
+Levels:
++ 1=Yes
++ 0=No
+
 ## DORMANT_MM
+Dormant mobile money account: counts respondents who have never used their registered mobile money account.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## OTC_MM
+Nonregistered mobile money users: counts respondents who do not have a mobile money account registered in their name but use mobile money services over the counter. 
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## MM_BASIC
 ## MM_ADV
 ## REG_MM_BASIC
