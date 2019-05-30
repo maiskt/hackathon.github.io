@@ -79,6 +79,12 @@ Levels:
 + 0=No
 
 ## MM_ADV
+Ever use mobile money for advanced activities: counts respondents who have used a mobile money account for activities other than cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## REG_MM_BASIC
 ## REG_MM_ADV
 
@@ -86,7 +92,17 @@ Levels:
 ## ACTIVE_MM_ADV
 ## ACTIVE30_MM_ADV
 ## LENGTH_MM
+
+
 ## MM_STAGE
+Customer journey segmentation for mobile money
+Levels:
++ 0="Mobile money nonuser"
++ 1="Unregistered mobile money user"
++ 2="Inactive registered mobile money user"
++ 3="Active mobile money basic user"
++ 4"Active mobile money advanced user"
+
 ## MM_TRANSFER
 This mobile money question asks respondents if they have ever sent or recieved money from another person. 
 ## MM_MERCHANT
