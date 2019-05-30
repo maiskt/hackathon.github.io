@@ -143,7 +143,7 @@ Levels:
 + 99=Missing
 
 ## MM_INSURANCE
-Ever use mobile money to pay for insurance or receive benefits.
+Ever used mobile money to pay for insurance or receive benefits.
 
 Levels:
 + 1=Yes
@@ -151,11 +151,29 @@ Levels:
 + 99=Missing
 
 ## MM_SAVE
-This question asks respondents if they have ever saved/deposited money electonically.
+Ever used mobile money for savings.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_INVEST
-This question asks respondents if they have ever made an investment using mobile money.
+Ever used mobile to make an investment.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_LOAN
-This question asks respondents if they have ever borrowed money from someone outside their household or bought something on credit using mobile money.
+Ever use mobile money for laons: counts respondents who have ever borrowed money from someone outside their household or bought something on credit using mobile money.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_AIRTIME
 This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.
 ## ACTIVE_MM_TRANSFER
