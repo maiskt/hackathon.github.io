@@ -101,7 +101,7 @@ Levels:
 + 1="Unregistered mobile money user"
 + 2="Inactive registered mobile money user"
 + 3="Active mobile money basic user"
-+ 4"Active mobile money advanced user"
++ 4="Active mobile money advanced user"
 
 ## MM_TRANSFER
 This mobile money question asks respondents if they have ever sent or recieved money from another person. 
