@@ -274,19 +274,75 @@ Levels:
 
 
 ## STM_MM2
-Opinion about mobile money service- transaction completed without any problem
+Opinion about mobile money service- transaction completed without any problem.
+
+Levels: 
++ 1 = Strongly disagree
++ 2 = Somewhat disagree
++ 3 = Neither disagree, nor agree
++ 4 = Somewhat agree
++ 5 = Strongly agree
+
 ## STM_MM3
-Opinion about mobile money service- Money usually accessible without any problem
+Opinion about mobile money service- Money usually accessible without any problem.
+
+Levels: 
++ 1 = Strongly disagree
++ 2 = Somewhat disagree
++ 3 = Neither disagree, nor agree
++ 4 = Somewhat agree
++ 5 = Strongly agree
+
 ## STM_MM4
-Opinion about mobile money service- Merchant payment usually accepted without any problem
+Opinion about mobile money service- Merchant payment usually accepted without any problem.
+
+Levels: 
++ 1 = Strongly disagree
++ 2 = Somewhat disagree
++ 3 = Neither disagree, nor agree
++ 4 = Somewhat agree
++ 5 = Strongly agree
+
 ## STM_MM5
-Opinion about mobile money service- Comfortable using it for digital payments to merchants
+Opinion about mobile money service- Comfortable using it for digital payments to merchants.
+
+Levels: 
++ 1 = Strongly disagree
++ 2 = Somewhat disagree
++ 3 = Neither disagree, nor agree
++ 4 = Somewhat agree
++ 5 = Strongly agree
+
 ## STM_MM6
-Opinion about mobile money service- Comfortable using it for salaries
+Opinion about mobile money service- Comfortable using it for salaries.
+
+Levels: 
++ 1 = Strongly disagree
++ 2 = Somewhat disagree
++ 3 = Neither disagree, nor agree
++ 4 = Somewhat agree
++ 5 = Strongly agree
+
 ## STM_MM7
-Opinion about mobile money service- Comfortable using it for cash deposits and withdrawals
+Opinion about mobile money service- Comfortable using it for cash deposits and withdrawals.
+
+Levels: 
++ 1 = Strongly disagree
++ 2 = Somewhat disagree
++ 3 = Neither disagree, nor agree
++ 4 = Somewhat agree
++ 5 = Strongly agree
+
 ## STM_MM8
-Opinion about mobile money service- Easier for savings than cash
+Opinion about mobile money service- Easier for savings than cash.
+
+Levels: 
++ 1 = Strongly disagree
++ 2 = Somewhat disagree
++ 3 = Neither disagree, nor agree
++ 4 = Somewhat agree
++ 5 = Strongly agree
+
 ## EXP_MA1
 ## EXP_MA2
 ## EXP_MA3
