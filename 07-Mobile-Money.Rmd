@@ -344,7 +344,7 @@ Levels:
 + 5 = Strongly agree
 
 ## EXP_MA1
-Experience with mobile money agent -
+Experience with mobile money agent -Agent absent
 
 Levels
 + 1 = Never
@@ -355,7 +355,7 @@ Levels
 
 
 ## EXP_MA2
-Experience with mobile money agent -
+Experience with mobile money agent - Poor customer service
 
 Levels
 + 1 = Never
@@ -365,7 +365,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA3
-Experience with mobile money agent -
+Experience with mobile money agent - Agent lacks enough money for the transaction
 
 Levels
 + 1 = Never
@@ -375,7 +375,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA4
-Experience with mobile money agent -
+Experience with mobile money agent - Agent didn't know how perform the transaction
 
 Levels
 + 1 = Never
@@ -385,7 +385,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA5
-Experience with mobile money agent -
+Experience with mobile money agent - Agent overcharged for transaction
 
 Levels
 + 1 = Never
@@ -395,7 +395,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA6
-Experience with mobile money agent -
+Experience with mobile money agent -Agent didn't give all the cash due
 
 Levels
 + 1 = Never
@@ -405,7 +405,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA7
-Experience with mobile money agent -
+Experience with mobile money agent -system/network down
 
 Levels
 + 1 = Never
@@ -415,7 +415,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA8
-Experience with mobile money agent -
+Experience with mobile money agent -Agent dismissive of women
 
 Levels
 + 1 = Never
@@ -425,7 +425,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA9
-Experience with mobile money agent -
+Experience with mobile money agent -Agent's place not safe
 
 Levels
 + 1 = Never
@@ -435,7 +435,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA10
-Experience with mobile money agent -
+Experience with mobile money agent -Agent shared personal/account information with others without consent 
 
 Levels
 + 1 = Never
@@ -445,7 +445,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA11
-Experience with mobile money agent -
+Experience with mobile money agent - Rude agent
 
 Levels
 + 1 = Never
@@ -455,7 +455,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA12
-Experience with mobile money agent -
+Experience with mobile money agent -Agent's refusal to perform transaction for no reason
 
 Levels
 + 1 = Never
@@ -465,7 +465,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA13
-Experience with mobile money agent -
+Experience with mobile money agent -Transaction was time-consuming
 
 Levels
 + 1 = Never
@@ -475,7 +475,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA14
-Experience with mobile money agent -
+Experience with mobile money agent - Didn't get a receipt
 
 Levels
 + 1 = Never
@@ -485,7 +485,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA15
-Experience with mobile money agent -
+Experience with mobile money agent -Agent charged for depositing money
 
 Levels
 + 1 = Never
@@ -495,7 +495,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA16
-Experience with mobile money agent -
+Experience with mobile money agent -Agent asked for PIN number
 
 Levels
 + 1 = Never
@@ -505,7 +505,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA17
-Experience with mobile money agent -
+Experience with mobile money agent - Agent committed fraud
 
 Levels
 + 1 = Never
@@ -515,7 +515,7 @@ Levels
 + 5 = Almost always
 
 ## EXP_MA18
-Experience with mobile money agent -
+Experience with mobile money agent - Agent's refusal to do transaction due to lack of ID
 
 Levels
 + 1 = Never
