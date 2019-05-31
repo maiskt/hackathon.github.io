@@ -543,63 +543,61 @@ Levels
 ## EXPSV_MA17
 
 ## R_NOTUSE_MM1
-Reason for not using mobile money - Don't know enough about it
+Reason for not using mobile money - Do not know enough about it
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM2
-Reason for not using mobile money - 
+Reason for not using mobile money - Do not need it
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM3
-Reason for not using mobile money - 
-
+Reason for not using mobile money - Do not have required documents
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM4
-Reason for not using mobile money - 
-
+Reason for not using mobile money - Do not have enough money to use it
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM5
-Reason for not using mobile money - 
+Reason for not using mobile money - Do not trust it
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM6
-Reason for not using mobile money - 
+Reason for not using mobile money - Feel like at risk of losing money
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM7
-Reason for not using mobile money - 
+Reason for not using mobile money - Prefer using cash
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM8
-Reason for not using mobile money - 
+Reason for not using mobile money - Fees and expenses are too high 
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM9
-Reason for not using mobile money - 
+Reason for not using mobile money - Can use friend or family member's account  
 
 Levels:
 + 1= Yes
@@ -613,63 +611,35 @@ Levels:
 + 2= No
 
 ## R_NOTUSE_MM11
-Reason for not using mobile money - 
+Reason for not using mobile money - Do not use products and services requiring a registered account 
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM12
-Reason for not using mobile money - 
+Reason for not using mobile money - Do not know how to register an account
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM13
-Reason for not using mobile money - 
+Reason for not using mobile money - No longer have an account 
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM14
-Reason for not using mobile money - 
+Reason for not using mobile money - Prefer using another financial account
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM15
-Reason for not using mobile money - 
-
-Levels:
-+ 1= Yes
-+ 2= No
-
-## R_NOTUSE_MM16
-Reason for not using mobile money - 
-
-Levels:
-+ 1= Yes
-+ 2= No
-
-## R_NOTUSE_MM17
-Reason for not using mobile money - 
-
-Levels:
-+ 1= Yes
-+ 2= No
-
-## R_NOTUSE_MM18
-Reason for not using mobile money - 
-
-Levels:
-+ 1= Yes
-+ 2= No
-
-## R_NOTUSE_MM19
-Reason for not using mobile money - 
+Reason for not using mobile money - Do not have enough money to use a registered account
 
 Levels:
 + 1= Yes
