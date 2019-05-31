@@ -248,13 +248,19 @@ Levels:
 
 ## ACTIVE_MM_LOAN
 Active use of mobile money for loans: counts respondents who used mobile money in the last 90 days to borrow money or get credit.
+
 Levels:
 + 1=Yes
 + 0=No
 + 99=Missing
 
 ## ACTIVE_MM_AIRTIME
-This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.
+Active use of mobile for airtime top-up: counts respondents who used mobile money to purchase airtime top-ups or pay for a mobile phone bill in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
 
 ## STM_MM1
 ## STM_MM2
