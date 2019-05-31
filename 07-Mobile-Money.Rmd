@@ -263,13 +263,30 @@ Levels:
 + 99=Missing
 
 ## STM_MM1
+Opinion about mobile money services- money is safe and secure
+
+Levels: 
++ 1 = Strongly disagree
++ 2 = Somewhat disagree
++ 3 = Neither disagree, nor agree
++ 4 = Somewhat agree
++ 5 = Strongly agree
+
+
 ## STM_MM2
+Opinion about mobile money service- transaction completed without any problem
 ## STM_MM3
+Opinion about mobile money service- Money usually accessible without any problem
 ## STM_MM4
+Opinion about mobile money service- Merchant payment usually accepted without any problem
 ## STM_MM5
+Opinion about mobile money service- Comfortable using it for digital payments to merchants
 ## STM_MM6
+Opinion about mobile money service- Comfortable using it for salaries
 ## STM_MM7
+Opinion about mobile money service- Comfortable using it for cash deposits and withdrawals
 ## STM_MM8
+Opinion about mobile money service- Easier for savings than cash
 ## EXP_MA1
 ## EXP_MA2
 ## EXP_MA3
