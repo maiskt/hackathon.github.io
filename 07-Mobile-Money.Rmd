@@ -344,23 +344,186 @@ Levels:
 + 5 = Strongly agree
 
 ## EXP_MA1
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
+
 ## EXP_MA2
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA3
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA4
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA5
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA6
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA7
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA8
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA9
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA10
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA11
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA12
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA13
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA14
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA15
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA16
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA17
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA18
+Experience with mobile money agent -
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXPSV_MA1
 ## EXPSV_MA2
 ## EXPSV_MA3
