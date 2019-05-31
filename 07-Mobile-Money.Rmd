@@ -541,25 +541,140 @@ Levels
 ## EXPSV_MA15
 ## EXPSV_MA16
 ## EXPSV_MA17
+
 ## R_NOTUSE_MM1
+Reason for not using mobile money - Don't know enough about it
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM2
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM3
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM4
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM5
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM6
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM7
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM8
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM9
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM10
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM11
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM12
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM13
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM14
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM15
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM16
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM17
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM18
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM19
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM1
 ## R_USE_MM2
 ## R_USE_MM3
