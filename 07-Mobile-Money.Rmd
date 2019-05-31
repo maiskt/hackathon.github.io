@@ -646,14 +646,68 @@ Levels:
 + 2= No
 
 ## R_USE_MM1
+Reason started to use mobile money -
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM2
+Reason started to use mobile money -
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM3
+Reason started to use mobile money -
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM4
+Reason started to use mobile money -
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM5
+Reason started to use mobile money -
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM6
+Reason started to use mobile money -
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM7
+Reason started to use mobile money -
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM8
+Reason started to use mobile money -
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM9
+Reason started to use mobile money -
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## ACTION_MM1
 ## ACTION_MM2
 ## ACTION_MM3
