@@ -3,64 +3,264 @@
 Mobile Money Services
 
 ## AWARE_MM
+Mobile money awareness: counts respondents who are aware of mobile money service.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## AWARE_MM_PROVIDER
+Mobile money provider awareness: counts respondents who know at least one mobile money provider.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## AWARE_NONUSER_MM
+Nonuser but aware of mobile money: counts respondents who are aware of mobile money service but have never used it.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## ACCESS_MM
+Ever use of mobile money: counts respondents who have ever used mobile money service for any financial activity. 
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## REGISTERED_MM
+Have a mobile money account: counts respondents who have a mobile money registered in their name. 
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## ACTIVE_MM
+Mobile money use in last 90 days: counts respondents who used their registered mobile money account in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## ACTIVE30_MM
+Mobile money use in last 30 days: counts respondents who used their registered mobile money account in the last 30 days.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## INACTIVE_MM
+Inactive mobile user: counts respondents who have not used their mobile money account for any activity in the last 90 days.
+Levels:
++ 1=Yes
++ 0=No
+
 ## DORMANT_MM
+Dormant mobile money account: counts respondents who have never used their registered mobile money account.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## OTC_MM
+Nonregistered mobile money users: counts respondents who do not have a mobile money account registered in their name but use mobile money services over the counter. 
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## MM_BASIC
+Ever use mobile money for basic activities: counts respondents who have used a mobile money account for cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## MM_ADV
+Ever use mobile money for advanced activities: counts respondents who have used a mobile money account for activities other than cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
+
+Levels:
++ 1=Yes
++ 0=No
+
 ## REG_MM_BASIC
 ## REG_MM_ADV
+
 ## ACTIVE_MM_BASIC
 ## ACTIVE_MM_ADV
 ## ACTIVE30_MM_ADV
 ## LENGTH_MM
+
+
 ## MM_STAGE
+Customer journey segmentation for mobile money
+Levels:
++ 0="Mobile money nonuser"
++ 1="Unregistered mobile money user"
++ 2="Inactive registered mobile money user"
++ 3="Active mobile money basic user"
++ 4="Active mobile money advanced user"
+
 ## MM_TRANSFER
-This mobile money question asks respondents if they have ever sent or recieved money from another person. 
+Ever use mobile money for transfer: counts respondents who have ever used mobile money to send or receive money.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_MERCHANT
-This question asks respondents if they have ever used mobily money to pay for goods and/or services.
+Ever use of mobile money for purchases: counts respondents who have ever used mobily money to pay for goods and/or services.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_BILL
-This question asks respondents they have ever paid for bills using mobile money.
+Ever use of mobile money for bill payment: counts respondents who have ever paid for bills using mobile money.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_GOV
-This question asks respondents they have ever paid for bills using mobile money.
+Ever used mobile money to receive money from the government using mobile money.
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_WAGE
-This question asks if respondents have ever recieved working wages via monbile money.
+Ever used mobile money to recieve working wages.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_INSURANCE
-This question asks respondents if they have ever used mobile money to either recieve or pay for insurance benefits.
+Ever used mobile money to pay for insurance or receive benefits.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_SAVE
-This question asks respondents if they have ever saved/deposited money electonically.
+Ever used mobile money for savings.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_INVEST
-This question asks respondents if they have ever made an investment using mobile money.
+Ever used mobile to make an investment.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_LOAN
-This question asks respondents if they have ever borrowed money from someone outside their household or bought something on credit using mobile money.
+Ever use mobile money for loans: counts respondents who have ever borrowed money or got credit using mobile money.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## MM_AIRTIME
-This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.
+Ever used mobile money to purchase airtime top-ups or pay for a mobile phone bill.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_TRANSFER
-This mobile money question asks respondents if they have, within the last 90 days, sent or recieved money from another person.
+Active use of mobile money transfer: counts respondents who sent or recieved money using mobile money in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_MERCHANT
-This question asks respondents if they have, within the last 90 days, used mobily money to pay for goods and/or services.
+Active use of mobile money for purchases: counts respondents who used mobily money to pay for goods and/or services in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_BILL
-This question asks respondents they have, within the last 90 days, paid for bills using mobile money.
+Active use of mobile money for bill payment: counts respondents who paid for bills using mobile money in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_GOV
-This question asks respondents they have, within the last 90 days, paid for bills using mobile money.
+Used mobile money to receive money from the government in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_WAGE
-This question asks if respondents have, within the last 90 days, recieved working wages via monbile money.
+Used mobile money in the last 90 days to recieve working wages from an employer.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_INSURANCE
-This question asks respondents if they have, within the last 90 days, used mobile money to either recieve or pay for insurance benefits.
+Active use of mobile money for insurance: counts respondents who used mobile money to pay for insurance or receive insurance payments in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_SAVE
-This question asks respondents if they have, within the last 90 days, saved/deposited money electonically.
+Active use of mobile money for savings: counts respondents who used mobile money to save money in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_INVEST
-This question asks respondents if they have, within the last 90 days, made an investment using mobile money.
+Active use of mobile money for investments: counts respondents who used mobile money to make an investment in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_LOAN
-This question asks respondents if they have, within the last 90 days, borrowed money from someone outside their household or bought something on credit using mobile money.
+Active use of mobile money for loans: counts respondents who used mobile money in the last 90 days to borrow money or get credit.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_AIRTIME
-This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.
+Active use of mobile for airtime top-up: counts respondents who used mobile money to purchase airtime top-ups or pay for a mobile phone bill in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
 
 ## STM_MM1
 ## STM_MM2

@@ -384,13 +384,13 @@ Note:
               
 
 ## ACTIVE_BANK_BILL
-Active use of bank for bill payment: Counts individuals who paid bills using a bank in the last 90 days. For example, Bangladesh 2017 uses the following questions.
+Active use of bank for bill payment: Counts individuals who paid bills using a bank account in the last 90 days. For example, Bangladesh 2017 uses the following questions.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_3      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a                            school fee.
-      FF16_4      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a bill                      for medical expenses, housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
-      FF16_5      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a                            government bill, including tax, fine or fee.
+      FF16_3      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a                                  school fee.
+      FF16_4      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a bill                            for medical expenses, housing, rent or utilities, such as electricity, water, solar, satellite TV or cable TV
+      FF16_5      |  Please tell me when was the last time you used a bank account for this activity, other than today? Paid a                                  government bill, including tax, fine or fee.
       
 Levels
 
@@ -402,11 +402,11 @@ Note:
 * ACTIVE_BANK_BILL questions are not available for 2013 and 2014 surveys.       
 
 ## ACTIVE_BANK_GOV
-Active use of bank for receiving money: Counts individuals who received money from the government using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_7.
+Active use of bank for receiving money: Counts individuals who received money from the government using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_7.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_7      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received a                        welfare, pension or other benefit payment from the government.  
+      FF16_7      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received a                              welfare, pension or other benefit payment from the government.  
       
 Levels
 
@@ -418,11 +418,11 @@ Note:
 * ACTIVE_BANK_GOV questions are not available for 2013 and 2014 surveys.  
 
 ## ACTIVE_BANK_WAGE
-Active use of bank for wages: Counts individuals who received payment from an employer using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_8.
+Active use of bank for wages: Counts individuals who received a payment from an employer using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_8.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_8      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received                          wages for your primary or secondary job.
+      FF16_8      |  Please tell me when was the last time you used a bank account for this activity, other than today? Received                                wages for your primary or secondary job.
       
 Levels
 
@@ -434,7 +434,7 @@ Note:
 * ACTIVE_BANK_WAGE questions are not available for 2013 and 2014 surveys.        
 
 ## ACTIVE_BANK_INSURANCE
-Active use of bank fro insurance: Counts individuals who paid for insurance or received payment from insurance using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_9.
+Active use of bank for insurance: Counts individuals who paid for insurance or received payment from insurance using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_9.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -450,11 +450,11 @@ Note:
 * ACTIVE_BANK_INSURANCE questions are not available for 2013 and 2014 surveys.  
 
 ## ACTIVE_BANK_SAVE
-Active of bank for saving: Counts individuals who saved using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_11.
+Active use of bank for saving: Counts individuals who saved using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_11.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_11     |  Please tell me when was the last time you used a bank account for this activity, other than today? Saved money                      for any reason.
+      FF16_11     |  Please tell me when was the last time you used a bank account for this activity, other than today? Saved money                            for any reason.
       
 Levels
 
@@ -466,11 +466,11 @@ Note:
 * ACTIVE_BANK_SAVE questions are not available for 2013 and 2014 surveys.         
 
 ## ACTIVE_BANK_INVEST
-Active use of bank for investment: Counts individuals who made an investment using a bank in the last 90 days. For example, Bangladesh 2017 uses FF16_12.
+Active use of bank for investment: Counts individuals who made an investment using a bank account in the last 90 days. For example, Bangladesh 2017 uses FF16_12.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_12     |  Please tell me when was the last time you used a bank account for this activity, other than today? Made an                          investment, including bought stock or shares.
+      FF16_12     |  Please tell me when was the last time you used a bank account for this activity, other than today? Made an                                investment, including bought stock or shares.
       
 Levels
 
@@ -486,7 +486,7 @@ Active use of bank for loans: Counts individuals who borrowed money from a bank 
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_10     |  Please tell me when was the last time you used a bank account for this activity, other than today? Took a loan                      or made payments on a loan.
+      FF16_10     |  Please tell me when was the last time you used a bank account for this activity, other than today? Took a loan                            or made payments on a loan.
       
 Levels
 
@@ -498,11 +498,11 @@ Note:
 * ACTIVE_BANK_LOAN questions are not available for 2013 and 2014 surveys.         
 
 ## ACTIVE_BANK_AIRTIME
-Active use of bank for airtime top-ups: Counts individuals who bought airtime top-ups or paid a mobile phone bill in the last 90 days using a bank. For example, Bangladesh 2017 uses FF16_2.
+Active use of bank for airtime top-ups: Counts individuals who bought airtime top-ups or paid a mobile phone bill in the last 90 days using a bank account. For example, Bangladesh 2017 uses FF16_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF16_2      |  Please tell me when was the last time you used a bank account for this activity, other than today? Bought                            airtime top-ups or paid a mobile phone bill. 
+      FF16_2      |  Please tell me when was the last time you used a bank account for this activity, other than today? Bought                                  airtime top-ups or paid a mobile phone bill. 
       
 Levels
 
@@ -514,7 +514,7 @@ Note:
 * ACTIVE_BANK_AIRTIME questions are not available for 2013 and 2014 surveys.
 
 ## R_NOBANK1
-Reasons for NO bank account (You don't have the required documents): Counts individuals who do not have a bank account since lack of required documents. For example, Bangladesh 2018 uses FF3_1.
+Have no bank account due lack of required documents: Counts individuals who do not have a bank account because of the lack of required documents. For example, Bangladesh 2018 uses FF3_1.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -527,12 +527,11 @@ Levels
 
 Note:
 
-* R_NOBANK1 questions are only available for 2017 and 2018 surveys.
-* For 2017 survey, FF3 set questions are a little different from 2018 survey. 2017 survey asks in this way, "FF3.1.How much you agree or disagree the reason why people do not register bank accounts in their name applies to your situation? Lack of official identification or other required documents". And levels are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. We reode level 4 and 5 into "Yes" and recode other levels as well as system missing into "No".
+* R_NOBANK1 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Lack of official identification or other required documents".  Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
 
 
 ## R_NOBANK2
-Reasons for NO bank account (Fees and expenses for using banks are too high): Counts individuals who do not have a bank account since fees and expenses for using banks are too high. For example, Bangladesh 2018 uses FF3_2.
+Have no bank account due to high costs: Counts individuals who do not have a bank account because since fees and expenses for using banks are too high. For example, Bangladesh 2018 uses FF3_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -545,11 +544,10 @@ Levels
 
 Note:
 
-* R_NOBANK2 questions are only available for 2017 and 2018 surveys.
-* For 2017 survey, FF3 set questions are a little different from 2018 survey. 2017 survey asks in this way, "FF3.2.How much you agree or disagree the reason why people do not register bank accounts in their name applies to your situation? Fees and expenses for owning an account are too high". And levels are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. We reode level 4 and 5 into "Yes" and recode other levels as well as system missing into "No".
+* R_NOBANK2 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Fees and expenses for owning an account are too high FF3". Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
 
 ## R_NOBANK3
-Reasons for NO bank account (You don't need a bank account): Counts individuals who do not have a bank account since do not need one. For example, Bangladesh 2018 uses FF3_3.
+Have no bank account due to lack of need: Counts individuals who do not have a bank account because they do not need one. For example, Bangladesh 2018 uses FF3_3.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -562,11 +560,10 @@ Levels
 
 Note:
 
-* R_NOBANK3 questions are only available for 2017 and 2018 surveys.
-* For 2017 survey, FF3 set questions are a little different from 2018 survey. 2017 survey asks in this way, "FF3.4.How much you agree or disagree the reason why people do not register bank accounts in their name applies to your situation? Do not need one or have never thought of using one". And levels are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. We reode level 4 and 5 into "Yes" and recode other levels as well as system missing into "No".
+* R_NOBANK3 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Do not need one or have never thought of using one". Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
 
 ## R_NOBANK4
-Reasons for NO bank account (The closest bank is too far away): Counts individuals who do not have a bank account since the closest bank is too far away. For example, Bangladesh 2018 uses FF3_5.
+Have no bank account due to distance: Counts individuals who do not have a bank account because the closest bank is too far away. For example, Bangladesh 2018 uses FF3_5.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -579,11 +576,10 @@ Levels
 
 Note:
 
-* R_NOBANK4 questions are only available for 2017 and 2018 surveys.
-* For 2017 survey, FF3 set questions are a little different from 2018 survey. 2017 survey asks in this way, "FF3.5.How much you agree or disagree the reason why people do not register bank accounts in their name applies to your situation? No banks nearby". And levels are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. We reode level 4 and 5 into "Yes" and recode other levels as well as system missing into "No".
+* R_NOBANK4 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? No bank nearby". Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
 
 ## R_NOBANK5
-Reasons for NO bank account (You don't have enough money to use the account): Counts individuals who do not have a bank account since do not have enough money. For example, Bangladesh 2018 uses FF3_6.
+Have no bank account due to lack of enough money: Counts individuals who do not have a bank account because they do not have enough money. For example, Bangladesh 2018 uses FF3_6.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -596,15 +592,15 @@ Levels
 
 Note:
 
-* R_NOBANK5 questions are only available for 2017 and 2018 surveys.
-* For 2017 survey, FF3 set questions are a little different from 2018 survey. 2017 survey asks in this way, "FF3.3.How much you agree or disagree the reason why people do not register bank accounts in their name applies to your situation? Lack of money to use the account". And levels are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. We reode level 4 and 5 into "Yes" and recode other levels as well as system missing into "No".
+* R_NOBANK5 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Lack of money to use the account". Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
+
 
 ## R_NOBANK_BUSI1
-Reasons for NOT use bank for business payments/purchases (Have to pay extra taxes): Counts individuals who do not use bank for business payments/purchases since need to pay extra taxes. For example, Bangladesh 2015 uses FF18_2.
+Reasons for not using banks for business payments/purchases (Have to pay extra taxes): Counts individuals who do not use banks for business payments/purchases because of extra taxes. For example, Bangladesh 2015 uses FF18_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF18_2      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?I will have to pay extra taxes
+      FF18_2      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?I will have to pay                      extra taxes
       
 Levels
 
@@ -613,14 +609,14 @@ Levels
 
 Note:
 
-* R_NOBANK_BUSI1 questions are only available for 2013, 2014 and 2015 surveys.
+* R_NOBANK_BUSI1 is only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI2
-Reasons for NOT use bank for business payments/purchases (Have to pay bribes to government officials to avoid taxation/licensing/paper work): Counts individuals who do not use bank for business payments/purchases since need to pay bribes to government officials to avoid taxation/licensing/paper work. For example, Bangladesh 2015 uses FF18_3.
+Reasons for not using banks for business payments/purchases (Have to pay bribes to government officials): Counts individuals who do not use banks for business payments/purchases because they need to pay bribes to government officials to avoid taxation/licensing/paper work. For example, Bangladesh 2015 uses FF18_3.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF18_3      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?I will have to pay bribes to government officials to avoid taxation/licensing/paper work
+      FF18_3      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?I will have to pay                      bribes to government officials to avoid taxation/licensing/paper work
       
 Levels
 
@@ -629,14 +625,14 @@ Levels
 
 Note:
 
-* R_NOBANK_BUSI2 questions are only available for 2013, 2014 and 2015 surveys.
+* R_NOBANK_BUSI2 is only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI3
-Reasons for NOT use bank for business payments/purchases (Business is not registered, it is not formal): Counts individuals who do not use bank for business payments/purchases since business is not registered. For example, Bangladesh 2015 uses FF18_4.
+Reasons for not using banks for business payments/purchases (Business is not registered, it is not formal): Counts individuals who do not use banks for business payments/purchases because thier business is not registered. For example, Bangladesh 2015 uses FF18_4.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF18_4      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?My business is not registered, it is not formal
+      FF18_4      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?My business is not                      registered, it is not formal
       
 Levels
 
@@ -645,14 +641,14 @@ Levels
 
 Note:
 
-* R_NOBANK_BUSI3 questions are only available for 2013, 2014 and 2015 surveys.
+* R_NOBANK_BUSI3 is only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI4
-Reasons for NOT use bank for business payments/purchases (Have to raise prices to pay account fees and people won't buy): Counts individuals who do not use bank for business payments/purchases since need to raise prices to pay account fees. For example, Bangladesh 2015 uses FF18_5.
+Reasons for not using banks for business payments/purchases (need to raise prices): Counts individuals who do not use banks for business payments/purchases because they need to raise prices to pay account fees. For example, Bangladesh 2015 uses FF18_5.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF18_5      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?To pay account fees I will have to raise prices and people won't buy from me
+      FF18_5      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?To pay account fees                      I will have to raise prices and people won't buy from me
       
 Levels
 
@@ -661,14 +657,14 @@ Levels
 
 Note:
 
-* R_NOBANK_BUSI4 questions are only available for 2013, 2014 and 2015 surveys.
+* R_NOBANK_BUSI4 is only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI5
-Reasons for NOT use bank for business payments/purchases (Business is too small to need a bank account): Counts individuals who do not use bank for business payments/purchases since business is too small to need a bank account. For example, Bangladesh 2015 uses FF18_6.
+Reasons for not using banks for business payments/purchases (small business): Counts individuals who do not use banks for business payments/purchases because thier business is too small to need a bank account. For example, Bangladesh 2015 uses FF18_6.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF18_6      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?My business is too small to need a bank account
+      FF18_6      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?My business is too                      small to need a bank account
       
 Levels
 
@@ -677,14 +673,14 @@ Levels
 
 Note:
 
-* R_NOBANK_BUSI5 questions are only available for 2013, 2014 and 2015 surveys.
+* R_NOBANK_BUSI5 is only available for 2013, 2014 and 2015 surveys.
 
 ## R_NOBANK_BUSI6
-Reasons for NOT use bank for business payments/purchases (Use other methods of payment): Counts individuals who do not use bank for business payments/purchases since they use other methods of payment. For example, Bangladesh 2015 uses FF18_7.
+Reasons for not using banks for business payments/purchases (Use other methods of payment): Counts individuals who do not use banks for business payments/purchases because they use other methods of payment. For example, Bangladesh 2015 uses FF18_7.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF18_7      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?I use other methods of payment
+      FF18_7      |  You said you do not use this bank account for any business payments/purchases. Please tell me why?I use other methods                      of payment
       
 Levels
 
@@ -693,7 +689,7 @@ Levels
 
 Note:
 
-* R_NOBANK_BUSI6 questions are only available for 2014 and 2015 surveys.
+* R_NOBANK_BUSI6 is only available for 2014 and 2015 surveys.
 
 ## EXP_BANK1
 Experience using a bank account (Unexpected charges): Counts individuals who had unexpected charges when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_1.
@@ -709,14 +705,14 @@ Levels
 
 Note:
 
-* EXP_BANK1 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK1 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK2
 Experience using a bank account (Lost money): Counts individuals who have ever lost money when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF19_2      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Lost money - Drop in available funds in bank account (Because of Bank mishandling or fraudulent activities by anyone)
+      FF19_2      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Lost money - Drop in                      available funds in bank account (Because of Bank mishandling or fraudulent activities by anyone)
       
 Levels
 
@@ -725,14 +721,14 @@ Levels
 
 Note:
 
-* EXP_BANK2 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK2 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK3
-Experience using a bank account (Registered a complaint or called a customer care line): Counts individuals who have ever registered a complaint or called a customer care line when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_3.
+Experience using a bank account (complaints): Counts individuals who have ever registered a complaint or called a customer care line when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_3.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF19_3      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Registered a complaint or called a customer care line
+      FF19_3      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Registered a                              complaint or called a customer care line
       
 Levels
 
@@ -741,10 +737,10 @@ Levels
 
 Note:
 
-* EXP_BANK3 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK3 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK4
-Experience using a bank account (ATM not working): Counts individuals who have ever met unworking ATM when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_4.
+Experience using a bank account (ATM not working): Counts individuals who have ever experienced an ATM not working when using a bank account in the past 6 months. For example, Bangladesh 2016 uses FF19_4.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -757,14 +753,14 @@ Levels
 
 Note:
 
-* EXP_BANK4 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK4 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK5
-Experience using a bank account (Debit/credit card did not work when paying for goods/services): Counts individuals who have ever got unworking ATM/ Debit/credit card when paying for goods/services in the past 6 months. For example, Bangladesh 2016 uses FF19_5.
+Experience using a bank account (Debit/credit card not working): Counts individuals who have experienced an ATM/ Debit/credit card ntot working when paying for goods/services in the past 6 months. For example, Bangladesh 2016 uses FF19_5.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF19_5      |  In the past 6 months, have you ever experienced any of the following when using a bank account? ATM/ Debit/credit card did not work when paying for goods/services
+      FF19_5      |  In the past 6 months, have you ever experienced any of the following when using a bank account? ATM/ Debit/credit                          card did not work when paying for goods/services
       
 Levels
 
@@ -773,15 +769,15 @@ Levels
 
 Note:
 
-* EXP_BANK5 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK5 is only available for 2015 and 2016 surveys.
 
 ## EXP_BANK6
-Experience using a bank account (Could not use your bank account because of system outages (online/offline)): Counts individuals who could not use bank account because of system outages (online/offline). For example, Bangladesh 2016 uses FF19_6 and FF19_7.
+Experience using a bank account (system outages): Counts individuals who could not use a bank account because of system outages (online/offline). For example, Bangladesh 2016 uses FF19_6 and FF19_7.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF19_6      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your bank account because of system outages (online)
-      FF19_7      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your bank account because of system outages (offline)
+      FF19_6      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your                        bank account because of system outages (online)
+      FF19_7      |  In the past 6 months, have you ever experienced any of the following when using a bank account? Could not use your                        bank account because of system outages (offline)
       
 Levels
 
@@ -790,14 +786,14 @@ Levels
 
 Note:
 
-* EXP_BANK6 questions are only available for 2015 and 2016 surveys.
+* EXP_BANK6 is only available for 2015 and 2016 surveys.
 
-## LCT_BANK1
-Location for bank activities (Over the counter at a bank branch): Counts individuals who ever used a bank account for any financial activity over the counter at a bank branch. For example, India 2015 uses FF10_1.
+## USE_BANK_OTC
+Use over the counter at a bank branch: Counts individuals who use a bank account for any financial activity over the counter at a bank branch. For example, India 2015 uses FF10_1.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_1      |  When you use a bank account for any financial activity, do you use any of the following? Over the counter at a bank branch
+      FF10_1      |  When you use a bank account for any financial activity, do you use any of the following? Over the counter at                      a bank branch
       
 Levels
 
@@ -806,10 +802,10 @@ Levels
 
 Note:
 
-* LCT_BANK1 questions are not available for 2017 and 2018 surveys.
+* USE_BANK_OTC is available only for 2017 and 2018 surveys.
 
-## LCT_BANK2
-Location for bank activities (ATM): Counts individuals who ever used a bank account for any financial activity at an ATM. For example, India 2015 uses FF10_2.
+## USE_BANK_ATM
+Use bank ATM: Counts individuals who use a bank account for any financial activity via an ATM. For example, India 2015 uses FF10_2.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -822,14 +818,14 @@ Levels
 
 Note:
 
-* LCT_BANK2 questions are not available for 2017 and 2018 surveys.
+* USE_BANK_ATM is only available for 2017 and 2018 surveys.
 
-## LCT_BANK3
-Location for bank activities (Bank deposits or withdrawals over the counter at a retail store): Counts individuals who ever used a bank account for any financial activity in bank deposits or withdrawals over the counter at a retail store. For example, India 2015 uses FF10_3.
+## USE_BANK_RETAIL
+Use bank at retail store: Counts individuals who use a bank account for any financial activity through deposits or withdrawals over the counter at a retail store. For example, India 2015 uses FF10_3.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_3      |  When you use a bank account for any financial activity, do you use any of the following? Bank deposits or withdrawals over the counter at a retail store
+      FF10_3      |  When you use a bank account for any financial activity, do you use any of the following? Bank deposits or                          withdrawals over the counter at a retail store
       
 Levels
 
@@ -838,15 +834,14 @@ Levels
 
 Note:
 
-* LCT_BANK3 questions are not available for 2017 and 2018 surveys.
-* LCT_BANK3 questions are not available for 2016 Bangladesh survey.
+* USE_BANK_RETAIL is not available for 2017 and 2018 surveys, and 2016 Bangladesh survey.
 
-## LCT_BANK4
-Location for bank activities (Bank's website/online banking): Counts individuals who ever used a bank account for any financial activity on Bank's website/online banking. For example, India 2015 uses FF10_4.
+## USE_BANK_ONLINE
+Use bank online: Counts individuals who use a bank account for any financial activity via the bank's website/online banking. For example, India 2015 uses FF10_4.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_4      |  When you use a bank account for any financial activity, do you use any of the following? Bank's website/online banking
+      FF10_4      |  When you use a bank account for any financial activity, do you use any of the following? Bank's                                    website/online banking
       
 Levels
 
@@ -857,12 +852,12 @@ Note:
 
 * LCT_BANK4 questions are not available for 2017 and 2018 surveys.
 
-## LCT_BANK5
-Location for bank activities (Mobile app/mobile banking): Counts individuals who ever used a bank account for any financial activity on Bank's website/online banking. For example, India 2015 uses FF10_5.
+## USE_BANK_MOBILE
+Use bank via mobile: Counts individuals who use a bank account for any financial activity via a mobile application or mobile banking. For example, India 2015 uses FF10_5.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_5      |  When you use a bank account for any financial activity, do you use any of the following? Bank's website/online banking
+      FF10_5      |  When you use a bank account for any financial activity, do you use any of the following? Mobile                                    application/mobile banking
       
 Levels
 
@@ -871,14 +866,14 @@ Levels
 
 Note:
 
-* LCT_BANK5 questions are not available for 2017 and 2018 surveys.
+* USE_BANK_MOBILE is not available for 2017 and 2018 surveys.
 
-## LCT_BANK6
-Location for bank activities (A door-to-door banking agent or another person who is associated with this bank or MFI/money collector/banking agent): Counts individuals who ever used a bank account for any financial activity at a door-to-door banking agent or  with another person who is associated with this bank or MFI/money collector/banking agent. For example, India 2015 uses FF10_6.
+## USE_BANK_AGENT
+Use banking agent: Counts individuals who use a bank account for any financial activity through a door-to-door banking agent or  with another person who is associated with the bank or MFI/money collector/banking agent. For example, India 2015 uses FF10_6.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_6      |  When you use a bank account for any financial activity, do you use any of the following? A door-to-door banking agent or another person who is associated with this bank
+      FF10_6      |  When you use a bank account for any financial activity, do you use any of the following? A door-to-door                            banking agent or another person who is associated with the bank
       
 Levels
 
@@ -887,14 +882,14 @@ Levels
 
 Note:
 
-* LCT_BANK6 questions are not available for 2017 and 2018 surveys.
+* USE_BANK_AGENT is not available for 2017 and 2018 surveys.
 
-## LCT_BANK7
-Location for bank activities (Mobile wallet): Counts individuals who ever used a bank account for any financial activity with mobile wallet. For example, India 2015 uses FF10_7.
+## USE_BANK_WALLET
+Use bank mobile wallet: Counts individuals who use a bank account for any financial activity via a mobile wallet. For example, India 2015 uses FF10_7.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
-      FF10_7      |  When you use a bank account for any financial activity, do you use any of the following? Through a mobile money by transferring money from my bank account to my phone and then withdrawing from a mobile money agent or vice versa
+      FF10_7      |  When you use a bank account for any financial activity, do you use any of the following? Through a mobile                          money by transferring money from my bank account to my phone and then withdrawing from a mobile money agent                        or vice versa
       
 Levels
 
@@ -903,7 +898,7 @@ Levels
 
 Note:
 
-* LCT_BANK7 questions are only available for 2014 and 2015 surveys.
+* USE_BANK_WALLET is only available for 2014 and 2015 surveys.
 
 
 
