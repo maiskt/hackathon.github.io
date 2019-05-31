@@ -167,7 +167,7 @@ Levels:
 + 99=Missing
 
 ## MM_LOAN
-Ever use mobile money for loans: counts respondents who have ever borrowed money from someone outside their household or bought something on credit using mobile money.
+Ever use mobile money for loans: counts respondents who have ever borrowed money or got credit using mobile money.
 
 Levels:
 + 1=Yes
@@ -223,15 +223,44 @@ Levels:
 + 99=Missing
 
 ## ACTIVE_MM_INSURANCE
-This question asks respondents if they have, within the last 90 days, used mobile money to either recieve or pay for insurance benefits.
+Active use of mobile money for insurance: counts respondents who used mobile money to pay for insurance or receive insurance payments in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_SAVE
-This question asks respondents if they have, within the last 90 days, saved/deposited money electonically.
+Active use of mobile money for savings: counts respondents who used mobile money to save money in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_INVEST
-This question asks respondents if they have, within the last 90 days, made an investment using mobile money.
+Active use of mobile money for investments: counts respondents who used mobile money to make an investment in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_LOAN
-This question asks respondents if they have, within the last 90 days, borrowed money from someone outside their household or bought something on credit using mobile money.
+Active use of mobile money for loans: counts respondents who used mobile money in the last 90 days to borrow money or get credit.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
+
 ## ACTIVE_MM_AIRTIME
-This question asks respondents if they have ever used mobile money to purchase mobile phone credit OR pay for a mobile phone bill.
+Active use of mobile for airtime top-up: counts respondents who used mobile money to purchase airtime top-ups or pay for a mobile phone bill in the last 90 days.
+
+Levels:
++ 1=Yes
++ 0=No
++ 99=Missing
 
 ## STM_MM1
 ## STM_MM2
