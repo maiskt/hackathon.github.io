@@ -344,23 +344,186 @@ Levels:
 + 5 = Strongly agree
 
 ## EXP_MA1
+Experience with mobile money agent -Agent absent
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
+
 ## EXP_MA2
+Experience with mobile money agent - Poor customer service
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA3
+Experience with mobile money agent - Agent lacks enough money for the transaction
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA4
+Experience with mobile money agent - Agent didn't know how perform the transaction
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA5
+Experience with mobile money agent - Agent overcharged for transaction
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA6
+Experience with mobile money agent -Agent didn't give all the cash due
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA7
+Experience with mobile money agent -system/network down
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA8
+Experience with mobile money agent -Agent dismissive of women
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA9
+Experience with mobile money agent -Agent's place not safe
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA10
+Experience with mobile money agent -Agent shared personal/account information with others without consent 
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA11
+Experience with mobile money agent - Rude agent
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA12
+Experience with mobile money agent -Agent's refusal to perform transaction for no reason
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA13
+Experience with mobile money agent -Transaction was time-consuming
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA14
+Experience with mobile money agent - Didn't get a receipt
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA15
+Experience with mobile money agent -Agent charged for depositing money
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA16
+Experience with mobile money agent -Agent asked for PIN number
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA17
+Experience with mobile money agent - Agent committed fraud
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXP_MA18
+Experience with mobile money agent - Agent's refusal to do transaction due to lack of ID
+
+Levels
++ 1 = Never
++ 2 = Once or twice
++ 3 = Sometimes
++ 4 = Often
++ 5 = Almost always
+
 ## EXPSV_MA1
 ## EXPSV_MA2
 ## EXPSV_MA3
@@ -378,25 +541,140 @@ Levels:
 ## EXPSV_MA15
 ## EXPSV_MA16
 ## EXPSV_MA17
+
 ## R_NOTUSE_MM1
+Reason for not using mobile money - Don't know enough about it
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM2
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM3
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM4
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM5
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM6
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM7
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM8
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM9
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM10
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM11
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM12
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM13
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM14
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM15
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM16
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM17
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM18
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_NOTUSE_MM19
+Reason for not using mobile money - 
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## R_USE_MM1
 ## R_USE_MM2
 ## R_USE_MM3

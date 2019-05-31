@@ -1,4 +1,4 @@
-* Encoding: UTF-8.
+* Encoding: windows-1252.
 variable labels SBJNUM"Subject ID"
 COUNTRY "COUNTRY"
 YEAR "YEAR"
@@ -3710,7 +3710,8 @@ or (IFI2_4<=4 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1)))  ACTIVE_DFS=
 Compute ACTIVE_DFS_ADV=0.
 IF ((FF1=1 and FF9=1 and FF14<=4 and (FF10_1=1 or FF10_2=1 or FF10_3=1) 
 and (FF19_3=1 or FF19_4=1 or FF19_5=1 or FF19_6=1 or FF19_7=1 or FF19_8=1 or FF19_9=1 or FF19_10=1 or 
-FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or FF19_19=1 or FF19_20=1 or FF19_21=1 or FF19_22=1 or FF19_23=1 or FF19_24=1 or FF19_25=1 or FF19_26=1 or FF19_27=1 or FF19_28=1 or FF19_29=1 or FF19_30=1 or FF19_31=1 or fl10_1=1 or fl13_1=1)) 
+FF19_15=1 or FF19_16=1 or FF19_17=1 or FF19_18=1 or FF19_19=1 or FF19_20=1 or FF19_21=1 or FF19_22=1 or FF19_23=1 or FF19_24=1 or FF19_25=1 or FF19_26=1 or FF19_27=1 or FF19_28=1 or FF19_29=1 or 
+FF19_30=1 or FF19_31=1 or fl10_1=1 or fl13_1=1)) 
 or ((MM14_1<=4 or MM14_2<=4 or MM14_3<=4 or MM14_4<=4 or MM14_5<=4 or MM14_6<=4 or MM14_7<=4)
 and (MM19_4=1 or MM19_5=1 or MM19_6=1 or MM19_7=1 or MM19_8=1 or MM19_9=1 or MM19_10=1 or MM19_11=1 or 
 MM19_16=1 or MM19_17=1 or MM19_18=1 or MM19_19=1 or MM19_20=1 or MM19_21=1 or MM19_22=1 or MM19_23=1 or MM19_24=1 or MM19_25=1 or MM19_26=1 or MM19_27=1 or MM19_28=1 or MM19_29=1 or MM19_30=1 or MM19_31=1 or MM19_32=1
