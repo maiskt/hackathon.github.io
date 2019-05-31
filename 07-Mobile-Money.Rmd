@@ -646,56 +646,56 @@ Levels:
 + 2= No
 
 ## R_USE_MM1
-Reason started to use mobile money -
+Reason started to use mobile money - Send or receive money
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_USE_MM2
-Reason started to use mobile money -
+Reason started to use mobile money - Save money
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_USE_MM3
-Reason started to use mobile money -
+Reason started to use mobile money - Have a secure place to store money
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_USE_MM4
-Reason started to use mobile money -
+Reason started to use mobile money - Someone else registered an account for me
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_USE_MM5
-Reason started to use mobile money -
+Reason started to use mobile money -Borrow money
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_USE_MM6
-Reason started to use mobile money -
+Reason started to use mobile money -Make a purchase
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_USE_MM7
-Reason started to use mobile money -
+Reason started to use mobile money -Make an investment
 
 Levels:
 + 1= Yes
 + 2= No
 
 ## R_USE_MM8
-Reason started to use mobile money -
+Reason started to use mobile money -Pay a bill
 
 Levels:
 + 1= Yes
