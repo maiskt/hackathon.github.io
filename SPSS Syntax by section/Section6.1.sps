@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 
 *Section 6.1.
 
@@ -694,7 +694,6 @@ IF ACCESS_BANK=0 and REGISTERED_BANK=1 DORMANT_BANK=1.
 count BANK_BASIC = FF14_1 FF14_2 FF14_9 FF14_10 FF14_23 (1).
 recode BANK_BASIC (1 thru highest=1).
 
-*Review.
 compute BANK_ADV=0.
 if (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_11=1 or FF14_12=1 or 
 FF14_13=1 or FF14_14=1 or FF14_15=1 or FF14_16=1 or FF14_17=1 or FF14_18=1 or FF14_19=1 or FF14_20=1 or 
@@ -1104,8 +1103,7 @@ IF ACCESS_BANK=0 and REGISTERED_BANK=1 DORMANT_BANK=1.
 count BANK_BASIC = FF14_1 FF14_2 FF14_11 FF14_12 FF14_28 (1).
 recode BANK_BASIC (1 thru highest=1).
 
-*Review.
-count BANK_ADV=ff14_3 to ff14_10 ff14_13 to ff14_27 FB16_1=1 FB22_1 (1).
+count BANK_ADV=ff14_3 to ff14_10 ff14_13 to ff14_27 FB16_1 FB22_1 (1).
 recode BANK_ADV (1 thru highest=1)(else=0).
 
 compute REG_BANK_BASIC=0.
@@ -1476,7 +1474,6 @@ IF ACCESS_BANK=0 and REGISTERED_BANK=1 DORMANT_BANK=1.
 count BANK_BASIC = FF19_1 FF19_2 FF19_11 FF19_12 FF19_13 FF19_14 (1).
 recode BANK_BASIC (1 thru highest=1).
 
-*Review.
 count BANK_ADV=ff19_3 ff19_4 ff19_5 ff19_6 ff19_7 ff19_8 ff19_9 ff19_10 ff19_15 ff19_16 ff19_17 ff19_18 ff19_19 
 ff19_20 ff19_21 ff19_22 ff19_23 ff19_24 ff19_25 ff19_26 ff19_27 ff19_28 ff19_29 ff19_30 ff19_31 fl10_1 fl13_1 (1).
 recode BANK_ADV (1 thru highest=1)(else=0).
@@ -1810,7 +1807,6 @@ IF ACCESS_BANK=0 and REGISTERED_BANK=1 DORMANT_BANK=1.
 count BANK_BASIC = FFI16_1 FFI16_2 (1).
 recode BANK_BASIC (1 thru HIGHEST=1).
 
-*Review.
 count BANK_ADV=FFI16_3 to FFI16_7 FFI16_12 to FFI16_25 FB7_1_1 FB7_3_1 FB7_4_1(1).
 recode BANK_ADV (1 thru highest=1)(else=0).
 
