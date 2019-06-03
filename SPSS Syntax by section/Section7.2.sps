@@ -3045,48 +3045,48 @@ MISSING VALUES MM_MERCHANT (99).
 
 *medical bills, utility bills, + rent.
 compute MM_BILL = 99.
-if MM19_5 = 1 or  MM19_6 = 1 MM_BILL = 1.
-if MM19_5 = 2 and  MM19_6 = 2  MM_BILL = 0.
+if MM16E = 1 or  MM16F = 1 MM_BILL = 1.
+if MM16E and  MM16F = 0  MM_BILL = 0.
 MISSING VALUES MM_BILL (99).
 
 compute MM_GOV = 99.
-if MM19_12 = 1 MM_GOV = 1.
-if MM19_12 = 2 MM_GOV = 0.
+if MM16L = 1 or 16M = 1 MM_GOV = 1.
+if MM16L = 0 and MM16M = 0 MM_GOV = 0.
 MISSING VALUES MM_GOV (99).
 
 compute MM_P2G = 99.
-if MM19_7 = 1 MM_P2G = 1.
-if MM19_7 = 2 MM_P2G = 0.
+if MM16G = 1 MM_P2G = 1.
+if MM16G = 2 MM_P2G = 0.
 MISSING VALUES MM_P2G (99).
 
 compute MM_WAGE = 99.
-if MM19_14 = 1 MM_WAGE = 1.
-if MM19_14 = 2  MM_WAGE = 0.
+if MM16N = 1 or MM16O = 1 MM_WAGE = 1.
+if MM16N = 0 and MM16O = 0  MM_WAGE = 0.
 MISSING VALUES MM_WAGE (99).
 
 compute MM_INSURANCE = 99.
-if MM19_17 = 1 or MM19_18 = 1 MM_INSURANCE = 1.
-if MM19_17 = 2 and MM19_18 = 2 MM_INSURANCE = 0.
+if MM16Q = 1 or MM16R = 1 MM_INSURANCE = 1.
+if MM16Q = 0 and MM16R = 0 MM_INSURANCE = 0.
 MISSING VALUES MM_INSURANCE (99).
 
 compute MM_SAVE = 99.
-if MM19_21 = 1 MM_SAVE = 1.
-if MM19_21 = 2 MM_SAVE = 0.
+if MM16U = 1 MM_SAVE = 1.
+if MM16U = 0 MM_SAVE = 0.
 MISSING VALUES MM_SAVE (99).
 
 compute MM_INVEST = 99.
-if MM19_23 = 1 MM_INVEST = 1.
-if MM19_23 = 2 MM_INVEST = 0.
+if MM16W = 1 MM_INVEST = 1.
+if MM16W = 0 MM_INVEST = 0.
 MISSING VALUES MM_INVEST (99).
 
 compute MM_LOAN = 99.
-if MM19_19 = 1 or MM19_20 = 1 MM_LOAN = 1.
-if MM19_19 = 2 and MM19_20 = 2 MM_LOAN = 0.
+if MM16S = 1 or MM16T = 1 MM_LOAN = 1.
+if MM16S = 0 and MM16T = 0 MM_LOAN = 0.
 MISSING VALUES MM_LOAN (99).
 
 compute MM_AIRTIME = 99.
-if MM19_3 = 1 MM_AIRTIME = 1.
-IF MM19_3 = 2 MM_AIRTIME = 0.
+if MM16C = 1 MM_AIRTIME = 1.
+IF MM16C = 0 MM_AIRTIME = 0.
 MISSING VALUES MM_AIRTIME (99).
 
 save outfile = "data/bng13.sav"
