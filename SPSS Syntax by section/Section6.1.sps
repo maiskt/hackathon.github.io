@@ -1,4 +1,4 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 
 *Section 6.1.
 
@@ -568,19 +568,19 @@ compute COUNTRY="Bangladesh".
 compute YEAR=2016.
 
 compute ACCESS_BANK=0.
-IF (FF1=1 or FF4=1) ACCESS_BANK=1.
+IF (FF1=1 or FF4=1) and ff5=1 ACCESS_BANK=1.
 
 compute REGISTERED_BANK=0.
-IF (FF1=1) REGISTERED_BANK=1.
+IF (FF1=1 and ff5=1) REGISTERED_BANK=1.
 
 compute ACTIVE_BANK=0.
-IF (FF1=1 and FF9<=4) ACTIVE_BANK=1.
+IF (FF1=1 and FF9<=4 and ff5=1) ACTIVE_BANK=1.
 
 compute ACTIVE30_BANK=0.
-IF (FF1=1 and FF9<=3) ACTIVE30_BANK=1.
+IF (FF1=1 and FF9<=3 and ff5=1) ACTIVE30_BANK=1.
 
 compute INACTIVE_BANK=0.
-IF (FF1=1 and FF9>4) INACTIVE_BANK=1.
+IF (FF1=1 and FF9>4 and ff5=1) INACTIVE_BANK=1.
 
 compute DORMANT_BANK=0.
 IF ACCESS_BANK=0 and REGISTERED_BANK=1 DORMANT_BANK=1.
