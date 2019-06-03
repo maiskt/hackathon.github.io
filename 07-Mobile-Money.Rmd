@@ -775,12 +775,45 @@ Levels:
 + -2=DK [DO NOT READ]
 
 ## OPN_MM1
-Unsuccessful transaction -Technical network problems
+Reason for most recent unsuccessful transaction -Technical network problems
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM2
+Reason for most recent unsuccessful transaction - Agent closed a lunch-break or for the day
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM3
+Reason for most rececent unsuccessful transaction - I did not have a proper ID
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM4
+Reason for most recent unsuccessful transaction - There was not enough cash
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM5
+Reason for most recent unsuccessful transaction - There was not enough float
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM6
+Reason for most recent unsuccessful transaction - I did not enough money to pay the fee
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## AWARE_MMP
 ## ACCESS_MMP
 ## REGISTERED_MMP
