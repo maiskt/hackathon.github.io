@@ -775,6 +775,7 @@ Levels:
 + -2=DK [DO NOT READ]
 
 ## OPN_MM1
+Unsuccessful transaction -Technical network problems
 ## OPN_MM2
 ## OPN_MM3
 ## OPN_MM4
