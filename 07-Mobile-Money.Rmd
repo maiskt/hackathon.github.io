@@ -709,11 +709,71 @@ Levels:
 + 2= No
 
 ## ACTION_MM1
+Opening mobile money menu without asistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM2
+Finding a particular mobile money menu option without assistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM3
+Completing a mobile money transaction without assistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM4
+Correcting an error in the amount of money without assistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM5
+Correcting an error in the amount or phone number for a transaction without assistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM6
+Reversing or canceling a transaction without assistance.
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## OPN_MM1
 ## OPN_MM2
 ## OPN_MM3
