@@ -1,4 +1,5 @@
-﻿***********************.
+﻿* Encoding: windows-1252.
+***********************.
 * Bangladesh 2018.
 ***********************.
 ** access_phone.
@@ -31,12 +32,6 @@ count OWN_SIM=MT12_1 MT12_2 MT12_3 MT12_4 MT12_5 MT12_6(1).
 recode OWN_SIM (1 THRU HIGHEST=1).
 variable labels OWN_SIM "Own a SIM card".
 value labels OWN_SIM 1 "Yes" 0 "No".
-
-** able_sms.
-* Recoded MT18A_3 values 2-4 (A little ability, some ability, complete ability) to indicate able_message "yes".
-recode MT18A_3 (2 thru 4=1)(else=0) into ABLE_SMS.
-variable labels ABLE_SMS "Do you have the ability to send and receive text message with mobile phone".
-value labels ABLE_SMS 1 "Yes" 0 "No".
 
 ** phone_adv.
 * Recoded MT17_4:MT17_9 values 1-6 to indicate adv_phone "yes".
@@ -161,6 +156,12 @@ compute ABLE_MENU=0.
 if MT18A_2=1 ABLE_MENU=1.
 variable labels ABLE_MENU "Able to navigate the menu with a mobile phone".
 value labels ABLE_MENU 1 "Yes" 0 "No".
+
+** able_sms.
+* Recoded MT18A_3 values 2-4 (A little ability, some ability, complete ability) to indicate able_message "yes".
+recode MT18A_3 (2 thru 4=1)(else=0) into ABLE_SMS.
+variable labels ABLE_SMS "Do you have the ability to send and receive text message with mobile phone".
+value labels ABLE_SMS 1 "Yes" 0 "No".
 
 ** ABLE_INTERNET.
 * Recoded MT18A_4 to ABLE_INTERNET.
