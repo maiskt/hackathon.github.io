@@ -197,7 +197,7 @@ save outfile = "data/nga13.sav"
 /keep= SBJNUM COUNTRY YEAR WEIGHT Latitude Longitude.
 
 DATASET ACTIVATE pak13.
-RENAME VARIABLES Weight = WEIGHT Latitude Longitude.
+RENAME VARIABLES Weight = WEIGHT.
 save outfile = "data/pak13.sav"
 /keep= SBJNUM COUNTRY YEAR WEIGHT Latitude Longitude.
 
