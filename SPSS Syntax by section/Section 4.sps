@@ -154,9 +154,8 @@ variable labels R_NOPHONE6 "Reason for no phone: I don't know how to use a mobil
 value labels R_NOPHONE6 1 "Yes" 0 "No".
 
 ** ABLE_CALL.
-* Recoded MT18A_1 to ABLE_CALL.
-compute ABLE_CALL=0.
-if MT18A_1=1 ABLE_CALL=1.
+* Recoded MT18A_1 values 2-4 to indicate ABLE_CALL "yes".
+recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 variable labels ABLE_CALL "Able to make and receive calls with a mobile phone".
 value labels ABLE_CALL 1 "Yes" 0 "No".
 
@@ -343,9 +342,8 @@ variable labels R_NOPHONE6 "Reason for no phone: I don't know how to use a mobil
 value labels R_NOPHONE6 1 "Yes" 0 "No".
 
 ** ABLE_CALL.
-* Recoded MT18A_1 to ABLE_CALL.
-compute ABLE_CALL=0.
-if MT18A_1=1 ABLE_CALL=1.
+* Recoded MT18A_1 values 2-4 to indicate ABLE_CALL "yes".
+recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 variable labels ABLE_CALL "Able to make and receive calls with a mobile phone".
 value labels ABLE_CALL 1 "Yes" 0 "No".
 
@@ -533,9 +531,8 @@ variable labels R_NOPHONE6 "Reason for no phone: I don't know how to use a mobil
 value labels R_NOPHONE6 1 "Yes" 0 "No".
 
 ** ABLE_CALL.
-* Recoded MT18A_1 to ABLE_CALL.
-compute ABLE_CALL=0.
-if MT18A_1=1 ABLE_CALL=1.
+* Recoded MT18A_1 values 2-4 to indicate ABLE_CALL "yes".
+recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 variable labels ABLE_CALL "Able to make and receive calls with a mobile phone".
 value labels ABLE_CALL 1 "Yes" 0 "No".
 
@@ -721,9 +718,8 @@ variable labels R_NOPHONE6 "Reason for no phone: I don't know how to use a mobil
 value labels R_NOPHONE6 1 "Yes" 0 "No".
 
 ** ABLE_CALL.
-* Recoded MT18A_1 to ABLE_CALL.
-compute ABLE_CALL=0.
-if MT18A_1=1 ABLE_CALL=1.
+* Recoded MT18A_1 values 2-4 to indicate ABLE_CALL "yes".
+recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 variable labels ABLE_CALL "Able to make and receive calls with a mobile phone".
 value labels ABLE_CALL 1 "Yes" 0 "No".
 
@@ -909,9 +905,8 @@ variable labels R_NOPHONE6 "Reason for no phone: I don't know how to use a mobil
 value labels R_NOPHONE6 1 "Yes" 0 "No".
 
 ** ABLE_CALL.
-* Recoded MT18A_1 to ABLE_CALL.
-compute ABLE_CALL=0.
-if MT18A_1=1 ABLE_CALL=1.
+* Recoded MT18A_1 values 2-4 to indicate ABLE_CALL "yes".
+recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 variable labels ABLE_CALL "Able to make and receive calls with a mobile phone".
 value labels ABLE_CALL 1 "Yes" 0 "No".
 
@@ -1097,9 +1092,8 @@ variable labels R_NOPHONE6 "Reason for no phone: I don't know how to use a mobil
 value labels R_NOPHONE6 1 "Yes" 0 "No".
 
 ** ABLE_CALL.
-* Recoded MT18A_1 to ABLE_CALL.
-compute ABLE_CALL=0.
-if MT18A_1=1 ABLE_CALL=1.
+* Recoded MT18A_1 values 2-4 to indicate ABLE_CALL "yes".
+recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 variable labels ABLE_CALL "Able to make and receive calls with a mobile phone".
 value labels ABLE_CALL 1 "Yes" 0 "No".
 
@@ -1285,9 +1279,8 @@ variable labels R_NOPHONE6 "Reason for no phone: I don't know how to use a mobil
 value labels R_NOPHONE6 1 "Yes" 0 "No".
 
 ** ABLE_CALL.
-* Recoded MT18A_1 to ABLE_CALL.
-compute ABLE_CALL=0.
-if MT18A_1=1 ABLE_CALL=1.
+* Recoded MT18A_1 values 2-4 to indicate ABLE_CALL "yes".
+recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 variable labels ABLE_CALL "Able to make and receive calls with a mobile phone".
 value labels ABLE_CALL 1 "Yes" 0 "No".
 
@@ -1473,9 +1466,8 @@ variable labels R_NOPHONE6 "Reason for no phone: I don't know how to use a mobil
 value labels R_NOPHONE6 1 "Yes" 0 "No".
 
 ** ABLE_CALL.
-* Recoded MT18A_1 to ABLE_CALL.
-compute ABLE_CALL=0.
-if MT18A_1=1 ABLE_CALL=1.
+* Recoded MT18A_1 values 2-4 to indicate ABLE_CALL "yes".
+recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 variable labels ABLE_CALL "Able to make and receive calls with a mobile phone".
 value labels ABLE_CALL 1 "Yes" 0 "No".
 
@@ -1661,9 +1653,8 @@ variable labels R_NOPHONE6 "Reason for no phone: I don't know how to use a mobil
 value labels R_NOPHONE6 1 "Yes" 0 "No".
 
 ** ABLE_CALL.
-* Recoded MT18A_1 to ABLE_CALL.
-compute ABLE_CALL=0.
-if MT18A_1=1 ABLE_CALL=1.
+* Recoded MT18A_1 values 2-4 to indicate ABLE_CALL "yes".
+recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 variable labels ABLE_CALL "Able to make and receive calls with a mobile phone".
 value labels ABLE_CALL 1 "Yes" 0 "No".
 
@@ -1694,7 +1685,7 @@ numeric ABLE_APP.
 variable labels ABLE_APP "Able to download an application with a mobile phone".
 value labels ABLE_APP 1 "Yes" 0 "No".
 
-* Bnagladesh 2016.
+* Bangladesh 2016.
 get file = "C:\Users\klinek\Desktop\FII Anonymized Coordinates\Bangladesh\Bangladesh 2013-2018\FII Bangladesh 2016 (public+ANONGPS).sav".
     dataset name bng16.
     compute YEAR = 2016.
