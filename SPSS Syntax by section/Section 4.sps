@@ -106,9 +106,8 @@ numeric PHONE_TSCREEN.
 variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
-** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (2 thru 4=1)(else=0) into PHONE_MAP.
+** MISSING PHONE_MAP.
+numeric PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -294,9 +293,8 @@ recode MT2A_3 (1=1)(else=0) into PHONE_TSCREEN.
 variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
-** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (2 thru 4=1)(else=0) into PHONE_MAP.
+** MISSING PHONE_MAP.
+numeric PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -482,9 +480,8 @@ numeric PHONE_TSCREEN.
 variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
-** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (2 thru 4=1)(else=0) into PHONE_MAP.
+** MISSING PHONE_MAP.
+numeric PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -670,9 +667,8 @@ recode MT2A_3 (1=1)(else=0) into PHONE_TSCREEN.
 variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
-** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (2 thru 4=1)(else=0) into PHONE_MAP.
+** MISSING PHONE_MAP.
+numeric PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -857,9 +853,8 @@ recode MT2A_3 (1=1)(else=0) into PHONE_TSCREEN.
 variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
-** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (2 thru 4=1)(else=0) into PHONE_MAP.
+** MISSING PHONE_MAP.
+numeric PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -1044,9 +1039,8 @@ recode MT2A_3 (1=1)(else=0) into PHONE_TSCREEN.
 variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
-** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (2 thru 4=1)(else=0) into PHONE_MAP.
+** MISSING PHONE_MAP.
+numeric PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -1231,9 +1225,8 @@ recode MT2A_3 (1=1)(else=0) into PHONE_TSCREEN.
 variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
-** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (2 thru 4=1)(else=0) into PHONE_MAP.
+** MISSING PHONE_MAP.
+numeric PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -1418,9 +1411,8 @@ recode MT2A_3 (1=1)(else=0) into PHONE_TSCREEN.
 variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
-** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (2 thru 4=1)(else=0) into PHONE_MAP.
+** MISSING PHONE_MAP.
+numeric PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -1605,9 +1597,8 @@ recode MT2A_3 (1=1)(else=0) into PHONE_TSCREEN.
 variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
-** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (2 thru 4=1)(else=0) into PHONE_MAP.
+** MISSING PHONE_MAP.
+numeric PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -1793,8 +1784,8 @@ variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
 ** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (1=1)(else=0) into PHONE_MAP.
+* Recoded MT17_13 values 1-5 to indicate PHONE_MAP "yes".
+recode MT17_13 (1 thru 5=1)(else=0) into PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -1981,8 +1972,8 @@ variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
 ** PHONE_MAP.
-* Recoded MT18_2 value 1 to indicate PHONE_MAP "yes".
-recode MT18A_2 (1=1)(else=0) into PHONE_MAP.
+* Recoded MT17_13 values 1-5 to indicate PHONE_MAP "yes".
+recode MT17_13 (1 thru 5=1)(else=0) into PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -2169,8 +2160,8 @@ variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
 ** PHONE_MAP.
-* Recoded MT18_2 values 2-4 to indicate PHONE_MAP "yes".
-recode MT18A_2 (1=1)(else=0) into PHONE_MAP.
+* Recoded MT17_13 values 1-5 to indicate PHONE_MAP "yes".
+recode MT17_13 (1 thru 5=1)(else=0) into PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -2357,8 +2348,8 @@ variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
 ** PHONE_MAP.
-* Recoded MT18_2 value 1 to indicate PHONE_MAP "yes".
-recode MT18A_2 (1=1)(else=0) into PHONE_MAP.
+* Recoded MT17_13 values 1-5 to indicate PHONE_MAP "yes".
+recode MT17_13 (1 thru 5=1)(else=0) into PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -2545,8 +2536,8 @@ variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
 ** PHONE_MAP.
-* Recoded MT18_2 value 1 to indicate PHONE_MAP "yes".
-recode MT18A_2 (1=1)(else=0) into PHONE_MAP.
+* Recoded MT17_13 values 1-5 to indicate PHONE_MAP "yes".
+recode MT17_13 (1 thru 5=1)(else=0) into PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -2733,8 +2724,8 @@ variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
 ** PHONE_MAP.
-* Recoded MT18_2 value 1 to indicate PHONE_MAP "yes".
-recode MT18A_2 (1=1)(else=0) into PHONE_MAP.
+* Recoded MT17_13 values 1-5 to indicate PHONE_MAP "yes".
+recode MT17_13 (1 thru 5=1)(else=0) into PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -2921,8 +2912,8 @@ variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
 ** PHONE_MAP.
-* Recoded MT18_2 value 1 to indicate PHONE_MAP "yes".
-recode MT18A_2 (1=1)(else=0) into PHONE_MAP.
+* Recoded MT17_13 values 1-5 to indicate PHONE_MAP "yes".
+recode MT17_13 (1 thru 5=1)(else=0) into PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
@@ -3109,8 +3100,8 @@ variable labels PHONE_TSCREEN "Used the touch screen".
 value labels PHONE_TSCREEN 1 "Yes" 0 "No".
 
 ** PHONE_MAP.
-* Recoded MT18_2 value 1 to indicate PHONE_MAP "yes".
-recode MT18A_2 (1=1)(else=0) into PHONE_MAP.
+* Recoded MT17_13 values 1-5 to indicate PHONE_MAP "yes".
+recode MT17_13 (1 thru 5=1)(else=0) into PHONE_MAP.
 variable labels PHONE_MAP "Used navigation, maps".
 value labels PHONE_MAP 1 "Yes" 0 "No".
 
