@@ -100,7 +100,7 @@ get file = "Z:\ANONGPS data\FII Kenya 2013 (public+ANONGPS).sav".
     DATASET NAME ken13.
     compute YEAR = 2013.
     string COUNTRY (A10). 
-    rename variables QN = SBJNUM.
+    rename variables SERIAL = SBJNUM.
     compute COUNTRY = "Kenya".
 get file = "Z:\ANONGPS data\FII Kenya 2014 (public+ANONGPS).sav".
     dataset name ken14.
@@ -193,7 +193,7 @@ get file = "Z:\ANONGPS data\FII Kenya 2017 (public+ANONGPS).sav".
     dataset name tza13.
     compute YEAR = 2013.
     string COUNTRY (A10). 
-    rename variables NEWSERIAL = SBJNUM.
+    rename variables SERIAL = SBJNUM.
     compute COUNTRY = "Tanzania". 
  get file = "Z:\ANONGPS data\FII Tanzania 2014 (public+ANONGPS).sav".
     dataset name tza14.

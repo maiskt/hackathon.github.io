@@ -6,3 +6,4 @@ _bookdown_files
 *.rds
 .Rapp.history
 ~$Variable list_2019.xlsx
+*.sps
