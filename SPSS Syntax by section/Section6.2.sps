@@ -1,4 +1,4 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 
 *Section 6.2.
 *******************************************************************************************************************************************************************.
@@ -23,20 +23,26 @@ recode BANK_GOV (1 thru highest=1).
 count BANK_WAGE=AD7_1 AD7_2 AD7_3(1).
 recode BANK_WAGE (1 thru highest=1).
 
+*Review.
 count BANK_INSURANCE=AD8_1 AD8_2 AD8_3 AD8_10(1).
 recode BANK_INSURANCE (1 thru highest=1).
 
+*Review.
 count BANK_SAVE=AD9_1 AD9_2 AD9_3(1).
 recode BANK_SAVE (1 thru highest=1).
 
+*Review.
 count BANK_INVEST=AD10_17 AD10_18 AD10_19 AD10_26(1).
 recode BANK_INVEST (1 thru highest=1).
 
+*Review.
 count BANK_LOAN=AD11_2 AD11_3 AD11_4 AD11_5(1).
 recode BANK_LOAN (1 thru highest=1).
 
+*Review.
 numeric BANK_AIRTIME.
 
+*Review.
 count ACTIVE_BANK_TRANSFER=AD1_12 AD1_13 AD1_14(1).
 recode ACTIVE_BANK_TRANSFER (1 thru highest=1).
 
@@ -64,6 +70,7 @@ recode ACTIVE_BANK_INVEST (1 thru highest=1).
 count ACTIVE_BANK_LOAN=AD11_16 AD11_17 AD11_18 AD11_19 (1 thru 4).
 recode ACTIVE_BANK_LOAN (1 thru highest=1).
 
+*Review.
 numeric ACTIVE_BANK_AIRTIME.
 
 
@@ -89,21 +96,27 @@ recode BANK_GOV (1 thru highest=1).
 count BANK_WAGE=AD7_1 AD7_5 AD7_6 AD7_7(1).
 recode BANK_WAGE (1 thru highest=1).
 
+*Review.
 count BANK_INSURANCE=AD8_1 AD8_5 AD8_6 AD8_7 AD8_8(1).
 recode BANK_INSURANCE (1 thru highest=1).
 
+*Review.
 count BANK_SAVE=AD9_1 AD9_12 AD9_13 AD9_14(1).
 recode BANK_SAVE (1 thru highest=1).
 
+*Review.
 count BANK_INVEST=AD10_19 AD10_23 AD10_24 AD10_25 AD10_26(1).
 recode BANK_INVEST (1 thru highest=1).
 
-count BANK_LOAN= AD11_2 AD11_7 AD11_12 AD11_13 AD11_14(1).
+*Review.
+count BANK_LOAN=AD11_7 AD11_12 AD11_13 AD11_14 AD11_17(1).
 recode BANK_LOAN (1 thru highest=1).
 
+*Review.
 numeric BANK_AIRTIME.
 
-count ACTIVE_BANK_TRANSFER=AD1_10 AD1_14 AD1_15 AD1_16(1 thru 4).
+*Review.
+count ACTIVE_BANK_TRANSFER=AD1_10 AD1_14 AD1_15 AD1_16(1).
 recode ACTIVE_BANK_TRANSFER (1 thru highest=1).
 
 count ACTIVE_BANK_MERCHANT=AD2_9 AD2_13 AD2_14 AD2_15 AD2_16(1 thru 4).
@@ -130,6 +143,7 @@ recode ACTIVE_BANK_INVEST (1 thru highest=1).
 count ACTIVE_BANK_LOAN=AD11_22 AD11_26 AD11_27 AD11_28 (1 thru 4).
 recode ACTIVE_BANK_LOAN (1 thru highest=1).
 
+*Review.
 numeric ACTIVE_BANK_AIRTIME.
 
 
@@ -140,36 +154,45 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2017.
 
+*Review. 
 compute BANK_TRANSFER=0.
 if FF14_6=1 BANK_TRANSFER=1.
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF14_13=1 BANK_MERCHANT=1.
 
 compute BANK_BILL=0.
 IF (FF14_4=1 or FF14_5=1 or FF14_3=1) BANK_BILL=1.
 
+*Review.
 compute BANK_GOV=0.
 if FF14_7=1 BANK_GOV=1.
 
+*Review.
 compute BANK_WAGE=0.
 if FF14_8=1 BANK_WAGE=1.
 
+*Review.
 compute BANK_INSURANCE=0.
 if FF14_9=1 BANK_INSURANCE=1.
 
 compute BANK_SAVE=0.
 IF (FF14_11=1 or FB22_1=1) BANK_SAVE=1.
 
+*Review.
 compute BANK_INVEST=0.
 if FF14_12=1 BANK_INVEST=1.
 
+*Review.
 compute BANK_LOAN=0.
 if (FF14_10=1 or FB16A_1=1) BANK_LOAN=1.
 
+*Review.
 compute BANK_AIRTIME=0.
 if FF14_2=1 BANK_AIRTIME=1.
 
+*Review.
 count ACTIVE_BANK_TRANSFER=FF16_6 (1 thru 4).
 
 count ACTIVE_BANK_MERCHANT=FF16_13 (1 thru 4).
@@ -552,13 +575,15 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
 
+*Review.
 count BANK_TRANSFER=FF14_9 FF14_10(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
-count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8 (1).
+count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8.
 recode BANK_BILL (1 thru highest=1).
 
 *Review.
@@ -584,6 +609,7 @@ if FF14_19=1 BANK_INVEST=1.
 compute BANK_LOAN=0.
 if (FF14_15=1 or FB16_1=1) BANK_LOAN=1.
 
+*Review.
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
@@ -634,7 +660,7 @@ recode BANK_TRANSFER (1 thru highest=1).
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
-count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8 (1).
+count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8.
 recode BANK_BILL (1 thru highest=1).
 
 compute BANK_GOV=0.
@@ -695,7 +721,7 @@ recode BANK_TRANSFER (1 thru highest=1).
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
-count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8 (1).
+count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8.
 recode BANK_BILL (1 thru highest=1).
 
 compute BANK_GOV=0.
@@ -760,7 +786,7 @@ recode BANK_TRANSFER (1 thru highest=1).
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
-count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8 (1).
+count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8.
 recode BANK_BILL (1 thru highest=1).
 
 compute BANK_GOV=0.
@@ -821,7 +847,7 @@ recode BANK_TRANSFER (1 thru highest=1).
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
-count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8 (1).
+count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8.
 recode BANK_BILL (1 thru highest=1).
 
 compute BANK_GOV=0.
@@ -881,7 +907,7 @@ recode BANK_TRANSFER (1 thru highest=1).
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
-count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8 (1).
+count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8.
 recode BANK_BILL (1 thru highest=1).
 
 compute BANK_GOV=0.
@@ -941,7 +967,7 @@ recode BANK_TRANSFER (1 thru highest=1).
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
-count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8 (1).
+count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8.
 recode BANK_BILL (1 thru highest=1).
 
 compute BANK_GOV=0.
@@ -1002,7 +1028,7 @@ recode BANK_TRANSFER (1 thru highest=1).
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
-count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8 (1).
+count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8.
 recode BANK_BILL (1 thru highest=1).
 
 compute BANK_GOV=0.
@@ -1056,36 +1082,45 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2015.
 
+*Review.
 count BANK_TRANSFER=FF14_10 FF14_11(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
 count BANK_BILL=ff14_4 to ff14_9 ff14_25 (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_GOV=0.
 if FF14_12=1 BANK_GOV=1.
 
+*Review.
 compute BANK_WAGE=0.
 if FF14_13=1 BANK_WAGE=1.
 
+*Review.
 compute BANK_INSURANCE=0.
 if FF14_15=1 BANK_INSURANCE=1.
 
 count BANK_SAVE=ff14_17 ff14_18 fb22_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FF14_19=1 BANK_INVEST=1.
 
+*Review.
 compute BANK_LOAN=0.
 if (FF14_16=1 or FB16_1=1) BANK_LOAN=1.
 
+*Review.
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
+*Review.In 2015 survey, FF16_11 FF16_12.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1104,36 +1139,44 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2015.
 
+*Review.
 count BANK_TRANSFER=FF14_10 FF14_11(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
 count BANK_BILL=ff14_4 to ff14_9 ff14_25 (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_GOV=0.
 if FF14_12=1 BANK_GOV=1.
 
+*Review.
 compute BANK_WAGE=0.
 if FF14_13=1 BANK_WAGE=1.
 
+*Review.
 compute BANK_INSURANCE=0.
 if FF14_15=1 BANK_INSURANCE=1.
 
 count BANK_SAVE=ff14_17 ff14_18 FB22_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FF14_19=1 BANK_INVEST=1.
 
+*Review.
 compute BANK_LOAN=0.
 if (FF14_16=1 or FB16_1=1) BANK_LOAN=1.
 
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
+*Review.In 2015 survey, FF16_11 FF16_12.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1154,36 +1197,45 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2015.
 
+*Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF14_22=1 BANK_MERCHANT=1.
 
 count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_GOV=0.
 if FF14_13=1 BANK_GOV=1.
 
+*Review.
 compute BANK_WAGE=0.
 if FF14_14=1 BANK_WAGE=1.
 
+*Review.
 compute BANK_INSURANCE=0.
 if FF14_16=1 BANK_INSURANCE=1.
 
+*Review.
 count BANK_SAVE=ff14_18 ff14_19 ff14_20 fb22_1(1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FF14_21=1 BANK_INVEST=1.
 
+*Review.
 compute BANK_LOAN=0.
 if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
 
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
+*Review.In 2015 survey, FF16_11 FF16_12.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1203,36 +1255,44 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2015.
 
+*Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF14_22=1 BANK_MERCHANT=1.
 
 count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_GOV=0.
 if FF14_13=1 BANK_GOV=1.
 
+*Review.
 compute BANK_WAGE=0.
 if FF14_14=1 BANK_WAGE=1.
 
+*Review.
 compute BANK_INSURANCE=0.
 if FF14_16=1 BANK_INSURANCE=1.
 
 count BANK_SAVE=ff14_18 ff14_19 ff14_20 fb22_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FF14_21=1 BANK_INVEST=1.
 
+*Review.
 compute BANK_LOAN=0.
 if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
 
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
+*Review.In 2015 survey, FF16_11 FF16_12.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1252,6 +1312,7 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2015.
 
+*Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
@@ -1262,27 +1323,33 @@ if FF14_22=1 BANK_MERCHANT=1.
 count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_GOV=0.
 if FF14_13=1 BANK_GOV=1.
 
+*Review.
 compute BANK_WAGE=0.
 if FF14_14=1 BANK_WAGE=1.
 
+*Review.
 compute BANK_INSURANCE=0.
 if FF14_16=1 BANK_INSURANCE=1.
 
 count BANK_SAVE=ff14_18 ff14_19 ff14_20 fb22_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FF14_21=1 BANK_INVEST=1.
 
+*Review.
 compute BANK_LOAN=0.
 if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
 
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
+*Review.In 2015 survey, FF16_11 FF16_12.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1303,36 +1370,44 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2015.
 
+*Review.
 count BANK_TRANSFER=FF14_10 FF14_11(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF14_20=1 BANK_MERCHANT=1.
 
 count BANK_BILL=ff14_4 to ff14_9 ff14_25 (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_GOV=0.
 if FF14_12=1 BANK_GOV=1.
 
+*Review.
 compute BANK_WAGE=0.
 if FF14_13=1 BANK_WAGE=1.
 
+*Review.
 compute BANK_INSURANCE=0.
 if FF14_15=1 BANK_INSURANCE=1.
 
 count BANK_SAVE=ff14_17 ff14_18 fb22_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FF14_19=1 BANK_INVEST=1.
 
+*Review.
 compute BANK_LOAN=0.
 if (FF14_16=1 or FB16_1=1) BANK_LOAN=1.
 
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
+*Review.In 2015 survey, FF16_11 FF16_12.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1353,36 +1428,44 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2015.
 
+*Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF14_22=1 BANK_MERCHANT=1.
 
 count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_GOV=0.
 if FF14_13=1 BANK_GOV=1.
 
+*Review.
 compute BANK_WAGE=0.
 if FF14_14=1 BANK_WAGE=1.
 
+*Review.
 compute BANK_INSURANCE=0.
 if FF14_16=1 BANK_INSURANCE=1.
 
 count BANK_SAVE=ff14_18 ff14_19 ff14_20 FB22_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FF14_21=1 BANK_INVEST=1.
 
+*Review.
 compute BANK_LOAN=0.
 if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
 
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
+*Review.In 2015 survey, FF16_11 FF16_12.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1401,36 +1484,44 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2015.
 
+*Review.
 count BANK_TRANSFER=FF14_11 FF14_12(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF14_22=1 BANK_MERCHANT=1.
 
 count BANK_BILL=ff14_4 to ff14_10 ff14_27 (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_GOV=0.
 if FF14_13=1 BANK_GOV=1.
 
+*Review.
 compute BANK_WAGE=0.
 if FF14_14=1 BANK_WAGE=1.
 
+*Review.
 compute BANK_INSURANCE=0.
 if FF14_16=1 BANK_INSURANCE=1.
 
 count BANK_SAVE=ff14_18 ff14_19 ff14_20 fb22_1(1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FF14_21=1 BANK_INVEST=1.
 
+*Review.
 compute BANK_LOAN=0.
 if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
 
-compute BANK_AIRTIME=0.fb
+compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
+*Review.In 2015 survey, FF16_11 FF16_12.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1449,9 +1540,11 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2014.
 
+*Review.
 count BANK_TRANSFER=FF19_11 FF19_12 FF19_13 FF19_14(1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 compute BANK_MERCHANT=0.
 if FF19_28=1 BANK_MERCHANT=1.
 
@@ -1470,15 +1563,18 @@ recode BANK_INSURANCE (1 thru highest=1)(else=0).
 count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FF19_27=1 BANK_INVEST=1.
 
 count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
 recode BANK_LOAN (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_AIRTIME=0.
 if FF19_3=1 BANK_AIRTIME=1.
 
+*Review.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1564,12 +1660,14 @@ recode BANK_WAGE (1 thru highest=1)(else=0).
 count BANK_INSURANCE=ff19_20 ff19_21(1).
 recode BANK_INSURANCE (1 thru highest=1)(else=0).
 
+*Review.
 count BANK_SAVE=ff19_24  ff19_25 ff19_26 FL13_1 (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
 compute BANK_INVEST=0.
 if FF19_27=1 BANK_INVEST=1.
 
+*Review.
 count BANK_LOAN=ff19_22 ff19_23 FL10_1 (1).
 recode BANK_LOAN (1 thru highest=1)(else=0).
 
@@ -1840,41 +1938,49 @@ numeric ACTIVE_BANK_AIRTIME.
 compute YEAR=2013.
 compute COUNTRY=Bangladesh.
 
+*Review.
 rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2013.
 
-count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
-recode BANK_TRANSFER (1 thru highest=1).
-
+*Review.
 compute BANK_MERCHANT=0.
-if FFI16X=1 BANK_MERCHANT=1.
+if FF16X=1 BANK_MERCHANT=1.
 
+*Review.
 count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 count BANK_GOV=FFI16L FFI16M (1).
 recode BANK_GOV (1 thru highest=1)(else=0).
 
+*Review.
 count BANK_WAGE=FFI16N FFI16O (1).
 recode BANK_WAGE (1 thru highest=1)(else=0).
 
+*Review.
 count BANK_INSURANCE=FFI16Q FFI16R(1).
 recode BANK_INSURANCE (1 thru highest=1)(else=0).
 
+*Review.
 count BANK_SAVE=FFI16U FFI16V (1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FFI16W=1 BANK_INVEST=1.
 
+*Review.
 count BANK_LOAN=FFI16S FFI16T (1).
 recode BANK_LOAN (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_AIRTIME=0.
 if FFI16C=1 BANK_AIRTIME=1.
 
+*Review.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1894,36 +2000,48 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2013.
 
+*Review.
 count BANK_TRANSFER = FFI16_8 FFI16_9 FFI16_10 FFI16_11 (1).
 recode BANK_TRANSFER (1 thru highest=1).
 
+*Review.
 count BANK_MERCHANT = FFI16_24 FFI16_25 (1).
 recode BANK_MERCHANT (1 thru highest=1).
 
+*Review.
 count BANK_BILL=FFI16_4 FFI16_5 FFI16_6 FFI16_7 (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
 
+*Review.
 count BANK_GOV=FFI16_12 FFI16_13 (1).
 recode BANK_GOV (1 thru highest=1)(else=0).
 
+*Review.
 count BANK_WAGE=FFI16_14 FFI16_15 (1).
 recode BANK_WAGE (1 thru highest=1)(else=0).
 
+*Review.
 count BANK_INSURANCE=FFI16_17 FFI16_18(1).
 recode BANK_INSURANCE (1 thru highest=1)(else=0).
 
+*Review. Add FB.
+*In 2013, only India have FB section for bank. Need confirm.
 count BANK_SAVE=FFI16_21 FFI16_22 FB7_3_1 FB7_4_1(1).
 recode BANK_SAVE (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_INVEST=0.
 if FFI16_23=1 BANK_INVEST=1.
 
+*Review. Add FB.
 count BANK_LOAN=FFI16_19 FFI16_20 FB7_1_1 (1).
 recode BANK_LOAN (1 thru highest=1)(else=0).
 
+*Review.
 compute BANK_AIRTIME=0.
 if FFI16_3=1 BANK_AIRTIME=1.
 
+*Review.
 numeric ACTIVE_BANK_TRANSFER.
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
@@ -1947,7 +2065,7 @@ count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
 recode BANK_TRANSFER (1 thru highest=1).
 
 compute BANK_MERCHANT=0.
-if FFI16X=1 BANK_MERCHANT=1.
+if FF16X=1 BANK_MERCHANT=1.
 
 count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
@@ -1996,7 +2114,7 @@ count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
 recode BANK_TRANSFER (1 thru highest=1).
 
 compute BANK_MERCHANT=0.
-if FFI16X=1 BANK_MERCHANT=1.
+if FF16X=1 BANK_MERCHANT=1.
 
 count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
@@ -2045,7 +2163,7 @@ count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
 recode BANK_TRANSFER (1 thru highest=1).
 
 compute BANK_MERCHANT=0.
-if FFI16X=1 BANK_MERCHANT=1.
+if FF16X=1 BANK_MERCHANT=1.
 
 count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
@@ -2142,7 +2260,7 @@ count BANK_TRANSFER = FFI16H FFI16I FFI16J FFI16K (1).
 recode BANK_TRANSFER (1 thru highest=1).
 
 compute BANK_MERCHANT=0.
-if FFI16X=1 BANK_MERCHANT=1.
+if FF16X=1 BANK_MERCHANT=1.
 
 count BANK_BILL=FFI16D FFI16E FFI16F FFI16G (1).
 recode BANK_BILL (1 thru highest=1)(else=0).
