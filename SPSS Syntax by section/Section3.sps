@@ -1452,8 +1452,9 @@ compute COUNTRY="Tanzania".
 compute YEAR=2015.
 
 compute AGE=2015-dg1.
-recode AGE(sysmis=-2).
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
+recode AGE(sysmis=-2).
+recode AGE_GROUP(999=-2).
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
 compute LN2=max(LN2_1 to LN2_4).
 compute LITERACY=0.
@@ -1815,7 +1816,7 @@ compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 13=4)(14 thru HIGHEST=5) into EDU.
 
-compute  LN2=max(LN3_1 to LN3_18).
+compute  LN2=max(LN2_1 to LN2_18).
 compute LITERACY=0.
 if (((Ln1_1<=3) and ln2>=3) or ((ln1_1b<=3) and ln2>=3)) LITERACY=1.
 
@@ -2167,7 +2168,8 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2013.
 
-compute AGE=2013-dg1.
+ * compute AGE=2013-dg1a.
+rename variables iage=AGE.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
 
