@@ -3770,9 +3770,8 @@ recode MT10_4 (1 thru 5=1)(else=0) into PHONE_MMS.
 * Recoded MT10_8 values 1-5 to indicate PHONE_VIDEO "yes".
 recode MT10_8 (1 thru 5=1)(else=0) into PHONE_VIDEO.
 
-** PHONE_TSCREEN.
-* Recoded MT10_12 values 1-5 to indicate PHONE_TSCREEN "yes".
-recode MT10_12 (1 thru 5=1)(else=0) into PHONE_TSCREEN.
+** MISSING PHONE_TSCREEN.
+numeric PHONE_TSCREEN.
 
 ** MISSING PHONE_MAP.
 numeric PHONE_MAP.
