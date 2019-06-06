@@ -24,8 +24,7 @@ Levels:
 + 0=No
 
 ## INVEST_INFORMAL
-Invest in informal institution: counts respondents who ever invested money using a self help group or cooperative that doesn't provide a bank account and they are not a member of.
-
+Invest in informal institution: counts respondents, who are not members of, but who have ever invested money in a self-help group or cooperative that doesn't offer a bank account. 
 
 Levels:
 + 1=Yes
