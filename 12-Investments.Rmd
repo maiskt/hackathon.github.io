@@ -24,5 +24,18 @@ Levels:
 + 0=No
 
 ## INVEST_INFORMAL
-## INVEST_INSURANCE
+Invest in informal institution: counts respondents who ever invested money using a self help group or cooperative that doesn't provide a bank account and they are not a member of.
 
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INVEST_INSURANCE
+Have an investment or insurance: counts respondents who invest in thier own business or in other places and also have insurance.
+
+Levels:
++ 1=Yes
++ 0=No
+
+ 
