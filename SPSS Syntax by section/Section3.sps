@@ -1,8 +1,9 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 
 *Section 3.
 **************************************************************************************************************************************************.
 *18Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2018.
@@ -62,6 +63,7 @@ compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *18India.
+rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2018.
@@ -121,7 +123,7 @@ compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *17Bangladesh.
-*Section 3.
+rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2017.
@@ -181,7 +183,7 @@ compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *17India.
-*Section 3.
+rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2017.
@@ -244,9 +246,10 @@ compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *17Kenya.
-*Section 3.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2017.
-compute COUNTRY=Kenya.
 
 compute AGE=2017-DG1.
 
@@ -304,7 +307,7 @@ compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *17Nigeria.
-*Section 3.
+rename variables SbjNum=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2017.
@@ -364,7 +367,7 @@ compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *17Paksitan.
-*Section 3.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2017.
@@ -373,19 +376,18 @@ compute AGE=2017-DG1.
 
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
-recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 13=4)(14 thru HIGHEST=5) into EDU.
+recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
 
-compute LN2=max(LN2_1 to LN2_18, ln2_19, ln2_20).
 compute LITERACY=0.
-if (((Ln1_1<=3 or ln1a_1<=3 or ln1b_1<=3) and ln2>=3) or ((Ln1_2<=3 or ln1a_2<=3 or ln1b_2<=3) and ln2>=3)) LITERACY=1.
+if ((LN1A<=3 or LN1B<=3) and max(LN2_1 to LN2_18)>=3) LITERACY=1.
 
-compute NUMERACY=(FL12=1 OR FL13=1 OR FL16=2 OR FL18=1).
+compute NUMERACY=(FL12=1 OR FL13=1 OR FL16=2 OR FL18=2).
 
 recode fl14(2=1)(1,99=0) into a1.
 recode fl15(2=1)(1,3,99=0) into a2.
 recode fl16(2=1)(1,99=0) into a3.
-recode fl17(1=0.5)(2,99=0) into a4.
-recode fl18(1=0.5)(2,3,99=0) into a5.
+recode fl17(2=0.5)(1,99=0) into a4.
+recode fl18(2=0.5)(1,3,99=0) into a5.
 compute FINANCIAL_LITERACY=sum(a1,a2,a3,a4,a5).
 recode FINANCIAL_LITERACY (3 thru highest=1) (else=0).
 
@@ -423,7 +425,7 @@ compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *17Tanzania.
-*Section 3.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2017.
@@ -486,7 +488,7 @@ compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *17Uganda.
-*Section 3.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2017.
@@ -549,6 +551,7 @@ compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *16Bangladesh.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
@@ -628,6 +631,7 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *16India.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2016.
@@ -690,22 +694,23 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *16Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2016.
 
-compute AGE=2016-DG1.
-if dg1=99 AGE=$sysmis.
-if HH5=1 age1=HH2_4_1.
-if HH5=2 age1=HH2_4_2.
-if HH5=3 age1=HH2_4_3.
-if HH5=4 age1=HH2_4_4.
-if HH5=5 age1=HH2_4_5.
-if HH5=6 age1=HH2_4_6.
-if HH5=7 age1=HH2_4_7.
-if HH5=8 age1=HH2_4_8.
-if HH5=9 age1=HH2_4_9.
-if sysmis(AGE) AGE=age1. 
+ * compute AGE=2016-DG1.
+ * if dg1=99 AGE=$sysmis.
+ * if HH5=1 age1=HH2_4_1.
+ * if HH5=2 age1=HH2_4_2.
+ * if HH5=3 age1=HH2_4_3.
+ * if HH5=4 age1=HH2_4_4.
+ * if HH5=5 age1=HH2_4_5.
+ * if HH5=6 age1=HH2_4_6.
+ * if HH5=7 age1=HH2_4_7.
+ * if HH5=8 age1=HH2_4_8.
+ * if HH5=9 age1=HH2_4_9.
+ * if sysmis(AGE) AGE=age1. 
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2,3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
 compute LITERACY=0.
@@ -759,24 +764,24 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *16Kenya.
-*Section 3.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2016.
 
-compute AGE=2016-DG1.
-if DG1=99 AGE=99.
-if HH3=1 age1=HH2_2_1.
-if HH3=2 age1=HH2_2_2.
-if HH3=3 age1=HH2_2_3.
-if HH3=4 age1=HH2_2_4.
-if HH3=5 age1=HH2_2_5.
-if HH3=6 age1=HH2_2_6.
-if HH3=7 age1=HH2_2_7.
-if HH3=8 age1=HH2_2_8.
-if HH3=9 age1=HH2_2_9.
-if HH3=10 age1=HH2_2_10.
-if AGE=99 AGE=age1.
+ * compute AGE=2016-DG1.
+ * if DG1=99 AGE=99.
+ * if HH3=1 age1=HH2_2_1.
+ * if HH3=2 age1=HH2_2_2.
+ * if HH3=3 age1=HH2_2_3.
+ * if HH3=4 age1=HH2_2_4.
+ * if HH3=5 age1=HH2_2_5.
+ * if HH3=6 age1=HH2_2_6.
+ * if HH3=7 age1=HH2_2_7.
+ * if HH3=8 age1=HH2_2_8.
+ * if HH3=9 age1=HH2_2_9.
+ * if HH3=10 age1=HH2_2_10.
+ * if AGE=99 AGE=age1.
 
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
@@ -834,23 +839,24 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *16Nigeria.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2016.
 
-compute AGE=2016-DG1.
-if DG1=99 AGE=99.
-if HH4=1 age1=HH2_2_1.
-if HH4=2 age1=HH2_2_2.
-if HH4=3 age1=HH2_2_3.
-if HH4=4 age1=HH2_2_4.
-if HH4=5 age1=HH2_2_5.
-if HH4=6 age1=HH2_2_6.
-if HH4=7 age1=HH2_2_7.
-if HH4=8 age1=HH2_2_8.
-if HH4=9 age1=HH2_2_9.
-if HH4=10 age1=HH2_2_10.
-if AGE=99 AGE=age1.
+ * compute AGE=2016-DG1.
+ * if DG1=99 AGE=99.
+ * if HH4=1 age1=HH2_2_1.
+ * if HH4=2 age1=HH2_2_2.
+ * if HH4=3 age1=HH2_2_3.
+ * if HH4=4 age1=HH2_2_4.
+ * if HH4=5 age1=HH2_2_5.
+ * if HH4=6 age1=HH2_2_6.
+ * if HH4=7 age1=HH2_2_7.
+ * if HH4=8 age1=HH2_2_8.
+ * if HH4=9 age1=HH2_2_9.
+ * if HH4=10 age1=HH2_2_10.
+ * if AGE=99 AGE=age1.
 
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
@@ -910,6 +916,7 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *16Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2016.
@@ -973,6 +980,7 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *16Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2016.
@@ -1035,31 +1043,31 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *16Uganda.
-*Section 3.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2016.
 
-compute AGE=2016-DG1.
-if DG1=99 AGE=99.
-if HH3_1=1 age1=HH2_2_1.
-if HH3_1=2 age1=HH2_2_2.
-if HH3_1=3 age1=HH2_2_3.
-if HH3_1=4 age1=HH2_2_4.
-if HH3_1=5 age1=HH2_2_5.
-if HH3_1=6 age1=HH2_2_6.
-if HH3_1=7 age1=HH2_2_7.
-if HH3_1=8 age1=HH2_2_8.
-if HH3_1=9 age1=HH2_2_9.
-if HH3_1=10 age1=HH2_2_10.
-if AGE=99 AGE=age1.
+ * compute AGE=2016-DG1.
+ * if DG1=99 AGE=99.
+ * if HH3_1=1 age1=HH2_2_1.
+ * if HH3_1=2 age1=HH2_2_2.
+ * if HH3_1=3 age1=HH2_2_3.
+ * if HH3_1=4 age1=HH2_2_4.
+ * if HH3_1=5 age1=HH2_2_5.
+ * if HH3_1=6 age1=HH2_2_6.
+ * if HH3_1=7 age1=HH2_2_7.
+ * if HH3_1=8 age1=HH2_2_8.
+ * if HH3_1=9 age1=HH2_2_9.
+ * if HH3_1=10 age1=HH2_2_10.
+ * if AGE=99 AGE=age1.
 
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
-recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 14=4)(96 thru HIGHEST=5) into EDU.
 
 compute LITERACY=0.
-if ((LN1A<=3 and max(LN2_1 to LN2_18)>=3) or (LN1B<=3 and max(LN2_1 to LN2_18)>=3)) LITERACY=1.
+if ((LN1A<=3 and max(LN2_1 to LN2_6)>=3) or (LN1B<=3 and max(LN2_1 to LN2_6)>=3)) LITERACY=1.
 
 compute NUMERACY=(FL12=1 OR FL13=1 OR FL16=2 OR FL18=1).
 
@@ -1110,8 +1118,10 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *15Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2015.
-compute COUNTRY=Bangladesh.
 
 compute AGE=2015-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -1160,6 +1170,7 @@ compute SELL_CROP=0.
 if DL4_15=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *15India.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2015.
@@ -1213,6 +1224,7 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *15Indonesia.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2015.
@@ -1220,6 +1232,7 @@ compute YEAR=2015.
 compute AGE=2015-dg1.
 recode AGE(sysmis=-2).
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
+recode AGE_GROUP(999=-2).
 recode dg4 (1 =1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
 compute LN2=max(LN2_1 to LN2_10).
 compute LITERACY=0.
@@ -1267,6 +1280,7 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *15Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2015.
@@ -1320,13 +1334,16 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *15Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2015.
 
 compute AGE=2015-dg1.
-recode AGE(sysmis=-2).
+recode AGE(999=sysmis).
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
+recode AGE(sysmis=-2).
+recode AGE_GROUP(999=-2).
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
 compute LN2=max(LN2_1 to LN2_10).
 compute LITERACY=0.
@@ -1374,6 +1391,7 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *15Pakistan.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2015.
@@ -1428,13 +1446,15 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *15Tanzania.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2015.
 
 compute AGE=2015-dg1.
-recode AGE(sysmis=-2).
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
+recode AGE(sysmis=-2).
+recode AGE_GROUP(999=-2).
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
 compute LN2=max(LN2_1 to LN2_4).
 compute LITERACY=0.
@@ -1482,6 +1502,7 @@ compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *15Uganda.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2015.
@@ -1536,6 +1557,7 @@ if DL4_6=1 or DL4_7=1 SELL_CROP=1.
 
 **************************************************************************************************************************************************.
 *14Bangladesh.
+rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2014.
@@ -1586,6 +1608,7 @@ if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 freq SELL_CROP.
 **************************************************************************************************************************************************.
 *14India.
+rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2014.
@@ -1635,8 +1658,10 @@ compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Indonesia.
+rename variables ID=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Indonesia".
 compute YEAR=2014.
-compute COUNTRY=Indonesia.
 
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -1683,8 +1708,10 @@ compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Kenya.
+rename variables Serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2014.
-compute COUNTRY=Kenya.
 
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -1730,8 +1757,10 @@ compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Nigeria.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2014.
-compute COUNTRY=Nigeria.
 
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -1778,14 +1807,16 @@ compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Pakistan.
+rename variables QN=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2014.
-compute COUNTRY=Pakistan.
 
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 13=4)(14 thru HIGHEST=5) into EDU.
 
-compute  LN2=max(LN3_1 to LN3_18).
+compute  LN2=max(LN2_1 to LN2_18).
 compute LITERACY=0.
 if (((Ln1_1<=3) and ln2>=3) or ((ln1_1b<=3) and ln2>=3)) LITERACY=1.
 
@@ -1826,8 +1857,10 @@ compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2014.
-compute COUNTRY=Tanzania.
 
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -1874,8 +1907,10 @@ compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *14Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2014.
-compute COUNTRY=Uganda.
 
 recode dg1(999=sysmis).
 compute AGE=2014-dg1.
@@ -1924,8 +1959,10 @@ compute SELL_CROP=0.
 if DL7_1=1 or DL7_2=1 SELL_CROP=1.
 **************************************************************************************************************************************************.
 *13Bangladesh.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Bangladesh".
 compute YEAR=2013.
-compute COUNTRY=Bangladesh.
 
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -1966,8 +2003,10 @@ numeric WORK_FARM.
 numeric SELL_CROP.
 **************************************************************************************************************************************************.
 *13India.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="India".
 compute YEAR=2013.
-compute COUNTRY=India.
 
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -2000,8 +2039,10 @@ numeric WORK_FARM.
 numeric SELL_CROP.
 **************************************************************************************************************************************************.
 *13Kenya.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Kenya".
 compute YEAR=2013.
-compute COUNTRY=Kenya.
 
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -2034,8 +2075,10 @@ numeric WORK_FARM.
 numeric SELL_CROP.
 **************************************************************************************************************************************************.
 *13Nigeria.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Nigeria".
 compute YEAR=2013.
-compute COUNTRY=Nigeria.
 
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -2076,8 +2119,10 @@ numeric WORK_FARM.
 numeric SELL_CROP.
 **************************************************************************************************************************************************.
 *13Pakistan.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Pakistan".
 compute YEAR=2013.
-compute COUNTRY=Pakistan.
 
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
@@ -2118,10 +2163,13 @@ numeric WORK_FARM.
 numeric SELL_CROP.
 **************************************************************************************************************************************************.
 *13Tanzania.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Tanzania".
 compute YEAR=2013.
-compute COUNTRY=Tanzaina.
 
-compute AGE=2013-dg1.
+ * compute AGE=2013-dg1a.
+rename variables iage=AGE.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
 
@@ -2152,8 +2200,10 @@ numeric WORK_FARM.
 numeric SELL_CROP.
 **************************************************************************************************************************************************.
 *13Uganda.
+rename variables serial=SBJNUM weight=WEIGHT.
+string COUNTRY (A10).
+compute COUNTRY="Uganda".
 compute YEAR=2013.
-compute COUNTRY=Uganda.
 
 compute AGE=2013-dg1.
 recode AGE(sysmis=-2).
@@ -2193,13 +2243,15 @@ value labels AGE_GROUP 1"15-24" 2"25-34" 3"35-44" 4"45-54" 5"55 and over" -2"DK"
 
 value labels EDU 1"No formal education" 2"Primary education" 3"Secondary education" 4"Higher education" 5"Other".
 
-value labels LITERACY 1"Basic LITERACY" 0"lack of basic LITERACY".
+value labels LITERACY 1"Basic literacy" 0"lack of basic literacy".
 
-value labels NUMERACY 1"Basic NUMERACY" 0"Lack of basic NUMERACY".
+value labels NUMERACY 1"Basic numeracy" 0"Lack of basic numeracy".
 
 value labels FINANCIAL_LITERACY 0"No" 1"Yes".
 
 value labels DIGITAL_LITERACY_INDEX 0"Not applicable" 1"Low" 2"Moderate" 3"High".
+
+value labels GENDER 1"Male" 2"Female".
 
 value labels MARRIAGE 1"Single/never married" 2"Married" 3"Divorced/Separated" 4"Widowed" 5"Living together/Cohabiting " 96"Other" -2"DK".
 
@@ -2227,4 +2279,22 @@ value labels OWN_FARM 1"Yes" 0"No".
 value labels WORK_FARM 1"Yes" 0"No".
 
 value labels SELL_CROP 1"Yes" 0"No".
+
+variable labels AGE"Age"
+AGE_GROUP"Age groups"
+EDU"Education"
+LITERACY"Literacy"
+NUMERACY"Basic numeracy"
+FINANCIAL_LITERACY"Financial literacy"
+DIGITAL_LITERACY_INDEX"Digital literacy index"
+GENDER"Gender"
+MARRIAGE"Marital status"
+HAVE_CHILDREN"Have children"
+SCHOOL_FEE"Have ever paid a school fee"
+EMPLOYMENT"Mainly doing for work in past 12 months"
+INVOL_AGRI"Involved in agriculture"
+OWN_FARM"Someone in your household own or lease a farm/farmland"
+WORK_FARM"Work on the farm that someone in your household owned or leased yourself"
+SELL_CROP"Selling products of agriculture or rearing livestock".
+
 

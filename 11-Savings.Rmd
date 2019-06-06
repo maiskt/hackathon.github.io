@@ -17,7 +17,7 @@ Levels:
 + 0= "No"
 
 ## SAVE_INFML
-Ever saved with informal channels: counts respondents  who ever saved money with people they trust (e.g., family, friends, neighbors, shopkeepers, money guards, savings collectors) or with a self-help group or cooperative without membership.
+Ever saved with informal channels: counts respondents  who have ever saved money with people they trust (e.g., family, friends, neighbors, shopkeepers, money guards, savings collectors) or with a self-help group or cooperative without membership.
 
 Levels: 
 + 1="Yes"
@@ -38,21 +38,21 @@ Levels:
 + 0= "No"
 
 ## SAVE_MM
-Ever saved using mobile money: counts respondents who ever saved using a mobile money service.
+Ever saved using mobile money: counts respondents who have ever saved using a mobile money service.
 
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_MFI
-Ever saved with a microfinance institution (MFI): counts respondents who ever saved using an MFI.
+Ever saved with a microfinance institution (MFI): counts respondents who have ever saved using an MFI.
 
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_COOP
-Ever saved with a cooperative: counts respondents who ever saved using a cooperative.
+Ever saved with a cooperative: counts respondents who have ever saved using a cooperative.
 
 Levels: 
 + 1="Yes"
@@ -66,7 +66,7 @@ Levels:
 + 0= "No"
 
 ## SAVE_POST
-Ever saved with post office bank: counts respondents who ever saved with a post office bank
+Ever saved with post office bank: counts respondents who ever have saved with a post office bank
 
 Levels: 
 + 1="Yes"

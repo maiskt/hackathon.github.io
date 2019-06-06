@@ -1255,7 +1255,7 @@ compute COUNTRY="Bangladesh".
 compute YEAR=2016.
 
 compute ACCESS_FINANCIAL=0.
-IF ((FF1=1 or FF4=1) or
+IF (((FF1=1 or FF4=1) and FF5=1) or
 (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or MM4_96=1) or
 (ifi1_1=1 and ifi5_1=1) or
 (ifi1_2=1 and ifi5_2=1) or
@@ -1263,7 +1263,7 @@ IF ((FF1=1 or FF4=1) or
 (ifi1_4=1 and ifi5_4=1)) ACCESS_FINANCIAL=1.
 
 compute FI=0.
-IF ((FF1=1) or
+IF ((FF1=1 and FF5=1) or
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_96=1) or
 (IFI3_1=1 and IFI5_1=1) or
 (IFI3_2=1 and IFI5_2=1 ) or
@@ -1271,7 +1271,7 @@ IF ((FF1=1) or
 (IFI3_4=1 and IFI5_4=1)) FI=1.
 
 compute ACTIVE_FINANCIAL=0.
-if ((FF1=1 and FF9<=4) or
+if ((FF1=1 and FF5=1 and FF9<=4) or
 (MM8_1<=4 or MM8_2<=4 or MM8_3<=4 or MM8_4<=4 or MM8_5<=4 or MM8_6<=4 or MM8_7<=4 or MM8_96<=4) or
 (IFI4_1<=4 and IFI5_1=1) or
 (IFI4_4<=4 and IFI5_4=1) or
@@ -1284,7 +1284,7 @@ IF ((FF1=1 or FF4=1) or
 (ifi1_1=1 or ifi1_2=1 or ifi1_3=1 or ifi1_4=1)) ACCESS_FINANCIAL_ALL=1.
 
 compute ACTIVE_FINANCIAL_ADV=0.
-IF ((FF1=1 and FF9<=4 and 
+IF ((FF1=1 and FF5=1 and FF9<=4 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or
 FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_14=1 or FF14_15=1 or FF14_16=1 or FF14_17=1 or FF14_18=1 or FF14_19=1 or FF14_20=1 or FF14_21=1 or FF14_22=1 or fb16_1=1 or fb22_1=1)) 
 or ((MM8_1<=4 or MM8_2<=4 or MM8_3<=4 or MM8_4<=4 or MM8_5<=4 or MM8_6<=4 or MM8_7<=4 or MM8_96<=4) 
@@ -1304,7 +1304,7 @@ and (IFI13_3=1 or IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 
 IFI13_11=1 or IFI13_12=1 or IFI13_13=1 or IFI13_14=1 or IFI13_15=1 or IFI13_16=1 or IFI13_17=1 or IFI13_18=1 or IFI13_19=1 or IFI13_20=1 or IFI13_21=1 or IFI13_22=1 or fb16_4=1 or fb22_3=1))) ACTIVE_FINANCIAL_ADV=1.
 
 compute ACTIVE30_FINANCIAL_ADV=0.
-IF ((FF1=1 and FF9<=3 and 
+IF ((FF1=1 and FF5=1 and FF9<=3 and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or
 FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_14=1 or FF14_15=1 or FF14_16=1 or FF14_17=1 or FF14_18=1 or FF14_19=1 or FF14_20=1 or FF14_21=1 or FF14_22=1 or fb16_1=1 or fb22_1=1)) 
 or ((MM8_1<=3 or MM8_2<=3 or MM8_3<=3 or MM8_4<=3 or MM8_5<=3 or MM8_6<=3 or MM8_7<=3 or MM8_96<=3) 
@@ -1328,7 +1328,7 @@ if ((FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or FF14_9=1 or FF1
 (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1 or MM15_11=1 or MM15_12=1 or MM15_20=1)) ACCESS_DFS_PAYMENT_TRANSFER=1. 
 
 compute ACCESS_DFS=0.
-if (((FF1=1 or FF4=1) and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
+if (((FF1=1 or FF4=1) and FF5=1 and (ff6_1=1 or ff6_2=1 or ff6_3=1 or ff6_4=1)) 
 or (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or MM4_96=1) or 
 ((IFI1_1=1 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1)) or 
 (IFI1_2=1 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) or 
@@ -1336,7 +1336,7 @@ or (MM4_1=1 or MM4_2=1 or MM4_3=1 or MM4_4=1 or MM4_5=1 or MM4_6=1 or MM4_7=1 or
 (IFI1_4=1 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))) ACCESS_DFS=1.
 
 compute REGISTERED_DFS=0.
-if ((FF1=1 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or 
+if ((FF1=1 and FF5=1 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or 
 (MM6_1=1 or MM6_2=1 or MM6_3=1 or MM6_4=1 or MM6_5=1 or MM6_6=1 or MM6_7=1 or MM6_96=1) or
 (ifi3_1=1 and ifi5_1=1 and (ifi6_1=1 or ifi6_2=1 or ifi6_3=1 or ifi6_4=1)) or
 (ifi3_2=1 and ifi5_2=1 and (ifi7_1=1 or ifi7_2=1 or ifi7_3=1 or ifi7_4=1)) or
@@ -1344,7 +1344,7 @@ if ((FF1=1 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) or
 (ifi3_4=1 and ifi5_4=1 and (ifi9_1=1 or ifi9_2=1 or ifi9_3=1 or ifi9_4=1))) REGISTERED_DFS=1.
 
 compute ACTIVE_DFS=0.
-if ((FF1=1 and FF9<=4 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) 
+if ((FF1=1 and FF5=1 and FF9<=4 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1)) 
 or (MM8_1<=4 or MM8_2<=4 or MM8_3<=4 or MM8_4<=4 or MM8_5<=4 or MM8_6<=4 or MM8_7<=4 or MM8_96<=4)
 or (IFI4_1<=4 and IFI5_1=1 and (IFI6_1=1 or IFI6_2=1 or IFI6_3=1 or IFI6_4=1)) 
 or (IFI4_2<=4 and IFI5_2=1 and (IFI7_1=1 or IFI7_2=1 or IFI7_3=1 or IFI7_4=1)) 
@@ -1352,7 +1352,7 @@ or (IFI4_3<=4 and IFI5_3=1 and (IFI8_1=1 or IFI8_2=1 or IFI8_3=1 or IFI8_4=1))
 or (IFI4_4<=4 and IFI5_4=1 and (IFI9_1=1 or IFI9_2=1 or IFI9_3=1 or IFI9_4=1)))  ACTIVE_DFS=1.
 
 Compute ACTIVE_DFS_ADV=0.
-IF ((FF1=1 and FF9<=4 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1) and 
+IF ((FF1=1 and FF5=1 and FF9<=4 and (FF6_1=1 or FF6_2=1 or FF6_3=1 or FF6_4=1) and 
 (FF14_3=1 or FF14_4=1 or FF14_5=1 or FF14_6=1 or FF14_7=1 or FF14_8=1 or
 FF14_11=1 or FF14_12=1 or FF14_13=1 or FF14_14=1 or FF14_15=1 or FF14_16=1 or FF14_17=1 or FF14_18=1 or FF14_19=1 or FF14_20=1 or FF14_21=1 or FF14_22=1 or fb16_1=1 or fb22_1=1)) 
 or ((MM8_1<=4 or MM8_2<=4 or MM8_3<=4 or MM8_4<=4 or MM8_5<=4 or MM8_6<=4 or MM8_7<=4 or MM8_96<=4) 
