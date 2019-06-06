@@ -1,4 +1,4 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 
 *Section 6.2.
 *******************************************************************************************************************************************************************.
@@ -1428,7 +1428,7 @@ if FF14_21=1 BANK_INVEST=1.
 compute BANK_LOAN=0.
 if (FF14_17=1 or FB16_1=1) BANK_LOAN=1.
 
-compute BANK_AIRTIME=0.fb
+compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
 numeric ACTIVE_BANK_TRANSFER.
@@ -1837,9 +1837,6 @@ numeric ACTIVE_BANK_AIRTIME.
 
 *******************************************************************************************************************************************************************.
 *13Bangladesh.
-compute YEAR=2013.
-compute COUNTRY=Bangladesh.
-
 rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
@@ -2202,4 +2199,25 @@ value labels ACTIVE_BANK_SAVE 1"Yes" 0"No".
 value labels ACTIVE_BANK_INVEST 1"Yes" 0"No".
 value labels ACTIVE_BANK_LOAN 1"Yes" 0"No".
 value labels ACTIVE_BANK_AIRTIME 1"Yes" 0"No".
+
+VARIABLE LABELS BANK_TRANSFER	"Ever used bank to send money to, or receive money from someone"
+BANK_MERCHANT	"Ever used bank to buy goods and service"
+BANK_BILL	"Ever used bank to pay a bill"
+BANK_GOV	"Ever used bank to receive money from the government"
+BANK_WAGE	"Ever used bank to receive payment from an exmployer"
+BANK_INSURANCE	"Ever used bank to pay for insurance or receive payment from insurance"
+BANK_SAVE	"Ever used bank to save money"
+BANK_INVEST	"Ever used bank to make an investment"
+BANK_LOAN	"Ever used bank to borrow money or get  credit"
+BANK_AIRTIME	"Ever used bank to buy airtime top-ups or pay a mobile phone bill"
+ACTIVE_BANK_TRANSFER	"Used bank to send money to, or receive money from someone in past 90 days"
+ACTIVE_BANK_MERCHANT	"Used bank to buy goods and service in past 90 days"
+ACTIVE_BANK_BILL	"Used bank to pay a bill in past 90 days"
+ACTIVE_BANK_GOV	"Used bank to receive money from the government in past 90 days"
+ACTIVE_BANK_WAGE	"Used bank to receive payment from an exmployer in past 90 days"
+ACTIVE_BANK_INSURANCE	"Used bank to pay for insurance or receive payment from insurance in past 90 days"
+ACTIVE_BANK_SAVE	"Used bank to save money in past 90 days"
+ACTIVE_BANK_INVEST	"Used bank to make an investment in past 90 days"
+ACTIVE_BANK_LOAN	"Used bank to borrow money  or get credit in past 90 days"
+ACTIVE_BANK_AIRTIME	"Used bank to buy airtime top-ups or pay a mobile phone bill in past 90 days".
 
