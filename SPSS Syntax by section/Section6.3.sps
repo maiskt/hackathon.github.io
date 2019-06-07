@@ -1,4 +1,4 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 
 *Section 6.3.
 **************************************************************************************************************************************************.
@@ -8,16 +8,16 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2018.
 
-compute R_NOBANK1=ff3_1.
-recode R_NOBANK1(sysmis=-2).
-compute R_NOBANK2=ff3_2.
-recode R_NOBANK2(sysmis=-2).
-compute R_NOBANK3=ff3_3.
-recode R_NOBANK3(sysmis=-2).
-compute R_NOBANK4=ff3_5.
-recode R_NOBANK4(sysmis=-2).
-compute R_NOBANK5=ff3_6.
-recode R_NOBANK5(sysmis=-2).
+compute R_NOBANK1=0.
+if ff3_1=1 R_NOBANK1=1.
+compute R_NOBANK2=0.
+if ff3_2=1 R_NOBANK2=1.
+compute R_NOBANK3=0.
+if ff3_3=1 R_NOBANK3=1.
+compute R_NOBANK4=0.
+if ff3_5=1 R_NOBANK4=1.
+compute R_NOBANK5=0.
+if ff3_6=1 R_NOBANK5=1.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -47,16 +47,16 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2018.
 
-compute R_NOBANK1=ff3_1.
-recode R_NOBANK1(sysmis=-2).
-compute R_NOBANK2=ff3_2.
-recode R_NOBANK2(sysmis=-2).
-compute R_NOBANK3=ff3_3.
-recode R_NOBANK3(sysmis=-2).
-compute R_NOBANK4=ff3_5.
-recode R_NOBANK4(sysmis=-2).
-compute R_NOBANK5=ff3_6.
-recode R_NOBANK5(sysmis=-2).
+compute R_NOBANK1=0.
+if ff3_1=1 R_NOBANK1=1.
+compute R_NOBANK2=0.
+if ff3_2=1 R_NOBANK2=1.
+compute R_NOBANK3=0.
+if ff3_3=1 R_NOBANK3=1.
+compute R_NOBANK4=0.
+if ff3_5=1 R_NOBANK4=1.
+compute R_NOBANK5=0.
+if ff3_6=1 R_NOBANK5=1.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -1035,8 +1035,7 @@ compute USE_BANK_OTC=0.
 if ff10_1=1 USE_BANK_OTC=1.
 compute USE_BANK_ATM=0.
 if ff10_2=1 USE_BANK_ATM=1.
-compute USE_BANK_RETAIL=0.
-if ff10_3=1 USE_BANK_RETAIL=1.
+numeric USE_BANK_RETAIL.
 compute USE_BANK_ONLINE=0.
 if ff10_4=1 USE_BANK_ONLINE=1.
 compute USE_BANK_MOBILE=0.
@@ -1591,15 +1590,15 @@ numeric R_NOBANK4.
 numeric R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
-if ffi21b=1 R_NOBANK_BUSI1=1.
+if ffi21_2=1 R_NOBANK_BUSI1=1.
 compute R_NOBANK_BUSI2=0. 
-if ffi21c=1 R_NOBANK_BUSI2=1.
+if ffi21_3=1 R_NOBANK_BUSI2=1.
 compute R_NOBANK_BUSI3=0. 
-if ffi21d=1 R_NOBANK_BUSI3=1.
+if ffi21_4=1 R_NOBANK_BUSI3=1.
 compute R_NOBANK_BUSI4=0.
-if ffi21e=1 R_NOBANK_BUSI4=1. 
+if ffi21_5=1 R_NOBANK_BUSI4=1. 
 compute R_NOBANK_BUSI5=0. 
-if ffi21f=1 R_NOBANK_BUSI5=1.
+if ffi21_6=1 R_NOBANK_BUSI5=1.
 numeric R_NOBANK_BUSI6. 
 
 numeric EXP_BANK1.
@@ -1773,15 +1772,15 @@ numeric R_NOBANK4.
 numeric R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
-if ffi21b=1 R_NOBANK_BUSI1=1.
+if ffi21_2=1 R_NOBANK_BUSI1=1.
 compute R_NOBANK_BUSI2=0. 
-if ffi21c=1 R_NOBANK_BUSI2=1.
+if ffi21_3=1 R_NOBANK_BUSI2=1.
 compute R_NOBANK_BUSI3=0. 
-if ffi21d=1 R_NOBANK_BUSI3=1.
+if ffi21_4=1 R_NOBANK_BUSI3=1.
 compute R_NOBANK_BUSI4=0.
-if ffi21e=1 R_NOBANK_BUSI4=1. 
+if ffi21_5=1 R_NOBANK_BUSI4=1. 
 compute R_NOBANK_BUSI5=0. 
-if ffi21f=1 R_NOBANK_BUSI5=1.
+if ffi21_6=1 R_NOBANK_BUSI5=1.
 numeric R_NOBANK_BUSI6. 
 
 numeric EXP_BANK1.
