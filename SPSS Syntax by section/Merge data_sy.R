@@ -83,4 +83,6 @@ merge.FII.da(3)
 ##Section 6.1
 merge.FII.da(6.1)
 
+##Section 6.1
+merge.FII.da(6.2)
 
