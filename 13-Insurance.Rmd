@@ -66,13 +66,14 @@ Levels:
 + 0=No
 
 ## INSUR_LIVESTOCK
-counts respondents who have any of the types of insurance
+have livestock insurance: counts respondents who have insurance that pays them in case their cattle or livestock die
+
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_FAMILY
-counts respondents who have any of the types of insurance
+Have family insurance: counts respondents who have insurance that pays them when their spouse of family member dies
 Levels:
 + 1=Yes
 + 0=No
