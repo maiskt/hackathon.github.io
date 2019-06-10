@@ -59,7 +59,7 @@ Levels:
 + 0=No
 
 ## INSUR_OLDAGE
-Have insurance ??????: counts respondents who have a pension, retirement, or old age benefits paid when they stop working. 
+Retiree: counts respondents who have a pension, retirement income, or old age benefits paid when they stop working. 
 
 Levels:
 + 1=Yes
