@@ -10,61 +10,61 @@ Levels:
 + 0=No
 
 ## INSUR_MEDICAL
-
+Have medical insurance: counts respondents who have health insurance or mediclaim policy to pay for medical expenses.
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_LIFE
-
+Have life insurance: counts respondents who have life insurance that pays a sum in the event they die
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_CAR
-
+Have car insurance: counts respondents who have a car or vehicle insurance that pays in case of accident or damage.
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_CROP
-
+Have crop insurance: counts respondents who have insurance when crops are destroyed by a natural calamity.  
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_PROPERTY
-
+Have property insurance: counts respondents who have insurance that pays in case their house or other belongings are destroyed by a fire or other calamity. 
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_UNEMPLOY
-
+counts respondents who have any of the types of insurance
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_DISABLE
-
+counts respondents who have any of the types of insurance
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_OLDAGE
-
+counts respondents who have any of the types of insurance
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_LIVESTOCK
-
+counts respondents who have any of the types of insurance
 Levels:
 + 1=Yes
 + 0=No
 
 ## INSUR_FAMILY
-
+counts respondents who have any of the types of insurance
 Levels:
 + 1=Yes
 + 0=No
