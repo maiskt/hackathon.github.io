@@ -709,17 +709,111 @@ Levels:
 + 2= No
 
 ## ACTION_MM1
+Opening mobile money menu without asistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM2
+Finding a particular mobile money menu option without assistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM3
+Completing a mobile money transaction without assistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM4
+Correcting an error in the amount of money without assistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM5
+Correcting an error in the amount or phone number for a transaction without assistance
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## ACTION_MM6
+Reversing or canceling a transaction without assistance.
+
+Levels:
++  1=Very difficult
++  2=Somewhat difficult
++  3=Neither difficult, nor easy
++  4=Somewhat easy
++  5=Very easy
++ -2=DK [DO NOT READ]
+
 ## OPN_MM1
+Reason for most recent unsuccessful transaction -Technical network problems
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM2
+Reason for most recent unsuccessful transaction - Agent closed a lunch-break or for the day
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM3
+Reason for most rececent unsuccessful transaction - I did not have a proper ID
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM4
+Reason for most recent unsuccessful transaction - There was not enough cash
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM5
+Reason for most recent unsuccessful transaction - There was not enough float
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## OPN_MM6
+Reason for most recent unsuccessful transaction - I did not enough money to pay the fee
+
+Levels:
++ 1= Yes
++ 2= No
+
 ## AWARE_MMP
 ## ACCESS_MMP
 ## REGISTERED_MMP

@@ -117,7 +117,7 @@ save outfile = "data/nga15.sav"
 
 DATASET ACTIVATE pak15.
 
-save outfile = "data/kpak15.sav"
+save outfile = "data/pak15.sav"
 /keep= SBJNUM COUNTRY YEAR UR CLUSTER Latitude Longitude.
 
 DATASET ACTIVATE tza15.

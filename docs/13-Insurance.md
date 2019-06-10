@@ -3,13 +3,68 @@
 Insurance
 
 ## INSURANCE
-## INSUR_TYPE1
-## INSUR_TYPE2
-## INSUR_TYPE3
-## INSUR_TYPE4
-## INSUR_TYPE5
-## INSUR_TYPE6
-## INSUR_TYPE7
-## INSUR_TYPE8
-## INSUR_TYPE9
-## INSUR_TYPE10
+Have insurance: counts respondents who have any of the types of insurance: medical, life, car, agriculture, house/asset, unemployment/income protection, educational policy, retirement/pension/old age, national social security fund, or national hospital insurance fund. 
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_MEDICAL
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_LIFE
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_CAR
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_CROP
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_PROPERTY
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_UNEMPLOY
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_DISABLE
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_OLDAGE
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_LIVESTOCK
+
+Levels:
++ 1=Yes
++ 0=No
+
+## INSUR_FAMILY
+
+Levels:
++ 1=Yes
++ 0=No
