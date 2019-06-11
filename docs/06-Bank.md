@@ -120,7 +120,7 @@ Ever use of bank account for basic activities: Counts individuals who have ever 
       FF14_2      |  Which of the following have you ever done using a bank account? Withdrew money
       FF14_9      |  Which of the following have you ever done using a bank account? Sent money to family members, friends,                              workmates or other acquaintances for regular support/allowances, to help with emergencies, or for other reasons                      (outside household)
       FF14_10     |  Which of the following have you ever done using a bank account? Received money from family members, friends,                        workmates or other acquaintances for regular support/allowances, to help with emergencies, or for other reasons                      (outside household)
-      FF14_11     |  Which of the following have you ever done using a bank account? Account maintenance: Checked your account                            balance, changed PIN, received mini-statement, etc.
+      FF14_23     |  Which of the following have you ever done using a bank account? Account maintenance: Checked your account                            balance, changed PIN, received mini-statement, etc.
       
 Levels
 
@@ -834,7 +834,7 @@ Levels
 
 Note:
 
-* USE_BANK_RETAIL is not available for 2017 and 2018 surveys, and 2016 Bangladesh survey.
+* USE_BANK_RETAIL is not available for 2017 and 2018 surveys, 2016 Bangladesh survey and 2015 Pakistan survey.
 
 ## USE_BANK_ONLINE
 Use bank online: Counts individuals who use a bank account for any financial activity via the bank's website/online banking. For example, India 2015 uses FF10_4.

@@ -59,6 +59,8 @@ Value | Reason
 3     | Don't trust them/people steal your money
 4     | Don't need any service from them/their services are better served by other financial service providers
 
+In 2017, respondents were asked about the importance of these factors on a Likert scale from 1, least important, to 5, most important. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
+
 ### Bangladesh
 In 2013, there was no option for "Don't know about them".
 ### Kenya
@@ -102,21 +104,25 @@ Country       | 2015 | 2016 | 2017
   Uganda      |  7   |  8   |  8
   
 ### Bangladesh
+2015 data was not available.
 In 2016, services 1 and 5 were not asked about.
 
 ### Kenya
 In 2015, service 2 was not asked about.
 
 ### India
+2015 data was not available.
 In 2016, the 9th option was "none of these".
 
 ### Indonesia
+2015 data was not available.
 In 2016, the 9th option was "none of these".
 
 ### Nigeria
 In 2015, service 2 was not asked about.
 
 ### Pakistan
+2015 data was not available.
 In 2016 and 2017, only services 1, 3, 4, and 6 were asked. Other, more specific ROSCA-related questions were asked instead.
 
 ### Tanzania
