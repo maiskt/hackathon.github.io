@@ -11,7 +11,7 @@ Levels:
 + 99= "Don't know"
 
 ## LOAN_CURRENT
-Current have a loan with at least one organization: counts respondents who currently have a loan wiht any organisation. 
+Currently have a loan with at least one organization: counts respondents who currently have a loan with any organisation. 
 
 Levels: 
 + 1="Yes"
@@ -19,14 +19,14 @@ Levels:
 + 99= "Don't know"
 
 ## LOAN_INTEREST
-Know interest rate paid on loans: counts who currently have a loan and know the interest rate thier pay on the loan.
+Know interest rate paid on loans: counts who currently have a loan and know the interest rate they pay on the loan.
 Levels: 
 + 1="Yes"
 + 0= "No"
 + 99= "Don't know"
 
 ## LOAN_INFML
-Ever borrowed from a informal source: counts respondents who ever borrowed from a store, shopkeeper, private moneylender, pawnshop or a self help group or cooperative without a member.
+Ever borrowed from an informal source: counts respondents who ever borrowed from a store, shopkeeper, private moneylender, pawnshop or a self help group or cooperative without having a membership.
 
 Levels: 
 + 1="Yes"
@@ -35,14 +35,14 @@ Levels:
 ## LOAN_FORMAL
 
 ## LOAN_STORE
-Ever borrowed from a store or shopkeeper: counts respondents who ever purchased something from a store or shopkeeper using credit. 
+Ever borrowed from a store or shopkeeper: counts respondents who have ever purchased something from a store or shopkeeper using credit. 
 
 Levels: 
 + 1="Yes"
 + 0= "No"
 
 ## LOAN_CREDITCARD
-Ever purchased using a credit card: counts respondents who ever purchased something using a credit card.
+Ever purchased using a credit card: counts respondents who have ever purchased something using a credit card.
 
 Levels: 
 + 1="Yes"

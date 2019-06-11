@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 *Tanzania PPI.
 weight off.
 recode dl14 (1=0) (2=10) (3=15) (4=20) (5=30) into hh_members.
@@ -29,7 +29,6 @@ are below the poverty line, those with a ppi score of more than 67 are aboev the
 *wave 3: 83% below poverty line.
 recode ppi_score (0 thru 67= 1) (68 thru 100 = 0) into POVERTY1.
 
-*Need double check.
 recode ppi_score (0 thru 4 = 99.4) (5 thru 9 = 99.1) (10 thru 14 =99.2) (15 thru 19 = 96.9) (20 thru 29 =90.6) (30 thru 34 = 88.6) (35 thru 39 = 77.7) (40 thru 44 = 70.5)
 (45 thru 49 = 61.1) (50 thru 54 = 48.9) (55 thru 59 = 32.9) (60 thru 64 = 29.1) (65 thru 69 = 19.3) (70 thru 74 = 11.7) (75 thru 79 = 6) (80 thru 84 = 4.8)
 (85 thru 100 = 0) into ppi_prob_125.

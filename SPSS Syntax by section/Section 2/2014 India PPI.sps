@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 ***Creating PPI.
 weight off.
 recode dl11 (1=0) (2=7) (3=11) (4=17) (5=26) into young.
@@ -24,7 +24,6 @@ DESCRIPTIVES ppi_prob.
 compute POVERTY1 = 0.
 if (ppi_score <= 53) POVERTY1 = 1.
 
-*Need double check
 *$1.25.
 weight off.
 recode ppi_score (0 thru 4 = 91.9) (5 thru 9=83.6)(10 thru 14=76.7)(15 thru 19=62)(20 thru 24=49.7)(25 thru 29=41.8)(30 thru 34 = 30.5) (35 thru 39 = 21.8) 

@@ -41,7 +41,6 @@ descriptives ppi_prob.
 
 recode ppi_score (0 thru 55 = 1) (56 thru 100 = 0) into POVERTY1.
 
-*Need double check.
 recode ppi_score (0 thru 4 = 100) (5 thru 9 = 97.2) (10 thru 14 = 83.7) (15 thru 19 = 87.6) (20 thru 24 = 81.1) (25 thru 29 = 70.7)
 (30 thru 34 = 63.1) (35 thru 39 = 48.4) (40 thru 44 = 35.1) (45 thru 49 = 25.4) (50 thru 54 = 8.7) (55 thru 59 = 7.8) 
 (60 thru 64 = 1) (65 thru 69 = 1.1) (70 thru 74 = 0.2) (75 thru 79 = 0) (80 thru 84 = 0.4) (85 thru 100 = 0) into ppi_prob_125.
