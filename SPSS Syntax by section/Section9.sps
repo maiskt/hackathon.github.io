@@ -1,4 +1,4 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 *IFG Syntax*
 ** 2014-2017 for BELONG_INFML, IFI18/19 only. 
 variable labels INFML_SERVICE_1"Services received in the informal societies or Welfare/clan group belongs to: help each other out for things like funerals"
@@ -37,7 +37,7 @@ value labels R_NOINFML 1"You have an account in a bank or mobile money account/ 
 8"You have just dissolved your membership in one and are still debating joining another one"
 9"You have not found a group that suits your needs"
 96"Others (Specify)".
-
+exe.
 
 cd "C:/Users/shueym/Documents".
 *2017***.
