@@ -34,13 +34,12 @@ freq ppi_score.
 compute POVERTY1 = 0.
 if (ppi_score <= 57) POVERTY1 = 1.
 
-*Need double check.
-recode ppi_score (0 thru 14 = 100) (5 thru 9 =92.1) (10 thru 14 =100) (15 thru 19 = 92.3) (20 thru 24 = 82.6) (25 thru 29 = 67) (30 thru 34 = 61.8) (35 thru 39 = 55.3) 
+recode ppi_score (0 thru 4 = 100) (5 thru 9 =92.1) (10 thru 14 =100) (15 thru 19 = 92.3) (20 thru 24 = 82.6) (25 thru 29 = 67) (30 thru 34 = 61.8) (35 thru 39 = 55.3) 
 (40 thru 44 = 38) (45 thru 49 = 31.3) (50 thru 54 = 24.6) (55 thru 59 = 11.3) (60 thru 64 = 6.2) 
 (65 thru 69 = 2.5) (70 thru 74 = 2.8) (75 thru 100 = 0) into ppi_prob_125.
 des ppi_prob_125.
 
-*mean of ppi_prob_125 is 30.929100.
+*mean of ppi_prob_125 is 30.8501.
 compute ppi_cutoff_125 = 0.
 if (ppi_score <= 41) ppi_cutoff_125 = 1.
 
