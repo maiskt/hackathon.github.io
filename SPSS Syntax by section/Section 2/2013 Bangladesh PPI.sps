@@ -26,7 +26,6 @@ descriptives ppi_prob.
 compute POVERTY1 = 0.
 if (ppi_score <= 68) POVERTY1 = 1.
 
-*Need double check.
 **1.25.
 recode ppi_score (0 thru 4 = 97.9) (5 thru 9 = 89.3) (10 thru 14 = 88.8) (15 thru 19 = 81.6) (20 thru 24 = 78) (25 thru 29 = 65.8) (30 thru 34 = 57)
 (35 thru 39 = 50.3) (40 thru 44 = 40.8) (45 thru 49 = 33.5) (50 thru 54 = 24.2) (55 thru 59 = 14.5) (60 thru 64 = 10.9) (65 thru 69 = 8.7)
