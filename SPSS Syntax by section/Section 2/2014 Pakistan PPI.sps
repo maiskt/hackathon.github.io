@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 *Pakistan PPI wave 2.
 
 weight off.
@@ -27,7 +27,6 @@ are below the poverty line, those with a ppi score of more than 63 are aboev the
 
 recode ppi_score (0 thru 63 = 1) (64 thru 100 = 0) into POVERTY1.
 
-*Need double check.
 *$1.25.
 weight off.
 recode ppi_score (0 thru 4 = 95.4) (5 thru 9=95)(10 thru 14=79.1)(15 thru 19=67.5)(20 thru 24=56.8)(25 thru 29=47.5)(30 thru 34 = 36.4) (35 thru 39 = 27.2) 
