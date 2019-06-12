@@ -6,6 +6,7 @@ Mobile Money Services
 Mobile money awareness: counts respondents who are aware of mobile money service.
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -13,6 +14,7 @@ Levels:
 Mobile money provider awareness: counts respondents who know at least one mobile money provider.
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -20,6 +22,7 @@ Levels:
 Nonuser but aware of mobile money: counts respondents who are aware of mobile money service but have never used it.
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -27,6 +30,7 @@ Levels:
 Ever use of mobile money: counts respondents who have ever used mobile money service for any financial activity. 
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -34,6 +38,7 @@ Levels:
 Have a mobile money account: counts respondents who have a mobile money registered in their name. 
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -48,12 +53,15 @@ Levels:
 Mobile money use in last 30 days: counts respondents who used their registered mobile money account in the last 30 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 
 ## INACTIVE_MM
 Inactive mobile user: counts respondents who have not used their mobile money account for any activity in the last 90 days.
+
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -61,6 +69,7 @@ Levels:
 Dormant mobile money account: counts respondents who have never used their registered mobile money account.
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -68,6 +77,7 @@ Levels:
 Nonregistered mobile money users: counts respondents who do not have a mobile money account registered in their name but use mobile money services over the counter. 
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -75,6 +85,7 @@ Levels:
 Ever use mobile money for basic activities: counts respondents who have used a mobile money account for cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -82,6 +93,7 @@ Levels:
 Ever use mobile money for advanced activities: counts respondents who have used a mobile money account for activities other than cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -96,7 +108,9 @@ Levels:
 
 ## MM_STAGE
 Customer journey segmentation for mobile money
+
 Levels:
+
 + 0="Mobile money nonuser"
 + 1="Unregistered mobile money user"
 + 2="Inactive registered mobile money user"
@@ -107,6 +121,7 @@ Levels:
 Ever use mobile money for transfer: counts respondents who have ever used mobile money to send or receive money.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -115,6 +130,7 @@ Levels:
 Ever use of mobile money for purchases: counts respondents who have ever used mobily money to pay for goods and/or services.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -123,13 +139,16 @@ Levels:
 Ever use of mobile money for bill payment: counts respondents who have ever paid for bills using mobile money.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
 
 ## MM_GOV
 Ever used mobile money to receive money from the government using mobile money.
+
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -138,6 +157,7 @@ Levels:
 Ever used mobile money to recieve working wages.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -146,6 +166,7 @@ Levels:
 Ever used mobile money to pay for insurance or receive benefits.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -154,6 +175,7 @@ Levels:
 Ever used mobile money for savings.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -162,6 +184,7 @@ Levels:
 Ever used mobile to make an investment.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -170,6 +193,7 @@ Levels:
 Ever use mobile money for loans: counts respondents who have ever borrowed money or got credit using mobile money.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -178,6 +202,7 @@ Levels:
 Ever used mobile money to purchase airtime top-ups or pay for a mobile phone bill.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -186,6 +211,7 @@ Levels:
 Active use of mobile money transfer: counts respondents who sent or recieved money using mobile money in the last 90 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -194,6 +220,7 @@ Levels:
 Active use of mobile money for purchases: counts respondents who used mobily money to pay for goods and/or services in the last 90 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -202,6 +229,7 @@ Levels:
 Active use of mobile money for bill payment: counts respondents who paid for bills using mobile money in the last 90 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -210,6 +238,7 @@ Levels:
 Used mobile money to receive money from the government in the last 90 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -218,6 +247,7 @@ Levels:
 Used mobile money in the last 90 days to recieve working wages from an employer.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -226,6 +256,7 @@ Levels:
 Active use of mobile money for insurance: counts respondents who used mobile money to pay for insurance or receive insurance payments in the last 90 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -234,6 +265,7 @@ Levels:
 Active use of mobile money for savings: counts respondents who used mobile money to save money in the last 90 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -242,6 +274,7 @@ Levels:
 Active use of mobile money for investments: counts respondents who used mobile money to make an investment in the last 90 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -250,6 +283,7 @@ Levels:
 Active use of mobile money for loans: counts respondents who used mobile money in the last 90 days to borrow money or get credit.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -258,6 +292,7 @@ Levels:
 Active use of mobile for airtime top-up: counts respondents who used mobile money to purchase airtime top-ups or pay for a mobile phone bill in the last 90 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 + 99=Missing
@@ -266,6 +301,7 @@ Levels:
 Opinion about mobile money services- money is safe and secure
 
 Levels: 
+
 + 1 = Strongly disagree
 + 2 = Somewhat disagree
 + 3 = Neither disagree, nor agree
@@ -277,6 +313,7 @@ Levels:
 Opinion about mobile money service- transaction completed without any problem.
 
 Levels: 
+
 + 1 = Strongly disagree
 + 2 = Somewhat disagree
 + 3 = Neither disagree, nor agree
@@ -287,6 +324,7 @@ Levels:
 Opinion about mobile money service- Money usually accessible without any problem.
 
 Levels: 
+
 + 1 = Strongly disagree
 + 2 = Somewhat disagree
 + 3 = Neither disagree, nor agree
@@ -297,6 +335,7 @@ Levels:
 Opinion about mobile money service- Merchant payment usually accepted without any problem.
 
 Levels: 
+
 + 1 = Strongly disagree
 + 2 = Somewhat disagree
 + 3 = Neither disagree, nor agree
@@ -307,6 +346,7 @@ Levels:
 Opinion about mobile money service- Comfortable using it for digital payments to merchants.
 
 Levels: 
+
 + 1 = Strongly disagree
 + 2 = Somewhat disagree
 + 3 = Neither disagree, nor agree
@@ -317,6 +357,7 @@ Levels:
 Opinion about mobile money service- Comfortable using it for salaries.
 
 Levels: 
+
 + 1 = Strongly disagree
 + 2 = Somewhat disagree
 + 3 = Neither disagree, nor agree
@@ -327,6 +368,7 @@ Levels:
 Opinion about mobile money service- Comfortable using it for cash deposits and withdrawals.
 
 Levels: 
+
 + 1 = Strongly disagree
 + 2 = Somewhat disagree
 + 3 = Neither disagree, nor agree
@@ -337,6 +379,7 @@ Levels:
 Opinion about mobile money service- Easier for savings than cash.
 
 Levels: 
+
 + 1 = Strongly disagree
 + 2 = Somewhat disagree
 + 3 = Neither disagree, nor agree
@@ -347,6 +390,7 @@ Levels:
 Experience with mobile money agent -Agent absent
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -358,6 +402,7 @@ Levels
 Experience with mobile money agent - Poor customer service
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -368,6 +413,7 @@ Levels
 Experience with mobile money agent - Agent lacks enough money for the transaction
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -378,6 +424,7 @@ Levels
 Experience with mobile money agent - Agent didn't know how perform the transaction
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -388,6 +435,7 @@ Levels
 Experience with mobile money agent - Agent overcharged for transaction
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -398,6 +446,7 @@ Levels
 Experience with mobile money agent -Agent didn't give all the cash due
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -408,6 +457,7 @@ Levels
 Experience with mobile money agent -system/network down
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -418,6 +468,7 @@ Levels
 Experience with mobile money agent -Agent dismissive of women
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -428,6 +479,7 @@ Levels
 Experience with mobile money agent -Agent's place not safe
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -438,6 +490,7 @@ Levels
 Experience with mobile money agent -Agent shared personal/account information with others without consent 
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -448,6 +501,7 @@ Levels
 Experience with mobile money agent - Rude agent
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -458,6 +512,7 @@ Levels
 Experience with mobile money agent -Agent's refusal to perform transaction for no reason
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -468,6 +523,7 @@ Levels
 Experience with mobile money agent -Transaction was time-consuming
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -478,6 +534,7 @@ Levels
 Experience with mobile money agent - Didn't get a receipt
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -488,6 +545,7 @@ Levels
 Experience with mobile money agent -Agent charged for depositing money
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -498,6 +556,7 @@ Levels
 Experience with mobile money agent -Agent asked for PIN number
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -508,6 +567,7 @@ Levels
 Experience with mobile money agent - Agent committed fraud
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -518,6 +578,7 @@ Levels
 Experience with mobile money agent - Agent's refusal to do transaction due to lack of ID
 
 Levels
+
 + 1 = Never
 + 2 = Once or twice
 + 3 = Sometimes
@@ -546,6 +607,7 @@ Levels
 Reason for not using mobile money - Do not know enough about it
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -553,18 +615,23 @@ Levels:
 Reason for not using mobile money - Do not need it
 
 Levels:
+
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM3
 Reason for not using mobile money - Do not have required documents
+
 Levels:
+
 + 1= Yes
 + 2= No
 
 ## R_NOTUSE_MM4
 Reason for not using mobile money - Do not have enough money to use it
+
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -572,6 +639,7 @@ Levels:
 Reason for not using mobile money - Do not trust it
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -579,6 +647,7 @@ Levels:
 Reason for not using mobile money - Feel like at risk of losing money
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -586,6 +655,7 @@ Levels:
 Reason for not using mobile money - Prefer using cash
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -593,6 +663,7 @@ Levels:
 Reason for not using mobile money - Fees and expenses are too high 
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -600,6 +671,7 @@ Levels:
 Reason for not using mobile money - Can use friend or family member's account  
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -607,6 +679,7 @@ Levels:
 Reason for not using mobile money - 
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -614,6 +687,7 @@ Levels:
 Reason for not using mobile money - Do not use products and services requiring a registered account 
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -621,6 +695,7 @@ Levels:
 Reason for not using mobile money - Do not know how to register an account
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -628,6 +703,7 @@ Levels:
 Reason for not using mobile money - No longer have an account 
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -635,6 +711,7 @@ Levels:
 Reason for not using mobile money - Prefer using another financial account
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -642,6 +719,7 @@ Levels:
 Reason for not using mobile money - Do not have enough money to use a registered account
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -649,6 +727,7 @@ Levels:
 Reason started to use mobile money - Send or receive money
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -656,6 +735,7 @@ Levels:
 Reason started to use mobile money - Save money
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -663,6 +743,7 @@ Levels:
 Reason started to use mobile money - Have a secure place to store money
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -670,6 +751,7 @@ Levels:
 Reason started to use mobile money - Someone else registered an account for me
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -677,6 +759,7 @@ Levels:
 Reason started to use mobile money -Borrow money
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -684,6 +767,7 @@ Levels:
 Reason started to use mobile money -Make a purchase
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -691,6 +775,7 @@ Levels:
 Reason started to use mobile money -Make an investment
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -698,6 +783,7 @@ Levels:
 Reason started to use mobile money -Pay a bill
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -705,6 +791,7 @@ Levels:
 Reason started to use mobile money - Got an incentive during a promotion
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -712,6 +799,7 @@ Levels:
 Opening mobile money menu without asistance
 
 Levels:
+
 +  1=Very difficult
 +  2=Somewhat difficult
 +  3=Neither difficult, nor easy
@@ -723,6 +811,7 @@ Levels:
 Finding a particular mobile money menu option without assistance
 
 Levels:
+
 +  1=Very difficult
 +  2=Somewhat difficult
 +  3=Neither difficult, nor easy
@@ -734,6 +823,7 @@ Levels:
 Completing a mobile money transaction without assistance
 
 Levels:
+
 +  1=Very difficult
 +  2=Somewhat difficult
 +  3=Neither difficult, nor easy
@@ -745,6 +835,7 @@ Levels:
 Correcting an error in the amount of money without assistance
 
 Levels:
+
 +  1=Very difficult
 +  2=Somewhat difficult
 +  3=Neither difficult, nor easy
@@ -756,6 +847,7 @@ Levels:
 Correcting an error in the amount or phone number for a transaction without assistance
 
 Levels:
+
 +  1=Very difficult
 +  2=Somewhat difficult
 +  3=Neither difficult, nor easy
@@ -767,6 +859,7 @@ Levels:
 Reversing or canceling a transaction without assistance.
 
 Levels:
+
 +  1=Very difficult
 +  2=Somewhat difficult
 +  3=Neither difficult, nor easy
@@ -778,6 +871,7 @@ Levels:
 Reason for most recent unsuccessful transaction -Technical network problems
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -785,18 +879,21 @@ Levels:
 Reason for most recent unsuccessful transaction - Agent closed a lunch-break or for the day
 
 Levels:
+
 + 1= Yes
 + 2= No
 
 ## OPN_MM3
 Reason for most rececent unsuccessful transaction - I did not have a proper ID
 Levels:
+
 + 1= Yes
 + 2= No
 
 ## OPN_MM4
 Reason for most recent unsuccessful transaction - There was not enough cash
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -804,6 +901,7 @@ Levels:
 Reason for most recent unsuccessful transaction - There was not enough float
 
 Levels:
+
 + 1= Yes
 + 2= No
 
@@ -811,6 +909,7 @@ Levels:
 Reason for most recent unsuccessful transaction - I did not enough money to pay the fee
 
 Levels:
+
 + 1= Yes
 + 2= No
 
