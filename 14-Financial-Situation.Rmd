@@ -96,7 +96,11 @@ Levels:
 + 5=Strongly disagree
 
 ## SCH_FEE_PRB1
+Problem with paying school fees- could not pay at all: counts respondents who have ever experienced a lack of funds and could not pay at all school fees.
+
 ## SCH_FEE_PRB2
+Problem with paying school fees- could only pay a portion: counts respondents who have ever experienced a lack of funds and could only pay a portion of all school fees.
 ## SCH_FEE_PRB3
+Problem with paying school fees- bank issues: counts respondents who have ever experienced bank issues (high fees or long lines) when trying to pay school fees.
 ## SCH_FEE_PRB4
 ## SCH_FEE_PRB5
