@@ -176,7 +176,7 @@ Levels:
 + 0=No
 
 Notes:
-* 2013, 2014 and 2017 surveys didn't include questions on school fee.
+* 2013, 2014 and 2017 surveys didn't include questions on school fees.
 
 ## EMPLOYMENT
 Employment status of the respondent.
