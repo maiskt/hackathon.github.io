@@ -15,48 +15,48 @@ Ever used a non-bank financial institution: counts respondents who have ever use
 
 Levels:  
 
- 1 ="Yes" 
- 0 ="No"
++ 1 ="Yes" 
++ 0 ="No"
 
 ## REGISTERED_NBFI
 Have an account at a full-service non-bank financial institution: counts respondents with an account at a full-service non-bank financial institution.
 
 Levels: 
  
- 1 ="Yes"  
- 0 ="No"
++ 1 ="Yes"  
++ 0 ="No"
 
 ## REGISTERED_NBFI_ALL
 Have an account with a non-bank financial institution:  counts respondents with an account with any non-bank financial institution
 
 Levels: 
  
- 1 ="Yes" 
- 0 ="No"
++ 1 ="Yes" 
++ 0 ="No"
 
 ## REG_DFS_NBFI
 Have a digital stored-value account at a non-bank financial institution: counts respondents with an account/membership at a full-service non-bank financial institution that offers digital features.
 
 Levels: 
 
- 1 ="Yes" 
- 0 ="No"
++ 1 ="Yes" 
++ 0 ="No"
 
 ## ACTIVE_NBFI
 Used a full-service non-bank financial account in the past 90 days: counts respondents who have an account/membership with a full-service non-bank financial institution and have used their account in the last 90 days before the survey.
 
 Levels:
 
- 1 ="Yes" 
- 0 ="No"
++ 1 ="Yes" 
++ 0 ="No"
 
 ## ACTIVE_NBFI_ALL
 Used a non-bank financial institution in the last 90 days: counts respondents who have an account/membership with any non-bank financial institution and have used their account in the last 90 days before the survey.
 
 Levels:
 
- 1 ="Yes" 
- 0 ="No"
++ 1 ="Yes" 
++ 0 ="No"
 
 ## ACTIVE30_NBFI
 
@@ -67,16 +67,16 @@ Dormant NBFI account: counts respondants who have an account with a full-service
 
 Levels:
 
- 1 ="Yes"  
- 0 ="No"
++ 1 ="Yes"  
++ 0 ="No"
 
 ## OTC_NBFI
 Nonregistered users of non-bank financial institutions: counts respondents who don't have an account/membership with a non-bank financial institution (NBFI) but have ever used an NBFI for any financial activity. 
 
 Levels:
 
- 1 ="Yes"  
- 0 ="No"
++ 1 ="Yes"  
++ 0 ="No"
 
 ## NBFI_BASIC
 
@@ -85,8 +85,8 @@ Ever used a non-bank financial institution (NBFI) for advanced activities: count
 
 Levels:
 
- 1 ="Yes"  
- 0 ="No"
++ 1 ="Yes"  
++ 0 ="No"
 
 
 ## REG_NBFI_BASIC
@@ -100,59 +100,67 @@ Advanced active NBFI account holder: counts respondents who have an account/memb
 
 Levels: 
  
- 1 ="Yes" 
- 0 ="No"
++ 1 ="Yes" 
++ 0 ="No"
 
 ## ACTIVE30_NBFI_ADV
 Used own account at a full-service NBFI in the last 30 days to conduct at least one advanced financial service: counts respondents who have a registered account/membership in their name at a full-service NBFI and have used their account in the last 30 days to conduct at least one financial service other than a deposit, withdrawal, sending or receiving money.
-Levels: 1 ="Yes" 0 ="No"
+
+Levels:
+
++ 1 ="Yes" 
++ 0 ="No"
 
 ## NBFI_STAGE
 Customer journey segmentation for NBFI users: classifies non-bank financial institution (NBFI) users into 5 mutually exclusive groups.
 
-Levels:  
- 0= "NBFI nonuser" 
- 1= "Unregistered NBFI user" 
- 2="Inactive registered NBFI user" 
- 3="Active NBFI basic user" 
- 4="Active NBFI advanced user"
+Levels:
+
++ 0= "NBFI nonuser" 
++ 1= "Unregistered NBFI user" 
++ 2="Inactive registered NBFI user" 
++ 3="Active NBFI basic user" 
++ 4="Active NBFI advanced user"
 
 ## ACCESS_MFI
 Ever used a full-service microfinance institution (MFI): counts respondents who have ever used a full-service MFI.
 
 Levels: 
 
- 1 ="Yes" 
- 0 ="No"
++ 1 ="Yes" 
++ 0 ="No"
 
 ## REGISTERED_MFI
 Full-service MFI account ownership: counts respondents who have an account/membership in their name at a full-service microfinance institution.
 
 Levels: 
  
- 1 ="Yes" 
- 0 ="No"
++ 1 ="Yes" 
++ 0 ="No"
 
 ## ACTIVE_MFI
 Active registered MFI users: counts respondents who have an account/membership at a full-service microfinance institution and have used it in the last 90 days. 
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
 
 ## ACCESS_COOP
 Ever used a full-service cooperative: counts respondents who have ever used a full-service cooperative for any financial activity.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
 
 ## REGISTERED_COOP
 Full-service cooperative account ownership: counts respondents who have an account/membership in their name at a full-service cooperative.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+
++ 1 ="Yes" 
++ 0 ="No"
 
 ## ACTIVE_COOP
 Active registered cooperative users: counts respondents who have an account/membership in thier name at a full-service cooperative and have used it in the last 90 days. 
@@ -164,86 +172,98 @@ Levels:
 ## ACCESS_POST
 Ever used a full-service post office bank: counts respondents who have ever used a full-service post office bank for any financial activity.
 
-Levels: 
- 1 ="Yes" 
- 0 ="No"
+Levels:
+
++ 1 ="Yes" 
++ 0 ="No"
  
 ## REGISTERED_POST
 Have a full-service post office bank account:  counts respondents who have an account/membership in their name at a full-service post office bank.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## ACTIVE_POST
 Active registered post office bank users: counts respondents who have an account/membership in thier name at a full-service post office bank and have used it in the last 90 days. 
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
 
 ## ACCESS_SACCO
 Ever used a full-service SACCO: counts respondents who have ever used a full-service SACCO for any financial activity.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## REGISTERED_SACCO
 Have a full-service SACCO account:  counts respondents who have an account/membership in their name at a full-service SACCO.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## ACTIVE_SACCO
 Active registered SACCO users: counts respondents who have an account/membership in thier name at a full-service SACCO and have used it in the last 90 days. 
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
 
 ## ACCESS_BPR
 Ever used a full-service Bank Perkreditan Rakyat(BPR): counts respondents who have ever used a full-service BPR.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+
++ 1 ="Yes" 
++ 0 ="No"
 
 ## REGISTERED_BPR
 Have a full-service Bank Perkreditan Rakyat(BPR):  counts respondents who have an account/membership in their name at a full-service BPR.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## ACTIVE_BPR
 Active registered Bank Perkreditan Rakyat(BPR) users: counts respondents who have an account/membership in thier name at a full-service Bank Perkreditan Rakyat(BPR) and have used it in the last 90 days. 
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## ACCESS_PAWNSHOP
 Ever used a full-service Pawnshop: counts respondents who have ever used a full-service Pawnshop.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## REGISTERED_PAWNSHOP
 Have a full-service Pawshop:  counts respondents who have an account/membership in their name at a full-service Pawshop.
 
 Levels: 
- 1 ="Yes" 
-  0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
   
 ## ACTIVE_PAWNSHOP
 Active registered Pawnshop users: counts respondents who have an account/membership in thier name at a full-service Pawnshop and have used it in the last 90 days. 
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## AWARE_PAYMENT_BANK_PROVIDER
 
@@ -251,22 +271,25 @@ Levels:
 Ever used a full-service Payment Bank: counts respondents who have ever used a full-service Payment Bank.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## REGISTERED_PAYMENT
 Have a full-service payment bank account:  counts respondents who have an account registered in their name or a joint account registered in their name and someone else's at a full-service payment bank.
 
 Levels: 
- 1 ="Yes" 
-  0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
   
 ## ACTIVE_PAYMENT
 Active registered payment bank users: counts respondents who have an account in thier name at a full-service payment bank and have used it in the last 90 days. 
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## ACCESS_GROUP
 ## REGISTERED_GROUP
@@ -279,8 +302,9 @@ Levels:
 Ever used non-bank financial institutions (NBFI) to pay bills: counts respondents who have used their NBFI account to pay bills.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## NBFI_GOV
 ## NBFI WAGE
@@ -289,29 +313,33 @@ Levels:
 Ever used non-bank financial institutions (NBFI) for insurance: counts respondents who have ever used their NBFI account to pay insurance or receive insurance claims.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## NBFI_SAVE
 Ever used non-bank financial institutions (NBFI) to save: counts respondents who have ever used their NBFI account to save.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+
++ 1 ="Yes" 
++ 0 ="No"
  
 ## NBFI_INVEST
 Ever used non-bank financial institutions (NBFI) for investments: counts respondents who have ever used their NBFI account to make investments.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## NBFI_LOAN
 Ever used non-bank financial institutions (NBFI) for loans: counts respondents who have ever used their NBFI account to take or repay a loan. 
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## NBFI_AIRTIME
 ## ACTIVE_NBFI_TRANSFER
@@ -324,29 +352,33 @@ Levels:
 Active use of non-bank financial institutions (NBFI) for insurance: counts respondents who used their NBFI account to pay insurance or receive insurance claims in the last 90 days.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## ACTIVE_NBFI_SAVE
 Active use of non-bank financial institutions (NBFI) for saving: counts respondents who used their NBFI account to save money for any reason in the last 90 days.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## ACTIVE_NBFI_INVEST
 Active use of non-bank financial institutions (NBFI) for investmentse: counts respondents who used their NBFI account for investments in the last 90 days.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+
++ 1 ="Yes" 
++ 0 ="No"
  
 ## ACTIVE_NBFI_LOAN
 Active use of non-bank financial institutions (NBFI) for loans: counts respondents who used their NBFI account to take or repay a loan in the last 90 days.
 
 Levels: 
- 1 ="Yes" 
- 0 ="No"
+ 
++ 1 ="Yes" 
++ 0 ="No"
  
 ## ACTIVE_NBFI_AIRTIME
 ## R_STOPMFI1
