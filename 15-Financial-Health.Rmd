@@ -3,10 +3,33 @@
 Financial
 
 ## HAVE_PLAN
+Have a financial plan for unexpected events.
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## FOLLOW_PLAN
+
 ## ECO_VUL
+
 ## FIN_SHOCK
+Financial shock: counts respondents who experienced a shock such as fire, flodd, natural disaster, burglary, pests,  job loss, death of main income earner, increase costs of agricultural inputs, drop in crop or livestock price, large medical expenses or family separation. 
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## BUDGET_INCOME
+Plan how to spend income;
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## BUDGET_STAY
 ## FIN_HEA1
 ## FIN_HEA2
