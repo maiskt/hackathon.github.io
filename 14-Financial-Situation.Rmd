@@ -9,6 +9,7 @@ Financial Situation
 Family's financial situation:  
 
 Levels:
+
 + 1= Don't have enough money for food
 + 2= Have enough money for food, but buying clothes is difficult
 + 3= Have enough money for food and clothes, and can save a bit, but not enough to buy expensive goods such as a TV set or a               refrigerator
