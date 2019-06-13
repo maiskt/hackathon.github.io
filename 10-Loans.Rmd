@@ -51,6 +51,7 @@ Levels:
 Ever purchased using a credit card: counts respondents who have ever purchased something using a credit card.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
