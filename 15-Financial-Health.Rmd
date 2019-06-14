@@ -85,6 +85,14 @@ Levels:
 ## FIN_HEA5
 Have emergency fund for unplanned expenses: counts respondents who have an emergency fund that is large enough to cover unplanned expenses. 
 
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_HEA6
 Confidence in future income growth: counts respondents who are confident that their income will grow in the future. 
 
