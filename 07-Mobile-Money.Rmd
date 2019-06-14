@@ -10,6 +10,10 @@ Levels:
 + 1=Yes
 + 0=No
 
+Notes:
+
+* For 2013 data, questions asking about awareness of the *concept* of mobile money were not asked.
+
 ## AWARE_MM_PROVIDER
 Mobile money provider awareness: counts respondents who know at least one mobile money provider.
 
@@ -82,7 +86,7 @@ Levels:
 + 0=No
 
 ## MM_BASIC
-Ever use mobile money for basic activities: counts respondents who have used a mobile money account for cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
+Ever used mobile money for basic activities: counts respondents who have used a mobile money account for cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
 
 Levels:
 
@@ -90,7 +94,7 @@ Levels:
 + 0=No
 
 ## MM_ADV
-Ever use mobile money for advanced activities: counts respondents who have used a mobile money account for activities other than cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
+Ever used mobile money for advanced activities: counts respondents who have used a mobile money account for activities other than cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
 
 Levels:
 
@@ -98,17 +102,57 @@ Levels:
 + 0=No
 
 ## REG_MM_BASIC
+This variable represents repondents who are basic mobile money users with a registered account.
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## REG_MM_ADV
+This variable represents respondents who are advanced mobile money users with a registered account. 
+
+Levels:
+
++ 1=Yes
++ 0=No
 
 ## ACTIVE_MM_BASIC
-## ACTIVE_MM_ADV
-## ACTIVE30_MM_ADV
-## LENGTH_MM
+This variable represents basic mobile money users who have used services within the last 90 days.
 
+Levels:
+
++ 1=Yes
++ 0=No
+
+## ACTIVE_MM_ADV
+This variable represents advanced mobile money users who have used services within the last 90 days.
+
+Levels:
+
++ 1=Yes
++ 0=No
+
+## ACTIVE30_MM_ADV
+This variable represents advanced mobile money users who have used services within the last 30 days.
+
+Levels:
+
++ 1=Yes
++ 0=No
+
+## LENGTH_MM
+This variable categorizes the length of time that the respondent has been a mobile money user.
+
+Levels:
+
++ 1 = 0-6 months
++ 2 = 6-12 months
++ 3 = Greater than 12 months
 
 ## MM_STAGE
-Customer journey segmentation for mobile money
-
+This variable represents the stage of the respondents' customer journey, specifically for mobile money.
+This variable is derived from the previous variables as follows:
 Levels:
 
 + 0="Mobile money nonuser"
