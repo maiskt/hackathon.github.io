@@ -39,15 +39,107 @@ Levels:
 + 0=No
 
 ## FIN_HEA1
+Have goals to achieve for next few months: count respondents who have goals for the next few months they want to achieve with thier money. 
+
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_HEA2
+Have enough money for living expenses: counts respondents who have enough money to pay for their living expenses.
+
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_HEA3
+Spend less than what they make: counts respondents who spend less money than they make each month.
+
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_HEA4
+Pay bills on time and in full
+
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_HEA5
+Have emergency fund for unplanned expenses: counts respondents who have an emergency fund that is large enough to cover unplanned expenses. 
+
 ## FIN_HEA6
+Confidence in future income growth: counts respondents who are confident that their income will grow in the future. 
+
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_HEA7
+Earn enough to pay debt and expenses: counts respondents who earn enough money to pay back debt and pay for living expenses.
+
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_HEA8
+Friends and family reply on me to help with their finances
+
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_HEA9
+Have financial security: counts respondents who have savings or assets that will keep them financially secure in the future. 
+
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_HEA10
+Have skills and knowledge to manage finances well.
+
+Levels:
+
++ 1=Strongly disagree
++ 2=Somewhat disagree
++ 3=Neither disagree, nor agree
++ 4=Somewhat agree
++ 5=Strongly agree
+
 ## FIN_SHO1
 ## FIN_SHO2
 ## FIN_SHO3
