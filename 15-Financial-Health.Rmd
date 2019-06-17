@@ -165,6 +165,13 @@ Levels:
 + 0=No
 
 ## FIN_SHO3
+Household gone without medical care: counts respondents whose households, in the last 6 months needed a doctor but delayed or went  without because of a shortage of funds.
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## FIN_SHO4
 ## FIN_SHO5
 ## FIN_SHO6
