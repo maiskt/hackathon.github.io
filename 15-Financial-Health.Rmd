@@ -149,6 +149,13 @@ Levels:
 + 5=Strongly agree
 
 ## FIN_SHO1
+Household gone without food: counts respondents whose households was gone without enough food to eat in the last 6 months. 
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## FIN_SHO2
 ## FIN_SHO3
 ## FIN_SHO4
