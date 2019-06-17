@@ -173,7 +173,7 @@ Levels:
 + 0=No
 
 ## FIN_SHO4
-Household gone without vetenerian care: counts respondents whose households, in the last 6 months needed a veterinarain or vet medicine but went without because of a shortage of funds.
+Household gone without veterinarian care: counts respondents whose households, in the last 6 months needed a veterinarain or vet medicine but went without because of a shortage of funds.
 
 Levels:
 
@@ -181,6 +181,7 @@ Levels:
 + 0=No
 
 ## FIN_SHO5
+Household gone without fertilizer: counts respondents who households, in the last 6 months need fertilizer for the farm but went without because of a shortage of funds.
 
 Levels:
 
@@ -188,7 +189,7 @@ Levels:
 + 0=No
 
 ## FIN_SHO6
-
+Could not buy stock for business:  counts respondents whose households, in the last 6 months needed stock for the business but could not buy any because of a shortage of funds, and had to close down temporarily or completely. 
 Levels:
 
 + 1=Yes
