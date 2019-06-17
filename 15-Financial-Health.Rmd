@@ -173,6 +173,13 @@ Levels:
 + 0=No
 
 ## FIN_SHO4
+Household gone without vetenerian care: counts respondents whose households, in the last 6 months needed a veterinarain or vet medicine but went without because of a shortage of funds.
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## FIN_SHO5
 ## FIN_SHO6
 ## FIN_SHO7
