@@ -181,9 +181,33 @@ Levels:
 + 0=No
 
 ## FIN_SHO5
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## FIN_SHO6
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## FIN_SHO7
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## FIN_SHO8
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU1
 ## MONEY_SOU2
 ## MONEY_SOU3
