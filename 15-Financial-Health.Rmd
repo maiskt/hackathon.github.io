@@ -149,7 +149,7 @@ Levels:
 + 5=Strongly agree
 
 ## FIN_SHO1
-Household gone without food: counts respondents whose households was gone without enough food to eat in the last 6 months. 
+Household gone without food: counts respondents whose households have ever gone without enough food to eat in the last 6 months. 
 
 Levels:
 
@@ -157,6 +157,13 @@ Levels:
 + 0=No
 
 ## FIN_SHO2
+Household gone without food: counts respondents whose households have ever gone without fuel to cook food.
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## FIN_SHO3
 ## FIN_SHO4
 ## FIN_SHO5
