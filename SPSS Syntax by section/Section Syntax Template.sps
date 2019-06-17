@@ -88,7 +88,7 @@ save outfile = "data/tza16.sav"
 
 DATASET ACTIVATE uga16.
 
-save outfile = "data/ida16.sav"
+save outfile = "data/uga16.sav"
 /keep= SBJNUM COUNTRY YEAR  .
 
 *2015---------------------------------------------------------------------***.
