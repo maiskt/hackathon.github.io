@@ -1,6 +1,6 @@
 # Investments
 
-Investments
+
 
 ## INVEST
 Have an investment
@@ -36,7 +36,7 @@ Levels:
 
 Notes:
 
-* This variable for Pakistan 2017 is unavailable.
+* This variable is unavailable for Pakistan 2017. 
 
 ## INVEST_INSURANCE
 Have an investment or insurance: counts respondents who invest in thier own business or in other places or have insurance.
