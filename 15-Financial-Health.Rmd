@@ -1,6 +1,6 @@
 # Financial Health
 
-Financial
+
 
 ## HAVE_PLAN
 Have a financial plan for unexpected events.
@@ -23,7 +23,7 @@ Levels:
 + 0=No
 
 ## BUDGET_INCOME
-Plan how to spend income;
+Plan how to spend income.
 
 Levels:
 
