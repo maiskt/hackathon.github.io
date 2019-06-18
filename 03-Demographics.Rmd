@@ -1,6 +1,6 @@
 # Demographics
 
-Demographics
+
 
 ## AGE
 Age: Respondent's age, derived from birth year and survey year
