@@ -190,6 +190,7 @@ Levels:
 
 ## FIN_SHO6
 Could not buy stock for business:  counts respondents whose households, in the last 6 months needed stock for the business but could not buy any because of a shortage of funds, and had to close down temporarily or completely. 
+
 Levels:
 
 + 1=Yes
@@ -197,6 +198,7 @@ Levels:
 
 ## FIN_SHO7
 Household experienced unpaid school fees: counts respondents whose households had a child sent home from school in the last 6 months because of unpaid school fees. 
+
 Levels:
 
 + 1=Yes
@@ -204,21 +206,82 @@ Levels:
 
 ## FIN_SHO8
 Household missed a family or life event: counts respondents whose households had to miss a family or life event (e.g., funeral, wedding) in the last 6 months because they couldn't pay for transportation. 
+
 Levels:
 
 + 1=Yes
 + 0=No
 
 ## MONEY_SOU1
+Sold agricultural products or reared livestock: counts respondents who got money in the last 12 months by selling agricultural products or rearing livestock. 
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU2
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU3
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU4
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU5
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU6
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU7
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU8
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU9
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## MONEY_SOU10
+
+Levels:
+
++ 1=Yes
++ 0=No
+
 ## EXPENSE1
 ## EXPENSE2
 ## EXPENSE3
