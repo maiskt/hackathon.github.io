@@ -3,61 +3,65 @@
 Demographics
 
 ## AGE
+Age: Respondent's age, derived from birth year and survey year
 
-* Age: Respondent's age, derived from birth year and survey year
-* Note: 
-       + These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
-       + Coded missing value into DK=-2.
+Note: 
+* These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
+* Coded missing value into DK=-2.
 
 ## AGE_GROUP
 
-* Age group: 10-year age group, derived from AGE
-* Levels 
-       + 1="15-24"
-       + 2="25-34"
-       + 3="35-44"
-       + 4="45-54"
-       + 5="55 and over"
-       + -2= DK
+ Age group: 10-year age group, derived from AGE
+
+Levels: 
+
++ 1="15-24"
++ 2="25-34"
++ 3="35-44"
++ 4="45-54"
++ 5="55 and over"
++ -2= DK
        
-* Note: 
-       + These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
-       + Coded missing value into DK=-2.
+Note: 
+* These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
+* Coded missing value into DK=-2.
        
 ## EDU
-
-* Educational attainment: highest level of education grouped into 5 categories, derived from DG4. 
+ Educational attainment: highest level of education grouped into 5 categories, derived from DG4. 
+ 
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
       DG4         |  What is your highest level of education?
-* Levels 
-       + 1=No formal education
-       + 2=Primary education
-       + 3=Secondary education
-       + 4=Higher education
-       + 5=Other
+      
+Levels:
+
++ 1=No formal education
++ 2=Primary education
++ 3=Secondary education
++ 4=Higher education
++ 5=Other
 
 ## LITERACY
 
-* Literacy, derived from literary questions. For example, Kenya 2017 uses the following questions. Respondents are considered as having basic literacy skills if they can write or read with understanding in the survey language. 
+Literacy, derived from literary questions. For example, Kenya 2017 uses the following questions. Respondents are considered as having basic literacy skills if they can write or read with understanding in the survey language. 
 
   Question Index  |                       Question
   ----------------|-------------------------------------------------------------
-      LN1A        |  Reading ability (1=Read fluently with no help;   2=Read well with little help; 
-                                      3= Struggle to read even with help;  4= Unable to read
-      LN1B        |  Reading comprehension (1= Read with full understanding;   2= Read with good understanding but needed some help
-                                            3= Struggle to understand; 4=Unable to understand)
+      LN1A        |  Reading ability (1=Read fluently with no help;   2=Read well with little help; 3= Struggle to read even with help;  4= Unable to read
+      LN1B        |  Reading comprehension (1= Read with full understanding;   2= Read with good understanding but needed some help; 3= Struggle to understand; 4=Unable to understand)
       LN2_1       |  Reading in (survey language):  1=cannot do at all; 2=Very badly; 3=Somewhat badly; 4= Good; 5=Excellent
       LN2_2       |  Writing in (survey language): 1=cannot do at all; 2=Very badly; 3=Somewhat badly; 4= Good; 5=Excellent
-* Levels 
-       + 1="Basic literacy"
-       + 0="Lack of basic literacy"
+
+Levels: 
+
++ 1="Basic literacy"
++ 0="Lack of basic literacy"
        
        
 ## NUMERACY
-
-* Numeracy, derived from 4 questions. For example for Bangladesh 2018, a respondent who can answer one of the 4 following questions will be considered as "having basic numeracy skills". 
+ Numeracy, derived from 4 questions. For example for Bangladesh 2018, a respondent who can answer one of the 4 following questions will be considered as "having basic numeracy skills". 
+ 
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -65,13 +69,15 @@ Demographics
       FL13        |  Imagine you have 1,000 Taka and you have to divide it among 5 people.How much money will each person receive if you                      divide it equally?
       FL16        |  Suppose you need to borrow 100 Taka. Which is the lower amount to pay back: 105 Taka or 100 Taka plus 3 percent?
       FL18        |  Suppose you had 100 Taka. in a savings account and the bank adds 10 percent per year to the account. How much money                      would you have in the account after five years if you did not remove any money from the account?
-* Levels 
-       + 1=Basic numeracy
-       + 0=Lack of basic numeracy    
+ 
+ Levels: 
+ 
+ + 1=Basic numeracy
+ + 0=Lack of basic numeracy    
        
 ## FINANCIAL_LITERACY
-
-* Financial literacy, derived from 5 questions. For example Bangladesh 2018 uses the following 5 questions. For each correct answer, the first 3 questions are each assigned 1 point and the last 2 questions are assigned each 0.5 point.  Respondents with a score of 3 points or more are considered to be financially literate. 
+ Financial literacy, derived from 5 questions. For example Bangladesh 2018 uses the following 5 questions. For each correct answer, the first 3 questions are each assigned 1 point and the last 2 questions are assigned each 0.5 point.  Respondents with a score of 3 points or more are considered to be financially literate. 
+ 
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -80,15 +86,17 @@ Demographics
       FL16        |  Suppose you need to borrow 100 Taka. Which is the lower amount to pay back: 105 Taka or 100 Taka plus 3 percent?
       FL17        |  Suppose you put money in the bank for two years and the bank agrees to add 15 percent per year to your account.                          Will the bank add more money to your account the second year than it did the first year, or will it add the same                        amount of money both year
       FL18        |  Suppose you had 100 Taka. in a savings account and the bank adds 10 percent per year to the account. How much money                      would you have in the account after five years if you did not remove any money from the account?
-* Levels 
-       + 1=Yes
-       + 0=No
-* Note:
-       + Financial literacy questions are only available from 2016 to 2018.
+
+Levels: 
+
++ 1=Yes
++ 0=No
+    
+Note:
+* Financial literacy questions are only available from 2016 to 2018.
 
 ## DIGITAL_LITERACY_INDEX
-
-* Digital literacy index, derived from questions on mobile phone ownership and usage. Using Bangladesh 2018 as an example, respondents who never use a mobile phone(MT2, MT7) are defined as having "no digital literacy" skills. Respondents who only use a mobile phone to make or receive a call(MT17_1, MT17_2) have "low digital literacy" skills.  Respondents who also use a mobile phone for texting(MT17_3) have "moderate digital literacy" skills. Respondents who also use a mobile phone for advanced activities(MT17_4-MT17_9) have "high digital literacy" skills.
+Digital literacy index, derived from questions on mobile phone ownership and usage. Using Bangladesh 2018 as an example, respondents who never use a mobile phone(MT2, MT7) are defined as having "no digital literacy" skills. Respondents who only use a mobile phone to make or receive a call(MT17_1, MT17_2) have "low digital literacy" skills.  Respondents who also use a mobile phone for texting(MT17_3) have "moderate digital literacy" skills. Respondents who also use a mobile phone for advanced activities(MT17_4-MT17_9) have "high digital literacy" skills.
 
  Question Index   |                       Question
   ----------------|-------------------------------------------------------------
@@ -102,92 +110,99 @@ Demographics
       MT17_6      |  When was the last time you used a mobile phone to do the following? Make a financial transaction such as send                        or receive money, or make a payment, or a bank transaction
       MT17_7      |  When was the last time you used a mobile phone to do the following? Use Facebook, WhatsApp, Twitter, Instagram                      or another social networking application
       MT17_9      |  When was the last time you used a mobile phone to do the following? Download an application
-* Levels 
-       + 0=Not applicable
-       + 1=Low
-       + 2=Moderate
-       + 3=High
-* Note:
-       + Digital literacy questions are only available for 2013 Kenya, Uganda, Tanzania and India surveys.
+
+Levels: 
+
++ 0=Not applicable
++ 1=Low
++ 2=Moderate
++ 3=High
+
+Note:
+* Digital literacy questions are only available for 2013 Kenya, Uganda, Tanzania and India surveys.
        
 ## GENDER
+Gender of the respondent
 
-* Gender of the respondent
-* Levels 
-       + 1=Male
-       + 2=Female
+Levels: 
+
++ 1=Male
++ 2=Female
 
 ## MARRIAGE
+Respondent's marital status
 
-* Respondent's marital status
-* Levels 
-       + 1=Single/never married
-       + 2=Married
-       + 3=Divorced/Separated
-       + 4=Widowed
-       + 5=Living together/Cohabiting 
-       + 96=Other
-       + -2=DK
-* Note:
-       + There is no data for the "Living together/Cohabiting" category in Pakistan and Bangladesh.
+Levels: 
+ 
++ 1=Single/never married
++ 2=Married
++ 3=Divorced/Separated
++ 4=Widowed
++ 5=Living together/Cohabiting 
++ 96=Other
++ -2=DK
+
+Note:
+* There is no data for the "Living together/Cohabiting" category in Pakistan and Bangladesh.
 
 ## HAVE_CHILDREN
-
-* HAVE_CHILDREN specifies whether households contain children under 18 years of age. For 2017 and 2018 surveys, this information was derived from the household roster which listed all household members with their individual characteristics including their ages. For 2016 and 2015 surveys, it was derived from the following 2 questions: 
+HAVE_CHILDREN specifies whether households contain children under 18 years of age. For 2017 and 2018 surveys, this information was derived from the household roster which listed all household members with their individual characteristics including their ages. For 2016 and 2015 surveys, it was derived from the following 2 questions: 
 
 Question Index    |                       Question
   ----------------|-------------------------------------------------------------
-      DG8B        |  How many adults and children do you have in the household? (999 for DK/Refused): 
-                     Number of children (boys) (Below 18 years)
-      DGBC        |  How many adults and children do you have in the household? (999 for DK/Refused): 
-                     Number of children (girls) (Below 18 years)
-* Levels 
-       + 1=Yes
-       + 0=No
-* Note:
-       + No household information available for 2017 Pakistan.
-       + Questions about children were not collected in 2013 and 2014 surveys.
+      DG8B        |  How many adults and children do you have in the household? (999 for DK/Refused): Number of children (boys) (Below 18 years)
+      DGBC        |  How many adults and children do you have in the household? (999 for DK/Refused): Number of children (girls) (Below 18 years)
+
+Levels: 
+
++ 1=Yes
++ 0=No
+
+Note:
+* No household information available for 2017 Pakistan.
+* Questions about children were not collected in 2013 and 2014 surveys.
        
 ## SCHOOL_FEE
-
-* Ever paid school fee: counts respondents who have ever paid school fee. Derived from two types of questions depending on the survey year.
+Ever paid school fee: counts respondents who have ever paid school fee. Derived from two types of questions depending on the survey year.
 
 Year              |                       Question
   ----------------|-------------------------------------------------------------
       2018        |  Have you ever paid a fee for school, education, or training?
     2016,2015     |  What type of school do the children go to? I pay a fee for the school
       
-* Levels 
-       + 1=Yes
-       + 0=No
-* Note:
-       + 2013, 2014 and 2017 surveys didn't include questions on school fee.
+Levels: 
+
++ 1=Yes
++ 0=No
+
+Notes:
+* 2013, 2014 and 2017 surveys didn't include questions on school fees.
 
 ## EMPLOYMENT
+Employment status of the respondent.
 
-* Employment status
+Levels: 
 
-* Levels 
-       + 1=Working full-time for a regular salary
-       + 2=Working part-time for a regular salary
-       + 3=Working occasionally, irregular pay (whenever the work is available)
-       + 4=Working per season (e.g., only during the harvest season)
-       + 5=Self-employed, working for yourself
-       + 6=Not working but looking for a job
-       + 7=Housewife or stay-at-home husband doing household chores
-       + 8=Full-time student
-       + 9=Not working because of retirement
-       + 10=Not working because of sickness, disability, etc.
-       + 96=Other
-       + -2=DK
++ 1=Working full-time for a regular salary
++ 2=Working part-time for a regular salary
++ 3=Working occasionally, irregular pay (whenever the work is available)
++ 4=Working per season (e.g., only during the harvest season)
++ 5=Self-employed, working for yourself
++ 6=Not working but looking for a job
++ 7=Housewife or stay-at-home husband doing household chores
++ 8=Full-time student
++ 9=Not working because of retirement
++ 10=Not working because of sickness, disability, etc.
++ 96=Other
++ -2=DK
        
-* Note:
-       + Pakistan(2015) has one more category "Landlord", which is recoded into "Other".
-       + 2013 surveys didn't include this quesion.
+Notes:
+* Pakistan(2015) has one more category "Landlord", which is recoded into "Other".
+* 2013 surveys didn't include this question.
        
 ## INVOL_AGRI
+Involved in agriculture. Derived from questions about respondent's primary job (farmer or farm worker), household's ownership of a farm, or income from any farming activities in the past 12 monthes. For example, for the 2018 Bangladesh survey, INVOL_AGRI was derived from the following questions.
 
-* Involved in agriculture. Derived from questions about respondent's primary job (farmer or farm worker), household's ownership of a farm, or income from any farming activities in the past 12 monthes. For example, for the 2018 Bangladesh survey, INVOL_AGRI was derived from the following questions.
 
 Question Index    |                       Question
   ----------------|-------------------------------------------------------------
@@ -195,45 +210,41 @@ Question Index    |                       Question
       DL6         |  Does anyone in your household own or lease a farm/farmland?
       DL4_1       |  Please tell me in which of the following ways you got money in the past 12 months? Sold products of agriculture or reared livestock
 
-* Levels 
-       + 1=Yes
-       + 0=No
+Levels: 
+
++ 1=Yes
++ 0=No
        
        
 ## OWN_FARM
+Own farm: counts respondents whose household owns or leases a farm/farmland, derived from DL6.
 
-* Own farm: counts respondents whose household owns or leases a farm/farmland, derived from DL6.
+Levels: 
 
-* Levels 
-       + 1=Yes
-       + 0=No
++ 1=Yes
++ 0=No
        
-* Note:
-       + 2013 and 2014 surveys didn't include this quesion.
+Note:
+* 2013 and 2014 surveys didn't include this quesion.
 
 ## WORK_FARM
+Farm work: counts respondents who work on the farm that their household owns or leases, derived from DL7.
 
-* Farm work: counts respondents who work on the farm that their household owns or leases, derived from DL7.
+Levels: 
 
-* Levels 
-       + 1=Yes
-       + 0=No
++ 1=Yes
++ 0=No
        
-* Note:
-       + 2013 and 2014 surveys didn't include this question.
+Note:
+* 2013 and 2014 surveys didn't include this question.
        
 ## SELL_CROP
+Sell agricultural product: counts respondents who sell agricultural products or livestock reared, derived from DL4 set quesions.
 
-* Sell agricultural product: counts respondents who sell agricultural products or livestock reared, derived from DL4 set quesions.
+Levels:  
 
-* Levels 
-       + 1=Yes
-       + 0=No
++ 1=Yes
++ 0=No
        
-* Note:
-       + 2013 and 2014 surveys didn't include this quesion.
-
-       
-
- 
-       
+Note:
+* 2013 and 2014 surveys didn't include this quesion.

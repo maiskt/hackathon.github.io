@@ -9,6 +9,7 @@ Financial Situation
 Family's financial situation:  
 
 Levels:
+
 + 1= Don't have enough money for food
 + 2= Have enough money for food, but buying clothes is difficult
 + 3= Have enough money for food and clothes, and can save a bit, but not enough to buy expensive goods such as a TV set or a               refrigerator
@@ -17,14 +18,125 @@ Levels:
 + -2=Don't know
 
 ## FIN_ATT1
+Highly satified with present financial condition
+
+Levels:
+
++ 1=Strongly agree
++ 2=Agree
++ 3=Neither agree nor disagree
++ 4=Disagree
++ 5=Strongly disagree
+
+
 ## FIN_ATT2
+Have too much debt rigth now
+
+Levels:
+
++ 1=Strongly agree
++ 2=Agree
++ 3=Neither agree nor disagree
++ 4=Disagree
++ 5=Strongly disagree
+
 ## FIN_ATT3
+Family and friends rely heavily on me to help with their finances
+
+Levels:
+
++ 1=Strongly agree
++ 2=Agree
++ 3=Neither agree nor disagree
++ 4=Disagree
++ 5=Strongly disagree
+
 ## FIN_ATT4
+Comfortable having some debt if it allows me to accomplish my goals
+
+Levels:
+
++ 1=Strongly agree
++ 2=Agree
++ 3=Neither agree nor disagree
++ 4=Disagree
++ 5=Strongly disagree
+
+
 ## FIN_ATT5
+Have the skills and knowledge to manage my finances well
+
+Levels:
+
++ 1=Strongly agree
++ 2=Agree
++ 3=Neither agree nor disagree
++ 4=Disagree
++ 5=Strongly disagree
+
 ## FIN_ATT6
+Better use or invest money right away, keeping it sitting there is wasteful
+
+Levels:
+
++ 1=Strongly agree
++ 2=Agree
++ 3=Neither agree nor disagree
++ 4=Disagree
++ 5=Strongly disagree
+
 ## FIN_ATT7
+Buy from several different shopkeepers so they know me and give me credit when I need it
+
+Levels:
+
++ 1=Strongly agree
++ 2=Agree
++ 3=Neither agree nor disagree
++ 4=Disagree
++ 5=Strongly disagree
+
 ## SCH_FEE_PRB1
+Problem with paying school fees- could not pay at all: counts respondents who have ever experienced a lack of funds and could not pay at all school fees.
+
+Levels:
+
++ 1=Yes
++ 2=No
++ 3=Not Applicable
+
 ## SCH_FEE_PRB2
+Problem with paying school fees- could only pay a portion: counts respondents who have ever experienced a lack of funds and could only pay a portion of all school fees.
+
+Levels:
+
++ 1=Yes
++ 2=No
++ 3=Not Applicable
+
 ## SCH_FEE_PRB3
+Problem with paying school fees- bank issues: counts respondents who have ever experienced bank issues (high fees or long lines) when trying to pay school fees.
+
+Levels:
+
++ 1=Yes
++ 2=No
++ 3=Not Applicable
+
 ## SCH_FEE_PRB4
+Problem with paying school fees- long distance: counts respondents who had to deliver cash for school fees but failed because of the long distance to the school. 
+
+Levels:
+
++ 1=Yes
++ 2=No
++ 3=Not Applicable
+
 ## SCH_FEE_PRB5
+Problem with paying school fees- Do not know the full amount: counts respondents who had to pay school fees but didn't know the full amount. 
+
+Levels:
+
++ 1=Yes
++ 2=No
++ 3=Not Applicable

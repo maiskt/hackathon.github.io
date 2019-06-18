@@ -802,7 +802,7 @@ Levels
 
 Note:
 
-* USE_BANK_OTC is available only for 2017 and 2018 surveys.
+* USE_BANK_OTC is not available for 2017 and 2018 surveys.
 
 ## USE_BANK_ATM
 Use bank ATM: Counts individuals who use a bank account for any financial activity via an ATM. For example, India 2015 uses FF10_2.
@@ -818,7 +818,7 @@ Levels
 
 Note:
 
-* USE_BANK_ATM is only available for 2017 and 2018 surveys.
+* USE_BANK_ATM is not available for 2017 and 2018 surveys.
 
 ## USE_BANK_RETAIL
 Use bank at retail store: Counts individuals who use a bank account for any financial activity through deposits or withdrawals over the counter at a retail store. For example, India 2015 uses FF10_3.
@@ -850,7 +850,7 @@ Levels
 
 Note:
 
-* LCT_BANK4 questions are not available for 2017 and 2018 surveys.
+* USE_BANK_ONLINE questions are not available for 2017 and 2018 surveys.
 
 ## USE_BANK_MOBILE
 Use bank via mobile: Counts individuals who use a bank account for any financial activity via a mobile application or mobile banking. For example, India 2015 uses FF10_5.

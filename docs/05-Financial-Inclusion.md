@@ -8,6 +8,7 @@ Ever used formal financial services - counts respondents who:
     Ever used a mobile money service or a non-bank financial institution for any financial activity. 
 
 Levels:
+
 + 1="Yes"
 + 0="No"
     
@@ -15,6 +16,7 @@ Levels:
 Ever used full-service formal financial services: counts the same respondents as for variable ACCESS_FINANCIAL_ALL but uses only full-service banks and non-bank financial institutions. 
 
 Levels: 
+
 + 1 ="Yes"  
 + 0 ="No"
 
@@ -23,7 +25,9 @@ Financially included - counts respondents who:
     Have an account registered in thier name or a joint account registered in their name and someone's else in a full-service           bank or
     Have a mobile money account registered in their name or
     Have an account/membership in a full-service non-bank financial institution. 
+
 Levels: 
+
 + 1 ="Financially included"  
 + 0 ="Financially excluded"    
 
@@ -32,7 +36,9 @@ Active full-service registered account owners- Counts respondents who:
     Have an account registered in thier name or a joint account registered in their name and someone's else in a full-service           bank and have used the account in the last 90 days before the survey, or
     Have a mobile money account registered in their name and have used it in the last 90 days before the survey, or
     Have an account/membership in a full-service non-bank financial institution and have used it in the last 90 days before the         survey.
+
 Levels: 
+
 + 1 ="Yes"  
 + 0 ="No"
 
@@ -44,6 +50,7 @@ Ever used a digital stored value account - Counts respondents who:
     Have ever used an account/membership in a full-service non-bank financial institution that offers digital services.
 
 Levels: 
+
 + 1 ="Yes"  
 + 0 ="No" 
 
@@ -54,6 +61,7 @@ Digitally included: counts respondents who:
     Have an account/membership in a full-service non-bank financial institution that offers digital services. 
 
 Levels: 
+
 + 1 ="Yes"  
 + 0 ="No"
 
@@ -61,6 +69,7 @@ Levels:
 Actively use digital stored-value accounts - Counts the same respondents as variable ACCESS_DFS but who used their account in the last 90 days before the survey. 
 
 Levels: 
+
 + 1 ="Yes"  
 + 0 ="No"
 
@@ -70,6 +79,7 @@ Actively use digital stored-value accounts and have used at least one advanced f
 Counts the same respondents as variable ACCESS_DFS but who used their account in the last 90 days before the survey to conduct an advanced activity (i.e., activity other than deposit, withdrawal, sending an receiving money). 
 
 Levels: 
+
 + 1 ="Yes"  
 + 0 ="No"
 
@@ -77,6 +87,7 @@ Levels:
 Ever used bank or mobile money for digital bill payment or transfer: Counts respondents who have ever used a bank or a mobile money service to pay bills or transfer money. 
 
 Levels: 
+
 + 1 ="Yes"  
 + 0 ="No"
 
@@ -84,6 +95,7 @@ Levels:
 Active use of a registered account for at least one advanced financial service (beyond basic wallet & P2P): Counts respondents who have used their registered full-service bank or NBFI account or their registered mobile money account in the last 90 days to conduct at least one advanced activity (i.e., activity other than deposit, withrdrawal and money tranfer).
 
 Levels: 
+
 + 1 ="Yes"  
 + 0 ="No"
 
@@ -91,6 +103,7 @@ Levels:
 Active use in the last 30 days of a registered account for at least one advanced financial service (beyond basic wallet & P2P): Counts respondents who have used their registered full-service bank or NBFI account or their registered mobile money account in the last 30 days to conduct at least one advanced activity (i.e., activity other than deposit, withrdrawal and money tranfer).
 
 Levels: 
+
 + 1 ="Yes"  
 + 0 ="No"
 
@@ -98,6 +111,7 @@ Levels:
 Customer journey segmentation
 
 Levels:
+
 + 0="Nonuser"
 + 1="Nonregistered user"
 + 2="Inactive registered user

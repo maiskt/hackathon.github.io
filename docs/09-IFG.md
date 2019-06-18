@@ -9,29 +9,23 @@ A derived binary variable, BELONG_INFML represents the respondent's participatio
 
 If the respondent is part of one or more IFGs, BELONG_INFML = 1. Otherwise it is 0.
 
-### Bangladesh
-Only 2016 and 2017 data are available.
+Notes:
 
-### Kenya
-Only 2015-2017 data are available.
+* Bangladesh: only 2016 and 2017 data are available
 
-### India
-Only 2015-2017 data are available.
+* Kenya: only 2015-2017 data are available
 
-### Indonesia
-Only 2015 and 2016 data are available.
+* India: only 2015-2017 data are available
 
-### Nigeria
-Only 2015-2017 data are available.
+* Indonesia: only 2015 and 2016 data are available
 
-### Pakistan
-Only 2015-2017 data are available.
+* Nigeria: only 2015-2017 data are available
 
-### Tanzania
-Only 2015-2017 data are available.
+* Pakistan: only 2015-2017 data are available
 
-### Uganda
-Only 2015-2017 data are available.
+* Tanzania: only 2015-2017 data are available
+
+* Uganda: only 2015-2017 data are available
 
 ## R_INFML
 If the respondent belongs to one or more IFGs, R_INFML asks for the most important reason from the following:
@@ -61,16 +55,10 @@ Value | Reason
 
 In 2017, respondents were asked about the importance of these factors on a Likert scale from 1, least important, to 5, most important. Because of no direct way to convert question formats and preserve information, the responses were not included in this compiled dataset.
 
-### Bangladesh
-In 2013, there was no option for "Don't know about them".
-### Kenya
-### India
-### Indonesia
-### Nigeria
-In 2013, there was no option for "Don't know about them".
-### Pakistan
-### Tanzania
-### Uganda
+Notes: 
+
+* Bangladesh: In 2013, there was no option for "Don't know about them"
+* Nigeria: In 2013, there was no option for "Don't know about them".
 
 ----
 
@@ -103,30 +91,20 @@ Country       | 2015 | 2016 | 2017
   Tanzania    |  7   |  8   |  8
   Uganda      |  7   |  8   |  8
   
-### Bangladesh
-2015 data was not available.
-In 2016, services 1 and 5 were not asked about.
+Notes: 
 
-### Kenya
-In 2015, service 2 was not asked about.
+* Bangladesh: 2015 data was not available. In 2016, services 1 and 5 were not asked about.
 
-### India
-2015 data was not available.
-In 2016, the 9th option was "none of these".
+* Kenya: In 2015, service 2 was not asked about.
 
-### Indonesia
-2015 data was not available.
-In 2016, the 9th option was "none of these".
+* India: 2015 data was not available. In 2016, the 9th option was "none of these".
 
-### Nigeria
-In 2015, service 2 was not asked about.
+* Indonesia: 2015 data was not available. In 2016, the 9th option was "none of these".
 
-### Pakistan
-2015 data was not available.
-In 2016 and 2017, only services 1, 3, 4, and 6 were asked. Other, more specific ROSCA-related questions were asked instead.
+* Nigeria: In 2015, service 2 was not asked about.
 
-### Tanzania
-In 2015, service 2 was not asked about.
+* Pakistan: 2015 data was not available. In 2016 and 2017, only services 1, 3, 4, and 6 were asked. Other, more specific ROSCA-related questions were asked instead.
 
-### Uganda
-In 2015, service 2 was not asked about.
+* Tanzania: In 2015, service 2 was not asked about.
+
+* Uganda: In 2015, service 2 was not asked about.

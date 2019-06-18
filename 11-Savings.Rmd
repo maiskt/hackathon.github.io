@@ -6,6 +6,7 @@ Savings
 Ever saved money
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -13,6 +14,7 @@ Levels:
 Know interest rate on saving: counts repondents who have ever saved money and know the interest rate earned on their savings.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -20,6 +22,7 @@ Levels:
 Ever saved with informal channels: counts respondents  who have ever saved money with people they trust (e.g., family, friends, neighbors, shopkeepers, money guards, savings collectors) or with a self-help group or cooperative without membership.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -27,6 +30,7 @@ Levels:
 Ever saved with formal institutions: counts respondents who have ever saved with a bank, payments bank, post office bank, microfinance institution, mobile money service, smartphone application, or their account at a self-help group or cooperative. 
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -34,6 +38,7 @@ Levels:
 Ever saved with a bank: counts respondents who have ever saved with a bank, or put money in savings using a smartphone application or the menu of a mobile phone.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -41,6 +46,7 @@ Levels:
 Ever saved using mobile money: counts respondents who have ever saved using a mobile money service.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -48,6 +54,7 @@ Levels:
 Ever saved with a microfinance institution (MFI): counts respondents who have ever saved using an MFI.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -55,6 +62,7 @@ Levels:
 Ever saved with a cooperative: counts respondents who have ever saved using a cooperative.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -62,6 +70,7 @@ Levels:
 Ever saved with a saving groups
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -69,6 +78,7 @@ Levels:
 Ever saved with post office bank: counts respondents who ever have saved with a post office bank
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -76,6 +86,7 @@ Levels:
 Ever saved wiht cash or property: counts respondents who save through buying something (e.g., agricultural inputs, livestock, gold or other valuable things) or in cash at home or on themselves. 
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -83,6 +94,7 @@ Levels:
 Save for business: counts respondents who save to start or expand their own business.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -90,12 +102,15 @@ Levels:
 Save for own education: counts respondents who save for their educational purposes.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_RETIREMENT
 Save for retirement: counts respondents who save in order to get ready for retirement.
+
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -103,6 +118,7 @@ Levels:
 Save for prestige: counts respondents who save in order to buy expensive and prestigious things such as an expensive car, jewelry, designer clothes, high-end electonics or a big house. 
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -110,6 +126,7 @@ Levels:
 Save for family: counts respondents who save to protect their families from poverty and crime or protect their belongings.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -117,6 +134,7 @@ Levels:
 Save for emergencies: counts respondents who save for emergency expenses.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -124,6 +142,7 @@ Levels:
 Save for dialy expenses: counts respondents who save to just make ends meet on a daily basis
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -131,6 +150,7 @@ Levels:
 Save for community: counts respondents who save money to give back to their community or create a charitable organization. 
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -138,6 +158,7 @@ Levels:
 Save for children's education: counts respondents who save to build their children's education fund.
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
@@ -145,11 +166,14 @@ Levels:
 Save for wedding: counts respondents who save to build children's fund for wedding (ceremony and/dowry).
 
 Levels: 
+
 + 1="Yes"
 + 0= "No"
 
 ## SAVE_HOUSE
 Save for house: counts respondents who save to buy or build a house
+
 Levels: 
+
 + 1="Yes"
 + 0= "No"

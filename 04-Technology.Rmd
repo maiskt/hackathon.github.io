@@ -6,6 +6,7 @@ Technology literacy
 Access to phone: counts respondents who own a personnal mobile phone or use a mobile phone that belongs to someone else or is shared.
 
 Levels: 
+
 + 1="Phone user"
 + 0="Nonuser"
 
@@ -13,6 +14,7 @@ Levels:
 Own a phone: counts respondents who personally own a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -20,6 +22,7 @@ Levels:
 Borrow a phone: counts respondents who use a mobile phone that belongs to another individual or is shared with another individual.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -27,6 +30,7 @@ Levels:
 Own a basic phone: counts respondents who own a mobile phone with basic features (i.e. only allows calling, messaging and saving phone numbers).
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -34,6 +38,7 @@ Levels:
 Own a feature phone: counts respondents who own a feature phone (i.e., phone wiht camera, radio)
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -41,6 +46,7 @@ Levels:
 Own a smartphone: counts respondents who own a smartphone (i.e., phone with email access, mobile applications)
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -48,6 +54,7 @@ Levels:
 Own a SIM card: counts respondents who have an active/working SIM card. 
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -55,6 +62,7 @@ Levels:
 Use phone advanced functions: counts respondents who use on their phone advanced functions other than calling, receiving calls, and text messaging.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -62,6 +70,7 @@ Levels:
 Ever used phone to call: counts respondents who used a mobile phone to call someone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -69,6 +78,7 @@ Levels:
 Ever received a phone call: counts respondents who received a call on a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -76,6 +86,7 @@ Levels:
 Ever sent or received a text message: counts respondents who sent or received a text message on a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -83,6 +94,7 @@ Levels:
 Ever browsed internet: counts respondents who used/browsed internet using a mobile phone
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -90,6 +102,7 @@ Levels:
 Ever donwloaded music, video and games: counts respondents who downloaded music, video or games using a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -97,6 +110,7 @@ Levels:
 Ever made a financial transaction: counts respondents who made a financial transaction such as send/receive money, make a payment, or banking transaction using a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -104,6 +118,7 @@ Levels:
 Ever used social media on a phone: counts respondents who used Facebook, WhatsApp, Twitter, Instagram or another social networking site using a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -111,12 +126,14 @@ Levels:
 Ever took a picture using a phone: counts respondents who took a color picture using a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
 ## PHONE_APP
 Ever downloaded or used an application using a mobile phone.
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -124,6 +141,7 @@ Levels:
 Ever sent or received a photo using a mobile phone
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -131,6 +149,7 @@ Levels:
 Ever used a phone for videos: counts respondents who ever used “Call Tunes” or other audio/video on-demand from operator services with a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -142,6 +161,7 @@ Levels:
 Reason for no phone: lack of money to buy a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -149,6 +169,7 @@ Levels:
 Reason for no phone: No need for a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -156,6 +177,7 @@ Levels:
 Reason for no phone: Mobile phone lost, broken or stopped working.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -163,6 +185,7 @@ Levels:
 Reason for no phone: Family members do not want me to have a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -170,12 +193,15 @@ Levels:
 Reason for no phone: No mobile phone network where I live.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
 ## R_NOPHONE6
 Reason for no phone: Don't know how to use a mobile phone.
+
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -183,6 +209,7 @@ Levels:
 Ability for calls: counts respondents who have the ability to make and receive a call on a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -190,6 +217,7 @@ Levels:
 Ability to navigate the menu: counts respondents who have the ability to navigate the menu on a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -197,6 +225,7 @@ Levels:
 Ability for sms: counts respondents who have the ability to send and receive a text message using a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -204,6 +233,7 @@ Levels:
 Ability for internet: counts respondents who have the ability to use the internet on a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -211,6 +241,7 @@ Levels:
 Ability for financial transactions: counts respondents who are able to make a financial transaction such as send/receive money, make a payment, or banking transaction using a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
 
@@ -218,5 +249,6 @@ Levels:
 Ability to download applications: counts respondents who have the ability to download an application with a mobile phone.
 
 Levels:
+
 + 1= "Yes"
 + 0= "No"
