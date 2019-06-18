@@ -4,6 +4,7 @@
 Distance from residence to a point of service(POS): measures the distance from the respondent's home to a bank branch, an ATM, a mobile money agent, a bank agent, a retail store/kiosk with over-the-counter mobile money services, MFI, SACCO or a semi-formal/informal financial or savings group. 
 
 Levels:
+
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
@@ -13,6 +14,7 @@ Levels:
 Distance from residence to a bank branch: measures the distance from the respondent'home to a bank branch.
 
 Levels:
+
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
@@ -22,6 +24,7 @@ Levels:
 Distance from residence to an ATM: measures the distance from the respondent's home to an ATM.
 
 Levels:
+
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
@@ -40,6 +43,7 @@ Levels:
 Distance from residence to a bank agent: measures the distance from the respondent's home to a bank agent. 
 
 Levels:
+
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
@@ -49,6 +53,7 @@ Levels:
 Distance from residence to a store/kiosk with OTC services : measures the distance from the respondent's home to a retail store/kiosk with over-the-counter mobile money services. 
 
 Levels:
+
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
@@ -58,6 +63,7 @@ Levels:
 Distance from residence to a micro finance institution (MFI): measures the distance from the respondent's home to a MFI. 
 
 Levels:
+
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
@@ -67,6 +73,7 @@ Levels:
 Distance from residence to a VSLA: measures the distance from the responden't home to a village savings and loan association (VSLA).
 
 Levels:
+
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
@@ -75,6 +82,7 @@ Levels:
 ## INFMLKM
 Distance from residence to an informal self-help or savings group.
 Levels:
+
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
@@ -84,6 +92,7 @@ Levels:
 Distance from residence to the post offfice bank.
 
 Levels:
+
  + 1="<=1 Km"
  + 2=">1 Km but <=5Km"
  + 3="> 5Km"
