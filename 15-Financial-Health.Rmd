@@ -218,69 +218,79 @@ Sold agricultural products or reared livestock: counts respondents who got money
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## MONEY_SOU2
+Received assistance from the government in the past 6 months
+
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## MONEY_SOU3
+Received money a relative, friend, or another person inside the country in the past 6 months
 
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## MONEY_SOU4
+Received money from a relative, friend, or another person from a foreign country in the past 6 months
 
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## MONEY_SOU5
+Got money in the past 6 months from ownership of a business, property or assets.
 
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## MONEY_SOU6
+Got money in the past 6 months from employment by the government
 
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## MONEY_SOU7
+Got money in the past 6 months from employment in a business with less than 10 employees
 
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## MONEY_SOU8
+Got money in the past 6 months from employment in a business with more than 10 employees
 
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## MONEY_SOU9
+Got money in the past 6 months from a scholarship or stipend from the government or educational institution.
 
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## MONEY_SOU10
+Got money in the last 6 months from pension
 
 Levels:
 
 + 1=Yes
-+ 0=No
++ 2=No
 
 ## EXPENSE1
 ## EXPENSE2
