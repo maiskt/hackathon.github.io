@@ -1,6 +1,6 @@
 # Insurance
 
-Insurance
+
 
 ## INSURANCE
 Have insurance: counts respondents who have any of the types of insurance: medical, life, car, agriculture, house/asset, unemployment/income protection, educational policy, retirement/pension/old age, national social security fund, or national hospital insurance fund. 
@@ -19,7 +19,7 @@ Levels:
 + 0=No
 
 ## INSUR_LIFE
-Have life insurance: counts respondents who have life insurance that pays a sum in the event they die
+Have life insurance: counts respondents who have life insurance that pays a sum in the event they die.
 
 Levels:
 
@@ -75,7 +75,7 @@ Levels:
 + 0=No
 
 ## INSUR_LIVESTOCK
-have livestock insurance: counts respondents who have insurance that pays them in case their cattle or livestock die
+Have livestock insurance: counts respondents who have insurance that pays them in case their cattle or livestock die.
 
 Levels:
 
@@ -83,7 +83,7 @@ Levels:
 + 0=No
 
 ## INSUR_FAMILY
-Have family insurance: counts respondents who have insurance that pays them when their spouse of family member dies
+Have family insurance: counts respondents who have insurance that pays them when their spouse of family member dies.
 
 Levels:
 
