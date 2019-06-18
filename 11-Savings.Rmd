@@ -1,6 +1,6 @@
 # Savings
 
-Savings
+
 
 ## SAVE
 Ever saved money
@@ -67,7 +67,7 @@ Levels:
 + 0= "No"
 
 ## SAVE_GROUP
-Ever saved with a saving groups
+Ever saved with a saving groups.
 
 Levels: 
 
@@ -75,7 +75,7 @@ Levels:
 + 0= "No"
 
 ## SAVE_POST
-Ever saved with post office bank: counts respondents who ever have saved with a post office bank
+Ever saved with post office bank: counts respondents who ever have saved with a post office bank.
 
 Levels: 
 
@@ -139,7 +139,7 @@ Levels:
 + 0= "No"
 
 ## SAVE_DAILY
-Save for dialy expenses: counts respondents who save to just make ends meet on a daily basis
+Save for dialy expenses: counts respondents who save to just make ends meet on a daily basis.
 
 Levels: 
 
@@ -171,7 +171,7 @@ Levels:
 + 0= "No"
 
 ## SAVE_HOUSE
-Save for house: counts respondents who save to buy or build a house
+Save for house: counts respondents who save to buy or build a house.
 
 Levels: 
 
