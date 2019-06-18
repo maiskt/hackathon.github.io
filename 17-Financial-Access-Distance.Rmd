@@ -1,4 +1,4 @@
-# Financial Service Distance
+# Proximity to points-of-service for financial institutions
 
 ## POS
 Distance from residence to a point of service(POS): measures the distance from the respondent's home to a bank branch, an ATM, a mobile money agent, a bank agent, a retail store/kiosk with over-the-counter mobile money services, MFI, SACCO or a semi-formal/informal financial or savings group. 
