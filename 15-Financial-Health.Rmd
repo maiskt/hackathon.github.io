@@ -157,7 +157,7 @@ Levels:
 + 0=No
 
 ## FIN_SHO2
-Household gone without food: counts respondents whose households have ever gone without fuel to cook food.
+Household gone without cooking fuel: counts respondents whose households have ever gone without fuel to cook food.
 
 Levels:
 
@@ -196,14 +196,14 @@ Levels:
 + 0=No
 
 ## FIN_SHO7
-Household that experienced unpaid school fees: counts respondents whose households had a child sent home from school in the last 6 months because of unpaid school fees. 
+Household experienced unpaid school fees: counts respondents whose households had a child sent home from school in the last 6 months because of unpaid school fees. 
 Levels:
 
 + 1=Yes
 + 0=No
 
 ## FIN_SHO8
-Household that missed family or life event: counts respondents whose households had to miss a family or life event (e.g., funeral, wedding) in the last 6 months because they couldn't pay for transportation. 
+Household missed a family or life event: counts respondents whose households had to miss a family or life event (e.g., funeral, wedding) in the last 6 months because they couldn't pay for transportation. 
 Levels:
 
 + 1=Yes
