@@ -1474,28 +1474,52 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2014.
-
+*Need double check.
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
 compute REGISTERED_MFI=0.
 if (IFI3_1=1 and IFI5_1=1) REGISTERED_MFI=1.
-
+*Need double check.
 compute ACTIVE_MFI=0.
 if (IFI4_1<=4 and IFI5_1=1) ACTIVE_MFI=1.
 
 numeric ACCESS_COOP.
 numeric REGISTERED_COOP.
 numeric ACTIVE_COOP.
-
+*Need double check.
 compute ACCESS_POST=0.
 if (IFI1_2=1 and IFI5_2=1) ACCESS_POST=1.
 
-compute registered_post=0.
-if (IFI3_2=1 and IFI5_2=1) registered_post=1.
+compute REGISTERED_POST=0.
+if (IFI3_2=1 and IFI5_2=1) REGISTERED_POST=1.
+*Need double check.
+compute ACTIVE_POST=0.
+if (IFI4_2<=4 and IFI5_2=1) ACTIVE_POST=1.
 
-compute registered_post=0.
-if (IFI4_2<=4 and IFI5_2=1) registered_post=1.
+numeric ACCESS_SACCO.
+numeric REGISTERED_SACCO.
+numeric ACTIVE_SACCO.
+numeric ACCESS_BPR.
+numeric REGISTERED_BPR.
+numeric ACTIVE_BPR.
+numeric ACCESS_PAWNSHOP.
+numeric REGISTERED_PAWNSHOP.
+numeric ACTIVE_PAWNSHOP.
+numeric AWARE_PAYMENT_BANK_PROVIDER.
+numeric ACCESS_PAYMENT.
+numeric REGISTERED_PAYMENT.
+numeric ACTIVE_PAYMENT.
+*Need double check.
+compute ACCESS_GROUP=0.
+if (IFI1_4=1 and IFI5_3=1) ACCESS_GROUP=1.
+
+compute REGISTERED_GROUP=0.
+if (IFI3_4=1 and IFI5_3=1) REGISTERED_GROUP=1.
+*Need double check.
+compute ACTIVE_GROUP=0.
+if (IFI4_4<=4 and IFI5_3=1) ACTIVE_GROUP=1.
+
 
 **************************************************************************************************************************************************.
 *14Indonesia.
@@ -1504,12 +1528,114 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2014.
 
+numeric ACCESS_MFI.
+numeric REGISTERED_MFI.
+numeric ACTIVE_MFI.
+*Need double check.
+compute ACCESS_COOP=0.
+if (IFI1_2=1 and IFI5_2=1) ACCESS_COOP=1.
+
+compute REGISTERED_COOP=0.
+if (IFI3_2=1 and IFI5_2=1) REGISTERED_COOP=1.
+*Need double check.
+compute ACTIVE_COOP=0.
+if (IFI4_2<=4 and IFI5_2=1) ACTIVE_COOP=1.
+*Need double check.
+compute ACCESS_POST=0.
+if (IFI1_4=1 and IFI5_4=1) ACCESS_POST=1.
+
+compute REGISTERED_POST=0.
+if (IFI1_4=1 and IFI5_4=1) REGISTERED_POST=1.
+*Need double check.
+compute ACTIVE_POST=0.
+if (IFI2_4<=4 and IFI5_4=1) ACTIVE_POST=1.
+
+numeric ACCESS_SACCO.
+numeric REGISTERED_SACCO.
+numeric ACTIVE_SACCO.
+*Need double check.
+compute ACCESS_BPR=0.
+if (IFI1_1=1 and IFI5_1=1) ACCESS_BPR=1.
+
+compute REGISTERED_BPR=0.
+if (IFI3_1=1 and IFI5_1=1) REGISTERED_BPR=1.
+*Need double check.
+compute ACTIVE_BPR=0.
+if (IFI4_1<=4 and IFI5_1=1) ACTIVE_BPR=1.
+*Need double check.
+compute ACCESS_PAWNSHOP=0.
+if (IFI1_3=1 and IFI5_3=1) ACCESS_PAWNSHOP=1.
+
+compute REGISTERED_PAWNSHOP=0.
+if (IFI1_3=1 and IFI5_3=1) REGISTERED_PAWNSHOP=1.
+*Need double check.
+compute ACTIVE_PAWNSHOP=0.
+if (IFI2_3<=4 and IFI5_3=1) ACTIVE_PAWNSHOP=1.
+
+numeric AWARE_PAYMENT_BANK_PROVIDER.
+numeric ACCESS_PAYMENT.
+numeric REGISTERED_PAYMENT.
+numeric ACTIVE_PAYMENT.
+numeric ACCESS_GROUP.
+numeric REGISTERED_GROUP.
+numeric ACTIVE_GROUP.
+
 **************************************************************************************************************************************************.
 *14Kenya.
 rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2014.
+*Need double check.
+compute ACCESS_MFI=0.
+if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
+
+compute REGISTERED_MFI=0.
+if (IFI3_1=1 and IFI5_1=1) REGISTERED_MFI=1.
+*Need double check.
+compute ACTIVE_MFI=0.
+if (IFI4_1<=4 and IFI5_1=1) ACTIVE_MFI=1.
+*Need double check.
+compute ACCESS_COOP=0.
+if (IFI1_2=1 and IFI5_2=1) ACCESS_COOP=1.
+
+compute REGISTERED_COOP=0.
+if (IFI3_2=1 and IFI5_2=1) REGISTERED_COOP=1.
+*Need double check.
+compute ACTIVE_COOP=0.
+if (IFI4_2<=4 and IFI5_2=1) ACTIVE_COOP=1.
+*Need double check.
+compute ACCESS_POST=0.
+if (IFI1_4=1 and IFI5_4=1) ACCESS_POST=1.
+
+compute REGISTERED_POST=0.
+if (IFI3_4=1 and IFI5_4=1) REGISTERED_POST=1.
+*Need double check.
+compute ACTIVE_POST=0.
+if (IFI4_4<=4 and IFI5_4=1) ACTIVE_POST=1.
+*Need double check.
+compute ACCESS_SACCO=0.
+if (IFI1_3=1 and IFI5_3=1) ACCESS_SACCO=1.
+
+compute REGISTERED_SACCO=0.
+if (IFI3_3=1 and IFI5_3=1) REGISTERED_SACCO=1.
+*Need double check.
+compute ACTIVE_SACCO=0.
+if (IFI4_3<=4 and IFI5_3=1) ACTIVE_SACCO=1.
+
+numeric ACCESS_BPR.
+numeric REGISTERED_BPR.
+numeric ACTIVE_BPR.
+numeric ACCESS_PAWNSHOP.
+numeric REGISTERED_PAWNSHOP.
+numeric ACTIVE_PAWNSHOP.
+numeric AWARE_PAYMENT_BANK_PROVIDER.
+numeric ACCESS_PAYMENT.
+numeric REGISTERED_PAYMENT.
+numeric ACTIVE_PAYMENT.
+numeric ACCESS_GROUP.
+numeric REGISTERED_GROUP.
+numeric ACTIVE_GROUP.
 
 **************************************************************************************************************************************************.
 *14Nigeria.
@@ -1517,6 +1643,50 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2014.
+*Need double check.
+compute ACCESS_MFI=0.
+if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
+
+compute REGISTERED_MFI=0.
+if (IFI3_1=1 and IFI5_1=1) REGISTERED_MFI=1.
+*Need double check.
+compute ACTIVE_MFI=0.
+if (IFI4_1<=4 and IFI5_1=1) ACTIVE_MFI=1.
+*Need double check.
+compute ACCESS_COOP=0.
+if (IFI1_2=1 and IFI5_2=1) ACCESS_COOP=1.
+
+compute REGISTERED_COOP=0.
+if (IFI3_2=1 and IFI5_2=1) REGISTERED_COOP=1.
+*Need double check.
+compute ACTIVE_COOP=0.
+if (IFI4_2<=4 and IFI5_2=1) ACTIVE_COOP=1.
+
+numeric ACCESS_POST.
+numeric REGISTERED_POST.
+numeric ACTIVE_POST.
+numeric ACCESS_SACCO.
+numeric REGISTERED_SACCO.
+numeric ACTIVE_SACCO.
+numeric ACCESS_BPR.
+numeric REGISTERED_BPR.
+numeric ACTIVE_BPR.
+numeric ACCESS_PAWNSHOP.
+numeric REGISTERED_PAWNSHOP.
+numeric ACTIVE_PAWNSHOP.
+numeric AWARE_PAYMENT_BANK_PROVIDER.
+numeric ACCESS_PAYMENT.
+numeric REGISTERED_PAYMENT.
+numeric ACTIVE_PAYMENT.
+*Need double check. Not NBFI. Add IFI5 or not?.
+compute ACCESS_GROUP=0.
+if (IFI1_4=1 and IFI5_4=1) ACCESS_GROUP=1.
+*Need double check. Not NBFI. Add IFI5 or not?.
+compute REGISTERED_GROUP=0.
+if (IFI3_4=1 and IFI5_4=1) REGISTERED_GROUP=1.
+*Need double check. Not NBFI. Add IFI5 or not?.
+compute ACTIVE_GROUP=0.
+if (IFI4_4=1 and IFI5_4=1) ACTIVE_GROUP=1.
 
 **************************************************************************************************************************************************.
 *14Pakistan.
@@ -1524,6 +1694,51 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2014.
+*Need double check.
+compute ACCESS_MFI=0.
+if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
+
+compute REGISTERED_MFI=0.
+if (IFI3_1=1 and IFI5_1=1) REGISTERED_MFI=1.
+*Need double check.
+compute ACTIVE_MFI=0.
+if (IFI4_1<=4 and IFI5_1=1) ACTIVE_MFI=1.
+*Need double check.
+compute ACCESS_COOP=0.
+if (IFI1_2=1 and IFI5_2=1) ACCESS_COOP=1.
+
+compute REGISTERED_COOP=0.
+if (IFI3_2=1 and IFI5_2=1) REGISTERED_COOP=1.
+*Need double check.
+compute ACTIVE_COOP=0.
+if (IFI4_2<=4 and IFI5_2=1) ACTIVE_COOP=1.
+*Need double check.
+compute ACCESS_POST=0.
+if (IFI1_4=1 and IFI5_4=1) ACCESS_POST=1.
+
+compute REGISTERED_POST=0.
+if (IFI3_4=1 and IFI5_4=1) REGISTERED_POST=1.
+*Need double check.
+compute ACTIVE_POST=0.
+if (IFI4_4<=4 and IFI5_4=1) ACTIVE_POST=1.
+
+numeric ACCESS_SACCO.
+numeric REGISTERED_SACCO.
+numeric ACTIVE_SACCO.
+numeric ACCESS_BPR.
+numeric REGISTERED_BPR.
+numeric ACTIVE_BPR.
+numeric ACCESS_PAWNSHOP.
+numeric REGISTERED_PAWNSHOP.
+numeric ACTIVE_PAWNSHOP.
+numeric AWARE_PAYMENT_BANK_PROVIDER.
+numeric ACCESS_PAYMENT.
+numeric REGISTERED_PAYMENT.
+numeric ACTIVE_PAYMENT.
+numeric ACCESS_GROUP.
+numeric REGISTERED_GROUP.
+numeric ACTIVE_GROUP.
+
 
 **************************************************************************************************************************************************.
 *14Tanzania.
@@ -1531,6 +1746,56 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2014.
+*Need double check.
+compute ACCESS_MFI=0.
+if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
+
+compute REGISTERED_MFI=0.
+if (IFI3_1=1 and IFI5_1=1) REGISTERED_MFI=1.
+*Need double check.
+compute ACTIVE_MFI=0.
+if (IFI4_1<=4 and IFI5_1=1) ACTIVE_MFI=1.
+*Need double check.
+compute ACCESS_COOP=0.
+if (IFI1_2=1 and IFI5_2=1) ACCESS_COOP=1.
+
+compute REGISTERED_COOP=0.
+if (IFI3_2=1 and IFI5_2=1) REGISTERED_COOP=1.
+*Need double check.
+compute ACTIVE_COOP=0.
+if (IFI4_2<=4 and IFI5_2=1) ACTIVE_COOP=1.
+*Need double check.
+compute ACCESS_POST=0.
+if (IFI1_4=1 and IFI5_4=1) ACCESS_POST=1.
+
+compute REGISTERED_POST=0.
+if (IFI3_4=1 and IFI5_4=1) REGISTERED_POST=1.
+*Need double check.
+compute ACTIVE_POST=0.
+if (IFI4_4<=4 and IFI5_4=1) ACTIVE_POST=1.
+*Need double check.
+compute ACCESS_SACCO=0.
+if (IFI1_3=1 and IFI5_3=1) ACCESS_SACCO=1.
+
+compute REGISTERED_SACCO=0.
+if (IFI3_3=1 and IFI5_3=1) REGISTERED_SACCO=1.
+*Need double check.
+compute ACTIVE_SACCO=0.
+if (IFI4_3<=4 and IFI5_3=1) ACTIVE_SACCO=1.
+
+numeric ACCESS_BPR.
+numeric REGISTERED_BPR.
+numeric ACTIVE_BPR.
+numeric ACCESS_PAWNSHOP.
+numeric REGISTERED_PAWNSHOP.
+numeric ACTIVE_PAWNSHOP.
+numeric AWARE_PAYMENT_BANK_PROVIDER.
+numeric ACCESS_PAYMENT.
+numeric REGISTERED_PAYMENT.
+numeric ACTIVE_PAYMENT.
+numeric ACCESS_GROUP.
+numeric REGISTERED_GROUP.
+numeric ACTIVE_GROUP.
 
 **************************************************************************************************************************************************.
 *14Uganda.
@@ -1538,6 +1803,56 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2014.
+*Need double check.
+compute ACCESS_MFI=0.
+if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
+
+compute REGISTERED_MFI=0.
+if (IFI3_1=1 and IFI5_1=1) REGISTERED_MFI=1.
+*Need double check.
+compute ACTIVE_MFI=0.
+if (IFI4_1<=4 and IFI5_1=1) ACTIVE_MFI=1.
+*Need double check.
+compute ACCESS_COOP=0.
+if (IFI1_2=1 and IFI5_2=1) ACCESS_COOP=1.
+
+compute REGISTERED_COOP=0.
+if (IFI3_2=1 and IFI5_2=1) REGISTERED_COOP=1.
+*Need double check.
+compute ACTIVE_COOP=0.
+if (IFI4_2<=4 and IFI5_2=1) ACTIVE_COOP=1.
+*Need double check.
+compute ACCESS_POST=0.
+if (IFI1_4=1 and IFI5_4=1) ACCESS_POST=1.
+
+compute REGISTERED_POST=0.
+if (IFI3_4=1 and IFI5_4=1) REGISTERED_POST=1.
+*Need double check.
+compute ACTIVE_POST=0.
+if (IFI4_4<=4 and IFI5_4=1) ACTIVE_POST=1.
+*Need double check.
+compute ACCESS_SACCO=0.
+if (IFI1_3=1 and IFI5_3=1) ACCESS_SACCO=1.
+
+compute REGISTERED_SACCO=0.
+if (IFI3_3=1 and IFI5_3=1) REGISTERED_SACCO=1.
+*Need double check.
+compute ACTIVE_SACCO=0.
+if (IFI4_3<=4 and IFI5_3=1) ACTIVE_SACCO=1.
+
+numeric ACCESS_BPR.
+numeric REGISTERED_BPR.
+numeric ACTIVE_BPR.
+numeric ACCESS_PAWNSHOP.
+numeric REGISTERED_PAWNSHOP.
+numeric ACTIVE_PAWNSHOP.
+numeric AWARE_PAYMENT_BANK_PROVIDER.
+numeric ACCESS_PAYMENT.
+numeric REGISTERED_PAYMENT.
+numeric ACTIVE_PAYMENT.
+numeric ACCESS_GROUP.
+numeric REGISTERED_GROUP.
+numeric ACTIVE_GROUP.
 
 **************************************************************************************************************************************************.
 *13Bangladesh.
