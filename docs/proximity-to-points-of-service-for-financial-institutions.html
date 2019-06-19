@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Section 15 Financial Health | FII Dataset Documentation</title>
+  <title>Section 17 Proximity to points-of-service for financial institutions | FII Dataset Documentation</title>
   <meta name="description" content="Documentation for the FII Datathon dataset" />
   <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Section 15 Financial Health | FII Dataset Documentation" />
+  <meta property="og:title" content="Section 17 Proximity to points-of-service for financial institutions | FII Dataset Documentation" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="http://datathonfii.github.io/codebook/" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="FIIDatathon/Codebook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Section 15 Financial Health | FII Dataset Documentation" />
+  <meta name="twitter:title" content="Section 17 Proximity to points-of-service for financial institutions | FII Dataset Documentation" />
   
   <meta name="twitter:description" content="Documentation for the FII Datathon dataset" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="financial-situation.html">
-<link rel="next" href="economic-empowerment.html">
+<link rel="prev" href="economic-empowerment.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -577,340 +577,115 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="financial-health" class="section level1">
-<h1><span class="header-section-number">Section 15</span> Financial Health</h1>
-<div id="have_plan" class="section level2">
-<h2><span class="header-section-number">15.1</span> HAVE_PLAN</h2>
-<p>Have a financial plan for unexpected events.</p>
+<div id="proximity-to-points-of-service-for-financial-institutions" class="section level1">
+<h1><span class="header-section-number">Section 17</span> Proximity to points-of-service for financial institutions</h1>
+<div id="pos" class="section level2">
+<h2><span class="header-section-number">17.1</span> POS</h2>
+<p>Distance from residence to a point of service(POS): measures the distance from the respondent’s home to a bank branch, an ATM, a mobile money agent, a bank agent, a retail store/kiosk with over-the-counter mobile money services, MFI, SACCO or a semi-formal/informal financial or savings group.</p>
 <p>Levels:</p>
 <ul>
-<li>1=Yes</li>
-<li>0=No</li>
+<li>1=“&lt;=1 Km”</li>
+<li>2=“&gt;1 Km but &lt;=5Km”</li>
+<li>3=“&gt; 5Km”</li>
+<li>99=“Don’t Know”</li>
 </ul>
 </div>
-<div id="follow_plan" class="section level2">
-<h2><span class="header-section-number">15.2</span> FOLLOW_PLAN</h2>
-</div>
-<div id="eco_vul" class="section level2">
-<h2><span class="header-section-number">15.3</span> ECO_VUL</h2>
-</div>
-<div id="fin_shock" class="section level2">
-<h2><span class="header-section-number">15.4</span> FIN_SHOCK</h2>
-<p>Financial shock: counts respondents who experienced a shock such as fire, flodd, natural disaster, burglary, pests, job loss, death of main income earner, increase costs of agricultural inputs, drop in crop or livestock price, large medical expenses or family separation.</p>
+<div id="bbkm" class="section level2">
+<h2><span class="header-section-number">17.2</span> BBKM</h2>
+<p>Distance from residence to a bank branch: measures the distance from the respondent’home to a bank branch.</p>
 <p>Levels:</p>
 <ul>
-<li>1=Yes</li>
-<li>0=No</li>
+<li>1=“&lt;=1 Km”</li>
+<li>2=“&gt;1 Km but &lt;=5Km”</li>
+<li>3=“&gt; 5Km”</li>
+<li>99=“Don’t Know”</li>
 </ul>
 </div>
-<div id="budget_income" class="section level2">
-<h2><span class="header-section-number">15.5</span> BUDGET_INCOME</h2>
-<p>Plan how to spend income.</p>
+<div id="atmkm" class="section level2">
+<h2><span class="header-section-number">17.3</span> ATMKM</h2>
+<p>Distance from residence to an ATM: measures the distance from the respondent’s home to an ATM.</p>
 <p>Levels:</p>
 <ul>
-<li>1=Yes</li>
-<li>0=No</li>
+<li>1=“&lt;=1 Km”</li>
+<li>2=“&gt;1 Km but &lt;=5Km”</li>
+<li>3=“&gt; 5Km”</li>
+<li>99=“Don’t Know”</li>
 </ul>
 </div>
-<div id="budget_stay" class="section level2">
-<h2><span class="header-section-number">15.6</span> BUDGET_STAY</h2>
-<p>Stay on budget: counts respondents who make a plan for how to spend thier income and keep the plan</p>
+<div id="mmkm" class="section level2">
+<h2><span class="header-section-number">17.4</span> MMKM</h2>
+<p>Distance from residence to a mobile money agent: measures the distance from the respondent’s home to a mobile money agent.</p>
+<p>Levels:
++ 1=“&lt;=1 Km”
++ 2=“&gt;1 Km but &lt;=5Km”
++ 3=“&gt; 5Km”
++ 99=“Don’t Know”</p>
+</div>
+<div id="bakm" class="section level2">
+<h2><span class="header-section-number">17.5</span> BAKM</h2>
+<p>Distance from residence to a bank agent: measures the distance from the respondent’s home to a bank agent.</p>
 <p>Levels:</p>
 <ul>
-<li>1=Yes</li>
-<li>0=No</li>
+<li>1=“&lt;=1 Km”</li>
+<li>2=“&gt;1 Km but &lt;=5Km”</li>
+<li>3=“&gt; 5Km”</li>
+<li>99=“Don’t Know”</li>
 </ul>
 </div>
-<div id="fin_hea1" class="section level2">
-<h2><span class="header-section-number">15.7</span> FIN_HEA1</h2>
-<p>Have goals to achieve for next few months: count respondents who have goals for the next few months they want to achieve with thier money.</p>
+<div id="rskm" class="section level2">
+<h2><span class="header-section-number">17.6</span> RSKM</h2>
+<p>Distance from residence to a store/kiosk with OTC services : measures the distance from the respondent’s home to a retail store/kiosk with over-the-counter mobile money services.</p>
 <p>Levels:</p>
 <ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
+<li>1=“&lt;=1 Km”</li>
+<li>2=“&gt;1 Km but &lt;=5Km”</li>
+<li>3=“&gt; 5Km”</li>
+<li>99=“Don’t Know”</li>
 </ul>
 </div>
-<div id="fin_hea2" class="section level2">
-<h2><span class="header-section-number">15.8</span> FIN_HEA2</h2>
-<p>Have enough money for living expenses: counts respondents who have enough money to pay for their living expenses.</p>
+<div id="mfikm" class="section level2">
+<h2><span class="header-section-number">17.7</span> MFIKM</h2>
+<p>Distance from residence to a micro finance institution (MFI): measures the distance from the respondent’s home to a MFI.</p>
 <p>Levels:</p>
 <ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
+<li>1=“&lt;=1 Km”</li>
+<li>2=“&gt;1 Km but &lt;=5Km”</li>
+<li>3=“&gt; 5Km”</li>
+<li>99=“Don’t Know”</li>
 </ul>
 </div>
-<div id="fin_hea3" class="section level2">
-<h2><span class="header-section-number">15.9</span> FIN_HEA3</h2>
-<p>Spend less than what they make: counts respondents who spend less money than they make each month.</p>
+<div id="grpkm" class="section level2">
+<h2><span class="header-section-number">17.8</span> GRPKM</h2>
+<p>Distance from residence to a VSLA: measures the distance from the responden’t home to a village savings and loan association (VSLA).</p>
 <p>Levels:</p>
 <ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
+<li>1=“&lt;=1 Km”</li>
+<li>2=“&gt;1 Km but &lt;=5Km”</li>
+<li>3=“&gt; 5Km”</li>
+<li>99=“Don’t Know”</li>
 </ul>
 </div>
-<div id="fin_hea4" class="section level2">
-<h2><span class="header-section-number">15.10</span> FIN_HEA4</h2>
-<p>Pay bills on time and in full</p>
+<div id="infmlkm" class="section level2">
+<h2><span class="header-section-number">17.9</span> INFMLKM</h2>
+<p>Distance from residence to an informal self-help or savings group.
+Levels:</p>
+<ul>
+<li>1=“&lt;=1 Km”</li>
+<li>2=“&gt;1 Km but &lt;=5Km”</li>
+<li>3=“&gt; 5Km”</li>
+<li>99=“Don’t Know”</li>
+</ul>
+</div>
+<div id="postkm" class="section level2">
+<h2><span class="header-section-number">17.10</span> POSTKM</h2>
+<p>Distance from residence to the post offfice bank.</p>
 <p>Levels:</p>
 <ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
+<li>1=“&lt;=1 Km”</li>
+<li>2=“&gt;1 Km but &lt;=5Km”</li>
+<li>3=“&gt; 5Km”</li>
+<li>99=“Don’t Know”</li>
 </ul>
-</div>
-<div id="fin_hea5" class="section level2">
-<h2><span class="header-section-number">15.11</span> FIN_HEA5</h2>
-<p>Have emergency fund for unplanned expenses: counts respondents who have an emergency fund that is large enough to cover unplanned expenses.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
-</ul>
-</div>
-<div id="fin_hea6" class="section level2">
-<h2><span class="header-section-number">15.12</span> FIN_HEA6</h2>
-<p>Confidence in future income growth: counts respondents who are confident that their income will grow in the future.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
-</ul>
-</div>
-<div id="fin_hea7" class="section level2">
-<h2><span class="header-section-number">15.13</span> FIN_HEA7</h2>
-<p>Earn enough to pay debt and expenses: counts respondents who earn enough money to pay back debt and pay for living expenses.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
-</ul>
-</div>
-<div id="fin_hea8" class="section level2">
-<h2><span class="header-section-number">15.14</span> FIN_HEA8</h2>
-<p>Friends and family reply on me to help with their finances</p>
-<p>Levels:</p>
-<ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
-</ul>
-</div>
-<div id="fin_hea9" class="section level2">
-<h2><span class="header-section-number">15.15</span> FIN_HEA9</h2>
-<p>Have financial security: counts respondents who have savings or assets that will keep them financially secure in the future.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
-</ul>
-</div>
-<div id="fin_hea10" class="section level2">
-<h2><span class="header-section-number">15.16</span> FIN_HEA10</h2>
-<p>Have skills and knowledge to manage finances well.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Strongly disagree</li>
-<li>2=Somewhat disagree</li>
-<li>3=Neither disagree, nor agree</li>
-<li>4=Somewhat agree</li>
-<li>5=Strongly agree</li>
-</ul>
-</div>
-<div id="fin_sho1" class="section level2">
-<h2><span class="header-section-number">15.17</span> FIN_SHO1</h2>
-<p>Household gone without food: counts respondents whose households have ever gone without enough food to eat in the last 6 months.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>0=No</li>
-</ul>
-</div>
-<div id="fin_sho2" class="section level2">
-<h2><span class="header-section-number">15.18</span> FIN_SHO2</h2>
-<p>Household gone without cooking fuel: counts respondents whose households have ever gone without fuel to cook food.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>0=No</li>
-</ul>
-</div>
-<div id="fin_sho3" class="section level2">
-<h2><span class="header-section-number">15.19</span> FIN_SHO3</h2>
-<p>Household gone without medical care: counts respondents whose households, in the last 6 months needed a doctor but delayed or went without because of a shortage of funds.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>0=No</li>
-</ul>
-</div>
-<div id="fin_sho4" class="section level2">
-<h2><span class="header-section-number">15.20</span> FIN_SHO4</h2>
-<p>Household gone without veterinarian care: counts respondents whose households, in the last 6 months needed a veterinarain or vet medicine but went without because of a shortage of funds.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>0=No</li>
-</ul>
-</div>
-<div id="fin_sho5" class="section level2">
-<h2><span class="header-section-number">15.21</span> FIN_SHO5</h2>
-<p>Household gone without fertilizer: counts respondents who households, in the last 6 months need fertilizer for the farm but went without because of a shortage of funds.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>0=No</li>
-</ul>
-</div>
-<div id="fin_sho6" class="section level2">
-<h2><span class="header-section-number">15.22</span> FIN_SHO6</h2>
-<p>Could not buy stock for business: counts respondents whose households, in the last 6 months needed stock for the business but could not buy any because of a shortage of funds, and had to close down temporarily or completely.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>0=No</li>
-</ul>
-</div>
-<div id="fin_sho7" class="section level2">
-<h2><span class="header-section-number">15.23</span> FIN_SHO7</h2>
-<p>Household experienced unpaid school fees: counts respondents whose households had a child sent home from school in the last 6 months because of unpaid school fees.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>0=No</li>
-</ul>
-</div>
-<div id="fin_sho8" class="section level2">
-<h2><span class="header-section-number">15.24</span> FIN_SHO8</h2>
-<p>Household missed a family or life event: counts respondents whose households had to miss a family or life event (e.g., funeral, wedding) in the last 6 months because they couldn’t pay for transportation.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>0=No</li>
-</ul>
-</div>
-<div id="money_sou1" class="section level2">
-<h2><span class="header-section-number">15.25</span> MONEY_SOU1</h2>
-<p>Sold agricultural products or reared livestock: counts respondents who got money in the last 12 months by selling agricultural products or rearing livestock.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="money_sou2" class="section level2">
-<h2><span class="header-section-number">15.26</span> MONEY_SOU2</h2>
-<p>Received assistance from the government in the past 6 months</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="money_sou3" class="section level2">
-<h2><span class="header-section-number">15.27</span> MONEY_SOU3</h2>
-<p>Received money a relative, friend, or another person inside the country in the past 6 months</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="money_sou4" class="section level2">
-<h2><span class="header-section-number">15.28</span> MONEY_SOU4</h2>
-<p>Received money from a relative, friend, or another person from a foreign country in the past 6 months</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="money_sou5" class="section level2">
-<h2><span class="header-section-number">15.29</span> MONEY_SOU5</h2>
-<p>Got money in the past 6 months from ownership of a business, property or assets.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="money_sou6" class="section level2">
-<h2><span class="header-section-number">15.30</span> MONEY_SOU6</h2>
-<p>Got money in the past 6 months from employment by the government</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="money_sou7" class="section level2">
-<h2><span class="header-section-number">15.31</span> MONEY_SOU7</h2>
-<p>Got money in the past 6 months from employment in a business with less than 10 employees</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="money_sou8" class="section level2">
-<h2><span class="header-section-number">15.32</span> MONEY_SOU8</h2>
-<p>Got money in the past 6 months from employment in a business with more than 10 employees</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="money_sou9" class="section level2">
-<h2><span class="header-section-number">15.33</span> MONEY_SOU9</h2>
-<p>Got money in the past 6 months from a scholarship or stipend from the government or educational institution.</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="money_sou10" class="section level2">
-<h2><span class="header-section-number">15.34</span> MONEY_SOU10</h2>
-<p>Got money in the last 6 months from pension</p>
-<p>Levels:</p>
-<ul>
-<li>1=Yes</li>
-<li>2=No</li>
-</ul>
-</div>
-<div id="expense1" class="section level2">
-<h2><span class="header-section-number">15.35</span> EXPENSE1</h2>
-</div>
-<div id="expense2" class="section level2">
-<h2><span class="header-section-number">15.36</span> EXPENSE2</h2>
-</div>
-<div id="expense3" class="section level2">
-<h2><span class="header-section-number">15.37</span> EXPENSE3</h2>
 
 </div>
 </div>
@@ -919,8 +694,8 @@
           </div>
         </div>
       </div>
-<a href="financial-situation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="economic-empowerment.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="economic-empowerment.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,6 +1,6 @@
 # Mobile Money
 
-Mobile Money Services
+
 
 ## AWARE_MM
 Mobile money awareness: counts respondents who are aware of mobile money service.
@@ -50,6 +50,7 @@ Levels:
 Mobile money use in last 90 days: counts respondents who used their registered mobile money account in the last 90 days.
 
 Levels:
+
 + 1=Yes
 + 0=No
 
@@ -153,6 +154,7 @@ Levels:
 ## MM_STAGE
 This variable represents the stage of the respondents' customer journey, specifically for mobile money.
 This variable is derived from the previous variables as follows:
+
 Levels:
 
 + 0="Mobile money nonuser"
@@ -849,7 +851,7 @@ Levels:
 +  3=Neither difficult, nor easy
 +  4=Somewhat easy
 +  5=Very easy
-+ -2=DK [DO NOT READ]
++ -2=DK
 
 ## ACTION_MM2
 Finding a particular mobile money menu option without assistance
@@ -861,7 +863,7 @@ Levels:
 +  3=Neither difficult, nor easy
 +  4=Somewhat easy
 +  5=Very easy
-+ -2=DK [DO NOT READ]
++ -2=DK
 
 ## ACTION_MM3
 Completing a mobile money transaction without assistance
@@ -873,7 +875,7 @@ Levels:
 +  3=Neither difficult, nor easy
 +  4=Somewhat easy
 +  5=Very easy
-+ -2=DK [DO NOT READ]
++ -2=DK
 
 ## ACTION_MM4
 Correcting an error in the amount of money without assistance
@@ -885,7 +887,7 @@ Levels:
 +  3=Neither difficult, nor easy
 +  4=Somewhat easy
 +  5=Very easy
-+ -2=DK [DO NOT READ]
++ -2=DK
 
 ## ACTION_MM5
 Correcting an error in the amount or phone number for a transaction without assistance
@@ -897,7 +899,7 @@ Levels:
 +  3=Neither difficult, nor easy
 +  4=Somewhat easy
 +  5=Very easy
-+ -2=DK [DO NOT READ]
++ -2=DK
 
 ## ACTION_MM6
 Reversing or canceling a transaction without assistance.
@@ -909,7 +911,7 @@ Levels:
 +  3=Neither difficult, nor easy
 +  4=Somewhat easy
 +  5=Very easy
-+ -2=DK [DO NOT READ]
++ -2=DK
 
 ## OPN_MM1
 Reason for most recent unsuccessful transaction -Technical network problems

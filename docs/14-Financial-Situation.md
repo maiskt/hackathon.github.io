@@ -1,12 +1,12 @@
 # Financial Situation
 
-Financial Situation
+
 
 ## INCOME_EARNER
 ## MAIN_EARNER
 
 ## FIN_SITUATION
-Family's financial situation:  
+Family's financial situation  
 
 Levels:
 

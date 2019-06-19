@@ -1,6 +1,6 @@
-# Non-Bank Financial Institutions
+# Non-Bank Financial Institutions (NBFIs)
 
-NBFIs
+
 
 ## ACCESS_NBFI 
 Access to full-service non-bank financial institutions: counts respondents who have ever used a full-service non-bank financial institution for any financial activity. 
@@ -11,7 +11,7 @@ Levels:
 + 0 ="No"
 
 ## ACCESS_NBFI_ALL
-Ever used a non-bank financial institution: counts respondents who have ever used a non-bank financial institution for any financial activity
+Ever used a non-bank financial institution: counts respondents who have ever used a non-bank financial institution for any financial activity.
 
 Levels:  
 
@@ -27,7 +27,7 @@ Levels:
 + 0 ="No"
 
 ## REGISTERED_NBFI_ALL
-Have an account with a non-bank financial institution:  counts respondents with an account with any non-bank financial institution
+Have an account with a non-bank financial institution:  counts respondents with an account with any non-bank financial institution.
 
 Levels: 
  
@@ -166,6 +166,7 @@ Levels:
 Active registered cooperative users: counts respondents who have an account/membership in thier name at a full-service cooperative and have used it in the last 90 days. 
 
 Levels: 
+
  1 ="Yes" 
  0 ="No"
 

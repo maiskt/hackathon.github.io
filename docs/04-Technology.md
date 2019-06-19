@@ -1,6 +1,6 @@
 # Technology Literacy
 
-Technology literacy
+
 
 ## ACCESS_PHONE
 Access to phone: counts respondents who own a personnal mobile phone or use a mobile phone that belongs to someone else or is shared.

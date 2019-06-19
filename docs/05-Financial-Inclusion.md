@@ -1,5 +1,5 @@
 # Financial Inclusion
-Formal financial institutions.
+
 
 ## ACCESS_FINANCIAL_ALL
 Ever used formal financial services - counts respondents who:

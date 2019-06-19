@@ -1,11 +1,12 @@
 # Demographics
 
-Demographics
+
 
 ## AGE
 Age: Respondent's age, derived from birth year and survey year
 
 Note: 
+
 * These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
 * Coded missing value into DK=-2.
 
@@ -23,6 +24,7 @@ Levels:
 + -2= DK
        
 Note: 
+
 * These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
 * Coded missing value into DK=-2.
        
@@ -93,6 +95,7 @@ Levels:
 + 0=No
     
 Note:
+
 * Financial literacy questions are only available from 2016 to 2018.
 
 ## DIGITAL_LITERACY_INDEX
@@ -119,6 +122,7 @@ Levels:
 + 3=High
 
 Note:
+
 * Digital literacy questions are only available for 2013 Kenya, Uganda, Tanzania and India surveys.
        
 ## GENDER
@@ -143,6 +147,7 @@ Levels:
 + -2=DK
 
 Note:
+
 * There is no data for the "Living together/Cohabiting" category in Pakistan and Bangladesh.
 
 ## HAVE_CHILDREN
@@ -159,6 +164,7 @@ Levels:
 + 0=No
 
 Note:
+
 * No household information available for 2017 Pakistan.
 * Questions about children were not collected in 2013 and 2014 surveys.
        
@@ -176,6 +182,7 @@ Levels:
 + 0=No
 
 Notes:
+
 * 2013, 2014 and 2017 surveys didn't include questions on school fees.
 
 ## EMPLOYMENT
@@ -197,6 +204,7 @@ Levels:
 + -2=DK
        
 Notes:
+
 * Pakistan(2015) has one more category "Landlord", which is recoded into "Other".
 * 2013 surveys didn't include this question.
        
@@ -225,6 +233,7 @@ Levels:
 + 0=No
        
 Note:
+
 * 2013 and 2014 surveys didn't include this quesion.
 
 ## WORK_FARM
@@ -236,6 +245,7 @@ Levels:
 + 0=No
        
 Note:
+
 * 2013 and 2014 surveys didn't include this question.
        
 ## SELL_CROP
@@ -247,4 +257,5 @@ Levels:
 + 0=No
        
 Note:
+
 * 2013 and 2014 surveys didn't include this quesion.
