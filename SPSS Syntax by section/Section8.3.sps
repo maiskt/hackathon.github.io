@@ -284,3 +284,61 @@ compute YEAR=2013.
 *****************************************************************************************************************************.
 *Labels.
 
+value labels NBFI_TRANSFER 1"Yes" 0"No".
+value labels NBFI_MERCHANT 1"Yes" 0"No".
+value labels NBFI_BILL 1"Yes" 0"No".
+value labels NBFI_GOV 1"Yes" 0"No".
+value labels NBFI WAGE 1"Yes" 0"No".
+value labels NBFI_INSURANCE 1"Yes" 0"No".
+value labels NBFI_SAVE 1"Yes" 0"No".
+value labels NBFI_INVEST 1"Yes" 0"No".
+value labels NBFI_LOAN 1"Yes" 0"No".
+value labels NBFI_AIRTIME 1"Yes" 0"No".
+value labels ACTIVE_NBFI_TRANSFER 1"Yes" 0"No".
+value labels ACTIVE_NBFI_MERCHANT 1"Yes" 0"No".
+value labels ACTIVE_NBFI_BILL 1"Yes" 0"No".
+value labels ACTIVE_NBFI_GOV 1"Yes" 0"No".
+value labels ACTIVE_NBFI WAGE 1"Yes" 0"No".
+value labels ACTIVE_NBFI_INSURANCE 1"Yes" 0"No".
+value labels ACTIVE_NBFI_SAVE 1"Yes" 0"No".
+value labels ACTIVE_NBFI_INVEST 1"Yes" 0"No".
+value labels ACTIVE_NBFI_LOAN 1"Yes" 0"No".
+value labels ACTIVE_NBFI_AIRTIME 1"Yes" 0"No".
+value labels R_STOPMFI1 1"Yes" 2"No".
+value labels R_STOPMFI2 1"Yes" 2"No".
+value labels R_STOPMFI3 1"Yes" 2"No".
+value labels R_STOPMFI4 1"Yes" 2"No".
+value labels R_STOPMFI5 1"Yes" 2"No".
+value labels R_STOPMFI6 1"Yes" 2"No".
+value labels R_STOPMFI7 1"Yes" 2"No".
+
+variable labels NBFI_TRANSFER	"Ever used NBFI to send money to, or receive money from someone"
+NBFI_MERCHANT	"Ever used NBFI to buy goods and service"
+NBFI_BILL	"Ever used NBFI to pay a bill"
+NBFI_GOV	"Ever used NBFI to receive money from the government"
+NBFI_WAGE	"Ever used NBFI to receive payment from an exmployer"
+NBFI_INSURANCE	"Ever used NBFI to pay for insurance or receive payment from insurance"
+NBFI_SAVE	"Ever used NBFI to save money"
+NBFI_INVEST	"Ever used NBFI to make an investment"
+NBFI_LOAN	"Ever used NBFI to borrow money or get  credit"
+NBFI_AIRTIME	"Ever used NBFI to buy airtime top-ups or pay a mobile phone bill"
+ACTIVE_NBFI_TRANSFER	"Used NBFI to send money to, or receive money from someone in past 90 days"
+ACTIVE_NBFI_MERCHANT	"Used NBFI to buy goods and service in past 90 days"
+ACTIVE_NBFI_BILL	"Used NBFI to pay a bill in past 90 days"
+ACTIVE_NBFI_GOV	"Used NBFI to receive money from the government in past 90 days"
+ACTIVE_NBFI WAGE	"Used NBFI to receive payment from an exmployer in past 90 days"
+ACTIVE_NBFI_INSURANCE	"Used NBFI to pay for insurance or receive payment from insurance in past 90 days"
+ACTIVE_NBFI_SAVE	"Used NBFI to save money in past 90 days"
+ACTIVE_NBFI_INVEST	"Used NBFI to make an investment in past 90 days"
+ACTIVE_NBFI_LOAN	"Used NBFI to borrow money or get credit in past 90 days"
+ACTIVE_NBFI_AIRTIME	"Used NBFI to buy airtime top-ups or pay a mobile phone bill in past 90 days"
+R_STOPMFI1	"Reason to stop using MFI or close MFI account: The products or services offered no longer met your needs"
+R_STOPMFI2	"Reason to stop using MFI or close MFI account: Improvement in your circumstances took away the need you had for the products or services offered"
+R_STOPMFI3	"Reason to stop using MFI or close MFI account: A change in your status made you ineligible for products or services"
+R_STOPMFI4	"Reason to stop using MFI or close MFI account: It became more difficult to travel to the point of service"
+R_STOPMFI5	"Reason to stop using MFI or close MFI account: You switched to a different microfinance institution (MFI)"
+R_STOPMFI6	"Reason to stop using MFI or close MFI account: You switched to mobile money instead of using a microfinance instititution"
+R_STOPMFI7	"Reason to stop using MFI or close MFI account: You switched to a bank instead of using a microfinace institution".
+
+
+
