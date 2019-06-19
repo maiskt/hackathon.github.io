@@ -3,7 +3,7 @@
 
 
 ## AGE
-Age: Respondent's age, derived from birth year and survey year
+Respondent's age, derived from birth year and survey year
 
 Note: 
 
@@ -12,7 +12,7 @@ Note:
 
 ## AGE_GROUP
 
- Age group: 10-year age group, derived from AGE
+ 10-year age group, derived from AGE
 
 Levels: 
 
