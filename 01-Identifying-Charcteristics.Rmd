@@ -6,7 +6,7 @@ Any given survey dataset can be identified using together the following 3 variab
 This is the identification variable that uniquely identifies each respondent within an individual survey dataset.  It is worth noting that two respondents from two different survey datasets can have the same SBJNUM value. For this reason, it is important to use variables SBJNUM, COUNTRY, and YEAR at the same time when using multiple survey datasets.
 
 ## COUNTRY
-This is the name of the country where the survey was conducted. the following countries were surveyed:
+This is the name of the country where the survey was conducted. The following countries were surveyed:
 
 * Bangladesh
 * India
