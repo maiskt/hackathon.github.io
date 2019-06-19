@@ -1,5 +1,5 @@
 ﻿* Encoding: UTF-8.
-*Section XX.
+*Section 17.
 dataset close all.
 insert file = "C:/Users/shueym/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
 cd "C:/Users/shueym/Documents".
@@ -234,7 +234,7 @@ save outfile = "data/ken13.sav"
 DATASET ACTIVATE nga13.
 
 save outfile = "data/nga13.sav"
-/keep= SBJNUM COUNTRY YEAR  .
+/keep= SBJNUM COUNTRY YEAR UR.
 
 
 DATASET ACTIVATE pak13.

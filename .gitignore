@@ -1,10 +1,8 @@
 .Rproj.user
 .Rhistory
 .RData
-_bookdown_files
 .DS_Store
 *.rds
 .Rapp.history
 ~$Variable list_2019.xlsx
-*.sps
 ~$Codebook master.xlsx
