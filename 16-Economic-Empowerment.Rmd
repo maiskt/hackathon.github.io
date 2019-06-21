@@ -1,12 +1,26 @@
 # Economic Empowerment
 
-
-
 ## ECO_EMP1
+
+
+* 1=Strongly disagree
+* 2=Somewhat disagree
+* 3=Neither disagree, nor agree
+* 4=Somewhat agree
+* 5=Strongly agree
+
+
 ## ECO_EMP2
+
 ## ECO_EMP3
+
 ## ECO_EMP4
+
 ## ECO_EMP5
+
 ## ECO_EMP6
+
 ## ECO_EMP7
+
 ## ECO_EMP8
+
