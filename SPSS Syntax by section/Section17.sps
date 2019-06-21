@@ -390,12 +390,12 @@ DATASET ACTIVATE bng15.
 
 recode IFI14_1(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into BBKM.
 recode IFI14_2(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into ATMKM.
-recode IFI14_3(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into MMKM.
+recode IFI14_4(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into MMKM.
 numeric BAKM.
 recode IFI14_5(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into RSKM.
 recode IFI14_6(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into MFIKM.
 recode IFI14_7(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into GRPKM.
-recode IFI14_8(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into INFMLKM.
+numeric INFMLKM.
 numeric POSTKM.
 
 compute POS = 0.
@@ -749,7 +749,7 @@ numeric BBKM.
 recode FFI12_2(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into ATMKM.
 numeric MMKM.
 numeric BAKM.
-recode FFI12_3(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into RSKM.
+recode FFI12_5(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into RSKM.
 numeric MFIKM.
 numeric GRPKM.
 numeric INFMLKM.
@@ -896,5 +896,4 @@ if (BBKM = 1 or ATMKM = 1 or MMKM = 1 or BAKM = 1 or RSKM = 1 or MFIKM = 1 or GR
 save outfile = "data/uga13.sav"
 /keep= SBJNUM COUNTRY YEAR POS BBKM ATMKM MMKM BAKM RSKM MFIKM GRPKM INFMLKM POSTKM  .
 
-
-*dataset close all.
+dataset close all.
