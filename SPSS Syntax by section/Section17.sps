@@ -799,11 +799,7 @@ numeric GRPKM.
 numeric INFMLKM.
 numeric POSTKM.
 
-compute POS = 0.
-if (BBKM = 99 or ATMKM = 99 or MMKM = 99 or BAKM = 99 or RSKM = 99 or MFIKM = 99 or GRPKM = 99 or INFMLKM = 99 or POSTKM = 99) POS = -2.
-if (BBKM = 3 or ATMKM = 3 or MMKM = 3 or BAKM = 3 or RSKM = 3 or MFIKM = 3 or GRPKM = 3 or INFMLKM = 3 or POSTKM = 3) POS = 3.
-if (BBKM = 2 or ATMKM = 2 or MMKM = 2 or BAKM = 2 or RSKM = 2 or MFIKM = 2 or GRPKM = 2 or INFMLKM = 2 or POSTKM = 2) POS = 2.
-if (BBKM = 1 or ATMKM = 1 or MMKM = 1 or BAKM = 1 or RSKM = 1 or MFIKM = 1 or GRPKM = 1 or INFMLKM = 1 or POSTKM = 1) POS = 1.
+numeric POS.
 
 save outfile = "data/ken13.sav"
 /keep= SBJNUM COUNTRY YEAR POS BBKM ATMKM MMKM BAKM RSKM MFIKM GRPKM INFMLKM POSTKM  .

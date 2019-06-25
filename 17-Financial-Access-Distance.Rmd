@@ -9,20 +9,20 @@ Distance from residence to a point of service(POS): measures the approximate dis
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
  
 ## BBKM
 Distance from residence to a bank branch: measures the distance from the respondent'home to a bank branch.
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
  
  Notes:
  
@@ -33,10 +33,10 @@ Distance from residence to an ATM: measures the distance from the respondent's h
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
  
  Notes:
  
@@ -46,10 +46,10 @@ Levels:
 Distance from residence to a mobile money agent: measures the distance from the respondent's home to a mobile money agent. 
 
 Levels:
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
   
  Notes:
  
@@ -60,10 +60,10 @@ Distance from residence to a bank agent: measures the distance from the responde
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
   
  Notes:
  
@@ -75,10 +75,10 @@ Distance from residence to a store/kiosk with OTC services : measures the distan
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
  
  Notes:
  
@@ -90,10 +90,10 @@ Distance from residence to a micro finance institution (MFI): measures the dista
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
 
 Notes:
 
@@ -105,10 +105,10 @@ Distance from residence to a VSLA: measures the distance from the respondent's h
 
 Levels:
 
- + 1="<=1 Km"
- + 2= Between 1 and 5km
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
  
  Notes:
  
@@ -120,10 +120,10 @@ Levels:
 Distance from residence to an informal self-help or savings group.
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
  
  Notes:
  
@@ -135,10 +135,10 @@ Distance from residence to the post offfice bank.
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
  
  Notes:
  
