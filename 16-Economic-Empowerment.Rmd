@@ -16,17 +16,26 @@ Values:
 
 ## ECO_EMP2
 
-Your typical involvement in deciding how your household’s income is spent on basic needs like food and clothing
+Respondent's typical involvement in deciding how the household’s income is spent on basic needs like food and clothing
+
+Values:
+
+* 1 = Very uninvolved
+* 2 = Somewhat uninvolved
+* 3 = Neither uninvolved, nor involved
+* 4 = Somewhat involved
+* 5 = Very involved
+* -99 = Don't know/Refused
 
 ## ECO_EMP3
 
-Your typical involvement in deciding how your household’s income is spent on other things beyond basic needs
+This variable gagues the respondents' percieved typical involvement in deciding how your household’s income is spent on other things beyond basic needs
 
-* 1=Strongly disagree
-* 2=Somewhat disagree
-* 3=Neither disagree, nor agree
-* 4=Somewhat agree
-* 5=Strongly agree
+* 1 = Strongly disagree
+* 2 = Somewhat disagree
+* 3 = Neither disagree, nor agree
+* 4 = Somewhat agree
+* 5 = Strongly agree
 
 ## ECO_EMP4
 This variable gagues the respondents' percieved influence they have on the final decision to spend their household income.
@@ -51,7 +60,7 @@ Values:
 * 99 = Don't know/refused
 
 ## ECO_EMP6
-This variable asks if the respondent makes the final decision on how household income is spent
+This variable asks if the respondent makes the final decision on how household income is spent.
 
 * 1 = Strongly disagree
 * 2 = Somewhat disagree
@@ -61,6 +70,8 @@ This variable asks if the respondent makes the final decision on how household i
 * 99 = Don't know/refused
 
 Notes:
+
+* Due to the question being asked differently in 2017, only 2018 data is available.
 
 ## ECO_EMP7
 This variable asks if the respondent makes the final decision on how their money is spent or saved
@@ -81,3 +92,7 @@ This variable asks if the respondent trusts financial service providers to keep 
 * 4 = Somewhat agree
 * 5 = Strongly agree
 * 99 = Don't know/refused
+
+Notes:
+
+* Due to the question being asked differently in 2017, only 2018 data is available.
