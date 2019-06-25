@@ -1,7 +1,26 @@
 # Economic Empowerment
 
-## ECO_EMP1
+**Note: These variables are only available for 2017 and 2018 data.**
 
+## ECO_EMP1
+Your typical involvement in deciding how to spend your household’s income
+
+Values:
+
+* 1 = Very uninvolved
+* 2 = Somewhat uninvolved
+* 3 = Neither uninvolved, nor involved
+* 4 = Somewhat involved
+* 5 = Very involved
+* -99 = Don't know/Refused
+
+## ECO_EMP2
+
+Your typical involvement in deciding how your household’s income is spent on basic needs like food and clothing
+
+## ECO_EMP3
+
+Your typical involvement in deciding how your household’s income is spent on other things beyond basic needs
 
 * 1=Strongly disagree
 * 2=Somewhat disagree
@@ -9,18 +28,56 @@
 * 4=Somewhat agree
 * 5=Strongly agree
 
-
-## ECO_EMP2
-
-## ECO_EMP3
-
 ## ECO_EMP4
+This variable gagues the respondents' percieved influence they have on the final decision to spend their household income.
+
+Values:
+* 1 = None
+* 2 = A little
+* 3 = About half
+* 4 = Most
+* 5 = Almost all
 
 ## ECO_EMP5
+This variable gagues the likeliness the respondent would voice disagreement if they happened to disagree with a typical decision about how their household’s income is spent.
+
+Values:
+
+* 1 = Very unlikely
+* 2 = Somewhat unlikely
+* 3 = Neither unlikely, nor likely
+* 4 = Somewhat likely
+* 5 = Very likely
+* 99 = Don't know/refused
 
 ## ECO_EMP6
+This variable asks if the respondent makes the final decision on how household income is spent
+
+* 1 = Strongly disagree
+* 2 = Somewhat disagree
+* 3 = Neither disagree, nor agree
+* 4 = Somewhat agree
+* 5 = Strongly agree
+* 99 = Don't know/refused
+
+Notes:
 
 ## ECO_EMP7
+This variable asks if the respondent makes the final decision on how their money is spent or saved
+
+* 1 = Strongly disagree
+* 2 = Somewhat disagree
+* 3 = Neither disagree, nor agree
+* 4 = Somewhat agree
+* 5 = Strongly agree
+* 99 = Don't know/refused
 
 ## ECO_EMP8
+This variable asks if the respondent trusts financial service providers to keep their personal information private (unless they allow it to be shared).
 
+* 1 = Strongly disagree
+* 2 = Somewhat disagree
+* 3 = Neither disagree, nor agree
+* 4 = Somewhat agree
+* 5 = Strongly agree
+* 99 = Don't know/refused
