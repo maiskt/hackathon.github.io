@@ -10,12 +10,27 @@ Levels:
 + 1=Yes
 + 0=No
 
-## FOLLOW_PLAN
+Notes:
 
+* This data is only available for 2016 and 2017.
+* In 2017, these questions were asked on a 5-point Likert scale instead of yes/no. The options "Somewhat Agree" and "Strongly Agree" were converted to the "Yes" level.
+
+## FOLLOW_PLAN
+This question asks respondents whether they believe they stick to the plan(s) mentioned in HAVE_PLAN.
+
+Levels:
+
++ 1 = Yes
++ 0 = No
+
+Notes:
+
+* This data is only available for 2016 and 2017.
+* These questions were asked on a Likert scale instead of yes/no. The options "Somewhat Agree" and "Strongly Agree" were converted to the "Yes" level.
 ## ECO_VUL
 
 ## FIN_SHOCK
-Financial shock: counts respondents who experienced a shock such as fire, flodd, natural disaster, burglary, pests,  job loss, death of main income earner, increase costs of agricultural inputs, drop in crop or livestock price, large medical expenses or family separation. 
+Financial shock: counts respondents who experienced a shock such as fire, flood, natural disaster, burglary, pests,  job loss, death of main income earner, increase costs of agricultural inputs, drop in crop or livestock price, large medical expenses or family separation. 
 
 Levels:
 
