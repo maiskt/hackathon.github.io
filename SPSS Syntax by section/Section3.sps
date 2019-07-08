@@ -159,7 +159,7 @@ if (digital_adv=1) DIGITAL_LITERACY_INDEX=3.
 compute GENDER=dg2.
 
 compute MARRIAGE=dg3.
-recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(96=96)(99=-2).
+recode MARRIAGE(99=-2).
 
 count HAVE_CHILDREN=I_1_HH2_2 I_2_HH2_2 I_3_HH2_2 I_4_HH2_2 I_5_HH2_2 I_6_HH2_2 
 I_7_HH2_2 I_8_HH2_2 I_9_HH2_2 I_10_HH2_2(0 thru 17).
@@ -2296,5 +2296,4 @@ INVOL_AGRI"Involved in agriculture"
 OWN_FARM"Someone in your household own or lease a farm/farmland"
 WORK_FARM"Work on the farm that someone in your household owned or leased yourself"
 SELL_CROP"Selling products of agriculture or rearing livestock".
-
 
