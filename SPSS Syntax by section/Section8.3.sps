@@ -8,6 +8,28 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2018.
 
+compute active_G2P_NBFI=0.
+if AD6_14<=4 or AD6_15<=4 or AD6_18<=4 or (FN5_1=1 and FN5_4=1 and AD6_16<=4) or (FN6_1=1 and FN6_4=1 and AD6_17<=4) active_G2P_NBFI=1.
+ 
+compute active_wage_NBFI=0.
+if AD7_14<=4 or AD7_15<=4 or AD7_18<=4 or (FN5_1=1 and FN5_4=1 and AD7_16<=4) or (FN6_1=1 and FN6_4=1 and AD7_17<=4) active_wage_NBFI=1.
+ 
+compute active_insurance_NBFI=0.
+if AD8_15<=4 or AD8_16<=4 or AD8_19<=4 or (FN5_1=1 and FN5_4=1 and AD8_17<=4) or (FN6_1=1 and FN6_4=1 and AD8_18<=4) active_insurance_NBFI=1.
+ 
+compute active_loan_NBFI=0.
+if AD11_21<=4 or AD11_22<=4 or AD11_27<=4 or (FN5_1=1 and FN5_4=1 and AD11_25<=4) or (FN6_1=1 and FN6_4=1 and AD11_26<=4) active_loan_NBFI=1.
+ 
+compute active_save_NBFI=0.
+if AD9_19<=4 or AD9_20<=4 or AD9_23<=4 or (FN5_1=1 and FN5_4=1 and AD9_21<=4) or (FN6_1=1 and FN6_4=1 and AD9_22<=4) active_save_NBFI=1.
+ 
+compute active_invest_NBFI=0.
+if AD10_31<=4 or AD10_32<=4 or AD10_35<=4 or (FN5_1=1 and FN5_4=1 and AD10_33<=4) or (FN6_1=1 and FN6_4=1 and AD10_34<=4) active_invest_NBFI=1.
+ 
+compute active_pay_NBFI=0.
+if AD2_15<=4 or AD2_16<=4 or AD2_19<=4 or (FN5_1=1 and FN5_4=1 and AD2_17<=4) or (FN6_1=1 and FN6_4=1 and AD2_18<=4) active_pay_NBFI=1.
+ 
+
 **************************************************************************************************************************************************.
 *18India.
 rename variables serial=SBJNUM weight=WEIGHT.
