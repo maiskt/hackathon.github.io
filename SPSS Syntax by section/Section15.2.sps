@@ -8,16 +8,17 @@ cd "C:/Users/shueym/Documents".
 
 DATASET ACTIVATE bng18.
 
-numeric MONEY_SOU1.
-numeric MONEY_SOU2.
-numeric MONEY_SOU3.
-numeric MONEY_SOU4.
-numeric MONEY_SOU5.
-numeric MONEY_SOU6.
-numeric MONEY_SOU7.
-numeric MONEY_SOU8.
-numeric MONEY_SOU9.
-numeric MONEY_SOU10.
+recode DL4_1 (2=0)(else=copy) into MONEY_SOU1.
+recode DL4_2 (2=0)(else=copy) into MONEY_SOU2.
+recode DL4_3 (2=0)(else=copy) into MONEY_SOU3.
+recode DL4_4 (2=0)(else=copy) into MONEY_SOU4.
+recode DL4_5 (2=0)(else=copy) into MONEY_SOU5.
+recode DL4_6 (2=0)(else=copy) into MONEY_SOU6.
+recode DL4_7 (2=0)(else=copy) into MONEY_SOU7.
+recode DL4_8 (2=0)(else=copy) into MONEY_SOU8.
+recode DL4_9 (2=0)(else=copy) into MONEY_SOU9.
+recode DL4_10 (2=0)(else=copy) into MONEY_SOU10.
+
 numeric EXPENSE1.
 numeric EXPENSE2.
 numeric EXPENSE3.
@@ -28,16 +29,16 @@ save outfile = "data/bng18.sav"
 
 DATASET ACTIVATE ind18.
 
-numeric MONEY_SOU1.
-numeric MONEY_SOU2.
-numeric MONEY_SOU3.
-numeric MONEY_SOU4.
-numeric MONEY_SOU5.
-numeric MONEY_SOU6.
-numeric MONEY_SOU7.
-numeric MONEY_SOU8.
-numeric MONEY_SOU9.
-numeric MONEY_SOU10.
+recode DL4_1 (2=0)(else=copy) into MONEY_SOU1.
+recode DL4_2 (2=0)(else=copy) into MONEY_SOU2.
+recode DL4_3 (2=0)(else=copy) into MONEY_SOU3.
+recode DL4_4 (2=0)(else=copy) into MONEY_SOU4.
+recode DL4_5 (2=0)(else=copy) into MONEY_SOU5.
+recode DL4_6 (2=0)(else=copy) into MONEY_SOU6.
+recode DL4_7 (2=0)(else=copy) into MONEY_SOU7.
+recode DL4_8 (2=0)(else=copy) into MONEY_SOU8.
+recode DL4_9 (2=0)(else=copy) into MONEY_SOU9.
+recode DL4_10 (2=0)(else=copy) into MONEY_SOU10.
 numeric EXPENSE1.
 numeric EXPENSE2.
 numeric EXPENSE3.
@@ -50,11 +51,31 @@ save outfile = "data/ind18.sav"
 
 DATASET ACTIVATE bng17.
 
+recode DL4_1 (2=0)(else=copy)into MONEY_SOU1.
+*DL4_2 doesn't differentiate between in-country or out-of-country.
+*DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
+*MONEY_SOU5 doesn't differentiate between business income and property/asset income.
+*DL4_5 doesn't discriminate between employer sizes.
+recode DL4_6 (2=0)(else=copy)into MONEY_SOU6.
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
+
 save outfile = "data/bng17.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE ind17.
+
+recode DL4_1 (2=0)(else=copy)into MONEY_SOU1.
+*DL4_2 doesn't differentiate between in-country or out-of-country.
+*DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
+*MONEY_SOU5 doesn't differentiate between business income and property/asset income.
+*DL4_5 doesn't discriminate between employer sizes.
+recode DL4_6 (2=0)(else=copy)into MONEY_SOU6.
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
 
 save outfile = "data/ind17.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -62,11 +83,31 @@ save outfile = "data/ind17.sav"
 
 DATASET ACTIVATE ken17.
 
+recode DL4_1 (2=0)(else=copy)into MONEY_SOU1.
+*DL4_2 doesn't differentiate between in-country or out-of-country.
+*DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
+*MONEY_SOU5 doesn't differentiate between business income and property/asset income.
+*DL4_5 doesn't discriminate between employer sizes.
+recode DL4_6 (2=0)(else=copy)into MONEY_SOU6.
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
+
 save outfile = "data/ken17.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE nga17.
+
+recode DL4_1 (2=0)(else=copy)into MONEY_SOU1.
+*DL4_2 doesn't differentiate between in-country or out-of-country.
+*DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
+*MONEY_SOU5 doesn't differentiate between business income and property/asset income.
+*DL4_5 doesn't discriminate between employer sizes.
+recode DL4_6 (2=0)(else=copy)into MONEY_SOU6.
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
 
 save outfile = "data/nga17.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -74,17 +115,47 @@ save outfile = "data/nga17.sav"
 
 DATASET ACTIVATE pak17.
 
+recode DL4_1 (2=0)(else=copy)into MONEY_SOU1.
+*DL4_2 doesn't differentiate between in-country or out-of-country.
+*DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
+*MONEY_SOU5 doesn't differentiate between business income and property/asset income.
+*DL4_5 doesn't discriminate between employer sizes.
+recode DL4_6 (2=0)(else=copy)into MONEY_SOU6.
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
+
 save outfile = "data/pak17.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE tza17.
 
+recode DL4_1 (2=0)(else=copy)into MONEY_SOU1.
+*DL4_2 doesn't differentiate between in-country or out-of-country.
+*DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
+*MONEY_SOU5 doesn't differentiate between business income and property/asset income.
+*DL4_5 doesn't discriminate between employer sizes.
+recode DL4_6 (2=0)(else=copy)into MONEY_SOU6.
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
+
 save outfile = "data/tza17.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE uga17.
+
+recode DL4_1 (2=0)(else=copy)into MONEY_SOU1.
+*DL4_2 doesn't differentiate between in-country or out-of-country.
+*DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
+*MONEY_SOU5 doesn't differentiate between business income and property/asset income.
+*DL4_5 doesn't discriminate between employer sizes.
+recode DL4_6 (2=0)(else=copy)into MONEY_SOU6.
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
 
 save outfile = "data/uga17.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -94,11 +165,20 @@ save outfile = "data/uga17.sav"
 
 DATASET ACTIVATE bng16.
 
+
+recode FL9A (96=SYSMIS)(else=copy) into EXPENSE1.
+recode FL9B (96=SYSMIS)(else=copy) into EXPENSE2.
+recode FL9C (96=SYSMIS)(else=copy) into EXPENSE3.
+
 save outfile = "data/bng16.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE ind16.
+
+recode FL9A (96=SYSMIS)(else=copy) into EXPENSE1.
+recode FL9B (96=SYSMIS)(else=copy) into EXPENSE2.
+recode FL9C (96=SYSMIS)(else=copy) into EXPENSE3.
 
 save outfile = "data/ind16.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -106,35 +186,61 @@ save outfile = "data/ind16.sav"
 
 DATASET ACTIVATE ida16.
 
+
+recode FL9A (96=SYSMIS)(else=copy) into EXPENSE1.
+recode FL9B (96=SYSMIS)(else=copy) into EXPENSE2.
+recode FL9C (96=SYSMIS)(else=copy) into EXPENSE3.
 save outfile = "data/ida16.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE ken16.
 
+
+recode FL9A (96=SYSMIS)(else=copy) into EXPENSE1.
+recode FL9B (96=SYSMIS)(else=copy) into EXPENSE2.
+recode FL9C (96=SYSMIS)(else=copy) into EXPENSE3.
 save outfile = "data/ken16.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE nga16.
 
+
+recode FL9A (96=SYSMIS)(else=copy) into EXPENSE1.
+recode FL9B (96=SYSMIS)(else=copy) into EXPENSE2.
+recode FL9C (96=SYSMIS)(else=copy) into EXPENSE3.
 save outfile = "data/nga16.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE pak16.
 
+
+recode FL9A (96=SYSMIS)(else=copy) into EXPENSE1.
+recode FL9B (96=SYSMIS)(else=copy) into EXPENSE2.
+recode FL9C (96=SYSMIS)(else=copy) into EXPENSE3.
 save outfile = "data/pak16.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE tza16.
 
+
+recode FL9A (96=SYSMIS)(else=copy) into EXPENSE1.
+recode FL9B (96=SYSMIS)(else=copy) into EXPENSE2.
+recode FL9C (96=SYSMIS)(else=copy) into EXPENSE3.
+
 save outfile = "data/tza16.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE uga16.
+
+
+recode FL9A (96=SYSMIS)(else=copy) into EXPENSE1.
+recode FL9B (96=SYSMIS)(else=copy) into EXPENSE2.
+recode FL9C (96=SYSMIS)(else=copy) into EXPENSE3.
 
 save outfile = "data/uga16.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -144,11 +250,21 @@ save outfile = "data/uga16.sav"
 
 DATASET ACTIVATE bng15.
 
+
+recode FL11A (10=SYSMIS)(12 = 10)(else=copy) into EXPENSE1.
+recode FL11B (10=SYSMIS)(12 = 10)(else=copy) into EXPENSE2.
+recode FL11C (10=SYSMIS)(12 = 10)(else=copy) into EXPENSE3.
+
 save outfile = "data/bng15.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE ind15.
+
+
+recode FL11A (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE1.
+recode FL11B (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE2.
+recode FL11C (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE3.
 
 save outfile = "data/ind15.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -156,11 +272,19 @@ save outfile = "data/ind15.sav"
 
 DATASET ACTIVATE ida15.
 
+recode FL9A (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE1.
+recode FL9B (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE2.
+recode FL9C (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE3.
+
 save outfile = "data/ida15.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE ken15.
+
+recode FL9A (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE1.
+recode FL9B (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE2.
+recode FL9C (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE3.
 
 save outfile = "data/ken15.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -168,11 +292,20 @@ save outfile = "data/ken15.sav"
 
 DATASET ACTIVATE nga15.
 
+recode FL9A (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE1.
+recode FL9B (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE2.
+recode FL9C (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE3.
+
 save outfile = "data/nga15.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE pak15.
+
+*Value 10 missing label.
+recode FL11A (10=SYSMIS)(12 = 10)(13 thru 18 = SYSMIS)(else=copy) into EXPENSE1.
+recode FL11B (10=SYSMIS)(12 = 10)(13 thru 18 = SYSMIS)(else=copy) into EXPENSE2.
+recode FL11C (10=SYSMIS)(12 = 10)(13 thru 18 = SYSMIS)(else=copy) into EXPENSE3.
 
 save outfile = "data/pak15.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -180,19 +313,32 @@ save outfile = "data/pak15.sav"
 
 DATASET ACTIVATE tza15.
 
+recode FL9A (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE1.
+recode FL9B (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE2.
+recode FL9C (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE3.
+
 save outfile = "data/tza15.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE uga15.
 
+recode FL9A (11=SYSMIS)(13=SYSMIS)(12 = 11)(else=copy) into EXPENSE1.
+recode FL9B (11=SYSMIS)(13=SYSMIS)(12 = 11)(else=copy) into EXPENSE2.
+recode FL9C (11=SYSMIS)(13=SYSMIS)(12 = 11)(else=copy) into EXPENSE3.
+
 save outfile = "data/uga15.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 *2014---------------------------------------------------------------------***.
-
+* EXPENSEs asked differently, see documentation.
 DATASET ACTIVATE bng14.
+
+
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
 
 save outfile = "data/bng14.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -200,11 +346,19 @@ save outfile = "data/bng14.sav"
 
 DATASET ACTIVATE ind14.
 
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
+
 save outfile = "data/ind14.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE ida14.
+
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
 
 save outfile = "data/ida14.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -212,11 +366,19 @@ save outfile = "data/ida14.sav"
 
 DATASET ACTIVATE ken14.
 
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
+
 save outfile = "data/ken14.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE nga14.
+
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
 
 save outfile = "data/nga14.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -224,11 +386,19 @@ save outfile = "data/nga14.sav"
 
 DATASET ACTIVATE pak14.
 
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
+
 save outfile = "data/pak14.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 DATASET ACTIVATE tza14.
+
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
 
 save outfile = "data/tza14.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -236,12 +406,21 @@ save outfile = "data/tza14.sav"
 
 DATASET ACTIVATE uga14.
 
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
+
 save outfile = "data/uga14.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .
 
 
 *2013---------------------------------------------------------------------***.
 DATASET ACTIVATE bng13.
+
+
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
 
 save outfile = "data/bng13.sav"
 /keep= SBJNUM COUNTRY YEAR MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 MONEY_SOU9 MONEY_SOU10 EXPENSE1 EXPENSE2 EXPENSE3  .

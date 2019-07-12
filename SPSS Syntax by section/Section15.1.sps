@@ -65,27 +65,80 @@ save outfile = "data/ind18.sav"
 
 DATASET ACTIVATE bng17.
 
-rename variables FL1 = HAVE_PLAN.
+numeric HAVE_PLAN.
 rename variables FL2 = FOLLOW_PLAN.
- 
 
+numeric ECO_VUL.
+numeric FIN_SHOCK.
+
+count BUDGET_INCOME=fl1(2 thru 4).
+recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
+
+numeric FIN_HEA1.
+rename variables FL6.1 = FIN_HEA2.
+rename variables FL6.2 = FIN_HEA3.
+rename variables FL6.3 = FIN_HEA4.
+rename variables FL6.4 = FIN_HEA5.
+rename variables FL6.5 = FIN_HEA6.
+rename variables FL6.6 = FIN_HEA7.
+rename variables FL6.7 = FIN_HEA8.
+rename variables FL6.8 = FIN_HEA9.
+rename variables FL6.9 = FIN_HEA10.
+
+ 
 save outfile = "data/bng17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN FOLLOW_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
 
 
 DATASET ACTIVATE ind17.
 
-rename variables FL1 = HAVE_PLAN.
+
+numeric HAVE_PLAN.
 rename variables FL2 = FOLLOW_PLAN.
 
+numeric ECO_VUL.
+numeric FIN_SHOCK.
+
+count BUDGET_INCOME=fl1(2 thru 4).
+recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
+
+numeric FIN_HEA1.
+rename variables FL6.1 = FIN_HEA2.
+rename variables FL6.2 = FIN_HEA3.
+rename variables FL6.3 = FIN_HEA4.
+rename variables FL6.4 = FIN_HEA5.
+rename variables FL6.5 = FIN_HEA6.
+rename variables FL6.6 = FIN_HEA7.
+rename variables FL6.7 = FIN_HEA8.
+rename variables FL6.8 = FIN_HEA9.
+rename variables FL6.9 = FIN_HEA10.
+
+ 
 save outfile = "data/ind17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN FOLLOW_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
 
 
 DATASET ACTIVATE ken17.
 
-rename variables FL1 = HAVE_PLAN.
+numeric HAVE_PLAN.
 rename variables FL2 = FOLLOW_PLAN.
+
+numeric ECO_VUL.
+numeric FIN_SHOCK.
+
+count BUDGET_INCOME=fl1(2 thru 4).
+recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
+
+numeric FIN_HEA1.
+rename variables FL6.1 = FIN_HEA2.
+rename variables FL6.2 = FIN_HEA3.
+rename variables FL6.3 = FIN_HEA4.
+rename variables FL6.4 = FIN_HEA5.
+rename variables FL6.5 = FIN_HEA6.
+rename variables FL6.6 = FIN_HEA7.
+rename variables FL6.7 = FIN_HEA8.
+rename variables FL6.8 = FIN_HEA9.
+rename variables FL6.9 = FIN_HEA10.
 
 save outfile = "data/ken17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN FOLLOW_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -93,8 +146,25 @@ save outfile = "data/ken17.sav"
 
 DATASET ACTIVATE nga17.
 
-rename variables FL1 = HAVE_PLAN.
+numeric HAVE_PLAN.
 rename variables FL2 = FOLLOW_PLAN.
+
+numeric ECO_VUL.
+numeric FIN_SHOCK.
+
+count BUDGET_INCOME=fl1(2 thru 4).
+recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
+
+numeric FIN_HEA1.
+rename variables FL6.1 = FIN_HEA2.
+rename variables FL6.2 = FIN_HEA3.
+rename variables FL6.3 = FIN_HEA4.
+rename variables FL6.4 = FIN_HEA5.
+rename variables FL6.5 = FIN_HEA6.
+rename variables FL6.6 = FIN_HEA7.
+rename variables FL6.7 = FIN_HEA8.
+rename variables FL6.8 = FIN_HEA9.
+rename variables FL6.9 = FIN_HEA10.
 
 save outfile = "data/nga17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN FOLLOW_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -102,8 +172,25 @@ save outfile = "data/nga17.sav"
 
 DATASET ACTIVATE pak17.
 
-rename variables FL1 = HAVE_PLAN.
+numeric HAVE_PLAN.
 rename variables FL2 = FOLLOW_PLAN.
+
+numeric ECO_VUL.
+numeric FIN_SHOCK.
+
+count BUDGET_INCOME=fl1(2 thru 4).
+recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
+
+numeric FIN_HEA1.
+rename variables FL6.1 = FIN_HEA2.
+rename variables FL6.2 = FIN_HEA3.
+rename variables FL6.3 = FIN_HEA4.
+rename variables FL6.4 = FIN_HEA5.
+rename variables FL6.5 = FIN_HEA6.
+rename variables FL6.6 = FIN_HEA7.
+rename variables FL6.7 = FIN_HEA8.
+rename variables FL6.8 = FIN_HEA9.
+rename variables FL6.9 = FIN_HEA10.
 
 save outfile = "data/pak17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN FOLLOW_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -111,8 +198,25 @@ save outfile = "data/pak17.sav"
 
 DATASET ACTIVATE tza17.
 
-rename variables FL1 = HAVE_PLAN.
+numeric HAVE_PLAN.
 rename variables FL2 = FOLLOW_PLAN.
+
+numeric ECO_VUL.
+numeric FIN_SHOCK.
+
+count BUDGET_INCOME=fl1(2 thru 4).
+recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
+
+numeric FIN_HEA1.
+rename variables FL6.1 = FIN_HEA2.
+rename variables FL6.2 = FIN_HEA3.
+rename variables FL6.3 = FIN_HEA4.
+rename variables FL6.4 = FIN_HEA5.
+rename variables FL6.5 = FIN_HEA6.
+rename variables FL6.6 = FIN_HEA7.
+rename variables FL6.7 = FIN_HEA8.
+rename variables FL6.8 = FIN_HEA9.
+rename variables FL6.9 = FIN_HEA10.
 
 save outfile = "data/tza17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN FOLLOW_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -120,8 +224,25 @@ save outfile = "data/tza17.sav"
 
 DATASET ACTIVATE uga17.
 
-rename variables FL1 = HAVE_PLAN.
-rename variables FL2 = FOLLOW_PLAN. 
+numeric HAVE_PLAN.
+rename variables FL2 = FOLLOW_PLAN.
+
+numeric ECO_VUL.
+numeric FIN_SHOCK.
+
+count BUDGET_INCOME=fl1(2 thru 4).
+recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
+
+numeric FIN_HEA1.
+rename variables FL6.1 = FIN_HEA2.
+rename variables FL6.2 = FIN_HEA3.
+rename variables FL6.3 = FIN_HEA4.
+rename variables FL6.4 = FIN_HEA5.
+rename variables FL6.5 = FIN_HEA6.
+rename variables FL6.6 = FIN_HEA7.
+rename variables FL6.7 = FIN_HEA8.
+rename variables FL6.8 = FIN_HEA9.
+rename variables FL6.9 = FIN_HEA10.
 
 save outfile = "data/uga17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN FOLLOW_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -131,6 +252,10 @@ save outfile = "data/uga17.sav"
 
 DATASET ACTIVATE bng16.
 
+count HAVE_PLAN=fl7_1 fl7_2 fl7_3 fl7_4 fl7_5 fl7_6 (1).
+recode HAVE_PLAN (1 thru highest=1) (else=0).
+
+rename variables FL2 = FOLLOW_PLAN.
 
 count ECO_VUL=dl25_1 dl25_2 dl25_3 dl25_4 dl25_5 dl25_6 dl25_7 dl25_8 (1).
 recode ECO_VUL(1 thru highest = 1)(else = 0).
@@ -141,6 +266,10 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(SYSMIS=999) into BUDGET_STAY.
+
+*FL6 section is asked "yes" and "no", need to compare.
+rename variables FL8.3 = FIN_HEA8. *only difference is the word "heavily".
+rename variables FL8.5 = FIN_HEA10.
 
 save outfile = "data/bng16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN FOLLOW_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -156,7 +285,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=2)(SYSMIS=999) into budget_stay.
+recode fl2(1 thru 3=1)(4=2)(SYSMIS=999) into BUDGET_STAY.
 
 
 save outfile = "data/ind16.sav"

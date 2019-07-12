@@ -7,18 +7,20 @@ cd "C:/Users/shueym/Documents".
 *2018---------------------------------------------------------------------***.
 DATASET ACTIVATE bng18.
 
-numeric AWARE_MM.
+compute AWARE_MM = 0.
+if MM0 = 1 AWARE_MM = 1.
 
 rename variables aware_mm_provider = AWARE_MM_PROVIDER.
 
-numeric AWARE_NONUSER_MM.
+compute AWARE_NONUSER_MM = 0.
+if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 1 AWARE_NONUSER_MM = 1.
 
 rename variables access_mm = ACCESS_MM.
 rename variables registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
 
 compute ACTIVE30_MM = 0.
-if FN2_3_10 le 3 ACTIVE30_MM = 1.
+if (FN2_3_1<=3 or FN2_3_2<=3 or FN2_3_3<=3 or FN2_3_4<=3 or FN2_3_5<=3 or FN2_3_6<=3 or FN2_3_7<=3 or FN2_3_8<=3 or FN2_3_9<=3 or FN2_3_10<=3) ACTIVE30_MM = 1.
 
 compute INACTIVE_MM = 0.
 IF registered_mm = 1 and active_mm = 0 INACTIVE_MM = 1.
@@ -53,7 +55,11 @@ if (FN2_3_1<=3 or FN2_3_2<=3 or FN2_3_3<=3 or FN2_3_4<=3 or FN2_3_5<=3 or FN2_3_
 
 numeric LENGTH_MM.
 
-rename variables financial_stage = MM_STAGE.
+compute MM_STAGE = 0.
+if access_mm=1 mm_stage=1.
+if (mm_stage=1 and registered_mm=1) mm_stage=2.
+if (mm_stage=2 and active_mm=1) mm_stage=3.
+if (mm_stage=3 and advanced_active_mm=1) mm_stage=4.
 
 save outfile = "data/bng18.sav"
 /keep= SBJNUM COUNTRY YEAR AWARE_MM AWARE_MM_PROVIDER AWARE_NONUSER_MM ACCESS_MM 
@@ -62,15 +68,19 @@ REG_MM_BASIC REG_MM_ADV ACTIVE_MM_BASIC ACTIVE_MM_ADV ACTIVE30_MM_ADV LENGTH_MM 
 
 DATASET ACTIVATE ind18.
 
-numeric AWARE_MM.
+compute AWARE_MM = 0.
+if MM0 = 1 AWARE_MM = 1.
 rename variables aware_mm_provider = AWARE_MM_PROVIDER.
-numeric AWARE_NONUSER_MM.
+
+compute AWARE_NONUSER_MM = 0.
+if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 1 AWARE_NONUSER_MM = 1.
+
 rename variables access_mm = ACCESS_MM.
 rename variables registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
 
 compute ACTIVE30_MM = 0.
-if FN4_3_3 le 3 ACTIVE30_MM = 1.
+if (FN4_3_1<=3 or  FN4_3_2<=3 or  FN4_3_3<=3) ACTIVE30_MM = 1.
 
 compute INACTIVE_MM = 0.
 IF registered_mm = 1 and active_mm = 0 INACTIVE_MM = 1.
@@ -105,7 +115,11 @@ if (FN4_3_1<=3 or  FN4_3_2<=3 or  FN4_3_3<=3) and
 
 numeric LENGTH_MM.
 
-rename variables financial_stage = MM_STAGE.
+compute MM_STAGE = 0.
+if access_mm=1 mm_stage=1.
+if (mm_stage=1 and registered_mm=1) mm_stage=2.
+if (mm_stage=2 and active_mm=1) mm_stage=3.
+if (mm_stage=3 and advanced_active_mm=1) mm_stage=4.
 
 save outfile = "data/ind18.sav"
 /keep= SBJNUM COUNTRY YEAR AWARE_MM AWARE_MM_PROVIDER AWARE_NONUSER_MM ACCESS_MM
@@ -117,7 +131,10 @@ DATASET ACTIVATE bng17.
 
 numeric AWARE_MM.
 rename variables aware_mm_provider = AWARE_MM_PROVIDER.
-numeric AWARE_NONUSER_MM.
+
+compute AWARE_NONUSER_MM = 0.
+if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 1 AWARE_NONUSER_MM = 1.
+
 rename variables access_mm = ACCESS_MM.
 rename variables registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
@@ -184,6 +201,7 @@ save outfile = "data/bng17.sav"
 /keep= SBJNUM COUNTRY YEAR AWARE_MM AWARE_MM_PROVIDER AWARE_NONUSER_MM ACCESS_MM 
 REGISTERED_MM ACTIVE_MM ACTIVE30_MM INACTIVE_MM DORMANT_MM OTC_MM MM_BASIC MM_ADV 
 REG_MM_BASIC REG_MM_ADV ACTIVE_MM_BASIC ACTIVE_MM_ADV ACTIVE30_MM_ADV LENGTH_MM MM_STAGE .
+
 
 DATASET ACTIVATE ind17.
 
@@ -265,7 +283,8 @@ REG_MM_BASIC REG_MM_ADV ACTIVE_MM_BASIC ACTIVE_MM_ADV ACTIVE30_MM_ADV LENGTH_MM 
 DATASET ACTIVATE ken17.
 numeric AWARE_MM.
 rename variables aware_mm_provider = AWARE_MM_PROVIDER.
-numeric AWARE_NONUSER_MM.
+compute AWARE_NONUSER_MM = 0.
+if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 1 AWARE_NONUSER_MM = 1.
 rename variables access_mm = ACCESS_MM.
 RENAME VARIABLES registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
@@ -335,7 +354,7 @@ rename variables aware_mm_provider = AWARE_MM_PROVIDER.
 rename variables access_mm = ACCESS_MM.
 
 compute AWARE_NONUSER_MM = 0.
-if (aware_mm_provider=1 and access_mm=0) aware_nonuser_mm=1.
+if (aware_mm_provider=1 and access_mm=0) AWARE_MM_PROVIDER=1.
 
 rename variables registered_mm = REGISTERED_MM.
 
