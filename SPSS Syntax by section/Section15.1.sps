@@ -267,6 +267,10 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(SYSMIS=999) into BUDGET_STAY.
 
+*FL6 section is asked "yes" and "no", need to compare.
+rename variables FL8.3 = FIN_HEA8. *only difference is the word "heavily".
+rename variables FL8.5 = FIN_HEA10.
+
 save outfile = "data/bng16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN FOLLOW_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
 
@@ -281,7 +285,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=2)(SYSMIS=999) into budget_stay.
+recode fl2(1 thru 3=1)(4=2)(SYSMIS=999) into BUDGET_STAY.
 
 
 save outfile = "data/ind16.sav"
