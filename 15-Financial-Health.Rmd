@@ -15,19 +15,12 @@ Notes:
 * This data is only available for 2016 and 2017.
 * In 2017, these questions were asked on a 5-point Likert scale instead of yes/no. The options "Somewhat Agree" and "Strongly Agree" were converted to the "Yes" level.
 
-## FOLLOW_PLAN
-This question asks respondents whether they believe they stick to the plan(s) mentioned in HAVE_PLAN.
-
-Levels:
-
-+ 1 = Yes
-+ 0 = No
+## ECO_VUL
+This variable uses multiple questions within surveys to determine if the respondent is economically vurlnerable.
 
 Notes:
 
-* This data is only available for 2016 and 2017.
-* These questions were asked on a Likert scale instead of yes/no. The options "Somewhat Agree" and "Strongly Agree" were converted to the "Yes" level.
-## ECO_VUL
+* This data is only available for 2016 and 2015.
 
 ## FIN_SHOCK
 Financial shock: counts respondents who experienced a shock such as fire, flood, natural disaster, burglary, pests,  job loss, death of main income earner, increase costs of agricultural inputs, drop in crop or livestock price, large medical expenses or family separation. 
@@ -36,6 +29,10 @@ Levels:
 
 + 1=Yes
 + 0=No
+
+Notes:
+
+* This data is only available for 2016 and 2015.
 
 ## BUDGET_INCOME
 Plan how to spend income.
@@ -307,6 +304,27 @@ Levels:
 + 1=Yes
 + 2=No
 
-## EXPENSE1
-## EXPENSE2
-## EXPENSE3
+## EXPENSE1, EXPENSE2, EXPENSE3
+Respondents were asked how they would spend extra money left over at the end of the month across several categories.
+
+Values:
+
+Value | Label
+--- | ---
+1 | Saving money, 
+2 | Investing in your existing business, 
+3 | Repaying any existing debts, 
+4 | Sending money to other people, including sending regular support money, emergency support, gifts, etc.,
+5 | Spending on farm (e.g., lease more land, buy fertilizer or pesticides, buy seeds), 
+6 | Buying the family some clothes/something nice for the home, 
+7 | Buying better food, 8. Buying more of your usual foods, 
+9 | Invest in assets like shares, real estate, jewelry, 
+10 | Entertainment (e.g., movies, restaurants, sport shows, theater, restaurants, clubbing, partying), 
+11 | I don’t want to spend on anything else
+
+Notes:
+
+* These variables are only available for 2015 and 2016.
+* In 2014, these questions were asked regarding the past, rather than a hypothetical situation, and aren't equivalent.
+* For 2015, "other" was not an option and in 2016 it was. "Other" coding was excluded.
+* For PAkistan in 2015, Don't know/Refused was an option. This has been coded "99".
