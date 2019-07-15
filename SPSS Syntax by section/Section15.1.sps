@@ -18,15 +18,15 @@ numeric BUDGET_INCOME.
 numeric BUDGET_STAY.
 
 recode FH2 (else=copy) into FIN_HEA1.
-recode FH3 (else=copy) FIN_HEA2.
-recode FH4 (else=copy) FIN_HEA3.
-recode FH5 (else=copy) FIN_HEA4.
-recode FH6 (else=copy) FIN_HEA5.
-recode FH7 (else=copy) FIN_HEA6.
-recode FH8 (else=copy) FIN_HEA7.
-recode FH9 (else=copy) FIN_HEA8.
-recode FH10 (else=copy) FIN_HEA9.
-recode FH11 (else=copy) FIN_HEA10.
+recode FH3 (else=copy) into FIN_HEA2.
+recode FH4 (else=copy) into FIN_HEA3.
+recode FH5 (else=copy) into FIN_HEA4.
+recode FH6 (else=copy) into FIN_HEA5.
+recode FH7 (else=copy) into FIN_HEA6.
+recode FH8 (else=copy) into FIN_HEA7.
+recode FH9 (else=copy) into FIN_HEA8.
+recode FH10 (else=copy) into FIN_HEA9.
+recode FH11 (else=copy) into FIN_HEA10.
 
 save outfile = "data/bng18.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -43,16 +43,16 @@ numeric FIN_SHOCK.
 numeric BUDGET_INCOME.
 numeric BUDGET_STAY.
 
-recode FH2 (else=copy) FIN_HEA1.
-recode FH3 (else=copy) FIN_HEA2.
-recode FH4 (else=copy) FIN_HEA3.
-recode FH5 (else=copy) FIN_HEA4.
-recode FH6 (else=copy) FIN_HEA5.
-recode FH7 (else=copy) FIN_HEA6.
-recode FH8 (else=copy) FIN_HEA7.
-recode FH9 (else=copy) FIN_HEA8.
-recode FH10 (else=copy) FIN_HEA9.
-recode FH11 (else=copy) FIN_HEA10.
+recode FH2 (else=copy) into FIN_HEA1.
+recode FH3 (else=copy) into FIN_HEA2.
+recode FH4 (else=copy) into FIN_HEA3.
+recode FH5 (else=copy) into FIN_HEA4.
+recode FH6 (else=copy) into FIN_HEA5.
+recode FH7 (else=copy) into FIN_HEA6.
+recode FH8 (else=copy) into FIN_HEA7.
+recode FH9 (else=copy) into FIN_HEA8.
+recode FH10 (else=copy) into FIN_HEA9.
+recode FH11 (else=copy) into FIN_HEA10.
 
 save outfile = "data/ind18.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -72,15 +72,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6.1 (else = copy) FIN_HEA2.
-recode FL6.2 (else = copy) FIN_HEA3.
-recode FL6.3 (else = copy) FIN_HEA4.
-recode FL6.4 (else = copy) FIN_HEA5.
-recode FL6.5 (else = copy) FIN_HEA6.
-recode FL6.6 (else = copy) FIN_HEA7.
-recode FL6.7 (else = copy) FIN_HEA8.
-recode FL6.8 (else = copy) FIN_HEA9.
-recode FL6.9 (else = copy) FIN_HEA10.
+recode FL6.1 (else = copy) into FIN_HEA2.
+recode FL6.2 (else = copy) into FIN_HEA3.
+recode FL6.3 (else = copy) into FIN_HEA4.
+recode FL6.4 (else = copy) into FIN_HEA5.
+recode FL6.5 (else = copy) into FIN_HEA6.
+recode FL6.6 (else = copy) into FIN_HEA7.
+recode FL6.7 (else = copy) into FIN_HEA8.
+recode FL6.8 (else = copy) into FIN_HEA9.
+recode FL6.9 (else = copy) into FIN_HEA10.
 
  
 save outfile = "data/bng17.sav"
@@ -100,15 +100,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6.1 (else = copy) FIN_HEA2.
-recode FL6.2 (else = copy) FIN_HEA3.
-recode FL6.3 (else = copy) FIN_HEA4.
-recode FL6.4 (else = copy) FIN_HEA5.
-recode FL6.5 (else = copy) FIN_HEA6.
-recode FL6.6 (else = copy) FIN_HEA7.
-recode FL6.7 (else = copy) FIN_HEA8.
-recode FL6.8 (else = copy) FIN_HEA9.
-recode FL6.9 (else = copy) FIN_HEA10.
+recode FL6.1 (else = copy) into FIN_HEA2.
+recode FL6.2 (else = copy) into FIN_HEA3.
+recode FL6.3 (else = copy) into FIN_HEA4.
+recode FL6.4 (else = copy) into FIN_HEA5.
+recode FL6.5 (else = copy) into FIN_HEA6.
+recode FL6.6 (else = copy) into FIN_HEA7.
+recode FL6.7 (else = copy) into FIN_HEA8.
+recode FL6.8 (else = copy) into FIN_HEA9.
+recode FL6.9 (else = copy) into FIN_HEA10.
 
  
 save outfile = "data/ind17.sav"
@@ -126,24 +126,23 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6.1 (else = copy) FIN_HEA2.
-recode FL6.2 (else = copy) FIN_HEA3.
-recode FL6.3 (else = copy) FIN_HEA4.
-recode FL6.4 (else = copy) FIN_HEA5.
-recode FL6.5 (else = copy) FIN_HEA6.
-recode FL6.6 (else = copy) FIN_HEA7.
-recode FL6.7 (else = copy) FIN_HEA8.
-recode FL6.8 (else = copy) FIN_HEA9.
-recode FL6.9 (else = copy) FIN_HEA10.
+recode FL6.1 (else = copy) into FIN_HEA2.
+recode FL6.2 (else = copy) into FIN_HEA3.
+recode FL6.3 (else = copy) into FIN_HEA4.
+recode FL6.4 (else = copy) into FIN_HEA5.
+recode FL6.5 (else = copy) into FIN_HEA6.
+recode FL6.6 (else = copy) into FIN_HEA7.
+recode FL6.7 (else = copy) into FIN_HEA8.
+recode FL6.8 (else = copy) into FIN_HEA9.
+recode FL6.9 (else = copy) into FIN_HEA10.
 
 save outfile = "data/ken17.sav"
-/keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
+/keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
 
 
 DATASET ACTIVATE nga17.
 
 numeric HAVE_PLAN.
-
 numeric ECO_VUL.
 numeric FIN_SHOCK.
 
@@ -152,15 +151,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6.1 (else = copy) FIN_HEA2.
-recode FL6.2 (else = copy) FIN_HEA3.
-recode FL6.3 (else = copy) FIN_HEA4.
-recode FL6.4 (else = copy) FIN_HEA5.
-recode FL6.5 (else = copy) FIN_HEA6.
-recode FL6.6 (else = copy) FIN_HEA7.
-recode FL6.7 (else = copy) FIN_HEA8.
-recode FL6.8 (else = copy) FIN_HEA9.
-recode FL6.9 (else = copy) FIN_HEA10.
+recode FL6.1 (else = copy) into FIN_HEA2.
+recode FL6.2 (else = copy) into FIN_HEA3.
+recode FL6.3 (else = copy) into FIN_HEA4.
+recode FL6.4 (else = copy) into FIN_HEA5.
+recode FL6.5 (else = copy) into FIN_HEA6.
+recode FL6.6 (else = copy) into FIN_HEA7.
+recode FL6.7 (else = copy) into FIN_HEA8.
+recode FL6.8 (else = copy) into FIN_HEA9.
+recode FL6.9 (else = copy) into FIN_HEA10.
 
 save outfile = "data/nga17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -177,15 +176,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6.1 (else = copy) FIN_HEA2.
-recode FL6.2 (else = copy) FIN_HEA3.
-recode FL6.3 (else = copy) FIN_HEA4.
-recode FL6.4 (else = copy) FIN_HEA5.
-recode FL6.5 (else = copy) FIN_HEA6.
-recode FL6.6 (else = copy) FIN_HEA7.
-recode FL6.7 (else = copy) FIN_HEA8.
-recode FL6.8 (else = copy) FIN_HEA9.
-recode FL6.9 (else = copy) FIN_HEA10.
+recode FL6.1 (else = copy) into FIN_HEA2.
+recode FL6.2 (else = copy) into FIN_HEA3.
+recode FL6.3 (else = copy) into FIN_HEA4.
+recode FL6.4 (else = copy) into FIN_HEA5.
+recode FL6.5 (else = copy) into FIN_HEA6.
+recode FL6.6 (else = copy) into FIN_HEA7.
+recode FL6.7 (else = copy) into FIN_HEA8.
+recode FL6.8 (else = copy) into FIN_HEA9.
+recode FL6.9 (else = copy) into FIN_HEA10.
 
 save outfile = "data/pak17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -194,7 +193,6 @@ save outfile = "data/pak17.sav"
 DATASET ACTIVATE tza17.
 
 numeric HAVE_PLAN.
-
 numeric ECO_VUL.
 numeric FIN_SHOCK.
 
@@ -202,15 +200,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6.1 (else = copy) FIN_HEA2.
-recode FL6.2 (else = copy) FIN_HEA3.
-recode FL6.3 (else = copy) FIN_HEA4.
-recode FL6.4 (else = copy) FIN_HEA5.
-recode FL6.5 (else = copy) FIN_HEA6.
-recode FL6.6 (else = copy) FIN_HEA7.
-recode FL6.7 (else = copy) FIN_HEA8.
-recode FL6.8 (else = copy) FIN_HEA9.
-recode FL6.9 (else = copy) FIN_HEA10.
+recode FL6.1 (else = copy) into FIN_HEA2.
+recode FL6.2 (else = copy) into FIN_HEA3.
+recode FL6.3 (else = copy) into FIN_HEA4.
+recode FL6.4 (else = copy) into FIN_HEA5.
+recode FL6.5 (else = copy) into FIN_HEA6.
+recode FL6.6 (else = copy) into FIN_HEA7.
+recode FL6.7 (else = copy) into FIN_HEA8.
+recode FL6.8 (else = copy) into FIN_HEA9.
+recode FL6.9 (else = copy) into FIN_HEA10.
 
 save outfile = "data/tza17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -226,18 +224,18 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=0)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6.1 (else = copy) FIN_HEA2.
-recode FL6.2 (else = copy) FIN_HEA3.
-recode FL6.3 (else = copy) FIN_HEA4.
-recode FL6.4 (else = copy) FIN_HEA5.
-recode FL6.5 (else = copy) FIN_HEA6.
-recode FL6.6 (else = copy) FIN_HEA7.
-recode FL6.7 (else = copy) FIN_HEA8.
-recode FL6.8 (else = copy) FIN_HEA9.
-recode FL6.9 (else = copy) FIN_HEA10.
+recode FL6.1 (else = copy) into FIN_HEA2.
+recode FL6.2 (else = copy) into FIN_HEA3.
+recode FL6.3 (else = copy) into FIN_HEA4.
+recode FL6.4 (else = copy) into FIN_HEA5.
+recode FL6.5 (else = copy) into FIN_HEA6.
+recode FL6.6 (else = copy) into FIN_HEA7.
+recode FL6.7 (else = copy) into FIN_HEA8.
+recode FL6.8 (else = copy) into FIN_HEA9.
+recode FL6.9 (else = copy) into FIN_HEA10.
 
 save outfile = "data/uga17.sav"
-/keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
+/keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
 
 
 *2016---------------------------------------------------------------------***.
