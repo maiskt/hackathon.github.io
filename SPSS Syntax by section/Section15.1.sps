@@ -1,8 +1,8 @@
 ﻿* Encoding: UTF-8.
 *Section 15.1.
 dataset close all.
-insert file = "C:/Users/shueym/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
-cd "C:/Users/shueym/Documents".
+insert file = "C:/Users/mitchell.shuey/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
+cd "C:/Users/mitchell.shuey/Documents".
 
 *2018---------------------------------------------------------------------***.
 
@@ -1053,7 +1053,7 @@ numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
 numeric FIN_HEA9.
-numeric IN_HEA10.
+numeric FIN_HEA10.
 
 save outfile = "data/bng13.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -1075,7 +1075,7 @@ numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
 numeric FIN_HEA9.
-numeric IN_HEA10.
+numeric FIN_HEA10.
 
 save outfile = "data/ind13.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -1097,7 +1097,7 @@ numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
 numeric FIN_HEA9.
-numeric IN_HEA10.
+numeric FIN_HEA10.
 
 save outfile = "data/ken13.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -1119,7 +1119,7 @@ numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
 numeric FIN_HEA9.
-numeric IN_HEA10.
+numeric FIN_HEA10.
 
 save outfile = "data/nga13.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -1141,7 +1141,7 @@ numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
 numeric FIN_HEA9.
-numeric IN_HEA10.
+numeric FIN_HEA10.
 
 save outfile = "data/pak13.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -1163,7 +1163,7 @@ numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
 numeric FIN_HEA9.
-numeric IN_HEA10.
+numeric FIN_HEA10.
 
 save outfile = "data/tza13.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10.
@@ -1185,7 +1185,7 @@ numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
 numeric FIN_HEA9.
-numeric IN_HEA10.
+numeric FIN_HEA10.
 
 save outfile = "data/uga13.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .

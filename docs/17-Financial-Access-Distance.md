@@ -1,99 +1,145 @@
 # Proximity to points-of-service for financial institutions
 
+Notes:
+
+* Data unavailable for this section in Kenya 2013 data.
+
 ## POS
-Distance from residence to a point of service(POS): measures the distance from the respondent's home to a bank branch, an ATM, a mobile money agent, a bank agent, a retail store/kiosk with over-the-counter mobile money services, MFI, SACCO or a semi-formal/informal financial or savings group. 
+Distance from residence to a point of service(POS): measures the approximate distance from the respondent's home to a bank branch, an ATM, a mobile money agent, a bank agent, a retail store/kiosk with over-the-counter mobile money services, MFI, SACCO or a semi-formal/informal financial or savings group. 
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
  
 ## BBKM
 Distance from residence to a bank branch: measures the distance from the respondent'home to a bank branch.
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
+ 
+ Notes:
+ 
+ * Data unavailable for all 2014 and 2013 datasets.
  
 ## ATMKM
 Distance from residence to an ATM: measures the distance from the respondent's home to an ATM.
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
+ 
+ Notes:
+ 
+ * Data unavailable for all 2013 datasets.
  
 ## MMKM
 Distance from residence to a mobile money agent: measures the distance from the respondent's home to a mobile money agent. 
 
 Levels:
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
+  
+ Notes:
+ 
+ * Data unavailable for all 2013 datasets.
  
 ## BAKM
 Distance from residence to a bank agent: measures the distance from the respondent's home to a bank agent. 
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
+  
+ Notes:
+ 
+ * Data unavailable for Bangladesh 2015.
+ * Data unavailable for all 2014 and 2013 datasets.
  
 ## RSKM
 Distance from residence to a store/kiosk with OTC services : measures the distance from the respondent's home to a retail store/kiosk with over-the-counter mobile money services. 
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
+ 
+ Notes:
+ 
+ * Data not available for India in 2017 and 2013.
+ 
  
 ## MFIKM
 Distance from residence to a micro finance institution (MFI): measures the distance from the respondent's home to a MFI. 
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
+
+Notes:
+
+* Data not available for Indonesia datasets.
+* Data not available for all 2014 and 2013 datasets.
 
 ## GRPKM
-Distance from residence to a VSLA: measures the distance from the responden't home to a village savings and loan association (VSLA).
+Distance from residence to a VSLA: measures the distance from the respondent's home to a community savings group, such as a SACCO or a village savings and loan association.
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
+ 
+ Notes:
+ 
+ * Data only available for India in 2017.
+ * Data not available for Pakistan in 2015.
+ * Data not available for all datasets in 2014 and 2013.
  
 ## INFMLKM
 Distance from residence to an informal self-help or savings group.
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
+ 
+ Notes:
+ 
+ * Data is unavailable for all datasets in 2014 and 2013.
+ * Data is unavailable for India in 2017 and 2015.
  
 ## POSTKM
 Distance from residence to the post offfice bank.
 
 Levels:
 
- + 1="<=1 Km"
- + 2=">1 Km but <=5Km"
- + 3="> 5Km"
- + 99="Don't Know"
+ + 1 = Less than 1 km
+ + 2 = Between 1 and 5 km
+ + 3 = Greater than 5 km
+ + 99 = Don't know
+ 
+ Notes:
+ 
+ * Data only available for Bangladesh and India in 2018 and 2017, and Indonesia in 2015.

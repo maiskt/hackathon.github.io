@@ -1,7 +1,7 @@
 ﻿* Encoding: UTF-8.
 *Encoding: UTF-8.
 *Dataset loading syntax.
-cd "C:\Users\LENOVO\Intermedia Survey Institute\DA Team - General\Mitchell\ANONGPS data".
+cd "C:\Users\mitchell.shuey\Intermedia Survey Institute\DA Team - General\Mitchell\ANONGPS data".
 *Bangladesh.
 get file = "FII Bangladesh 2013 (public+ANONGPS).sav".
     dataset name bng13.
