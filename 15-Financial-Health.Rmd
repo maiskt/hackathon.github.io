@@ -20,10 +20,10 @@ This variable uses multiple questions within surveys to determine if the respond
 
 Notes:
 
-* This data is only available for 2016 and 2015.
+* This data is only available from 2014-2016.
 
 ## FIN_SHOCK
-Financial shock: counts respondents who experienced a shock such as fire, flood, natural disaster, burglary, pests,  job loss, death of main income earner, increase costs of agricultural inputs, drop in crop or livestock price, large medical expenses or family separation. 
+Financial shock: counts respondents who, within the last two years, experienced a shock such as fire, flood, natural disaster, burglary, pests,  job loss, death of main income earner, increase costs of agricultural inputs, drop in crop or livestock price, large medical expenses or family separation. 
 
 Levels:
 
@@ -32,7 +32,7 @@ Levels:
 
 Notes:
 
-* This data is only available for 2016 and 2015.
+* This data is only available for 2015 and 2016.
 
 ## BUDGET_INCOME
 Plan how to spend income.

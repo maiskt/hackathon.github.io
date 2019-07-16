@@ -1,8 +1,8 @@
 ﻿* Encoding: UTF-8.
 *Section XX.
 dataset close all.
-insert file = "C:/Users/shueym/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
-cd "C:/Users/shueym/Documents".
+insert file = "C:/Users/mitchell.shuey/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
+cd "C:/Users/mitchell.shuey/Documents".
 
 *2018---------------------------------------------------------------------***.
 
