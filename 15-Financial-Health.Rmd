@@ -84,6 +84,7 @@ Notes:
 ## FIN_SHO
 
 The following variables ask respondents if they have experienced any of the following emergency events which would be considered a "shock" to their lives and/or finances.
+
 Variable | Description
 -------- | -----
 FIN_SHO1 | Household gone without food: counts respondents whose households have ever gone without enough food to eat in the last 6 months. 
