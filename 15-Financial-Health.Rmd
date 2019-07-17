@@ -95,8 +95,7 @@ FIN_SHO6 | Could not buy stock for business:  counts respondents whose household
 FIN_SHO7 | Household experienced unpaid school fees: counts respondents whose households had a child sent home from school in the last 6 months because of unpaid school fees. 
 FIN_SHO8 | Household missed a family or life event: counts respondents whose households had to miss a family or life event (e.g., funeral, wedding) in the last 6 months because they couldn't pay for transportation. 
 
-Levels:
-
+Levels: 
 + 1=Yes
 + 0=No
 
@@ -107,24 +106,29 @@ Notes:
 
 ## MONEY_SOU
 
+These variables count the respondents who, in the past 12 months, have earned at least part of their income from a selection of sources:
+
 Variable | Description
 --- | ---
 MONEY_SOU1 | Sold agricultural products or reared livestock: counts respondents who got money in the last 12 months by selling agricultural products or rearing livestock. 
-MONEY_SOU2 | Received assistance from the government in the past 6 months.
-MONEY_SOU3 | Received money a relative, friend, or another person inside the country in the past 6 months.
-MONEY_SOU4 | Received money from a relative, friend, or another person from a foreign country in the past 6 months.
-MONEY_SOU5 | Got money in the past 6 months from ownership of a business, property or assets.
-MONEY_SOU6 | Got money in the past 6 months from employment by the government
-MONEY_SOU7 | Got money in the past 6 months from employment in a business with less than 10 employees.
-MONEY_SOU8 | Got money in the past 6 months from employment in a business with more than 10 employees.
-MONEY_SOU9 | Got money in the past 6 months from a scholarship or stipend from the government or educational institution.
-MONEY_SOU10 | Got money in the last 6 months from pension
+MONEY_SOU2 | Received assistance from the government in the past 12 months.
+MONEY_SOU3 | Received money a relative, friend, or another person inside the country in the past 12 months.
+MONEY_SOU4 | Received money from a relative, friend, or another person from a foreign country in the past 12 months.
+MONEY_SOU5 | Got money in the past 12 months from ownership of a business, property or assets.
+MONEY_SOU6 | Got money in the past 12 months from employment by the government
+MONEY_SOU7 | Got money in the past 12 months from employment in a business with less than 10 employees.
+MONEY_SOU8 | Got money in the past 12 months from employment in a business with more than 10 employees.
+MONEY_SOU9 | Got money in the past 12 months from a scholarship or stipend from the government or educational institution.
+MONEY_SOU10 | Got money in the last 12 months from pension
 
 Levels:
 
 + 1=Yes
 + 2=No
 
+Notes:
+
+* In 2014, the questions were asked in the present tense ("Do you supplement your income by the following method") instead of within the last 12 months.
 
 ## EXPENSE
 Respondents were asked how they would spend extra money left over at the end of the month across several categories.
