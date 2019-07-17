@@ -1,6 +1,6 @@
 --- 
 title: "FII Dataset Documentation"
-author: "InterMedia Survey Institute"
+author: "Kantar"
 date: "2019-04-23"
 site: bookdown::bookdown_site
 documentclass: book
