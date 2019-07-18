@@ -30,18 +30,15 @@ Levels:
 
 ## FIN_ATT
 
-
+This section is close to FIN_HEA, which took the place of this section from 2017 datasets onward.
 
 Variable | Description
 --- | ---
 FIN_ATT1 | (I am) Highly satified with present financial condition.
 FIN_ATT2 | I(/my household) have too much debt right now.
-FIN_ATT3 | Family and friends rely heavily on me to help with their finances.
-FIN_ATT4 | (I am) Comfortable having some debt if it allows me to accomplish my goals.
-FIN_ATT5 | (I) Have the skills and knowledge to manage my finances well.
-FIN_ATT6 | It is better use or invest money right away, keeping it sitting there is wasteful.
-FIN_ATT7 | I buy from several different shopkeepers so they know me and give me credit when I need it.
-
+FIN_ATT3 | (I am) Comfortable having some debt if it allows me to accomplish my goals.
+FIN_ATT4 | It is better use or invest money right away, keeping it sitting there is wasteful.
+FIN_ATT5 | I buy from several different shopkeepers so they know me and give me credit when I need it.
 
 Levels:
 
