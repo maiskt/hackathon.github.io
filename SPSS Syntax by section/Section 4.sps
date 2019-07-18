@@ -159,7 +159,6 @@ count PHONE_SOCIAL=MT17_9 (1 thru 6).
 count PHONE_PICTURE=MT17_10 (1 thru 6).
 count PHONE_APP=MT17_11 (1 thru 6).
 count PHONE_MMS=MT17_4 (1 thru 6).
-
 numeric PHONE_VIDEO.
 numeric PHONE_TSCREEN.
 numeric PHONE_MAP.
@@ -199,25 +198,19 @@ recode MT2A_1 to MT2A_3 (1=1)(else=0) into BASIC_PHONE FEATURE_PHONE SMART_PHONE
 count OWN_SIM=MT12_1 MT12_2 MT12_3 MT12_4 MT12_5 MT12_6 MT12_7 MT12_8 MT12_9 MT12_10 MT12_11 MT12_12 MT12_13 MT12_14(1).
 recode OWN_SIM (1 THRU HIGHEST=1).
 
-recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
-
 count PHONE_ADV=MT17_4 to MT7_11 (1 thru 6).
 recode PHONE_ADV (1 thru highest=1).
 
 count PHONE_CALL=MT17_1 (1 thru 6).
 count PHONE_R_CALL=MT17_2 (1 thru 6).
-
 recode MT17_3 (1 thru 6=1)(else=0) into PHONE_SMS.
-
 count PHONE_INTERNET=MT17_5 (1 thru 6).
 count PHONE_MVG=MT17_6 (1 thru 6).
 count PHONE_TRANSACT=MT17_7 (1 thru 6).
 count PHONE_SOCIAL=MT17_9 (1 thru 6).
 count PHONE_PICTURE=MT17_10 (1 thru 6).
 count PHONE_APP=MT17_11 (1 thru 6).
-
 count PHONE_MMS=MT17_4 (1 thru 6).
-
 numeric PHONE_VIDEO.
 numeric PHONE_TSCREEN.
 numeric PHONE_MAP.
@@ -231,6 +224,7 @@ recode MT9_6 (4,5=1)(else=0) into R_NOPHONE6.
 
 recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 recode MT18A_2 (2 thru 4=1)(else=0) into ABLE_MENU.
+recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 recode MT18A_4 (2 thru 4=1)(else=0) into ABLE_INTERNET.
 recode MT18A_5 (2 thru 4=1)(else=0) into ABLE_TRANSACT.
 numeric ABLE_APP.
@@ -255,8 +249,6 @@ recode MT2A_1 to MT2A_3 (1=1)(else=0) into BASIC_PHONE FEATURE_PHONE SMART_PHONE
 
 count OWN_SIM=MT12_1 MT12_2 MT12_3 MT12_4 MT12_5(1).
 recode OWN_SIM (1 THRU HIGHEST=1).
-
-recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 
 count PHONE_ADV=MT17_4 to MT17_11 (1 thru 6).
 recode PHONE_ADV (1 thru highest=1).
@@ -287,6 +279,7 @@ recode MT9_6 (4,5=1)(else=0) into R_NOPHONE6.
 
 recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 recode MT18A_2 (2 thru 4=1)(else=0) into ABLE_MENU.
+recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 recode MT18A_4 (2 thru 4=1)(else=0) into ABLE_INTERNET.
 recode MT18A_5 (2 thru 4=1)(else=0) into ABLE_TRANSACT.
 numeric ABLE_APP.
@@ -311,8 +304,6 @@ recode MT2A_1 to MT2A_3 (1=1)(else=0) into BASIC_PHONE FEATURE_PHONE SMART_PHONE
 
 count OWN_SIM=MT12_1 MT12_2 MT12_3 MT12_4(1).
 recode OWN_SIM (1 THRU HIGHEST=1).
-
-recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 
 count PHONE_ADV=MT17_4 to MT17_11 (1 thru 6).
 recode PHONE_ADV (1 thru highest=1).
@@ -345,7 +336,7 @@ recode MT9_6 (4,5=1)(else=0) into R_NOPHONE6.
 
 recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 recode MT18A_2 (2 thru 4=1)(else=0) into ABLE_MENU.
-
+recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 recode MT18A_4 (2 thru 4=1)(else=0) into ABLE_INTERNET.
 recode MT18A_5 (2 thru 4=1)(else=0) into ABLE_TRANSACT.
 numeric ABLE_APP.
@@ -371,25 +362,19 @@ recode MT2A_1 to MT2A_3 (1=1)(else=0) into BASIC_PHONE FEATURE_PHONE SMART_PHONE
 count OWN_SIM=MT12_1 MT12_2 MT12_3 MT12_4 MT12_5 MT12_96 (1).
 recode OWN_SIM (1 THRU HIGHEST=1).
 
-recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
-
 count PHONE_ADV=MT17_4 to MT17_11 (1 thru 6).
 recode PHONE_ADV (1 thru highest=1).
 
 count PHONE_CALL=MT17_1 (1 thru 6).
 count PHONE_R_CALL=MT17_2 (1 thru 6).
-
 recode MT17_3 (1 thru 6=1)(else=0) into PHONE_SMS.
-
 count PHONE_INTERNET=MT17_5 (1 thru 6).
 count PHONE_MVG=MT17_6 (1 thru 6).
 count PHONE_TRANSACT=MT17_7 (1 thru 6).
 count PHONE_SOCIAL=MT17_9 (1 thru 6).
 count PHONE_PICTURE=MT17_10 (1 thru 6).
 count PHONE_APP=MT17_11 (1 thru 6).
-
 count PHONE_MMS=MT17_4 (1 thru 6).
-
 numeric PHONE_VIDEO.
 numeric PHONE_TSCREEN.
 numeric PHONE_MAP.
@@ -403,6 +388,7 @@ recode MT9_6 (4,5=1)(else=0) into R_NOPHONE6.
 
 recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 recode MT18A_2 (2 thru 4=1)(else=0) into ABLE_MENU.
+recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 recode MT18A_4 (2 thru 4=1)(else=0) into ABLE_INTERNET.
 recode MT18A_5 (2 thru 4=1)(else=0) into ABLE_TRANSACT.
 numeric ABLE_APP.
@@ -427,8 +413,6 @@ recode MT2A_1 to MT2A_3 (1=1)(else=0) into BASIC_PHONE FEATURE_PHONE SMART_PHONE
 
 count OWN_SIM=MT12_1 MT12_2 MT12_3 MT12_4 MT12_5 MT12_6 MT12_7(1).
 recode OWN_SIM (1 THRU HIGHEST=1).
-
-recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 
 count PHONE_ADV=MT17_4 to MT17_11 (1 thru 6).
 recode PHONE_ADV (1 thru highest=1).
@@ -461,6 +445,7 @@ recode MT9_6 (4,5=1)(else=0) into R_NOPHONE6.
 
 recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 recode MT18A_2 (2 thru 4=1)(else=0) into ABLE_MENU.
+recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 recode MT18A_4 (2 thru 4=1)(else=0) into ABLE_INTERNET.
 recode MT18A_5 (2 thru 4=1)(else=0) into ABLE_TRANSACT.
 numeric ABLE_APP.
@@ -485,8 +470,6 @@ recode MT2A_1 to MT2A_3 (1=1)(else=0) into BASIC_PHONE FEATURE_PHONE SMART_PHONE
 
 count OWN_SIM=MT12_1 MT12_2 MT12_3 MT12_4 MT12_5 MT12_6 MT12_7 MT12_8 MT12_9 MT12_10(1).
 recode OWN_SIM (1 THRU HIGHEST=1).
-
-recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 
 count PHONE_ADV=MT17_4 to MT17_11 (1 thru 6).
 recode PHONE_ADV (1 thru highest=1).
@@ -518,6 +501,7 @@ recode MT9_6 (4,5=1)(else=0) into R_NOPHONE6.
 
 recode MT18A_1 (2 thru 4=1)(else=0) into ABLE_CALL.
 recode MT18A_2 (2 thru 4=1)(else=0) into ABLE_MENU.
+recode mt18a_3 (2 thru 4=1)(else=0) into ABLE_SMS.
 recode MT18A_4 (2 thru 4=1)(else=0) into ABLE_INTERNET.
 recode MT18A_5 (2 thru 4=1)(else=0) into ABLE_TRANSACT.
 numeric ABLE_APP.
