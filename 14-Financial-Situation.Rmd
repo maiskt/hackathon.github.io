@@ -57,11 +57,11 @@ Notes:
 
 ## SCH_FEE_PRB
 
+The following variables document repsondents' issues with paying for education fees.
+
 SCH_FEE_PRB1 | Problem with paying school fees- could not pay at all: counts respondents who have ever experienced a lack of funds and could not pay at all school fees.
 SCH_FEE_PRB2 | Problem with paying school fees- could only pay a portion: counts respondents who have ever experienced a lack of funds and could only pay a portion of all school fees.
-
 SCH_FEE_PRB3 | Problem with paying school fees- bank issues: counts respondents who have ever experienced bank issues (high fees or long lines) when trying to pay school fees.
-
 SCH_FEE_PRB4 | Problem with paying school fees- long distance: counts respondents who had to deliver cash for school fees but failed because of the long distance to the school. 
 SCH_FEE_PRB5 | Problem with paying school fees- Do not know the full amount: counts respondents who had to pay school fees but didn't know the full amount. 
 
