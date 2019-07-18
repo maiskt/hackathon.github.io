@@ -70,29 +70,6 @@ if AD10_31<=4 or AD10_32<=4 or AD10_35<=4 or (FN5_1=1 and FN5_4=1 and AD10_33<=4
 compute ACTIVE_NBFI_LOAN=0.
 if AD11_21<=4 or AD11_22<=4 or AD11_27<=4 or (FN5_1=1 and FN5_4=1 and AD11_25<=4) or (FN6_1=1 and FN6_4=1 and AD11_26<=4) ACTIVE_NBFI_LOAN=1.
  
-numeric ACTIVE_NBFI_AIRTIME.
-*Need double check.
-compute R_STOPMFI1=0.
-if fn3_13=1 R_STOPMFI1=1.
-*Need double check.
-compute R_STOPMFI2=0.
-if fn3_14=1 R_STOPMFI2=1.
-*Need double check.
-compute R_STOPMFI3=0.
-if fn3_15=1 R_STOPMFI3=1.
-*Need double check.
-compute R_STOPMFI4=0.
-if fn3_16=1 R_STOPMFI4=1.
-*Need double check.
-compute R_STOPMFI5=0.
-if fn3_17=1 R_STOPMFI5=1.
-*Need double check.
-compute R_STOPMFI6=0.
-if fn3_18=1 R_STOPMFI6=1.
-*Need double check.
-compute R_STOPMFI7=0.
-if fn3_19=1 R_STOPMFI7=1.
- 
 
 **************************************************************************************************************************************************.
 *18India.
@@ -158,12 +135,7 @@ compute ACTIVE_NBFI_LOAN=0.
 if AD11_23<=4 or AD11_24<=4 or (FN6_1=1 and FN6_3=1 and AD11_21<=4) ACTIVE_NBFI_LOAN=1.
  
 numeric ACTIVE_NBFI_AIRTIME.
-
-
  
-
-
-
 **************************************************************************************************************************************************.
 *17Bangladesh.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -179,8 +151,8 @@ numeric NBFI_MERCHANT.
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
 *Need double check.
-count NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 6).
-recode NBFI_GOV_WAGE (1 thru highest=1).
+numeric NBFI_GOV.
+numeric NBFI_WAGE.
 *Need double check.
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
@@ -204,8 +176,8 @@ numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
 recode ACTIVE_NBFI_BILL (1 thru highest=1).
-count ACTIVE_NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 4).
-recode ACTIVE_NBFI_GOV_WAGE (1 thru highest=1).
+numeric ACTIVE_NBFI_GOV.
+numeric ACTIVE_NBFI_WAGE.
 count ACTIVE_NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 4).
 recode ACTIVE_NBFI_INSURANCE (1 thru highest=1).
 count ACTIVE_NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 4).
@@ -214,9 +186,6 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-*Need double check.
-numeric ACTIVE_NBFI_AIRTIME.
-
 
 **************************************************************************************************************************************************.
 *17India.
@@ -233,8 +202,8 @@ numeric NBFI_MERCHANT.
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3(1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
 *Need double check.
-count NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4(1 thru 6).
-recode NBFI_GOV_WAGE (1 thru highest=1).
+numeric NBFI_GOV.
+numeric NBFI_WAGE.
 *Need double check.
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5(1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
@@ -258,8 +227,8 @@ numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3(1 thru 4).
 recode ACTIVE_NBFI_BILL (1 thru highest=1).
-count ACTIVE_NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4(1 thru 4).
-recode ACTIVE_NBFI_GOV_WAGE (1 thru highest=1).
+numeric ACTIVE_NBFI_GOV.
+numeric ACTIVE_NBFI_WAGE.
 count ACTIVE_NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5(1 thru 4).
 recode ACTIVE_NBFI_INSURANCE (1 thru highest=1).
 count ACTIVE_NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7(1 thru 4).
@@ -268,9 +237,6 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8(1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6(1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-*Need double check.
-numeric ACTIVE_NBFI_AIRTIME.
-
 
 **************************************************************************************************************************************************.
 *17Kenya.
@@ -287,8 +253,8 @@ numeric NBFI_MERCHANT.
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
 *Need double check.
-count NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 6).
-recode NBFI_GOV_WAGE (1 thru highest=1).
+numeric NBFI_GOV.
+numeric NBFI_WAGE.
 *Need double check.
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
@@ -311,8 +277,8 @@ numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
 recode ACTIVE_NBFI_BILL (1 thru highest=1).
-count ACTIVE_NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 4).
-recode ACTIVE_NBFI_GOV_WAGE (1 thru highest=1).
+numeric ACTIVE_NBFI_GOV.
+numeric ACTIVE_NBFI_WAGE.
 count ACTIVE_NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 4).
 recode ACTIVE_NBFI_INSURANCE (1 thru highest=1).
 count ACTIVE_NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 4).
@@ -321,8 +287,6 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-*Need double check.
-numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *17Nigeria.
@@ -339,8 +303,8 @@ numeric NBFI_MERCHANT.
 count NBFI_BILL=IFI10_3 IFI11_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
 *Need double check.
-count NBFI_GOV_WAGE=IFI10_4 IFI11_4 (1 thru 6).
-recode NBFI_GOV_WAGE (1 thru highest=1).
+numeric NBFI_GOV.
+numeric NBFI_WAGE.
 *Need double check.
 count NBFI_INSURANCE=IFI10_5 IFI11_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
@@ -363,8 +327,8 @@ numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 (1 thru 4).
 recode ACTIVE_NBFI_BILL (1 thru highest=1).
-count ACTIVE_NBFI_GOV_WAGE=IFI10_4 IFI11_4 (1 thru 4).
-recode ACTIVE_NBFI_GOV_WAGE (1 thru highest=1).
+numeric ACTIVE_NBFI_GOV.
+numeric ACTIVE_NBFI_WAGE.
 count ACTIVE_NBFI_INSURANCE=IFI10_5 IFI11_5 (1 thru 4).
 recode ACTIVE_NBFI_INSURANCE (1 thru highest=1).
 count ACTIVE_NBFI_SAVE=IFI10_7 IFI11_7 (1 thru 4).
@@ -373,10 +337,6 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-*Need double check.
-numeric ACTIVE_NBFI_AIRTIME.
-
-
 
 **************************************************************************************************************************************************.
 *17Paksitan.
@@ -393,8 +353,8 @@ numeric NBFI_MERCHANT.
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
 *Need double check.
-count NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 6).
-recode NBFI_GOV_WAGE (1 thru highest=1).
+numeric NBFI_GOV.
+numeric NBFI_WAGE.
 *Need double check.
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
@@ -417,8 +377,8 @@ numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
 recode ACTIVE_NBFI_BILL (1 thru highest=1).
-count ACTIVE_NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 4).
-recode ACTIVE_NBFI_GOV_WAGE (1 thru highest=1).
+numeric ACTIVE_NBFI_GOV.
+numeric ACTIVE_NBFI_WAGE.
 count ACTIVE_NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 4).
 recode ACTIVE_NBFI_INSURANCE (1 thru highest=1).
 count ACTIVE_NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 4).
@@ -427,10 +387,6 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-*Need double check.
-numeric ACTIVE_NBFI_AIRTIME.
-
-
 
 **************************************************************************************************************************************************.
 *17Tanzania.
@@ -447,8 +403,8 @@ numeric NBFI_MERCHANT.
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
 *Need double check.
-count NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 6).
-recode NBFI_GOV_WAGE (1 thru highest=1).
+numeric NBFI_GOV.
+numeric NBFI_WAGE.
 *Need double check.
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
@@ -471,8 +427,8 @@ numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
 recode ACTIVE_NBFI_BILL (1 thru highest=1).
-count ACTIVE_NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 4).
-recode ACTIVE_NBFI_GOV_WAGE (1 thru highest=1).
+numeric ACTIVE_NBFI_GOV.
+numeric ACTIVE_NBFI_WAGE.
 count ACTIVE_NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 4).
 recode ACTIVE_NBFI_INSURANCE (1 thru highest=1).
 count ACTIVE_NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 4).
@@ -481,9 +437,6 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-*Need double check.
-numeric ACTIVE_NBFI_AIRTIME.
-
 
 **************************************************************************************************************************************************.
 *17Uganda.
@@ -500,8 +453,8 @@ numeric NBFI_MERCHANT.
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
 recode NBFI_BILL (1 thru highest=1).
 *Need double check.
-count NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 4).
-recode NBFI_GOV_WAGE (1 thru highest=1).
+numeric NBFI_GOV.
+numeric NBFI_WAGE.
 *Need double check.
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 4).
 recode NBFI_INSURANCE (1 thru highest=1).
@@ -525,8 +478,8 @@ numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
 recode ACTIVE_NBFI_BILL (1 thru highest=1).
-count ACTIVE_NBFI_GOV_WAGE=IFI10_4 IFI11_4 IFI12_4 IFI13_4 (1 thru 4).
-recode ACTIVE_NBFI_GOV_WAGE (1 thru highest=1).
+numeric ACTIVE_NBFI_GOV.
+numeric ACTIVE_NBFI_WAGE.
 count ACTIVE_NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 4).
 recode ACTIVE_NBFI_INSURANCE (1 thru highest=1).
 count ACTIVE_NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 4).
@@ -535,8 +488,6 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-*Need double check.
-numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *16Bangladesh.
@@ -1842,15 +1793,6 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-numeric R_STOPMFI1.
-numeric R_STOPMFI2.
-numeric R_STOPMFI3.
-numeric R_STOPMFI4.
-numeric R_STOPMFI5.
-numeric R_STOPMFI6.
-numeric R_STOPMFI7.
-
-
 **************************************************************************************************************************************************.
 *13India.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -1879,14 +1821,6 @@ numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
-
-numeric R_STOPMFI1.
-numeric R_STOPMFI2.
-numeric R_STOPMFI3.
-numeric R_STOPMFI4.
-numeric R_STOPMFI5.
-numeric R_STOPMFI6.
-numeric R_STOPMFI7.
 
 **************************************************************************************************************************************************.
 *13Kenya.
@@ -1917,14 +1851,6 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-numeric R_STOPMFI1.
-numeric R_STOPMFI2.
-numeric R_STOPMFI3.
-numeric R_STOPMFI4.
-numeric R_STOPMFI5.
-numeric R_STOPMFI6.
-numeric R_STOPMFI7.
-
 **************************************************************************************************************************************************.
 *13Nigeria.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -1953,14 +1879,6 @@ numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
-
-numeric R_STOPMFI1.
-numeric R_STOPMFI2.
-numeric R_STOPMFI3.
-numeric R_STOPMFI4.
-numeric R_STOPMFI5.
-numeric R_STOPMFI6.
-numeric R_STOPMFI7.
 
 **************************************************************************************************************************************************.
 *13Pakistan.
@@ -1991,14 +1909,6 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-numeric R_STOPMFI1.
-numeric R_STOPMFI2.
-numeric R_STOPMFI3.
-numeric R_STOPMFI4.
-numeric R_STOPMFI5.
-numeric R_STOPMFI6.
-numeric R_STOPMFI7.
-
 **************************************************************************************************************************************************.
 *13Tanzania.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2028,14 +1938,6 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-numeric R_STOPMFI1.
-numeric R_STOPMFI2.
-numeric R_STOPMFI3.
-numeric R_STOPMFI4.
-numeric R_STOPMFI5.
-numeric R_STOPMFI6.
-numeric R_STOPMFI7.
-
 **************************************************************************************************************************************************.
 *13Uganda.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2064,14 +1966,6 @@ numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
-
-numeric R_STOPMFI1.
-numeric R_STOPMFI2.
-numeric R_STOPMFI3.
-numeric R_STOPMFI4.
-numeric R_STOPMFI5.
-numeric R_STOPMFI6.
-numeric R_STOPMFI7.
 
 *****************************************************************************************************************************.
 *Labels.
@@ -2123,14 +2017,6 @@ ACTIVE_NBFI_INSURANCE	"Used NBFI to pay for insurance or receive payment from in
 ACTIVE_NBFI_SAVE	"Used NBFI to save money in past 90 days"
 ACTIVE_NBFI_INVEST	"Used NBFI to make an investment in past 90 days"
 ACTIVE_NBFI_LOAN	"Used NBFI to borrow money or get credit in past 90 days"
-ACTIVE_NBFI_AIRTIME	"Used NBFI to buy airtime top-ups or pay a mobile phone bill in past 90 days"
-R_STOPMFI1	"Reason to stop using MFI or close MFI account: The products or services offered no longer met your needs"
-R_STOPMFI2	"Reason to stop using MFI or close MFI account: Improvement in your circumstances took away the need you had for the products or services offered"
-R_STOPMFI3	"Reason to stop using MFI or close MFI account: A change in your status made you ineligible for products or services"
-R_STOPMFI4	"Reason to stop using MFI or close MFI account: It became more difficult to travel to the point of service"
-R_STOPMFI5	"Reason to stop using MFI or close MFI account: You switched to a different microfinance institution (MFI)"
-R_STOPMFI6	"Reason to stop using MFI or close MFI account: You switched to mobile money instead of using a microfinance instititution"
-R_STOPMFI7	"Reason to stop using MFI or close MFI account: You switched to a bank instead of using a microfinace institution".
-
+ACTIVE_NBFI_AIRTIME	"Used NBFI to buy airtime top-ups or pay a mobile phone bill in past 90 days".
 
 
