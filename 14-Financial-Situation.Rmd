@@ -3,19 +3,39 @@
 
 
 ## INCOME_EARNER
+
+This question asks the respondent what portion of the household income that they contribute.
+
+Values:
+
+* 1 = None
+* 2 = A little
+* 3 = About half
+* 4 = Most
+* 5 = Almost all
+* -3 = (Refused)
+* -2 = (Don't know)
+
 ## MAIN_EARNER
+
+This binary variable asks whether the respondent or someone else in the household is the main income earner.
+
+Values:
+
+* 1 = Respondent is the main income earner
+* 0 = Another household member is the main income earner.
 
 ## FIN_SITUATION
 Family's financial situation  
 
 Levels:
 
-+ 1= Don't have enough money for food
-+ 2= Have enough money for food, but buying clothes is difficult
-+ 3= Have enough money for food and clothes, and can save a bit, but not enough to buy expensive goods such as a TV set or a               refrigerator
-+ 4= Can afford to buy certain expensive goods such as a TV set or a refrigerator
-+ 5= Can afford to buy whatever we want
-+ -2=Don't know
++ 1 = Don't have enough money for food
++ 2 = Have enough money for food, but buying clothes is difficult
++ 3 = Have enough money for food and clothes, and can save a bit, but not enough to buy expensive goods such as a TV set or a               refrigerator
++ 4 = Can afford to buy certain expensive goods such as a TV set or a refrigerator
++ 5 = Can afford to buy whatever we want
++ -2 = (Don't know)
 
 ## FIN_ATT1
 Highly satified with present financial condition
