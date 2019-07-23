@@ -54,7 +54,7 @@ Notes:
 * Data not available in 2013.
 
 ## INVEST_INSURANCE
-Have an investment or insurance: counts respondents who invest in thier own business or in other places or have insurance.
+Have an investment or insurance: counts respondents who invest in their own business or in other places or have insurance.
 
 Levels:
 
