@@ -12,7 +12,7 @@ Levels:
 
 Notes:
 
-* Data not available for Kenya in 2013.
+* Data not available for 2013.
 
 ## INVEST_OWN
 Have an investment in own business
@@ -24,7 +24,7 @@ Levels:
 
 Notes:
 
-* Data not available for Kenya in 2013.
+* Data not available in 2013.
 
 ## INVEST_OTHER
 Have an investment in other places: counts respondents who invest in other people's businesses, assets, or buy shares of foreign or local enterprises, or government bonds. 
@@ -48,10 +48,7 @@ Levels:
 
 Notes:
 
-* Data not available for Pakistan and Bangladesh in 2017. 
-* Data not available for Pakistan in 2016. 
-* Data not available for Bangladesh in 2015. 
-* Data not available in 2013.
+* Data only available 2016-2018.
 
 ## INVEST_INSURANCE
 Have an investment or insurance: counts respondents who invest in their own business or in other places or have insurance.
