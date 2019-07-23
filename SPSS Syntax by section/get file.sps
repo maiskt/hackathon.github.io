@@ -97,9 +97,9 @@ get file 'FII Uganda 2013 (public+ANONGPS).sav'.
 DATASET NAME u13.
 
 
-cd 'Z:\Ask permission from Xiaoyan\FII 2019\Datathon\Section 5 data'.
-save outfile="Uganda 2013 datathon all.sav".
-save outfile='Bangladesh 2013 datathon s5.sav'
+ * cd 'Z:\Ask permission from Xiaoyan\FII 2019\Datathon\Section 5 data'.
+ * save outfile="Uganda 2013 datathon all.sav".
+ * save outfile='Bangladesh 2013 datathon s5.sav'
 /keep=SBJNUM
 COUNTRY
 YEAR
