@@ -1666,7 +1666,7 @@ compute YEAR=2014.
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1 =1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
-
+FREQ EDU.
 compute LN2=max(LN2_1 to Ln2_10).
 compute LITERACY=0.
 if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -2011,7 +2011,7 @@ compute YEAR=2013.
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1 thru 2=1)(3,4=2)(5 thru 7=3)(8 thru 11=4)(12 thru HIGHEST=5) into EDU.
-
+FREQ EDU.
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
@@ -2127,7 +2127,7 @@ compute YEAR=2013.
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 13=4)(14 thru HIGHEST=5) into EDU.
-
+FREQ EDU.
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 

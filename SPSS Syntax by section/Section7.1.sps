@@ -13,7 +13,7 @@ if MM0 = 1 AWARE_MM = 1.
 rename variables aware_mm_provider = AWARE_MM_PROVIDER.
 
 compute AWARE_NONUSER_MM = 0.
-if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 1 AWARE_NONUSER_MM = 1.
+if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 0 AWARE_NONUSER_MM = 1.
 
 rename variables access_mm = ACCESS_MM.
 rename variables registered_mm = REGISTERED_MM.
@@ -73,7 +73,7 @@ if MM0 = 1 AWARE_MM = 1.
 rename variables aware_mm_provider = AWARE_MM_PROVIDER.
 
 compute AWARE_NONUSER_MM = 0.
-if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 1 AWARE_NONUSER_MM = 1.
+if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 0 AWARE_NONUSER_MM = 1.
 
 rename variables access_mm = ACCESS_MM.
 rename variables registered_mm = REGISTERED_MM.
@@ -133,10 +133,10 @@ numeric AWARE_MM.
 rename variables aware_mm_provider = AWARE_MM_PROVIDER.
 
 compute AWARE_NONUSER_MM = 0.
-if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 1 AWARE_NONUSER_MM = 1.
+if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 0 AWARE_NONUSER_MM = 1.
 
 rename variables access_mm = ACCESS_MM.
-rename variables registered_mm = REGISTERED_MM.
+rename variables registered_mm = REGISTERED_MM.  
 rename variables active_mm = ACTIVE_MM.
 
 compute ACTIVE30_MM =0.
@@ -168,7 +168,7 @@ compute REG_MM_ADV =1.
 if REGISTERED_MM = 1 and MM_ADV = 1 REG_MM_ADV = 1.
 
 compute ACTIVE_MM_BASIC=0.
-if (mm15_1=1 or mm15_2=1
+if (mm15_1=1 or mm15_2=1 or MM15_6=1
 ) and (mm8_1<=4 or mm8_2<=4 or mm8_3<=4 or mm8_4<=4 or mm8_5<=4 or mm8_6<=4 or mm8_7<=4 or mm8_8<=4 or mm8_9<=4 or mm8_96<=4)
  ACTIVE_MM_BASIC=1.
 
@@ -186,7 +186,7 @@ and (mm8_1<=3 or mm8_2<=3 or mm8_3<=3 or mm8_4<=3 or mm8_5<=3 or mm8_6<=3 or mm8
 
 compute LENGTH_MM=0.
 if MM9 le 2 LENGTH_MM=1.
-if MM9 = 2 or MM9 = 3 LENGTH_MM=2.
+if MM9 = 3 LENGTH_MM=2.
 if MM9 ge 4 and MM9 le 6 LENGTH_MM=3.
 if MM9 = 99 LENGTH_MM = 99.
 MISSING VALUES LENGTH_MM (0).
@@ -264,7 +264,7 @@ mm8_11<=3 or mm8_12<=3 or mm8_13<=3 or mm8_14<=3 or mm8_15<=3 or mm8_16<=3 or mm
 
 compute LENGTH_MM=0.
 if MM9 le 2 LENGTH_MM=1.
-if MM9 = 2 or MM9 = 3 LENGTH_MM=2.
+if MM9 = 3 LENGTH_MM=2.
 if MM9 ge 4 and MM9 le 6 LENGTH_MM=3.
 if MM9 = 99 LENGTH_MM = 99.
 MISSING VALUES LENGTH_MM (0).
@@ -284,7 +284,7 @@ DATASET ACTIVATE ken17.
 numeric AWARE_MM.
 rename variables aware_mm_provider = AWARE_MM_PROVIDER.
 compute AWARE_NONUSER_MM = 0.
-if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 1 AWARE_NONUSER_MM = 1.
+if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 0 AWARE_NONUSER_MM = 1.
 rename variables access_mm = ACCESS_MM.
 RENAME VARIABLES registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
@@ -331,7 +331,7 @@ and (mm8_1<=3 or mm8_2<=3 or mm8_3<=3 or mm8_4<=3 or mm8_5<=3 or mm8_6<=3 or mm8
 
 compute LENGTH_MM=0.
 if MM9 le 2 LENGTH_MM=1.
-if MM9 = 2 or MM9 = 3 LENGTH_MM=2.
+if MM9 = 3 LENGTH_MM=2.
 if MM9 ge 4 and MM9 le 6 LENGTH_MM=3.
 if MM9 = 99 LENGTH_MM = 99.
 MISSING VALUES LENGTH_MM (0).
@@ -413,7 +413,7 @@ MM8_96<=3)) ACTIVE30_MM_ADV = 1.
 
 compute LENGTH_MM=0.
 if MM9 le 2 LENGTH_MM=1.
-if MM9 = 2 or MM9 = 3 LENGTH_MM=2.
+if MM9 = 3 LENGTH_MM=2.
 if MM9 ge 4 and MM9 le 6 LENGTH_MM=3.
 if MM9 = 99 LENGTH_MM = 99.
 MISSING VALUES LENGTH_MM (0).
@@ -485,7 +485,7 @@ and (mm8_1<=3 or mm8_2<=3 or mm8_3<=3 or mm8_4<=3 or mm8_5<=3 or mm8_6<=3 or mm8
 
 compute LENGTH_MM=0.
 if MM9 le 2 LENGTH_MM=1.
-if MM9 = 2 or MM9 = 3 LENGTH_MM=2.
+if MM9 = 3 LENGTH_MM=2.
 if MM9 ge 4 and MM9 le 6 LENGTH_MM=3.
 if MM9 = 99 LENGTH_MM = 99.
 MISSING VALUES LENGTH_MM (0).
@@ -556,7 +556,7 @@ and (MM8_1<=3 or MM8_2<=3 or MM8_3<=3 or MM8_4<=3 or MM8_5<=3 or MM8_6<=3 or MM8
 
 compute LENGTH_MM=0.
 if MM9 le 2 LENGTH_MM=1.
-if MM9 = 2 or MM9 = 3 LENGTH_MM=2.
+if MM9 = 3 LENGTH_MM=2.
 if MM9 ge 4 and MM9 le 6 LENGTH_MM=3.
 if MM9 = 99 LENGTH_MM = 99.
 MISSING VALUES LENGTH_MM (0).
@@ -621,7 +621,7 @@ if MM_ADV = 1 and ACTIVE30_MM = 1 ACTIVE30_MM_ADV = 1.
 
 compute LENGTH_MM=0.
 if MM9 le 2 LENGTH_MM=1.
-if MM9 = 2 or MM9 = 3 LENGTH_MM=2.
+if MM9 = 3 LENGTH_MM=2.
 if MM9 ge 4 and MM9 le 6 LENGTH_MM=3.
 if MM9 = 99 LENGTH_MM = 99.
 MISSING VALUES LENGTH_MM (0).
@@ -816,7 +816,8 @@ if (MM15_1=1 or MM15_2=1 or MM15_3=1 or MM15_9=1 or MM15_10=1 or MM15_23=1)
 MM_BASIC = 1.
 
 compute MM_ADV = 1.
-IF (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_14=1 or MM15_15=1 or MM15_16=1 or MM15_17=1 or MM15_18=1 or MM15_19=1 or MM15_20=1 or MM15_21=1 or MM15_22=1) 
+IF (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_11=1 or MM15_12=1 or MM15_13=1 or MM15_14=1 or 
+MM15_15=1 or MM15_16=1 or MM15_17=1 or MM15_18=1 or MM15_19=1 or MM15_20=1 or MM15_21=1 or MM15_22=1 or FB16_2=1 or FB22_2=1) 
 MM_ADV = 1.
 
 COMPUTE REG_MM_BASIC = 0.
@@ -993,7 +994,7 @@ rename variables registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
 
 compute ACTIVE30_MM = 0.
-if (MM8_1<=4 or MM8_2<=4 or MM8_3<=4 or MM8_4<=4 or MM8_5<=4 or MM8_6<=4 or MM8_7<=4 or MM8_8<=4 or MM8_96<=4)
+if (MM8_1<=3 or MM8_2<=3 or MM8_3<=3 or MM8_4<=3 or MM8_5<=3 or MM8_6<=3 or MM8_7<=3 or MM8_8<=3 or MM8_96<=3)
 ACTIVE30_MM = 0.
 
 compute INACTIVE_MM = 0.
@@ -1058,7 +1059,7 @@ rename variables registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
 
 compute ACTIVE30_MM = 0.
-if (MM8_1<=4 or MM8_2<=4 or MM8_3<=4 or MM8_4<=4 or MM8_5<=4 or MM8_6<=4 or MM8_96<=4)
+if (MM8_1<=3 or MM8_2<=3 or MM8_3<=3 or MM8_4<=3 or MM8_5<=3 or MM8_6<=3 or MM8_96<=3)
 ACTIVE30_mm = 0.
 
 compute INACTIVE_MM = 0.
@@ -1257,10 +1258,10 @@ if (aware_mm_provider=1 and access_mm=0) aware_nonuser_mm=1.
 rename variables access_mm = ACCESS_MM.
 rename variables registered_mm = REGISTERED_MM.
 
-count ACTIVE_MM=MM8_1 MM8_2 MM8_3 MM8_4 MM8_5 MM8_6 MM8_7 MM8_8 MM8_9 MM8_10 (1 thru 4).
+count ACTIVE_MM=MM8_1 MM8_2 MM8_3 MM8_4 MM8_5 MM8_6 MM8_7 MM8_8 MM8_9 MM8_10 MM8_11 MM8_12 MM8_13 MM8_14 MM8_15 MM8_16 MM8_17 (1 thru 4).
 recode ACTIVE_MM (1 thru Highest=1).
 
-count ACTIVE30_MM=MM8_1 MM8_2 MM8_3 MM8_4 MM8_5 MM8_6 MM8_7 MM8_8 MM8_9 MM8_10 (1 thru 3).
+count ACTIVE30_MM=MM8_1 MM8_2 MM8_3 MM8_4 MM8_5 MM8_6 MM8_7 MM8_8 MM8_9 MM8_10 MM8_11 MM8_12 MM8_13 MM8_14 MM8_15 MM8_16 MM8_17(1 thru 3).
 recode ACTIVE_MM (1 thru Highest=1).
 
 compute INACTIVE_MM = 0.
@@ -1349,7 +1350,7 @@ compute MM_ADV = 0.
 IF (MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9=1 or MM15_10=1
 or MM15_13=1 or MM15_14=1 or MM15_15=1 or MM15_16=1 or MM15_17=1 or MM15_18=1 or MM15_19=1 
 or MM15_20=1 or MM15_21=1 or MM15_22=1
-or MM15_23=1 or MM15_24=1 or MM15_25=1 or MM15_26=1 or MM15_27=1)
+or MM15_23=1 or MM15_24=1 or MM15_25=1 or MM15_26=1 or MM15_27=1 or FB16_2=1 or FB22_2=1)
 MM_ADV = 1.
 
 COMPUTE REG_MM_BASIC = 0.
@@ -1830,7 +1831,7 @@ IF registered_mm = 1 and access_mm = 0 DORMANT_MM = 1.
 compute OTC_MM = 0.
 if REGISTERED_MM = 0 and ACCESS_MM = 1 OTC_MM = 1.
 
-count MM_BASIC=mm19_1 mm19_2 mm19_3 mm19_11 to mm19_14(1).
+count MM_BASIC=mm19_1 mm19_2 mm19_3 mm19_11 mm19_12 mm19_13 mm19_14(1).
 RECODE MM_BASIC (1 thru highest=1).
 
 compute MM_ADV = 1.
@@ -1899,7 +1900,8 @@ MM_BASIC = 1.
 compute MM_ADV = 0.
 IF (mm19_4=1 or mm19_5=1 or mm19_6=1 or mm19_7=1 or mm19_8=1 or mm19_9=1 or mm19_10=1 or mm19_11=1
 or mm19_16=1 or mm19_17=1 or mm19_18=1 or mm19_19=1 or mm19_20=1 or mm19_21=1 or mm19_22=1 
-or mm19_23=1 or mm19_24=1 or mm19_25=1 or mm19_26=1 or mm19_27=1 or mm19_28=1 or mm19_29=1 or mm19_30=1 or mm19_31=1 or mm19_32=1)
+or mm19_23=1 or mm19_24=1 or mm19_25=1 or mm19_26=1 or mm19_27=1 or mm19_28=1 or mm19_29=1 or mm19_30=1 or mm19_31=1 or mm19_32=1
+or fl10_5=1 or fl13_4=1)
 MM_ADV = 1.
 
 COMPUTE REG_MM_BASIC = 0.
@@ -1940,7 +1942,7 @@ rename variables registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
 
 compute ACTIVE30_MM = 0.
-if (mm14_1<=4 or mm14_2<=4 or mm14_3<=4 or mm14_4<=4 or mm14_5<=4 or mm14_6<=4 )
+if (mm14_1<=3 or mm14_2<=3 or mm14_3<=3 or mm14_4<=3 or mm14_5<=3 or mm14_6<=3 )
 ACTIVE30_MM = 1.
 
 compute INACTIVE_MM = 0.
@@ -2000,8 +2002,8 @@ rename variables registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
 
 compute ACTIVE30_MM = 0.
-if (mm14_1<=4 or mm14_2<=4 or mm14_3<=4 or mm14_4<=4 or mm14_5<=4 or mm14_6<=4 or MM14_7<=4 or 
-MM14_8<=4 or MM14_9<=4 or MM14_10<=4 or MM14_11<=4 or MM14_12<=4 or MM14_13<=4 or mm14_14<=4)
+if (mm14_1<=3 or mm14_2<=3 or mm14_3<=3 or mm14_4<=3 or mm14_5<=3 or mm14_6<=3 or MM14_7<=3 or 
+MM14_8<=3 or MM14_9<=3 or MM14_10<=3 or MM14_11<=3 or MM14_12<=3 or MM14_13<=3 or mm14_14<=3)
 ACTIVE30_MM = 1.
 
 compute INACTIVE_MM = 0.
@@ -2123,7 +2125,7 @@ rename variables registered_mm = REGISTERED_MM.
 rename variables active_mm = ACTIVE_MM.
 
 compute ACTIVE30_MM = 0.
-if (MM14_1<=4 or MM14_2<=4 or MM14_3<=4 or MM14_4<=4 or MM14_5<=4)
+if (MM14_1<=3 or MM14_2<=3 or MM14_3<=3 or MM14_4<=3 or MM14_5<=3)
 ACTIVE30_MM = 1.
 
 compute INACTIVE_MM = 0.
@@ -2265,7 +2267,8 @@ RECODE MM_BASIC (1 thru highest=1).
 compute MM_ADV = 0.
 if (MM16D=1 or MM16E=1 or MM16F=1 or MM16G=1 
 or MM16L=1 or MM16M=1 or MM16N=1 or MM16O=1 or MM16P=1 or MM16Q=1 or MM16R=1 or MM16S=1 
-or MM16T=1 or MM16U=1 or MM16V=1 or MM16W=1 or MM16X=1)
+or MM16T=1 or MM16U=1 or MM16V=1 or MM16W=1 or MM16X=1 or
+SI1_12=1)
 MM_ADV = 1.
 
 COMPUTE REG_MM_BASIC = 0.
@@ -2319,13 +2322,13 @@ IF registered_mm = 1 and access_mm = 0 DORMANT_MM = 1.
 compute OTC_MM = 0.
 if REGISTERED_MM = 0 and ACCESS_MM = 1 OTC_MM = 1.
 
-count MM_BASIC=MM16_1 MM16_2 MM16_3 (1).
+count MM_BASIC=MM16_1 MM16_2 MM16_3 MM16_8 MM16_9 MM16_10 MM16_11(1).
 RECODE MM_BASIC (1 thru highest=1).
 
 compute MM_ADV = 0.
 IF (MM16_4=1 or MM16_5=1 or MM16_6=1 or MM16_7=1 
 or MM16_12=1 or MM16_13=1 or MM16_14=1 or MM16_15=1 or MM16_16=1 or MM16_17=1 or MM16_18=1 or MM16_19=1 
-or MM16_20=1 or MM16_21=1 or MM16_22=1 or MM16_23=1 or MM16_24=1 or MM16_25=1)
+or MM16_20=1 or MM16_21=1 or MM16_22=1 or MM16_23=1 or MM16_24=1 or MM16_25=1 or FB7_1_6=1 or FB7_3_6=1 or FB7_4_6=1)
 MM_ADV = 1.
 
 COMPUTE REG_MM_BASIC = 0.
@@ -2449,7 +2452,7 @@ RECODE MM_BASIC (1 thru highest=1).
 compute MM_ADV = 0.
 IF (MM16D=1 or MM16E=1 or MM16F=1 or MM16G=1 
 or MM16L=1 or MM16M=1 or MM16N=1 or MM16O=1 or MM16P=1 or MM16Q=1 or MM16R=1 or MM16S=1 
-or MM16T=1 or MM16U=1 or MM16V=1 or MM16W=1 or MM16X=1)
+or MM16T=1 or MM16U=1 or MM16V=1 or MM16W=1 or MM16X=1 or SI1_12=1)
 MM_ADV = 1.
 
 COMPUTE REG_MM_BASIC = 0.
@@ -2510,7 +2513,7 @@ MM_BASIC = 1.
 compute MM_ADV = 0.
 IF (MM16D=1 or MM16E=1 or MM16F=1 or MM16G=1 
 or MM16L=1 or MM16M=1 or MM16N=1 or MM16O=1 or MM16P=1 or MM16Q=1 or MM16R=1 or MM16S=1 
-or MM16T=1 or MM16U=1 or MM16V=1 or MM16W=1 or MM16X=1)
+or MM16T=1 or MM16U=1 or MM16V=1 or MM16W=1 or MM16X=1 or SI1_12=1)
 MM_ADV = 1.
 
 COMPUTE REG_MM_BASIC = 0.
@@ -2563,7 +2566,7 @@ IF registered_mm = 1 and access_mm = 0 DORMANT_MM = 1.
 compute OTC_MM = 0.
 if REGISTERED_MM = 0 and ACCESS_MM = 1 OTC_MM = 1.
 
-count MM_BASIC=MM16_1 MM16_2 MM16_3 (1).
+count MM_BASIC=MM16_1 MM16_2 MM16_3 MM16_8 MM16_9 MM16_10 MM16_11(1).
 RECODE MM_BASIC (1 thru highest=1).
 
 compute MM_ADV = 0.
