@@ -671,14 +671,12 @@ if INVEST = 1 or INSURANCE = 1 INVEST_INSURANCE = 1.
 save outfile = "data/uga14.sav"
 /keep= SBJNUM COUNTRY YEAR INVEST INVEST_OWN INVEST_OTHER INVEST_INFORMAL INVEST_INSURANCE.
 
-
 *2013---------------------------------------------------------------------***.
+*There are investment questions, but not equivalent ones.
 DATASET ACTIVATE bng13.
 
-compute INVEST = 0.
-
-compute INVEST_OWN = 0.
-
+numeric INVEST.
+numeric INVEST_OWN.
 numeric INVEST_OTHER.
 numeric INVEST_INFORMAL.
 numeric INVEST_INSURANCE.
@@ -689,10 +687,8 @@ save outfile = "data/bng13.sav"
 
 DATASET ACTIVATE ind13.
 
-compute INVEST = 0.
-
-compute INVEST_OWN = 0.
-
+numeric INVEST.
+numeric INVEST_OWN.
 numeric INVEST_OTHER.
 numeric INVEST_INFORMAL.
 numeric INVEST_INSURANCE.
@@ -715,10 +711,8 @@ save outfile = "data/ken13.sav"
 
 DATASET ACTIVATE nga13.
 
-compute INVEST = 0.
-
-compute INVEST_OWN = 0.
-
+numeric INVEST.
+numeric INVEST_OWN.
 numeric INVEST_OTHER.
 numeric INVEST_INFORMAL.
 numeric INVEST_INSURANCE.
@@ -729,10 +723,8 @@ save outfile = "data/nga13.sav"
 
 DATASET ACTIVATE pak13.
 
-compute INVEST = 0.
-
-compute INVEST_OWN = 0.
-
+numeric INVEST.
+numeric INVEST_OWN.
 numeric INVEST_OTHER.
 numeric INVEST_INFORMAL.
 numeric INVEST_INSURANCE.
@@ -743,10 +735,8 @@ save outfile = "data/pak13.sav"
 
 DATASET ACTIVATE tza13.
 
-compute INVEST = 0.
-
-compute INVEST_OWN = 0.
-
+numeric INVEST.
+numeric INVEST_OWN.
 numeric INVEST_OTHER.
 numeric INVEST_INFORMAL.
 numeric INVEST_INSURANCE.
@@ -756,10 +746,8 @@ save outfile = "data/tza13.sav"
 
 DATASET ACTIVATE uga13.
 
-compute INVEST = 0.
-
-compute INVEST_OWN = 0.
-
+numeric INVEST.
+numeric INVEST_OWN.
 numeric INVEST_OTHER.
 numeric INVEST_INFORMAL.
 numeric INVEST_INSURANCE.
