@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 
 *Section 6.2.
 *******************************************************************************************************************************************************************.
@@ -561,62 +561,47 @@ if FF14_20=1 BANK_MERCHANT=1.
 count BANK_BILL=FF14_4 FF14_5 FF14_6 FF14_7 FF14_8 (1).
 recode BANK_BILL (1 thru highest=1).
 
-*Review.
 compute BANK_GOV=0.
 if FF14_11=1 BANK_GOV=1.
 
-*Review.
 compute BANK_WAGE=0.
 if FF14_12=1 BANK_WAGE=1.
 
-*Review.
 compute BANK_INSURANCE=0.
 if FF14_14=1 BANK_INSURANCE=1.
 
 compute BANK_SAVE=0.
 IF (FF14_16=1 or FF14_17=1 or FF14_18=1 or fb22_1=1) BANK_SAVE=1.
 
-*Review.
 compute BANK_INVEST=0.
 if FF14_19=1 BANK_INVEST=1.
 
-*Review.
 compute BANK_LOAN=0.
 if (FF14_15=1 or FB16_1=1) BANK_LOAN=1.
 
 compute BANK_AIRTIME=0.
 if FF14_3=1 BANK_AIRTIME=1.
 
-*Review.
 count ACTIVE_BANK_TRANSFER=FF16_9 FF16_10(1 thru 4).
 recode ACTIVE_BANK_TRANSFER (1 thru highest=1).
 
-*Review.
 count ACTIVE_BANK_MERCHANT=FF16_20 (1 thru 4).
 
-*Review.
 count ACTIVE_BANK_BILL=FF16_4 FF16_5 FF16_6 FF16_7 FF16_8 (1 thru 4).
 recode ACTIVE_BANK_BILL (1 thru highest=1).
 
-*Review.
 count ACTIVE_BANK_GOV=FF16_11 (1 thru 4).
 
-*Review.
 count ACTIVE_BANK_WAGE=FF16_12 (1 thru 4).
 
-*Review.
 count ACTIVE_BANK_INSURANCE=FF16_14 (1 thru 4).
 
-*Review.
 count ACTIVE_BANK_SAVE=FF16_16 (1 thru 4).
 
-*Review.
 count ACTIVE_BANK_INVEST=FF16_19 (1 thru 4).
 
-*Review.
 count ACTIVE_BANK_LOAN=FF16_15 (1 thru 4).
 
-*Review.
 count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 
 
@@ -748,7 +733,7 @@ count ACTIVE_BANK_AIRTIME=FF16_3 (1 thru 4).
 
 *******************************************************************************************************************************************************************.
 *16Kenya.
-*Section 6.1.
+*Section 6.2.
 rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
