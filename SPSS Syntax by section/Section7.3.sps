@@ -464,7 +464,8 @@ recode mm38_3(1=1)(else=0) into EXP_MA3.
 recode mm38_5(1=1)(else=0) into EXP_MA4.
 recode mm38_6(1=1)(else=0) into EXP_MA5.
 recode mm38_7(1=1)(else=0) into EXP_MA6.
-numeric EXP_MA7.
+compute EXP_MA7=0.
+if mm38_8=1 or mm38_9=1 EXP_MA7=1.
 recode mm38_14(1=1)(else=0) into EXP_MA8.
 recode mm38_16(1=1)(else=0) into EXP_MA9.
 recode mm38_17(1=1)(else=0) into EXP_MA10.
@@ -490,7 +491,8 @@ recode mm38_3(1=1)(else=0) into EXP_MA3.
 recode mm38_5(1=1)(else=0) into EXP_MA4.
 recode mm38_6(1=1)(else=0) into EXP_MA5.
 recode mm38_7(1=1)(else=0) into EXP_MA6.
-numeric EXP_MA7.
+compute EXP_MA7=0.
+if mm38_8=1 or mm38_9=1 EXP_MA7=1.
 recode mm38_14(1=1)(else=0) into EXP_MA8.
 recode mm38_16(1=1)(else=0) into EXP_MA9.
 recode mm38_17(1=1)(else=0) into EXP_MA10.
@@ -516,7 +518,8 @@ recode mm38_3(1=1)(else=0) into EXP_MA3.
 recode mm38_5(1=1)(else=0) into EXP_MA4.
 recode mm38_6(1=1)(else=0) into EXP_MA5.
 recode mm38_7(1=1)(else=0) into EXP_MA6.
-numeric EXP_MA7.
+compute EXP_MA7=0.
+if mm38_8=1 or mm38_9=1 EXP_MA7=1.
 recode mm38_14(1=1)(else=0) into EXP_MA8.
 recode mm38_16(1=1)(else=0) into EXP_MA9.
 recode mm38_17(1=1)(else=0) into EXP_MA10.
@@ -542,7 +545,8 @@ recode mm38_3(1=1)(else=0) into EXP_MA3.
 recode mm38_5(1=1)(else=0) into EXP_MA4.
 recode mm38_6(1=1)(else=0) into EXP_MA5.
 recode mm38_7(1=1)(else=0) into EXP_MA6.
-numeric EXP_MA7.
+compute EXP_MA7=0.
+if mm38_8=1 or mm38_9=1 EXP_MA7=1.
 recode mm38_14(1=1)(else=0) into EXP_MA8.
 recode mm38_16(1=1)(else=0) into EXP_MA9.
 recode mm38_17(1=1)(else=0) into EXP_MA10.
@@ -568,7 +572,8 @@ recode mm38_3(1=1)(else=0) into EXP_MA3.
 recode mm38_5(1=1)(else=0) into EXP_MA4.
 recode mm38_6(1=1)(else=0) into EXP_MA5.
 recode mm38_7(1=1)(else=0) into EXP_MA6.
-numeric EXP_MA7.
+compute EXP_MA7=0.
+if mm38_8=1 or mm38_9=1 EXP_MA7=1.
 recode mm38_14(1=1)(else=0) into EXP_MA8.
 recode mm38_16(1=1)(else=0) into EXP_MA9.
 recode mm38_17(1=1)(else=0) into EXP_MA10.
@@ -594,7 +599,8 @@ recode mm38_3(1=1)(else=0) into EXP_MA3.
 recode mm38_5(1=1)(else=0) into EXP_MA4.
 recode mm38_6(1=1)(else=0) into EXP_MA5.
 recode mm38_7(1=1)(else=0) into EXP_MA6.
-numeric EXP_MA7.
+compute EXP_MA7=0.
+if mm38_8=1 or mm38_9=1 EXP_MA7=1.
 recode mm38_14(1=1)(else=0) into EXP_MA8.
 recode mm38_16(1=1)(else=0) into EXP_MA9.
 recode mm38_17(1=1)(else=0) into EXP_MA10.
@@ -620,7 +626,8 @@ recode mm38_3(1=1)(else=0) into EXP_MA3.
 recode mm38_5(1=1)(else=0) into EXP_MA4.
 recode mm38_6(1=1)(else=0) into EXP_MA5.
 recode mm38_7(1=1)(else=0) into EXP_MA6.
-numeric EXP_MA7.
+compute EXP_MA7=0.
+if mm38_8=1 or mm38_9=1 EXP_MA7=1.
 recode mm38_14(1=1)(else=0) into EXP_MA8.
 recode mm38_16(1=1)(else=0) into EXP_MA9.
 recode mm38_17(1=1)(else=0) into EXP_MA10.
@@ -646,7 +653,8 @@ recode mm38_3(1=1)(else=0) into EXP_MA3.
 recode mm38_5(1=1)(else=0) into EXP_MA4.
 recode mm38_6(1=1)(else=0) into EXP_MA5.
 recode mm38_7(1=1)(else=0) into EXP_MA6.
-numeric EXP_MA7.
+compute EXP_MA7=0.
+if mm38_8=1 or mm38_9=1 EXP_MA7=1.
 recode mm38_14(1=1)(else=0) into EXP_MA8.
 recode mm38_16(1=1)(else=0) into EXP_MA9.
 recode mm38_17(1=1)(else=0) into EXP_MA10.
@@ -667,12 +675,24 @@ compute COUNTRY="Bangladesh".
 compute YEAR=2014.
 *Need double check.
 recode mm30_1(1=1)(else=0) into EXP_MA1.
-
+numeric EXP_MA2.
 recode mm30_3(1=1)(else=0) into EXP_MA3.
 recode mm30_5(1=1)(else=0) into EXP_MA4.
-
+recode mm30_6(1=1)(else=0) into EXP_MA5.
+recode mm30_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm30_8=1 or mm30_9=1 EXP_MA7=1.
+recode mm30_14(1=1)(else=0) into EXP_MA8.
+recode mm30_16(1=1)(else=0) into EXP_MA9.
+recode mm30_17(1=1)(else=0) into EXP_MA10.
 recode mm30_2(1=1)(else=0) into EXP_MA11.
 recode mm30_4(1=1)(else=0) into EXP_MA12.
+recode mm30_10(1=1)(else=0) into EXP_MA13.
+recode mm30_11(1=1)(else=0) into EXP_MA14.
+recode mm30_12(1=1)(else=0) into EXP_MA15.
+recode mm30_13(1=1)(else=0) into EXP_MA16.
+recode mm30_15(1=1)(else=0) into EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *14India.
@@ -680,14 +700,26 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2014.
-*Need double check.
-recode mm30_1(1=1)(else=0) into EXP_MA1.
 
+recode mm30_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
 recode mm30_3(1=1)(else=0) into EXP_MA3.
 recode mm30_5(1=1)(else=0) into EXP_MA4.
-
+recode mm30_6(1=1)(else=0) into EXP_MA5.
+recode mm30_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm30_8=1 or mm30_9=1 EXP_MA7=1.
+recode mm30_14(1=1)(else=0) into EXP_MA8.
+recode mm30_16(1=1)(else=0) into EXP_MA9.
+recode mm30_17(1=1)(else=0) into EXP_MA10.
 recode mm30_2(1=1)(else=0) into EXP_MA11.
 recode mm30_4(1=1)(else=0) into EXP_MA12.
+recode mm30_10(1=1)(else=0) into EXP_MA13.
+recode mm30_11(1=1)(else=0) into EXP_MA14.
+recode mm30_12(1=1)(else=0) into EXP_MA15.
+recode mm30_13(1=1)(else=0) into EXP_MA16.
+recode mm30_15(1=1)(else=0) into EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *14Indonesia.
@@ -695,14 +727,26 @@ rename variables ID=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2014.
-*Need double check.
-recode mm30_1(1=1)(else=0) into EXP_MA1.
 
+recode mm30_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
 recode mm30_3(1=1)(else=0) into EXP_MA3.
 recode mm30_5(1=1)(else=0) into EXP_MA4.
-
+recode mm30_6(1=1)(else=0) into EXP_MA5.
+recode mm30_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm30_8=1 or mm30_9=1 EXP_MA7=1.
+recode mm30_14(1=1)(else=0) into EXP_MA8.
+recode mm30_16(1=1)(else=0) into EXP_MA9.
+recode mm30_17(1=1)(else=0) into EXP_MA10.
 recode mm30_2(1=1)(else=0) into EXP_MA11.
 recode mm30_4(1=1)(else=0) into EXP_MA12.
+recode mm30_10(1=1)(else=0) into EXP_MA13.
+recode mm30_11(1=1)(else=0) into EXP_MA14.
+recode mm30_12(1=1)(else=0) into EXP_MA15.
+recode mm30_13(1=1)(else=0) into EXP_MA16.
+recode mm30_15(1=1)(else=0) into EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *14Kenya.
@@ -710,14 +754,26 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2014.
-*Need double check.
-recode mm30_1(1=1)(else=0) into EXP_MA1.
 
+recode mm30_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
 recode mm30_3(1=1)(else=0) into EXP_MA3.
 recode mm30_5(1=1)(else=0) into EXP_MA4.
-
+recode mm30_6(1=1)(else=0) into EXP_MA5.
+recode mm30_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm30_8=1 or mm30_9=1 EXP_MA7=1.
+recode mm30_14(1=1)(else=0) into EXP_MA8.
+recode mm30_16(1=1)(else=0) into EXP_MA9.
+recode mm30_17(1=1)(else=0) into EXP_MA10.
 recode mm30_2(1=1)(else=0) into EXP_MA11.
 recode mm30_4(1=1)(else=0) into EXP_MA12.
+recode mm30_10(1=1)(else=0) into EXP_MA13.
+recode mm30_11(1=1)(else=0) into EXP_MA14.
+recode mm30_12(1=1)(else=0) into EXP_MA15.
+recode mm30_13(1=1)(else=0) into EXP_MA16.
+recode mm30_15(1=1)(else=0) into EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *14Nigeria.
@@ -725,14 +781,26 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2014.
-*Need double check.
-recode mm30_1(1=1)(else=0) into EXP_MA1.
 
+recode mm30_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
 recode mm30_3(1=1)(else=0) into EXP_MA3.
 recode mm30_5(1=1)(else=0) into EXP_MA4.
-
+recode mm30_6(1=1)(else=0) into EXP_MA5.
+recode mm30_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm30_8=1 or mm30_9=1 EXP_MA7=1.
+recode mm30_14(1=1)(else=0) into EXP_MA8.
+recode mm30_16(1=1)(else=0) into EXP_MA9.
+recode mm30_17(1=1)(else=0) into EXP_MA10.
 recode mm30_2(1=1)(else=0) into EXP_MA11.
 recode mm30_4(1=1)(else=0) into EXP_MA12.
+recode mm30_10(1=1)(else=0) into EXP_MA13.
+recode mm30_11(1=1)(else=0) into EXP_MA14.
+recode mm30_12(1=1)(else=0) into EXP_MA15.
+recode mm30_13(1=1)(else=0) into EXP_MA16.
+recode mm30_15(1=1)(else=0) into EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *14Pakistan.
@@ -740,14 +808,26 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2014.
-*Need double check.
-recode mm30_1(1=1)(else=0) into EXP_MA1.
 
+recode mm30_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
 recode mm30_3(1=1)(else=0) into EXP_MA3.
 recode mm30_5(1=1)(else=0) into EXP_MA4.
-
+recode mm30_6(1=1)(else=0) into EXP_MA5.
+recode mm30_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm30_8=1 or mm30_9=1 EXP_MA7=1.
+recode mm30_14(1=1)(else=0) into EXP_MA8.
+recode mm30_16(1=1)(else=0) into EXP_MA9.
+recode mm30_17(1=1)(else=0) into EXP_MA10.
 recode mm30_2(1=1)(else=0) into EXP_MA11.
 recode mm30_4(1=1)(else=0) into EXP_MA12.
+recode mm30_10(1=1)(else=0) into EXP_MA13.
+recode mm30_11(1=1)(else=0) into EXP_MA14.
+recode mm30_12(1=1)(else=0) into EXP_MA15.
+recode mm30_13(1=1)(else=0) into EXP_MA16.
+recode mm30_15(1=1)(else=0) into EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *14Tanzania.
@@ -755,14 +835,26 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2014.
-*Need double check.
-recode mm30_1(1=1)(else=0) into EXP_MA1.
 
+recode mm30_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
 recode mm30_3(1=1)(else=0) into EXP_MA3.
 recode mm30_5(1=1)(else=0) into EXP_MA4.
-
+recode mm30_6(1=1)(else=0) into EXP_MA5.
+recode mm30_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm30_8=1 or mm30_9=1 EXP_MA7=1.
+recode mm30_14(1=1)(else=0) into EXP_MA8.
+recode mm30_16(1=1)(else=0) into EXP_MA9.
+recode mm30_17(1=1)(else=0) into EXP_MA10.
 recode mm30_2(1=1)(else=0) into EXP_MA11.
 recode mm30_4(1=1)(else=0) into EXP_MA12.
+recode mm30_10(1=1)(else=0) into EXP_MA13.
+recode mm30_11(1=1)(else=0) into EXP_MA14.
+recode mm30_12(1=1)(else=0) into EXP_MA15.
+recode mm30_13(1=1)(else=0) into EXP_MA16.
+recode mm30_15(1=1)(else=0) into EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *14Uganda.
@@ -770,14 +862,25 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2014.
-*Need double check.
-recode mm30_1(1=1)(else=0) into EXP_MA1.
 
+recode mm30_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
 recode mm30_3(1=1)(else=0) into EXP_MA3.
 recode mm30_5(1=1)(else=0) into EXP_MA4.
-
+recode mm30_6(1=1)(else=0) into EXP_MA5.
+recode mm30_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm30_8=1 or mm30_9=1 EXP_MA7=1.
+recode mm30_14(1=1)(else=0) into EXP_MA8.
+recode mm30_16(1=1)(else=0) into EXP_MA9.
+recode mm30_17(1=1)(else=0) into EXP_MA10.
 recode mm30_2(1=1)(else=0) into EXP_MA11.
 recode mm30_4(1=1)(else=0) into EXP_MA12.
+recode mm30_10(1=1)(else=0) into EXP_MA13.
+recode mm30_11(1=1)(else=0) into EXP_MA14.
+recode mm30_12(1=1)(else=0) into EXP_MA15.
+recode mm30_13(1=1)(else=0) into EXP_MA16.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *13Bangladesh.
@@ -785,6 +888,26 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2013.
+*Need double check.
+recode mm29_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
+recode mm29_3(1=1)(else=0) into EXP_MA3.
+recode mm29_5(1=1)(else=0) into EXP_MA4.
+recode mm29_6(1=1)(else=0) into EXP_MA5.
+recode mm29_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm29_8=1 or mm29_9=1 EXP_MA7=1.
+numeric EXP_MA8.
+numeric EXP_MA9.
+numeric EXP_MA10.
+recode mm29_2(1=1)(else=0) into EXP_MA11.
+recode mm29_4(1=1)(else=0) into EXP_MA12.
+recode mm29_10(1=1)(else=0) into EXP_MA13.
+recode mm29_11(1=1)(else=0) into EXP_MA14.
+numeric EXP_MA15.
+numeric EXP_MA16.
+numeric EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *13India.
@@ -792,6 +915,27 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2013.
+*Need double check.
+recode mm29_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
+compute EXP_MA3=0.
+if mm29_3=1 or mm29_4=1 EXP_MA3=1.
+recode mm29_6(1=1)(else=0) into EXP_MA4.
+recode mm29_7(1=1)(else=0) into EXP_MA5.
+recode mm29_8(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm29_9=1 or mm29_10=1 EXP_MA7=1.
+numeric EXP_MA8.
+numeric EXP_MA9.
+numeric EXP_MA10.
+recode mm29_2(1=1)(else=0) into EXP_MA11.
+recode mm29_5(1=1)(else=0) into EXP_MA12.
+recode mm29_11(1=1)(else=0) into EXP_MA13.
+recode mm29_12(1=1)(else=0) into EXP_MA14.
+numeric EXP_MA15.
+numeric EXP_MA16.
+numeric EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *13Kenya.
@@ -799,6 +943,27 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2013.
+*Need double check.
+recode mm29_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
+compute EXP_MA3=0.
+if mm29_3=1 or mm29_4=1 EXP_MA3=1.
+recode mm29_6(1=1)(else=0) into EXP_MA4.
+recode mm29_7(1=1)(else=0) into EXP_MA5.
+recode mm29_8(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm29_9=1 or mm29_10=1 EXP_MA7=1.
+numeric EXP_MA8.
+numeric EXP_MA9.
+numeric EXP_MA10.
+recode mm29_2(1=1)(else=0) into EXP_MA11.
+recode mm29_5(1=1)(else=0) into EXP_MA12.
+recode mm29_11(1=1)(else=0) into EXP_MA13.
+recode mm29_12(1=1)(else=0) into EXP_MA14.
+numeric EXP_MA15.
+numeric EXP_MA16.
+numeric EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *13Nigeria.
@@ -806,6 +971,26 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2013.
+*Need double check.
+recode mm29_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
+recode mm29_3(1=1)(else=0) into EXP_MA3.
+recode mm29_5(1=1)(else=0) into EXP_MA4.
+recode mm29_6(1=1)(else=0) into EXP_MA5.
+recode mm29_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm29_8=1 or mm29_9=1 EXP_MA7=1.
+numeric EXP_MA8.
+numeric EXP_MA9.
+numeric EXP_MA10.
+recode mm29_2(1=1)(else=0) into EXP_MA11.
+recode mm29_4(1=1)(else=0) into EXP_MA12.
+recode mm29_10(1=1)(else=0) into EXP_MA13.
+recode mm29_11(1=1)(else=0) into EXP_MA14.
+numeric EXP_MA15.
+numeric EXP_MA16.
+numeric EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *13Pakistan.
@@ -813,6 +998,26 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2013.
+*Need double check.
+recode mm29_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
+recode mm29_3(1=1)(else=0) into EXP_MA3.
+recode mm29_5(1=1)(else=0) into EXP_MA4.
+recode mm29_6(1=1)(else=0) into EXP_MA5.
+recode mm29_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm29_8=1 or mm29_9=1 EXP_MA7=1.
+numeric EXP_MA8.
+numeric EXP_MA9.
+numeric EXP_MA10.
+recode mm29_2(1=1)(else=0) into EXP_MA11.
+recode mm29_4(1=1)(else=0) into EXP_MA12.
+recode mm29_10(1=1)(else=0) into EXP_MA13.
+recode mm29_11(1=1)(else=0) into EXP_MA14.
+numeric EXP_MA15.
+numeric EXP_MA16.
+numeric EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *13Tanzania.
@@ -820,6 +1025,26 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2013.
+*Need double check.
+recode mm29_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
+recode mm29_3(1=1)(else=0) into EXP_MA3.
+recode mm29_5(1=1)(else=0) into EXP_MA4.
+recode mm29_6(1=1)(else=0) into EXP_MA5.
+recode mm29_7(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm29_8=1 or mm29_9=1 EXP_MA7=1.
+numeric EXP_MA8.
+numeric EXP_MA9.
+numeric EXP_MA10.
+recode mm29_2(1=1)(else=0) into EXP_MA11.
+recode mm29_4(1=1)(else=0) into EXP_MA12.
+recode mm29_10(1=1)(else=0) into EXP_MA13.
+recode mm29_11(1=1)(else=0) into EXP_MA14.
+recode mm29_12(1=1)(else=0) into EXP_MA15.
+recode mm29_13(1=1)(else=0) into EXP_MA16.
+numeric EXP_MA17.
+numeric EXP_MA18.
 
 **************************************************************************************************************************************************.
 *13Uganda.
@@ -827,6 +1052,27 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2013.
+*Need double check.
+recode mm29_1(1=1)(else=0) into EXP_MA1.
+numeric EXP_MA2.
+compute EXP_MA3=0.
+if mm29_3=1 or mm29_4=1 EXP_MA3=1.
+recode mm29_6(1=1)(else=0) into EXP_MA4.
+recode mm29_7(1=1)(else=0) into EXP_MA5.
+recode mm29_8(1=1)(else=0) into EXP_MA6.
+compute EXP_MA7=0.
+if mm29_9=1 or mm29_10=1 EXP_MA7=1.
+numeric EXP_MA8.
+numeric EXP_MA9.
+numeric EXP_MA10.
+recode mm29_2(1=1)(else=0) into EXP_MA11.
+recode mm29_5(1=1)(else=0) into EXP_MA12.
+recode mm29_11(1=1)(else=0) into EXP_MA13.
+recode mm29_12(1=1)(else=0) into EXP_MA14.
+numeric EXP_MA15.
+numeric EXP_MA16.
+numeric EXP_MA17.
+numeric EXP_MA18.
 
 *****************************************************************************************************************************.
 *Labels.
