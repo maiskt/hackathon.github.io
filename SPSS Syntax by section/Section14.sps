@@ -1,8 +1,8 @@
 ﻿* Encoding: UTF-8.
 *Section 14.
 dataset close all.
-insert file = "C:/Users/mitchell.shuey/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
-cd "C:/Users/mitchell.shuey/Documents".
+insert file = "C:/Users/LENOVO/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
+cd "C:/Users/LENOVO/Documents".
 
 *2018---------------------------------------------------------------------***.
 
@@ -535,7 +535,7 @@ save outfile = "data/uga15.sav"
 DATASET ACTIVATE bng14.
 
 numeric MAIN_EARNER.
-recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
+recode DL21 (6 = -2) (else = copy) into FIN_SITUATION.
 
 numeric FIN_ATT1.
 numeric FIN_ATT2.
@@ -555,7 +555,7 @@ save outfile = "data/bng14.sav"
 DATASET ACTIVATE ind14.
 
 numeric MAIN_EARNER.
-recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
+recode DL21 (6 = -2) (else = copy) into FIN_SITUATION.
 
 numeric FIN_ATT1.
 numeric FIN_ATT2.
@@ -575,7 +575,7 @@ save outfile = "data/ind14.sav"
 DATASET ACTIVATE ida14.
 
 numeric MAIN_EARNER.
-recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
+recode DL21 (6 = -2) (else = copy) into FIN_SITUATION.
 
 numeric FIN_ATT1.
 numeric FIN_ATT2.
@@ -595,7 +595,7 @@ save outfile = "data/ida14.sav"
 DATASET ACTIVATE ken14.
 
 numeric MAIN_EARNER.
-recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
+recode DL21 (6 = -2) (else = copy) into FIN_SITUATION.
 
 numeric FIN_ATT1.
 numeric FIN_ATT2.
@@ -615,7 +615,7 @@ save outfile = "data/ken14.sav"
 DATASET ACTIVATE nga14.
 
 numeric MAIN_EARNER.
-recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
+recode DL21 (6 = -2) (else = copy) into FIN_SITUATION.
 
 numeric FIN_ATT1.
 numeric FIN_ATT2.
@@ -635,7 +635,7 @@ save outfile = "data/nga14.sav"
 DATASET ACTIVATE pak14.
 
 numeric MAIN_EARNER.
-recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
+recode DL21 (6 = -2) (else = copy) into FIN_SITUATION.
 
 numeric FIN_ATT1.
 numeric FIN_ATT2.
@@ -655,7 +655,7 @@ save outfile = "data/pak14.sav"
 DATASET ACTIVATE tza14.
 
 numeric MAIN_EARNER.
-recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
+recode DL21 (6 = -2) (else = copy) into FIN_SITUATION.
 
 numeric FIN_ATT1.
 numeric FIN_ATT2.
@@ -675,7 +675,7 @@ save outfile = "data/tza14.sav"
 DATASET ACTIVATE uga14.
 
 numeric MAIN_EARNER.
-recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
+recode DL21 (6 = -2) (else = copy) into FIN_SITUATION.
 
 numeric FIN_ATT1.
 numeric FIN_ATT2.

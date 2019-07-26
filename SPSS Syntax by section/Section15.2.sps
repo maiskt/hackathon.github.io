@@ -1,8 +1,8 @@
 ﻿* Encoding: UTF-8.
 *Section 15.2.
 dataset close all.
-insert file = "C:/Users/shueym/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
-cd "C:/Users/shueym/Documents".
+insert file = "C:/Users/LENOVO/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
+cd "C:/Users/LENOVO/Documents".
 
 *2018---------------------------------------------------------------------***.
 
@@ -93,7 +93,6 @@ numeric FIN_SHO7_1.
 recode DL4_1 (2=0)(else=copy)into MONEY_SOU1.
 *DL4_2 doesn't differentiate between in-country or out-of-country. 
 numeric MONEY_SOU2. 
- numeric MONEY_SOU2.
 *DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
  numeric MONEY_SOU3.
  numeric MONEY_SOU4.
@@ -129,7 +128,6 @@ numeric FIN_SHO7_1.
 recode DL4_1 (2=0)(else=copy)into MONEY_SOU1.
 *DL4_2 doesn't differentiate between in-country or out-of-country. 
 numeric MONEY_SOU2. 
- numeric MONEY_SOU2.
 *DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
  numeric MONEY_SOU3.
  numeric MONEY_SOU4.
