@@ -1966,7 +1966,7 @@ compute YEAR=2013.
 
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
-recode dg4 (1=1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
+recode dg4 (1=1)(2 thru 5=2)(6 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
 
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.

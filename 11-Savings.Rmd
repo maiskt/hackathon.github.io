@@ -18,6 +18,10 @@ Levels:
 + 1="Yes"
 + 0= "No"
 
+Notes:
+
+* This variable is only available for 2016 and 2017.
+
 ## SAVE_INFML
 Ever saved with informal channels: counts respondents  who have ever saved money with people they trust (e.g., family, friends, neighbors, shopkeepers, money guards, savings collectors) or with a self-help group or cooperative without membership.
 
@@ -31,35 +35,39 @@ Ever saved with formal institutions: counts respondents who have ever saved with
 
 Levels: 
 
-+ 1="Yes"
-+ 0= "No"
++ 1 = "Yes"
++ 0 = "No"
 
 ## SAVE_BANK
 Ever saved with a bank: counts respondents who have ever saved with a bank, or put money in savings using a smartphone application or the menu of a mobile phone.
 
 Levels: 
 
-+ 1="Yes"
-+ 0= "No"
++ 1 = "Yes"
++ 0 = "No"
 
 ## SAVE_MM
 Ever saved using mobile money: counts respondents who have ever saved using a mobile money service.
 
 Levels: 
 
-+ 1="Yes"
-+ 0= "No"
++ 1 = "Yes"
++ 0 = "No"
 
 ## SAVE_MFI
 Ever saved with a microfinance institution (MFI): counts respondents who have ever saved using an MFI.
 
 Levels: 
 
-+ 1="Yes"
-+ 0= "No"
++ 1 = "Yes"
++ 0 = "No"
 
 ## SAVE_COOP
 Ever saved with a cooperative: counts respondents who have ever saved using a cooperative.
+
+Our definition of a cooperative is any financial organization owned by its members, such as a credit union, or a Savings and Credit Co-operative Society (SACCO).
+
+The country definition, however, varies.
 
 Levels: 
 
