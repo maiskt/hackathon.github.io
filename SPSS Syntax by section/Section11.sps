@@ -54,15 +54,24 @@ compute Save=0.
 if ad9=1 Save=1.
 
 SAVE_KNOW_INTEREST
-SAVE_INFML
+compute SAVE_INFML = 0.
+if  AD9_11=1 OR ((FN6_2=2 OR FN6_3=2) and AD9_6=1) save_infml=1.
+
 SAVE_FORMAL
-SAVE_BANK
-SAVE_MM
-SAVE_MFI
-SAVE_COOP
-SAVE_GROUP
-SAVE_POST
-SAVE_CASH_PROPERTY
+if AD9_1=1 or AD9_12=1 or AD9_13=1 or AD9_14=1 or    AD9_4=1 or   AD9_2=1 or AD9_3=1 or (FN6_1=1 and FN6_3=1 and AD9_6=1) or 
+   AD9_5=1 save_formal=1.
+
+compute SAVE_BANK=0.
+if ad9_1=1 or ad9_12=1 or ad9_13=1 or ad9_14=1 save_bank=1.
+
+recode AD9.4 (1=1) (2=0) into SAVE_MM.
+recode AD9.5 (1=1) (2=0) into SAVE_MFI.
+numeric SAVE_COOP.
+numeric SAVE_GROUP.
+recode AD9.2 (1=1) (2=0) into SAVE_POST.
+
+compute SAVE_CASH_PROPERTY = 0.
+if AD9_7=1 or AD9_8=1 or AD9_9=1 OR AD9_10=1 save_cash_property=1.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -97,12 +106,14 @@ if fb22_5=1 or  fb22_8=1 or fb22_9=1 save_informal=1.
 compute SAVE_FORMAL = 0.
 if fb22_1=1 or fb22_2=1 or fb22_3=1 or fb22_4=1 save_formal=1.
 
-recode FF14_11 (1=1) (2=0) into SAVE_BANK.
-recode MM15_11 (1=1) (2=0) into SAVE_MM.
-numeric SAVE_MFI.
+compute save_bank = 0.
+if  FF14_11=1 or FB22_1 =1 SAVE_BANK=1.
+compute save_mm=1.
+if MM15_11=1 or FB22_2=1 SAVE_MM=1.
+recode FB22_4 (1=1) (2=0) into SAVE_MFI.
 numeric SAVE_COOP.
-numeric SAVE_GROUP.
-numeric SAVE_POST.
+recode FB22_5 (1=1) (2=0) into SAVE_GROUP.
+recode FB22_3 (1=1) (2=0) into  SAVE_POST.
 compute SAVE_CASH_PROPERTY = 0.
 if fb22_6=1 or fb22_10=1 or fb22_11=1 save_cash_property=1.
 
@@ -124,6 +135,27 @@ save outfile = "data/bng17.sav"
 
 DATASET ACTIVATE ind17.
 
+count Save= FB22_1 FB22_2 FB22_3 FB22_4 FB22_5 FB22_6 FB22_7 FB22_8 FB22_9 FB22_10 Fb22_11(1).
+recode save (1 thru highest=1) (else=0).
+
+compute Save_know_interest=0.
+or Fb23_7<99 or Fb23_7>99 or Fb23_8<99 or Fb23_8>99) Save_know_interest=1.
+compute save_informal=0.
+if fb22_8=1 or fb22_9=1 save_informal=1.
+compute save_formal=0.
+if fb22_1=1 or fb22_2=1 or fb22_3=1 or fb22_4=1 or fb22_5=1 or fb22_6=1 save_formal=1.
+
+compute save_bank = 0.
+if  FF14_11=1 or FB22_1 =1 SAVE_BANK=1.
+compute save_mm=1.
+if MM15_11=1 or FB22_2=1 SAVE_MM=1.
+compute SAVE_MFI=0.
+if (IFI10_7<7 or FB22_3=1) SAVE_MFI=1.
+numeric SAVE_COOP.
+recode FB22_5 (1=1) (2=0) into SAVE_GROUP.
+recode FB22_4 (1=1) (2=0) into SAVE_POST.
+compute SAVE_CASH_PROPERTY=0.
+if fb22_7=1 or fb22_10=1 or fb22_11=1 save_cash_property=1.
 
 
 numeric SAVE_BUSINESS.
@@ -144,6 +176,28 @@ save outfile = "data/ind17.sav"
 
 DATASET ACTIVATE ken17.
 
+count Save=FB22_1 FB22_2 FB22_3 FB22_4 FB22_5 FB22_6 FB22_7 FB22_8 FB22_9 FB22_10 Fb22_11(1).
+recode save (1 thru highest=1) (else=0).
+
+compute Save_know_interest=0.
+if (Fb23_1<99 or Fb23_1>99 or Fb23_2<99 or Fb23_2>99 or Fb23_3<99 or Fb23_3>99 or Fb23_4<99 or Fb23_4>99 or Fb23_5<99 or Fb23_5>99 or Fb23_6<99 or Fb23_6>99 
+or Fb23_7<99 or Fb23_7>99 or Fb23_8<99 or Fb23_8>99) Save_know_interest=1.
+compute save_informal=0.
+if fb22_5=1 or fb22_6=1 or fb22_8=1 or fb22_9=1 save_informal=1.
+compute save_formal=0.
+if fb22_1=1 or fb22_2=1 or fb22_3=1 or fb22_4=1 save_formal=1.
+
+compute save_bank = 0.
+if  FF14_11=1 or FB22_1 =1 SAVE_BANK=1.
+
+compute save_mm=1.
+if MM15_11=1 or FB22_2=1 SAVE_MM=1.
+*not 100% certain about these, went with keywords in description.
+recode FB22_4 (1=1) (2=0) into SAVE_MFI.
+recode FB22_3 (1=1) (2=0) into SAVE_COOP
+recode FB22_5 (1=1) (2=0) into SAVE_GROUP.
+numeric SAVE_POST.
+SAVE_CASH_PROPERTY
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -164,7 +218,17 @@ save outfile = "data/ken17.sav"
 
 DATASET ACTIVATE nga17.
 
+compute save_bank = 0.
+if  FF14_11=1 or FB22_1 =1 SAVE_BANK=1.
 
+compute save_mm=1.
+if MM15_11=1 or FB22_2=1 SAVE_MM=1.
+
+recode FB22_4 (1=1) (2=0) into SAVE_MFI.
+recode FB22_3 (1=1) (2=0) into SAVE_COOP.
+recode FB22_5 (1=1) (2=0) into SAVE_GROUP.
+numeric SAVE_POST.
+SAVE_CASH_PROPERTY.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -184,6 +248,18 @@ save outfile = "data/nga17.sav"
 
 DATASET ACTIVATE pak17.
 
+
+compute save_bank = 0.
+if  FF14_11=1 or FB22_1 =1 SAVE_BANK=1.
+
+compute save_mm=1.
+if MM15_11=1 or FB22_2=1 SAVE_MM=1.
+
+recode FB22_4 (1=1) (2=0) into SAVE_MFI.
+numeric SAVE_COOP.
+recode FB22_3 (1=1) (2=0) into SAVE_GROUP.
+numeric SAVE_POST.
+SAVE_CASH_PROPERTY.
 
 
 numeric SAVE_BUSINESS.
@@ -205,6 +281,17 @@ save outfile = "data/pak17.sav"
 DATASET ACTIVATE tza17.
 
 
+compute save_bank = 0.
+if  FF14_11=1 or FB22_1 =1 SAVE_BANK=1.
+
+compute save_mm=1.
+if MM15_11=1 or FB22_2=1 SAVE_MM=1.
+
+recode FB22_4 (1=1) (2=0) into SAVE_MFI.
+recode FB22_3 (1=1) (2=0) into SAVE_COOP.
+recode FB22_5 (1=1) (2=0) into SAVE_GROUP.
+numeric SAVE_POST.
+SAVE_CASH_PROPERTY.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -224,6 +311,18 @@ save outfile = "data/tza17.sav"
 
 DATASET ACTIVATE uga17.
 
+
+compute save_bank = 0.
+if  FF14_11=1 or FB22_1 =1 SAVE_BANK=1.
+
+compute save_mm=1.
+if MM15_11=1 or FB22_2=1 SAVE_MM=1.
+
+SAVE_MFI
+SAVE_COOP
+SAVE_GROUP
+SAVE_POST
+SAVE_CASH_PROPERTY
 
 
 numeric SAVE_BUSINESS.
@@ -347,7 +446,6 @@ save outfile = "data/nga16.sav"
 
 
 DATASET ACTIVATE pak16.
-
 
 
 recode FB26_1 (1=1) (2=0) into SAVE_BUSINESS.
