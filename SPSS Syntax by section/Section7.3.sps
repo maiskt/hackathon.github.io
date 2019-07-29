@@ -25,6 +25,25 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
+*Need double check.
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17.
+
 
 **************************************************************************************************************************************************.
 *18India.
@@ -52,6 +71,24 @@ numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
 
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17.
+
 **************************************************************************************************************************************************.
 *17Bangladesh.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -77,6 +114,24 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
+*Need double check.
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17.
 
 
 **************************************************************************************************************************************************.
@@ -105,6 +160,24 @@ numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
 
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17.
+
 
 **************************************************************************************************************************************************.
 *17Kenya.
@@ -131,6 +204,24 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
+
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17.
 
 
 **************************************************************************************************************************************************.
@@ -159,6 +250,24 @@ numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
 
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17.
+
 
 **************************************************************************************************************************************************.
 *17Paksitan.
@@ -185,6 +294,24 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
+
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17.
 
 
 **************************************************************************************************************************************************.
@@ -213,7 +340,23 @@ numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
 
-
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *17Uganda.
@@ -241,7 +384,23 @@ numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
 
-  
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17. 
 
 **************************************************************************************************************************************************.
 *16Bangladesh.
@@ -268,6 +427,24 @@ recode mm38_11(1=1)(else=0) into EXP_MA15.
 recode mm38_12(1=1)(else=0) into EXP_MA16.
 recode mm38_14(1=1)(else=0) into EXP_MA17.
 recode mm38_17(1=1)(else=0) into EXP_MA18.
+*Need double check.
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+recode mm40_8(1=1)(else=0) into EXPSV_MA8.
+recode mm40_9(1=1)(else=0) into EXPSV_MA9.
+recode mm40_10(1=1)(else=0) into EXPSV_MA10.
+recode mm40_11(1=1)(else=0) into EXPSV_MA11.
+recode mm40_12(1=1)(else=0) into EXPSV_MA12.
+recode mm40_13(1=1)(else=0) into EXPSV_MA13.
+recode mm40_14(1=1)(else=0) into EXPSV_MA14.
+recode mm40_15(1=1)(else=0) into EXPSV_MA15.
+recode mm40_16(1=1)(else=0) into EXPSV_MA16.
+recode mm40_17(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *16India.
@@ -294,6 +471,24 @@ recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
 recode mm38_15(1=1)(else=0) into EXP_MA17.
 recode mm38_18(1=1)(else=0) into EXP_MA18.
+*Need double check.
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+recode mm40_9(1=1)(else=0) into EXPSV_MA8.
+recode mm40_10(1=1)(else=0) into EXPSV_MA9.
+recode mm40_11(1=1)(else=0) into EXPSV_MA10.
+recode mm40_12(1=1)(else=0) into EXPSV_MA11.
+recode mm40_13(1=1)(else=0) into EXPSV_MA12.
+recode mm40_14(1=1)(else=0) into EXPSV_MA13.
+recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+recode mm40_16(1=1)(else=0) into EXPSV_MA15.
+recode mm40_17(1=1)(else=0) into EXPSV_MA16.
+recode mm40_18(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *16Indonesia.
@@ -320,6 +515,24 @@ recode mm38_11(1=1)(else=0) into EXP_MA15.
 recode mm38_12(1=1)(else=0) into EXP_MA16.
 recode mm38_14(1=1)(else=0) into EXP_MA17.
 recode mm38_17(1=1)(else=0) into EXP_MA18.
+*Need double check.
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+recode mm40_8(1=1)(else=0) into EXPSV_MA8.
+recode mm40_9(1=1)(else=0) into EXPSV_MA9.
+recode mm40_10(1=1)(else=0) into EXPSV_MA10.
+recode mm40_11(1=1)(else=0) into EXPSV_MA11.
+recode mm40_12(1=1)(else=0) into EXPSV_MA12.
+recode mm40_13(1=1)(else=0) into EXPSV_MA13.
+recode mm40_14(1=1)(else=0) into EXPSV_MA14.
+recode mm40_15(1=1)(else=0) into EXPSV_MA15.
+recode mm40_16(1=1)(else=0) into EXPSV_MA16.
+recode mm40_17(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *16Kenya.
@@ -346,6 +559,24 @@ recode mm38_11(1=1)(else=0) into EXP_MA15.
 recode mm38_12(1=1)(else=0) into EXP_MA16.
 recode mm38_14(1=1)(else=0) into EXP_MA17.
 recode mm38_17(1=1)(else=0) into EXP_MA18.
+*Need double check.
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+recode mm40_8(1=1)(else=0) into EXPSV_MA8.
+recode mm40_9(1=1)(else=0) into EXPSV_MA9.
+recode mm40_10(1=1)(else=0) into EXPSV_MA10.
+recode mm40_11(1=1)(else=0) into EXPSV_MA11.
+recode mm40_12(1=1)(else=0) into EXPSV_MA12.
+recode mm40_13(1=1)(else=0) into EXPSV_MA13.
+recode mm40_14(1=1)(else=0) into EXPSV_MA14.
+recode mm40_15(1=1)(else=0) into EXPSV_MA15.
+recode mm40_16(1=1)(else=0) into EXPSV_MA16.
+recode mm40_17(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *16Nigeria.
@@ -372,6 +603,24 @@ recode mm38_11(1=1)(else=0) into EXP_MA15.
 recode mm38_12(1=1)(else=0) into EXP_MA16.
 recode mm38_14(1=1)(else=0) into EXP_MA17.
 recode mm38_17(1=1)(else=0) into EXP_MA18.
+*Need double check.
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+recode mm40_8(1=1)(else=0) into EXPSV_MA8.
+recode mm40_9(1=1)(else=0) into EXPSV_MA9.
+recode mm40_10(1=1)(else=0) into EXPSV_MA10.
+recode mm40_11(1=1)(else=0) into EXPSV_MA11.
+recode mm40_12(1=1)(else=0) into EXPSV_MA12.
+recode mm40_13(1=1)(else=0) into EXPSV_MA13.
+recode mm40_14(1=1)(else=0) into EXPSV_MA14.
+recode mm40_15(1=1)(else=0) into EXPSV_MA15.
+recode mm40_16(1=1)(else=0) into EXPSV_MA16.
+recode mm40_17(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *16Pakistan.
@@ -398,6 +647,24 @@ recode mm38_11(1=1)(else=0) into EXP_MA15.
 recode mm38_12(1=1)(else=0) into EXP_MA16.
 recode mm38_14(1=1)(else=0) into EXP_MA17.
 recode mm38_17(1=1)(else=0) into EXP_MA18.
+*Need double check.
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+recode mm40_8(1=1)(else=0) into EXPSV_MA8.
+recode mm40_9(1=1)(else=0) into EXPSV_MA9.
+recode mm40_10(1=1)(else=0) into EXPSV_MA10.
+recode mm40_11(1=1)(else=0) into EXPSV_MA11.
+recode mm40_12(1=1)(else=0) into EXPSV_MA12.
+recode mm40_13(1=1)(else=0) into EXPSV_MA13.
+recode mm40_14(1=1)(else=0) into EXPSV_MA14.
+recode mm40_15(1=1)(else=0) into EXPSV_MA15.
+recode mm40_16(1=1)(else=0) into EXPSV_MA16.
+recode mm40_17(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *16Tanzania.
@@ -424,6 +691,24 @@ recode mm38_11(1=1)(else=0) into EXP_MA15.
 recode mm38_12(1=1)(else=0) into EXP_MA16.
 recode mm38_14(1=1)(else=0) into EXP_MA17.
 recode mm38_17(1=1)(else=0) into EXP_MA18.
+*Need double check.
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+recode mm40_8(1=1)(else=0) into EXPSV_MA8.
+recode mm40_9(1=1)(else=0) into EXPSV_MA9.
+recode mm40_10(1=1)(else=0) into EXPSV_MA10.
+recode mm40_11(1=1)(else=0) into EXPSV_MA11.
+recode mm40_12(1=1)(else=0) into EXPSV_MA12.
+recode mm40_13(1=1)(else=0) into EXPSV_MA13.
+recode mm40_14(1=1)(else=0) into EXPSV_MA14.
+recode mm40_15(1=1)(else=0) into EXPSV_MA15.
+recode mm40_16(1=1)(else=0) into EXPSV_MA16.
+recode mm40_17(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *16Uganda.
@@ -450,6 +735,24 @@ recode mm38_11(1=1)(else=0) into EXP_MA15.
 recode mm38_12(1=1)(else=0) into EXP_MA16.
 recode mm38_14(1=1)(else=0) into EXP_MA17.
 recode mm38_17(1=1)(else=0) into EXP_MA18.
+*Need double check.
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+recode mm40_8(1=1)(else=0) into EXPSV_MA8.
+recode mm40_9(1=1)(else=0) into EXPSV_MA9.
+recode mm40_10(1=1)(else=0) into EXPSV_MA10.
+recode mm40_11(1=1)(else=0) into EXPSV_MA11.
+recode mm40_12(1=1)(else=0) into EXPSV_MA12.
+recode mm40_13(1=1)(else=0) into EXPSV_MA13.
+recode mm40_14(1=1)(else=0) into EXPSV_MA14.
+recode mm40_15(1=1)(else=0) into EXPSV_MA15.
+recode mm40_16(1=1)(else=0) into EXPSV_MA16.
+recode mm40_17(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *15Bangladesh.
@@ -477,6 +780,25 @@ recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
 recode mm38_15(1=1)(else=0) into EXP_MA17.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
+*Need double check.
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm40_8=1 or mm40_9=1 EXPSV_MA8=1.
+recode mm40_10(1=1)(else=0) into EXPSV_MA9.
+recode mm40_11(1=1)(else=0) into EXPSV_MA10.
+recode mm40_12(1=1)(else=0) into EXPSV_MA11.
+recode mm40_13(1=1)(else=0) into EXPSV_MA12.
+recode mm40_14(1=1)(else=0) into EXPSV_MA13.
+recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+recode mm40_16(1=1)(else=0) into EXPSV_MA15.
+recode mm40_17(1=1)(else=0) into EXPSV_MA16.
+recode mm40_19(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *15India.
@@ -505,6 +827,25 @@ recode mm38_13(1=1)(else=0) into EXP_MA16.
 recode mm38_15(1=1)(else=0) into EXP_MA17.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm40_8=1 or mm40_9=1 EXPSV_MA8=1.
+recode mm40_10(1=1)(else=0) into EXPSV_MA9.
+recode mm40_11(1=1)(else=0) into EXPSV_MA10.
+recode mm40_12(1=1)(else=0) into EXPSV_MA11.
+recode mm40_13(1=1)(else=0) into EXPSV_MA12.
+recode mm40_14(1=1)(else=0) into EXPSV_MA13.
+recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+recode mm40_16(1=1)(else=0) into EXPSV_MA15.
+recode mm40_17(1=1)(else=0) into EXPSV_MA16.
+recode mm40_19(1=1)(else=0) into EXPSV_MA17.
+
 **************************************************************************************************************************************************.
 *15Indonesia.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -531,6 +872,25 @@ recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
 recode mm38_15(1=1)(else=0) into EXP_MA17.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
+
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm40_8=1 or mm40_9=1 EXPSV_MA8=1.
+recode mm40_10(1=1)(else=0) into EXPSV_MA9.
+recode mm40_11(1=1)(else=0) into EXPSV_MA10.
+recode mm40_12(1=1)(else=0) into EXPSV_MA11.
+recode mm40_13(1=1)(else=0) into EXPSV_MA12.
+recode mm40_14(1=1)(else=0) into EXPSV_MA13.
+recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+recode mm40_16(1=1)(else=0) into EXPSV_MA15.
+recode mm40_17(1=1)(else=0) into EXPSV_MA16.
+recode mm40_19(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *15Kenya.
@@ -559,6 +919,25 @@ recode mm38_13(1=1)(else=0) into EXP_MA16.
 recode mm38_15(1=1)(else=0) into EXP_MA17.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm40_8=1 or mm40_9=1 EXPSV_MA8=1.
+recode mm40_10(1=1)(else=0) into EXPSV_MA9.
+recode mm40_11(1=1)(else=0) into EXPSV_MA10.
+recode mm40_12(1=1)(else=0) into EXPSV_MA11.
+recode mm40_13(1=1)(else=0) into EXPSV_MA12.
+recode mm40_14(1=1)(else=0) into EXPSV_MA13.
+recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+recode mm40_16(1=1)(else=0) into EXPSV_MA15.
+recode mm40_17(1=1)(else=0) into EXPSV_MA16.
+recode mm40_19(1=1)(else=0) into EXPSV_MA17.
+
 **************************************************************************************************************************************************.
 *15Nigeria.
 rename variables QN=SBJNUM weight=WEIGHT.
@@ -585,6 +964,25 @@ recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
 recode mm38_15(1=1)(else=0) into EXP_MA17.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
+
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm40_8=1 or mm40_9=1 EXPSV_MA8=1.
+recode mm40_10(1=1)(else=0) into EXPSV_MA9.
+recode mm40_11(1=1)(else=0) into EXPSV_MA10.
+recode mm40_12(1=1)(else=0) into EXPSV_MA11.
+recode mm40_13(1=1)(else=0) into EXPSV_MA12.
+recode mm40_14(1=1)(else=0) into EXPSV_MA13.
+recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+recode mm40_16(1=1)(else=0) into EXPSV_MA15.
+recode mm40_17(1=1)(else=0) into EXPSV_MA16.
+recode mm40_19(1=1)(else=0) into EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *15Pakistan.
@@ -613,6 +1011,25 @@ recode mm38_13(1=1)(else=0) into EXP_MA16.
 recode mm38_15(1=1)(else=0) into EXP_MA17.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm40_8=1 or mm40_9=1 EXPSV_MA8=1.
+recode mm40_10(1=1)(else=0) into EXPSV_MA9.
+recode mm40_11(1=1)(else=0) into EXPSV_MA10.
+recode mm40_12(1=1)(else=0) into EXPSV_MA11.
+recode mm40_13(1=1)(else=0) into EXPSV_MA12.
+recode mm40_14(1=1)(else=0) into EXPSV_MA13.
+recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+recode mm40_16(1=1)(else=0) into EXPSV_MA15.
+recode mm40_17(1=1)(else=0) into EXPSV_MA16.
+recode mm40_19(1=1)(else=0) into EXPSV_MA17.
+
 **************************************************************************************************************************************************.
 *15Tanzania.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -640,6 +1057,24 @@ recode mm38_13(1=1)(else=0) into EXP_MA16.
 recode mm38_15(1=1)(else=0) into EXP_MA17.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm40_8=1 or mm40_9=1 EXPSV_MA8=1.
+recode mm40_10(1=1)(else=0) into EXPSV_MA9.
+recode mm40_11(1=1)(else=0) into EXPSV_MA10.
+recode mm40_12(1=1)(else=0) into EXPSV_MA11.
+recode mm40_13(1=1)(else=0) into EXPSV_MA12.
+recode mm40_14(1=1)(else=0) into EXPSV_MA13.
+recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+recode mm40_16(1=1)(else=0) into EXPSV_MA15.
+recode mm40_17(1=1)(else=0) into EXPSV_MA16.
+recode mm40_19(1=1)(else=0) into EXPSV_MA17.
 **************************************************************************************************************************************************.
 *15Uganda.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -667,6 +1102,25 @@ recode mm38_13(1=1)(else=0) into EXP_MA16.
 recode mm38_15(1=1)(else=0) into EXP_MA17.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
+recode mm40_1(1=1)(else=0) into EXPSV_MA1.
+recode mm40_2(1=1)(else=0) into EXPSV_MA2.
+recode mm40_3(1=1)(else=0) into EXPSV_MA3.
+recode mm40_4(1=1)(else=0) into EXPSV_MA4.
+recode mm40_5(1=1)(else=0) into EXPSV_MA5.
+recode mm40_6(1=1)(else=0) into EXPSV_MA6.
+recode mm40_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm40_8=1 or mm40_9=1 EXPSV_MA8=1.
+recode mm40_10(1=1)(else=0) into EXPSV_MA9.
+recode mm40_11(1=1)(else=0) into EXPSV_MA10.
+recode mm40_12(1=1)(else=0) into EXPSV_MA11.
+recode mm40_13(1=1)(else=0) into EXPSV_MA12.
+recode mm40_14(1=1)(else=0) into EXPSV_MA13.
+recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+recode mm40_16(1=1)(else=0) into EXPSV_MA15.
+recode mm40_17(1=1)(else=0) into EXPSV_MA16.
+recode mm40_19(1=1)(else=0) into EXPSV_MA17.
+
 **************************************************************************************************************************************************.
 *14Bangladesh.
 rename variables QN=SBJNUM weight=WEIGHT.
@@ -693,6 +1147,25 @@ recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
 recode mm30_15(1=1)(else=0) into EXP_MA17.
 numeric EXP_MA18.
+*Need double check.
+recode mm33_1(1=1)(else=0) into EXPSV_MA1.
+recode mm33_2(1=1)(else=0) into EXPSV_MA2.
+recode mm33_3(1=1)(else=0) into EXPSV_MA3.
+recode mm33_4(1=1)(else=0) into EXPSV_MA4.
+recode mm33_5(1=1)(else=0) into EXPSV_MA5.
+recode mm33_6(1=1)(else=0) into EXPSV_MA6.
+recode mm33_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm33_8=1 or mm33_9=1 EXPSV_MA8=1.
+recode mm33_10(1=1)(else=0) into EXPSV_MA9.
+recode mm33_11(1=1)(else=0) into EXPSV_MA10.
+recode mm33_12(1=1)(else=0) into EXPSV_MA11.
+recode mm33_13(1=1)(else=0) into EXPSV_MA12.
+recode mm33_14(1=1)(else=0) into EXPSV_MA13.
+recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+recode mm33_16(1=1)(else=0) into EXPSV_MA15.
+recode mm33_17(1=1)(else=0) into EXPSV_MA16.
+numeric EXPSV_MA17.
 
 **************************************************************************************************************************************************.
 *14India.
@@ -720,6 +1193,24 @@ recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
 recode mm30_15(1=1)(else=0) into EXP_MA17.
 numeric EXP_MA18.
+*Need double check.
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17. 
 
 **************************************************************************************************************************************************.
 *14Indonesia.
@@ -748,6 +1239,26 @@ recode mm30_13(1=1)(else=0) into EXP_MA16.
 recode mm30_15(1=1)(else=0) into EXP_MA17.
 numeric EXP_MA18.
 
+recode mm33_1(1=1)(else=0) into EXPSV_MA1.
+recode mm33_2(1=1)(else=0) into EXPSV_MA2.
+recode mm33_3(1=1)(else=0) into EXPSV_MA3.
+recode mm33_4(1=1)(else=0) into EXPSV_MA4.
+recode mm33_5(1=1)(else=0) into EXPSV_MA5.
+recode mm33_6(1=1)(else=0) into EXPSV_MA6.
+recode mm33_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm33_8=1 or mm33_9=1 EXPSV_MA8=1.
+recode mm33_10(1=1)(else=0) into EXPSV_MA9.
+recode mm33_11(1=1)(else=0) into EXPSV_MA10.
+recode mm33_12(1=1)(else=0) into EXPSV_MA11.
+recode mm33_13(1=1)(else=0) into EXPSV_MA12.
+recode mm33_14(1=1)(else=0) into EXPSV_MA13.
+recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+recode mm33_16(1=1)(else=0) into EXPSV_MA15.
+recode mm33_17(1=1)(else=0) into EXPSV_MA16.
+numeric EXPSV_MA17.
+
+
 **************************************************************************************************************************************************.
 *14Kenya.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -774,6 +1285,26 @@ recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
 recode mm30_15(1=1)(else=0) into EXP_MA17.
 numeric EXP_MA18.
+
+recode mm33_1(1=1)(else=0) into EXPSV_MA1.
+recode mm33_2(1=1)(else=0) into EXPSV_MA2.
+recode mm33_3(1=1)(else=0) into EXPSV_MA3.
+recode mm33_4(1=1)(else=0) into EXPSV_MA4.
+recode mm33_5(1=1)(else=0) into EXPSV_MA5.
+recode mm33_6(1=1)(else=0) into EXPSV_MA6.
+recode mm33_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm33_8=1 or mm33_9=1 EXPSV_MA8=1.
+recode mm33_10(1=1)(else=0) into EXPSV_MA9.
+recode mm33_11(1=1)(else=0) into EXPSV_MA10.
+recode mm33_12(1=1)(else=0) into EXPSV_MA11.
+recode mm33_13(1=1)(else=0) into EXPSV_MA12.
+recode mm33_14(1=1)(else=0) into EXPSV_MA13.
+recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+recode mm33_16(1=1)(else=0) into EXPSV_MA15.
+recode mm33_17(1=1)(else=0) into EXPSV_MA16.
+numeric EXPSV_MA17.
+
 
 **************************************************************************************************************************************************.
 *14Nigeria.
@@ -802,6 +1333,26 @@ recode mm30_13(1=1)(else=0) into EXP_MA16.
 recode mm30_15(1=1)(else=0) into EXP_MA17.
 numeric EXP_MA18.
 
+recode mm33_1(1=1)(else=0) into EXPSV_MA1.
+recode mm33_2(1=1)(else=0) into EXPSV_MA2.
+recode mm33_3(1=1)(else=0) into EXPSV_MA3.
+recode mm33_4(1=1)(else=0) into EXPSV_MA4.
+recode mm33_5(1=1)(else=0) into EXPSV_MA5.
+recode mm33_6(1=1)(else=0) into EXPSV_MA6.
+recode mm33_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm33_8=1 or mm33_9=1 EXPSV_MA8=1.
+recode mm33_10(1=1)(else=0) into EXPSV_MA9.
+recode mm33_11(1=1)(else=0) into EXPSV_MA10.
+recode mm33_12(1=1)(else=0) into EXPSV_MA11.
+recode mm33_13(1=1)(else=0) into EXPSV_MA12.
+recode mm33_14(1=1)(else=0) into EXPSV_MA13.
+recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+recode mm33_16(1=1)(else=0) into EXPSV_MA15.
+recode mm33_17(1=1)(else=0) into EXPSV_MA16.
+numeric EXPSV_MA17.
+
+
 **************************************************************************************************************************************************.
 *14Pakistan.
 rename variables QN=SBJNUM weight=WEIGHT.
@@ -829,6 +1380,26 @@ recode mm30_13(1=1)(else=0) into EXP_MA16.
 recode mm30_15(1=1)(else=0) into EXP_MA17.
 numeric EXP_MA18.
 
+recode mm33_1(1=1)(else=0) into EXPSV_MA1.
+recode mm33_2(1=1)(else=0) into EXPSV_MA2.
+recode mm33_3(1=1)(else=0) into EXPSV_MA3.
+recode mm33_4(1=1)(else=0) into EXPSV_MA4.
+recode mm33_5(1=1)(else=0) into EXPSV_MA5.
+recode mm33_6(1=1)(else=0) into EXPSV_MA6.
+recode mm33_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm33_8=1 or mm33_9=1 EXPSV_MA8=1.
+recode mm33_10(1=1)(else=0) into EXPSV_MA9.
+recode mm33_11(1=1)(else=0) into EXPSV_MA10.
+recode mm33_12(1=1)(else=0) into EXPSV_MA11.
+recode mm33_13(1=1)(else=0) into EXPSV_MA12.
+recode mm33_14(1=1)(else=0) into EXPSV_MA13.
+recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+recode mm33_16(1=1)(else=0) into EXPSV_MA15.
+recode mm33_17(1=1)(else=0) into EXPSV_MA16.
+numeric EXPSV_MA17.
+
+
 **************************************************************************************************************************************************.
 *14Tanzania.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -855,6 +1426,26 @@ recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
 recode mm30_15(1=1)(else=0) into EXP_MA17.
 numeric EXP_MA18.
+
+recode mm33_1(1=1)(else=0) into EXPSV_MA1.
+recode mm33_2(1=1)(else=0) into EXPSV_MA2.
+recode mm33_3(1=1)(else=0) into EXPSV_MA3.
+recode mm33_4(1=1)(else=0) into EXPSV_MA4.
+recode mm33_5(1=1)(else=0) into EXPSV_MA5.
+recode mm33_6(1=1)(else=0) into EXPSV_MA6.
+recode mm33_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm33_8=1 or mm33_9=1 EXPSV_MA8=1.
+recode mm33_10(1=1)(else=0) into EXPSV_MA9.
+recode mm33_11(1=1)(else=0) into EXPSV_MA10.
+recode mm33_12(1=1)(else=0) into EXPSV_MA11.
+recode mm33_13(1=1)(else=0) into EXPSV_MA12.
+recode mm33_14(1=1)(else=0) into EXPSV_MA13.
+recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+recode mm33_16(1=1)(else=0) into EXPSV_MA15.
+recode mm33_17(1=1)(else=0) into EXPSV_MA16.
+numeric EXPSV_MA17.
+
 
 **************************************************************************************************************************************************.
 *14Uganda.
@@ -908,6 +1499,24 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
+*Need double check.
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17. 
 
 **************************************************************************************************************************************************.
 *13India.
@@ -937,6 +1546,25 @@ numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
 
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17. 
+
+
 **************************************************************************************************************************************************.
 *13Kenya.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -965,6 +1593,25 @@ numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
 
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17. 
+
+
 **************************************************************************************************************************************************.
 *13Nigeria.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -991,6 +1638,25 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
+
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17. 
+
 
 **************************************************************************************************************************************************.
 *13Pakistan.
@@ -1019,6 +1685,25 @@ numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
 
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17. 
+
+
 **************************************************************************************************************************************************.
 *13Tanzania.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -1045,6 +1730,25 @@ recode mm29_12(1=1)(else=0) into EXP_MA15.
 recode mm29_13(1=1)(else=0) into EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
+
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17. 
+
 
 **************************************************************************************************************************************************.
 *13Uganda.
@@ -1073,6 +1777,25 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
+
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17. 
+
 
 *****************************************************************************************************************************.
 *Labels.
@@ -1111,5 +1834,41 @@ EXPSV_MA14	"Issue with MM agent solved: Agent committed fraud"
 EXPSV_MA15	"Issue with MM agent solved: Agent’s place was not secure/there were suspicious people at agent’s place"
 EXPSV_MA16	"Issue with MM agent solved: Agent shared your personal/account information with other people without your knowledge/permission"
 EXPSV_MA17	"Issue with MM agent solved: Agent refused to do the transaction because you did not have your ID".
+
+value labels EXP_MA1 1"Yes" 0"No".
+value labels EXP_MA2	1"Yes" 0"No".
+value labels EXP_MA3	1"Yes" 0"No".
+value labels EXP_MA4	1"Yes" 0"No".
+value labels EXP_MA5	1"Yes" 0"No".
+value labels EXP_MA6	1"Yes" 0"No".
+value labels EXP_MA7	1"Yes" 0"No".
+value labels EXP_MA8	1"Yes" 0"No".
+value labels EXP_MA9	1"Yes" 0"No".
+value labels EXP_MA10	1"Yes" 0"No".
+value labels EXP_MA11	1"Yes" 0"No".
+value labels EXP_MA12	1"Yes" 0"No".
+value labels EXP_MA13	1"Yes" 0"No".
+value labels EXP_MA14	1"Yes" 0"No".
+value labels EXP_MA15	1"Yes" 0"No".
+value labels EXP_MA16	1"Yes" 0"No".
+value labels EXP_MA17	1"Yes" 0"No".
+value labels EXP_MA18	1"Yes" 0"No".
+value labels EXPSV_MA1	1"Yes" 0"No".
+value labels EXPSV_MA2	1"Yes" 0"No".
+value labels EXPSV_MA3	1"Yes" 0"No".
+value labels EXPSV_MA4	1"Yes" 0"No".
+value labels EXPSV_MA5	1"Yes" 0"No".
+value labels EXPSV_MA6	1"Yes" 0"No".
+value labels EXPSV_MA7	1"Yes" 0"No".
+value labels EXPSV_MA8	1"Yes" 0"No".
+value labels EXPSV_MA9 1"Yes" 0"No".
+value labels EXPSV_MA10	1"Yes" 0"No".
+value labels EXPSV_MA11	1"Yes" 0"No".
+value labels EXPSV_MA12	1"Yes" 0"No".
+value labels EXPSV_MA13	1"Yes" 0"No".
+value labels EXPSV_MA14	1"Yes" 0"No".
+value labels EXPSV_MA15	1"Yes" 0"No".
+value labels EXPSV_MA16	1"Yes" 0"No".
+value labels EXPSV_MA17	1"Yes" 0"No".
 
 
