@@ -18,6 +18,10 @@ Levels:
 + 1="Yes"
 + 0= "No"
 
+Notes:
+
+* This variable is only available for 2016 and 2017.
+
 ## SAVE_INFML
 Ever saved with informal channels: counts respondents  who have ever saved money with people they trust (e.g., family, friends, neighbors, shopkeepers, money guards, savings collectors) or with a self-help group or cooperative without membership.
 
@@ -31,35 +35,39 @@ Ever saved with formal institutions: counts respondents who have ever saved with
 
 Levels: 
 
-+ 1="Yes"
-+ 0= "No"
++ 1 = "Yes"
++ 0 = "No"
 
 ## SAVE_BANK
 Ever saved with a bank: counts respondents who have ever saved with a bank, or put money in savings using a smartphone application or the menu of a mobile phone.
 
 Levels: 
 
-+ 1="Yes"
-+ 0= "No"
++ 1 = "Yes"
++ 0 = "No"
 
 ## SAVE_MM
 Ever saved using mobile money: counts respondents who have ever saved using a mobile money service.
 
 Levels: 
 
-+ 1="Yes"
-+ 0= "No"
++ 1 = "Yes"
++ 0 = "No"
 
 ## SAVE_MFI
 Ever saved with a microfinance institution (MFI): counts respondents who have ever saved using an MFI.
 
 Levels: 
 
-+ 1="Yes"
-+ 0= "No"
++ 1 = "Yes"
++ 0 = "No"
 
 ## SAVE_COOP
 Ever saved with a cooperative: counts respondents who have ever saved using a cooperative.
+
+Our definition of a cooperative is any financial organization owned by its members, such as a credit union, or a Savings and Credit Co-operative Society (SACCO).
+
+The country definition, however, varies.
 
 Levels: 
 
@@ -67,7 +75,7 @@ Levels:
 + 0= "No"
 
 ## SAVE_GROUP
-Ever saved with a saving groups.
+Ever saved with a saving group such as a Village Savings and Loan Association.
 
 Levels: 
 
@@ -83,12 +91,16 @@ Levels:
 + 0= "No"
 
 ## SAVE_CASH_PROPERTY
-Ever saved wiht cash or property: counts respondents who save through buying something (e.g., agricultural inputs, livestock, gold or other valuable things) or in cash at home or on themselves. 
+Ever saved with cash or property: counts respondents who save through buying something (e.g., agricultural inputs, livestock, gold or other valuable things) or in cash at home or on themselves. 
 
 Levels: 
 
 + 1="Yes"
 + 0= "No"
+
+Notes:
+
+* In 2013, respondents were able to say that they saved by "buying gold, jewelery, other precious items", but not other assets.
 
 ## SAVE_BUSINESS
 Save for business: counts respondents who save to start or expand their own business.
@@ -122,8 +134,8 @@ Levels:
 + 1="Yes"
 + 0= "No"
 
-## SAVE_FAMILY
-Save for family: counts respondents who save to protect their families from poverty and crime or protect their belongings.
+## SAVE_SECURITY
+Save for security: counts respondents who save to protect their families from poverty and crime or protect their belongings.
 
 Levels: 
 

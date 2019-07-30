@@ -67,8 +67,6 @@ FIN_HEA8 | Friends and family reply on me to help with their finances
 FIN_HEA9 | Have financial security: counts respondents who have savings or assets that will keep them financially secure in the future. 
 FIN_HEA10 | Have skills and knowledge to manage finances well.
 
-
-
 Levels:
 
 + 1=Strongly disagree
@@ -79,11 +77,15 @@ Levels:
 
 Notes:
 
-* 
+* Only FIN_HEA8 and FIN_HEA10 exist for 2015-2018.
+*     For FIN_HEA8 in 2015 and 2016, a difference in wording was that the respondent was asked if "friends and family rely *heavily*" on them. Since this is more specific, respondents may have agreed less strongly.
+* Otherwise, these variables only exist for 2017 and 2018 data.
+
 
 ## FIN_SHO
 
-The following variables ask respondents if they have experienced any of the following emergency events which would be considered a "shock" to their lives and/or finances.
+The following variables ask respondents if they have experienced any of the following emergency events which would be considered a "shortage" in their lives and finances.
+
 Variable | Description
 -------- | -----
 FIN_SHO1 | Household gone without food: counts respondents whose households have ever gone without enough food to eat in the last 6 months. 
@@ -101,7 +103,7 @@ Levels:
 
 Notes:
 
-*
+* These variables only exist for 2016 and 2015.
 
 
 ## MONEY_SOU
