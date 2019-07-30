@@ -1159,6 +1159,7 @@ recode save (1 thru highest=1) (else=0).
 
 count SAVE_KNOW_INTEREST = FL14_1 to FL14_7 (1).
 recode SAVE_KNOW_INTEREST (1 thru hi = 1)(else = 0).
+
 numeric SAVE_INFML.
 numeric SAVE_FORMAL.
 
@@ -1260,6 +1261,9 @@ recode save (1 thru highest=1) (else=0).
 
 count SAVE_KNOW_INTEREST= FL14_1 to FL14_8 (1).
 recode SAVE_KNOW_INTEREST(1 thru hi = 1) (else = 0).
+
+numeric SAVE_INFML.
+numeric SAVE_FORMAL.
 
 count bank_save=ff19_24  ff19_25 ff19_26 fl13_1 (1).
 recode bank_save (1 thru highest=1)(else=0).
@@ -1504,19 +1508,21 @@ count SAVE_KNOW_INTEREST = SI2_1 to SI2_16 (1).
 recode SAVE_KNOW_INTEREST (1 thru hi = 1) (else = 0).
 
 
-SAVE_INFML.
-SAVE_FORMAL.
-SAVE_BANK.
+numeric SAVE_INFML.
+numeric SAVE_FORMAL.
+*Bank and MFI are connected, so can't use either.
+numeric SAVE_BANK.
 
 count mm_save_money=MM16U MM16V (1).
 recode mm_save_money (1 thru highest=1)(else=0).
 
-SAVE_MFI.
-SAVE_COOP.
-SAVE_GROUP.
-SAVE_POST.
-*buying in-kind 
-SAVE_CASH_PROPERTY.
+numeric SAVE_MFI.
+recode SI1_6 (1=1)(2=0) into SAVE_COOP.
+recode IFI1_3 (1=1)(2=0) into SAVE_GROUP.
+numeric SAVE_POST.
+*buying in-kind is technically through "gold, precious metals, jewelery".
+compute SAVE_CASH_PROPERTY = 0.
+if SI1_3 = 1 or SI1_13 = 1 SAVE_CASH_PROPERTY = 1.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -1536,7 +1542,31 @@ save outfile = "data/bng13.sav"
 
 DATASET ACTIVATE ind13.
 
+count SAVE = FB7_3_1 to FB7_3_17 (1).
+recode SAVE (1 thru hi = 1) (else = 0).
 
+numeric SAVE_KNOW_INTEREST.
+numeric SAVE_FORMAL.
+numeric SAVE_INFML.
+* FB7.3.1 includes cooperatives in "bank" definition.
+compute SAVE_BANK = 1.
+if FF16_21 = 1 SAVE_BANK = 1.
+
+count mm_save_money=MM16_21 MM16_22 FB7_3_6 (1).
+recode mm_save_money (1 thru highest=1)(else=0).
+
+recode FB7_3_2 (1=1) (2=0) into SAVE_MFI.
+
+
+numeric SAVE_COOP.
+
+recode FB7_3_3 (1=1)(2=0) into SAVE_GROUP.
+
+recode FB7_3_7 (1=1)(2=0) into SAVE_POST.
+
+
+*No cash/asset option, only gold.
+numeric SAVE_CASH_PROPERTY.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -1556,7 +1586,18 @@ save outfile = "data/ind13.sav"
 
 DATASET ACTIVATE ken13.
 
+count SAVE= NP7_1T to NP7_13T (1).
+numeric SAVE_KNOW_INTEREST.
+numeric SAVE_FORMAL.
+numeric SAVE_INFML.
+recode FFI16U (1=1)(0=0) into SAVE_BANK.
+recode MM16U (1=1)(0=0) into SAVE_MM.
 
+numeric SAVE_MFI.
+numeric SAVE_COOP.
+numeric SAVE_GROUP.
+numeric SAVE_POST.
+numeric SAVE_CASH_PROPERTY.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -1582,7 +1623,19 @@ recode SAVE (1 thru hi = 1) (else = 0).
 count SAVE_KNOW_INTEREST = SI2_1 to SI2_16 (1).
 recode SAVE_KNOW_INTEREST (1 thru hi = 1) (else = 0).
 
+numeric SAVE_FORMAL.
+*SI1.4?
+numeric SAVE_INFML.
 
+recode SI1_6 (1=1)(2=0) into SAVE_COOP.
+*Village Saving/Loan mentioned, but not specifically savings.
+numeric SAVE_GROUP.
+
+*Bank+MFI combined.
+numeric SAVE_MFI.
+numeric SAVE_POST.
+compute SAVE_CASH_PROPERTY = 0.
+if SI1_3 = 1 or SI1_13 = 1 SAVE_CASH_PROPERTY = 1.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -1608,7 +1661,20 @@ recode SAVE (1 thru hi = 1) (else = 0).
 count SAVE_KNOW_INTEREST = SI2_1 to SI2_16 (1).
 recode SAVE_KNOW_INTEREST (1 thru hi = 1) (else = 0).
 
+numeric SAVE_FORMAL.
+numeric SAVE_INFML.
 
+recode FFI16U (else=copy) into SAVE_BANK.
+
+count mm_save_money=MM16U MM16V (1).
+recode mm_save_money (1 thru highest=1)(else=0).
+
+numeric SAVE_MFI.
+numeric SAVE_GROUP.
+recode SI1_6 (1=1) (2=0) into SAVE_COOP.
+numeric SAVE_POST.
+compute SAVE_CASH_PROPERTY =0.
+if SI1_3 = 1 or SI1_13 = 1 SAVE_CASH_PROPERTY = 1.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -1628,7 +1694,21 @@ save outfile = "data/pak13.sav"
 
 DATASET ACTIVATE tza13.
 
+numeric SAVE.
+numeric SAVE_KNOW_INTEREST.
+numeric SAVE_FORMAL.
+numeric SAVE_INFML.
 
+count bank_save=ffi16_21  ffi16_22(1).
+recode bank_save (1 thru highest=1)(else=0).
+
+count mm_save_money=MM16_21 MM16_22 (1).
+recode mm_save_money (1 thru highest=1)(else=0).
+numeric SAVE_MFI.
+numeric SAVE_GROUP.
+numeric SAVE_COOP.
+numeric SAVE_POST.
+numeric SAVE_CASH_PROPERTY.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
@@ -1648,7 +1728,20 @@ save outfile = "data/tza13.sav"
 
 DATASET ACTIVATE uga13.
 
+numeric SAVE.
+numeric SAVE_KNOW_INTEREST.
+numeric SAVE_FORMAL.
+numeric SAVE_INFML.
 
+recode FFI16U (else=copy) into SAVE_BANK.
+
+count mm_save_money=MM16U MM16V (1).
+recode mm_save_money (1 thru highest=1)(else=0).
+numeric SAVE_MFI.
+numeric SAVE_GROUP.
+numeric SAVE_COOP.
+numeric SAVE_POST.
+numeric SAVE_CASH_PROPERTY.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
