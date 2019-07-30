@@ -766,12 +766,12 @@ save outfile = "data/bng13.sav"
 
 
 DATASET ACTIVATE ind13.
-
-recode FFI12_1(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into BBKM.
+*Bank+MFI combined.
+numeric BBKM.
 recode FFI12_2(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into ATMKM.
 numeric MMKM.
 numeric BAKM.
-numeric RSKM.
+recode FFI12_5 (1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into RSKM.
 numeric MFIKM.
 numeric GRPKM.
 numeric INFMLKM.
@@ -789,17 +789,23 @@ save outfile = "data/ind13.sav"
 
 DATASET ACTIVATE ken13.
 
+*Bank and MFI are combined.
 numeric BBKM.
-numeric ATMKM.
+recode FFI12_2(1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into ATMKM.
+
 numeric MMKM.
 numeric BAKM.
-numeric RSKM.
+recode FFI12_5 (1 thru 2 = 1)(3=2)(3 thru 6=3)(99=99) into RSKM.
 numeric MFIKM.
 numeric GRPKM.
 numeric INFMLKM.
 numeric POSTKM.
 
-numeric POS.
+compute POS = 0.
+if (BBKM = 99 or ATMKM = 99 or MMKM = 99 or BAKM = 99 or RSKM = 99 or MFIKM = 99 or GRPKM = 99 or INFMLKM = 99 or POSTKM = 99) POS = -2.
+if (BBKM = 3 or ATMKM = 3 or MMKM = 3 or BAKM = 3 or RSKM = 3 or MFIKM = 3 or GRPKM = 3 or INFMLKM = 3 or POSTKM = 3) POS = 3.
+if (BBKM = 2 or ATMKM = 2 or MMKM = 2 or BAKM = 2 or RSKM = 2 or MFIKM = 2 or GRPKM = 2 or INFMLKM = 2 or POSTKM = 2) POS = 2.
+if (BBKM = 1 or ATMKM = 1 or MMKM = 1 or BAKM = 1 or RSKM = 1 or MFIKM = 1 or GRPKM = 1 or INFMLKM = 1 or POSTKM = 1) POS = 1.
 
 save outfile = "data/ken13.sav"
 /keep= SBJNUM COUNTRY YEAR POS BBKM ATMKM MMKM BAKM RSKM MFIKM GRPKM INFMLKM POSTKM  .
