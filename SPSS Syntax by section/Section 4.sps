@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 **********************.
 *Bangladesh 2018.
 **********************.
@@ -567,8 +567,8 @@ count PHONE_INTERNET=MT17_5 (1 thru 5).
 count PHONE_MVG=MT17_6 (1 thru 5).
 count PHONE_TRANSACT=MT17_7 (1 thru 5).
 count PHONE_SOCIAL=MT17_9 (1 thru 5).
-count PHONE_PICTURE=MT17_10 (1 thru 5).
-count PHONE_APP=MT17_11 (1 thru 5).
+count PHONE_PICTURE=MT17_11 (1 thru 5).
+count PHONE_APP=MT17_10 (1 thru 5).
 count PHONE_MMS=MT17_4 (1 thru 5).
 recode MT17_8 (1 thru 5=1)(else=0) into PHONE_VIDEO.
 recode MT17_12 (1 thru 5=1)(else=0) into PHONE_TSCREEN.
