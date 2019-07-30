@@ -1,9 +1,5 @@
 # Proximity to points-of-service for financial institutions
 
-Notes:
-
-* Data unavailable for this section in Kenya 2013 data.
-
 ## POS
 Distance from residence to a point of service(POS): measures the approximate distance from the respondent's home to a bank branch, an ATM, a mobile money agent, a bank agent, a retail store/kiosk with over-the-counter mobile money services, MFI, SACCO or a semi-formal/informal financial or savings group. 
 
@@ -12,7 +8,7 @@ Levels:
  + 1 = Less than 1 km
  + 2 = Between 1 and 5 km
  + 3 = Greater than 5 km
- + 99 = Don't know
+ + -2 = Don't know
  
 ## BBKM
 Distance from residence to a bank branch: measures the distance from the respondent'home to a bank branch.
@@ -26,7 +22,7 @@ Levels:
  
  Notes:
  
- * Data unavailable for all 2014 and 2013 datasets.
+ * Data unavailable for all 2013 and 2014 datasets.
  
 ## ATMKM
 Distance from residence to an ATM: measures the distance from the respondent's home to an ATM.
@@ -82,7 +78,7 @@ Levels:
  
  Notes:
  
- * Data not available for India in 2017 and 2013.
+ * Data not available for India in 2017.
  
  
 ## MFIKM
