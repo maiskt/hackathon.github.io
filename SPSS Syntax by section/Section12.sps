@@ -1230,6 +1230,8 @@ save outfile = "data/ind13.sav"
 
 DATASET ACTIVATE ken13.
 
+
+*NP7_ P & Q?.
 numeric INSURANCE.
 numeric INSUR_MEDICAL.
 numeric INSUR_LIFE.
