@@ -648,6 +648,14 @@ recode mm42_2(1=1)(2=2)(9=-2) into OPN_MM3.
 recode mm42_3(1=1)(2=2)(9=-2) into OPN_MM4.
 recode mm42_4(1=1)(2=2)(9=-2) into OPN_MM5.
 recode mm42_6(1=1)(2=2)(9=-2) into OPN_MM6.
+*Need double check.
+count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5(1).
+recode AWARE_MMP(1 thru highest=1).
+*Need double check.
+count ACCESS_MMP=mmp2_1 mmp2_2 mmp2_3 mmp2_4 mmp2_5(1).
+recode ACCESS_MMP(1 thru highest=1).
+*Need double check.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *15Tanzania.
@@ -669,7 +677,15 @@ recode mm42_2(1,2=1)(3,4=2)(5=-2) into OPN_MM3.
 recode mm42_3(1,2=1)(3,4=2)(5=-2) into OPN_MM4.
 recode mm42_4(1,2=1)(3,4=2)(5=-2) into OPN_MM5.
 recode mm42_6(1,2=1)(3,4=2)(5=-2) into OPN_MM6.
-
+*Need double check.
+count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7(1).
+recode AWARE_MMP(1 thru highest=1).
+*Need double check.
+count ACCESS_MMP=mmp2_1 mmp2_2 mmp2_3 mmp2_4 mmp2_5 mmp2_6 mmp2_7(1).
+recode ACCESS_MMP(1 thru highest=1).
+*Need double check.
+count REGISTERED_MMP=mmp4_1 mmp4_2 mmp4_3 mmp4_4 mmp4_5 mmp4_6 mmp4_7(1).
+recode REGISTERED_MMP(1 thru highest=1).
 **************************************************************************************************************************************************.
 *15Uganda.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -690,7 +706,15 @@ recode mm42_2(1,2=1)(3,4=2)(5=-2) into OPN_MM3.
 recode mm42_3(1,2=1)(3,4=2)(5=-2) into OPN_MM4.
 recode mm42_4(1,2=1)(3,4=2)(5=-2) into OPN_MM5.
 recode mm42_6(1,2=1)(3,4=2)(5=-2) into OPN_MM6.
-
+*Need double check.
+count AWARE_MMP=mmp1_1 mmp1_2(1).
+recode AWARE_MMP(1 thru highest=1).
+*Need double check.
+count ACCESS_MMP=mmp2_1 mmp2_2(1).
+recode ACCESS_MMP(1 thru highest=1).
+*Need double check.
+count REGISTERED_MMP=mmp4_1 mmp4_2(1).
+recode REGISTERED_MMP(1 thru highest=1).
 **************************************************************************************************************************************************.
 *14Bangladesh.
 rename variables QN=SBJNUM weight=WEIGHT.
@@ -711,6 +735,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *14India.
@@ -732,6 +760,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *14Indonesia.
@@ -753,6 +785,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *14Kenya.
@@ -774,6 +810,18 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+count AWARE_MMP=mm44_1 mm44_2 mm44_3 mm44_4 mm44_5 mm44_6 mm44_7 mm44_8 mm44_9 mm44_10
+                                  mm44_11 mm44_12 mm44_13 mm44_14 mm44_15
+                                  mm45_1 mm45_2 mm45_3 mm45_4 mm45_5 mm45_6 mm45_7 mm45_8 mm45_9 mm45_10
+                                  mm45_11 mm45_12 mm45_13 mm45_14 mm45_15(1).
+recode AWARE_MMP(1 thru highest=1).
+*Need double check.
+count ACCESS_MMP=mm46_1 mm46_2 mm46_3 mm46_4 mm46_5 mm46_6 mm46_7 mm46_8 mm46_9 mm46_10
+                                   mm46_11 mm46_12 mm46_13 mm46_14 mm46_15(1 thru 5).
+recode ACCESS_MMP(1 thru highest=1).
+*Need double check.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *14Nigeria.
@@ -795,6 +843,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *14Pakistan.
@@ -816,6 +868,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *14Tanzania.
@@ -837,6 +893,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *14Uganda.
@@ -858,6 +918,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *13Bangladesh.
@@ -879,6 +943,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *13India.
@@ -900,6 +968,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *13Kenya.
@@ -921,6 +993,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *13Nigeria.
@@ -942,6 +1018,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *13Pakistan.
@@ -963,6 +1043,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *13Tanzania.
@@ -984,6 +1068,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
 *13Uganda.
@@ -1005,7 +1093,44 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
+*Need double check.
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
 
 *****************************************************************************************************************************.
 *Labels.
+variable labels
+ACTION_MM1	"Difficulty or ease to perform the action without assistance: Open the mobile money menu"
+ACTION_MM2	"Difficulty or ease to perform the action without assistance: Find a particular menu option, such as send money"
+ACTION_MM3	"Difficulty or ease to perform the action without assistance: Complete a transaction"
+ACTION_MM4	"Difficulty or ease to perform the action without assistance: Correct an error in the amount of money to send"
+ACTION_MM5	"Difficulty or ease to perform the action without assistance: Correct an error in the amount or phone number for a transaction recipient"
+ACTION_MM6	"Difficulty or ease to perform the action without assistance: Reverse or cancel a transaction"
+OPN_MM1	"Mobile money allows you to keep money on your phone"
+OPN_MM2	"Mobile money allows you to get a loan"
+OPN_MM3	"You can deposit and withdraw in cash using mobile money"
+OPN_MM4	"You can send money to someone using mobile money"
+OPN_MM5	"You can save money on a mobile phone"
+OPN_MM6	"You can pay for goods and services through your mobile phone"
+AWARE_MMP	"Aware of non-MM mobile-based financial pruducts"
+ACCESS_MMP	"Eved used non-MM mobile-based financial products"
+REGISTERED_MMP	"Have account of non-MM mobile-based financial pruducts".
+
+value labels ACTION_MM1 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM2 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM3 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM4 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM5 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM6 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels OPN_MM1 1"Yes" 2"No" -2"DK".
+value labels OPN_MM2 1"Yes" 2"No" -2"DK".
+value labels OPN_MM3 1"Yes" 2"No" -2"DK".
+value labels OPN_MM4 1"Yes" 2"No" -2"DK".
+value labels OPN_MM5 1"Yes" 2"No" -2"DK".
+value labels OPN_MM6 1"Yes" 2"No" -2"DK".
+value labels AWARE_MMP 1"Yes" 0"No".
+value labels ACCESS_MMP 1"Yes" 0"No".
+value labels REGISTERED_MMP 1"Yes" 0"No".
+
 
