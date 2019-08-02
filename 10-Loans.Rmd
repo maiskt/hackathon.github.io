@@ -95,6 +95,11 @@ Levels:
 + 1="Yes"
 + 0= "No"
 
+Notes:
+
+* Data is unavailable for 2017.
+
+
 ## LOAN_PAWN
 Ever borrowed money from a pawnshop.
 
@@ -102,6 +107,11 @@ Levels:
 
 + 1="Yes"
 + 0= "No"
+
+Notes:
+
+* Data is unavailable for 2017.
+
 
 ## LOAN_GROUP
 Ever borrowed money from a village savings and loan association.
