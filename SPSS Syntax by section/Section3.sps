@@ -604,8 +604,8 @@ if (digital_adv=1) DIGITAL_LITERACY_INDEX=3.
 
 compute GENDER=dg2.
 
-rename variables dg3=MARRIAGE.
-recode MARRIAGE(1=1)(2,3=2)(4=3)(5=4)(96=96)(99=-2).
+compute MARRIAGE=dg3.
+recode MARRIAGE(99=-2).
 
 compute HAVE_CHILDREN=0.
 if (dg8b>0 and dg8b<99) or (dg8c>0 and dg8c<99) HAVE_CHILDREN=1.
@@ -1592,8 +1592,7 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 
-rename variables dl1=EMPLOYMENT.
-recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+recode dl1(4=5)(5=6)(6=7)(7=8)(8=9)(9=10)(11=-2)(10=96)(else=copy) into EMPLOYMENT.
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1 or
@@ -1643,8 +1642,7 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 
-rename variables dl1=EMPLOYMENT.
-recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+recode dl1(4=5)(5=6)(6=7)(7=8)(8=9)(9=10)(11=-2)(10=96)(else=copy) into EMPLOYMENT.
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
@@ -1693,8 +1691,7 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 
-rename variables dl1=EMPLOYMENT.
-recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+recode dl1(4=5)(5=6)(6=7)(7=8)(8=9)(9=10)(11=-2)(10=96)(else=copy) into EMPLOYMENT.
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
@@ -1742,8 +1739,7 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 
-rename variables dl1=EMPLOYMENT.
-recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+recode dl1(4=5)(5=6)(6=7)(7=8)(8=9)(9=10)(11=-2)(10=96)(else=copy) into EMPLOYMENT.
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
@@ -1792,8 +1788,7 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 
-rename variables dl1=EMPLOYMENT.
-recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+recode dl1(4=5)(5=6)(6=7)(7=8)(8=9)(9=10)(11=-2)(10=96)(else=copy) into EMPLOYMENT.
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
@@ -1842,8 +1837,7 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 
-rename variables dl1=EMPLOYMENT.
-recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+recode dl1(4=5)(5=6)(6=7)(7=8)(8=9)(9=10)(11=-2)(10=96)(else=copy) into EMPLOYMENT.
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
@@ -1892,8 +1886,7 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 
-rename variables dl1=EMPLOYMENT.
-recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+recode dl1(4=5)(5=6)(6=7)(7=8)(8=9)(9=10)(11=-2)(10=96)(else=copy) into EMPLOYMENT.
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
@@ -1944,8 +1937,7 @@ recode MARRIAGE(1=1)(2,3=2)(4,5=3)(6=4)(7=5)(8=96)(9=-2).
 numeric HAVE_CHILDREN.
 numeric SCHOOL_FEE.
 
-rename variables dl1=EMPLOYMENT.
-recode EMPLOYMENT(4=5)(5=6)(6=7)(8=9)(9=10)(11=-2)(10=96).
+recode dl1(4=5)(5=6)(6=7)(7=8)(8=9)(9=10)(11=-2)(10=96)(else=copy) into EMPLOYMENT.
 
 compute INVOL_AGRI=0.
 if DL2=1 or DL2=2 or DL3_1=1 or DL3_2=1
