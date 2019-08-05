@@ -246,16 +246,11 @@ recode ACTIVE_BANK_LOAN (1 thru highest=1).
 numeric ACTIVE_BANK_AIRTIME.
 *************************************************************************************************************************************.
 *Section 6.3.
-compute R_NOBANK1=0.
-if ff3_1=1 R_NOBANK1=1.
-compute R_NOBANK2=0.
-if ff3_2=1 R_NOBANK2=1.
-compute R_NOBANK3=0.
-if ff3_3=1 R_NOBANK3=1.
-compute R_NOBANK4=0.
-if ff3_5=1 R_NOBANK4=1.
-compute R_NOBANK5=0.
-if ff3_6=1 R_NOBANK5=1.
+numeric R_NOBANK1.
+numeric R_NOBANK2.
+numeric R_NOBANK3.
+numeric R_NOBANK4.
+numeric R_NOBANK5.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -278,7 +273,161 @@ numeric USE_BANK_ONLINE.
 numeric USE_BANK_MOBILE.
 numeric USE_BANK_AGENT.
 numeric USE_BANK_WALLET.
+*************************************************************************************************************************************.
+*Section 7.1.
+compute AWARE_MM=0.
+if bi_e24d AWARE_MM=1.
 
+numeric AWARE_MM_PROVIDER.
+numeric AWARE_NONUSER_MM.
+
+compute ACCESS_MM=0.
+if BI_E25D=1 ACCESS_MM=1.
+
+compute REGISTERED_MM=0.
+if BI_E26D=1 REGISTERED_MM=1.
+
+compute ACTIVE_MM=0.
+if (BI_E32A=1 and GF3B<=2) ACTIVE_MM=1.
+
+compute ACTIVE30_MM=0.
+if (BI_E32A=1 and GF3B=1) ACTIVE30_MM=1.
+
+compute INACTIVE_MM=0.
+if registered_mm=1 and active_mm=0 INACTIVE_MM=1.
+
+compute DORMANT_MM=0.
+if registered_mm=1 and access_mm=0 DORMANT_MM=1.
+
+compute OTC_MM=0.
+if registered_mm=0 and access_mm=1 OTC_MM=1.
+
+compute MM_BASIC=0.
+if bi_e28d_b=1 or bi_e28d_d=1 MM_BASIC = 1.
+
+compute MM_ADV = 0.
+if bi_e28d_a=1 or bi_e28d_c=1 MM_ADV = 1.
+
+compute REG_MM_BASIC = 0.
+if REGISTERED_MM=1 and MM_BASIC=1 REG_MM_BASIC = 1.
+
+compute REG_MM_ADV=0.
+if REGISTERED_MM=1 and MM_ADV=1 REG_MM_ADV = 1.
+
+compute ACTIVE_MM_BASIC=0.
+if ACTIVE_MM=1 and MM_BASIC=1 ACTIVE_MM_BASIC=1.
+
+compute ACTIVE_MM_ADV=0.
+if ACTIVE_MM=1 and MM_ADV=1 ACTIVE_MM_ADV=1.
+
+compute ACTIVE30_MM_ADV=0.
+if ACTIVE30_MM=1 and MM_ADV=1 ACTIVE30_MM_ADV=1.
+
+numeric LENGTH_MM.
+
+compute MM_STAGE = 0.
+if access_mm=1 MM_STAGE=1.
+if (MM_STAGE=1 and registered_mm=1) MM_STAGE=2.
+if (MM_STAGE=2 and active_mm=1) MM_STAGE=3.
+if (MM_STAGE=3 and ACTIVE_MM_ADV=1) MM_STAGE=4.
+*************************************************************************************************************************************.
+*Section 7.2.
+compute MM_TRANSFER =0.
+if bi_e28d_d=1 MM_TRANSFER=1.
+compute MM_MERCHANT =0.
+if bi_e28d_a=1 MM_MERCHANT = 1. 
+compute MM_BILL =0.
+if bi_e28d_c=1 MM_BILL = 1. 
+numeric MM_GOV.
+numeric MM_WAGE.
+numeric MM_INSURANCE.
+numeric MM_SAVE.
+numeric MM_INVEST.
+numeric MM_LOAN.
+numeric MM_AIRTIME.
+
+numeric ACTIVE_MM_TRANSFER.
+numeric ACTIVE_MM_MERCHANT.
+numeric ACTIVE_MM_BILL.
+numeric ACTIVE_MM_GOV.
+numeric ACTIVE_MM_WAGE.
+numeric ACTIVE_MM_INSURANCE.
+numeric ACTIVE_MM_SAVE.
+numeric ACTIVE_MM_INVEST.
+numeric ACTIVE_MM_LOAN.
+numeric ACTIVE_MM_AIRTIME.
+*************************************************************************************************************************************.
+*Section 7.3.
+numeric EXP_MA1.
+numeric EXP_MA2.
+numeric EXP_MA3.
+numeric EXP_MA4.
+numeric EXP_MA5.
+numeric EXP_MA6.
+numeric EXP_MA7.
+numeric EXP_MA8.
+numeric EXP_MA9.
+numeric EXP_MA10.
+numeric EXP_MA11.
+numeric EXP_MA12.
+numeric EXP_MA13.
+numeric EXP_MA14.
+numeric EXP_MA15.
+numeric EXP_MA16.
+numeric EXP_MA17.
+numeric EXP_MA18.
+
+numeric EXPSV_MA1.
+numeric EXPSV_MA2.
+numeric EXPSV_MA3.
+numeric EXPSV_MA4.
+numeric EXPSV_MA5.
+numeric EXPSV_MA6.
+numeric EXPSV_MA7.
+numeric EXPSV_MA8.
+numeric EXPSV_MA9.
+numeric EXPSV_MA10.
+numeric EXPSV_MA11.
+numeric EXPSV_MA12.
+numeric EXPSV_MA13.
+numeric EXPSV_MA14.
+numeric EXPSV_MA15.
+numeric EXPSV_MA16.
+numeric EXPSV_MA17.
+*************************************************************************************************************************************.
+*Section 7.4.
+numeric R_NOTUSE_MM1.
+numeric R_NOTUSE_MM2.
+numeric R_NOTUSE_MM3.
+numeric R_NOTUSE_MM4.
+numeric R_NOTUSE_MM5.
+numeric R_NOTUSE_MM6.
+numeric R_NOTUSE_MM7.
+numeric R_NOTUSE_MM8.
+
+numeric R_NOTREG_MM1.
+numeric R_NOTREG_MM2.
+numeric R_NOTREG_MM3.
+numeric R_NOTREG_MM4.
+numeric R_NOTREG_MM5.
+numeric R_NOTREG_MM6.
+numeric R_NOTREG_MM7.
+numeric R_NOTREG_MM8.
+numeric R_NOTREG_MM9.
+numeric R_NOTREG_MM10.
+numeric R_NOTREG_MM11.
+
+numeric R_USE_MM1.
+numeric R_USE_MM2.
+numeric R_USE_MM3.
+numeric R_USE_MM4.
+numeric R_USE_MM5.
+numeric R_USE_MM6.
+numeric R_USE_MM7.
+numeric R_USE_MM8.
+numeric R_USE_MM9.
+
+*************************************************************************************************************************************.
 *Labels.
 *Section 3.
 value labels AGE -2"DK".
@@ -447,7 +596,7 @@ ACTIVE_BANK_BASIC	"Used own bank account in past 90 days and have used at least 
 ACTIVE_BANK_ADV	"Used own bank account in past 90 days and have used at least one advanced financial service"
 ACTIVE30_BANK_ADV	"Used own bank account in past 30 days and have used at least one advanced financial service"
 BANK_STAGE	"Customer journey segmentation of bank".
-*Section 6.1.
+*Section 6.2.
 value labels BANK_TRANSFER 1"Yes" 0"No".
 value labels BANK_MERCHANT 1"Yes" 0"No".
 value labels BANK_BILL 1"Yes" 0"No".
@@ -490,3 +639,275 @@ ACTIVE_BANK_SAVE	"Used bank to save money in past 90 days"
 ACTIVE_BANK_INVEST	"Used bank to make an investment in past 90 days"
 ACTIVE_BANK_LOAN	"Used bank to borrow money  or get credit in past 90 days"
 ACTIVE_BANK_AIRTIME	"Used bank to buy airtime top-ups or pay a mobile phone bill in past 90 days".
+*Section 6.3.
+value labels R_NOBANK1 1"Yes" 0"No".
+value labels R_NOBANK2 1"Yes" 0"No".
+value labels R_NOBANK3 1"Yes" 0"No".
+value labels R_NOBANK4 1"Yes" 0"No".
+value labels R_NOBANK5 1"Yes" 0"No".
+
+value labels R_NOBANK_BUSI1 1"Yes" 0"No".
+value labels R_NOBANK_BUSI2 1"Yes" 0"No". 
+value labels R_NOBANK_BUSI3 1"Yes" 0"No". 
+value labels R_NOBANK_BUSI4 1"Yes" 0"No". 
+value labels R_NOBANK_BUSI5 1"Yes" 0"No".
+value labels R_NOBANK_BUSI6 1"Yes" 0"No". 
+
+value labels EXP_BANK1 1"Yes" 0"No".
+value labels EXP_BANK2 1"Yes" 0"No".
+value labels EXP_BANK3 1"Yes" 0"No".
+value labels EXP_BANK4 1"Yes" 0"No".
+value labels EXP_BANK5 1"Yes" 0"No".
+value labels EXP_BANK6 1"Yes" 0"No".
+
+value labels USE_BANK_OTC 1"Yes" 0"No".
+value labels USE_BANK_ATM 1"Yes" 0"No".
+value labels USE_BANK_RETAIL 1"Yes" 0"No".
+value labels USE_BANK_ONLINE 1"Yes" 0"No".
+value labels USE_BANK_MOBILE 1"Yes" 0"No".
+value labels USE_BANK_AGENT 1"Yes" 0"No".
+value labels USE_BANK_WALLET 1"Yes" 0"No".
+
+variable labels R_NOBANK1"Reasons for NO bank account: You don't have the required documents"
+R_NOBANK2"Reasons for NO bank account: Fees and expenses for using banks are too high"
+R_NOBANK3"Reasons for NO bank account: You don't need a bank account"
+R_NOBANK4"Reasons for NO bank account: The closest bank is too far away"
+R_NOBANK5"Reasons for NO bank account: You don't have enough money to use the account"
+R_NOBANK_BUSI1"Reasons for NOT use bank for business payments/purchases: Have to pay extra taxes"
+R_NOBANK_BUSI2"Reasons for NOT use bank for business payments/purchases: Have to pay bribes to government officials to avoid taxation/licensing/paper work"
+R_NOBANK_BUSI3"Reasons for NOT use bank for business payments/purchases: Business is not registered, it is not formal "
+R_NOBANK_BUSI4"Reasons for NOT use bank for business payments/purchases: Have to raise prices to pay account fees and people won’t buy "
+R_NOBANK_BUSI5"Reasons for NOT use bank for business payments/purchases: Business is too small to need a bank account "
+R_NOBANK_BUSI6"Reasons for NOT use bank for business payments/purchases: Use other methods of payment"
+EXP_BANK1"Experience using a bank account: Unexpected charges"
+EXP_BANK2"Experience using a bank account: Lost money"
+EXP_BANK3"Experience using a bank account: Registered a complaint or called a customer care line"
+EXP_BANK4"Experience using a bank account: ATM not working"
+EXP_BANK5"Experience using a bank account: Debit/credit card did not work when paying for goods/services"
+EXP_BANK6"Experience using a bank account: Could not use your bank account because of system outages (online/offline)"
+USE_BANK_OTC"Use over the counter at a bank branch"
+USE_BANK_ATM"Use bank ATM"
+USE_BANK_RETAIL"Use bank deposits or withdrawals over the counter at a retail store"
+USE_BANK_ONLINE"Use bank’s website/online banking"
+USE_BANK_MOBILE"Use bank via mobile app/mobile banking"
+USE_BANK_AGENT"Use a door-to-door banking agent or another person who is associated with this bank or MFI/money collector/banking agent"
+USE_BANK_WALLET"Use bank mobile wallet".
+*Section 7.1.
+variable labels
+AWARE_MM	"Aware of mobile money service"
+AWARE_MM_PROVIDER	"Aware of at least one of the mobile money providers"
+AWARE_NONUSER_MM	"Aware mobile money providers but never used any"
+ACCESS_MM	"Ever used mobile money service"
+REGISTERED_MM	"Have a mobile money account"
+ACTIVE_MM	"Used registered mobile money accounts in past 90 days"
+ACTIVE30_MM	"Used own mobile money accounts in past 30 days"
+INACTIVE_MM	"Mobile money account owner who haven't used any mobile money services in past 90 days"
+DORMANT_MM	"Mobile money account owner who never used any mobile money services"
+OTC_MM	"Nonregistered users of mobile money"
+MM_BASIC	"Ever used mobile money to do basic activities"
+MM_ADV	"Ever used mobile money to do advanced activities"
+REG_MM_BASIC	"Conduct basic activity thru own mobile money account"
+REG_MM_ADV	"Conduct advanced activity thru own mobile money account"
+ACTIVE_MM_BASIC	"Used own mobile money account in past 90 days and have used at least one basic financial service"
+ACTIVE_MM_ADV	"Used own mobile money account in past 90 days and have used at least one advanced financial service"
+ACTIVE30_MM_ADV	"Used own mobile money account in past 30 days and have used at least one advanced financial service"
+LENGTH_MM	"Length of time using mobile money services"
+MM_STAGE	"Customer journey segmentation of mobile money".
+
+value labels AWARE_MM 1"Yes" 0"No".
+value labels AWARE_MM_PROVIDER 1"Yes" 0"No".
+value labels AWARE_NONUSER_MM 1"Yes" 0"No".
+value labels ACCESS_MM 1"Yes" 0"No".
+value labels REGISTERED_MM 1"Yes" 0"No".
+value labels ACTIVE_MM 1"Yes" 0"No".
+value labels ACTIVE30_MM 1"Yes" 0"No".
+value labels INACTIVE_MM 1"Yes" 0"No".
+value labels DORMANT_MM 1"Yes" 0"No".
+value labels OTC_MM 1"Yes" 0"No".
+value labels MM_BASIC 1"Yes" 0"No".
+value labels MM_ADV 1"Yes" 0"No".
+value labels REG_MM_BASIC 1"Yes" 0"No".
+value labels REG_MM_ADV 1"Yes" 0"No".
+value labels ACTIVE_MM_BASIC 1"Yes" 0"No".
+value labels ACTIVE_MM_ADV 1"Yes" 0"No".
+value labels ACTIVE30_MM_ADV 1"Yes" 0"No".
+value labels LENGTH_MM 1"0-6 months" 2"6-12 months" 3"Greater than 12 months".
+value labels MM_STAGE 0"Mobile money nonuser"
+1"Unregistered mobile money  user"
+2"Inactive registered mobile money user"
+3"Active mobile money basic user"
+4"Active mobile money advanced user".
+*Section 7.2.
+variable labels
+MM_TRANSFER	"Ever used MM to send money to, or receive money from someone"
+MM_MERCHANT	"Ever used MM to buy goods and service"
+MM_BILL	"Ever used MM to pay a bill"
+MM_GOV	"Ever used MM to receive money from the government"
+MM_WAGE	"Ever used MM to receive payment from an exmployer"
+MM_INSURANCE	"Ever used MM to pay for insurance or receive payment from insurance"
+MM_SAVE	"Ever used MM to save money"
+MM_INVEST	"Ever used MM to make an investment"
+MM_LOAN	"Ever used MM to borrow money or get credit"
+MM_AIRTIME	"Ever used MM to buy airtime top-ups or pay a mobile phone bill"
+ACTIVE_MM_TRANSFER	"Used MM to send money to, or receive money from someone in past 90 days"
+ACTIVE_MM_MERCHANT	"Used MM to buy goods and service in past 90 days"
+ACTIVE_MM_BILL	"Used MM to pay a bill in past 90 days"
+ACTIVE_MM_GOV	"Used MM to receive money from the government in past 90 days"
+ACTIVE_MM_WAGE	"Used MM to receive payment from an exmployer in past 90 days"
+ACTIVE_MM_INSURANCE	"Used MM to pay for insurance or receive payment from insurance in past 90 days"
+ACTIVE_MM_SAVE	"Used MM to save money in past 90 days"
+ACTIVE_MM_INVEST	"Used MM to make an investment in past 90 days"
+ACTIVE_MM_LOAN	"Used MM to borrow money or get credit in past 90 days"
+ACTIVE_MM_AIRTIME	"Used MM to buy airtime top-ups or pay a mobile phone bill in past 90 days".
+
+value labels MM_TRANSFER 1"Yes" 0"No".
+value labels MM_MERCHANT 1"Yes" 0"No".
+value labels MM_BILL 1"Yes" 0"No".
+value labels MM_GOV 1"Yes" 0"No".
+value labels MM_WAGE 1"Yes" 0"No".
+value labels MM_INSURANCE 1"Yes" 0"No".
+value labels MM_SAVE 1"Yes" 0"No".
+value labels MM_INVEST 1"Yes" 0"No".
+value labels MM_LOAN 1"Yes" 0"No".
+value labels MM_AIRTIME 1"Yes" 0"No".
+value labels ACTIVE_MM_TRANSFER 1"Yes" 0"No".
+value labels ACTIVE_MM_MERCHANT 1"Yes" 0"No".
+value labels ACTIVE_MM_BILL 1"Yes" 0"No".
+value labels ACTIVE_MM_GOV 1"Yes" 0"No".
+value labels ACTIVE_MM_WAGE 1"Yes" 0"No".
+value labels ACTIVE_MM_INSURANCE 1"Yes" 0"No".
+value labels ACTIVE_MM_SAVE 1"Yes" 0"No".
+value labels ACTIVE_MM_INVEST 1"Yes" 0"No".
+value labels ACTIVE_MM_LOAN 1"Yes" 0"No".
+value labels ACTIVE_MM_AIRTIME 1"Yes" 0"No".
+*Section 7.2.
+variable labels EXP_MA1	"Experience with MM agent: Agent was absent"
+EXP_MA2	"Experience with MM agent: Agent provided poor service"
+EXP_MA3	"Experience with MM agent: Agent did not have enough money to complete the transaction"
+EXP_MA4	"Experience with MM agent: Agent did not know how to perform the transaction"
+EXP_MA5	"Experience with MM agent: Agent overcharged for the transaction"
+EXP_MA6	"Experience with MM agent: Agent did not give all the cash that was owed"
+EXP_MA7	"Experience with MM agent: Agent system or mobile network was down"
+EXP_MA8	"Experience with MM agent: Agent was dismissive of women"
+EXP_MA9	"Experience with MM agent: Agent’s place was not secure or there were suspicious people at agent’s place"
+EXP_MA10	"Experience with MM agent: Agent shared your personal or account information with other people without your knowledge or permission"
+EXP_MA11	"Experience with MM agent: Agent was rude"
+EXP_MA12	"Experience with MM agent: Agent refused to perform the transaction for no reason"
+EXP_MA13	"Experience with MM agent: It was very time-consuming/it took you a lot of time to do the transaction"
+EXP_MA14	"Experience with MM agent: You did not get a receipt"
+EXP_MA15	"Experience with MM agent: Agent charged you for depositing money"
+EXP_MA16	"Experience with MM agent: Agent asked for your PIN number"
+EXP_MA17	"Experience with MM agent: Agent committed fraud"
+EXP_MA18	"Experience with MM agent: Agent refused to do the transaction because you did not have your ID"
+EXPSV_MA1	"Issue with MM agent solved: Agent was absent"
+EXPSV_MA2	"Issue with MM agent solved: Agent was rude"
+EXPSV_MA3	"Issue with MM agent solved: Agent did not have enough cash or e-float and could not perform the transaction"
+EXPSV_MA4	"Issue with MM agent solved: Agent refused to perform the transaction for no reason"
+EXPSV_MA5	"Issue with MM agent solved: Agent did not know how to perform the transaction"
+EXPSV_MA6	"Issue with MM agent solved: Agent overcharged for the transaction or asked you to pay a deposit"
+EXPSV_MA7	"Issue with MM agent solved: Agent did not give all the cash that was owed"
+EXPSV_MA8	"Issue with MM agent solved: Agent system or mobile network was down"
+EXPSV_MA9	"Issue with MM agent solved: It was very time-consuming/it took you a lot of time to do the transaction"
+EXPSV_MA10	"Issue with MM agent solved: You did not get a receipt"
+EXPSV_MA11	"Issue with MM agent solved: Agent charged you for depositing money"
+EXPSV_MA12	"Issue with MM agent solved: Agent asked for your PIN number"
+EXPSV_MA13	"Issue with MM agent solved: Agent was dismissive of women"
+EXPSV_MA14	"Issue with MM agent solved: Agent committed fraud"
+EXPSV_MA15	"Issue with MM agent solved: Agent’s place was not secure/there were suspicious people at agent’s place"
+EXPSV_MA16	"Issue with MM agent solved: Agent shared your personal/account information with other people without your knowledge/permission"
+EXPSV_MA17	"Issue with MM agent solved: Agent refused to do the transaction because you did not have your ID".
+
+value labels EXP_MA1 1"Yes" 0"No".
+value labels EXP_MA2	1"Yes" 0"No".
+value labels EXP_MA3	1"Yes" 0"No".
+value labels EXP_MA4	1"Yes" 0"No".
+value labels EXP_MA5	1"Yes" 0"No".
+value labels EXP_MA6	1"Yes" 0"No".
+value labels EXP_MA7	1"Yes" 0"No".
+value labels EXP_MA8	1"Yes" 0"No".
+value labels EXP_MA9	1"Yes" 0"No".
+value labels EXP_MA10	1"Yes" 0"No".
+value labels EXP_MA11	1"Yes" 0"No".
+value labels EXP_MA12	1"Yes" 0"No".
+value labels EXP_MA13	1"Yes" 0"No".
+value labels EXP_MA14	1"Yes" 0"No".
+value labels EXP_MA15	1"Yes" 0"No".
+value labels EXP_MA16	1"Yes" 0"No".
+value labels EXP_MA17	1"Yes" 0"No".
+value labels EXP_MA18	1"Yes" 0"No".
+value labels EXPSV_MA1	1"Yes" 0"No".
+value labels EXPSV_MA2	1"Yes" 0"No".
+value labels EXPSV_MA3	1"Yes" 0"No".
+value labels EXPSV_MA4	1"Yes" 0"No".
+value labels EXPSV_MA5	1"Yes" 0"No".
+value labels EXPSV_MA6	1"Yes" 0"No".
+value labels EXPSV_MA7	1"Yes" 0"No".
+value labels EXPSV_MA8	1"Yes" 0"No".
+value labels EXPSV_MA9 1"Yes" 0"No".
+value labels EXPSV_MA10	1"Yes" 0"No".
+value labels EXPSV_MA11	1"Yes" 0"No".
+value labels EXPSV_MA12	1"Yes" 0"No".
+value labels EXPSV_MA13	1"Yes" 0"No".
+value labels EXPSV_MA14	1"Yes" 0"No".
+value labels EXPSV_MA15	1"Yes" 0"No".
+value labels EXPSV_MA16	1"Yes" 0"No".
+value labels EXPSV_MA17	1"Yes" 0"No".
+*Section 7.3.
+variable labels
+R_NOTUSE_MM1	"Reason to NOT use MM: You don't know enough about mobile money services"
+R_NOTUSE_MM2	"Reason to NOT use MM: You don't need to use a mobile money service"
+R_NOTUSE_MM3	"Reason to NOT use MM: You don't have the required documents"
+R_NOTUSE_MM4	"Reason to NOT use MM: You don't have enough money to use mobile money services"
+R_NOTUSE_MM5	"Reason to NOT use MM: You don't trust mobile money"
+R_NOTUSE_MM6	"Reason to NOT use MM: You feel at risk of losing money"
+R_NOTUSE_MM7	"Reason to NOT use MM: You prefer to use cash"
+R_NOTUSE_MM8	"Reason to NOT use MM: Fees and expenses to using mobile money services are too high"
+R_NOTREG_MM1	"Reason to NOT register MM: A friend or family member has an account that you can use"
+R_NOTREG_MM2	"Reason to NOT register MM: You do not have the required identification documents"
+R_NOTREG_MM3	"Reason to NOT register MM: You do not use products and services that require a registered account"
+R_NOTREG_MM4	"Reason to NOT register MM: You do not know how to register an account"
+R_NOTREG_MM5	"Reason to NOT register MM: You had an account previously but not anymore"
+R_NOTREG_MM6	"Reason to NOT register MM: You prefer to use a different financial account instead of mobile money"
+R_NOTREG_MM7	"Reason to NOT register MM: You don't have enough money to use a registered account"
+R_NOTREG_MM8	"Reason to NOT register MM: You don't trust mobile money"
+R_NOTREG_MM9	"Reason to NOT register MM: You feel at rist of losing money"
+R_NOTREG_MM10	"Reason to NOT register MM: You prefer to use cash"
+R_NOTREG_MM11	"Reason to NOT register MM: Fees and expenses to using a mobile money account are too high"
+R_USE_MM1	"Reason to start use MM: To send or receive money"
+R_USE_MM2	"Reason to start use MM: To save money"
+R_USE_MM3	"Reason to start use MM: To have a secure place to store money"
+R_USE_MM4	"Reason to start use MM: You were registered to a mobile money account by someone else"
+R_USE_MM5	"Reason to start use MM: To borrow money"
+R_USE_MM6	"Reason to start use MM: To make a purchase"
+R_USE_MM7	"Reason to start use MM: To make an investment"
+R_USE_MM8	"Reason to start use MM: To pay a bill "
+R_USE_MM9	"Reason to start use MM: You got an incentive from the mobile money service during a promotion ".
+
+value labels R_NOTUSE_MM1 1"Yes" 0"No".
+value labels R_NOTUSE_MM2 1"Yes" 0"No".
+value labels R_NOTUSE_MM3 1"Yes" 0"No".
+value labels R_NOTUSE_MM4 1"Yes" 0"No".
+value labels R_NOTUSE_MM5 1"Yes" 0"No".
+value labels R_NOTUSE_MM6 1"Yes" 0"No".
+value labels R_NOTUSE_MM7 1"Yes" 0"No".
+value labels R_NOTUSE_MM8 1"Yes" 0"No".
+value labels R_NOTREG_MM1 1"Yes" 0"No".
+value labels R_NOTREG_MM2 1"Yes" 0"No".
+value labels R_NOTREG_MM3 1"Yes" 0"No".
+value labels R_NOTREG_MM4 1"Yes" 0"No".
+value labels R_NOTREG_MM5 1"Yes" 0"No".
+value labels R_NOTREG_MM6 1"Yes" 0"No".
+value labels R_NOTREG_MM7 1"Yes" 0"No".
+value labels R_NOTREG_MM8 1"Yes" 0"No".
+value labels R_NOTREG_MM9 1"Yes" 0"No".
+value labels R_NOTREG_MM10 1"Yes" 0"No".
+value labels R_NOTREG_MM11 1"Yes" 0"No".
+value labels R_USE_MM1 1"Yes" 0"No".
+value labels R_USE_MM2 1"Yes" 0"No".
+value labels R_USE_MM3 1"Yes" 0"No".
+value labels R_USE_MM4 1"Yes" 0"No".
+value labels R_USE_MM5 1"Yes" 0"No".
+value labels R_USE_MM6 1"Yes" 0"No".
+value labels R_USE_MM7 1"Yes" 0"No".
+value labels R_USE_MM8 1"Yes" 0"No".
+value labels R_USE_MM9 1"Yes" 0"No".
