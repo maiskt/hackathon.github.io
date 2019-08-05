@@ -51,7 +51,7 @@ if (FN2_3_1<=4 or FN2_3_2<=4 or FN2_3_3<=4 or FN2_3_4<=4 or FN2_3_5<=4 or FN2_3_
 
 compute ACTIVE30_MM_ADV=0.
 if (FN2_3_1<=3 or FN2_3_2<=3 or FN2_3_3<=3 or FN2_3_4<=3 or FN2_3_5<=3 or FN2_3_6<=3 or FN2_3_7<=3 or FN2_3_8<=3 or FN2_3_9<=3 or FN2_3_10<=3) and
-   (AD2_4=1 or AD3_4=1 or AD4_4=1 or AD5_4=1 or AD6_4=1 or AD7_4=1 or AD8_4=1 or AD9_4=1 or AD10_20=1 or AD11_6=1) ACTIVE_MM_ADV=1.
+   (AD2_4=1 or AD3_4=1 or AD4_4=1 or AD5_4=1 or AD6_4=1 or AD7_4=1 or AD8_4=1 or AD9_4=1 or AD10_20=1 or AD11_6=1) ACTIVE30_MM_ADV=1.
 
 numeric LENGTH_MM.
 
@@ -111,7 +111,7 @@ if (FN4_3_1<=4 or  FN4_3_2<=4 or  FN4_3_3<=4) and
 
 compute ACTIVE30_MM_ADV=0.
 if (FN4_3_1<=3 or  FN4_3_2<=3 or  FN4_3_3<=3) and
-   (AD2_4=1 or AD3_4=1 or AD4_4=1 or AD5_4=1 or AD6_4=1 or AD7_4=1 or AD8_4=1 or AD9_4=1 or AD10_22=1 or AD11_11=1) ACTIVE_MM_ADV=1.
+   (AD2_4=1 or AD3_4=1 or AD4_4=1 or AD5_4=1 or AD6_4=1 or AD7_4=1 or AD8_4=1 or AD9_4=1 or AD10_22=1 or AD11_11=1) ACTIVE30_MM_ADV=1.
 
 numeric LENGTH_MM.
 
@@ -182,7 +182,7 @@ compute ACTIVE30_MM_ADV=0.
 if ((mm15_3=1 or mm15_4=1 or mm15_5=1  or mm15_7=1 or mm15_8=1 or mm15_9=1 or mm15_10=1 or mm15_11=1 or mm15_12=1 or 
 mm15_13=1 or FB22_2=1 or FB16A_2=1)
 and (mm8_1<=3 or mm8_2<=3 or mm8_3<=3 or mm8_4<=3 or mm8_5<=3 or mm8_6<=3 or mm8_7<=3 or mm8_8<=3 or mm8_9<=3 or mm8_96<=3)
-) ACTIVE_30MM_ADV=1.
+) ACTIVE30_MM_ADV=1.
 
 compute LENGTH_MM=0.
 if MM9 le 2 LENGTH_MM=1.
