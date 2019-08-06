@@ -70,6 +70,7 @@ if AD10_31<=4 or AD10_32<=4 or AD10_35<=4 or (FN5_1=1 and FN5_4=1 and AD10_33<=4
 compute ACTIVE_NBFI_LOAN=0.
 if AD11_21<=4 or AD11_22<=4 or AD11_27<=4 or (FN5_1=1 and FN5_4=1 and AD11_25<=4) or (FN6_1=1 and FN6_4=1 and AD11_26<=4) ACTIVE_NBFI_LOAN=1.
  
+numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *18India.
@@ -186,6 +187,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
+numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *17India.
@@ -237,6 +239,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8(1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6(1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
+numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *17Kenya.
@@ -287,6 +290,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
+numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *17Nigeria.
@@ -337,6 +341,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
+numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *17Paksitan.
@@ -387,6 +392,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
+numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *17Tanzania.
@@ -437,6 +443,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
+numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *17Uganda.
@@ -488,6 +495,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
+numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *16Bangladesh.

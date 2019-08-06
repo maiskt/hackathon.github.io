@@ -17,7 +17,7 @@ if (FN3_2=1 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1)) REGISTERED_MFI=1.
 compute ACTIVE_MFI=0.
 if (FN3_3<=4 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1)) ACTIVE_MFI=1.
 
-compute ACCESS_COOPs_coop=0.
+compute ACCESS_COOP=0.
 if (FN4_1=1 and (FN4_4=1 or FN4_5=1 or FN4_6=1 or FN4_7=1)) ACCESS_COOP=1.
 
 compute REGISTERED_COOP=0.
