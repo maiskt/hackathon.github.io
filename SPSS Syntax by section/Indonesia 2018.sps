@@ -36,7 +36,7 @@ if (digital_text=1 and digital_adv=0) DIGITAL_LITERACY_INDEX=2.
 if (digital_adv=1) DIGITAL_LITERACY_INDEX=3.
 
 compute GENDER=dg2.
-*Need confirm.
+
 numeric MARRIAGE.
 
 count HAVE_CHILDREN=I_1_D3 I_2_D3 I_3_D3 I_4_D3 I_5_D3 I_6_D3 I_7_D3 I_8_D3 I_9_D3 I_10_D3(0 thru 17).
@@ -132,12 +132,12 @@ IF (OJK1_1=1 or OJK1_2=1 or OJK1_3=1 or OJK1_4=1 or OJK1_5=1 or OJK1_6=1 or OJK1
      OJK11_1=1 or OJK11_2=1 or OJK11_3=1 or 
      OJK12_1=1 or OJK12_2=1 or OJK12_3=1 or OJK13_1=1 or OJK13_2=1 or OJK13_3=1 or 
      BI_E25D=1) ACCESS_FINANCIAL_ALL=1.
-*Need double check.
+
 compute ACTIVE_FINANCIAL_ADV=0.
-IF FNXA<=2 and (GF1=1 or GF2=1) ACTIVE_FINANCIAL_ADV=1.
-*Need double check.
+IF FNXA<=2 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and (GF1=1 or GF2=1) ACTIVE_FINANCIAL_ADV=1.
+
 compute ACTIVE30_FINANCIAL_ADV=0.
-IF FNXA=1 and (GF1=1 or GF2=1) ACTIVE30_FINANCIAL_ADV=1.
+IF FNXA=1 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and (GF1=1 or GF2=1) ACTIVE30_FINANCIAL_ADV=1.
 
 numeric ACCESS_DFS_PAYMENT_TRANSFER.
 
@@ -426,6 +426,131 @@ numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
 numeric R_USE_MM9.
+*************************************************************************************************************************************.
+*Section 7.5.
+numeric ACTION_MM1.
+numeric ACTION_MM2.
+numeric ACTION_MM3.
+numeric ACTION_MM4.
+numeric ACTION_MM5.
+numeric ACTION_MM6.
+
+numeric OPN_MM1.
+numeric OPN_MM2.
+numeric OPN_MM3.
+numeric OPN_MM4.
+numeric OPN_MM5.
+numeric OPN_MM6.
+
+numeric AWARE_MMP.
+numeric ACCESS_MMP.
+numeric REGISTERED_MMP.
+*************************************************************************************************************************************.
+*Section 8.1.
+compute ACCESS_NBFI=0.
+IF(OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1 or 
+    OJK10_1=1 or OJK10_2=1 or OJK10_3=1 or OJK10_4=1 or 
+    OJK11_1=1 or OJK11_2=1 or OJK11_3=1)  ACCESS_NBFI=1.
+
+compute ACCESS_NBFI_ALL=0.
+IF (OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1 or 
+     OJK10_1=1 or OJK10_2=1 or OJK10_3=1 or OJK10_4=1 or 
+     OJK11_1=1 or OJK11_2=1 or OJK11_3=1 or 
+     OJK12_1=1 or OJK12_2=1 or OJK12_3=1 or OJK13_1=1 or OJK13_2=1 or OJK13_3=1) ACCESS_NBFI_ALL=1.
+*Need confirm.
+numeric REGISTERED_NBFI.
+numeric REGISTERED_NBFI_ALL.
+numeric REG_DFS_NBFI.
+numeric ACTIVE_NBFI.
+numeric ACTIVE_NBFI_ALL.
+numeric ACTIVE30_NBFI.
+numeric INACTIVE_NBFI.
+numeric DORMANT_NBFI.
+numeric OTC_NBFI.
+numeric NBFI_ALL_BASIC.
+numeric NBFI_ALL_ADV.
+numeric NBFI_BASIC.
+numeric NBFI_ADV.
+numeric REG_NBFI_BASIC.
+numeric REG_NBF_ADV.
+numeric ACTIVE_NBFI_BASIC.
+numeric ACTIVE_NBFI_ADV.
+numeric ACTIVE30_NBFI_ADV.
+numeric NBFI_STAGE.
+*************************************************************************************************************************************.
+*Section 8.2.
+compute ACCESS_MFI=0.
+if (OJK12_1=1 or OJK12_2=1 or OJK12_3=1 or OJK13_1=1 or OJK13_2=1 or OJK13_3=1) ACCESS_MFI=1.
+numeric REGISTERED_MFI.
+numeric ACTIVE_MFI.
+
+compute ACCESS_COOP=0.
+if (OJK11_1=1 or OJK11_2=1 or OJK11_3=1) ACCESS_COOP=1.
+numeric REGISTERED_COOP.
+numeric ACTIVE_COOP.
+
+compute ACCESS_POST=0.
+if (OJK10_1=1 or OJK10_2=1 or OJK10_3=1 or OJK10_4=1) ACCESS_POST=1.
+numeric REGISTERED_POST.
+numeric ACTIVE_POST.
+
+numeric ACCESS_SACCO.
+numeric REGISTERED_SACCO.
+numeric ACTIVE_SACCO.
+numeric ACCESS_BPR.
+numeric REGISTERED_BPR.
+numeric ACTIVE_BPR.
+
+compute ACCESS_PAWNSHOP=0.
+if (OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1) ACCESS_PAWNSHOP=1.
+numeric REGISTERED_PAWNSHOP.
+numeric ACTIVE_PAWNSHOP.
+
+numeric AWARE_PAYMENT_BANK_PROVIDER.
+numeric ACCESS_PAYMENT.
+numeric REGISTERED_PAYMENT.
+numeric ACTIVE_PAYMENT.
+numeric ACCESS_GROUP.
+numeric REGISTERED_GROUP.
+numeric ACTIVE_GROUP.
+*************************************************************************************************************************************.
+*Section 8.3.
+numeric NBFI_TRANSFER.
+numeric NBFI_MERCHANT.
+numeric NBFI_BILL.
+numeric NBFI_GOV.
+numeric NBFI_WAGE.
+numeric NBFI_INSURANCE.
+numeric NBFI_SAVE.
+numeric NBFI_INVEST.
+numeric NBFI_LOAN.
+numeric NBFI_AIRTIME.
+
+numeric ACTIVE_NBFI_TRANSFER.
+numeric ACTIVE_NBFI_MERCHANT.
+numeric ACTIVE_NBFI_BILL.
+numeric ACTIVE_NBFI_GOV.
+numeric ACTIVE_NBFI WAGE.
+numeric ACTIVE_NBFI_INSURANCE.
+numeric ACTIVE_NBFI_SAVE.
+numeric ACTIVE_NBFI_INVEST.
+numeric ACTIVE_NBFI_LOAN.
+numeric ACTIVE_NBFI_AIRTIME.
+*************************************************************************************************************************************.
+*Section 9 (miss label).
+numeric BELONG_INFML.
+numeric R_INFML.
+numeric R_NOINFML.
+numeric INFML_SERVICE1.
+numeric INFML_SERVICE2.
+numeric INFML_SERVICE3.
+numeric INFML_SERVICE4.
+numeric INFML_SERVICE5.
+numeric INFML_SERVICE6.
+numeric INFML_SERVICE7.
+numeric INFML_SERVICE8.
+*************************************************************************************************************************************.
+*Section 10.
 
 *************************************************************************************************************************************.
 *Labels.
@@ -780,7 +905,7 @@ value labels ACTIVE_MM_SAVE 1"Yes" 0"No".
 value labels ACTIVE_MM_INVEST 1"Yes" 0"No".
 value labels ACTIVE_MM_LOAN 1"Yes" 0"No".
 value labels ACTIVE_MM_AIRTIME 1"Yes" 0"No".
-*Section 7.2.
+*Section 7.3.
 variable labels EXP_MA1	"Experience with MM agent: Agent was absent"
 EXP_MA2	"Experience with MM agent: Agent provided poor service"
 EXP_MA3	"Experience with MM agent: Agent did not have enough money to complete the transaction"
@@ -852,7 +977,7 @@ value labels EXPSV_MA14	1"Yes" 0"No".
 value labels EXPSV_MA15	1"Yes" 0"No".
 value labels EXPSV_MA16	1"Yes" 0"No".
 value labels EXPSV_MA17	1"Yes" 0"No".
-*Section 7.3.
+*Section 7.4.
 variable labels
 R_NOTUSE_MM1	"Reason to NOT use MM: You don't know enough about mobile money services"
 R_NOTUSE_MM2	"Reason to NOT use MM: You don't need to use a mobile money service"
@@ -911,3 +1036,192 @@ value labels R_USE_MM6 1"Yes" 0"No".
 value labels R_USE_MM7 1"Yes" 0"No".
 value labels R_USE_MM8 1"Yes" 0"No".
 value labels R_USE_MM9 1"Yes" 0"No".
+*Section 7.5.
+variable labels
+ACTION_MM1	"Difficulty or ease to perform the action without assistance: Open the mobile money menu"
+ACTION_MM2	"Difficulty or ease to perform the action without assistance: Find a particular menu option, such as send money"
+ACTION_MM3	"Difficulty or ease to perform the action without assistance: Complete a transaction"
+ACTION_MM4	"Difficulty or ease to perform the action without assistance: Correct an error in the amount of money to send"
+ACTION_MM5	"Difficulty or ease to perform the action without assistance: Correct an error in the amount or phone number for a transaction recipient"
+ACTION_MM6	"Difficulty or ease to perform the action without assistance: Reverse or cancel a transaction"
+OPN_MM1	"Mobile money allows you to keep money on your phone"
+OPN_MM2	"Mobile money allows you to get a loan"
+OPN_MM3	"You can deposit and withdraw in cash using mobile money"
+OPN_MM4	"You can send money to someone using mobile money"
+OPN_MM5	"You can save money on a mobile phone"
+OPN_MM6	"You can pay for goods and services through your mobile phone"
+AWARE_MMP	"Aware of non-MM mobile-based financial pruducts"
+ACCESS_MMP	"Eved used non-MM mobile-based financial products"
+REGISTERED_MMP	"Have account of non-MM mobile-based financial pruducts".
+
+value labels ACTION_MM1 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM2 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM3 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM4 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM5 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM6 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels OPN_MM1 1"Yes" 2"No" -2"DK".
+value labels OPN_MM2 1"Yes" 2"No" -2"DK".
+value labels OPN_MM3 1"Yes" 2"No" -2"DK".
+value labels OPN_MM4 1"Yes" 2"No" -2"DK".
+value labels OPN_MM5 1"Yes" 2"No" -2"DK".
+value labels OPN_MM6 1"Yes" 2"No" -2"DK".
+value labels AWARE_MMP 1"Yes" 0"No".
+value labels ACCESS_MMP 1"Yes" 0"No".
+value labels REGISTERED_MMP 1"Yes" 0"No".
+*Section 8.1.
+value labels ACCESS_NBFI	1"Yes" 0"No".
+value labels ACCESS_NBFI_ALL	1"Yes" 0"No".
+value labels REGISTERED_NBFI	1"Yes" 0"No".
+value labels REGISTERED_NBFI_ALL	1"Yes" 0"No".
+value labels REG_DFS_NBFI	1"Yes" 0"No".
+value labels ACTIVE_NBFI	1"Yes" 0"No".
+value labels ACTIVE_NBFI_ALL	1"Yes" 0"No".
+value labels ACTIVE30_NBFI	1"Yes" 0"No".
+value labels INACTIVE_NBFI	1"Yes" 0"No".
+value labels DORMANT_NBFI	1"Yes" 0"No".
+value labels OTC_NBFI	1"Yes" 0"No".
+value labels NBFI_ALL_BASIC	1"Yes" 0"No".
+value labels NBFI_ALL_ADV	1"Yes" 0"No".
+value labels NBFI_BASIC	1"Yes" 0"No".
+value labels NBFI_ADV	1"Yes" 0"No".
+value labels REG_NBFI_BASIC	1"Yes" 0"No".
+value labels REG_NBF_ADV	1"Yes" 0"No".
+value labels ACTIVE_NBFI_BASIC	1"Yes" 0"No".
+value labels ACTIVE_NBFI_ADV	1"Yes" 0"No".
+value labels ACTIVE30_NBFI_ADV	1"Yes" 0"No".
+value labels NBFI_STAGE	0"NBFI nonuser"
+1"Unregistered NBFI User"
+2"Registered inactive NBFI user"
+3"Basic only active NBFI user"
+4"Advanced active NBFI user".
+
+variable labels
+ACCESS_NBFI	"Ever used a full service nonbank financial institution (NBFI)"
+ACCESS_NBFI_ALL	"Ever used a nonbank financial institution"
+REGISTERED_NBFI	"Have a full service nonbank financial institution (NBFI) account"
+REGISTERED_NBFI_ALL	"Have a nonbank financial institution account"
+REG_DFS_NBFI	"Have a digital stored-value NBFI accounts"
+ACTIVE_NBFI	"Use a full service nonbank financial institution (NBFI) account in past 90 days"
+ACTIVE_NBFI_ALL	"Use a nonbank financial institution account in past 90 days"
+ACTIVE30_NBFI	"Used own full service NBFI accounts in past 30 days"
+INACTIVE_NBFI	"Full service NBFI account owner who haven't used any NBFI services in past 90 days"
+DORMANT_NBFI	"Full service NBFI account owner who never used any NBFI services"
+OTC_NBFI	"Nonregistered full service NBFI users"
+NBFI_ALL_BASIC	"Ever used NBFI to do basic activities"
+NBFI_ALL_ADV	"Ever used NBFI to do advanced activities"
+NBFI_BASIC	"Ever used full service NBFI to do basic activities"
+NBFI_ADV	"Ever used full service NBFI to do advanced activities"
+REG_NBFI_BASIC	"Conduct basic activity thru own full service NBFI account"
+REG_NBF_ADV	"Conduct advanced activity thru own full service NBFI account"
+ACTIVE_NBFI_BASIC	"Used own full service NBFI account in past 90 days and have used at least one basic financial service"
+ACTIVE_NBFI_ADV	"Used own full service NBFI account in past 90 days and have used at least one advanced financial service"
+ACTIVE30_NBFI_ADV	"Used own full service NBFI account in past 30 days and have used at least one advanced financial service"
+NBFI_STAGE	"Customer journey segmentation of NBFI".
+*Section 8.2.
+value labels ACCESS_MFI 1"Yes" 0"No".
+value labels REGISTERED_MFI 1"Yes" 0"No".
+value labels ACTIVE_MFI 1"Yes" 0"No".
+value labels ACCESS_COOP 1"Yes" 0"No".
+value labels REGISTERED_COOP 1"Yes" 0"No".
+value labels ACTIVE_COOP 1"Yes" 0"No".
+value labels ACCESS_POST 1"Yes" 0"No".
+value labels REGISTERED_POST 1"Yes" 0"No".
+value labels ACTIVE_POST 1"Yes" 0"No".
+value labels ACCESS_SACCO 1"Yes" 0"No".
+value labels REGISTERED_SACCO 1"Yes" 0"No".
+value labels ACTIVE_SACCO 1"Yes" 0"No".
+value labels ACCESS_BPR 1"Yes" 0"No".
+value labels REGISTERED_BPR 1"Yes" 0"No".
+value labels ACTIVE_BPR 1"Yes" 0"No".
+value labels ACCESS_PAWNSHOP 1"Yes" 0"No".
+value labels REGISTERED_PAWNSHOP 1"Yes" 0"No".
+value labels ACTIVE_PAWNSHOP 1"Yes" 0"No".
+value labels AWARE_PAYMENT_BANK_PROVIDER 1"Yes" 0"No".
+value labels ACCESS_PAYMENT 1"Yes" 0"No".
+value labels REGISTERED_PAYMENT 1"Yes" 0"No".
+value labels ACTIVE_PAYMENT 1"Yes" 0"No".
+value labels ACCESS_GROUP 1"Yes" 0"No".
+value labels REGISTERED_GROUP 1"Yes" 0"No".
+value labels ACTIVE_GROUP 1"Yes" 0"No".
+
+variable labels ACCESS_MFI	"Ever used full service MFI"
+REGISTERED_MFI	"Have a full service MFI account"
+ACTIVE_MFI	"Used own full service MFI accounts within past 90 days"
+ACCESS_COOP	"Ever used full service Cooperative"
+REGISTERED_COOP	"Have a full service Cooperative account"
+ACTIVE_COOP	"Used own full service Cooperative accounts within past 90 days"
+ACCESS_POST	"Ever used full service Post office bank"
+REGISTERED_POST	"Have a full service Post office bank account"
+ACTIVE_POST	"Used own full service Post office bank accounts within past 90 days"
+ACCESS_SACCO	"Ever used full service SACCO"
+REGISTERED_SACCO	"Have a full service SACCO account"
+ACTIVE_SACCO	"Used own full service SACCO accounts within past 90 days"
+ACCESS_BPR	"Ever used full service Bank Perkreditan Rakyat (BPR)"
+REGISTERED_BPR	"Have a full service Bank Perkreditan Rakyat (BPR) account"
+ACTIVE_BPR	"Used own full service Bank Perkreditan Rakyat (BPR) accounts within past 90 days"
+ACCESS_PAWNSHOP	"Ever used full service Pawnshop"
+REGISTERED_PAWNSHOP	"Have a full service Pawnshop account"
+ACTIVE_PAWNSHOP	"Used own full service Pawnshop accounts within past 90 days"
+AWARE_PAYMENT_BANK_PROVIDER	"Aware payment banks providers"
+ACCESS_PAYMENT	"Ever used full service payment bank"
+REGISTERED_PAYMENT	"Have a full service payment bank account"
+ACTIVE_PAYMENT	"Used own full service payment bank accounts within past 90 days"
+ACCESS_GROUP	"Ever used full service savings group"
+REGISTERED_GROUP	"Have a full service savings group account"
+ACTIVE_GROUP	"Used own full service savings group accounts within past 90 days".
+*Section 8.3.
+value labels NBFI_TRANSFER 1"Yes" 0"No".
+value labels NBFI_MERCHANT 1"Yes" 0"No".
+value labels NBFI_BILL 1"Yes" 0"No".
+value labels NBFI_GOV 1"Yes" 0"No".
+value labels NBFI WAGE 1"Yes" 0"No".
+value labels NBFI_INSURANCE 1"Yes" 0"No".
+value labels NBFI_SAVE 1"Yes" 0"No".
+value labels NBFI_INVEST 1"Yes" 0"No".
+value labels NBFI_LOAN 1"Yes" 0"No".
+value labels NBFI_AIRTIME 1"Yes" 0"No".
+value labels ACTIVE_NBFI_TRANSFER 1"Yes" 0"No".
+value labels ACTIVE_NBFI_MERCHANT 1"Yes" 0"No".
+value labels ACTIVE_NBFI_BILL 1"Yes" 0"No".
+value labels ACTIVE_NBFI_GOV 1"Yes" 0"No".
+value labels ACTIVE_NBFI WAGE 1"Yes" 0"No".
+value labels ACTIVE_NBFI_INSURANCE 1"Yes" 0"No".
+value labels ACTIVE_NBFI_SAVE 1"Yes" 0"No".
+value labels ACTIVE_NBFI_INVEST 1"Yes" 0"No".
+value labels ACTIVE_NBFI_LOAN 1"Yes" 0"No".
+value labels ACTIVE_NBFI_AIRTIME 1"Yes" 0"No".
+value labels R_STOPMFI1 1"Yes" 2"No".
+value labels R_STOPMFI2 1"Yes" 2"No".
+value labels R_STOPMFI3 1"Yes" 2"No".
+value labels R_STOPMFI4 1"Yes" 2"No".
+value labels R_STOPMFI5 1"Yes" 2"No".
+value labels R_STOPMFI6 1"Yes" 2"No".
+value labels R_STOPMFI7 1"Yes" 2"No".
+
+variable labels NBFI_TRANSFER	"Ever used NBFI to send money to, or receive money from someone"
+NBFI_MERCHANT	"Ever used NBFI to buy goods and service"
+NBFI_BILL	"Ever used NBFI to pay a bill"
+NBFI_GOV	"Ever used NBFI to receive money from the government"
+NBFI_WAGE	"Ever used NBFI to receive payment from an exmployer"
+NBFI_INSURANCE	"Ever used NBFI to pay for insurance or receive payment from insurance"
+NBFI_SAVE	"Ever used NBFI to save money"
+NBFI_INVEST	"Ever used NBFI to make an investment"
+NBFI_LOAN	"Ever used NBFI to borrow money or get  credit"
+NBFI_AIRTIME	"Ever used NBFI to buy airtime top-ups or pay a mobile phone bill"
+ACTIVE_NBFI_TRANSFER	"Used NBFI to send money to, or receive money from someone in past 90 days"
+ACTIVE_NBFI_MERCHANT	"Used NBFI to buy goods and service in past 90 days"
+ACTIVE_NBFI_BILL	"Used NBFI to pay a bill in past 90 days"
+ACTIVE_NBFI_GOV	"Used NBFI to receive money from the government in past 90 days"
+ACTIVE_NBFI WAGE	"Used NBFI to receive payment from an exmployer in past 90 days"
+ACTIVE_NBFI_INSURANCE	"Used NBFI to pay for insurance or receive payment from insurance in past 90 days"
+ACTIVE_NBFI_SAVE	"Used NBFI to save money in past 90 days"
+ACTIVE_NBFI_INVEST	"Used NBFI to make an investment in past 90 days"
+ACTIVE_NBFI_LOAN	"Used NBFI to borrow money or get credit in past 90 days"
+ACTIVE_NBFI_AIRTIME	"Used NBFI to buy airtime top-ups or pay a mobile phone bill in past 90 days".
+
+
+
+
+
+
