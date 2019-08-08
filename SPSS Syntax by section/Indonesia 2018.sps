@@ -187,8 +187,9 @@ count ACTIVE30_BANK=ojk14_1 to ojk14_13(1).
 recode ACTIVE30_BANK (1 THRU HIGHEST=1).
 
 compute INACTIVE_BANK=0.
-IF ojk14_1>2 and ojk14_2>2 and ojk14_3>2 and ojk14_4>2 and ojk14_5>2 and ojk14_6>2 and ojk14_7>2 and ojk14_8>2 and
-    ojk14_9>2 and ojk14_10>2 and ojk14_11>2 and ojk14_12>2 and ojk14_13>2 and INACTIVE_BANK=1.
+IF ((ojk14_1>2 or sysmis(OJK14_1)) and (ojk14_2>2 or sysmis(OJK14_2)) and (ojk14_3> 2or sysmis(OJK14_3)) and (ojk14_4>2 or sysmis(OJK14_4)) and (ojk14_5>2 or sysmis(OJK14_5)) and
+ (ojk14_6>2 or sysmis(OJK14_6)) and (ojk14_7>2 or sysmis(OJK14_7)) and (ojk14_8>2 or sysmis(OJK14_8)) and (ojk14_9>2 or sysmis(OJK14_9)) and
+(ojk14_10>2 or sysmis(OJK14_10)) and (ojk14_12>2 or sysmis(OJK14_12)) and (ojk14_13>2 or sysmis(OJK14_13))) and (BI_E1A=1 or BI_E1B=1 or BI_E1C=1 or BI_E1V=1) INACTIVE_BANK=1.
 
 count BANK_BASIC=ojk1_2 ojk1_4(1).
 recode BANK_BASIC (1 THRU HIGHEST=1).
@@ -230,7 +231,7 @@ count BANK_LOAN=ojk1_5 ojk1_6 ojk1_7 ojk1_8 ojk1_9 ojk1_10(1).
 recode BANK_LOAN (1 thru highest=1).
 numeric BANK_AIRTIME.
 
-count ACTIVE_BANK_TRANSFER=ojk14_(1 thru 2).
+count ACTIVE_BANK_TRANSFER=ojk14_4(1 thru 2).
 recode ACTIVE_BANK_TRANSFER (1 thru highest=1).
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
