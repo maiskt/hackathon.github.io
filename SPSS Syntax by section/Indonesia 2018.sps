@@ -551,7 +551,115 @@ numeric INFML_SERVICE6.
 numeric INFML_SERVICE7.
 numeric INFML_SERVICE8.
 *************************************************************************************************************************************.
-*Section 10.
+*Section 10 (miss label).
+compute LOAN=0.
+if bi_e14=1 or bi_e16a=1 LOAN=1.
+
+recode bi_e14(1=1)(else=0) into LOAN_CURRENT.
+
+numeric LOAN_KNOW_INTEREST.
+
+compute LOAN_INFML=0.
+if bi_e17=1 or bi_e18a=1 LOAN_INFML=1.
+
+recode bi_e16a(1=1)(else=0) into LOAN_FORMAL.
+
+numeric LOAN_STORE.
+numeric  LOAN_CREDITCARD.
+compute LOAN_BANK=0.
+IF (ojk1_5=1 or ojk1_6=1 or ojk1_7=1 or ojk1_8=1 or ojk1_9=1 or ojk1_10=1) LOAN_BANK=1.
+numeric LOAN_MM.
+compute LOAN_MFI=0.
+IF (ojk12_2=1 or ojk13_2=1) LOAN_MFI=1.
+recode ojk11_2(1=1)(else=0) into LOAN_COOP.
+numeric LOAN_MLENDER.
+compute LOAN_PAWN=0.
+IF (ojk6_1=1 or ojk6_2=1) LOAN_PAWN=1.
+numeric LOAN_GROUP.
+numeric  LOAN_POST.
+numeric LOAN_SACCO.
+
+numeric LOAN_EMERGENCY.
+numeric LOAN_DAILY.
+numeric LOAN_BUSINESS.
+numeric LOAN_HOME.
+numeric LOAN_AGRIC.
+*************************************************************************************************************************************.
+*Section 11 (miss label).
+compute Save=0.
+if bi_e5s=1 or bi_e6s=1 or
+   ojk1_1=1 or ojk10_1=1 or ojk11_1=1 or ojk12_1=1 or ojk13_1=1 Save=1.
+
+numeric SAVE_KNOW_INTEREST.
+
+recode bi_e13(1=1)(else=0) into SAVE_INFML.
+
+compute SAVE_FORMAL = 0.
+if ojk1_1=1 or ojk10_1=1 or ojk11_1=1 or ojk12_1=1 or ojk13_1=1 SAVE_FORMAL=1.
+
+recode ojk1_1(1=1)(else=0) into SAVE_BANK.
+numeric SAVE_MM.
+compute SAVE_MFI=0.
+IF (ojk12_1=1 or ojk13_1=1) SAVE_MFI=1.
+recode ojk11_1(1=1)(else=0) into SAVE_COOP.
+numeric SAVE_GROUP.
+recode ojk10_1(1=1)(else=0) into SAVE_POST.
+numeric SAVE_CASH_PROPERTY.
+
+numeric SAVE_BUSINESS.
+numeric SAVE_EDUCATION.
+numeric SAVE_RETIREMENT.
+numeric SAVE_PRESTIGE.
+numeric SAVE_SECURITY.
+numeric SAVE_EMERGENCY.
+numeric SAVE_DAILY.
+numeric SAVE_COMMUNITY.
+numeric SAVE_CHILDREN_EDU.
+numeric SAVE_WEDDING.
+numeric SAVE_HOUSE.
+*************************************************************************************************************************************.
+*Section 12 (miss label).
+count INSURANCE=ojk2_1 ojk2_2 ojk2_3 ojk2_4 ojk2_5 ojk2_6 ojk2_7 ojk2_8 ojk2_9 ojk2_10 ojk2_11(1).
+recode INSURANCE (1 thru highest=1)(else=0).
+
+recode ojk2_4(1=1)(else=0) into INSUR_MEDICAL.
+recode ojk2_1(1=1)(else=0) into INSUR_LIFE.
+recode ojk2_5(1=1)(else=0) into INSUR_CAR.
+numeric INSUR_CROP.
+numeric INSUR_PROPERTY.
+numeric INSUR_UNEMPLOY.
+numeric INSUR_DISABLE.
+numeric INSUR_OLDAGE.
+recode ojk2_9(1=1)(else=0) into INSUR_LIVESTOCK.
+numeric INSUR_FAMILY.
+*************************************************************************************************************************************.
+*Section 13 (miss label).
+compute INVEST=0.
+if ojk7_1=1 or ojk7_2=1 or ojk7_3=1 or ojk7_4=1 or
+   ojk8_1=1 or ojk8_2=1 INVEST=1.
+
+numeric INVEST_OWN.
+numeric INVEST_OTHER.
+numeric INVEST_INFORMAL.
+
+compute INVEST_INSURANCE = 0.
+if INVEST=1 or INSURANCE=1 INVEST_INSURANCE = 1.
+*************************************************************************************************************************************.
+*Section 14 (miss label).
+recode DL24 (1=1) (else = copy) into FIN_SITUATION.
+numeric MAIN_EARNER.
+
+numeric FIN_ATT1.
+numeric FIN_ATT2.
+numeric FIN_ATT3.
+numeric FIN_ATT4.
+numeric FIN_ATT5.
+numeric SCH_FEE_PRB1.
+numeric SCH_FEE_PRB2.
+numeric SCH_FEE_PRB3.
+numeric SCH_FEE_PRB4.
+numeric SCH_FEE_PRB5.
+
 
 *************************************************************************************************************************************.
 *Labels.
