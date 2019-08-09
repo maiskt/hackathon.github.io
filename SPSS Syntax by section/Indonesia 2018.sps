@@ -57,6 +57,9 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1  or DL4_2=1 SELL_CROP=1.
+
+compute ID=0.
+if dg5_1=1 or dg5_3=1 or dg5_6=1 ID=1.  
 *************************************************************************************************************************************.
 *Section 4.
 COMPUTE ACCESS_PHONE=0.
@@ -738,6 +741,7 @@ if (BBKM = 1 or ATMKM = 1 or MMKM = 1 or BAKM = 1 or RSKM = 1 or MFIKM = 1 or GR
 value labels AGE -2"DK".
 value labels AGE_GROUP 1"15-24" 2"25-34" 3"35-44" 4"45-54" 5"55 and over" -2"DK".
 value labels EDU 1"No formal education" 2"Primary education" 3"Secondary education" 4"Higher education" 5"Other".
+value labels ID 1"Yes" 0"No".
 value labels LITERACY 1"Basic literacy" 0"lack of basic literacy".
 value labels NUMERACY 1"Basic numeracy" 0"Lack of basic numeracy".
 value labels FINANCIAL_LITERACY 0"No" 1"Yes".
@@ -766,6 +770,7 @@ value labels SELL_CROP 1"Yes" 0"No".
 variable labels AGE"Age"
 AGE_GROUP"Age groups"
 EDU"Education"
+ID"Have required ID for registration financial account"
 LITERACY"Literacy"
 NUMERACY"Basic numeracy"
 FINANCIAL_LITERACY"Financial literacy"
