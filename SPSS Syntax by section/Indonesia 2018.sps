@@ -646,7 +646,7 @@ compute INVEST_INSURANCE = 0.
 if INVEST=1 or INSURANCE=1 INVEST_INSURANCE = 1.
 *************************************************************************************************************************************.
 *Section 14 (miss label).
-recode DL24 (1=1) (else = copy) into FIN_SITUATION.
+compute FIN_SITUATION=dl24.
 numeric MAIN_EARNER.
 
 numeric FIN_ATT1.
@@ -659,7 +659,78 @@ numeric SCH_FEE_PRB2.
 numeric SCH_FEE_PRB3.
 numeric SCH_FEE_PRB4.
 numeric SCH_FEE_PRB5.
+*************************************************************************************************************************************.
+*Section 15.1 (miss label).
+numeric HAVE_PLAN.
+numeric ECO_VUL.
+numeric FIN_SHOCK.
+numeric BUDGET_INCOME.
+numeric BUDGET_STAY.
 
+numeric FIN_HEA1.
+numeric FIN_HEA2.
+numeric FIN_HEA3.
+numeric FIN_HEA4.
+numeric FIN_HEA5.
+numeric FIN_HEA6.
+numeric FIN_HEA7.
+numeric FIN_HEA8.
+numeric FIN_HEA9.
+numeric FIN_HEA10.
+*************************************************************************************************************************************.
+*Section 15.2 (miss label).
+numeric FIN_SHO1.
+numeric FIN_SHO2.
+numeric FIN_SHO3.
+numeric FIN_SHO4.
+numeric FIN_SHO5.
+numeric FIN_SHO6.
+numeric FIN_SHO7.
+numeric FIN_SHO8.
+
+compute MONEY_SOU1=0.
+if dl4_1=1 or fl4_2=1 MONEY_SOU1=1.
+recode DL4_3 (2=0)(else=copy) into MONEY_SOU2.
+recode DL4_4 (2=0)(else=copy) into MONEY_SOU3.
+recode DL4_5 (2=0)(else=copy) into MONEY_SOU4.
+recode DL4_6 (2=0)(else=copy) into MONEY_SOU5.
+recode DL4_7 (2=0)(else=copy) into MONEY_SOU6.
+recode DL4_8 (2=0)(else=copy) into MONEY_SOU7.
+recode DL4_9 (2=0)(else=copy) into MONEY_SOU8.
+recode DL4_10 (2=0)(else=copy) into MONEY_SOU9.
+recode DL4_11 (2=0)(else=copy) into MONEY_SOU10.
+
+numeric EXPENSE1.
+numeric EXPENSE2.
+numeric EXPENSE3.
+*************************************************************************************************************************************.
+*Section 16(miss label).
+compute ECO_EMP1=gn1.
+compute ECO_EMP2=gn2.
+compute ECO_EMP3=gn3.
+compute ECO_EMP4=gn4.
+compute ECO_EMP5=gn5.
+compute ECO_EMP6=gn6.
+compute ECO_EMP7=gn7.
+compute ECO_EMP8=gn8.
+*************************************************************************************************************************************.
+*Section 17(miss label).
+compute BBKM=bi_e43_1.
+compute ATMKM=bi_e43_2.
+numeric MMKM.
+compute BAKM=bi_e43_4.
+numeric RSKM.
+compute MFIKM=bi_e43_9.
+numeric GRPKM.
+numeric INFMLKM.
+compute POSTKM=bi_e43_3.
+
+compute POS = 0.
+if (BBKM=-2 or ATMKM=-2 or MMKM=-2 or BAKM=-2 or RSKM=-2 or MFIKM=-2 or GRPKM=-2 or INFMLKM=-2 or POSTKM=-2) POS=-2.
+if (BBKM = 4 or ATMKM = 4 or MMKM = 4 or BAKM = 4 or RSKM = 4 or MFIKM = 4 or GRPKM = 4 or INFMLKM = 4 or POSTKM = 4) POS = 3.
+if (BBKM = 3 or ATMKM = 3 or MMKM = 3 or BAKM = 3 or RSKM = 3 or MFIKM = 3 or GRPKM = 3 or INFMLKM = 3 or POSTKM = 3) POS = 3.
+if (BBKM = 2 or ATMKM = 2 or MMKM = 2 or BAKM = 2 or RSKM = 2 or MFIKM = 2 or GRPKM = 2 or INFMLKM = 2 or POSTKM = 2) POS = 2.
+if (BBKM = 1 or ATMKM = 1 or MMKM = 1 or BAKM = 1 or RSKM = 1 or MFIKM = 1 or GRPKM = 1 or INFMLKM = 1 or POSTKM = 1) POS = 1.
 
 *************************************************************************************************************************************.
 *Labels.
