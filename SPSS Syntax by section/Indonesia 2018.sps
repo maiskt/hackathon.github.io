@@ -730,7 +730,7 @@ compute POSTKM=bi_e43_3.
 
 compute POS = 0.
 if (BBKM=-2 or ATMKM=-2 or MMKM=-2 or BAKM=-2 or RSKM=-2 or MFIKM=-2 or GRPKM=-2 or INFMLKM=-2 or POSTKM=-2) POS=-2.
-if (BBKM = 4 or ATMKM = 4 or MMKM = 4 or BAKM = 4 or RSKM = 4 or MFIKM = 4 or GRPKM = 4 or INFMLKM = 4 or POSTKM = 4) POS = 3.
+if (BBKM = 4 or ATMKM = 4 or MMKM = 4 or BAKM = 4 or RSKM = 4 or MFIKM = 4 or GRPKM = 4 or INFMLKM = 4 or POSTKM = 4) POS = 4.
 if (BBKM = 3 or ATMKM = 3 or MMKM = 3 or BAKM = 3 or RSKM = 3 or MFIKM = 3 or GRPKM = 3 or INFMLKM = 3 or POSTKM = 3) POS = 3.
 if (BBKM = 2 or ATMKM = 2 or MMKM = 2 or BAKM = 2 or RSKM = 2 or MFIKM = 2 or GRPKM = 2 or INFMLKM = 2 or POSTKM = 2) POS = 2.
 if (BBKM = 1 or ATMKM = 1 or MMKM = 1 or BAKM = 1 or RSKM = 1 or MFIKM = 1 or GRPKM = 1 or INFMLKM = 1 or POSTKM = 1) POS = 1.
