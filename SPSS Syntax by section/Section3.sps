@@ -14,6 +14,9 @@ recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru high
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 13=4)(-2,14 thru HIGHEST=5) into EDU.
 
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_7=1) ID=1.
+
 compute LITERACY=0.
 if ((LN1<=3) and (LN2_1>=3 or LN2_2>=3)) LITERACY=1.
 
@@ -61,6 +64,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *18India.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -73,6 +77,9 @@ compute AGE=2018-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1,2=1)(3,4=2)(5 thru 7=3)(8 thru 11=4)(96,-2=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_6=1 or DG5_10=1) ID=1.
 
 compute LITERACY=0.
 if LN1<=3 and (LN2_1>=3 or LN2_2>=3) LITERACY=1.
@@ -121,6 +128,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *17Bangladesh.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -133,6 +141,9 @@ compute AGE=2017-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 13=4)(14 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_9=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 or LN1B<=3) and (LN2_1>=3 or LN2_2>=3)) LITERACY=1.
@@ -181,6 +192,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *17India.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -193,6 +205,9 @@ compute AGE=2017-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1,2=1)(3,4=2)(5,6,7=3)(8 thru 11=4)(96,99=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_6=1 or DG5_8=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 or LN1B<=3) and (LN2_1>=3 or LN2_2>=3)) LITERACY=1.
@@ -244,6 +259,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *17Kenya.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -256,6 +272,9 @@ compute AGE=2017-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_9=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 or LN1B<=3) and (LN2_1>=3 or LN2_2>=3)) LITERACY=1.
@@ -305,6 +324,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *17Nigeria.
 rename variables SbjNum=SBJNUM weight=WEIGHT.
@@ -317,6 +337,9 @@ compute AGE=2017-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_5=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 or LN1B<=3) and (LN2_1>=3 or LN2_2>=3)) LITERACY=1.
@@ -365,6 +388,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *17Paksitan.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -377,6 +401,9 @@ compute AGE=2017-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 or LN1B<=3) and max(LN2_1 to LN2_18)>=3) LITERACY=1.
@@ -423,6 +450,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *17Tanzania.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -435,6 +463,9 @@ compute AGE=2017-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_6=1 or DG5_8=1 or DG5_9=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 or LN1B<=3) and (LN2_3>=3 or LN2_4>=3)) LITERACY=1.
@@ -486,6 +517,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *17Uganda.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -498,6 +530,9 @@ compute AGE=2017-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_6=1 or DG5_8=1 or DG5_9=1 or DG5_11=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 or LN1B<=3) and (LN2_1>=3 or LN2_2>=3)) LITERACY=1.
@@ -549,6 +584,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_1=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *16Bangladesh.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -578,6 +614,9 @@ if sysmis(AGE) AGE=age1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 14=4)(96 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_5=1 or  DG5_6=1 or DG5_7=1 or DG5_96=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 and max(LN2_1 to LN2_6)>=3) or (LN1B<=3 and max(LN2_1 to LN2_6)>=3)) LITERACY=1.
@@ -629,6 +668,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *16India.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -641,6 +681,9 @@ compute AGE=2016-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 7=3)(8 thru 11=4)(96 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_5=1 or DG5_6=1 or DG5_7=1 or DG5_8=1 or DG5_9=1 or DG5_10=1 or DG5_11=1 or DG5_96=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 and max(LN2_1 to LN2_4)>=3) or (LN1B<=3 and max(LN2_1 to LN2_4)>=3)) LITERACY=1.
@@ -692,6 +735,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *16Indonesia.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -713,6 +757,10 @@ compute YEAR=2016.
  * if sysmis(AGE) AGE=age1. 
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2,3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_3=1 or DG5_4=1 or DG5_12=1 or DG5_13=1 or DG5_15=1) ID=1.
+
 compute LITERACY=0.
 if ((LN1A<=3 and max(LN2_1 to LN2_6)>=3) or (LN1B<=3 and max(LN2_1 to LN2_6)>=3)) LITERACY=1.
 compute NUMERACY=(FL12=1 OR FL13=1 OR FL16=2 OR FL18=1).
@@ -762,6 +810,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *16Kenya.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -786,6 +835,9 @@ compute YEAR=2016.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_9=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 and max(LN2_1 to LN2_16)>=3) or (LN1B<=3 and max(LN2_1 to LN2_16)>=3)) LITERACY=1.
@@ -837,6 +889,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *16Nigeria.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -861,6 +914,9 @@ compute YEAR=2016.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_6=1) ID=1.
 
 compute LITERACY=0.
 loop i=3 to 5.
@@ -914,6 +970,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *16Pakistan.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -926,6 +983,9 @@ compute AGE=2016-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 13=4)(14 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_6=1 or DG5_7=1 or DG5_8=1 or DG5_9=1 or DG5_96=1) ID=1.
 
 compute LN2=max(LN2_1 to LN2_18, ln2_19, ln2_20).
 compute LITERACY=0.
@@ -978,6 +1038,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *16Tanzania.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -990,6 +1051,9 @@ compute AGE=2016-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_6=1 or DG5_8=1 or DG5_9=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 and max(LN2_1 to LN2_6)>=3) or (LN1B<=3 and max(LN2_1 to LN2_6)>=3)) LITERACY=1.
@@ -1041,6 +1105,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *16Uganda.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -1065,6 +1130,9 @@ compute YEAR=2016.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 14=4)(96 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or Dg5_5=1 or DG5_6=1 or DG5_8=1 or DG5_9=1 or DG5_11=1) ID=1.
 
 compute LITERACY=0.
 if ((LN1A<=3 and max(LN2_1 to LN2_6)>=3) or (LN1B<=3 and max(LN2_1 to LN2_6)>=3)) LITERACY=1.
@@ -1116,6 +1184,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *15Bangladesh.
 rename variables QN=SBJNUM weight=WEIGHT.
@@ -1126,6 +1195,10 @@ compute YEAR=2015.
 compute AGE=2015-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1 thru 2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 13=4)(15 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 to dg5_11 (1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to LN2_4).
 compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1168,6 +1241,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_15=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *15India.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -1178,6 +1252,10 @@ compute YEAR=2015.
 compute AGE=2015-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1 thru 2=1)(3,4=2)(5 thru 7=3)(8 thru 11=4)(12 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 to dg5_12(1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to LN2_4).
 compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1222,6 +1300,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *15Indonesia.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -1234,6 +1313,10 @@ recode AGE(sysmis=-2).
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode AGE_GROUP(999=-2).
 recode dg4 (1 =1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 dg5_3 to dg5_5 dg5_12 dg5_13 dg5_15 (1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to LN2_10).
 compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1278,6 +1361,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *15Kenya.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -1288,6 +1372,10 @@ compute YEAR=2015.
 compute AGE=2015-DG1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 to dg5_3 dg5_9(1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to LN2_10).
 compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1332,6 +1420,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *15Nigeria.
 rename variables QN=SBJNUM weight=WEIGHT.
@@ -1345,6 +1434,10 @@ recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru high
 recode AGE(sysmis=-2).
 recode AGE_GROUP(999=-2).
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 to dg5_4 dg5_6(1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to LN2_10).
 compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1389,6 +1482,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *15Pakistan.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -1399,6 +1493,10 @@ compute YEAR=2015.
 compute AGE=2015-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 13=4)(14 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 to dg5_10 (1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute  LN2=max(LN3_1 to LN3_18).
 compute LITERACY=0.
 if (((Ln1_1<=3 or ln1a_1<=3 or ln1b_1<=3) and ln2>=3) or ((Ln1_2<=3 or ln1a_2<=3 or ln1b_2<=3) and ln2>=3)) LITERACY=1.
@@ -1444,6 +1542,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *15Tanzania.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -1456,6 +1555,10 @@ recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru high
 recode AGE(sysmis=-2).
 recode AGE_GROUP(999=-2).
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 to dg5_4 dg5_6 dg5_8 dg5_11 (1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to LN2_4).
 compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1500,6 +1603,7 @@ if DL7=1 WORK_FARM=1.
 
 compute SELL_CROP=0.
 if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
 **************************************************************************************************************************************************.
 *15Uganda.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -1510,6 +1614,10 @@ compute YEAR=2015.
 compute AGE=2015-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 to dg5_11 (1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to Ln2_16).
 compute LITERACY=0.
 if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1566,6 +1674,9 @@ compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
 
+count ID=DG5_1 DG5_2 DG5_3 DG5_4 DG5_5 DG5_6 DG5_7 DG5_8 DG5_9 DG5_10(1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to Ln2_4).
 compute LITERACY=0.
 if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1616,6 +1727,9 @@ compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1 thru 2=1)(3,4=2)(5 thru 7=3)(8 thru 11=4)(12 thru HIGHEST=5) into EDU.
 
+count ID=dg5_1 to dg5_12(1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to Ln2_4).
 compute LITERACY=0.
 if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1664,7 +1778,10 @@ compute YEAR=2014.
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1 =1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
-FREQ EDU.
+
+count ID=dg5_1 dg5_3 DG5_4 DG5_5 DG5_12 DG5_14(1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to Ln2_10).
 compute LITERACY=0.
 if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1713,6 +1830,10 @@ compute YEAR=2014.
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 dg5_2 dg5_8(1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to LN2_12).
 compute LITERACY=0.
 if ((Ln1<=3 and ln1b<=4 and ln2>=3) or (ln1<=4 and ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1761,6 +1882,9 @@ compute YEAR=2014.
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 dg5_2 dg5_5 dg5_3 (1).
+RECODE ID(1 THRU HIGHEST=1).
 
 compute LN2=max(LN2_1 to Ln2_10).
 compute LITERACY=0.
@@ -1811,6 +1935,9 @@ compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 13=4)(14 thru HIGHEST=5) into EDU.
 
+count ID=dg5_1 dg5_2 dg5_3 DG5_4 DG5_5 DG5_6 DG5_7 DG5_8 DG5_9 DG5_10(1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute  LN2=max(LN2_1 to LN2_18).
 compute LITERACY=0.
 if (((Ln1_1<=3) and ln2>=3) or ((ln1_1b<=3) and ln2>=3)) LITERACY=1.
@@ -1859,6 +1986,9 @@ compute YEAR=2014.
 compute AGE=2014-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
+
+count ID=dg5_1 dg5_2 dg5_3 DG5_5 DG5_7 DG5_10(1).
+RECODE ID(1 THRU HIGHEST=1).
 
 compute LN2=max(LN2_1 to Ln2_4).
 compute LITERACY=0.
@@ -1911,6 +2041,9 @@ recode AGE(sysmis=-2).
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
 
+count ID=dg5_1 dg5_2 dg5_3 dg5_4 dg5_5 dg5_6 dg5_7 dg5_8 dg5_9 dg5_10 dg5_11(1).
+RECODE ID(1 THRU HIGHEST=1).
+
 compute LN2=max(LN2_1 to Ln2_20).
 compute LITERACY=0.
 if ((Ln1<=3 and ln2>=3) or (Ln1b<=3 and ln2>=3)) LITERACY=1.
@@ -1960,6 +2093,9 @@ compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 5=2)(6 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
 
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_5=1 or DG5_6=1 or DG5_7=1 or DG5_8=1 or DG5_9=1 or DG5_10=1) ID=1.
+
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
@@ -2003,7 +2139,11 @@ compute YEAR=2013.
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1 thru 2=1)(3,4=2)(5 thru 7=3)(8 thru 11=4)(12 thru HIGHEST=5) into EDU.
-FREQ EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_5=1 or DG5_6=1 or DG5_7=1 or DG5_8=1 or DG5_9=1 or DG5_10=1 or DG5_11=1 or DG5_12=1
+ or DG5_13=1) ID=1.
+
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
@@ -2040,6 +2180,9 @@ compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
 
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_8=1) ID=1.
+
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
@@ -2075,6 +2218,9 @@ compute YEAR=2013.
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
+
+compute ID=0.
+if (DG5A=1 or DG5B=1 or DG5C=1 or DG5E=1) ID=1.
 
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
@@ -2119,7 +2265,10 @@ compute YEAR=2013.
 compute AGE=2013-dg1.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1,2=1)(3 thru 4=2)(5 thru 8=3)(9 thru 13=4)(14 thru HIGHEST=5) into EDU.
-FREQ EDU.
+
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_4=1 or DG5_5=1 or DG5_6=1 or DG5_7=1 or DG5_8=1) ID=1.
+
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
@@ -2165,6 +2314,9 @@ rename variables iage=AGE.
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 9=3)(10 thru 14=4)(15 thru HIGHEST=5) into EDU.
 
+compute ID=0.
+if (DG5_1=1 or DG5_2=1 or DG5_3=1 or DG5_5=1 or DG5_7=1) ID=1.
+
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
@@ -2202,6 +2354,9 @@ recode AGE(sysmis=-2).
 recode AGE (15 thru 24=1)(25 thru 34=2)(35 thru 44=3)(45 thru 54=4)(55 thru highest=5) into AGE_GROUP.
 recode dg4 (1=1)(2 thru 3=2)(4 thru 7=3)(8 thru 12=4)(13 thru HIGHEST=5) into EDU.
 
+count ID=dg5_1 dg5_2 dg5_3 dg5_4 dg5_5 dg5_6 dg5_7 dg5_8 dg5_9(1).
+recode ID (1 THRU HIGHEST=1).
+
 compute LITERACY=0.
 if (LN1<=3 and LN1B<=3) or LN1<=2 or LN1B<=2 LITERACY=1.
 
@@ -2234,6 +2389,8 @@ value labels AGE -2"DK".
 value labels AGE_GROUP 1"15-24" 2"25-34" 3"35-44" 4"45-54" 5"55 and over" -2"DK".
 
 value labels EDU 1"No formal education" 2"Primary education" 3"Secondary education" 4"Higher education" 5"Other".
+
+value labels ID 1"Yes" 0"No".
 
 value labels LITERACY 1"Basic literacy" 0"lack of basic literacy".
 
@@ -2275,6 +2432,7 @@ value labels SELL_CROP 1"Yes" 0"No".
 variable labels AGE"Age"
 AGE_GROUP"Age groups"
 EDU"Education"
+ID"Have required ID for registration financial account"
 LITERACY"Literacy"
 NUMERACY"Basic numeracy"
 FINANCIAL_LITERACY"Financial literacy"
