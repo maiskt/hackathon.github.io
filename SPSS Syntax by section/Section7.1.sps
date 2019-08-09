@@ -1,8 +1,8 @@
 ﻿* Encoding: UTF-8.
 *Section 1.
 dataset close all.
-insert file = "C:/Users/shueym/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
-cd "C:/Users/shueym/Documents".
+insert file = "C:/Users/LENOVO/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
+cd "C:/Users/LENOVO/Documents".
 
 *2018---------------------------------------------------------------------***.
 DATASET ACTIVATE bng18.
@@ -59,7 +59,7 @@ compute MM_STAGE = 0.
 if access_mm=1 mm_stage=1.
 if (mm_stage=1 and registered_mm=1) mm_stage=2.
 if (mm_stage=2 and active_mm=1) mm_stage=3.
-if (mm_stage=3 and advanced_active_mm=1) mm_stage=4.
+if (mm_stage=3 and ACTIVE_MM_ADV=1) mm_stage=4.
 
 save outfile = "data/bng18.sav"
 /keep= SBJNUM COUNTRY YEAR AWARE_MM AWARE_MM_PROVIDER AWARE_NONUSER_MM ACCESS_MM 
@@ -119,7 +119,7 @@ compute MM_STAGE = 0.
 if access_mm=1 mm_stage=1.
 if (mm_stage=1 and registered_mm=1) mm_stage=2.
 if (mm_stage=2 and active_mm=1) mm_stage=3.
-if (mm_stage=3 and advanced_active_mm=1) mm_stage=4.
+if (mm_stage=3 and ACTIVE_MM_ADV=1) mm_stage=4.
 
 save outfile = "data/ind18.sav"
 /keep= SBJNUM COUNTRY YEAR AWARE_MM AWARE_MM_PROVIDER AWARE_NONUSER_MM ACCESS_MM

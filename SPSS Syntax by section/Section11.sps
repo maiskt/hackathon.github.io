@@ -907,7 +907,7 @@ recode SAVE_KNOW_INTEREST (1 thru hi = 1)(else = 0).
 
 numeric SAVE_FORMAL.
  *IFI 21.3?.
- numeric SAVE_INFML.
+numeric SAVE_INFML.
 
 count SAVE_BANK=ff14_18 ff14_19 ff14_20 fb22_1 (1).
 recode SAVE_BANK (1 thru hi = 1)(else = 0).
@@ -1575,7 +1575,7 @@ recode SAVE_KNOW_INTEREST (1 thru hi = 1) (else = 0).
 numeric SAVE_INFML.
 numeric SAVE_FORMAL.
 *Bank and MFI are connected, so can't use either.
-numeric SAVE_BANK.
+recode FF19_24 (1=1)(2=0) into SAVE_BANK.
 
 count SAVE_MM=MM16U MM16V (1).
 recode SAVE_MM (1 thru highest=1)(else=0).
@@ -1653,6 +1653,7 @@ save outfile = "data/ind13.sav"
 DATASET ACTIVATE ken13.
 
 count SAVE= NP7_1T to NP7_13T (1).
+recode SAVE (1 thru hi = 1)(else = 0).
 numeric SAVE_KNOW_INTEREST.
 numeric SAVE_FORMAL.
 numeric SAVE_INFML.
@@ -1765,8 +1766,8 @@ save outfile = "data/pak13.sav"
 
 
 DATASET ACTIVATE tza13.
-
-numeric SAVE.
+*only banks and mm.
+count SAVE= ffi16_21  ffi16_22 MM16_21 MM16_22 (1).
 numeric SAVE_KNOW_INTEREST.
 numeric SAVE_FORMAL.
 numeric SAVE_INFML.
@@ -1800,13 +1801,14 @@ save outfile = "data/tza13.sav"
 
 
 DATASET ACTIVATE uga13.
-
-numeric SAVE.
+*only banks and mm.
+count SAVE = FFI16U FFI16V MM16U MM16V (1).
 numeric SAVE_KNOW_INTEREST.
 numeric SAVE_FORMAL.
 numeric SAVE_INFML.
 
-recode FFI16U (else=copy) into SAVE_BANK.
+count SAVE_BANK = FFI16U FFI16V (1) .
+recode SAVE_BANK (1 thru highest=1)(else=0).
 
 count SAVE_MM=MM16U MM16V (1).
 recode SAVE_MM (1 thru highest=1)(else=0).
