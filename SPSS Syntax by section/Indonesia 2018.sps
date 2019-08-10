@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 *Cross section - Indonesia 2018.
 *************************************************************************************************************************************.
 *Section 1.
@@ -190,7 +190,7 @@ count ACTIVE30_BANK=ojk14_1 to ojk14_13(1).
 recode ACTIVE30_BANK (1 THRU HIGHEST=1).
 
 compute INACTIVE_BANK=0.
-IF ((ojk14_1>2 or sysmis(OJK14_1)) and (ojk14_2>2 or sysmis(OJK14_2)) and (ojk14_3> 2or sysmis(OJK14_3)) and (ojk14_4>2 or sysmis(OJK14_4)) and (ojk14_5>2 or sysmis(OJK14_5)) and
+IF ((ojk14_1>2 or sysmis(OJK14_1)) and (ojk14_2>2 or sysmis(OJK14_2)) and (ojk14_3> 2 or sysmis(OJK14_3)) and (ojk14_4>2 or sysmis(OJK14_4)) and (ojk14_5>2 or sysmis(OJK14_5)) and
  (ojk14_6>2 or sysmis(OJK14_6)) and (ojk14_7>2 or sysmis(OJK14_7)) and (ojk14_8>2 or sysmis(OJK14_8)) and (ojk14_9>2 or sysmis(OJK14_9)) and
 (ojk14_10>2 or sysmis(OJK14_10)) and (ojk14_12>2 or sysmis(OJK14_12)) and (ojk14_13>2 or sysmis(OJK14_13))) and (BI_E1A=1 or BI_E1B=1 or BI_E1C=1 or BI_E1V=1) INACTIVE_BANK=1.
 
@@ -235,26 +235,29 @@ recode BANK_LOAN (1 thru highest=1).
 numeric BANK_AIRTIME.
 
 count ACTIVE_BANK_TRANSFER=ojk14_4(1 thru 2).
-recode ACTIVE_BANK_TRANSFER (1 thru highest=1).
 numeric ACTIVE_BANK_MERCHANT.
 numeric ACTIVE_BANK_BILL.
 numeric ACTIVE_BANK_GOV.
 numeric ACTIVE_BANK_WAGE.
 numeric ACTIVE_BANK_INSURANCE.
 count ACTIVE_BANK_SAVE=ojk14_1(1 thru 2).
-recode ACTIVE_BANK_SAVE (1 thru highest=1).
 count ACTIVE_BANK_INVEST=ojk14_12(1 thru 2).
-recode ACTIVE_BANK_INVEST (1 thru highest=1).
-count ACTIVE_BANK_LOAN=ojk14_5 ojk14_6 ojk14_7 ojk14_8 ojk14_9 ojk14_10(1 thru 4).
+count ACTIVE_BANK_LOAN=ojk14_5 ojk14_6 ojk14_7 ojk14_8 ojk14_9 ojk14_10(1,2).
 recode ACTIVE_BANK_LOAN (1 thru highest=1).
 numeric ACTIVE_BANK_AIRTIME.
 *************************************************************************************************************************************.
 *Section 6.3.
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+*discuss and double check.
+count R_NOBANK1=BI_E2A_G BI_E2B_GBI_E2C_G (1).
+recode R_NOBANK1 (1 thru highest=1).
+count R_NOBANK2=BI_E2A_E BI_E2B_E BI_E2C_E(1).
+recode R_NOBANK2 (1 thru highest=1).
+count R_NOBANK3=BI_E2A_B BI_E2A_I BI_E2A_J BI_E2B_B BI_E2B_I BI_E2B_J BI_E2C_B BI_E2C_I BI_E2C_J (1).
+recode R_NOBANK3 (1 thru highest=1).
+count R_NOBANK4=BI_E2A_D BI_E2B_D BI_E2C_D(1).
+recode R_NOBANK4 (1 thru highest=1).
+count R_NOBANK5=BI_E2A_F BI_E2B_F BI_E2C_F(1).
+recode R_NOBANK5 (1 thru highest=1).
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -280,16 +283,16 @@ numeric USE_BANK_WALLET.
 *************************************************************************************************************************************.
 *Section 7.1.
 compute AWARE_MM=0.
-if bi_e24d AWARE_MM=1.
+if bi_e24d=1 AWARE_MM=1.
 
 numeric AWARE_MM_PROVIDER.
 numeric AWARE_NONUSER_MM.
 
 compute ACCESS_MM=0.
 if BI_E25D=1 ACCESS_MM=1.
-
+*take a look.
 compute REGISTERED_MM=0.
-if BI_E26D=1 REGISTERED_MM=1.
+if BI_E32A=1 REGISTERED_MM=1.
 
 compute ACTIVE_MM=0.
 if (BI_E32A=1 and GF3B<=2) ACTIVE_MM=1.
