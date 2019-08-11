@@ -454,31 +454,79 @@ numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
 *************************************************************************************************************************************.
 *Section 8.1.
+*take a look.
 compute ACCESS_NBFI=0.
-IF(OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1 or 
-    OJK10_1=1 or OJK10_2=1 or OJK10_3=1 or OJK10_4=1 or 
-    OJK11_1=1 or OJK11_2=1 or OJK11_3=1)  ACCESS_NBFI=1.
+IF(OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1) or
+    (OJK11_1=1 or COP2=1) or
+    (OJK10_1=1 or OJK10_2=1 or OJK10_3=1 or OJK10_4=1)  ACCESS_NBFI=1.
 
 compute ACCESS_NBFI_ALL=0.
 IF (OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1 or 
      OJK10_1=1 or OJK10_2=1 or OJK10_3=1 or OJK10_4=1 or 
      OJK11_1=1 or OJK11_2=1 or OJK11_3=1 or 
      OJK12_1=1 or OJK12_2=1 or OJK12_3=1 or OJK13_1=1 or OJK13_2=1 or OJK13_3=1) ACCESS_NBFI_ALL=1.
-*Need confirm.
-numeric REGISTERED_NBFI.
-numeric REGISTERED_NBFI_ALL.
-numeric REG_DFS_NBFI.
-numeric ACTIVE_NBFI.
-numeric ACTIVE_NBFI_ALL.
-numeric ACTIVE30_NBFI.
-numeric INACTIVE_NBFI.
-numeric DORMANT_NBFI.
-numeric OTC_NBFI.
+
+*double check.
+compute REGISTERED_NBFI=0.
+if FNX=1 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and
+(BI_E1A=2 or sysmis(BI_E1A)) and (BI_E1B=2 or sysmis(BI_E1B)) and (BI_E1C=2 or sysmis(BI_E1C)) and (BI_E1V=2 or sysmis(BI_E1V)) and
+(BI_E32A=2 or sysmis(BI_E32A)) REGISTERED_NBFI=1.
+
+*double check.
+compute REGISTERED_NBFI_ALL=0.
+if FNX=1 and
+(BI_E1A=2 or sysmis(BI_E1A)) and (BI_E1B=2 or sysmis(BI_E1B)) and (BI_E1C=2 or sysmis(BI_E1C)) and (BI_E1V=2 or sysmis(BI_E1V)) and
+(BI_E32A=2 or sysmis(BI_E32A)) REGISTERED_NBFI_ALL=1.
+
+*double check.
+compute REG_DFS_NBFI=0.
+IF FNX=1 and 
+((OJK11_1=2 and OJK11_2=2 and OJK11_3=2 and sysmis(BPR1)) or 
+((OJK11_1=1 or COP2=1) and COP1=1) or 
+(BPR1=2 or BPR2=2 or (BPR2=1 and BPR3=1))) and
+(BI_E1A=2 or sysmis(BI_E1A)) and (BI_E1B=2 or sysmis(BI_E1B)) and (BI_E1C=2 or sysmis(BI_E1C)) and (BI_E1V=2 or sysmis(BI_E1V)) and
+(BI_E32A=2 or sysmis(BI_E32A)) REG_DFS_NBFI=1.
+
+*double check.
+compute ACTIVE_NBFI=0.
+if FNXA<=2 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and 
+(OJK14_1<3 or sysmis(OJK14_1)) and (OJK14_2<3 or sysmis(OJK14_ 2)) and (OJK14_3<3 or sysmis(OJK14_3)) and (OJK14_4<3 or sysmis(OJK14_4)) and (OJK14_5<3 or sysmis(OJK14_5)) and 
+(OJK14_6<3 or sysmis(OJK14_6)) and (OJK14_7<3 or sysmis(OJK14_7)) and (OJK14_8<3 or sysmis(OJK14_8)) and (OJK14_9<3 or sysmis(OJK14_9)) and (OJK14_10<3 or sysmis(OJK14_10)) and 
+(OJK14_12<3 or sysmis(OJK14_12)) and (OJK14_13<3 or sysmis(OJK14_13)) ACTIVE_NBFI=1.
+
+*double check.
+compute ACTIVE_NBFI_ALL=0.
+if FNXA<=2 and 
+(OJK14_1<3 or sysmis(OJK14_1)) and (OJK14_2<3 or sysmis(OJK14_ 2)) and (OJK14_3<3 or sysmis(OJK14_3)) and (OJK14_4<3 or sysmis(OJK14_4)) and (OJK14_5<3 or sysmis(OJK14_5)) and 
+(OJK14_6<3 or sysmis(OJK14_6)) and (OJK14_7<3 or sysmis(OJK14_7)) and (OJK14_8<3 or sysmis(OJK14_8)) and (OJK14_9<3 or sysmis(OJK14_9)) and (OJK14_10<3 or sysmis(OJK14_10)) and 
+(OJK14_12<3 or sysmis(OJK14_12)) and (OJK14_13<3 or sysmis(OJK14_13)) ACTIVE_NBFI_ALL=1.
+
+*double check.
+compute ACTIVE30_NBFI=0.
+if FNXA=1 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and 
+(OJK14_1<3 or sysmis(OJK14_1)) and (OJK14_2<3 or sysmis(OJK14_ 2)) and (OJK14_3<3 or sysmis(OJK14_3)) and (OJK14_4<3 or sysmis(OJK14_4)) and (OJK14_5<3 or sysmis(OJK14_5)) and 
+(OJK14_6<3 or sysmis(OJK14_6)) and (OJK14_7<3 or sysmis(OJK14_7)) and (OJK14_8<3 or sysmis(OJK14_8)) and (OJK14_9<3 or sysmis(OJK14_9)) and (OJK14_10<3 or sysmis(OJK14_10)) and 
+(OJK14_12<3 or sysmis(OJK14_12)) and (OJK14_13<3 or sysmis(OJK14_13)) ACTIVE30_NBFI=1.
+
+*double check.
+compute INACTIVE_NBFI=0.
+if REGISTERED_NBFI=1 and ACTIVE_NBFI=1 INACTIVE_NBFI=1.
+
+*double check.
+compute DORMANT_NBFI=0.
+if REGISTERED_NBFI=1 and ACCESS_NBFI=0 DORMANT_NBFI=1.
+
+*double check.
+compute OTC_NBFI=0.
+if REGISTERED_NBFI=0 and ACCESS_NBFI=1 OTC_NBFI=1.
+
 numeric NBFI_ALL_BASIC.
 numeric NBFI_ALL_ADV.
 numeric NBFI_BASIC.
 numeric NBFI_ADV.
 numeric REG_NBFI_BASIC.
+
+*discuss whether derive bank_adv or mm_adv, then derive reg_nbfi_adv.
 numeric REG_NBF_ADV.
 numeric ACTIVE_NBFI_BASIC.
 numeric ACTIVE_NBFI_ADV.
