@@ -67,7 +67,7 @@ if ad9_1=1 or ad9_12=1 or ad9_13=1 or ad9_14=1 save_bank=1.
 
 recode AD9_4 (1=1) (2=0) into SAVE_MM.
 recode AD9_5 (1=1) (2=0) into SAVE_MFI.
-numeric SAVE_COOP.
+recode AD9_6 (1=1) (2=0) into SAVE_COOP.
 numeric SAVE_GROUP.
 recode AD9_2 (1=1) (2=0) into SAVE_POST.
 
