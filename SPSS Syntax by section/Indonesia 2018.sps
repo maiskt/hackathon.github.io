@@ -248,7 +248,7 @@ numeric ACTIVE_BANK_AIRTIME.
 *************************************************************************************************************************************.
 *Section 6.3.
 *discuss and double check.
-count R_NOBANK1=BI_E2A_G BI_E2B_GBI_E2C_G (1).
+count R_NOBANK1=BI_E2A_G BI_E2 B_GBI_E2C_G (1).
 recode R_NOBANK1 (1 thru highest=1).
 count R_NOBANK2=BI_E2A_E BI_E2B_E BI_E2C_E(1).
 recode R_NOBANK2 (1 thru highest=1).
@@ -494,12 +494,17 @@ if FNXA<=2 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) 
 (OJK14_6<3 or sysmis(OJK14_6)) and (OJK14_7<3 or sysmis(OJK14_7)) and (OJK14_8<3 or sysmis(OJK14_8)) and (OJK14_9<3 or sysmis(OJK14_9)) and (OJK14_10<3 or sysmis(OJK14_10)) and 
 (OJK14_12<3 or sysmis(OJK14_12)) and (OJK14_13<3 or sysmis(OJK14_13)) ACTIVE_NBFI=1.
 
+*add ((BI_E32A=1 and GF3B<=2) or bi_e32a=2) ?.
+
 *double check.
 compute ACTIVE_NBFI_ALL=0.
 if FNXA<=2 and 
 (OJK14_1<3 or sysmis(OJK14_1)) and (OJK14_2<3 or sysmis(OJK14_ 2)) and (OJK14_3<3 or sysmis(OJK14_3)) and (OJK14_4<3 or sysmis(OJK14_4)) and (OJK14_5<3 or sysmis(OJK14_5)) and 
 (OJK14_6<3 or sysmis(OJK14_6)) and (OJK14_7<3 or sysmis(OJK14_7)) and (OJK14_8<3 or sysmis(OJK14_8)) and (OJK14_9<3 or sysmis(OJK14_9)) and (OJK14_10<3 or sysmis(OJK14_10)) and 
 (OJK14_12<3 or sysmis(OJK14_12)) and (OJK14_13<3 or sysmis(OJK14_13)) ACTIVE_NBFI_ALL=1.
+
+
+*add ((BI_E32A=1 and GF3B<=2) or bi_e32a=2) ?.
 
 *double check.
 compute ACTIVE30_NBFI=0.
@@ -508,9 +513,14 @@ if FNXA=1 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) a
 (OJK14_6<3 or sysmis(OJK14_6)) and (OJK14_7<3 or sysmis(OJK14_7)) and (OJK14_8<3 or sysmis(OJK14_8)) and (OJK14_9<3 or sysmis(OJK14_9)) and (OJK14_10<3 or sysmis(OJK14_10)) and 
 (OJK14_12<3 or sysmis(OJK14_12)) and (OJK14_13<3 or sysmis(OJK14_13)) ACTIVE30_NBFI=1.
 
+*OJK14=1.
+*add ((BI_E32A=1 and GF3B=1) or bi_e32a=2) ?.
+
 *double check.
 compute INACTIVE_NBFI=0.
 if REGISTERED_NBFI=1 and ACTIVE_NBFI=1 INACTIVE_NBFI=1.
+
+*ACTIVE_NBFI=0.
 
 *double check.
 compute DORMANT_NBFI=0.
