@@ -533,14 +533,15 @@ numeric ACTIVE_NBFI_ADV.
 numeric ACTIVE30_NBFI_ADV.
 numeric NBFI_STAGE.
 *************************************************************************************************************************************.
-*Section 8.2.
+*Section 8.2.*discuss and decide whether to keep.
 compute ACCESS_MFI=0.
 if (OJK12_1=1 or OJK12_2=1 or OJK12_3=1 or OJK13_1=1 or OJK13_2=1 or OJK13_3=1) ACCESS_MFI=1.
 numeric REGISTERED_MFI.
 numeric ACTIVE_MFI.
 
+*double check.
 compute ACCESS_COOP=0.
-if (OJK11_1=1 or OJK11_2=1 or OJK11_3=1) ACCESS_COOP=1.
+if OJK11_1=1 or COP2=1 ACCESS_COOP=1.
 numeric REGISTERED_COOP.
 numeric ACTIVE_COOP.
 
@@ -606,17 +607,22 @@ numeric INFML_SERVICE7.
 numeric INFML_SERVICE8.
 *************************************************************************************************************************************.
 *Section 10 (miss label).
+*double check.
 compute LOAN=0.
-if bi_e14=1 or bi_e16a=1 LOAN=1.
+if bi_e14=1 or bi_e16a=1 or BI_E17=1 or BI_E18A=1 LOAN=1.
 
-recode bi_e14(1=1)(else=0) into LOAN_CURRENT.
+*double check.
+compute LOAN_CURRENT=0.
+if bi_e14=1 or BI_E17=1 LOAN_CURRENT=1.
 
 numeric LOAN_KNOW_INTEREST.
 
 compute LOAN_INFML=0.
 if bi_e17=1 or bi_e18a=1 LOAN_INFML=1.
 
-recode bi_e16a(1=1)(else=0) into LOAN_FORMAL.
+*double check.
+compute LOAN_FORMAL=0.
+if bi_e14=1 or bi_e16a=1 LOAN_FORMAL=1.
 
 numeric LOAN_STORE.
 numeric  LOAN_CREDITCARD.
