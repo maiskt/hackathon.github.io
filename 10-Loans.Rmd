@@ -37,7 +37,22 @@ Levels:
 + 1="Yes"
 + 0= "No"
 
+Notes:
+
+* Classification unavailable for 2016.
+
 ## LOAN_FORMAL
+
+This variable counts respondents who have borrowed from a formal bank or other institution.
+
+Levels: 
+
++ 1="Yes"
++ 0= "No"
+
+Notes:
+
+* Classification unavailable for 2016.
 
 ## LOAN_STORE
 Ever borrowed from a store or shopkeeper: counts respondents who have ever purchased something from a store or shopkeeper using credit. 
