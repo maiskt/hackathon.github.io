@@ -1240,24 +1240,26 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 *2013---------------------------------------------------------------------***.
 DATASET ACTIVATE bng13.
-LOAN.
-*BL1?.
+*BL1 is within last 12 months.
+count LOAN = FFI16S MM16S BL1 (1).
+recode LOAN (1 thru hi = 1)(else = 0).
 numeric LOAN_CURRENT.
 numeric LOAN_KNOW_INTEREST.
-LOAN_INFML
-LOAN_FORMAL
+numeric LOAN_INFML.
+numeric LOAN_FORMAL.
 
-LOAN_STORE
-LOAN_CREDITCARD
-recode FF16S (1=1)(2=0) into LOAN_BANK.
+
+recode FFI16S (1=1)(2=0) into LOAN_BANK.
 recode MM16S (1=1)(2=0) into LOAN_MM.
-LOAN_MFI
-LOAN_COOP
-LOAN_MLENDER
-LOAN_PAWN
-LOAN_GROUP
-LOAN_POST
-LOAN_SACCO
+numeric LOAN_STORE.
+numeric LOAN_CREDITCARD.
+numeric LOAN_MFI.
+numeric LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+numeric LOAN_GROUP.
+numeric LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1273,10 +1275,25 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE ind13.
 
-recode FB6_1 FF16_19 MM16_19 (1=1)(2=0) into LOAN.
-
-recode FF16_19 (1=1)(2=0) into LOAN_BANK.
+recode FB6_1 FF16_19 MM16_19 FB7_1_1 to FB7_1_16 (1=1)(2=0) into LOAN.
+numeric LOAN_CURRENT.
+numeric LOAN_KNOW_INTEREST.
+numeric LOAN_FORMAL.
+recode FFI16_19 (1=1)(2=0) into LOAN_BANK.
 recode MM16_19 (1=1)(2=0) into LOAN_MM.
+
+numeric LOAN_STORE.
+numeric LOAN_CREDITCARD.
+*cooperatives included in bank definition.
+numeric LOAN_BANK.
+recode FB7_1_6 (1=1)(2=0) into LOAN_MM.
+recode (1=1)(2=0) into LOAN_MFI.
+numeric LOAN_COOP.
+recode FB7_1_4 (1=1)(2=0) into LOAN_MLENDER.
+numeric LOAN_PAWN.
+recode FB7_1_3 (1=1)(2=0) into LOAN_GROUP.
+recode FB7_1_7 (1=1)(2=0) into LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1292,9 +1309,21 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE ken13.
 
-
-recode FF16S (1=1)(2=0) into LOAN_BANK.
+count LOAN = BL1 FFI16S MM16S(1).
+numeric LOAN_CURRENT.
+numeric LOAN_KNOW_INTEREST.
+recode FFI16S (1=1)(2=0) into LOAN_BANK.
 recode MM16S (1=1)(2=0) into LOAN_MM.
+
+numeric LOAN_STORE.
+numeric LOAN_CREDITCARD.
+numeric LOAN_MFI.
+numeric LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+numeric LOAN_GROUP.
+numeric LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1310,9 +1339,26 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE nga13.
 
+count LOAN = BL1 FFI16S MM16S (1).
+recode LOAN (1 thru hi = 1)(else = 0).
+numeric LOAN_CURRENT.
+*BL6?.
+numeric LOAN_KNOW_INTEREST.
+numeric LOAN_FORMAL.
+numeric LOAN_INFML.
 
-recode FF16S (1=1)(2=0) into LOAN_BANK.
+recode FFI16S (1=1)(2=0) into LOAN_BANK.
 recode MM16S (1=1)(2=0) into LOAN_MM.
+
+numeric LOAN_STORE.
+numeric LOAN_CREDITCARD.
+numeric LOAN_MFI.
+numeric LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+numeric LOAN_GROUP.
+numeric LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1328,9 +1374,26 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE pak13.
 
+count LOAN = BL1 FFI16S MM16S (1).
+recode LOAN (1 thru hi = 1)(else = 0).
+numeric LOAN_CURRENT.
+*BL6?.
+numeric LOAN_KNOW_INTEREST.
+numeric LOAN_FORMAL.
+numeric LOAN_INFML.
 
-recode FF16S (1=1)(2=0) into LOAN_BANK.
+recode FFI16S (1=1)(2=0) into LOAN_BANK.
 recode MM16S (1=1)(2=0) into LOAN_MM.
+
+numeric LOAN_STORE.
+numeric LOAN_CREDITCARD.
+numeric LOAN_MFI.
+numeric LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+numeric LOAN_GROUP.
+numeric LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1346,9 +1409,26 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE tza13.
 
+count LOAN = FFI16_19 MM16_19 (1).
+recode LOAN (1 thru hi = 1)(else = 0).
+numeric LOAN_CURRENT.
+*BL6?.
+numeric LOAN_KNOW_INTEREST.
+numeric LOAN_FORMAL.
+numeric LOAN_INFML.
 
-recode FF16_19 (1=1)(2=0) into LOAN_BANK.
+recode FFI16_19 (1=1)(2=0) into LOAN_BANK.
 recode MM16_19 (1=1)(2=0) into LOAN_MM.
+
+numeric LOAN_STORE.
+numeric LOAN_CREDITCARD.
+numeric LOAN_MFI.
+numeric LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+numeric LOAN_GROUP.
+numeric LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1364,9 +1444,27 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE uga13.
 
+count LOAN = FFI16S MM16S (1).
+recode LOAN (1 thru hi = 1)(else = 0).
+numeric LOAN_CURRENT.
+*BL6?.
+numeric LOAN_KNOW_INTEREST.
+numeric LOAN_FORMAL.
+numeric LOAN_INFML.
 
-recode FF16S (1=1)(2=0) into LOAN_BANK.
+
+recode FFI16S (1=1)(2=0) into LOAN_BANK.
 recode MM16S (1=1)(2=0) into LOAN_MM.
+
+numeric LOAN_STORE.
+numeric LOAN_CREDITCARD.
+numeric LOAN_MFI.
+numeric LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+numeric LOAN_GROUP.
+numeric LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
