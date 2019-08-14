@@ -465,19 +465,16 @@ IF (OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1 or
      OJK11_1=1 or OJK11_2=1 or OJK11_3=1 or 
      OJK12_1=1 or OJK12_2=1 or OJK12_3=1 or OJK13_1=1 or OJK13_2=1 or OJK13_3=1) ACCESS_NBFI_ALL=1.
 
-*double check.
 compute REGISTERED_NBFI=0.
 if FNX=1 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and
 (BI_E1A=2 or sysmis(BI_E1A)) and (BI_E1B=2 or sysmis(BI_E1B)) and (BI_E1C=2 or sysmis(BI_E1C)) and (BI_E1V=2 or sysmis(BI_E1V)) and
 (BI_E32A=2 or sysmis(BI_E32A)) REGISTERED_NBFI=1.
 
-*double check.
 compute REGISTERED_NBFI_ALL=0.
 if FNX=1 and
 (BI_E1A=2 or sysmis(BI_E1A)) and (BI_E1B=2 or sysmis(BI_E1B)) and (BI_E1C=2 or sysmis(BI_E1C)) and (BI_E1V=2 or sysmis(BI_E1V)) and
 (BI_E32A=2 or sysmis(BI_E32A)) REGISTERED_NBFI_ALL=1.
 
-*double check.
 compute REG_DFS_NBFI=0.
 IF FNX=1 and 
 ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2 and sysmis(BPR1)) or 
@@ -485,47 +482,31 @@ IF FNX=1 and
 (BPR1=2 or BPR2=2 or (BPR2=1 and BPR3=1))) and
 (BI_E1A=2 or sysmis(BI_E1A)) and (BI_E1B=2 or sysmis(BI_E1B)) and (BI_E1C=2 or sysmis(BI_E1C)) and (BI_E1V=2 or sysmis(BI_E1V)) and
 (BI_E32A=2 or sysmis(BI_E32A)) REG_DFS_NBFI=1.
-
 *double check.
 compute ACTIVE_NBFI=0.
 if FNXA<=2 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and 
-(OJK14_1<3 or sysmis(OJK14_1)) and (OJK14_2<3 or sysmis(OJK14_ 2)) and (OJK14_3<3 or sysmis(OJK14_3)) and (OJK14_4<3 or sysmis(OJK14_4)) and (OJK14_5<3 or sysmis(OJK14_5)) and 
-(OJK14_6<3 or sysmis(OJK14_6)) and (OJK14_7<3 or sysmis(OJK14_7)) and (OJK14_8<3 or sysmis(OJK14_8)) and (OJK14_9<3 or sysmis(OJK14_9)) and (OJK14_10<3 or sysmis(OJK14_10)) and 
-(OJK14_12<3 or sysmis(OJK14_12)) and (OJK14_13<3 or sysmis(OJK14_13)) ACTIVE_NBFI=1.
-
-*add ((BI_E32A=1 and GF3B<=2) or bi_e32a=2) ?.
-
+(OJK14_1>2 or sysmis(OJK14_1)) and (OJK14_2>2 or sysmis(OJK14_ 2)) and (OJK14_3>2 or sysmis(OJK14_3)) and (OJK14_4>2 or sysmis(OJK14_4)) and (OJK14_5>2 or sysmis(OJK14_5)) and 
+(OJK14_6>2 or sysmis(OJK14_6)) and (OJK14_7>2 or sysmis(OJK14_7)) and (OJK14_8>2 or sysmis(OJK14_8)) and (OJK14_9>2 or sysmis(OJK14_9)) and (OJK14_10>2 or sysmis(OJK14_10)) and 
+(OJK14_12>2 or sysmis(OJK14_12)) and (OJK14_13>2 or sysmis(OJK14_13)) and (GF3B>2 or bi_e32a=2) ACTIVE_NBFI=1.
 *double check.
 compute ACTIVE_NBFI_ALL=0.
 if FNXA<=2 and 
-(OJK14_1<3 or sysmis(OJK14_1)) and (OJK14_2<3 or sysmis(OJK14_ 2)) and (OJK14_3<3 or sysmis(OJK14_3)) and (OJK14_4<3 or sysmis(OJK14_4)) and (OJK14_5<3 or sysmis(OJK14_5)) and 
-(OJK14_6<3 or sysmis(OJK14_6)) and (OJK14_7<3 or sysmis(OJK14_7)) and (OJK14_8<3 or sysmis(OJK14_8)) and (OJK14_9<3 or sysmis(OJK14_9)) and (OJK14_10<3 or sysmis(OJK14_10)) and 
-(OJK14_12<3 or sysmis(OJK14_12)) and (OJK14_13<3 or sysmis(OJK14_13)) ACTIVE_NBFI_ALL=1.
-
-
-*add ((BI_E32A=1 and GF3B<=2) or bi_e32a=2) ?.
-
+(OJK14_1>2 or sysmis(OJK14_1)) and (OJK14_2>2 or sysmis(OJK14_ 2)) and (OJK14_3>2 or sysmis(OJK14_3)) and (OJK14_4>2 or sysmis(OJK14_4)) and (OJK14_5>2 or sysmis(OJK14_5)) and 
+(OJK14_6>2 or sysmis(OJK14_6)) and (OJK14_7>2 or sysmis(OJK14_7)) and (OJK14_8>2 or sysmis(OJK14_8)) and (OJK14_9>2 or sysmis(OJK14_9)) and (OJK14_10>2 or sysmis(OJK14_10)) and 
+(OJK14_12>2 or sysmis(OJK14_12)) and (OJK14_13>2 or sysmis(OJK14_13)) and (GF3B>2 or bi_e32a=2) ACTIVE_NBFI_ALL=1.
 *double check.
 compute ACTIVE30_NBFI=0.
 if FNXA=1 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and 
-(OJK14_1<3 or sysmis(OJK14_1)) and (OJK14_2<3 or sysmis(OJK14_ 2)) and (OJK14_3<3 or sysmis(OJK14_3)) and (OJK14_4<3 or sysmis(OJK14_4)) and (OJK14_5<3 or sysmis(OJK14_5)) and 
-(OJK14_6<3 or sysmis(OJK14_6)) and (OJK14_7<3 or sysmis(OJK14_7)) and (OJK14_8<3 or sysmis(OJK14_8)) and (OJK14_9<3 or sysmis(OJK14_9)) and (OJK14_10<3 or sysmis(OJK14_10)) and 
-(OJK14_12<3 or sysmis(OJK14_12)) and (OJK14_13<3 or sysmis(OJK14_13)) ACTIVE30_NBFI=1.
-
-*OJK14=1.
-*add ((BI_E32A=1 and GF3B=1) or bi_e32a=2) ?.
-
+(OJK14_1>1 or sysmis(OJK14_1)) and (OJK14_2>1 or sysmis(OJK14_ 2)) and (OJK14_3>1 or sysmis(OJK14_3)) and (OJK14_4>1 or sysmis(OJK14_4)) and (OJK14_5>1 or sysmis(OJK14_5)) and 
+(OJK14_6>1 or sysmis(OJK14_6)) and (OJK14_7>1 or sysmis(OJK14_7)) and (OJK14_8>1 or sysmis(OJK14_8)) and (OJK14_9>1 or sysmis(OJK14_9)) and (OJK14_10>1 or sysmis(OJK14_10)) and 
+(OJK14_12>1 or sysmis(OJK14_12)) and (OJK14_13>1 or sysmis(OJK14_13)) and (GF3B>1 or bi_e32a=2) ACTIVE30_NBFI=1.
 *double check.
 compute INACTIVE_NBFI=0.
-if REGISTERED_NBFI=1 and ACTIVE_NBFI=1 INACTIVE_NBFI=1.
+if REGISTERED_NBFI=1 and ACTIVE_NBFI=0 INACTIVE_NBFI=1.
 
-*ACTIVE_NBFI=0.
-
-*double check.
 compute DORMANT_NBFI=0.
 if REGISTERED_NBFI=1 and ACCESS_NBFI=0 DORMANT_NBFI=1.
 
-*double check.
 compute OTC_NBFI=0.
 if REGISTERED_NBFI=0 and ACCESS_NBFI=1 OTC_NBFI=1.
 
@@ -534,7 +515,6 @@ numeric NBFI_ALL_ADV.
 numeric NBFI_BASIC.
 numeric NBFI_ADV.
 numeric REG_NBFI_BASIC.
-
 *discuss whether derive bank_adv or mm_adv, then derive reg_nbfi_adv.
 numeric REG_NBF_ADV.
 numeric ACTIVE_NBFI_BASIC.
@@ -543,17 +523,21 @@ numeric ACTIVE30_NBFI_ADV.
 numeric NBFI_STAGE.
 *************************************************************************************************************************************.
 *Section 8.2.*discuss and decide whether to keep.
+*double check.
 compute ACCESS_MFI=0.
 if (OJK12_1=1 or OJK12_2=1 or OJK12_3=1 or OJK13_1=1 or OJK13_2=1 or OJK13_3=1) ACCESS_MFI=1.
-numeric REGISTERED_MFI.
-numeric ACTIVE_MFI.
-
+compute REGISTERED_MFI=0.
+if (OJK12_2=1 or OJK13_2=1) REGISTERED_MFI=1.
+compute ACTIVE_MFI=0.
+if (OJK12_2=1 and (ojk26_1<3 or ojk26_2<3)) or (OJK13_2=1 and (ojk24_1<3 or ojk24_2<3)) ACTIVE_MFI=1.
 *double check.
 compute ACCESS_COOP=0.
 if OJK11_1=1 or COP2=1 ACCESS_COOP=1.
-numeric REGISTERED_COOP.
-numeric ACTIVE_COOP.
-
+compute REGISTERED_COOP=0.
+if (OJK11_1=1 or COP2=1) and ojk11_2=1 REGISTERED_COOP=1.
+compute ACTIVE_COOP=0.
+if (((OJK11_1=1 or COP2=1) and ojk11_2=1) and (ojk25_1<3 or ojk25_2<3)) ACTIVE_COOP=1.
+*double check.
 compute ACCESS_POST=0.
 if (OJK10_1=1 or OJK10_2=1 or OJK10_3=1 or OJK10_4=1) ACCESS_POST=1.
 numeric REGISTERED_POST.
@@ -565,11 +549,13 @@ numeric ACTIVE_SACCO.
 numeric ACCESS_BPR.
 numeric REGISTERED_BPR.
 numeric ACTIVE_BPR.
-
+*double check.
 compute ACCESS_PAWNSHOP=0.
 if (OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1) ACCESS_PAWNSHOP=1.
-numeric REGISTERED_PAWNSHOP.
-numeric ACTIVE_PAWNSHOP.
+compute REGISTERED_PAWNSHOP=0.
+if (OJK6_1=1 or OJK6_2=1) REGISTERED_PAWNSHOP=1.
+compute ACTIVE_PAWNSHOP=0.
+if ((OJK6_1=1 or OJK6_2=1) and (ojk19_1<3 or ojk19_2<3 or ojk19_3<3)) ACTIVE_PAWNSHOP=1.
 
 numeric AWARE_PAYMENT_BANK_PROVIDER.
 numeric ACCESS_PAYMENT.
