@@ -126,6 +126,8 @@ Levels:
 Notes:
 
 * Data is unavailable for 2017.
+*
+* Data is only available for Indonesia in 2015.
 
 
 ## LOAN_GROUP
@@ -144,14 +146,6 @@ Levels:
 + 1="Yes"
 + 0= "No"
 
-## LOAN_PAYBANK
-Ever borrowed money from a payments bank.
-
-Levels: 
-
-+ 1="Yes"
-+ 0= "No"
-
 ## LOAN_SACCO
 Ever borrowed money from a SACCO.
 
@@ -159,6 +153,10 @@ Levels:
 
 + 1="Yes"
 + 0= "No"
+
+Notes:
+
+* Data only available for Kenya, Tanzania, and Uganda in 2015.
 
 ## LOAN_EMERGENCY
 Borrowed money for emergency expenses: counts respondents who have borrowed money in the 12 months to pay for emergency expenses such as medical bills.
