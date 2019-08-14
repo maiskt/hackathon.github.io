@@ -955,7 +955,7 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 *2014---------------------------------------------------------------------***.
 
 DATASET ACTIVATE bng14.
-count LOAN = FL10_1 to FL10_7 (1).
+count LOAN = FL10_1 to FL10_7 FF19_22 MM19_22 IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1).
 recode LOAN (1 thru hi = 1) (else = 0).
 recode FL7 (2 thru hi = 1)(else = 0) into LOAN_CURRENT.
 count LOAN_KNOW_INTEREST = FB11_1 to FB11_7.
@@ -971,7 +971,11 @@ recode LOAN_MM (1 thru hi = 1)(else = 0).
 count LOAN_MFI = FL10_2 IFI10_6 (1).
 recode FL10_2 (1 thru hi = 1)(else = 0) into LOAN_MFI.
 recode IFI11_6 (1=1)(2=0) into LOAN_COOP.
-
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+recode IFI12_6 (1=1)(2=0) into LOAN_GROUP.
+recode IFI13_6 (1=1)(2=0) into LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -987,7 +991,7 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE ind14.
 
-count LOAN = FL10_1 to FL10_9 (1).
+count LOAN = FL10_1 to FL10_9 FF19_22 MM19_20 IFI10_6 IFI11_6 IFI12_6 (1).
 recode LOAN (1 thru hi = 1) (else = 0).
 *Missing responses.
 recode FL7 (2 thru hi = 1)(else = 0) into LOAN_CURRENT.
@@ -995,11 +999,20 @@ count LOAN_KNOW_INTEREST = FB11_1 to FB11_9.
 recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
+*FL10_1 Includes cooperatives with banks according to description.
 count LOAN_BANK = FL10_1 FF19_22 (1).
 recode LOAN_BANK (1 thru hi = 1)(else = 0).
 count LOAN_MM = MM19_20 FL10_4 (1).
 recode LOAN_MM (1 thru hi = 1)(else = 0).
-recode FL10_2 (1 thru hi = 1)(else = 0) into LOAN_MFI.
+count LOAN_MFI = FL10_2 IFI10_6 (1).
+recode LOAN_MFI (1 thru hi = 1)(else = 0).
+
+numeric LOAN_COOP.
+recode FL10_7 (1 thru hi = 1)(else = 0) into LOAN_MLENDER.
+count LOAN_POST = FL10_3 IFI11_6 (1).
+recode LOAN_POST (1 thru hi = 1)(else = 0).
+recode IFI12_6 (1=1)(2=0) into LOAN_GROUP.
+numeric LOAN_SACCO.
 
 recode FL9_5 (1=1)(2=0) into LOAN_EMERGENCY.
 recode FL9_1 (1=1)(2=0) into  LOAN_DAILY.
@@ -1015,23 +1028,26 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 
 DATASET ACTIVATE ida14.
-
-count LOAN = FL10_1 to FL10_9 (1).
+*FB7_1 Includes "Gold"? What does this mean?.
+count LOAN = FL10_1 to FL10_9 FF19_22 MM19_23 FB7_1_1 to FB7_1_14 IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1).
 recode LOAN (1 thru hi = 1) (else = 0).
 recode FL7 (2 thru hi = 1)(else = 0) into LOAN_CURRENT.
 count LOAN_KNOW_INTEREST = FB11_1 to FB11_9.
 recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
-count LOAN_BANK = FL10_1 FF19_22 (1).
+count LOAN_BANK = FL10_1 FF19_22 FB7_1_1 (1).
 recode LOAN_BANK (1 thru hi = 1)(else = 0).
 count LOAN_MM = FB7_1_8 MM19_23 (1).
 recode LOAN_MM (1 thru hi = 1)(else = 0).
 recode FB7_1_2 (1=1)(2=0) into LOAN_MFI.
-recode FB7_1_3 (1=1)(2=0) into LOAN_COOP.
+count LOAN_COOP = FB7_1_3 IFI11_6 (1) .
+recode LOAN_COOP  (1 thru hi = 1)(else = 0).
 recode FB7_1_6 (1=1)(2=0) into LOAN_MLENDER.
-recode FB7_1_4 (1=1)(2=0) into LOAN_PAWN.
-recode FB7_1_9 (1=1)(2=0) into LOAN_POST.
+count LOAN_PAWN = FB7_1_4 IFI11_6 (1).
+recode LOAN_PAWN (1 thru hi = 1)(else = 0).
+count LOAN_POST = FB7_1_9 IFI13_6 (1).
+recode LOAN_POST (1 thru hi = 1)(else = 0).
 recode FB7_1_5 (1=1)(2=0) into LOAN_GROUP.
 numeric LOAN_SACCO.
 
@@ -1050,7 +1066,7 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE ken14.
 
-count LOAN = FL10_1 to FL10_7 (1).
+count LOAN = FL10_1 to FL10_7 MM19_22 FF19_22 IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1).
 recode LOAN (1 thru hi = 1) (else = 0).
 recode FL7 (2 thru hi = 1)(else = 0) into LOAN_CURRENT.
 count LOAN_KNOW_INTEREST = FB11_1 to FB11_7.
@@ -1063,8 +1079,13 @@ recode LOAN_BANK (1 thru hi = 1)(else = 0).
 count LOAN_MM = FL10_3 MM19_22 (1).
 recode LOAN_MM (1 thru hi = 1)(else = 0).
 recode FL10_2 (1 thru hi = 1)(else = 0) into LOAN_MFI.
-
-
+recode IFI11_6 (1=1)(2=0) into LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+*FL10.5.Do you borrow money from any of the following?Informal financial service provider such as Chamas , village savings group etc.
+numeric LOAN_GROUP.
+recode IFI13_6 (1=1)(2=0) into LOAN_POST.
+recode IFI12_6 (1=1)(2=0) into LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1080,7 +1101,7 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE nga14.
 
-count LOAN = FL10_1 to FL10_7 (1).
+count LOAN = FL10_1 to FL10_7 FF19_22 MM19_22 IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1).
 recode LOAN (1 thru hi = 1) (else = 0).
 recode FL7 (2 thru hi = 1)(else = 0) into LOAN_CURRENT.
 count LOAN_KNOW_INTEREST = FB11_1 to FB11_7.
@@ -1093,8 +1114,12 @@ recode LOAN_BANK (1 thru hi = 1)(else = 0).
 count LOAN_MM = FL10_3 MM19_22 (1).
 recode LOAN_MM (1 thru hi = 1)(else = 0).
 recode FL10_2 (1 thru hi = 1)(else = 0) into LOAN_MFI.
-
-
+recode IFI11_6 (1=1)(2=0) into LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+recode IFI12_6 (1=1)(2=0) into LOAN_GROUP.
+recode IFI13_6 (1=1)(2=0) into LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1110,7 +1135,7 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE pak14.
 
-count LOAN = FL10_1 to FL10_7 (1).
+count LOAN = FL10_1 to FL10_7 FF19_22 MM19_22 IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1).
 recode LOAN (1 thru hi = 1) (else = 0).
 recode FL7 (2 thru hi = 1)(else = 0) into LOAN_CURRENT.
 count LOAN_KNOW_INTEREST = FB11_1 to FB11_7.
@@ -1122,9 +1147,14 @@ count LOAN_BANK = FL10_1 FF19_22 (1).
 recode LOAN_BANK (1 thru hi = 1)(else = 0).
 count LOAN_MM = FL10_3 MM19_22 (1).
 recode LOAN_MM (1 thru hi = 1)(else = 0).
-recode FL10_2 (1 thru hi = 1)(else = 0) into LOAN_MFI.
-
-
+count LOAN_MFI = FL10_2 IFI10_6 (1). 
+recode LOAN_MFI(1 thru hi = 1)(else = 0).
+recode IFI11_6 (1=1)(2=0) into LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+numeric LOAN_GROUP.
+recode IFI13_6 (1=1)(2=0) into LOAN_POST.
+numeric LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1140,7 +1170,7 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE tza14.
 
-count LOAN = FL10_1 to FL10_7 (1).
+count LOAN = FL10_1 to FL10_7 FF19_22 MM19_22 IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1).
 recode LOAN (1 thru hi = 1) (else = 0).
 recode FL7 (2 thru hi = 1)(else = 0) into LOAN_CURRENT.
 count LOAN_KNOW_INTEREST = FB11_1 to FB11_7.
@@ -1152,8 +1182,14 @@ count LOAN_BANK = FL10_1 FF19_22 (1).
 recode LOAN_BANK (1 thru hi = 1)(else = 0).
 count LOAN_MM = FL10_3 MM19_22 (1).
 recode LOAN_MM (1 thru hi = 1)(else = 0).
-recode FL10_2 (1 thru hi = 1)(else = 0) into LOAN_MFI.
-
+count LOAN_MFI = FL10_2 IFI10_6 (1).
+recode LOAN_MFI (1 thru hi = 1)(else = 0).
+recode IFI11_6 (1=1)(2=0) into LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+numeric LOAN_GROUP.
+recode IFI13_6 (1=1)(2=0) into LOAN_POST.
+recode IFI12_6 (1=1)(2=0) into LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
@@ -1169,7 +1205,7 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE uga14.
 
-count LOAN = FL10_1 to FL10_7 (1).
+count LOAN = FL10_1 to FL10_7 FF19_22 MM19_22 IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1).
 recode LOAN (1 thru hi = 1) (else = 0).
 recode FL7 (2 thru hi = 1)(else = 0) into LOAN_CURRENT.
 count LOAN_KNOW_INTEREST = FB11_1 to FB11_7.
@@ -1181,8 +1217,14 @@ count LOAN_BANK = FL10_1 FF19_22 (1).
 recode LOAN_BANK (1 thru hi = 1)(else = 0).
 count LOAN_MM = FL10_3 MM19_22 (1).
 recode LOAN_MM (1 thru hi = 1)(else = 0).
-recode FL10_2 (1 thru hi = 1)(else = 0) into LOAN_MFI.
-
+count LOAN_MFI = FL10_2 IFI10_6 (1).
+recode LOAN_MFI (1 thru hi = 1)(else = 0).
+recode IFI11_6 (1=1)(2=0) into LOAN_COOP.
+numeric LOAN_MLENDER.
+numeric LOAN_PAWN.
+numeric LOAN_GROUP.
+recode IFI13_6 (1=1)(2=0) into LOAN_POST.
+recode IFI12_6 (1=1)(2=0) into LOAN_SACCO.
 
 numeric LOAN_EMERGENCY.
 numeric LOAN_DAILY.
