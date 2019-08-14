@@ -485,7 +485,7 @@ IF FNX=1 and
 *double check.
 compute ACTIVE_NBFI=0.
 if FNXA<=2 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and 
-(OJK14_1>2 or sysmis(OJK14_1)) and (OJK14_2>2 or sysmis(OJK14_ 2)) and (OJK14_3>2 or sysmis(OJK14_3)) and (OJK14_4>2 or sysmis(OJK14_4)) and (OJK14_5>2 or sysmis(OJK14_5)) and 
+(OJK14_1>2 or sysmis(OJK14_1)) and (OJK14_2>2 or sysmis(OJK14_2)) and (OJK14_3>2 or sysmis(OJK14_3)) and (OJK14_4>2 or sysmis(OJK14_4)) and (OJK14_5>2 or sysmis(OJK14_5)) and 
 (OJK14_6>2 or sysmis(OJK14_6)) and (OJK14_7>2 or sysmis(OJK14_7)) and (OJK14_8>2 or sysmis(OJK14_8)) and (OJK14_9>2 or sysmis(OJK14_9)) and (OJK14_10>2 or sysmis(OJK14_10)) and 
 (OJK14_12>2 or sysmis(OJK14_12)) and (OJK14_13>2 or sysmis(OJK14_13)) and (GF3B>2 or bi_e32a=2) ACTIVE_NBFI=1.
 *double check.
@@ -516,7 +516,10 @@ numeric NBFI_BASIC.
 numeric NBFI_ADV.
 numeric REG_NBFI_BASIC.
 *discuss whether derive bank_adv or mm_adv, then derive reg_nbfi_adv.
-numeric REG_NBF_ADV.
+*Double check.
+compute REG_NBFI_ADV=0.
+if (GF1=1 or GF2=1) and REG_BANK_ADV=0 and REG_MM_ADV=0  REG_NBFI_ADV=1.
+
 numeric ACTIVE_NBFI_BASIC.
 numeric ACTIVE_NBFI_ADV.
 numeric ACTIVE30_NBFI_ADV.
