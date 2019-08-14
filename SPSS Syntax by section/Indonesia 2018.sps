@@ -1,4 +1,5 @@
 ﻿* Encoding: windows-1252.
+* Encoding: .
 *Cross section - Indonesia 2018.
 *************************************************************************************************************************************.
 *Section 1.
@@ -150,7 +151,7 @@ if (BPR1=2 or BPR2=2 or BPR3=1 or
     OJK10_1=1 or OJK10_2=1 or OJK10_3=1 or OJK10_4=1 or 
   ((OJK11_1=1 or COP2=1) and COP1=1) or
     BI_E25D=1) ACCESS_DFS=1. 
-*Need double check.
+
 compute REGISTERED_DFS=0.
 if FNX=1 and 
  ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2 and sysmis(BPR1)) or 
@@ -247,7 +248,6 @@ recode ACTIVE_BANK_LOAN (1 thru highest=1).
 numeric ACTIVE_BANK_AIRTIME.
 *************************************************************************************************************************************.
 *Section 6.3.
-*discuss and double check.
 count R_NOBANK1=BI_E2A_G BI_E2 B_GBI_E2C_G (1).
 recode R_NOBANK1 (1 thru highest=1).
 count R_NOBANK2=BI_E2A_E BI_E2B_E BI_E2C_E(1).
@@ -290,7 +290,7 @@ numeric AWARE_NONUSER_MM.
 
 compute ACCESS_MM=0.
 if BI_E25D=1 ACCESS_MM=1.
-*take a look.
+
 compute REGISTERED_MM=0.
 if BI_E32A=1 REGISTERED_MM=1.
 
@@ -454,7 +454,6 @@ numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
 *************************************************************************************************************************************.
 *Section 8.1.
-*take a look.
 compute ACCESS_NBFI=0.
 IF(OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1) or
     (OJK11_1=1 or COP2=1) or
