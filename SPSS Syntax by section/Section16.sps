@@ -13,9 +13,8 @@ recode GN2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
 recode GN3 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
 recode GN4 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
 recode GN5 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
-recode GN6 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
-recode GN7 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
-recode GN8 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP8.
+recode GN7 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
+recode GN8 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
 
 save outfile = "data/bng18.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -28,9 +27,8 @@ recode GN2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
 recode GN3 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
 recode GN4 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
 recode GN5 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
-recode GN6 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
-recode GN7 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
-recode GN8 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP8.
+recode GN7 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
+recode GN8 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
 
 save outfile = "data/ind18.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -40,16 +38,15 @@ save outfile = "data/ind18.sav"
 
 DATASET ACTIVATE bng17.
 
-recode GN2_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
-recode GN2_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
-recode GN2_3 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
-recode GN3_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
-recode GN3_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
+recode GN2_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
+recode GN2_2 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
+recode GN2_3 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
+recode GN3_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
+recode GN4 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
 *Gn6 was asked "to what extent do you typically agree with the final decisions about how your household's income is usually spent.".
-numeric ECO_EMP6.
-recode GN7_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
+recode GN7_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
 *GN10 asks the question from a different perspective.
-numeric ECO_EMP8.
+recode GN10(97,98,99 = 99)(1=5)(2=4)(3=3)(4=2)(5=1) into ECO_EMP7.
 
 save outfile = "data/bng17.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -57,16 +54,15 @@ save outfile = "data/bng17.sav"
 
 DATASET ACTIVATE ind17.
 
-recode GN2_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
-recode GN2_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
-recode GN2_3 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
-recode GN3_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
-recode GN3_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
+recode GN2_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
+recode GN2_2 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
+recode GN2_3 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
+recode GN3_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
+recode GN4(98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
 *Gn6 was asked "to what extent do you typically agree with the final decisions about how your household's income is usually spent.".
-numeric ECO_EMP6.
-recode GN7_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
+recode GN7_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
 *GN10 asks the question from a different perspective.
-numeric ECO_EMP8.
+recode GN10(97,98,99 = 99)(1=5)(2=4)(3=3)(4=2)(5=1) into ECO_EMP7.
 
 save outfile = "data/ind17.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -74,16 +70,15 @@ save outfile = "data/ind17.sav"
 
 DATASET ACTIVATE ken17.
 
-recode GN2_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
-recode GN2_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
-recode GN2_3 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
-recode GN3_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
-recode GN3_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
+recode GN2_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
+recode GN2_2 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
+recode GN2_3 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
+recode GN3_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
+recode GN4(98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
 *Gn6 was asked "to what extent do you typically agree with the final decisions about how your household's income is usually spent.".
-numeric ECO_EMP6.
-recode GN7_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
+recode GN7_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
 *GN10 asks the question from a different perspective.
-numeric ECO_EMP8.
+recode GN10(97,98,99 = 99)(1=5)(2=4)(3=3)(4=2)(5=1) into ECO_EMP7.
 
 save outfile = "data/ken17.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -91,16 +86,15 @@ save outfile = "data/ken17.sav"
 
 DATASET ACTIVATE nga17.
 
-recode GN2_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
-recode GN2_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
-recode GN2_3 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
-recode GN3_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
-recode GN3_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
+recode GN2_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
+recode GN2_2 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
+recode GN2_3 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
+recode GN3_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
+recode GN4(98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
 *Gn6 was asked "to what extent do you typically agree with the final decisions about how your household's income is usually spent.".
-numeric ECO_EMP6.
-recode GN7_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
+recode GN7_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
 *GN10 asks the question from a different perspective.
-numeric ECO_EMP8.
+recode GN10(97,98,99 = 99)(1=5)(2=4)(3=3)(4=2)(5=1) into ECO_EMP7.
 
 save outfile = "data/nga17.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -108,16 +102,15 @@ save outfile = "data/nga17.sav"
 
 DATASET ACTIVATE pak17.
 
-recode GN2_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
-recode GN2_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
-recode GN2_3 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
-recode GN3_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
-recode GN3_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
+recode GN2_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
+recode GN2_2 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
+recode GN2_3 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
+recode GN3_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
+recode GN4(98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
 *Gn6 was asked "to what extent do you typically agree with the final decisions about how your household's income is usually spent.".
-numeric ECO_EMP6.
-recode GN7_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
+recode GN7_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
 *GN10 asks the question from a different perspective.
-numeric ECO_EMP8.
+recode GN10(97,98,99 = 99)(1=5)(2=4)(3=3)(4=2)(5=1) into ECO_EMP7.
 
 save outfile = "data/pak17.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -125,16 +118,15 @@ save outfile = "data/pak17.sav"
 
 DATASET ACTIVATE tza17.
 
-recode GN2_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
-recode GN2_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
-recode GN2_3 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
-recode GN3_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
-recode GN3_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
+recode GN2_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
+recode GN2_2 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
+recode GN2_3 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
+recode GN3_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
+recode GN4(98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
 *Gn6 was asked "to what extent do you typically agree with the final decisions about how your household's income is usually spent.".
-numeric ECO_EMP6.
-recode GN7_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
+recode GN7_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
 *GN10 asks the question from a different perspective.
-numeric ECO_EMP8.
+recode GN10(97,98,99 = 99)(1=5)(2=4)(3=3)(4=2)(5=1) into ECO_EMP7.
 
 save outfile = "data/tza17.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -142,16 +134,15 @@ save outfile = "data/tza17.sav"
 
 DATASET ACTIVATE uga17.
 
-recode GN2_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
-recode GN2_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
-recode GN2_3 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
-recode GN3_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
-recode GN3_2 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
+recode GN2_1 (98,99= 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP1.
+recode GN2_2 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP2.
+recode GN2_3 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
+recode GN3_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
+recode GN4(98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
 *Gn6 was asked "to what extent do you typically agree with the final decisions about how your household's income is usually spent.".
-numeric ECO_EMP6.
-recode GN7_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP7.
+recode GN7_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
 *GN10 asks the question from a different perspective.
-numeric ECO_EMP8.
+recode GN10(97,98,99 = 99)(1=5)(2=4)(3=3)(4=2)(5=1) into ECO_EMP7.
 
 save outfile = "data/uga17.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
