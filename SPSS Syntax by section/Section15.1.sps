@@ -119,7 +119,7 @@ numeric ECO_VUL.
 numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(2 thru 4).
-recode fl2(2 thru 4=1)(else = 0) into BUDGET_STAY.
+recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 recode FL6_1 (else = copy) into FIN_HEA2.
@@ -144,7 +144,7 @@ numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(2 thru 4).
 
-recode fl2(2 thru 4=1)(else = 0) into BUDGET_STAY.
+recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 recode FL6_1 (else = copy) into FIN_HEA2.
@@ -217,7 +217,7 @@ numeric ECO_VUL.
 numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(2 thru 4).
-recode fl2(2 thru 4=1)(1=0)(else = 0) into BUDGET_STAY.
+recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 recode FL6_1 (else = copy) into FIN_HEA2.
@@ -249,7 +249,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
@@ -287,7 +287,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
@@ -325,7 +325,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
@@ -364,7 +364,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
@@ -403,7 +403,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
@@ -442,7 +442,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
@@ -481,7 +481,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
@@ -520,7 +520,7 @@ recode FIN_SHOCK(1 thru highest = 1)(else = 0).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
