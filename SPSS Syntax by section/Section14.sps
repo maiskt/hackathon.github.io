@@ -266,11 +266,11 @@ recode FL8_4 (1=1) (else=copy) into FIN_ATT3.
 recode FL8_6 (1=1) (else=copy) into FIN_ATT4.
 recode FL8_7 (1=1) (else=copy) into FIN_ATT5.
 
-recode DG13_1 (1=1)(2=0) into SCH_FEE_PRB1.
-recode DG13_2 (1=1)(2=0) into SCH_FEE_PRB2.
-recode DG13_3 (1=1)(2=0) into SCH_FEE_PRB3.
-recode DG13_4 (1=1)(2=0) into SCH_FEE_PRB4.
-recode DG13_5 (1=1)(2=0) into SCH_FEE_PRB5.
+recode DG13_1 (1=1)(2,3=0) into SCH_FEE_PRB1.
+recode DG13_2 (1=1)(2,3=0) into SCH_FEE_PRB2.
+recode DG13_3 (1=1)(2,3=0) into SCH_FEE_PRB3.
+recode DG13_4 (1=1)(2,3=0) into SCH_FEE_PRB4.
+recode DG13_5 (1=1)(2,3=0) into SCH_FEE_PRB5.
 
 save outfile = "data/ken16.sav"
 /keep= SBJNUM COUNTRY YEAR MAIN_EARNER FIN_SITUATION FIN_ATT1 FIN_ATT2 FIN_ATT3 FIN_ATT4 FIN_ATT5 SCH_FEE_PRB1 SCH_FEE_PRB2 SCH_FEE_PRB3 SCH_FEE_PRB4 SCH_FEE_PRB5.
@@ -287,11 +287,11 @@ recode FL8_4 (1=1) (else=copy) into FIN_ATT3.
 recode FL8_6 (1=1) (else=copy) into FIN_ATT4.
 recode FL8_7 (1=1) (else=copy) into FIN_ATT5.
 
-recode DG13_1 (1=1)(2=0) into SCH_FEE_PRB1.
-recode DG13_2 (1=1)(2=0) into SCH_FEE_PRB2.
-recode DG13_3 (1=1)(2=0) into SCH_FEE_PRB3.
-recode DG13_4 (1=1)(2=0) into SCH_FEE_PRB4.
-recode DG13_5 (1=1)(2=0) into SCH_FEE_PRB5.
+recode DG13_1 (1=1)(2,3=0) into SCH_FEE_PRB1.
+recode DG13_2 (1=1)(2,3=0) into SCH_FEE_PRB2.
+recode DG13_3 (1=1)(2,3=0) into SCH_FEE_PRB3.
+recode DG13_4 (1=1)(2,3=0) into SCH_FEE_PRB4.
+recode DG13_5 (1=1)(2,3=0) into SCH_FEE_PRB5.
 
 save outfile = "data/nga16.sav"
 /keep= SBJNUM COUNTRY YEAR MAIN_EARNER FIN_SITUATION FIN_ATT1 FIN_ATT2 FIN_ATT3 FIN_ATT4 FIN_ATT5 SCH_FEE_PRB1 SCH_FEE_PRB2 SCH_FEE_PRB3 SCH_FEE_PRB4 SCH_FEE_PRB5.
