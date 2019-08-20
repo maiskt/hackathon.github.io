@@ -12,8 +12,7 @@ Levels:
 
 Notes:
 
-* This data is only available for 2016 and 2017.
-* In 2017, these questions were asked on a 5-point Likert scale instead of yes/no. The options "Somewhat Agree" and "Strongly Agree" were converted to the "Yes" level.
+* This data is only available 2014-2016.
 
 ## ECO_VUL
 This variable uses multiple questions within surveys to determine if the respondent is economically vulnerable.
@@ -42,6 +41,10 @@ Levels:
 + 1=Yes
 + 0=No
 
+Notes:
+
+* Data only available 2014-2017
+
 ## BUDGET_STAY
 Stay on budget: counts respondents who make a plan for how to spend thier income and keep the plan
 
@@ -49,6 +52,10 @@ Levels:
 
 + 1=Yes
 + 0=No
+
+Notes:
+
+* Data only available 2014-2017
 
 ## FIN_HEA
 
@@ -76,7 +83,8 @@ Levels:
 + 5=Strongly agree
 
 Notes:
-
+* FIN_HEA1 only exists for 2018 data.
+* FIN_HEA3 through FIN_HEA5 exist in 2014, 2017, and 2018 data.
 * Only FIN_HEA8 and FIN_HEA10 exist for 2015-2018.
 *     For FIN_HEA8 in 2015 and 2016, a difference in wording was that the respondent was asked if "friends and family rely *heavily*" on them. Since this is more specific, respondents may have agreed less strongly.
 * Otherwise, these variables only exist for 2017 and 2018 data.
