@@ -1,8 +1,8 @@
 ﻿* Encoding: UTF-8.
 *Section 15.1.
 dataset close all.
-insert file = "C:/Users/mitchell.shuey/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
-cd "C:/Users/mitchell.shuey/Documents".
+insert file = "C:/Users/LENOVO/Documents/GitHub/Codebook/SPSS Syntax by Section/Dataset Loading Syntax.sps".
+cd "C:/Users/LENOVO/Documents".
 
 *2018---------------------------------------------------------------------***.
 
@@ -17,16 +17,16 @@ numeric FIN_SHOCK.
 numeric BUDGET_INCOME.
 numeric BUDGET_STAY.
 
-recode FH2 (else=copy) into FIN_HEA1.
-recode FH3 (else=copy) into FIN_HEA2.
-recode FH4 (else=copy) into FIN_HEA3.
-recode FH5 (else=copy) into FIN_HEA4.
-recode FH6 (else=copy) into FIN_HEA5.
-recode FH7 (else=copy) into FIN_HEA6.
-recode FH8 (else=copy) into FIN_HEA7.
-recode FH9 (else=copy) into FIN_HEA8.
-recode FH10 (else=copy) into FIN_HEA9.
-recode FH11 (else=copy) into FIN_HEA10.
+recode FH2 (4=1)(5=1)(else=0) into FIN_HEA1.
+recode FH3 (4=1)(5=1)(else=0) into FIN_HEA2.
+recode FH4 (4=1)(5=1)(else=0) into FIN_HEA3.
+recode FH5 (4=1)(5=1)(else=0) into FIN_HEA4.
+recode FH6 (4=1)(5=1)(else=0) into FIN_HEA5.
+recode FH7 (4=1)(5=1)(else=0) into FIN_HEA6.
+recode FH8 (4=1)(5=1)(else=0) into FIN_HEA7.
+recode FH9 (4=1)(5=1)(else=0) into FIN_HEA8.
+recode FH10 (4=1)(5=1)(else=0) into FIN_HEA9.
+recode FH11 (4=1)(5=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/bng18.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -43,16 +43,16 @@ numeric FIN_SHOCK.
 numeric BUDGET_INCOME.
 numeric BUDGET_STAY.
 
-recode FH2 (else=copy) into FIN_HEA1.
-recode FH3 (else=copy) into FIN_HEA2.
-recode FH4 (else=copy) into FIN_HEA3.
-recode FH5 (else=copy) into FIN_HEA4.
-recode FH6 (else=copy) into FIN_HEA5.
-recode FH7 (else=copy) into FIN_HEA6.
-recode FH8 (else=copy) into FIN_HEA7.
-recode FH9 (else=copy) into FIN_HEA8.
-recode FH10 (else=copy) into FIN_HEA9.
-recode FH11 (else=copy) into FIN_HEA10.
+recode FH2 (4=1)(5=1)(else=0) into FIN_HEA1.
+recode FH3 (4=1)(5=1)(else=0) into FIN_HEA2.
+recode FH4 (4=1)(5=1)(else=0) into FIN_HEA3.
+recode FH5 (4=1)(5=1)(else=0) into FIN_HEA4.
+recode FH6 (4=1)(5=1)(else=0) into FIN_HEA5.
+recode FH7 (4=1)(5=1)(else=0) into FIN_HEA6.
+recode FH8 (4=1)(5=1)(else=0) into FIN_HEA7.
+recode FH9 (4=1)(5=1)(else=0) into FIN_HEA8.
+recode FH10 (4=1)(5=1)(else=0) into FIN_HEA9.
+recode FH11 (4=1)(5=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/ind18.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -70,15 +70,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6_1 (else = copy) into FIN_HEA2.
-recode FL6_2 (else = copy) into FIN_HEA3.
-recode FL6_3 (else = copy) into FIN_HEA4.
-recode FL6_4 (else = copy) into FIN_HEA5.
-recode FL6_5 (else = copy) into FIN_HEA6.
-recode FL6_6 (else = copy) into FIN_HEA7.
-recode FL6_7 (else = copy) into FIN_HEA8.
-recode FL6_8 (else = copy) into FIN_HEA9.
-recode FL6_9 (else = copy) into FIN_HEA10.
+recode FL6_1 (4=1)(5=1)(else=0) into FIN_HEA2.
+recode FL6_2 (4=1)(5=1)(else=0) into FIN_HEA3.
+recode FL6_3 (4=1)(5=1)(else=0) into FIN_HEA4.
+recode FL6_4 (4=1)(5=1)(else=0) into FIN_HEA5.
+recode FL6_5 (4=1)(5=1)(else=0) into FIN_HEA6.
+recode FL6_6 (4=1)(5=1)(else=0) into FIN_HEA7.
+recode FL6_7 (4=1)(5=1)(else=0) into FIN_HEA8.
+recode FL6_8 (4=1)(5=1)(else=0) into FIN_HEA9.
+recode FL6_9 (4=1)(5=1)(else=0) into FIN_HEA10.
 
  
 save outfile = "data/bng17.sav"
@@ -96,15 +96,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(SYSMIS=0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6_1 (else = copy) into FIN_HEA2.
-recode FL6_2 (else = copy) into FIN_HEA3.
-recode FL6_3 (else = copy) into FIN_HEA4.
-recode FL6_4 (else = copy) into FIN_HEA5.
-recode FL6_5 (else = copy) into FIN_HEA6.
-recode FL6_6 (else = copy) into FIN_HEA7.
-recode FL6_7 (else = copy) into FIN_HEA8.
-recode FL6_8 (else = copy) into FIN_HEA9.
-recode FL6_9 (else = copy) into FIN_HEA10.
+recode FL6_1 (4=1)(5=1)(else=0) into FIN_HEA2.
+recode FL6_2 (4=1)(5=1)(else=0) into FIN_HEA3.
+recode FL6_3 (4=1)(5=1)(else=0) into FIN_HEA4.
+recode FL6_4 (4=1)(5=1)(else=0) into FIN_HEA5.
+recode FL6_5 (4=1)(5=1)(else=0) into FIN_HEA6.
+recode FL6_6 (4=1)(5=1)(else=0) into FIN_HEA7.
+recode FL6_7 (4=1)(5=1)(else=0) into FIN_HEA8.
+recode FL6_8 (4=1)(5=1)(else=0) into FIN_HEA9.
+recode FL6_9 (4=1)(5=1)(else=0) into FIN_HEA10.
 
  
 save outfile = "data/ind17.sav"
@@ -122,15 +122,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6_1 (else = copy) into FIN_HEA2.
-recode FL6_2 (else = copy) into FIN_HEA3.
-recode FL6_3 (else = copy) into FIN_HEA4.
-recode FL6_4 (else = copy) into FIN_HEA5.
-recode FL6_5 (else = copy) into FIN_HEA6.
-recode FL6_6 (else = copy) into FIN_HEA7.
-recode FL6_7 (else = copy) into FIN_HEA8.
-recode FL6_8 (else = copy) into FIN_HEA9.
-recode FL6_9 (else = copy) into FIN_HEA10.
+recode FL6_1 (4=1)(5=1)(else=0) into FIN_HEA2.
+recode FL6_2 (4=1)(5=1)(else=0) into FIN_HEA3.
+recode FL6_3 (4=1)(5=1)(else=0) into FIN_HEA4.
+recode FL6_4 (4=1)(5=1)(else=0) into FIN_HEA5.
+recode FL6_5 (4=1)(5=1)(else=0) into FIN_HEA6.
+recode FL6_6 (4=1)(5=1)(else=0) into FIN_HEA7.
+recode FL6_7 (4=1)(5=1)(else=0) into FIN_HEA8.
+recode FL6_8 (4=1)(5=1)(else=0) into FIN_HEA9.
+recode FL6_9 (4=1)(5=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/ken17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -147,15 +147,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6_1 (else = copy) into FIN_HEA2.
-recode FL6_2 (else = copy) into FIN_HEA3.
-recode FL6_3 (else = copy) into FIN_HEA4.
-recode FL6_4 (else = copy) into FIN_HEA5.
-recode FL6_5 (else = copy) into FIN_HEA6.
-recode FL6_6 (else = copy) into FIN_HEA7.
-recode FL6_7 (else = copy) into FIN_HEA8.
-recode FL6_8 (else = copy) into FIN_HEA9.
-recode FL6_9 (else = copy) into FIN_HEA10.
+recode FL6_1 (4=1)(5=1)(else=0) into FIN_HEA2.
+recode FL6_2 (4=1)(5=1)(else=0) into FIN_HEA3.
+recode FL6_3 (4=1)(5=1)(else=0) into FIN_HEA4.
+recode FL6_4 (4=1)(5=1)(else=0) into FIN_HEA5.
+recode FL6_5 (4=1)(5=1)(else=0) into FIN_HEA6.
+recode FL6_6 (4=1)(5=1)(else=0) into FIN_HEA7.
+recode FL6_7 (4=1)(5=1)(else=0) into FIN_HEA8.
+recode FL6_8 (4=1)(5=1)(else=0) into FIN_HEA9.
+recode FL6_9 (4=1)(5=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/nga17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -172,15 +172,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6_1 (else = copy) into FIN_HEA2.
-recode FL6_2 (else = copy) into FIN_HEA3.
-recode FL6_3 (else = copy) into FIN_HEA4.
-recode FL6_4 (else = copy) into FIN_HEA5.
-recode FL6_5 (else = copy) into FIN_HEA6.
-recode FL6_6 (else = copy) into FIN_HEA7.
-recode FL6_7 (else = copy) into FIN_HEA8.
-recode FL6_8 (else = copy) into FIN_HEA9.
-recode FL6_9 (else = copy) into FIN_HEA10.
+recode FL6_1 (4=1)(5=1)(else=0) into FIN_HEA2.
+recode FL6_2 (4=1)(5=1)(else=0) into FIN_HEA3.
+recode FL6_3 (4=1)(5=1)(else=0) into FIN_HEA4.
+recode FL6_4 (4=1)(5=1)(else=0) into FIN_HEA5.
+recode FL6_5 (4=1)(5=1)(else=0) into FIN_HEA6.
+recode FL6_6 (4=1)(5=1)(else=0) into FIN_HEA7.
+recode FL6_7 (4=1)(5=1)(else=0) into FIN_HEA8.
+recode FL6_8 (4=1)(5=1)(else=0) into FIN_HEA9.
+recode FL6_9 (4=1)(5=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/pak17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -196,15 +196,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6_1 (else = copy) into FIN_HEA2.
-recode FL6_2 (else = copy) into FIN_HEA3.
-recode FL6_3 (else = copy) into FIN_HEA4.
-recode FL6_4 (else = copy) into FIN_HEA5.
-recode FL6_5 (else = copy) into FIN_HEA6.
-recode FL6_6 (else = copy) into FIN_HEA7.
-recode FL6_7 (else = copy) into FIN_HEA8.
-recode FL6_8 (else = copy) into FIN_HEA9.
-recode FL6_9 (else = copy) into FIN_HEA10.
+recode FL6_1 (4=1)(5=1)(else=0) into FIN_HEA2.
+recode FL6_2 (4=1)(5=1)(else=0) into FIN_HEA3.
+recode FL6_3 (4=1)(5=1)(else=0) into FIN_HEA4.
+recode FL6_4 (4=1)(5=1)(else=0) into FIN_HEA5.
+recode FL6_5 (4=1)(5=1)(else=0) into FIN_HEA6.
+recode FL6_6 (4=1)(5=1)(else=0) into FIN_HEA7.
+recode FL6_7 (4=1)(5=1)(else=0) into FIN_HEA8.
+recode FL6_8 (4=1)(5=1)(else=0) into FIN_HEA9.
+recode FL6_9 (4=1)(5=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/tza17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -220,15 +220,15 @@ count BUDGET_INCOME=fl1(2 thru 4).
 recode fl2(2 thru 4=1)(1=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
-recode FL6_1 (else = copy) into FIN_HEA2.
-recode FL6_2 (else = copy) into FIN_HEA3.
-recode FL6_3 (else = copy) into FIN_HEA4.
-recode FL6_4 (else = copy) into FIN_HEA5.
-recode FL6_5 (else = copy) into FIN_HEA6.
-recode FL6_6 (else = copy) into FIN_HEA7.
-recode FL6_7 (else = copy) into FIN_HEA8.
-recode FL6_8 (else = copy) into FIN_HEA9.
-recode FL6_9 (else = copy) into FIN_HEA10.
+recode FL6_1 (4=1)(5=1)(else=0) into FIN_HEA2.
+recode FL6_2 (4=1)(5=1)(else=0) into FIN_HEA3.
+recode FL6_3 (4=1)(5=1)(else=0) into FIN_HEA4.
+recode FL6_4 (4=1)(5=1)(else=0) into FIN_HEA5.
+recode FL6_5 (4=1)(5=1)(else=0) into FIN_HEA6.
+recode FL6_6 (4=1)(5=1)(else=0) into FIN_HEA7.
+recode FL6_7 (4=1)(5=1)(else=0) into FIN_HEA8.
+recode FL6_8 (4=1)(5=1)(else=0) into FIN_HEA9.
+recode FL6_9 (4=1)(5=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/uga17.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -251,24 +251,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
-numeric FIN_HEA2.
-*Corresponds to FL6_1.
-numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/bng16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -289,24 +281,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
-numeric FIN_HEA2.
-*Corresponds to FL6_1.
-numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/ind16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -327,25 +311,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
-numeric FIN_HEA2.
-*Corresponds to FL6_1.
-numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
-
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/ida16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -366,25 +341,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
-numeric FIN_HEA2.
-*Corresponds to FL6_1.
-numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
-
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/ken16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -405,25 +371,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
-numeric FIN_HEA2.
-*Corresponds to FL6_1.
-numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
-
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/nga16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -444,25 +401,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
-numeric FIN_HEA2.
-*Corresponds to FL6_1.
-numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
-
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/pak16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -483,25 +431,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
-numeric FIN_HEA2.
-*Corresponds to FL6_1.
-numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
-
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/tza16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -522,24 +461,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
-numeric FIN_HEA2.
-*Corresponds to FL6_1.
-numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/uga16.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -563,24 +494,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
-*FL6 section (3 variables) is asked "yes" and "no".
-*"that is large enough to cover" unplanned expenses.
-numeric FIN_HEA1. 
-numeric FIN_HEA2.
-numeric FIN_HEA3
-numeric FIN_HEA4.
- *FL6_1.
-numeric FIN_HEA5. 
-*FL6_2, does not include "in full".
+numeric FIN_HEA1.
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL10_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
+recode FL10_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL10_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
-
+recode FL10_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/bng15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -601,25 +524,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
-*FL6 section (3 variables) is asked "yes" and "no".
-*"that is large enough to cover" unplanned expenses.
-numeric FIN_HEA1. 
-numeric FIN_HEA2.
-numeric FIN_HEA3
-numeric FIN_HEA4. 
-*FL6_1.
-numeric FIN_HEA5. 
-*FL6_2, does not include "in full".
+numeric FIN_HEA1.
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL10_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL10_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL10_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
-
+recode FL10_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/ind15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -640,24 +554,17 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-*Corresponds to FL6_1.
 numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
+recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
 
 save outfile = "data/ida15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -678,24 +585,17 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-*Corresponds to FL6_1.
 numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
+recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
 
 save outfile = "data/ken15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -716,24 +616,17 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-*Corresponds to FL6_1.
 numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
+recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
 
 save outfile = "data/nga15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -754,24 +647,16 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
-numeric FIN_HEA2.
-*Corresponds to FL6_1.
-numeric FIN_HEA3. 
-numeric FIN_HEA4. 
- *FL6_2.
-numeric FIN_HEA5.
-*FL6_3, does not include "in full".
+numeric FIN_HEA2. 
+recode FL6_1 (1=1)(2=1)(else=0) into FIN_HEA3.
+recode FL6_3 (1=1)(2=1)(else=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=1)(else=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
-*only difference is the word "heavily".
-recode FL10_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL10_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL10_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
+recode FL10_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/pak15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -792,24 +677,17 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-*Corresponds to FL6_1.
 numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
+recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
 
 save outfile = "data/tza15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -830,24 +708,17 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
-*FL6 section (4 variables) is asked "yes" and "no", need to compare.
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-*Corresponds to FL6_1.
 numeric FIN_HEA3. 
-numeric FIN_HEA4. 
-*FL6_2.
-numeric FIN_HEA5. 
-*FL6_3, does not include "in full".
+recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
 numeric FIN_HEA6. 
-*FL6_4 is similar.
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA8. 
-
+recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-
-recode FL8_5 (5=1)(4=2)(2=4)(1=5) into FIN_HEA10.
+recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
 
 save outfile = "data/uga15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -869,15 +740,12 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
+*"Always" instead of "agree".
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-
-recode FL3_1 (5=1)(4=2)(2=4)(1=5) into FIN_HEA3.
- *doesn't include "and in full".
-recode FL3_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA4.
-*"to cover for" vs "that is large enough for" unplanned expenses.
-recode FL3_2 (5=1)(4=2)(2=4)(1=5) into FIN_HEA5.
-
+recode FL3_1 (1=1)(2=1)(else=0) into FIN_HEA3.
+recode FL3_3 (1=1)(2=1)(else=0) into FIN_HEA4.
+recode FL3_2 (1=1)(2=1)(else=0) into FIN_HEA5.
 numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
@@ -902,15 +770,12 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
+*"Always" instead of "agree".
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-
-recode FL3_1 (5=1)(4=2)(2=4)(1=5) into FIN_HEA3.
-*doesn't include "and in full".
-recode FL3_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA4. 
-*"to cover for" vs "that is large enough for" unplanned expenses.
-recode FL3_2 (5=1)(4=2)(2=4)(1=5) into FIN_HEA5.
-
+recode FL3_1 (1=1)(2=1)(else=0) into FIN_HEA3.
+recode FL3_3 (1=1)(2=1)(else=0) into FIN_HEA4.
+recode FL3_2 (1=1)(2=1)(else=0) into FIN_HEA5.
 numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
@@ -935,15 +800,12 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
+*"Always" instead of "agree".
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-
-recode FL3_1 (5=1)(4=2)(2=4)(1=5) into FIN_HEA3.
-*doesn't include "and in full".
-recode FL3_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA4. 
-*"to cover for" vs "that is large enough for" unplanned expenses.
-recode FL3_2 (5=1)(4=2)(2=4)(1=5) into FIN_HEA5.
-
+recode FL3_1 (1=1)(2=1)(else=0) into FIN_HEA3.
+recode FL3_3 (1=1)(2=1)(else=0) into FIN_HEA4.
+recode FL3_2 (1=1)(2=1)(else=0) into FIN_HEA5.
 numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
@@ -968,15 +830,12 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
+*"Always" instead of "agree".
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-
-recode FL3_1 (5=1)(4=2)(2=4)(1=5) into FIN_HEA3.
-*doesn't include "and in full".
-recode FL3_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA4. 
-*"to cover for" vs "that is large enough for" unplanned expenses.
-recode FL3_2 (5=1)(4=2)(2=4)(1=5) into FIN_HEA5.
-
+recode FL3_1 (1=1)(2=1)(else=0) into FIN_HEA3.
+recode FL3_3 (1=1)(2=1)(else=0) into FIN_HEA4.
+recode FL3_2 (1=1)(2=1)(else=0) into FIN_HEA5.
 numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
@@ -1001,15 +860,12 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
+*"Always" instead of "agree".
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-
-recode FL3_1 (5=1)(4=2)(2=4)(1=5) into FIN_HEA3.
-*doesn't include "and in full".
-recode FL3_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA4. 
-*"to cover for" vs "that is large enough for" unplanned expenses.
-recode FL3_2 (5=1)(4=2)(2=4)(1=5) into FIN_HEA5.
-
+recode FL3_1 (1=1)(2=1)(else=0) into FIN_HEA3.
+recode FL3_3 (1=1)(2=1)(else=0) into FIN_HEA4.
+recode FL3_2 (1=1)(2=1)(else=0) into FIN_HEA5.
 numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
@@ -1034,15 +890,12 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
+*"Always" instead of "agree".
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-
-recode FL3_1 (5=1)(4=2)(2=4)(1=5) into FIN_HEA3.
-*doesn't include "and in full".
-recode FL3_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA4. 
-*"to cover for" vs "that is large enough for" unplanned expenses.
-recode FL3_2 (5=1)(4=2)(2=4)(1=5) into FIN_HEA5.
-
+recode FL3_1 (1=1)(2=1)(else=0) into FIN_HEA3.
+recode FL3_3 (1=1)(2=1)(else=0) into FIN_HEA4.
+recode FL3_2 (1=1)(2=1)(else=0) into FIN_HEA5.
 numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
@@ -1067,15 +920,12 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
+*"Always" instead of "agree".
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-
-recode FL3_1 (5=1)(4=2)(2=4)(1=5) into FIN_HEA3.
-*doesn't include "and in full".
-recode FL3_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA4. 
-*"to cover for" vs "that is large enough for" unplanned expenses.
-recode FL3_2 (5=1)(4=2)(2=4)(1=5) into FIN_HEA5.
-
+recode FL3_1 (1=1)(2=1)(else=0) into FIN_HEA3.
+recode FL3_3 (1=1)(2=1)(else=0) into FIN_HEA4.
+recode FL3_2 (1=1)(2=1)(else=0) into FIN_HEA5.
 numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
@@ -1100,15 +950,12 @@ count BUDGET_INCOME=fl1(1 thru 3).
 
 recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
+*"Always" instead of "agree".
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-
-recode FL3_1 (5=1)(4=2)(2=4)(1=5) into FIN_HEA3.
-*doesn't include "and in full".
-recode FL3_3 (5=1)(4=2)(2=4)(1=5) into FIN_HEA4. 
-*"to cover for" vs "that is large enough for" unplanned expenses.
-recode FL3_2 (5=1)(4=2)(2=4)(1=5) into FIN_HEA5.
-
+recode FL3_1 (1=1)(2=1)(else=0) into FIN_HEA3.
+recode FL3_3 (1=1)(2=1)(else=0) into FIN_HEA4.
+recode FL3_2 (1=1)(2=1)(else=0) into FIN_HEA5.
 numeric FIN_HEA6.
 numeric FIN_HEA7.
 numeric FIN_HEA8.
@@ -1274,4 +1121,4 @@ save outfile = "data/uga13.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
 
 
-*dataset close all.
+dataset close all.
