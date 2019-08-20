@@ -66,8 +66,8 @@ Variable | Description
 FIN_HEA1 | Have goals to achieve for next few months: count respondents who have goals for the next few months they want to achieve with thier money. 
 FIN_HEA2 | Have enough money for living expenses: counts respondents who have enough money to pay for their living expenses.
 FIN_HEA3 | Spend less than what they make: counts respondents who spend less money than they make each month.
-FIN_HEA4 | Pay bills on time and in full
-FIN_HEA5 | Have emergency fund for unplanned expenses: counts respondents who have an emergency fund that is large enough to cover unplanned expenses. 
+FIN_HEA4 | Pay bills on time
+FIN_HEA5 | Have emergency fund for unplanned expenses: counts respondents who have an emergency fund to cover unplanned expenses. 
 FIN_HEA6 | Confidence in future income growth: counts respondents who are confident that their income will grow in the future. 
 FIN_HEA7 | Earn enough to pay debt and expenses: counts respondents who earn enough money to pay back debt and pay for living expenses.
 FIN_HEA8 | Friends and family reply on me to help with their finances
@@ -76,17 +76,17 @@ FIN_HEA10 | Have skills and knowledge to manage finances well.
 
 Levels:
 
-+ 1=Strongly disagree
-+ 2=Somewhat disagree
-+ 3=Neither disagree, nor agree
-+ 4=Somewhat agree
-+ 5=Strongly agree
++ 1 = Agree/Strongly Agree
++ 0 = Neither Agree nor Disagree/Disagree/Strongly Disagree
 
 Notes:
+* These variables were converted from 4 and 5-point Likert scale questions. For both, the two positive responses (agree and strongly agree) were coded as "Yes".
 * FIN_HEA1 only exists for 2018 data.
 * FIN_HEA3 through FIN_HEA5 exist in 2014, 2017, and 2018 data.
 * Only FIN_HEA8 and FIN_HEA10 exist for 2015-2018.
-*     For FIN_HEA8 in 2015 and 2016, a difference in wording was that the respondent was asked if "friends and family rely *heavily*" on them. Since this is more specific, respondents may have agreed less strongly.
+* For FIN_HEA4, *year needed*, a difference in wording: "pay bills on time *and in full*. Since this is more specific, respondents may have agreed less strongly.
+*  For FIN_HEA8 in 2015 and 2016, a difference in wording:"friends and family rely *heavily*" on them. Since this is more specific, respondents may have agreed less strongly.
+* In 2014, the response options were a range of "Always" to "Never", rather than "Strongly Agree" to "Strongly Disagree". It is uncertain if this would lead to a repsonse bias.
 * Otherwise, these variables only exist for 2017 and 2018 data.
 
 
@@ -122,14 +122,12 @@ Variable | Description
 --- | ---
 MONEY_SOU1 | Sold agricultural products or reared livestock: counts respondents who got money in the last 12 months by selling agricultural products or rearing livestock. 
 MONEY_SOU2 | Received assistance from the government in the past 12 months.
-MONEY_SOU3 | Received money a relative, friend, or another person inside the country in the past 12 months.
-MONEY_SOU4 | Received money from a relative, friend, or another person from a foreign country in the past 12 months.
-MONEY_SOU5 | Got money in the past 12 months from ownership of a business, property or assets.
-MONEY_SOU6 | Got money in the past 12 months from employment by the government
-MONEY_SOU7 | Got money in the past 12 months from employment in a business with less than 10 employees.
-MONEY_SOU8 | Got money in the past 12 months from employment in a business with more than 10 employees.
-MONEY_SOU9 | Got money in the past 12 months from a scholarship or stipend from the government or educational institution.
-MONEY_SOU10 | Got money in the last 12 months from pension
+MONEY_SOU3 | Received money a relative, friend, or another person in the past 12 months.
+MONEY_SOU4 | Got money in the past 12 months from ownership of a business, property or assets.
+MONEY_SOU5 | Got money in the past 12 months from employment by the government
+MONEY_SOU6 | Got money in the past 12 months from employment in a private business.
+MONEY_SOU7 | Got money in the past 12 months from a scholarship or stipend from the government or educational institution.
+MONEY_SOU8 | Got money in the last 12 months from pension
 
 Levels:
 
