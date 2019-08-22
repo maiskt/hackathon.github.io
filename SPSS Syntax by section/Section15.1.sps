@@ -496,9 +496,9 @@ recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2. 
-recode FL6_1 (1=1)(2=0) into FIN_HEA3.
-recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
-recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
+numeric FIN_HEA3.
+recode FL6_2 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 recode FL10_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
@@ -526,9 +526,9 @@ recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2. 
-recode FL6_1 (1=1)(2=0) into FIN_HEA3.
-recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
-recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
+numeric FIN_HEA3.
+recode FL6_2 (1=1)(2=0) into FIN_HEA4. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 recode FL10_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
@@ -556,9 +556,9 @@ recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-numeric FIN_HEA3. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3. 
 recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
-recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
@@ -587,9 +587,9 @@ recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-numeric FIN_HEA3. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3. 
 recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
-recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
@@ -618,9 +618,9 @@ recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-numeric FIN_HEA3. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3. 
 recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
-recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
@@ -649,9 +649,9 @@ recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2. 
-recode FL6_1 (1=1)(2=1)(else=0) into FIN_HEA3.
-recode FL6_3 (1=1)(2=1)(else=0) into FIN_HEA4. 
-recode FL6_2 (1=1)(2=1)(else=0) into FIN_HEA5. 
+numeric FIN_HEA3.
+recode FL6_2 (1=1)(2=1)(else=0) into FIN_HEA4. 
+recode FL6_1 (1=1)(2=1)(else=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 recode FL10_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
@@ -679,9 +679,9 @@ recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-numeric FIN_HEA3. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3. 
 recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
-recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
@@ -710,9 +710,9 @@ recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
-numeric FIN_HEA3. 
+recode FL6_1 (1=1)(2=0) into FIN_HEA3. 
 recode FL6_3 (1=1)(2=0) into FIN_HEA4. 
-recode FL6_2 (1=1)(2=0) into  FIN_HEA5. 
+recode FL6_2 (1=1)(2=0) into FIN_HEA5. 
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
