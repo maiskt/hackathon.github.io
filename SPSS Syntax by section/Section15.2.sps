@@ -81,9 +81,9 @@ numeric FIN_SHO7.
 numeric FIN_SHO8.
 
 recode DL4_1 (1=1)(2=0) into MONEY_SOU1.
-recode DL4_2 (1=1)(2=0) into MONEY_SOU2. 
+numeric MONEY_SOU2. 
 *DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
-numeric MONEY_SOU3.
+recode DL4_2 (1=1)(2=0) into MONEY_SOU3.
 recode DL4_4 (1=1)(2=0) into MONEY_SOU4.
 recode DL4_6 (1=1)(2=0) into MONEY_SOU5.
 recode DL4_5 (1=1)(2=0) into MONEY_SOU6.
@@ -112,9 +112,9 @@ numeric FIN_SHO8.
 
 
 recode DL4_1 (1=1)(2=0) into MONEY_SOU1.
-recode DL4_2 (1=1)(2=0) into MONEY_SOU2. 
+numeric MONEY_SOU2. 
 *DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
-numeric MONEY_SOU3.
+recode DL4_2 (1=1)(2=0) into MONEY_SOU3.
 recode DL4_4 (1=1)(2=0) into MONEY_SOU4.
 recode DL4_6 (1=1)(2=0) into MONEY_SOU5.
 recode DL4_5 (1=1)(2=0) into MONEY_SOU6.
@@ -141,9 +141,9 @@ numeric FIN_SHO7.
 numeric FIN_SHO8.
 
 recode DL4_1 (1=1)(2=0) into MONEY_SOU1.
-recode DL4_2 (1=1)(2=0) into MONEY_SOU2. 
+numeric MONEY_SOU2. 
 *DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
-numeric MONEY_SOU3.
+recode DL4_2 (1=1)(2=0) into MONEY_SOU3.
 recode DL4_4 (1=1)(2=0) into MONEY_SOU4.
 recode DL4_6 (1=1)(2=0) into MONEY_SOU5.
 recode DL4_5 (1=1)(2=0) into MONEY_SOU6.
@@ -170,9 +170,9 @@ numeric FIN_SHO7.
 numeric FIN_SHO8.
 
 recode DL4_1 (1=1)(2=0) into MONEY_SOU1.
-recode DL4_2 (1=1)(2=0) into MONEY_SOU2. 
+numeric MONEY_SOU2. 
 *DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
-numeric MONEY_SOU3.
+recode DL4_2 (1=1)(2=0) into MONEY_SOU3.
 recode DL4_4 (1=1)(2=0) into MONEY_SOU4.
 recode DL4_6 (1=1)(2=0) into MONEY_SOU5.
 recode DL4_5 (1=1)(2=0) into MONEY_SOU6.
@@ -200,9 +200,9 @@ numeric FIN_SHO7.
 numeric FIN_SHO8.
 
 recode DL4_1 (1=1)(2=0) into MONEY_SOU1.
-recode DL4_2 (1=1)(2=0) into MONEY_SOU2. 
+numeric MONEY_SOU2. 
 *DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
-numeric MONEY_SOU3.
+recode DL4_2 (1=1)(2=0) into MONEY_SOU3.
 recode DL4_4 (1=1)(2=0) into MONEY_SOU4.
 recode DL4_6 (1=1)(2=0) into MONEY_SOU5.
 recode DL4_5 (1=1)(2=0) into MONEY_SOU6.
@@ -228,9 +228,9 @@ numeric FIN_SHO7.
 numeric FIN_SHO8.
 
 recode DL4_1 (1=1)(2=0) into MONEY_SOU1.
-recode DL4_2 (1=1)(2=0) into MONEY_SOU2. 
+numeric MONEY_SOU2. 
 *DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
-numeric MONEY_SOU3.
+recode DL4_2 (1=1)(2=0) into MONEY_SOU3.
 recode DL4_4 (1=1)(2=0) into MONEY_SOU4.
 recode DL4_6 (1=1)(2=0) into MONEY_SOU5.
 recode DL4_5 (1=1)(2=0) into MONEY_SOU6.
@@ -257,9 +257,9 @@ numeric FIN_SHO7.
 numeric FIN_SHO8.
 
 recode DL4_1 (1=1)(2=0) into MONEY_SOU1.
-recode DL4_2 (1=1)(2=0) into MONEY_SOU2. 
+numeric MONEY_SOU2. 
 *DL4_3 doesn't differentiate between scholarships/stipens and pensions/other assistance.
-numeric MONEY_SOU3.
+recode DL4_2 (1=1)(2=0) into MONEY_SOU3.
 recode DL4_4 (1=1)(2=0) into MONEY_SOU4.
 recode DL4_6 (1=1)(2=0) into MONEY_SOU5.
 recode DL4_5 (1=1)(2=0) into MONEY_SOU6.
@@ -405,14 +405,14 @@ save outfile = "data/ken16.sav"
 
 DATASET ACTIVATE nga16.
 
-recode DL25_1 (1=1) (2=0) into FIN_SHO1.
-recode DL25_2 (1=1) (2=0) into FIN_SHO2.
-recode DL25_3 (1=1) (2=0) into FIN_SHO3.
-recode DL25_4 (1=1) (2=0) into FIN_SHO4.
-recode DL25_5 (1=1) (2=0) into FIN_SHO5.
-recode DL25_6 (1=1) (2=0) into FIN_SHO6.
-recode DL25_7 (1=1) (2=0) into FIN_SHO7.
-recode DL25_8 (1=1) (2=0) into FIN_SHO8.
+recode DL25_1 (1=1) (2,3=0) into FIN_SHO1.
+recode DL25_2 (1=1) (2,3=0) into FIN_SHO2.
+recode DL25_3 (1=1) (2,3=0) into FIN_SHO3.
+recode DL25_4 (1=1) (2,3=0) into FIN_SHO4.
+recode DL25_5 (1=1) (2,3=0) into FIN_SHO5.
+recode DL25_6 (1=1) (2,3=0) into FIN_SHO6.
+recode DL25_7 (1=1) (2,3=0) into FIN_SHO7.
+recode DL25_8 (1=1) (2,3=0) into FIN_SHO8.
 
 *The agriculture-related options are numerous. Only those involved in direct ag production are included.
 count MONEY_SOU1 = DL4_6 to DL4_8(1).
