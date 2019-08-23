@@ -469,7 +469,7 @@ save outfile = "data/nga15.sav"
 
 DATASET ACTIVATE pak15.
 
-recode DL0 (1=1)(else=copy) into MAIN_EARNER.
+recode DL0 (99=-2)(else=copy) into MAIN_EARNER.
 recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
 
 recode FL10_1 (1=1) (else=copy) into FIN_ATT1.
