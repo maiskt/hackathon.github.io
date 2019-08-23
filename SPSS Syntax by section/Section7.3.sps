@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 *Section 7.3.
 **************************************************************************************************************************************************.
 *18Bangladesh.
@@ -6,7 +6,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2018.
-*Need double check.
+
 recode ma1(2,3,4,5=1)(else=0) into EXP_MA1.
 recode ma2(2,3,4,5=1)(else=0) into EXP_MA2.
 recode ma3(2,3,4,5=1)(else=0) into EXP_MA3.
@@ -25,7 +25,7 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
-*Need double check.
+
 numeric EXPSV_MA1.
 numeric EXPSV_MA2.
 numeric EXPSV_MA3.
@@ -43,7 +43,6 @@ numeric EXPSV_MA14.
 numeric EXPSV_MA15.
 numeric EXPSV_MA16.
 numeric EXPSV_MA17.
-
 
 **************************************************************************************************************************************************.
 *18India.
@@ -95,7 +94,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2017.
-*Need double check.
+
 recode ma2_1(2,3,4,5=1)(else=0) into EXP_MA1.
 recode ma2_2(2,3,4,5=1)(else=0) into EXP_MA2.
 recode ma2_3(2,3,4,5=1)(else=0) into EXP_MA3.
@@ -114,7 +113,7 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
-*Need double check.
+
 numeric EXPSV_MA1.
 numeric EXPSV_MA2.
 numeric EXPSV_MA3.
@@ -408,7 +407,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
-*Need double check.
+
 recode mm38_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm38_3(1=1)(else=0) into EXP_MA3.
@@ -452,14 +451,15 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2016.
-*Need double check.
+
 recode mm38_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm38_3(1=1)(else=0) into EXP_MA3.
 recode mm38_5(1=1)(else=0) into EXP_MA4.
 recode mm38_6(1=1)(else=0) into EXP_MA5.
 recode mm38_7(1=1)(else=0) into EXP_MA6.
-recode mm38_9(1=1)(else=0) into EXP_MA7.
+count EXP_MA7=MM38_8,mm38_9 (1).
+recode EXP_MA7 (1 thru hi=1)(else=0).
 recode mm38_14(1=1)(else=0) into EXP_MA8.
 recode mm38_16(1=1)(else=0) into EXP_MA9.
 recode mm38_17(1=1)(else=0) into EXP_MA10.
@@ -496,7 +496,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2016.
-*Need double check.
+
 recode mm38_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm38_3(1=1)(else=0) into EXP_MA3.
@@ -540,7 +540,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2016.
-*Need double check.
+
 recode mm38_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm38_3(1=1)(else=0) into EXP_MA3.
@@ -584,7 +584,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2016.
-*Need double check.
+
 recode mm38_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm38_3(1=1)(else=0) into EXP_MA3.
@@ -628,7 +628,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2016.
-*Need double check.
+
 recode mm38_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm38_3(1=1)(else=0) into EXP_MA3.
@@ -672,7 +672,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2016.
-*Need double check.
+
 recode mm38_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm38_3(1=1)(else=0) into EXP_MA3.
@@ -716,7 +716,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2016.
-*Need double check.
+
 recode mm38_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm38_3(1=1)(else=0) into EXP_MA3.
@@ -760,7 +760,7 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2015.
-*Need double check.
+
 recode mm38_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm38_3(1=1)(else=0) into EXP_MA3.
@@ -1127,7 +1127,7 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2014.
-*Need double check.
+
 recode mm30_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm30_3(1=1)(else=0) into EXP_MA3.
@@ -1473,13 +1473,31 @@ recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
 numeric EXP_MA18.
 
+ * recode mm33_1(1=1)(else=0) into EXPSV_MA1.
+ * recode mm33_2(1=1)(else=0) into EXPSV_MA2.
+ * recode mm33_3(1=1)(else=0) into EXPSV_MA3.
+ * recode mm33_4(1=1)(else=0) into EXPSV_MA4.
+ * recode mm33_5(1=1)(else=0) into EXPSV_MA5.
+ * recode mm33_6(1=1)(else=0) into EXPSV_MA6.
+ * recode mm33_7(1=1)(else=0) into EXPSV_MA7.
+ * compute EXPSV_MA8=0.
+ * if mm33_8=1 or mm33_9=1 EXPSV_MA8=1.
+ * recode mm33_10(1=1)(else=0) into EXPSV_MA9.
+ * recode mm33_11(1=1)(else=0) into EXPSV_MA10.
+ * recode mm33_12(1=1)(else=0) into EXPSV_MA11.
+ * recode mm33_13(1=1)(else=0) into EXPSV_MA12.
+ * recode mm33_14(1=1)(else=0) into EXPSV_MA13.
+ * recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+ * recode mm33_16(1=1)(else=0) into EXPSV_MA15.
+ * recode mm33_17(1=1)(else=0) into EXPSV_MA16.
+ * numeric EXPSV_MA17.
 **************************************************************************************************************************************************.
 *13Bangladesh.
 rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2013.
-*Need double check.
+
 recode mm29_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 recode mm29_3(1=1)(else=0) into EXP_MA3.
@@ -1524,7 +1542,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2013.
-*Need double check.
+
 recode mm29_1(1=1)(else=0) into EXP_MA1.
 numeric EXP_MA2.
 compute EXP_MA3=0.
