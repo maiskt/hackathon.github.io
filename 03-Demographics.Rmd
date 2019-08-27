@@ -247,15 +247,3 @@ Levels:
 Note:
 
 * 2013 and 2014 surveys didn't include this question.
-       
-## SELL_CROP
-Sell agricultural product: counts respondents who sell agricultural products or livestock reared, derived from DL4 set quesions.
-
-Levels:  
-
-+ 1=Yes
-+ 0=No
-       
-Note:
-
-* 2013 and 2014 surveys didn't include this quesion.
