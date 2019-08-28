@@ -1227,3 +1227,83 @@ save outfile = "data/uga13.sav"
 
 
 dataset close all.
+
+*Labels.
+variable labels
+FIN_SHO1	"Household ever Gone without enough food to eat in past 6 months"
+FIN_SHO2	"Household ever Gone without fuel to cook food in past 6 months"
+FIN_SHO3	"Household ever Needed a doctor but delayed or went without because of a shortage of funds in past 6 months"
+FIN_SHO4	"Household ever Needed a veterinarian or vet medicine but went without because of a shortage of funds in past 6 months"
+FIN_SHO5	"Household ever Needed fertilizer for the farm but went without because of a shortage of funds in past 6 months"
+FIN_SHO6	"Household ever Needed stock for my business but couldn’t buy any because of a shortage of funds; had to close down temporarily or completely in past 6 months"
+FIN_SHO7	"Household ever Had a child sent home from school because of unpaid school fees in past 6 months"
+FIN_SHO8	"Household ever Had to miss a family or life event (school, work, funeral, wedding, etc.) because couldn’t pay for transportation in past 6 months"
+MONEY_SOU1	"Money source in past 12 months: Sold products of agriculture or reared livestock"
+MONEY_SOU2	"Money source in past 12 months: Received assistance from the government"
+MONEY_SOU3	"Money source in past 12 months: Received money from a relative, friend, or another person "
+MONEY_SOU4	"Money source in past 12 months: Ownership of a business, property, or assets  "
+MONEY_SOU5	"Money source in past 12 months: Employment by the government  "
+MONEY_SOU6	"Money source in past 12 months: Employment in a business"
+MONEY_SOU7	"Money source in past 12 months: Scholarship or stipend from the government or educational institution  "
+MONEY_SOU8	"Money source in past 12 months: Pension"
+EXPENSE1	"First largest expense after paid for basic needs"
+EXPENSE2	"Second largest expense after paid for basic needs"
+EXPENSE3	"Third largest expense after paid for basic needs".
+
+value labels FIN_SHO1 1"Yes" 0"No".
+value labels FIN_SHO2 1"Yes" 0"No".
+value labels FIN_SHO3 1"Yes" 0"No".
+value labels FIN_SHO4 1"Yes" 0"No".
+value labels FIN_SHO5 1"Yes" 0"No".
+value labels FIN_SHO6 1"Yes" 0"No".
+value labels FIN_SHO7 1"Yes" 0"No".
+value labels FIN_SHO8 1"Yes" 0"No".
+value labels MONEY_SOU1 1"Yes" 0"No".
+value labels MONEY_SOU2 1"Yes" 0"No".
+value labels MONEY_SOU3 1"Yes" 0"No".
+value labels MONEY_SOU4 1"Yes" 0"No".
+value labels MONEY_SOU5 1"Yes" 0"No".
+value labels MONEY_SOU6 1"Yes" 0"No".
+value labels MONEY_SOU7 1"Yes" 0"No".
+value labels MONEY_SOU8 1"Yes" 0"No".
+value labels EXPENSE1 
+96"Other" 
+11"I don’t want to spend on anything else"  
+10"Entertainment (e.g., movies, restaurants, sport shows, theater, restaurants, clubbing, partying)"
+9"Invest in assets like shares, real estate, jewelry "
+8"Buying more of your usual foods "
+7"Buying better food "
+6"Buying the family some clothes/something nice for the home "
+5"Spending on farm (e.g., lease more land, buy fertilizer or pesticides, buy seeds) "
+4"Sending money to other people, including sending regular support money, emergency support, gifts, etc. "
+3"Repaying any existing debts "
+2"Investing in your existing business "
+1"Saving money".
+value labels EXPENSE2
+96"Other" 
+11"I don’t want to spend on anything else"  
+10"Entertainment (e.g., movies, restaurants, sport shows, theater, restaurants, clubbing, partying)"
+9"Invest in assets like shares, real estate, jewelry "
+8"Buying more of your usual foods "
+7"Buying better food "
+6"Buying the family some clothes/something nice for the home "
+5"Spending on farm (e.g., lease more land, buy fertilizer or pesticides, buy seeds) "
+4"Sending money to other people, including sending regular support money, emergency support, gifts, etc. "
+3"Repaying any existing debts "
+2"Investing in your existing business "
+1"Saving money".
+value labels EXPENSE3
+96"Other" 
+11"I don’t want to spend on anything else"  
+10"Entertainment (e.g., movies, restaurants, sport shows, theater, restaurants, clubbing, partying)"
+9"Invest in assets like shares, real estate, jewelry "
+8"Buying more of your usual foods "
+7"Buying better food "
+6"Buying the family some clothes/something nice for the home "
+5"Spending on farm (e.g., lease more land, buy fertilizer or pesticides, buy seeds) "
+4"Sending money to other people, including sending regular support money, emergency support, gifts, etc. "
+3"Repaying any existing debts "
+2"Investing in your existing business "
+1"Saving money".
+
+
