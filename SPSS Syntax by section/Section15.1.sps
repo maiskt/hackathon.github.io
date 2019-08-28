@@ -487,12 +487,12 @@ count ECO_VUL=dl25_1 dl25_2 dl25_3 dl25_4 dl25_5 dl25_6 dl25_7 dl25_8 (1).
 recode ECO_VUL(1 thru highest = 1)(else = 0).
 
 *Other included.
-count FIN_SHOCK= dl25_1 to dl26_11 (1).
+count FIN_SHOCK= dl26_1 to dl26_11 (1).
 recode FIN_SHOCK (1 thru highest = 1).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2. 
@@ -517,12 +517,12 @@ recode HAVE_PLAN (1 thru highest=1) (else=0).
 count ECO_VUL=dl25_1 dl25_2 dl25_3 dl25_4 dl25_5 dl25_6 dl25_7 dl25_8 (1).
 recode ECO_VUL(1 thru highest = 1)(else = 0).
 
-count FIN_SHOCK= dl25_1 to dl26_11 (1).
+count FIN_SHOCK= dl26_1 to dl26_11 (1).
 recode FIN_SHOCK (1 thru highest = 1).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2. 
@@ -547,12 +547,12 @@ recode HAVE_PLAN (1 thru highest=1) (else=0).
 count ECO_VUL=dl25_1 dl25_2 dl25_3 dl25_4 dl25_5 dl25_6 dl25_7 dl25_8 (1).
 recode ECO_VUL(1 thru highest = 1)(else = 0).
 
-count FIN_SHOCK= dl25_1 to dl26_11 (1).
+count FIN_SHOCK= dl26_1 to dl26_10 dl26_12(1).
 recode FIN_SHOCK (1 thru highest = 1).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
@@ -562,9 +562,9 @@ recode FL6_2 (1=1)(2=0) into FIN_HEA5.
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/ida15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -578,12 +578,12 @@ recode HAVE_PLAN (1 thru highest=1) (else=0).
 count ECO_VUL=dl25_1 dl25_2 dl25_3 dl25_4 dl25_5 dl25_6 dl25_7 dl25_8 (1).
 recode ECO_VUL(1 thru highest = 1)(else = 0).
 
-count FIN_SHOCK= dl25_1 to dl26_11 (1).
+count FIN_SHOCK= dl26_1 to dl26_11 (1).
 recode FIN_SHOCK (1 thru highest = 1).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
@@ -593,9 +593,9 @@ recode FL6_2 (1=1)(2=0) into FIN_HEA5.
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/ken15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -609,12 +609,12 @@ recode HAVE_PLAN (1 thru highest=1) (else=0).
 count ECO_VUL=dl25_1 dl25_2 dl25_3 dl25_4 dl25_5 dl25_6 dl25_7 dl25_8 (1).
 recode ECO_VUL(1 thru highest = 1)(else = 0).
 
-count FIN_SHOCK= dl25_1 to dl26_11 (1).
+count FIN_SHOCK= dl26_1 to dl26_11 (1).
 recode FIN_SHOCK (1 thru highest = 1).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
@@ -624,9 +624,9 @@ recode FL6_2 (1=1)(2=0) into FIN_HEA5.
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/nga15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -640,12 +640,12 @@ recode HAVE_PLAN (1 thru highest=1) (else=0).
 count ECO_VUL=dl25_1 dl25_2 dl25_3 dl25_4 dl25_5 dl25_6 dl25_7 dl25_8 (1).
 recode ECO_VUL(1 thru highest = 1)(else = 0).
 
-count FIN_SHOCK= dl25_1 to dl26_11 (1).
+count FIN_SHOCK= dl26_1 to dl26_11 (1).
 recode FIN_SHOCK (1 thru highest = 1).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2. 
@@ -670,12 +670,12 @@ recode HAVE_PLAN (1 thru highest=1) (else=0).
 count ECO_VUL=dl25_1 dl25_2 dl25_3 dl25_4 dl25_5 dl25_6 dl25_7 dl25_8 (1).
 recode ECO_VUL(1 thru highest = 1)(else = 0).
 
-count FIN_SHOCK= dl25_1 to dl26_11 (1).
+count FIN_SHOCK= dl26_1 to dl26_11 (1).
 recode FIN_SHOCK (1 thru highest = 1).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
@@ -685,9 +685,9 @@ recode FL6_2 (1=1)(2=0) into FIN_HEA5.
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/tza15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -701,12 +701,12 @@ recode HAVE_PLAN (1 thru highest=1) (else=0).
 count ECO_VUL=dl25_1 dl25_2 dl25_3 dl25_4 dl25_5 dl25_6 dl25_7 dl25_8 (1).
 recode ECO_VUL(1 thru highest = 1)(else = 0).
 
-count FIN_SHOCK= dl25_1 to dl26_11 (1).
+count FIN_SHOCK= dl26_1 to dl26_11 (1).
 recode FIN_SHOCK (1 thru highest = 1).
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 numeric FIN_HEA1.
 numeric FIN_HEA2.
@@ -716,9 +716,9 @@ recode FL6_2 (1=1)(2=0) into FIN_HEA5.
 numeric FIN_HEA6. 
 numeric FIN_HEA7. 
 *only difference is the word "heavily".
-recode FL8_3 (1=1)(2=2)(else=0) into FIN_HEA8. 
+recode FL8_3 (1=1)(2=1)(else=0) into FIN_HEA8. 
 numeric FIN_HEA9.
-recode FL8_5 (1=1)(2=2)(else=0) into FIN_HEA10.
+recode FL8_5 (1=1)(2=1)(else=0) into FIN_HEA10.
 
 save outfile = "data/uga15.sav"
 /keep= SBJNUM COUNTRY YEAR HAVE_PLAN  ECO_VUL FIN_SHOCK BUDGET_INCOME BUDGET_STAY FIN_HEA1 FIN_HEA2 FIN_HEA3 FIN_HEA4 FIN_HEA5 FIN_HEA6 FIN_HEA7 FIN_HEA8 FIN_HEA9 FIN_HEA10 .
@@ -738,7 +738,7 @@ numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *"Always" instead of "agree".
 numeric FIN_HEA1.
@@ -768,7 +768,7 @@ numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *"Always" instead of "agree".
 numeric FIN_HEA1.
@@ -798,7 +798,7 @@ numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *"Always" instead of "agree".
 numeric FIN_HEA1.
@@ -858,7 +858,7 @@ numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *"Always" instead of "agree".
 numeric FIN_HEA1.
@@ -888,7 +888,7 @@ numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *"Always" instead of "agree".
 numeric FIN_HEA1.
@@ -918,7 +918,7 @@ numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *"Always" instead of "agree".
 numeric FIN_HEA1.
@@ -948,7 +948,7 @@ numeric FIN_SHOCK.
 
 count BUDGET_INCOME=fl1(1 thru 3).
 
-recode fl2(1 thru 3=1)(4=0)(else = 0) into BUDGET_STAY.
+recode fl2(1 thru 3=1)(4=2)(else = 0) into BUDGET_STAY.
 
 *"Always" instead of "agree".
 numeric FIN_HEA1.
@@ -1122,3 +1122,40 @@ save outfile = "data/uga13.sav"
 
 
 dataset close all.
+
+*Labels.
+variable labels 
+HAVE_PLAN	"Have a financial plan for unexpected events"
+ECO_VUL	"Economically vulnerable"
+FIN_SHOCK	"Financial shock"
+BUDGET_INCOME	"Have ever made budget income"
+BUDGET_STAY	"Stay on budget "
+FIN_HEA1	"Financial health: You have goals for the next few months for what you want to achieve with your money"
+FIN_HEA2	"Financial health: You have enough money to pay for your living expenses"
+FIN_HEA3	"Financial health: You spend less money than you make each month"
+FIN_HEA4	"Financial health: You pay your bills on time and in full"
+FIN_HEA5	"Financial health: You have an emergency fund that is large enough to cover unplanned expenses"
+FIN_HEA6	"Financial health: You are confident that your income will grow in the future"
+FIN_HEA7	"Financial health: You earn enough money to pay back debt and also pay for living expenses"
+FIN_HEA8	"Financial health: Friends and family rely on you to help with their finances"
+FIN_HEA9	"Financial health: You have savings or assets that will keep you financially secure in the future"
+FIN_HEA10	"Financial health: You have the skills and knowledge to manage your finances well".
+
+value labels HAVE_PLAN 1"Yes" 0"No".
+value labels ECO_VUL 1"Yes" 0"No".
+value labels FIN_SHOCK 1"Yes" 0"No".
+value labels BUDGET_INCOME 1"Yes" 0"No".
+value labels BUDGET_STAY 1"Stay on budget"2"Do not stay on budget"0"Never make budget".
+value labels FIN_HEA1 1"Yes" 0"No".
+value labels FIN_HEA2 1"Yes" 0"No".
+value labels FIN_HEA3 1"Yes" 0"No".
+value labels FIN_HEA4 1"Yes" 0"No".
+value labels FIN_HEA5 1"Yes" 0"No".
+value labels FIN_HEA6 1"Yes" 0"No".
+value labels FIN_HEA7 1"Yes" 0"No".
+value labels FIN_HEA8 1"Yes" 0"No".
+value labels FIN_HEA9 1"Yes" 0"No".
+value labels FIN_HEA10 1"Yes" 0"No".
+
+
+
