@@ -754,7 +754,7 @@ recode mm40_14(1=1)(else=0) into EXPSV_MA14.
 recode mm40_15(1=1)(else=0) into EXPSV_MA15.
 recode mm40_16(1=1)(else=0) into EXPSV_MA16.
 recode mm40_17(1=1)(else=0) into EXPSV_MA17.
-
+ 
 **************************************************************************************************************************************************.
 *15Bangladesh.
 rename variables QN=SBJNUM weight=WEIGHT.
@@ -779,9 +779,10 @@ recode mm38_10(1=1)(else=0) into EXP_MA13.
 recode mm38_11(1=1)(else=0) into EXP_MA14.
 recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
-recode mm38_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM38_15=1 or MM38_18=1 EXP_MA17=1.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
-*Need double check.
+
 recode mm40_1(1=1)(else=0) into EXPSV_MA1.
 recode mm40_2(1=1)(else=0) into EXPSV_MA2.
 recode mm40_3(1=1)(else=0) into EXPSV_MA3.
@@ -796,7 +797,8 @@ recode mm40_11(1=1)(else=0) into EXPSV_MA10.
 recode mm40_12(1=1)(else=0) into EXPSV_MA11.
 recode mm40_13(1=1)(else=0) into EXPSV_MA12.
 recode mm40_14(1=1)(else=0) into EXPSV_MA13.
-recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM40_15=1 or MM40_18=1 EXPSV_MA14=1.
 recode mm40_16(1=1)(else=0) into EXPSV_MA15.
 recode mm40_17(1=1)(else=0) into EXPSV_MA16.
 recode mm40_19(1=1)(else=0) into EXPSV_MA17.
@@ -825,7 +827,8 @@ recode mm38_10(1=1)(else=0) into EXP_MA13.
 recode mm38_11(1=1)(else=0) into EXP_MA14.
 recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
-recode mm38_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM38_15=1 or MM38_18=1 EXP_MA17=1.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
 recode mm40_1(1=1)(else=0) into EXPSV_MA1.
@@ -842,7 +845,8 @@ recode mm40_11(1=1)(else=0) into EXPSV_MA10.
 recode mm40_12(1=1)(else=0) into EXPSV_MA11.
 recode mm40_13(1=1)(else=0) into EXPSV_MA12.
 recode mm40_14(1=1)(else=0) into EXPSV_MA13.
-recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM40_15=1 or MM40_18=1 EXPSV_MA14=1.
 recode mm40_16(1=1)(else=0) into EXPSV_MA15.
 recode mm40_17(1=1)(else=0) into EXPSV_MA16.
 recode mm40_19(1=1)(else=0) into EXPSV_MA17.
@@ -871,7 +875,8 @@ recode mm38_10(1=1)(else=0) into EXP_MA13.
 recode mm38_11(1=1)(else=0) into EXP_MA14.
 recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
-recode mm38_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM38_15=1 or MM38_18=1 EXP_MA17=1.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
 recode mm40_1(1=1)(else=0) into EXPSV_MA1.
@@ -888,7 +893,8 @@ recode mm40_11(1=1)(else=0) into EXPSV_MA10.
 recode mm40_12(1=1)(else=0) into EXPSV_MA11.
 recode mm40_13(1=1)(else=0) into EXPSV_MA12.
 recode mm40_14(1=1)(else=0) into EXPSV_MA13.
-recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM40_15=1 or MM40_18=1 EXPSV_MA14=1.
 recode mm40_16(1=1)(else=0) into EXPSV_MA15.
 recode mm40_17(1=1)(else=0) into EXPSV_MA16.
 recode mm40_19(1=1)(else=0) into EXPSV_MA17.
@@ -917,7 +923,8 @@ recode mm38_10(1=1)(else=0) into EXP_MA13.
 recode mm38_11(1=1)(else=0) into EXP_MA14.
 recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
-recode mm38_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM38_15=1 or MM38_18=1 EXP_MA17=1.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
 recode mm40_1(1=1)(else=0) into EXPSV_MA1.
@@ -934,10 +941,12 @@ recode mm40_11(1=1)(else=0) into EXPSV_MA10.
 recode mm40_12(1=1)(else=0) into EXPSV_MA11.
 recode mm40_13(1=1)(else=0) into EXPSV_MA12.
 recode mm40_14(1=1)(else=0) into EXPSV_MA13.
-recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM40_15=1 or MM40_18=1 EXPSV_MA14=1.
 recode mm40_16(1=1)(else=0) into EXPSV_MA15.
 recode mm40_17(1=1)(else=0) into EXPSV_MA16.
 recode mm40_19(1=1)(else=0) into EXPSV_MA17.
+
 
 **************************************************************************************************************************************************.
 *15Nigeria.
@@ -963,7 +972,8 @@ recode mm38_10(1=1)(else=0) into EXP_MA13.
 recode mm38_11(1=1)(else=0) into EXP_MA14.
 recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
-recode mm38_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM38_15=1 or MM38_18=1 EXP_MA17=1.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
 recode mm40_1(1=1)(else=0) into EXPSV_MA1.
@@ -980,7 +990,8 @@ recode mm40_11(1=1)(else=0) into EXPSV_MA10.
 recode mm40_12(1=1)(else=0) into EXPSV_MA11.
 recode mm40_13(1=1)(else=0) into EXPSV_MA12.
 recode mm40_14(1=1)(else=0) into EXPSV_MA13.
-recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM40_15=1 or MM40_18=1 EXPSV_MA14=1.
 recode mm40_16(1=1)(else=0) into EXPSV_MA15.
 recode mm40_17(1=1)(else=0) into EXPSV_MA16.
 recode mm40_19(1=1)(else=0) into EXPSV_MA17.
@@ -1009,7 +1020,8 @@ recode mm38_10(1=1)(else=0) into EXP_MA13.
 recode mm38_11(1=1)(else=0) into EXP_MA14.
 recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
-recode mm38_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM38_15=1 or MM38_18=1 EXP_MA17=1.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
 recode mm40_1(1=1)(else=0) into EXPSV_MA1.
@@ -1026,7 +1038,8 @@ recode mm40_11(1=1)(else=0) into EXPSV_MA10.
 recode mm40_12(1=1)(else=0) into EXPSV_MA11.
 recode mm40_13(1=1)(else=0) into EXPSV_MA12.
 recode mm40_14(1=1)(else=0) into EXPSV_MA13.
-recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM40_15=1 or MM40_18=1 EXPSV_MA14=1.
 recode mm40_16(1=1)(else=0) into EXPSV_MA15.
 recode mm40_17(1=1)(else=0) into EXPSV_MA16.
 recode mm40_19(1=1)(else=0) into EXPSV_MA17.
@@ -1055,7 +1068,8 @@ recode mm38_10(1=1)(else=0) into EXP_MA13.
 recode mm38_11(1=1)(else=0) into EXP_MA14.
 recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
-recode mm38_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM38_15=1 or MM38_18=1 EXP_MA17=1.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
 recode mm40_1(1=1)(else=0) into EXPSV_MA1.
@@ -1072,7 +1086,8 @@ recode mm40_11(1=1)(else=0) into EXPSV_MA10.
 recode mm40_12(1=1)(else=0) into EXPSV_MA11.
 recode mm40_13(1=1)(else=0) into EXPSV_MA12.
 recode mm40_14(1=1)(else=0) into EXPSV_MA13.
-recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM40_15=1 or MM40_18=1 EXPSV_MA14=1.
 recode mm40_16(1=1)(else=0) into EXPSV_MA15.
 recode mm40_17(1=1)(else=0) into EXPSV_MA16.
 recode mm40_19(1=1)(else=0) into EXPSV_MA17.
@@ -1100,7 +1115,8 @@ recode mm38_10(1=1)(else=0) into EXP_MA13.
 recode mm38_11(1=1)(else=0) into EXP_MA14.
 recode mm38_12(1=1)(else=0) into EXP_MA15.
 recode mm38_13(1=1)(else=0) into EXP_MA16.
-recode mm38_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM38_15=1 or MM38_18=1 EXP_MA17=1.
 recode mm38_19(1=1)(else=0) into EXP_MA18.
 
 recode mm40_1(1=1)(else=0) into EXPSV_MA1.
@@ -1117,7 +1133,8 @@ recode mm40_11(1=1)(else=0) into EXPSV_MA10.
 recode mm40_12(1=1)(else=0) into EXPSV_MA11.
 recode mm40_13(1=1)(else=0) into EXPSV_MA12.
 recode mm40_14(1=1)(else=0) into EXPSV_MA13.
-recode mm40_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM40_15=1 or MM40_18=1 EXPSV_MA14=1.
 recode mm40_16(1=1)(else=0) into EXPSV_MA15.
 recode mm40_17(1=1)(else=0) into EXPSV_MA16.
 recode mm40_19(1=1)(else=0) into EXPSV_MA17.
@@ -1146,9 +1163,10 @@ recode mm30_10(1=1)(else=0) into EXP_MA13.
 recode mm30_11(1=1)(else=0) into EXP_MA14.
 recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
-recode mm30_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM30_15=1 or MM30_18=1 EXP_MA17=1.
 numeric EXP_MA18.
-*Need double check.
+
 recode mm33_1(1=1)(else=0) into EXPSV_MA1.
 recode mm33_2(1=1)(else=0) into EXPSV_MA2.
 recode mm33_3(1=1)(else=0) into EXPSV_MA3.
@@ -1163,7 +1181,8 @@ recode mm33_11(1=1)(else=0) into EXPSV_MA10.
 recode mm33_12(1=1)(else=0) into EXPSV_MA11.
 recode mm33_13(1=1)(else=0) into EXPSV_MA12.
 recode mm33_14(1=1)(else=0) into EXPSV_MA13.
-recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM33_15=1 or MM33_18=1 EXPSV_MA14=1.
 recode mm33_16(1=1)(else=0) into EXPSV_MA15.
 recode mm33_17(1=1)(else=0) into EXPSV_MA16.
 numeric EXPSV_MA17.
@@ -1192,9 +1211,10 @@ recode mm30_10(1=1)(else=0) into EXP_MA13.
 recode mm30_11(1=1)(else=0) into EXP_MA14.
 recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
-recode mm30_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM30_15=1 or MM30_18=1 EXP_MA17=1.
 numeric EXP_MA18.
-*Need double check.
+
 numeric EXPSV_MA1.
 numeric EXPSV_MA2.
 numeric EXPSV_MA3.
@@ -1237,7 +1257,8 @@ recode mm30_10(1=1)(else=0) into EXP_MA13.
 recode mm30_11(1=1)(else=0) into EXP_MA14.
 recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
-recode mm30_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM30_15=1 or MM30_18=1 EXP_MA17=1.
 numeric EXP_MA18.
 
 recode mm33_1(1=1)(else=0) into EXPSV_MA1.
@@ -1254,7 +1275,8 @@ recode mm33_11(1=1)(else=0) into EXPSV_MA10.
 recode mm33_12(1=1)(else=0) into EXPSV_MA11.
 recode mm33_13(1=1)(else=0) into EXPSV_MA12.
 recode mm33_14(1=1)(else=0) into EXPSV_MA13.
-recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM33_15=1 or MM33_18=1 EXPSV_MA14=1.
 recode mm33_16(1=1)(else=0) into EXPSV_MA15.
 recode mm33_17(1=1)(else=0) into EXPSV_MA16.
 numeric EXPSV_MA17.
@@ -1284,7 +1306,8 @@ recode mm30_10(1=1)(else=0) into EXP_MA13.
 recode mm30_11(1=1)(else=0) into EXP_MA14.
 recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
-recode mm30_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM30_15=1 or MM30_18=1 EXP_MA17=1.
 numeric EXP_MA18.
 
 recode mm33_1(1=1)(else=0) into EXPSV_MA1.
@@ -1301,7 +1324,8 @@ recode mm33_11(1=1)(else=0) into EXPSV_MA10.
 recode mm33_12(1=1)(else=0) into EXPSV_MA11.
 recode mm33_13(1=1)(else=0) into EXPSV_MA12.
 recode mm33_14(1=1)(else=0) into EXPSV_MA13.
-recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM33_15=1 or MM33_18=1 EXPSV_MA14=1.
 recode mm33_16(1=1)(else=0) into EXPSV_MA15.
 recode mm33_17(1=1)(else=0) into EXPSV_MA16.
 numeric EXPSV_MA17.
@@ -1331,7 +1355,8 @@ recode mm30_10(1=1)(else=0) into EXP_MA13.
 recode mm30_11(1=1)(else=0) into EXP_MA14.
 recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
-recode mm30_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM30_15=1 or MM30_18=1 EXP_MA17=1.
 numeric EXP_MA18.
 
 recode mm33_1(1=1)(else=0) into EXPSV_MA1.
@@ -1348,7 +1373,8 @@ recode mm33_11(1=1)(else=0) into EXPSV_MA10.
 recode mm33_12(1=1)(else=0) into EXPSV_MA11.
 recode mm33_13(1=1)(else=0) into EXPSV_MA12.
 recode mm33_14(1=1)(else=0) into EXPSV_MA13.
-recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM33_15=1 or MM33_18=1 EXPSV_MA14=1.
 recode mm33_16(1=1)(else=0) into EXPSV_MA15.
 recode mm33_17(1=1)(else=0) into EXPSV_MA16.
 numeric EXPSV_MA17.
@@ -1378,7 +1404,8 @@ recode mm30_10(1=1)(else=0) into EXP_MA13.
 recode mm30_11(1=1)(else=0) into EXP_MA14.
 recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
-recode mm30_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM30_15=1 or MM30_18=1 EXP_MA17=1.
 numeric EXP_MA18.
 
 recode mm33_1(1=1)(else=0) into EXPSV_MA1.
@@ -1395,7 +1422,8 @@ recode mm33_11(1=1)(else=0) into EXPSV_MA10.
 recode mm33_12(1=1)(else=0) into EXPSV_MA11.
 recode mm33_13(1=1)(else=0) into EXPSV_MA12.
 recode mm33_14(1=1)(else=0) into EXPSV_MA13.
-recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM33_15=1 or MM33_18=1 EXPSV_MA14=1.
 recode mm33_16(1=1)(else=0) into EXPSV_MA15.
 recode mm33_17(1=1)(else=0) into EXPSV_MA16.
 numeric EXPSV_MA17.
@@ -1425,7 +1453,8 @@ recode mm30_10(1=1)(else=0) into EXP_MA13.
 recode mm30_11(1=1)(else=0) into EXP_MA14.
 recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
-recode mm30_15(1=1)(else=0) into EXP_MA17.
+compute EXP_MA17=0.
+if MM30_15=1 or MM30_18=1 EXP_MA17=1.
 numeric EXP_MA18.
 
 recode mm33_1(1=1)(else=0) into EXPSV_MA1.
@@ -1442,7 +1471,8 @@ recode mm33_11(1=1)(else=0) into EXPSV_MA10.
 recode mm33_12(1=1)(else=0) into EXPSV_MA11.
 recode mm33_13(1=1)(else=0) into EXPSV_MA12.
 recode mm33_14(1=1)(else=0) into EXPSV_MA13.
-recode mm33_15(1=1)(else=0) into EXPSV_MA14.
+compute EXPSV_MA14=0.
+if MM33_15=1 or MM33_18=1 EXPSV_MA14=1.
 recode mm33_16(1=1)(else=0) into EXPSV_MA15.
 recode mm33_17(1=1)(else=0) into EXPSV_MA16.
 numeric EXPSV_MA17.
@@ -1472,26 +1502,29 @@ recode mm30_10(1=1)(else=0) into EXP_MA13.
 recode mm30_11(1=1)(else=0) into EXP_MA14.
 recode mm30_12(1=1)(else=0) into EXP_MA15.
 recode mm30_13(1=1)(else=0) into EXP_MA16.
+compute EXP_MA17=0.
+if MM30_15=1 or MM30_18=1 EXP_MA17=1.
 numeric EXP_MA18.
 
- * recode mm33_1(1=1)(else=0) into EXPSV_MA1.
- * recode mm33_2(1=1)(else=0) into EXPSV_MA2.
- * recode mm33_3(1=1)(else=0) into EXPSV_MA3.
- * recode mm33_4(1=1)(else=0) into EXPSV_MA4.
- * recode mm33_5(1=1)(else=0) into EXPSV_MA5.
- * recode mm33_6(1=1)(else=0) into EXPSV_MA6.
- * recode mm33_7(1=1)(else=0) into EXPSV_MA7.
- * compute EXPSV_MA8=0.
- * if mm33_8=1 or mm33_9=1 EXPSV_MA8=1.
- * recode mm33_10(1=1)(else=0) into EXPSV_MA9.
- * recode mm33_11(1=1)(else=0) into EXPSV_MA10.
- * recode mm33_12(1=1)(else=0) into EXPSV_MA11.
- * recode mm33_13(1=1)(else=0) into EXPSV_MA12.
- * recode mm33_14(1=1)(else=0) into EXPSV_MA13.
- * recode mm33_15(1=1)(else=0) into EXPSV_MA14.
- * recode mm33_16(1=1)(else=0) into EXPSV_MA15.
- * recode mm33_17(1=1)(else=0) into EXPSV_MA16.
- * numeric EXPSV_MA17.
+recode mm33_1(1=1)(else=0) into EXPSV_MA1.
+recode mm33_2(1=1)(else=0) into EXPSV_MA2.
+recode mm33_3(1=1)(else=0) into EXPSV_MA3.
+recode mm33_4(1=1)(else=0) into EXPSV_MA4.
+recode mm33_5(1=1)(else=0) into EXPSV_MA5.
+recode mm33_6(1=1)(else=0) into EXPSV_MA6.
+recode mm33_7(1=1)(else=0) into EXPSV_MA7.
+compute EXPSV_MA8=0.
+if mm33_8=1 or mm33_9=1 EXPSV_MA8=1.
+recode mm33_10(1=1)(else=0) into EXPSV_MA9.
+recode mm33_11(1=1)(else=0) into EXPSV_MA10.
+recode mm33_12(1=1)(else=0) into EXPSV_MA11.
+recode mm33_13(1=1)(else=0) into EXPSV_MA12.
+recode mm33_14(1=1)(else=0) into EXPSV_MA13.
+compute EXPSV_MA14=0.
+if MM33_15=1 or MM33_18=1 EXPSV_MA14=1.
+recode mm33_16(1=1)(else=0) into EXPSV_MA15.
+recode mm33_17(1=1)(else=0) into EXPSV_MA16.
+numeric EXPSV_MA17.
 **************************************************************************************************************************************************.
 *13Bangladesh.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -1518,7 +1551,7 @@ numeric EXP_MA15.
 numeric EXP_MA16.
 numeric EXP_MA17.
 numeric EXP_MA18.
-*Need double check.
+
 numeric EXPSV_MA1.
 numeric EXPSV_MA2.
 numeric EXPSV_MA3.
