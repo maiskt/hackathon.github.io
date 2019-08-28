@@ -828,3 +828,38 @@ save outfile = "data/uga13.sav"
 
 
 *dataset close all.
+
+*Labels.
+variable labels
+MAIN_EARNER	"Main income earner in the household"
+FIN_SITUATION	"Respondent's family's financial situation"
+FIN_ATT1	"I am highly satisfied with my present financial condition"
+FIN_ATT2	"I have too much debt right now"
+FIN_ATT3	"I am comfortable having some debt if it allows me to accomplish my goals"
+FIN_ATT4	"When I have some money it’s better to use or invest it right away. Just keeping it sitting there is wasteful  "
+FIN_ATT5	"I buy from several different shopkeepers so that they know me and will give me credit when I need it"
+SCH_FEE_PRB1	"Problem to pay school fee: Lack of funds, could not pay at all"
+SCH_FEE_PRB2	"Problem to pay school fee: Lack of funds, could only pay a portion"
+SCH_FEE_PRB3	"Problem to pay school fee: Bank issues (high fees or long lines)"
+SCH_FEE_PRB4	"Problem to pay school fee: Had to deliver cash but failed because of long distance to school"
+SCH_FEE_PRB5	"Problem to pay school fee: Don’t know the full amount".
+
+value labels MAIN_EARNER 1"Myself" 2"Somebody else" 3"Equally contribute" -2"DK".
+value labels FIN_SITUATION 1"We don't have enough money for food"
+2"We have enough money for food, but buying clothes is difficult"
+3"We have enough money for food and clothes, and can save a bit, but not enough to buy expensive goods such as a TV set or a refrigerator"
+4"We can afford to buy certain expensive goods such as a TV set or a refrigerator"
+5"We can afford to buy whatever we want"
+-2"DK".
+value labels FIN_ATT1 1"Strongly agree" 2"Agree" 3"Neither agree nor disagree" 4"Disagree" 5"Strongly disagree".
+value labels FIN_ATT2 1"Strongly agree" 2"Agree" 3"Neither agree nor disagree" 4"Disagree" 5"Strongly disagree".
+value labels FIN_ATT3 1"Strongly agree" 2"Agree" 3"Neither agree nor disagree" 4"Disagree" 5"Strongly disagree".
+value labels FIN_ATT4 1"Strongly agree" 2"Agree" 3"Neither agree nor disagree" 4"Disagree" 5"Strongly disagree".
+value labels FIN_ATT5 1"Strongly agree" 2"Agree" 3"Neither agree nor disagree" 4"Disagree" 5"Strongly disagree".
+value labels SCH_FEE_PRB1 1"Yes" 0"No".
+value labels SCH_FEE_PRB2 1"Yes" 0"No".
+value labels SCH_FEE_PRB3 1"Yes" 0"No".
+value labels SCH_FEE_PRB4 1"Yes" 0"No".
+value labels SCH_FEE_PRB5 1"Yes" 0"No".
+
+
