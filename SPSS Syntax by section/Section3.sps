@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 
 *Section 3.
 **************************************************************************************************************************************************.
@@ -62,9 +62,6 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_1=1 SELL_CROP=1.
-
 **************************************************************************************************************************************************.
 *18India.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -126,9 +123,6 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_1=1 SELL_CROP=1.
-
 **************************************************************************************************************************************************.
 *17Bangladesh.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -189,9 +183,6 @@ if DL6=1 OWN_FARM=1.
 
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
-
-compute SELL_CROP=0.
-if DL4_1=1 SELL_CROP=1.
 
 **************************************************************************************************************************************************.
 *17India.
@@ -257,9 +248,6 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_1=1 SELL_CROP=1.
-
 **************************************************************************************************************************************************.
 *17Kenya.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -322,8 +310,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_1=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *17Nigeria.
@@ -386,8 +374,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_1=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *17Paksitan.
@@ -448,8 +436,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_1=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *17Tanzania.
@@ -515,8 +503,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_1=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *17Uganda.
@@ -582,8 +570,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_1=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *16Bangladesh.
@@ -666,9 +654,6 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
-
 **************************************************************************************************************************************************.
 *16India.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -733,8 +718,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *16Indonesia.
@@ -808,8 +793,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *16Kenya.
@@ -887,8 +872,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *16Nigeria.
@@ -968,8 +953,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *16Pakistan.
@@ -1036,8 +1021,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *16Tanzania.
@@ -1103,8 +1088,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *16Uganda.
@@ -1182,8 +1167,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *15Bangladesh.
@@ -1238,9 +1223,6 @@ if DL6=1 OWN_FARM=1.
 
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
-
-compute SELL_CROP=0.
-if DL4_15=1 SELL_CROP=1.
 
 **************************************************************************************************************************************************.
 *15India.
@@ -1298,8 +1280,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *15Indonesia.
@@ -1359,8 +1341,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *15Kenya.
@@ -1418,8 +1400,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *15Nigeria.
@@ -1480,8 +1462,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *15Pakistan.
@@ -1540,8 +1522,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *15Tanzania.
@@ -1601,8 +1583,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *15Uganda.
@@ -1660,8 +1642,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_6=1 or DL4_7=1 SELL_CROP=1.
+
+
 
 **************************************************************************************************************************************************.
 *14Bangladesh.
@@ -1713,9 +1695,6 @@ DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 numeric OWN_FARM.
 numeric WORK_FARM.
 
-compute SELL_CROP=0.
-if DL7_1=1 or DL7_2=1 SELL_CROP=1.
-freq SELL_CROP.
 **************************************************************************************************************************************************.
 *14India.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -1766,8 +1745,8 @@ DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 numeric OWN_FARM.
 numeric WORK_FARM.
 
-compute SELL_CROP=0.
-if DL7_1=1 or DL7_2=1 SELL_CROP=1.
+
+
 **************************************************************************************************************************************************.
 *14Indonesia.
 rename variables ID=SBJNUM weight=WEIGHT.
@@ -1818,8 +1797,8 @@ DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 numeric OWN_FARM.
 numeric WORK_FARM.
 
-compute SELL_CROP=0.
-if DL7_1=1 or DL7_2=1 SELL_CROP=1.
+
+
 **************************************************************************************************************************************************.
 *14Kenya.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -1870,8 +1849,8 @@ DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 numeric OWN_FARM.
 numeric WORK_FARM.
 
-compute SELL_CROP=0.
-if DL7_1=1 or DL7_2=1 SELL_CROP=1.
+
+
 **************************************************************************************************************************************************.
 *14Nigeria.
 rename variables QN=SBJNUM weight=WEIGHT.
@@ -1922,8 +1901,8 @@ DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 numeric OWN_FARM.
 numeric WORK_FARM.
 
-compute SELL_CROP=0.
-if DL7_1=1 or DL7_2=1 SELL_CROP=1.
+
+
 **************************************************************************************************************************************************.
 *14Pakistan.
 rename variables QN=SBJNUM weight=WEIGHT.
@@ -1974,8 +1953,8 @@ DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 numeric OWN_FARM.
 numeric WORK_FARM.
 
-compute SELL_CROP=0.
-if DL7_1=1 or DL7_2=1 SELL_CROP=1.
+
+
 **************************************************************************************************************************************************.
 *14Tanzania.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2026,8 +2005,8 @@ DL4_15=1 or DL6_12=1 INVOL_AGRI=1.
 numeric OWN_FARM.
 numeric WORK_FARM.
 
-compute SELL_CROP=0.
-if DL7_1=1 or DL7_2=1 SELL_CROP=1.
+
+
 **************************************************************************************************************************************************.
 *14Uganda.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2080,8 +2059,8 @@ DL4_15=1 or DL6_15=1 INVOL_AGRI=1.
 numeric OWN_FARM.
 numeric WORK_FARM.
 
-compute SELL_CROP=0.
-if DL7_1=1 or DL7_2=1 SELL_CROP=1.
+
+
 **************************************************************************************************************************************************.
 *13Bangladesh.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2128,7 +2107,7 @@ or DL6=12 or DL6=13 or DL6=14 or DL7L=1 or DL7M=1 or DL7N=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+
 **************************************************************************************************************************************************.
 *13India.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2168,7 +2147,7 @@ or DL6=11 or DL6=12 or DL6=13 or DL7_11=1 or DL7_12=1 or DL7_13=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+
 **************************************************************************************************************************************************.
 *13Kenya.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2207,7 +2186,7 @@ or DL6=12 or DL6=13 or DL6=14 or DL7L=1 or DL7M=1 or DL7N=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+
 **************************************************************************************************************************************************.
 *13Nigeria.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2254,7 +2233,7 @@ or DL6=12 or DL6=13 or DL6=14 or DL7L=1 or DL7M=1 or DL7N=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+
 **************************************************************************************************************************************************.
 *13Pakistan.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2301,7 +2280,7 @@ DL3A=1 or DL3B=1 or DL6=12 or DL6=13 or DL6=14 or DL6=21 or DL7L=1 or DL7M=1 or 
 
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+
 **************************************************************************************************************************************************.
 *13Tanzania.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2341,7 +2320,7 @@ or DL6=12 or DL6=13 or DL6=14 or DL7_12=1 or DL7_13=1 or DL7_14=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+
 **************************************************************************************************************************************************.
 *13Uganda.
 rename variables serial=SBJNUM weight=WEIGHT.
@@ -2381,7 +2360,7 @@ or DL6=12 or DL6=13 or DL6=14 or DL7L=1 or DL7M=1 or DL7N=1 INVOL_AGRI=1.
 
 numeric OWN_FARM.
 numeric WORK_FARM.
-numeric SELL_CROP.
+
 *****************************************************************************************************************************.
 *Labels.
 value labels AGE -2"DK".
@@ -2427,7 +2406,6 @@ value labels OWN_FARM 1"Yes" 0"No".
 
 value labels WORK_FARM 1"Yes" 0"No".
 
-value labels SELL_CROP 1"Yes" 0"No".
 
 variable labels AGE"Age"
 AGE_GROUP"Age groups"
@@ -2444,7 +2422,6 @@ SCHOOL_FEE"Have ever paid a school fee"
 EMPLOYMENT"Mainly doing for work in past 12 months"
 INVOL_AGRI"Involved in agriculture"
 OWN_FARM"Someone in your household own or lease a farm/farmland"
-WORK_FARM"Work on the farm that someone in your household owned or leased yourself"
-SELL_CROP"Selling products of agriculture or rearing livestock".
+WORK_FARM"Work on the farm that someone in your household owned or leased yourself".
 
 
