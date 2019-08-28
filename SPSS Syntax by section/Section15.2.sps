@@ -651,9 +651,9 @@ recode DL4_1 (1=1)(2=0) into MONEY_SOU7.
 compute MONEY_SOU8 = 0.
 if DL4_2 = 1 or DL4_4 = 1 MONEY_SOU8 = 1.
 
-recode FL9A (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE1.
-recode FL9B (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE2.
-recode FL9C (11=SYSMIS)(12 = 11)(else=copy) into EXPENSE3.
+recode FL9A (11=96)(12 = 11)(else=copy) into EXPENSE1.
+recode FL9B (11=96)(12 = 11)(else=copy) into EXPENSE2.
+recode FL9C (11=96)(12 = 11)(else=copy) into EXPENSE3.
 
 save outfile = "data/ken15.sav"
 /keep= SBJNUM COUNTRY YEAR FIN_SHO1 FIN_SHO2 FIN_SHO3 FIN_SHO4 FIN_SHO5 FIN_SHO6 FIN_SHO7 FIN_SHO8 MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 EXPENSE1 EXPENSE2 EXPENSE3  .
