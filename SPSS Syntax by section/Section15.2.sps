@@ -333,8 +333,8 @@ compute MONEY_SOU8 = 0.
 if DL4_2 = 1 or DL4_4 = 1 MONEY_SOU8 = 1.
 
 compute EXPENSE1=fl9a.
-compute EXPENSE2=fl9b.
-compute EXPENSE3=fl9c.
+recode fl9b(sysmis=11)(else=copy) into EXPENSE2.
+recode fl9c(sysmis=11)(else=copy) into EXPENSE3.
 
 save outfile = "data/ind16.sav"
 /keep= SBJNUM COUNTRY YEAR FIN_SHO1 FIN_SHO2 FIN_SHO3 FIN_SHO4 FIN_SHO5 FIN_SHO6 FIN_SHO7 FIN_SHO8 MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -365,8 +365,8 @@ compute MONEY_SOU8 = 0.
 if DL4_2 = 1 or DL4_4 = 1 MONEY_SOU8 = 1.
 
 compute EXPENSE1=fl9a.
-compute EXPENSE2=fl9b.
-compute EXPENSE3=fl9c.
+recode fl9b(sysmis=11)(else=copy) into EXPENSE2.
+recode fl9c(sysmis=11)(else=copy) into EXPENSE3.
 
 save outfile = "data/ida16.sav"
 /keep= SBJNUM COUNTRY YEAR FIN_SHO1 FIN_SHO2 FIN_SHO3 FIN_SHO4 FIN_SHO5 FIN_SHO6 FIN_SHO7 FIN_SHO8 MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -559,7 +559,7 @@ if DL4_2 = 1 or DL4_3 = 1 MONEY_SOU8 = 1.
 
 recode FL11A (10=96)(12=10)(else=copy) into EXPENSE1.
 recode FL11B (10=96)(12=10)(else=copy) into EXPENSE2.
-recode FL11C (10=96)(12=10)(else=copy) into EXPENSE3.
+recode FL11C (10=96)(sysmis=11)(12=10)(else=copy) into EXPENSE3.
 
 save outfile = "data/bng15.sav"
 /keep= SBJNUM COUNTRY YEAR FIN_SHO1 FIN_SHO2 FIN_SHO3 FIN_SHO4 FIN_SHO5 FIN_SHO6 FIN_SHO7 FIN_SHO8 MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 EXPENSE1 EXPENSE2 EXPENSE3  .
@@ -715,8 +715,8 @@ if DL4_2 = 1 or DL4_4 = 1 MONEY_SOU8 = 1.
 
 *Value 10 missing label.
 recode FL11A (10=96)(12 = 10)(13 thru 18 = 96)(else=copy) into EXPENSE1.
-recode FL11B (10=96)(12 = 10)(13 thru 18 = 96)(else=copy) into EXPENSE2.
-recode FL11C (10=96)(12 = 10)(13 thru 18 = 96)(else=copy) into EXPENSE3.
+recode FL11B (10=96)(12 = 10)(sysmis=11)(13 thru 18 = 96)(else=copy) into EXPENSE2.
+recode FL11C (10=96)(12 = 10)(sysmis=11)(99=11)(13 thru 18 = 96)(else=copy) into EXPENSE3.
 
 save outfile = "data/pak15.sav"
 /keep= SBJNUM COUNTRY YEAR FIN_SHO1 FIN_SHO2 FIN_SHO3 FIN_SHO4 FIN_SHO5 FIN_SHO6 FIN_SHO7 FIN_SHO8 MONEY_SOU1 MONEY_SOU2 MONEY_SOU3 MONEY_SOU4 MONEY_SOU5 MONEY_SOU6 MONEY_SOU7 MONEY_SOU8 EXPENSE1 EXPENSE2 EXPENSE3  .
