@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 
 *Section 7.4.
 **************************************************************************************************************************************************.
@@ -7,7 +7,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2018.
-*Need double check.
+
 recode mm13_1(1=1)(else=0) into R_NOTUSE_MM1.
 recode mm13_2(1=1)(else=0) into R_NOTUSE_MM2.
 recode mm13_3(1=1)(else=0) into R_NOTUSE_MM3.
@@ -16,7 +16,7 @@ recode mm13_5(1=1)(else=0) into R_NOTUSE_MM5.
 recode mm13_6(1=1)(else=0) into R_NOTUSE_MM6.
 recode mm13_7(1=1)(else=0) into R_NOTUSE_MM7.
 recode mm13_8(1=1)(else=0) into R_NOTUSE_MM8.
-*Need double check.
+
 recode mm14_1(1=1)(else=0) into R_NOTREG_MM1.
 recode mm14_2(1=1)(else=0) into R_NOTREG_MM2.
 recode mm14_3(1=1)(else=0) into R_NOTREG_MM3.
@@ -28,7 +28,7 @@ recode mm14_8(1=1)(else=0) into R_NOTREG_MM8.
 recode mm14_9(1=1)(else=0) into R_NOTREG_MM9.
 recode mm14_10(1=1)(else=0) into R_NOTREG_MM10.
 recode mm14_11(1=1)(else=0) into R_NOTREG_MM11.
-*Need double check.
+
 recode mm5_1(1=1)(else=0) into R_USE_MM1.
 recode mm5_2(1=1)(else=0) into R_USE_MM2.
 recode mm5_3(1=1)(else=0) into R_USE_MM3.
@@ -45,7 +45,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2018.
-*Need double check.
+
 recode mm12_1(1=1)(else=0) into R_NOTUSE_MM1.
 recode mm12_2(1=1)(else=0) into R_NOTUSE_MM2.
 recode mm12_3(1=1)(else=0) into R_NOTUSE_MM3.
@@ -54,7 +54,7 @@ recode mm12_5(1=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 recode mm12_7(1=1)(else=0) into R_NOTUSE_MM7.
 recode mm12_8(1=1)(else=0) into R_NOTUSE_MM8.
-*Need double check.
+
 numeric R_NOTREG_MM1.
 numeric R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
@@ -66,7 +66,7 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 numeric R_USE_MM1.
 numeric R_USE_MM2.
 numeric R_USE_MM3.
@@ -84,7 +84,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2017.
-*Need double check.
+
 recode mm12_1(4,5=1)(else=0) into R_NOTUSE_MM1.
 recode mm12_2(4,5=1)(else=0) into R_NOTUSE_MM2.
 recode mm12_3(4,5=1)(else=0) into R_NOTUSE_MM3.
@@ -93,7 +93,7 @@ recode mm12_5(4,5=1)(else=0) into R_NOTUSE_MM5.
 recode mm12_6(4,5=1)(else=0) into R_NOTUSE_MM6.
 recode mm12_7(4,5=1)(else=0) into R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 recode mm13_1(4,5=1)(else=0) into R_NOTREG_MM1.
 recode mm13_2(4,5=1)(else=0) into R_NOTREG_MM2.
 recode mm13_3(4,5=1)(else=0) into R_NOTREG_MM3.
@@ -105,10 +105,10 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 recode mm14_1(4,5=1)(else=0) into R_USE_MM1.
 recode mm14_2(4,5=1)(else=0) into R_USE_MM2.
-numeric R_USE_MM3.
+recode mm14_2A(4,5=1)(else=0) into  R_USE_MM3.
 recode mm14_3(4,5=1)(else=0) into R_USE_MM4.
 recode mm14_4(4,5=1)(else=0) into R_USE_MM5.
 recode mm14_5(4,5=1)(else=0) into R_USE_MM6.
@@ -131,7 +131,7 @@ recode mm12_5(4,5=1)(else=0) into R_NOTUSE_MM5.
 recode mm12_6(4,5=1)(else=0) into R_NOTUSE_MM6.
 recode mm12_7(4,5=1)(else=0) into R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 recode mm13_1(4,5=1)(else=0) into R_NOTREG_MM1.
 recode mm13_2(4,5=1)(else=0) into R_NOTREG_MM2.
 recode mm13_3(4,5=1)(else=0) into R_NOTREG_MM3.
@@ -143,10 +143,10 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 recode mm14_1(4,5=1)(else=0) into R_USE_MM1.
 recode mm14_2(4,5=1)(else=0) into R_USE_MM2.
-numeric R_USE_MM3.
+recode mm14_2A(4,5=1)(else=0) into  R_USE_MM3.
 recode mm14_3(4,5=1)(else=0) into R_USE_MM4.
 recode mm14_4(4,5=1)(else=0) into R_USE_MM5.
 recode mm14_5(4,5=1)(else=0) into R_USE_MM6.
@@ -169,7 +169,7 @@ recode mm12_5(4,5=1)(else=0) into R_NOTUSE_MM5.
 recode mm12_6(4,5=1)(else=0) into R_NOTUSE_MM6.
 recode mm12_7(4,5=1)(else=0) into R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 recode mm13_1(4,5=1)(else=0) into R_NOTREG_MM1.
 recode mm13_2(4,5=1)(else=0) into R_NOTREG_MM2.
 recode mm13_3(4,5=1)(else=0) into R_NOTREG_MM3.
@@ -181,10 +181,10 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 recode mm14_1(4,5=1)(else=0) into R_USE_MM1.
 recode mm14_2(4,5=1)(else=0) into R_USE_MM2.
-numeric R_USE_MM3.
+recode mm14_2A(4,5=1)(else=0) into  R_USE_MM3.
 recode mm14_3(4,5=1)(else=0) into R_USE_MM4.
 recode mm14_4(4,5=1)(else=0) into R_USE_MM5.
 recode mm14_5(4,5=1)(else=0) into R_USE_MM6.
@@ -207,7 +207,7 @@ recode mm12_5(4,5=1)(else=0) into R_NOTUSE_MM5.
 recode mm12_6(4,5=1)(else=0) into R_NOTUSE_MM6.
 recode mm12_7(4,5=1)(else=0) into R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 recode mm13_1(4,5=1)(else=0) into R_NOTREG_MM1.
 recode mm13_2(4,5=1)(else=0) into R_NOTREG_MM2.
 recode mm13_3(4,5=1)(else=0) into R_NOTREG_MM3.
@@ -219,10 +219,10 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 recode mm14_1(4,5=1)(else=0) into R_USE_MM1.
 recode mm14_2(4,5=1)(else=0) into R_USE_MM2.
-numeric R_USE_MM3.
+recode mm14_2A(4,5=1)(else=0) into  R_USE_MM3.
 recode mm14_3(4,5=1)(else=0) into R_USE_MM4.
 recode mm14_4(4,5=1)(else=0) into R_USE_MM5.
 recode mm14_5(4,5=1)(else=0) into R_USE_MM6.
@@ -245,7 +245,7 @@ recode mm12_5(4,5=1)(else=0) into R_NOTUSE_MM5.
 recode mm12_6(4,5=1)(else=0) into R_NOTUSE_MM6.
 recode mm12_7(4,5=1)(else=0) into R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 recode mm13_1(4,5=1)(else=0) into R_NOTREG_MM1.
 recode mm13_2(4,5=1)(else=0) into R_NOTREG_MM2.
 recode mm13_3(4,5=1)(else=0) into R_NOTREG_MM3.
@@ -257,10 +257,10 @@ recode mm13_8(4,5=1)(else=0) into R_NOTREG_MM8.
 recode mm13_5(4,5=1)(else=0) into R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 recode mm14_1(4,5=1)(else=0) into R_USE_MM1.
 recode mm14_2(4,5=1)(else=0) into R_USE_MM2.
-numeric R_USE_MM3.
+recode mm14_2A(4,5=1)(else=0) into  R_USE_MM3.
 recode mm14_3(4,5=1)(else=0) into R_USE_MM4.
 recode mm14_4(4,5=1)(else=0) into R_USE_MM5.
 recode mm14_5(4,5=1)(else=0) into R_USE_MM6.
@@ -283,7 +283,7 @@ recode mm12_5(4,5=1)(else=0) into R_NOTUSE_MM5.
 recode mm12_6(4,5=1)(else=0) into R_NOTUSE_MM6.
 recode mm12_7(4,5=1)(else=0) into R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 recode mm13_1(4,5=1)(else=0) into R_NOTREG_MM1.
 recode mm13_2(4,5=1)(else=0) into R_NOTREG_MM2.
 recode mm13_3(4,5=1)(else=0) into R_NOTREG_MM3.
@@ -295,10 +295,10 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 recode mm14_1(4,5=1)(else=0) into R_USE_MM1.
 recode mm14_2(4,5=1)(else=0) into R_USE_MM2.
-numeric R_USE_MM3.
+recode mm14_2A(4,5=1)(else=0) into  R_USE_MM3.
 recode mm14_3(4,5=1)(else=0) into R_USE_MM4.
 recode mm14_4(4,5=1)(else=0) into R_USE_MM5.
 recode mm14_5(4,5=1)(else=0) into R_USE_MM6.
@@ -321,7 +321,7 @@ recode mm12_5(4,5=1)(else=0) into R_NOTUSE_MM5.
 recode mm12_6(4,5=1)(else=0) into R_NOTUSE_MM6.
 recode mm12_7(4,5=1)(else=0) into R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 recode mm13_1(4,5=1)(else=0) into R_NOTREG_MM1.
 recode mm13_2(4,5=1)(else=0) into R_NOTREG_MM2.
 recode mm13_3(4,5=1)(else=0) into R_NOTREG_MM3.
@@ -333,10 +333,10 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 recode mm14_1(4,5=1)(else=0) into R_USE_MM1.
 recode mm14_2(4,5=1)(else=0) into R_USE_MM2.
-numeric R_USE_MM3.
+recode mm14_2A(4,5=1)(else=0) into  R_USE_MM3.
 recode mm14_3(4,5=1)(else=0) into R_USE_MM4.
 recode mm14_4(4,5=1)(else=0) into R_USE_MM5.
 recode mm14_5(4,5=1)(else=0) into R_USE_MM6.
@@ -350,7 +350,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
-*Need double check.
+
 numeric R_NOTUSE_MM1.
 numeric R_NOTUSE_MM2.
 numeric R_NOTUSE_MM3.
@@ -359,7 +359,7 @@ numeric R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 numeric R_NOTREG_MM1.
 numeric R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
@@ -654,7 +654,7 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2015.
-*Need double check.
+
 numeric R_NOTUSE_MM1.
 numeric R_NOTUSE_MM2.
 numeric R_NOTUSE_MM3.
@@ -663,7 +663,7 @@ numeric R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 numeric R_NOTREG_MM1.
 numeric R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
@@ -962,7 +962,7 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2014.
-*Need double check.
+
 numeric R_NOTUSE_MM1.
 numeric R_NOTUSE_MM2.
 numeric R_NOTUSE_MM3.
@@ -971,7 +971,7 @@ numeric R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 numeric R_NOTREG_MM1.
 numeric R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
@@ -1266,7 +1266,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2013.
-*Need double check.
+
 numeric R_NOTUSE_MM1.
 numeric R_NOTUSE_MM2.
 numeric R_NOTUSE_MM3.
@@ -1275,7 +1275,7 @@ numeric R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
 numeric R_NOTUSE_MM8.
-*Need double check.
+
 numeric R_NOTREG_MM1.
 numeric R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
