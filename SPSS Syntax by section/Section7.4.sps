@@ -371,7 +371,7 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 numeric R_USE_MM1.
 numeric R_USE_MM2.
 numeric R_USE_MM3.
@@ -675,7 +675,7 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 numeric R_USE_MM1.
 numeric R_USE_MM2.
 numeric R_USE_MM3.
@@ -983,7 +983,7 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 numeric R_USE_MM1.
 numeric R_USE_MM2.
 numeric R_USE_MM3.
@@ -1287,13 +1287,12 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 compute R_USE_MM1=0.
 if mm14a=1 or mm14b=1 or mm14d=1 or mm14e=1 R_USE_MM1=1.
 numeric R_USE_MM2.
 numeric R_USE_MM3.
-compute R_USE_MM4=0.
-if mm14g=1 or mm14i=1 R_USE_MM4=1.
+numeric R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1328,13 +1327,12 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 compute R_USE_MM1=0.
 if mm14_1=1 or mm14_2=1 or mm14_4=1 or mm14_5=1 R_USE_MM1=1.
 numeric R_USE_MM2.
 numeric R_USE_MM3.
-compute R_USE_MM4=0.
-if mm14_7=1 or mm14_9=1 R_USE_MM4=1.
+numeric R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1369,13 +1367,12 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 compute R_USE_MM1=0.
 if mm14a=1 or mm14b=1 or mm14d=1 or mm14e=1 R_USE_MM1=1.
 recode mm14k(1=1)(else=0) into R_USE_MM2.
 recode mm14l(1=1)(else=0) into R_USE_MM3.
-compute R_USE_MM4=0.
-if mm14g=1 or mm14i=1 R_USE_MM4=1.
+numeric R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1411,13 +1408,12 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 compute R_USE_MM1=0.
 if mm14a=1 or mm14b=1 or mm14d=1 or mm14e=1 R_USE_MM1=1.
 recode mm14k(1=1)(else=0) into R_USE_MM2.
 recode mm14l(1=1)(else=0) into R_USE_MM3.
-compute R_USE_MM4=0.
-if mm14g=1 or mm14i=1 R_USE_MM4=1.
+numeric R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1452,13 +1448,12 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 compute R_USE_MM1=0.
 if mm14a=1 or mm14b=1 or mm14d=1 or mm14e=1 R_USE_MM1=1.
 recode mm14k(1=1)(else=0) into R_USE_MM2.
 recode mm14l(1=1)(else=0) into R_USE_MM3.
-compute R_USE_MM4=0.
-if mm14g=1 or mm14i=1 R_USE_MM4=1.
+numeric R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1493,16 +1488,18 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
+
+compute R_USE_MM1=0.
+if any(MM14,1,2,4,5) R_USE_MM1=1.
+recode MM14 (11=1)(else=0) into R_USE_MM2.
+recode MM14 (12=1)(else=0) into  R_USE_MM3.
 numeric R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+compute R_USE_MM9=0.
+if any(MM14,13,14) R_USE_MM9=1.
 
 **************************************************************************************************************************************************.
 *13Uganda.
@@ -1531,20 +1528,19 @@ numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 numeric R_NOTREG_MM11.
-*Need double check.
+
 compute R_USE_MM1=0.
 if mm14a=1 or mm14b=1 or mm14d=1 or mm14e=1 R_USE_MM1=1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-compute R_USE_MM4=0.
-if mm14g=1 or mm14i=1 R_USE_MM4=1.
+recode mm14k(1=1)(else=0) into R_USE_MM2.
+recode mm14l(1=1)(else=0) into R_USE_MM3.
+numeric R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
 compute R_USE_MM9=0.
-if mm14k=1 or mm14l=1 R_USE_MM9=1.
-
+if mm14m=1 or mm14n=1 R_USE_MM9=1.
+codebook mm14.
 *****************************************************************************************************************************.
 *Labels.
 variable labels
