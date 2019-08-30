@@ -17,7 +17,7 @@ if ad10_2=1 or ad10_3=1 or ad10_4=1 or ad10_5=1 or ad10_6=1 or ad10_7=1 or ad10_
 compute INVEST_INFORMAL = 0.
 if ((FN5_2=2 or FN5_4=2) and ad10_23=1) or ((FN6_2=2 or FN6_4=2) and ad10_24=1)  invest_informal=1.
 compute INVEST_INSURANCE = 0.
-if INVEST = 1 or INSURANCE = 1 INVEST_INSURANCE = 1.
+if INVEST = 1 or FB27_1=1 or FB27_2=1 or FB27_3=1 or FB27_4=1 or FB27_5=1 or FB27_6=1 or FB27_7=1 or FB27_8=1 INVEST_INSURANCE = 1.
 
 save outfile = "data/bng18.sav"
 /keep= SBJNUM COUNTRY YEAR INVEST INVEST_OWN INVEST_OTHER INVEST_INFORMAL INVEST_INSURANCE.
@@ -34,7 +34,8 @@ if AD10_2=1 or AD10_3=1 or AD10_4=1 or AD10_5=1 or AD10_6=1 or AD10_7=1 OR AD10_
 compute invest_informal=0.
 if ((FN6_2=2 OR FN6_3=2) and AD10_28=1) invest_informal=1.
 compute INVEST_INSURANCE = 0.
-if INVEST = 1 or FB27_1=1 or FB27_2=1 or FB27_3=1 or FB27_4=1 or FB27_5=1 or FB27_6=1 or FB27_7=1 or FB27_8=1 INVEST_INSURANCE = 1.
+if INVEST = 1 or FB27_1=1 or FB27_2=1 or FB27_3=1 or FB27_4=1 or FB27_5=1 or FB27_6=1 or 
+   FB27_7=1 or FB27_8=1 or FB27_9=1 or FB27_10=1 or FB27_11=1 INVEST_INSURANCE = 1.
 
 save outfile = "data/ind18.sav"
 /keep= SBJNUM COUNTRY YEAR INVEST INVEST_OWN INVEST_OTHER INVEST_INFORMAL INVEST_INSURANCE.
@@ -73,6 +74,7 @@ compute INVEST_OWN = 0.
 if fb29_1=1 invest_own=1.
 
 compute INVEST_OTHER = 0.
+if fb29_2=1 or fb29_3=1 or fb29_4=1 or fb29_5=1 or fb29_6=1  INVEST_OTHER=1.
 
 count informal_invest=IFI20_7 IFI20_8(1).
 RECODE informal_invest(1 THRU HIGHEST=1).
@@ -140,8 +142,8 @@ if fb29_2=1 or fb29_3=1 or fb29_4=1 or fb29_5=1 or fb29_6=1  invest_other=1.
 
 numeric INVEST_INFORMAL.
 
-compute INVEST_INSURANCE = 0.
-if INVEST = 1 or INSURANCE = 1 INVEST_INSURANCE = 1.
+count INVEST_INSURANCE=FB27_1 to FB27_10 FB29_1 to FB29_6(1).
+recode  INVEST_INSURANCE (1 THRU HIGHEST=1).
 
 save outfile = "data/pak17.sav"
 /keep= SBJNUM COUNTRY YEAR INVEST INVEST_OWN INVEST_OTHER INVEST_INFORMAL INVEST_INSURANCE.
