@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 
 *Section 7.5.
 **************************************************************************************************************************************************.
@@ -7,13 +7,18 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2018.
-*Need double check.
-compute ACTION_MM1=mm6_1.
-compute ACTION_MM2=mm6_2.
-compute ACTION_MM3=mm6_3.
-compute ACTION_MM4=mm6_4.
-compute ACTION_MM5=mm6_5.
-numeric ACTION_MM6.
+
+recode MM6_1 (sysmis=-2) (else=copy) into ACTION_MM1.
+recode MM6_2 (sysmis=-2) (else=copy) into ACTION_MM2.
+recode MM6_3 (sysmis=-2) (else=copy) into ACTION_MM3.
+recode MM6_4 (sysmis=-2) (else=copy) into ACTION_MM4.
+recode MM6_5 (sysmis=-2) (else=copy) into ACTION_MM5.
+compute ACTION_MM6=-2.
+if any(1, MM6_6, MM6_7) ACTION_MM6=1.
+if any(2, MM6_6, MM6_7) ACTION_MM6=2.
+if any(3, MM6_6, MM6_7) ACTION_MM6=3.
+if any(4, MM6_6, MM6_7) ACTION_MM6=4.
+if any(5, MM6_6, MM6_7) ACTION_MM6=5.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -21,7 +26,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -32,7 +37,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2018.
-*Need double check.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -46,7 +51,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -57,13 +62,13 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2017.
-*Need double check.
-compute ACTION_MM1=mm32_1.
-compute ACTION_MM2=mm32_2.
-compute ACTION_MM3=mm32_4.
+
+recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
+recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
+recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
 numeric ACTION_MM4.
-compute ACTION_MM5=mm32_5.
-compute ACTION_MM6=mm32_6.
+recode MM32_5 (sysmis=-2) (else=copy) into ACTION_MM5.
+recode MM32_6 (sysmis=-2) (else=copy) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -71,7 +76,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -83,12 +88,12 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2017.
 
-compute ACTION_MM1=mm32_1.
-compute ACTION_MM2=mm32_2.
-compute ACTION_MM3=mm32_4.
+recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
+recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
+recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
 numeric ACTION_MM4.
-compute ACTION_MM5=mm32_5.
-compute ACTION_MM6=mm32_6.
+recode MM32_5 (sysmis=-2) (else=copy) into ACTION_MM5.
+recode MM32_6 (sysmis=-2) (else=copy) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -96,13 +101,11 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10
                                    mmp1_11 mmp1_12 mmp1_13 mmp1_14 mmp1_15 mmp1_16 mmp1_17 mmp1_18 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
@@ -112,12 +115,12 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2017.
 
-compute ACTION_MM1=mm32_1.
-compute ACTION_MM2=mm32_2.
-compute ACTION_MM3=mm32_4.
+recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
+recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
+recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
 numeric ACTION_MM4.
-compute ACTION_MM5=mm32_5.
-compute ACTION_MM6=mm32_6.
+recode MM32_5 (sysmis=-2) (else=copy) into ACTION_MM5.
+recode MM32_6 (sysmis=-2) (else=copy) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -125,13 +128,11 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10
                                    mmp1_11 mmp1_12 mmp1_13 mmp1_14 mmp1_15 mmp1_16 mmp1_17 mmp1_18(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
@@ -141,12 +142,12 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2017.
 
-compute ACTION_MM1=mm32_1.
-compute ACTION_MM2=mm32_2.
-compute ACTION_MM3=mm32_4.
+recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
+recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
+recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
 numeric ACTION_MM4.
-compute ACTION_MM5=mm32_5.
-compute ACTION_MM6=mm32_6.
+recode MM32_5 (sysmis=-2) (else=copy) into ACTION_MM5.
+recode MM32_6 (sysmis=-2) (else=copy) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -154,12 +155,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 **************************************************************************************************************************************************.
 *17Paksitan.
@@ -168,12 +167,12 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2017.
 
-compute ACTION_MM1=mm32_1.
-compute ACTION_MM2=mm32_2.
-compute ACTION_MM3=mm32_4.
+recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
+recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
+recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
 numeric ACTION_MM4.
-compute ACTION_MM5=mm32_5.
-compute ACTION_MM6=mm32_6.
+recode MM32_5 (sysmis=-2) (else=copy) into ACTION_MM5.
+recode MM32_6 (sysmis=-2) (else=copy) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -181,12 +180,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 **************************************************************************************************************************************************.
 *17Tanzania.
@@ -195,12 +192,12 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2017.
 
-compute ACTION_MM1=mm32_1.
-compute ACTION_MM2=mm32_2.
-compute ACTION_MM3=mm32_4.
+recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
+recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
+recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
 numeric ACTION_MM4.
-compute ACTION_MM5=mm32_5.
-compute ACTION_MM6=mm32_6.
+recode MM32_5 (sysmis=-2) (else=copy) into ACTION_MM5.
+recode MM32_6 (sysmis=-2) (else=copy) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -208,12 +205,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 **************************************************************************************************************************************************.
 *17Uganda.
@@ -222,12 +217,12 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2017.
 
-compute ACTION_MM1=mm32_1.
-compute ACTION_MM2=mm32_2.
-compute ACTION_MM3=mm32_4.
+recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
+recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
+recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
 numeric ACTION_MM4.
-compute ACTION_MM5=mm32_5.
-compute ACTION_MM6=mm32_6.
+recode MM32_5 (sysmis=-2) (else=copy) into ACTION_MM5.
+recode MM32_6 (sysmis=-2) (else=copy) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -235,12 +230,10 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 **************************************************************************************************************************************************.
 *16Bangladesh.
@@ -248,21 +241,21 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
-*Need double check.
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM3.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM6.
-*Need double check.
-recode mm42_1(1,2=1)(3,4=2) into OPN_MM1.
-recode mm42_2(1,2=1)(3,4=2) into OPN_MM2.
-recode mm42_3(1,2=1)(3,4=2) into OPN_MM3.
-recode mm42_4(1,2=1)(3,4=2) into OPN_MM4.
-recode mm42_5(1,2=1)(3,4=2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2) into OPN_MM6.
-*Need double check.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM6.
+
+recode mm42_1(1,2=1)(3,4=2)(else=-2) into OPN_MM1.
+recode mm42_2(1,2=1)(3,4=2)(else=-2) into OPN_MM2.
+recode mm42_3(1,2=1)(3,4=2)(else=-2) into OPN_MM3.
+recode mm42_4(1,2=1)(3,4=2)(else=-2) into OPN_MM4.
+recode mm42_5(1,2=1)(3,4=2)(else=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(else=-2) into OPN_MM6.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -274,26 +267,24 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2016.
 
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM3.
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM6.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1,2=1)(3,4=2) into OPN_MM1.
-recode mm42_2(1,2=1)(3,4=2) into OPN_MM2.
-recode mm42_3(1,2=1)(3,4=2) into OPN_MM3.
-recode mm42_4(1,2=1)(3,4=2) into OPN_MM4.
-recode mm42_5(1,2=1)(3,4=2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2) into OPN_MM6.
-*Need double check.
+recode mm42_1(1,2=1)(3,4=2)(else=-2) into OPN_MM1.
+recode mm42_2(1,2=1)(3,4=2)(else=-2) into OPN_MM2.
+recode mm42_3(1,2=1)(3,4=2)(else=-2) into OPN_MM3.
+recode mm42_4(1,2=1)(3,4=2)(else=-2) into OPN_MM4.
+recode mm42_5(1,2=1)(3,4=2)(else=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(else=-2) into OPN_MM6.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10
                                    mmp1_11 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp3_1 mmp3_2 mmp3_3 mmp3_4 mmp3_5 mmp3_6 mmp3_7 mmp3_8 mmp3_9 mmp3_10
                                    mmp3_11 mmp3_96(1).
 recode REGISTERED_MMP(1 thru highest=1).
@@ -305,25 +296,23 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2016.
 
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM3.
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM6.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1,2=1)(3,4=2) into OPN_MM1.
-recode mm42_2(1,2=1)(3,4=2) into OPN_MM2.
-recode mm42_3(1,2=1)(3,4=2) into OPN_MM3.
-recode mm42_4(1,2=1)(3,4=2) into OPN_MM4.
-recode mm42_5(1,2=1)(3,4=2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2) into OPN_MM6.
-*Need double check.
+recode mm42_1(1,2=1)(3,4=2)(else=-2) into OPN_MM1.
+recode mm42_2(1,2=1)(3,4=2)(else=-2) into OPN_MM2.
+recode mm42_3(1,2=1)(3,4=2)(else=-2) into OPN_MM3.
+recode mm42_4(1,2=1)(3,4=2)(else=-2) into OPN_MM4.
+recode mm42_5(1,2=1)(3,4=2)(else=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(else=-2) into OPN_MM6.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp3_1 mmp3_2 mmp3_3 mmp3_4 mmp3_5 mmp3_6 mmp3_7 mmp3_8 mmp3_9 mmp3_10 mmp3_96(1).
 recode REGISTERED_MMP(1 thru highest=1).
 
@@ -335,26 +324,24 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2016.
 
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM3.
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM6.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1,2=1)(3,4=2) into OPN_MM1.
-recode mm42_2(1,2=1)(3,4=2) into OPN_MM2.
-recode mm42_3(1,2=1)(3,4=2) into OPN_MM3.
-recode mm42_4(1,2=1)(3,4=2) into OPN_MM4.
-recode mm42_5(1,2=1)(3,4=2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2) into OPN_MM6.
-*Need double check.
+recode mm42_1(1,2=1)(3,4=2)(else=-2) into OPN_MM1.
+recode mm42_2(1,2=1)(3,4=2)(else=-2) into OPN_MM2.
+recode mm42_3(1,2=1)(3,4=2)(else=-2) into OPN_MM3.
+recode mm42_4(1,2=1)(3,4=2)(else=-2) into OPN_MM4.
+recode mm42_5(1,2=1)(3,4=2)(else=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(else=-2) into OPN_MM6.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10 
                                    mmp1_11 mmp1_12 mmp1_13 mmp1_14 mmp1_15 mmp1_16 mmp1_17 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp3_1 mmp3_2 mmp3_3 mmp3_4 mmp3_5 mmp3_6 mmp3_7 mmp3_8 mmp3_9 mmp3_10 
                                           mmp3_11 mmp3_12 mmp3_13 mmp3_14 mmp3_15 mmp3_16 mmp3_17 mmp3_96(1).
 recode REGISTERED_MMP(1 thru highest=1).
@@ -366,25 +353,23 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2016.
 
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM3.
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM6.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1,2=1)(3,4=2) into OPN_MM1.
-recode mm42_2(1,2=1)(3,4=2) into OPN_MM2.
-recode mm42_3(1,2=1)(3,4=2) into OPN_MM3.
-recode mm42_4(1,2=1)(3,4=2) into OPN_MM4.
-recode mm42_5(1,2=1)(3,4=2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2) into OPN_MM6.
-*Need double check.
+recode mm42_1(1,2=1)(3,4=2)(else=-2) into OPN_MM1.
+recode mm42_2(1,2=1)(3,4=2)(else=-2) into OPN_MM2.
+recode mm42_3(1,2=1)(3,4=2)(else=-2) into OPN_MM3.
+recode mm42_4(1,2=1)(3,4=2)(else=-2) into OPN_MM4.
+recode mm42_5(1,2=1)(3,4=2)(else=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(else=-2) into OPN_MM6.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp3_1 mmp3_2 mmp3_96(1).
 recode REGISTERED_MMP(1 thru highest=1).
 
@@ -395,25 +380,23 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2016.
 
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM3.
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM6.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1,2=1)(3,4=2) into OPN_MM1.
-recode mm42_2(1,2=1)(3,4=2) into OPN_MM2.
-recode mm42_3(1,2=1)(3,4=2) into OPN_MM3.
-recode mm42_4(1,2=1)(3,4=2) into OPN_MM4.
-recode mm42_5(1,2=1)(3,4=2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2) into OPN_MM6.
-*Need double check.
+recode mm42_1(1,2=1)(3,4=2)(else=-2) into OPN_MM1.
+recode mm42_2(1,2=1)(3,4=2)(else=-2) into OPN_MM2.
+recode mm42_3(1,2=1)(3,4=2)(else=-2) into OPN_MM3.
+recode mm42_4(1,2=1)(3,4=2)(else=-2) into OPN_MM4.
+recode mm42_5(1,2=1)(3,4=2)(else=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(else=-2) into OPN_MM6.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp3_1 mmp3_2 mmp3_3 mmp3_4 mmp3_5 mmp3_6 mmp3_7 mmp3_8 mmp3_96(1).
 recode REGISTERED_MMP(1 thru highest=1).
 
@@ -424,25 +407,23 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2016.
 
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM3.
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM6.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1,2=1)(3,4=2) into OPN_MM1.
-recode mm42_2(1,2=1)(3,4=2) into OPN_MM2.
-recode mm42_3(1,2=1)(3,4=2) into OPN_MM3.
-recode mm42_4(1,2=1)(3,4=2) into OPN_MM4.
-recode mm42_5(1,2=1)(3,4=2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2) into OPN_MM6.
-*Need double check.
+recode mm42_1(1,2=1)(3,4=2)(else=-2) into OPN_MM1.
+recode mm42_2(1,2=1)(3,4=2)(else=-2) into OPN_MM2.
+recode mm42_3(1,2=1)(3,4=2)(else=-2) into OPN_MM3.
+recode mm42_4(1,2=1)(3,4=2)(else=-2) into OPN_MM4.
+recode mm42_5(1,2=1)(3,4=2)(else=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(else=-2) into OPN_MM6.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_96(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp3_1 mmp3_2 mmp3_3 mmp3_4 mmp3_5 mmp3_6 mmp3_7 mmp3_96(1).
 recode REGISTERED_MMP(1 thru highest=1).
 
@@ -453,25 +434,23 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2016.
 
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM3.
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(99=-2) into ACTION_MM6.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1,2=1)(3,4=2) into OPN_MM1.
-recode mm42_2(1,2=1)(3,4=2) into OPN_MM2.
-recode mm42_3(1,2=1)(3,4=2) into OPN_MM3.
-recode mm42_4(1,2=1)(3,4=2) into OPN_MM4.
-recode mm42_5(1,2=1)(3,4=2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2) into OPN_MM6.
-*Need double check.
+recode mm42_1(1,2=1)(3,4=2)(else=-2) into OPN_MM1.
+recode mm42_2(1,2=1)(3,4=2)(else=-2) into OPN_MM2.
+recode mm42_3(1,2=1)(3,4=2)(else=-2) into OPN_MM3.
+recode mm42_4(1,2=1)(3,4=2)(else=-2) into OPN_MM4.
+recode mm42_5(1,2=1)(3,4=2)(else=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(else=-2) into OPN_MM6.
+
 numeric AWARE_MMP.
-*Need double check.
 count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp3_1 mmp3_2 mmp3_3 mmp3_4 mmp3_5(1).
 recode REGISTERED_MMP(1 thru highest=1).
 
@@ -481,27 +460,25 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2015.
-*Need double check.
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
-*Need double check.
-recode mm42_1(1=1)(2=2)(9=-2) into OPN_MM1.
-recode mm42_5(1=1)(2=2)(9=-2) into OPN_MM2.
-recode mm42_2(1=1)(2=2)(9=-2) into OPN_MM3.
-recode mm42_3(1=1)(2=2)(9=-2) into OPN_MM4.
-recode mm42_4(1=1)(2=2)(9=-2) into OPN_MM5.
-recode mm42_6(1=1)(2=2)(9=-2) into OPN_MM6.
-*Need double check.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
+
+recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+
 count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9(1).
 recode AWARE_MMP(1 thru highest=1).
-*Need double check.
 count ACCESS_MMP=mmp2_1 mmp2_2 mmp2_3 mmp2_4 mmp2_5 mmp2_6 mmp2_7 mmp2_8 mmp2_9(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
@@ -510,29 +487,27 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2015.
-*Need double check.
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(9=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(9=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(9=-2) into ACTION_MM3.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(9=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(9=-2) into ACTION_MM6.
-*Need double check.
-recode mm42_1(1=1)(2=2)(9=-2) into OPN_MM1.
-recode mm42_5(1=1)(2=2)(9=-2) into OPN_MM2.
-recode mm42_2(1=1)(2=2)(9=-2) into OPN_MM3.
-recode mm42_3(1=1)(2=2)(9=-2) into OPN_MM4.
-recode mm42_4(1=1)(2=2)(9=-2) into OPN_MM5.
-recode mm42_6(1=1)(2=2)(9=-2) into OPN_MM6.
-*Need double check.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6. 
+
+recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+
 count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9
                                   mmp1_10 mmp1_11 mmp1_12 mmp1_13(1).
 recode AWARE_MMP(1 thru highest=1).
-*Need double check.
 count ACCESS_MMP=mmp2_1 mmp2_2 mmp2_3 mmp2_4 mmp2_5 mmp2_6 mmp2_7 mmp2_8 mmp2_9
                                    mmp2_10 mmp2_11 mmp2_12 mmp2_13(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
@@ -541,27 +516,25 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2015.
-*Need double check.
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
-*Need double check.
-recode mm42_1(1,2=1)(3,4=2)(5=-2) into OPN_MM1.
-recode mm42_5(1,2=1)(3,4=2)(5=-2) into OPN_MM2.
-recode mm42_2(1,2=1)(3,4=2)(5=-2) into OPN_MM3.
-recode mm42_3(1,2=1)(3,4=2)(5=-2) into OPN_MM4.
-recode mm42_4(1,2=1)(3,4=2)(5=-2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2)(5=-2) into OPN_MM6.
-*Need double check.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
+
+recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+
 count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10(1).
 recode AWARE_MMP(1 thru highest=1).
-*Need double check.
 count ACCESS_MMP=mmp2_1 mmp2_2 mmp2_3 mmp2_4 mmp2_5 mmp2_6 mmp2_7 mmp2_8 mmp2_9 mmp2_10(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp4_1 mmp4_2 mmp4_3 mmp4_4 mmp4_5 mmp4_6 mmp4_7 mmp4_8 mmp4_9 mmp4_10(1).
 recode REGISTERED_MMP(1 thru highest=1).
 
@@ -571,29 +544,27 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2015.
-*Need double check.
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
-*Need double check.
-recode mm42_1(1,2=1)(3,4=2)(5=-2) into OPN_MM1.
-recode mm42_5(1,2=1)(3,4=2)(5=-2) into OPN_MM2.
-recode mm42_2(1,2=1)(3,4=2)(5=-2) into OPN_MM3.
-recode mm42_3(1,2=1)(3,4=2)(5=-2) into OPN_MM4.
-recode mm42_4(1,2=1)(3,4=2)(5=-2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2)(5=-2) into OPN_MM6.
-*Need double check.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
+
+recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+
 count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10
                                   mmp1_11 mmp1_12 mmp1_13 mmp1_14 mmp1_15(1).
 recode AWARE_MMP(1 thru highest=1).
-*Need double check.
 count ACCESS_MMP=mmp2_1 mmp2_2 mmp2_3 mmp2_4 mmp2_5 mmp2_6 mmp2_7 mmp2_8 mmp2_9 mmp2_10
                                    mmp2_11 mmp2_12 mmp2_13 mmp2_14 mmp2_15(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp4_1 mmp4_2 mmp4_3 mmp4_4 mmp4_5 mmp4_6 mmp4_7 mmp4_8 mmp4_9 mmp4_10
                                           mmp4_11 mmp4_12 mmp4_13 mmp4_14 mmp4_15(1).
 recode REGISTERED_MMP(1 thru highest=1).
@@ -604,27 +575,25 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2015.
-*Need double check.
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
-*Need double check.
-recode mm42_1(1,2=1)(3,4=2)(5=-2) into OPN_MM1.
-recode mm42_5(1,2=1)(3,4=2)(5=-2) into OPN_MM2.
-recode mm42_2(1,2=1)(3,4=2)(5=-2) into OPN_MM3.
-recode mm42_3(1,2=1)(3,4=2)(5=-2) into OPN_MM4.
-recode mm42_4(1,2=1)(3,4=2)(5=-2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2)(5=-2) into OPN_MM6.
-*Need double check.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
+
+recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+
 count AWARE_MMP=mmp1_1 mmp1_2(1).
 recode AWARE_MMP(1 thru highest=1).
-*Need double check.
 count ACCESS_MMP=mmp2_1 mmp2_2(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp4_1 mmp4_2(1).
 recode REGISTERED_MMP(1 thru highest=1).
 
@@ -634,27 +603,25 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2015.
-*Need double check.
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
-*Need double check.
-recode mm42_1(1=1)(2=2)(9=-2) into OPN_MM1.
-recode mm42_5(1=1)(2=2)(9=-2) into OPN_MM2.
-recode mm42_2(1=1)(2=2)(9=-2) into OPN_MM3.
-recode mm42_3(1=1)(2=2)(9=-2) into OPN_MM4.
-recode mm42_4(1=1)(2=2)(9=-2) into OPN_MM5.
-recode mm42_6(1=1)(2=2)(9=-2) into OPN_MM6.
-*Need double check.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
+
+recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+
 count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5(1).
 recode AWARE_MMP(1 thru highest=1).
-*Need double check.
 count ACCESS_MMP=mmp2_1 mmp2_2 mmp2_3 mmp2_4 mmp2_5(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
@@ -663,27 +630,25 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2015.
-*Need double check.
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
-*Need double check.
-recode mm42_1(1,2=1)(3,4=2)(5=-2) into OPN_MM1.
-recode mm42_5(1,2=1)(3,4=2)(5=-2) into OPN_MM2.
-recode mm42_2(1,2=1)(3,4=2)(5=-2) into OPN_MM3.
-recode mm42_3(1,2=1)(3,4=2)(5=-2) into OPN_MM4.
-recode mm42_4(1,2=1)(3,4=2)(5=-2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2)(5=-2) into OPN_MM6.
-*Need double check.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
+
+recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+
 count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7(1).
 recode AWARE_MMP(1 thru highest=1).
-*Need double check.
 count ACCESS_MMP=mmp2_1 mmp2_2 mmp2_3 mmp2_4 mmp2_5 mmp2_6 mmp2_7(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp4_1 mmp4_2 mmp4_3 mmp4_4 mmp4_5 mmp4_6 mmp4_7(1).
 recode REGISTERED_MMP(1 thru highest=1).
 **************************************************************************************************************************************************.
@@ -692,27 +657,25 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2015.
-*Need double check.
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
-*Need double check.
-recode mm42_1(1,2=1)(3,4=2)(5=-2) into OPN_MM1.
-recode mm42_5(1,2=1)(3,4=2)(5=-2) into OPN_MM2.
-recode mm42_2(1,2=1)(3,4=2)(5=-2) into OPN_MM3.
-recode mm42_3(1,2=1)(3,4=2)(5=-2) into OPN_MM4.
-recode mm42_4(1,2=1)(3,4=2)(5=-2) into OPN_MM5.
-recode mm42_6(1,2=1)(3,4=2)(5=-2) into OPN_MM6.
-*Need double check.
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
+
+recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+
 count AWARE_MMP=mmp1_1 mmp1_2(1).
 recode AWARE_MMP(1 thru highest=1).
-*Need double check.
 count ACCESS_MMP=mmp2_1 mmp2_2(1).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 count REGISTERED_MMP=mmp4_1 mmp4_2(1).
 recode REGISTERED_MMP(1 thru highest=1).
 **************************************************************************************************************************************************.
@@ -721,13 +684,13 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2014.
-*Need double check.
-recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+
+recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
+recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -735,7 +698,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -746,7 +709,7 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2014.
-*Need double check.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -760,7 +723,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -772,12 +735,12 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2014.
 
-recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
+recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -785,7 +748,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -797,12 +760,12 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2014.
 
-recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
+recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -810,17 +773,15 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 count AWARE_MMP=mm44_1 mm44_2 mm44_3 mm44_4 mm44_5 mm44_6 mm44_7 mm44_8 mm44_9 mm44_10
                                   mm44_11 mm44_12 mm44_13 mm44_14 mm44_15
                                   mm45_1 mm45_2 mm45_3 mm45_4 mm45_5 mm45_6 mm45_7 mm45_8 mm45_9 mm45_10
                                   mm45_11 mm45_12 mm45_13 mm45_14 mm45_15(1).
 recode AWARE_MMP(1 thru highest=1).
-*Need double check.
 count ACCESS_MMP=mm46_1 mm46_2 mm46_3 mm46_4 mm46_5 mm46_6 mm46_7 mm46_8 mm46_9 mm46_10
                                    mm46_11 mm46_12 mm46_13 mm46_14 mm46_15(1 thru 5).
 recode ACCESS_MMP(1 thru highest=1).
-*Need double check.
 numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
@@ -830,12 +791,12 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2014.
 
-recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
+recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -843,7 +804,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -855,12 +816,12 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2014.
 
-recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
+recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -868,7 +829,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -880,12 +841,12 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2014.
 
-recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
+recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -893,7 +854,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -905,12 +866,12 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2014.
 
-recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM1.
-recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM2.
-recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM3.
+recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
+recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
+recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM5.
-recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5=-2) into ACTION_MM6.
+recode tdl8_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
+recode tdl8_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -918,7 +879,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -929,7 +890,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2013.
-*Need double check.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -943,7 +904,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -954,7 +915,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2013.
-*Need double check.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -968,7 +929,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -979,7 +940,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2013.
-*Need double check.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -993,7 +954,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -1004,7 +965,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2013.
-*Need double check.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -1018,7 +979,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -1029,7 +990,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2013.
-*Need double check.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -1043,7 +1004,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -1054,13 +1015,13 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2013.
-*Need double check.
-numeric ACTION_MM1.
-numeric ACTION_MM2.
-numeric ACTION_MM3.
+
+recode TI3_1(4=1)(3=2)(2=4)(1=5)(5,6,SYSMIS=-2) into ACTION_MM1.
+recode TI3_2(4=1)(3=2)(2=4)(1=5)(5,6,SYSMIS=-2) into ACTION_MM2.
+recode TI3_4(4=1)(3=2)(2=4)(1=5)(5,6,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-numeric ACTION_MM5.
-numeric ACTION_MM6.
+recode TI3_6(4=1)(3=2)(2=4)(1=5)(5,6,SYSMIS=-2) into ACTION_MM5.
+recode TI3_7(4=1)(3=2)(2=4)(1=5)(5,6,SYSMIS=-2) into ACTION_MM6.
 
 numeric OPN_MM1.
 numeric OPN_MM2.
@@ -1068,7 +1029,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -1079,7 +1040,7 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2013.
-*Need double check.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -1093,7 +1054,7 @@ numeric OPN_MM3.
 numeric OPN_MM4.
 numeric OPN_MM5.
 numeric OPN_MM6.
-*Need double check.
+
 numeric AWARE_MMP.
 numeric ACCESS_MMP.
 numeric REGISTERED_MMP.
@@ -1117,12 +1078,12 @@ AWARE_MMP	"Aware of non-MM mobile-based financial pruducts"
 ACCESS_MMP	"Eved used non-MM mobile-based financial products"
 REGISTERED_MMP	"Have account of non-MM mobile-based financial pruducts".
 
-value labels ACTION_MM1 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
-value labels ACTION_MM2 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
-value labels ACTION_MM3 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
-value labels ACTION_MM4 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
-value labels ACTION_MM5 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
-value labels ACTION_MM6 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK".
+value labels ACTION_MM1 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK/NA".
+value labels ACTION_MM2 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK/NA".
+value labels ACTION_MM3 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK/NA".
+value labels ACTION_MM4 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK/NA".
+value labels ACTION_MM5 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK/NA".
+value labels ACTION_MM6 1"Very difficult" 2"Somewhat difficult" 3"Neither difficult, nor easy" 4"Somewhat easy" 5"Very easy" -2"DK/NA".
 value labels OPN_MM1 1"Yes" 2"No" -2"DK".
 value labels OPN_MM2 1"Yes" 2"No" -2"DK".
 value labels OPN_MM3 1"Yes" 2"No" -2"DK".
