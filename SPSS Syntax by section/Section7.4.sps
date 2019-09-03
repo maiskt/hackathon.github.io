@@ -351,36 +351,36 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(13=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(15=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *16India.
@@ -389,36 +389,36 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2016.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(13=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(15=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *16Indonesia.
@@ -427,36 +427,36 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2016.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(13=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(15=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *16Kenya.
@@ -465,36 +465,36 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2016.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(13=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(15=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *16Nigeria.
@@ -503,36 +503,36 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2016.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(13=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(15=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *16Pakistan.
@@ -541,36 +541,36 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2016.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(13=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(15=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *16Tanzania.
@@ -579,36 +579,36 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2016.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(13=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(15=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *16Uganda.
@@ -617,36 +617,36 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2016.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(13=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(15=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *15Bangladesh.
@@ -655,36 +655,36 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2015.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(17=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *15India.
@@ -693,36 +693,36 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2015.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(17=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13,14=1)(else=0) into R_USE_MM9.
 
 
 **************************************************************************************************************************************************.
@@ -732,36 +732,36 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2015.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(17=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13,14=1)(else=0) into R_USE_MM9.
 
 
 **************************************************************************************************************************************************.
@@ -771,36 +771,36 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2015.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(17=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13,14=1)(else=0) into R_USE_MM9.
 
 
 **************************************************************************************************************************************************.
@@ -810,36 +810,36 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2015.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(17=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13,14=1)(else=0) into R_USE_MM9.
 
 
 **************************************************************************************************************************************************.
@@ -849,36 +849,36 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2015.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(17=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *15Tanzania.
@@ -887,36 +887,36 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2015.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(17=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *15Uganda.
@@ -925,36 +925,36 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2015.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
-numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(17=1)(else=0) into R_NOTREG_MM1.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm14(11=1)(else=0) into R_USE_MM2.
+recode mm14(12=1)(else=0) into R_USE_MM3.
+recode mm14(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm14(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *14Bangladesh.
@@ -963,36 +963,36 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2014.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm16(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm16(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm16(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm16(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm16(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm16(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm17(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm17(6=1)(else=0) into R_NOTREG_MM7.
+recode mm17(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm17(13=1)(else=0) into R_NOTREG_MM10.
+recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm18(11=1)(else=0) into R_USE_MM2.
+recode mm18(12=1)(else=0) into R_USE_MM3.
+recode mm18(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm18(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *14India.
@@ -1001,36 +1001,36 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2014.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm16(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm16(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm16(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm16(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm16(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm16(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm17(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm17(6=1)(else=0) into R_NOTREG_MM7.
+recode mm17(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm17(13=1)(else=0) into R_NOTREG_MM10.
+recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm18(11=1)(else=0) into R_USE_MM2.
+recode mm18(12=1)(else=0) into R_USE_MM3.
+recode mm18(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm18(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *14Indonesia.
@@ -1039,36 +1039,36 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2014.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm16(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm16(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm16(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm16(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm16(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm16(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm17(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm17(6=1)(else=0) into R_NOTREG_MM7.
+recode mm17(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm17(13=1)(else=0) into R_NOTREG_MM10.
+recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm18(11=1)(else=0) into R_USE_MM2.
+recode mm18(12=1)(else=0) into R_USE_MM3.
+recode mm18(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm18(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *14Kenya.
@@ -1077,36 +1077,36 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2014.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm16(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm16(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm16(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm16(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm16(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm16(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm17(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm17(6=1)(else=0) into R_NOTREG_MM7.
+recode mm17(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm17(13=1)(else=0) into R_NOTREG_MM10.
+recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm18(11=1)(else=0) into R_USE_MM2.
+recode mm18(12=1)(else=0) into R_USE_MM3.
+recode mm18(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm18(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *14Nigeria.
@@ -1115,36 +1115,36 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2014.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm16(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm16(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm16(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm16(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm16(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm16(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm17(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm17(6=1)(else=0) into R_NOTREG_MM7.
+recode mm17(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm17(13=1)(else=0) into R_NOTREG_MM10.
+recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm18(11=1)(else=0) into R_USE_MM2.
+recode mm18(12=1)(else=0) into R_USE_MM3.
+recode mm18(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm18(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *14Pakistan.
@@ -1153,36 +1153,36 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2014.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm16(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm16(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm16(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm16(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm16(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm16(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm17(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm17(6=1)(else=0) into R_NOTREG_MM7.
+recode mm17(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm17(13=1)(else=0) into R_NOTREG_MM10.
+recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm18(11=1)(else=0) into R_USE_MM2.
+recode mm18(12=1)(else=0) into R_USE_MM3.
+recode mm18(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm18(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *14Tanzania.
@@ -1191,36 +1191,36 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2014.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm16(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm16(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm16(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm16(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm16(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm16(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm17(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm17(6=1)(else=0) into R_NOTREG_MM7.
+recode mm17(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm17(13=1)(else=0) into R_NOTREG_MM10.
+recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm18(11=1)(else=0) into R_USE_MM2.
+recode mm18(12=1)(else=0) into R_USE_MM3.
+recode mm18(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm18(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *14Uganda.
@@ -1229,36 +1229,36 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2014.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm16(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm16(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm16(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm16(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm16(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm16(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm17(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm17(6=1)(else=0) into R_NOTREG_MM7.
+recode mm17(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm17(13=1)(else=0) into R_NOTREG_MM10.
+recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
-numeric R_USE_MM1.
-numeric R_USE_MM2.
-numeric R_USE_MM3.
-numeric R_USE_MM4.
+recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
+recode mm18(11=1)(else=0) into R_USE_MM2.
+recode mm18(12=1)(else=0) into R_USE_MM3.
+recode mm18(3=1)(else=0) into  R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
-numeric R_USE_MM9.
+recode mm18(13,14=1)(else=0) into R_USE_MM9.
 
 **************************************************************************************************************************************************.
 *13Bangladesh.
@@ -1267,26 +1267,26 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2013.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 compute R_USE_MM1=0.
 if mm14a=1 or mm14b=1 or mm14d=1 or mm14e=1 R_USE_MM1=1.
@@ -1388,26 +1388,26 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2013.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 compute R_USE_MM1=0.
 if mm14a=1 or mm14b=1 or mm14d=1 or mm14e=1 R_USE_MM1=1.
@@ -1428,26 +1428,26 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2013.
 
-numeric R_NOTUSE_MM1.
-numeric R_NOTUSE_MM2.
-numeric R_NOTUSE_MM3.
-numeric R_NOTUSE_MM4.
-numeric R_NOTUSE_MM5.
+recode mm12(1,2,12=1)(else=0) into R_NOTUSE_MM1.
+recode mm12(5=1)(else=0) into R_NOTUSE_MM2.
+recode mm12(3=1)(else=0) into R_NOTUSE_MM3.
+recode mm12(10=1)(else=0) into R_NOTUSE_MM4.
+recode mm12(14=1)(else=0) into R_NOTUSE_MM5.
 numeric R_NOTUSE_MM6.
 numeric R_NOTUSE_MM7.
-numeric R_NOTUSE_MM8.
+recode mm12(7,9=1)(else=0) into R_NOTUSE_MM8.
 
 numeric R_NOTREG_MM1.
-numeric R_NOTREG_MM2.
+recode mm13(1=1)(else=0) into R_NOTREG_MM2.
 numeric R_NOTREG_MM3.
 numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
-numeric R_NOTREG_MM7.
-numeric R_NOTREG_MM8.
+recode mm13(6=1)(else=0) into R_NOTREG_MM7.
+recode mm13(12=1)(else=0) into R_NOTREG_MM8.
 numeric R_NOTREG_MM9.
-numeric R_NOTREG_MM10.
-numeric R_NOTREG_MM11.
+recode mm13(13=1)(else=0) into R_NOTREG_MM10.
+recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 compute R_USE_MM1=0.
 if mm14a=1 or mm14b=1 or mm14d=1 or mm14e=1 R_USE_MM1=1.
