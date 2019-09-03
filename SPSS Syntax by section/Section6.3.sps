@@ -359,11 +359,11 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10=1)(else=0) into R_NOBANK2.
+recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5=1)(else=0) into R_NOBANK5.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -405,11 +405,11 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2016.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10=1)(else=0) into R_NOBANK2.
+recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5=1)(else=0) into R_NOBANK5.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -452,11 +452,11 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2016.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10=1)(else=0) into R_NOBANK2.
+recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5=1)(else=0) into R_NOBANK5.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -499,11 +499,11 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2016.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10=1)(else=0) into R_NOBANK2.
+recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5=1)(else=0) into R_NOBANK5.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -545,11 +545,11 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2016.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10=1)(else=0) into R_NOBANK2.
+recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5=1)(else=0) into R_NOBANK5.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -592,11 +592,11 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2016.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10=1)(else=0) into R_NOBANK2.
+recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5=1)(else=0) into R_NOBANK5.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -639,11 +639,11 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2016.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10=1)(else=0) into R_NOBANK2.
+recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5=1)(else=0) into R_NOBANK5.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -686,11 +686,11 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2016.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10=1)(else=0) into R_NOBANK2.
+recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5=1)(else=0) into R_NOBANK5.
 
 numeric R_NOBANK_BUSI1.
 numeric R_NOBANK_BUSI2. 
@@ -733,11 +733,11 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2015.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff18_2=1 R_NOBANK_BUSI1=1.
@@ -785,11 +785,11 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2015.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff18_1=1 R_NOBANK_BUSI1=1.
@@ -838,11 +838,11 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2015.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff18_2=1 R_NOBANK_BUSI1=1.
@@ -892,11 +892,11 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2015.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff18_2=1 R_NOBANK_BUSI1=1.
@@ -946,11 +946,11 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2015.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff18_2=1 R_NOBANK_BUSI1=1.
@@ -999,11 +999,11 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2015.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff18_2=1 R_NOBANK_BUSI1=1.
@@ -1052,11 +1052,11 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2015.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff18_2=1 R_NOBANK_BUSI1=1.
@@ -1105,11 +1105,11 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2015.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff3(3=1)(else=0) into R_NOBANK1.
+recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(4=1)(else=0) into R_NOBANK4.
+recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff18_2=1 R_NOBANK_BUSI1=1.
@@ -1159,11 +1159,11 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2014.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff5(3=1)(else=0) into R_NOBANK1.
+recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(4=1)(else=0) into R_NOBANK4.
+recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff22_2=1 R_NOBANK_BUSI1=1.
@@ -1207,11 +1207,11 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2014.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff5(3=1)(else=0) into R_NOBANK1.
+recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(4=1)(else=0) into R_NOBANK4.
+recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff22_2=1 R_NOBANK_BUSI1=1.
@@ -1254,11 +1254,11 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2014.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff5(3=1)(else=0) into R_NOBANK1.
+recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(4=1)(else=0) into R_NOBANK4.
+recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff22_2=1 R_NOBANK_BUSI1=1.
@@ -1300,11 +1300,11 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2014.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff5(3=1)(else=0) into R_NOBANK1.
+recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(4=1)(else=0) into R_NOBANK4.
+recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff22_2=1 R_NOBANK_BUSI1=1.
@@ -1347,11 +1347,11 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2014.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff5(3=1)(else=0) into R_NOBANK1.
+recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(4=1)(else=0) into R_NOBANK4.
+recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff22_2=1 R_NOBANK_BUSI1=1.
@@ -1394,11 +1394,11 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2014.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff5(3=1)(else=0) into R_NOBANK1.
+recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(4=1)(else=0) into R_NOBANK4.
+recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff22_2=1 R_NOBANK_BUSI1=1.
@@ -1442,11 +1442,11 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2014.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff5(3=1)(else=0) into R_NOBANK1.
+recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(4=1)(else=0) into R_NOBANK4.
+recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff22_2=1 R_NOBANK_BUSI1=1.
@@ -1490,11 +1490,11 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2014.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ff5(3=1)(else=0) into R_NOBANK1.
+recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
+recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(4=1)(else=0) into R_NOBANK4.
+recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ff22_2=1 R_NOBANK_BUSI1=1.
@@ -1538,11 +1538,11 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2013.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ffi2(3=1)(else=0) into R_NOBANK1.
+recode ffi2(8,10,18=1)(else=0) into R_NOBANK2.
+recode ffi2(6=1)(else=0) into R_NOBANK3.
+recode ffi2(4=1)(else=0) into R_NOBANK4.
+recode ffi2(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ffi21b=1 R_NOBANK_BUSI1=1.
@@ -1583,11 +1583,11 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2013.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ffi2(3=1)(else=0) into R_NOBANK1.
+recode ffi2(8,10,18=1)(else=0) into R_NOBANK2.
+recode ffi2(6=1)(else=0) into R_NOBANK3.
+recode ffi2(4=1)(else=0) into R_NOBANK4.
+recode ffi2(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ffi21_2=1 R_NOBANK_BUSI1=1.
@@ -1629,11 +1629,11 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2013.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ffi2(3=1)(else=0) into R_NOBANK1.
+recode ffi2(8,10,18=1)(else=0) into R_NOBANK2.
+recode ffi2(6=1)(else=0) into R_NOBANK3.
+recode ffi2(4=1)(else=0) into R_NOBANK4.
+recode ffi2(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ffi21b=1 R_NOBANK_BUSI1=1.
@@ -1674,11 +1674,11 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2013.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ffi2(3=1)(else=0) into R_NOBANK1.
+recode ffi2(8,10,18=1)(else=0) into R_NOBANK2.
+recode ffi2(6=1)(else=0) into R_NOBANK3.
+recode ffi2(4=1)(else=0) into R_NOBANK4.
+recode ffi2(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ffi21b=1 R_NOBANK_BUSI1=1.
@@ -1719,11 +1719,11 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2013.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ffi2(3=1)(else=0) into R_NOBANK1.
+recode ffi2(8,10,18=1)(else=0) into R_NOBANK2.
+recode ffi2(6=1)(else=0) into R_NOBANK3.
+recode ffi2(4=1)(else=0) into R_NOBANK4.
+recode ffi2(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ffi21b=1 R_NOBANK_BUSI1=1.
@@ -1765,11 +1765,11 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2013.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ffi2(3=1)(else=0) into R_NOBANK1.
+recode ffi2(8,10,18=1)(else=0) into R_NOBANK2.
+recode ffi2(6=1)(else=0) into R_NOBANK3.
+recode ffi2(4=1)(else=0) into R_NOBANK4.
+recode ffi2(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ffi21_2=1 R_NOBANK_BUSI1=1.
@@ -1811,11 +1811,11 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2013.
 
-numeric R_NOBANK1.
-numeric R_NOBANK2.
-numeric R_NOBANK3.
-numeric R_NOBANK4.
-numeric R_NOBANK5.
+recode ffi2(3=1)(else=0) into R_NOBANK1.
+recode ffi2(8,10,18=1)(else=0) into R_NOBANK2.
+recode ffi2(6=1)(else=0) into R_NOBANK3.
+recode ffi2(4=1)(else=0) into R_NOBANK4.
+recode ffi2(5,11=1)(else=0) into R_NOBANK5.
 
 compute R_NOBANK_BUSI1=0. 
 if ffi21b=1 R_NOBANK_BUSI1=1.
