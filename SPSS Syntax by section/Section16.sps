@@ -621,3 +621,13 @@ save outfile = "data/uga13.sav"
 
 
 dataset close all.
+
+*Labels.
+variable labels ECO_EMP1	"Your typical involvement in deciding how to spend your household’s income"
+ECO_EMP2	"Your typical involvement in deciding how your household’s income is spent on basic needs like food and clothing"
+ECO_EMP3	"Your typical involvement in deciding how your household’s income is spent on other things beyond basic needs"
+ECO_EMP4	"Influences you have on the final decision to spend your household's income"
+ECO_EMP5	"Likeliness you voice disagreement if you happened to disagree with a typical decision about how your household’s income is spent"
+ECO_EMP6	"You make the final decision on how your money is spent or saved"
+ECO_EMP7	"You trust financial service providers to keep your personal information private unless you allow it to be shared".
+
