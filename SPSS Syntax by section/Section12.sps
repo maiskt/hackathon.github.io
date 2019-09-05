@@ -156,7 +156,7 @@ count INSURANCE = FB27_1 to FB27_10 (1).
 recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
-if FB27_1 = 1 INSUR_MEDICAL = 1.
+if FB27_1 = 1 or FB27_10=1 INSUR_MEDICAL = 1.
 
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
@@ -192,7 +192,7 @@ count INSURANCE = FB27_1 to FB27_9 (1).
 recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
-if FB27_1 = 1 INSUR_MEDICAL = 1.
+if FB27_1 = 1 or FB27_9= 1 INSUR_MEDICAL = 1.
 
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
@@ -264,7 +264,7 @@ count INSURANCE = FB27_1 to FB27_10 (1).
 recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
-if FB27_1 = 1 INSUR_MEDICAL = 1.
+if FB27_1 = 1 or FB27_10= 1 INSUR_MEDICAL = 1.
 
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
@@ -300,7 +300,7 @@ count INSURANCE = FB27_1 to FB27_10 (1).
 recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
-if FB27_1 = 1 INSUR_MEDICAL = 1.
+if FB27_1 = 1 or FB27_10= 1 INSUR_MEDICAL = 1.
 
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
@@ -444,7 +444,7 @@ count INSURANCE = FB27_1 to FB27_96 (1).
 recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
-if FB27_1 = 1 INSUR_MEDICAL = 1.
+if FB27_1 = 1 or FB27_10= 1 INSUR_MEDICAL = 1.
 
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
@@ -480,7 +480,7 @@ count INSURANCE = FB27_1 to FB27_96 (1).
 recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
-if FB27_1 = 1 INSUR_MEDICAL = 1.
+if FB27_1 = 1 or FB27_9= 1 INSUR_MEDICAL = 1.
 
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
@@ -1185,21 +1185,18 @@ if II1_1 = 1 INSUR_LIFE = 1.
 compute INSUR_CAR = 0.
 if II1_5 = 1 INSUR_CAR = 1.
 
-compute INSUR_CROP = 0.
-if II1_9 = 1 INSUR_CROP = 1.
+numeric INSUR_CROP.
 
 compute INSUR_PROPERTY = 0.
 if II1_3 = 1 INSUR_PROPERTY = 1.
 
 *Welfare group.
-compute INSUR_UNEMPLOY = 0.
-if II1_8 = 1 INSUR_UNEMPLOY = 1.
+numeric INSUR_UNEMPLOY.
 
 compute INSUR_DISABLE = 0.
 if II1_11 = 1 INSUR_DISABLE = 1.
 
-compute INSUR_OLDAGE = 0.
-if II1_7 = 1 INSUR_OLDAGE = 1.
+numeric INSUR_OLDAGE.
 
 *crop+livestock combined.
 numeric INSUR_LIVESTOCK.
@@ -1262,20 +1259,17 @@ if II1_1 = 1 INSUR_LIFE = 1.
 compute INSUR_CAR = 0.
 if II1_5 = 1 INSUR_CAR = 1.
 
-compute INSUR_CROP = 0.
-if II1_9 = 1 INSUR_CROP = 1.
+numeric INSUR_CROP.
 
 compute INSUR_PROPERTY = 0.
 if II1_3 = 1 INSUR_PROPERTY = 1.
 
-compute INSUR_UNEMPLOY = 0.
-if II1_8 = 1 INSUR_UNEMPLOY = 1.
+numeric INSUR_UNEMPLOY.
 
 compute INSUR_DISABLE = 0.
 if II1_11 = 1 INSUR_DISABLE = 1.
 
-compute INSUR_OLDAGE = 0.
-if II1_7 = 1 INSUR_OLDAGE = 1.
+numeric INSUR_OLDAGE.
 *Ag.
 numeric INSUR_LIVESTOCK.
 
@@ -1298,20 +1292,17 @@ if II1_1 = 1 INSUR_LIFE = 1.
 compute INSUR_CAR = 0.
 if II1_5 = 1 INSUR_CAR = 1.
 
-compute INSUR_CROP = 0.
-if II1_9 = 1 INSUR_CROP = 1.
+numeric INSUR_CROP.
 
 compute INSUR_PROPERTY = 0.
 if II1_3 = 1 INSUR_PROPERTY = 1.
 
-compute INSUR_UNEMPLOY = 0.
-if II1_8 = 1 INSUR_UNEMPLOY = 1.
+numeric INSUR_UNEMPLOY.
 
 compute INSUR_DISABLE = 0.
 if II1_11 = 1 INSUR_DISABLE = 1.
 
-compute INSUR_OLDAGE = 0.
-if II1_7 = 1 INSUR_OLDAGE = 1.
+numeric INSUR_OLDAGE.
 *Ag.
 numeric INSUR_LIVESTOCK.
 
@@ -1357,3 +1348,31 @@ save outfile = "data/uga13.sav"
 /keep= SBJNUM COUNTRY YEAR INSURANCE INSUR_MEDICAL INSUR_LIFE INSUR_CAR INSUR_CROP INSUR_PROPERTY INSUR_UNEMPLOY INSUR_DISABLE INSUR_OLDAGE INSUR_LIVESTOCK INSUR_FAMILY  .
 
 dataset close all.
+
+*Labels.
+variable labels
+INSURANCE	"Have insurance"
+INSUR_MEDICAL	"Have Health insurance plan or Mediclaim policy to pay for medical expenses"
+INSUR_LIFE	"Have Life insurance to pay a sum on the event of your death"
+INSUR_CAR	"Have Car or vehicle insurance to pay in case of an accident or damage"
+INSUR_CROP	"Have Crop insurance to pay you in case your crops are destroyed by a natural calamity "
+INSUR_PROPERTY	"Have Property insurance to pay you in case your house or other things you own are destroyed by a fire or other calamity"
+INSUR_UNEMPLOY	"Have Unemployment or income insurance to pay you if you lose your job"
+INSUR_DISABLE	"Have Disability insurance to pay you in case you get sick or hurt and cannot work"
+INSUR_OLDAGE	"Have Pension, retirement, or old age benefits to be paid when you stop working"
+INSUR_LIVESTOCK	"Have Cattle or livestock insurance to pay you in case livestock die"
+INSUR_FAMILY	"Have Spousal or family insurance to pay you in case your spouse dies".
+
+value labels INSURANCE 1"Yes" 0"No".
+value labels INSUR_MEDICAL 1"Yes" 0"No".
+value labels INSUR_LIFE 1"Yes" 0"No".
+value labels INSUR_CAR 1"Yes" 0"No".
+value labels INSUR_CROP 1"Yes" 0"No".
+value labels INSUR_PROPERTY 1"Yes" 0"No".
+value labels INSUR_UNEMPLOY 1"Yes" 0"No".
+value labels INSUR_DISABLE 1"Yes" 0"No".
+value labels INSUR_OLDAGE 1"Yes" 0"No".
+value labels INSUR_LIVESTOCK 1"Yes" 0"No".
+value labels INSUR_FAMILY 1"Yes" 0"No".
+
+
