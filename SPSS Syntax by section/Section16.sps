@@ -124,7 +124,7 @@ recode GN2_3 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP3.
 recode GN3_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP4.
 recode GN4(98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP5.
 *Gn6 was asked "to what extent do you typically agree with the final decisions about how your household's income is usually spent.".
-recode GN7_1 (-3 thru -2 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
+recode GN7_1 (98,99 = 99)(1=1)(2=2)(3=3)(4=4)(5=5) into ECO_EMP6.
 *GN10 asks the question from a different perspective.
 recode GN10(97,98,99 = 99)(1=5)(2=4)(3=3)(4=2)(5=1) into ECO_EMP7.
 
@@ -159,7 +159,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/bng16.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -174,7 +173,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ind16.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -189,7 +187,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ida16.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -204,7 +201,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ken16.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -219,7 +215,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/nga16.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -234,7 +229,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/pak16.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -249,7 +243,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/tza16.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -264,7 +257,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/uga16.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -281,7 +273,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/bng15.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -296,7 +287,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ind15.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -311,7 +301,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ida15.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -326,7 +315,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ken15.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -341,7 +329,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/nga15.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -356,7 +343,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/pak15.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -371,7 +357,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/tza15.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -386,7 +371,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/uga15.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -403,7 +387,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/bng14.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -418,7 +401,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ind14.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -433,7 +415,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ida14.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -448,7 +429,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ken14.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -463,7 +443,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/nga14.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -478,7 +457,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/pak14.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -493,7 +471,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/tza14.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -508,7 +485,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/uga14.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -524,7 +500,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/bng13.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -539,7 +514,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ind13.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -554,7 +528,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/ken13.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -569,7 +542,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/nga13.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -584,7 +556,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/pak13.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -599,7 +570,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/tza13.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8 .
@@ -614,7 +584,6 @@ numeric ECO_EMP4.
 numeric ECO_EMP5.
 numeric ECO_EMP6.
 numeric ECO_EMP7.
-numeric ECO_EMP8.
 
 save outfile = "data/uga13.sav"
 /keep= SBJNUM COUNTRY YEAR ECO_EMP1 ECO_EMP2 ECO_EMP3 ECO_EMP4 ECO_EMP5 ECO_EMP6 ECO_EMP7 ECO_EMP8  .
@@ -630,4 +599,13 @@ ECO_EMP4	"Influences you have on the final decision to spend your household's in
 ECO_EMP5	"Likeliness you voice disagreement if you happened to disagree with a typical decision about how your household’s income is spent"
 ECO_EMP6	"You make the final decision on how your money is spent or saved"
 ECO_EMP7	"You trust financial service providers to keep your personal information private unless you allow it to be shared".
+
+value labels ECO_EMP1 1"Very uninvolved" 2"Somewhat uninvolved" 3"Neither uninvolved, nor involved" 4"Somewhat involved" 5"Very involved" 99"DK/REF".
+value labels ECO_EMP2  1"Very uninvolved" 2"Somewhat uninvolved" 3"Neither uninvolved, nor involved" 4"Somewhat involved" 5"Very involved" 99"DK/REF".
+value labels ECO_EMP3  1"Very uninvolved" 2"Somewhat uninvolved" 3"Neither uninvolved, nor involved" 4"Somewhat involved" 5"Very involved" 99"DK/REF".
+value labels ECO_EMP4 1"None"  2"A little" 3"About half" 4"Most" 5"Almost all" 99"DK/REF".
+value labels ECO_EMP5 1"Very unlikely" 2"Somewhat unlikely" 3"Neither unlikely, nor likely" 4"Somewhat likely" 5"Very likely" 99"DK/REF".
+value labels ECO_EMP6 1"Strongly disagree" 2"Somewhat disagree" 3"Neither disagree, nor agree" 4"Somewhat agree" 5"Strongly agree" 99"DK/REF".
+value labels ECO_EMP7 1"Strongly disagree" 2"Somewhat disagree" 3"Neither disagree, nor agree" 4"Somewhat agree" 5"Strongly agree" 99"DK/REF".
+
 
