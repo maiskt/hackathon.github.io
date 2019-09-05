@@ -1,4 +1,4 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 
 *Section 6.3.
 **************************************************************************************************************************************************.
@@ -361,7 +361,7 @@ compute YEAR=2016.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10=1)(else=0) into R_NOBANK2.
-recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(6,20,21=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5=1)(else=0) into R_NOBANK5.
 
@@ -407,7 +407,7 @@ compute YEAR=2016.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10=1)(else=0) into R_NOBANK2.
-recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(6,20,21=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5=1)(else=0) into R_NOBANK5.
 
@@ -454,7 +454,7 @@ compute YEAR=2016.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10=1)(else=0) into R_NOBANK2.
-recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(6,20,21=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5=1)(else=0) into R_NOBANK5.
 
@@ -501,7 +501,7 @@ compute YEAR=2016.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10=1)(else=0) into R_NOBANK2.
-recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(6,20,21=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5=1)(else=0) into R_NOBANK5.
 
@@ -547,7 +547,7 @@ compute YEAR=2016.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10=1)(else=0) into R_NOBANK2.
-recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(6,20,21=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5=1)(else=0) into R_NOBANK5.
 
@@ -594,7 +594,7 @@ compute YEAR=2016.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10=1)(else=0) into R_NOBANK2.
-recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(6,20,21=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5=1)(else=0) into R_NOBANK5.
 
@@ -641,7 +641,7 @@ compute YEAR=2016.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10=1)(else=0) into R_NOBANK2.
-recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(6,20,21=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5=1)(else=0) into R_NOBANK5.
 
@@ -688,7 +688,7 @@ compute YEAR=2016.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10=1)(else=0) into R_NOBANK2.
-recode ff3(6,21=1)(else=0) into R_NOBANK3.
+recode ff3(6,20,21=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5=1)(else=0) into R_NOBANK5.
 
@@ -735,7 +735,7 @@ compute YEAR=2015.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
@@ -787,7 +787,7 @@ compute YEAR=2015.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
@@ -840,7 +840,7 @@ compute YEAR=2015.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
@@ -894,7 +894,7 @@ compute YEAR=2015.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
@@ -948,7 +948,7 @@ compute YEAR=2015.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1001,7 +1001,7 @@ compute YEAR=2015.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1054,7 +1054,7 @@ compute YEAR=2015.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1107,7 +1107,7 @@ compute YEAR=2015.
 
 recode ff3(3=1)(else=0) into R_NOBANK1.
 recode ff3(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff3(6,25=1)(else=0) into R_NOBANK3.
+recode ff3(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff3(4=1)(else=0) into R_NOBANK4.
 recode ff3(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1161,7 +1161,7 @@ compute YEAR=2014.
 
 recode ff5(3=1)(else=0) into R_NOBANK1.
 recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff5(4=1)(else=0) into R_NOBANK4.
 recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1209,7 +1209,7 @@ compute YEAR=2014.
 
 recode ff5(3=1)(else=0) into R_NOBANK1.
 recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff5(4=1)(else=0) into R_NOBANK4.
 recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1256,7 +1256,7 @@ compute YEAR=2014.
 
 recode ff5(3=1)(else=0) into R_NOBANK1.
 recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff5(4=1)(else=0) into R_NOBANK4.
 recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1302,7 +1302,7 @@ compute YEAR=2014.
 
 recode ff5(3=1)(else=0) into R_NOBANK1.
 recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff5(4=1)(else=0) into R_NOBANK4.
 recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1349,7 +1349,7 @@ compute YEAR=2014.
 
 recode ff5(3=1)(else=0) into R_NOBANK1.
 recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff5(4=1)(else=0) into R_NOBANK4.
 recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1396,7 +1396,7 @@ compute YEAR=2014.
 
 recode ff5(3=1)(else=0) into R_NOBANK1.
 recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff5(4=1)(else=0) into R_NOBANK4.
 recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1444,7 +1444,7 @@ compute YEAR=2014.
 
 recode ff5(3=1)(else=0) into R_NOBANK1.
 recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff5(4=1)(else=0) into R_NOBANK4.
 recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
@@ -1492,7 +1492,7 @@ compute YEAR=2014.
 
 recode ff5(3=1)(else=0) into R_NOBANK1.
 recode ff5(8,10,18=1)(else=0) into R_NOBANK2.
-recode ff5(6,25=1)(else=0) into R_NOBANK3.
+recode ff5(6,23,25=1)(else=0) into R_NOBANK3.
 recode ff5(4=1)(else=0) into R_NOBANK4.
 recode ff5(5,11=1)(else=0) into R_NOBANK5.
 
