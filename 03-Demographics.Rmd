@@ -57,6 +57,9 @@ Bangladesh:
 India: Aadhaar card
 
 Indonesia:
+* Kartu Tanda Penduduk (KTP/KITAS/KITAP) (National ID)
+* Passport
+* SIM (Driving license)
 
 Kenya:
 
