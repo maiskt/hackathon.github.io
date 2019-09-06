@@ -554,7 +554,7 @@ recode IFI14_4(1 thru 2 = 1)(3=2)(4 thru 6=3)(99=99) into MMKM.
 recode IFI14_3(1 thru 2 = 1)(3=2)(4 thru 6=3)(99=99) into BAKM.
 recode IFI14_5(1 thru 2 = 1)(3=2)(4 thru 6=3)(99=99) into RSKM.
 recode IFI14_6(1 thru 2 = 1)(3=2)(4 thru 6=3)(99=99) into MFIKM.
-recode IFI14_7(1 thru 2 = 1)(3=2)(4 thru 6=3)(99=99) GRPKM.
+recode IFI14_7(1 thru 2 = 1)(3=2)(4 thru 6=3)(99=99) into GRPKM.
 numeric INFMLKM.
 numeric POSTKM.
 numeric SACCOKM.
@@ -879,7 +879,7 @@ save outfile = "data/ken13.sav"
 DATASET ACTIVATE nga13.
 *MFI and bank are combined, therefore can't use.
 numeric BBKM.
-recode FFI12_2(1 thru 2 = 1)(3=2)(4 thru 6=3)(99,sysmis=99) into ATMKM.
+recode FFI12_2(1 thru 2 = 1)(3=2)(4 thru 6=3)(7,missing=99) into ATMKM.
 numeric MMKM.
 numeric BAKM.
 numeric RSKM.
