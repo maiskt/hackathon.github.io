@@ -367,15 +367,15 @@ numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
-recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+numeric R_NOTREG_MM8.
+recode mm13(13=1)(else=0) into R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -405,15 +405,15 @@ numeric R_NOTREG_MM4.
 numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
-recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+numeric R_NOTREG_MM8.
+recode mm13(13=1)(else=0) into R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -444,14 +444,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(13=1)(else=0) into R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -482,14 +482,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(13=1)(else=0) into R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -520,14 +520,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(13=1)(else=0) into R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -558,14 +558,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(13=1)(else=0) into R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -596,14 +596,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(13=1)(else=0) into R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -634,14 +634,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 numeric R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(13=1)(else=0) into R_NOTREG_MM9.
 numeric R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -672,14 +672,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(14=1)(else=0) into R_NOTREG_MM9.
 recode mm13(13=1)(else=0) into R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -710,20 +710,19 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(14=1)(else=0) into R_NOTREG_MM9.
 recode mm13(13=1)(else=0) into R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
 numeric R_USE_MM8.
 recode mm14(13,14=1)(else=0) into R_USE_MM9.
-
 
 **************************************************************************************************************************************************.
 *15Indonesia.
@@ -749,14 +748,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(14=1)(else=0) into R_NOTREG_MM9.
 recode mm13(13=1)(else=0) into R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -788,14 +787,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(14=1)(else=0) into R_NOTREG_MM9.
 recode mm13(13=1)(else=0) into R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -827,14 +826,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(14=1)(else=0) into R_NOTREG_MM9.
 recode mm13(13=1)(else=0) into R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -866,14 +865,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(14=1)(else=0) into R_NOTREG_MM9.
 recode mm13(13=1)(else=0) into R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -904,14 +903,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(14=1)(else=0) into R_NOTREG_MM9.
 recode mm13(13=1)(else=0) into R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -942,14 +941,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm13(6=1)(else=0) into R_NOTREG_MM7.
 recode mm13(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm13(14=1)(else=0) into R_NOTREG_MM9.
 recode mm13(13=1)(else=0) into R_NOTREG_MM10.
 recode mm13(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm14(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm14(11=1)(else=0) into R_USE_MM2.
 recode mm14(12=1)(else=0) into R_USE_MM3.
-recode mm14(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -980,14 +979,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm17(6=1)(else=0) into R_NOTREG_MM7.
 recode mm17(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm17(14=1)(else=0) into R_NOTREG_MM9.
 recode mm17(13=1)(else=0) into R_NOTREG_MM10.
 recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm18(11=1)(else=0) into R_USE_MM2.
 recode mm18(12=1)(else=0) into R_USE_MM3.
-recode mm18(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1018,14 +1017,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm17(6=1)(else=0) into R_NOTREG_MM7.
 recode mm17(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm17(14=1)(else=0) into R_NOTREG_MM9.
 recode mm17(13=1)(else=0) into R_NOTREG_MM10.
 recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm18(11=1)(else=0) into R_USE_MM2.
 recode mm18(12=1)(else=0) into R_USE_MM3.
-recode mm18(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1056,14 +1055,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm17(6=1)(else=0) into R_NOTREG_MM7.
 recode mm17(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm17(14=1)(else=0) into R_NOTREG_MM9.
 recode mm17(13=1)(else=0) into R_NOTREG_MM10.
 recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm18(11=1)(else=0) into R_USE_MM2.
 recode mm18(12=1)(else=0) into R_USE_MM3.
-recode mm18(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1094,14 +1093,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm17(6=1)(else=0) into R_NOTREG_MM7.
 recode mm17(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm17(14=1)(else=0) into R_NOTREG_MM9.
 recode mm17(13=1)(else=0) into R_NOTREG_MM10.
 recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm18(11=1)(else=0) into R_USE_MM2.
 recode mm18(12=1)(else=0) into R_USE_MM3.
-recode mm18(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1132,14 +1131,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm17(6=1)(else=0) into R_NOTREG_MM7.
 recode mm17(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm17(14=1)(else=0) into R_NOTREG_MM9.
 recode mm17(13=1)(else=0) into R_NOTREG_MM10.
 recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm18(11=1)(else=0) into R_USE_MM2.
 recode mm18(12=1)(else=0) into R_USE_MM3.
-recode mm18(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1170,14 +1169,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm17(6=1)(else=0) into R_NOTREG_MM7.
 recode mm17(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm17(14=1)(else=0) into R_NOTREG_MM9.
 recode mm17(13=1)(else=0) into R_NOTREG_MM10.
 recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm18(11=1)(else=0) into R_USE_MM2.
 recode mm18(12=1)(else=0) into R_USE_MM3.
-recode mm18(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1208,14 +1207,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm17(6=1)(else=0) into R_NOTREG_MM7.
 recode mm17(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm17(14=1)(else=0) into R_NOTREG_MM9.
 recode mm17(13=1)(else=0) into R_NOTREG_MM10.
 recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm18(11=1)(else=0) into R_USE_MM2.
 recode mm18(12=1)(else=0) into R_USE_MM3.
-recode mm18(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
@@ -1246,14 +1245,14 @@ numeric R_NOTREG_MM5.
 numeric R_NOTREG_MM6.
 recode mm17(6=1)(else=0) into R_NOTREG_MM7.
 recode mm17(12=1)(else=0) into R_NOTREG_MM8.
-numeric R_NOTREG_MM9.
+recode mm17(14=1)(else=0) into R_NOTREG_MM9.
 recode mm17(13=1)(else=0) into R_NOTREG_MM10.
 recode mm17(5,10=1)(else=0) into R_NOTREG_MM11.
 
 recode mm18(1,2,4,5=1)(else=0) into R_USE_MM1.
 recode mm18(11=1)(else=0) into R_USE_MM2.
 recode mm18(12=1)(else=0) into R_USE_MM3.
-recode mm18(3=1)(else=0) into  R_USE_MM4.
+NUMERIC R_USE_MM4.
 numeric R_USE_MM5.
 numeric R_USE_MM6.
 numeric R_USE_MM7.
