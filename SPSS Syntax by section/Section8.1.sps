@@ -72,14 +72,14 @@ IF (AD2_5=1 or AD3_5=1 or AD4_5=1 or AD5_5=1 or AD6_5=1 or AD7_5=1 or AD8_5=1 or
    ((AD2_7=1 or AD3_7=1 or AD4_7=1 or AD5_7=1 or AD6_7=1 or AD7_7=1 or AD8_7=1 or AD9_7=1 or AD10_23=1 or AD11_11=1) and (FN5_1=1 and FN5_4=1)) or
    ((AD2_8=1 or AD3_8=1 or AD4_8=1 or AD5_8=1 or AD6_8=1 or AD7_8=1 or AD8_8=1 or AD9_8=1 or AD10_24=1 or AD11_12=1) and (FN6_1=1 and FN6_4=1)) or
     (AD2_9=1 or AD3_9=1 or AD4_9=1 or AD5_9=1 or AD6_9=1 or AD7_9=1 or AD8_9=1 or AD9_9=1 or AD10_25=1 or AD11_13=1) NBFI_ALL_ADV=1.
-*Need double check.
+
 compute NBFI_BASIC=0.
 if (ad1_5=1 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1)) or 
    (ad1_6=1 and (FN4_4=1 or FN4_5=1 or FN4_6=1 or FN4_7=1)) or 
   (ad1_7=1 and FN5_1=1 and FN5_4=1) or 
   (ad1_8=1 and FN6_1=1 and FN6_4=1) or 
    ad1_9=1 NBFI_BASIC=1.
-*Need double check.
+
 compute NBFI_ADV=0.
 IF ((AD2_5=1 or AD3_5=1 or AD4_5=1 or AD5_5=1 or AD6_5=1 or AD7_5=1 or AD8_5=1 or AD9_5=1 or AD10_21=1 or AD11_7=1) and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1)) or
     ((AD2_6=1 or AD3_6=1 or AD4_6=1 or AD5_6=1 or AD6_6=1 or AD7_6=1 or AD8_6=1 or AD9_6=1 or AD10_22=1 or AD11_8=1) and (FN4_4=1 or FN4_5=1 or FN4_6=1 or FN4_7=1))or 
@@ -88,25 +88,25 @@ IF ((AD2_5=1 or AD3_5=1 or AD4_5=1 or AD5_5=1 or AD6_5=1 or AD7_5=1 or AD8_5=1 o
     (AD2_9=1 or AD3_9=1 or AD4_9=1 or AD5_9=1 or AD6_9=1 or AD7_9=1 or AD8_9=1 or AD9_9=1 or AD10_25=1 or AD11_13=1) NBFI_ADV=1.
 
 compute REG_NBFI_BASIC=0.
-IF ((FN3_2=1 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and ad1_5=1) or
+IF (FN3_2=1 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and ad1_5=1) or
      (FN4_2=1 and (FN4_4=1 or FN4_5=1 or FN4_6=1 or FN4_7=1) and ad1_6=1) or
      (FN5_1=1 and FN5_4=1 and ad1_7=1) or
      (FN6_1=1 and FN6_4=1 and ad1_8=1) or
-      FN7_2=1 and ad1_9=1) REG_NBFI_BASIC=1.
-*Need double check.
+      (FN7_2=1 and ad1_9=1) REG_NBFI_BASIC=1.
+
 compute REG_NBF_ADV=0.
-IF ((FN3_2=1 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and (AD2_5=1 or AD3_5=1 or AD4_5=1 or AD5_5=1 or AD6_5=1 or AD7_5=1 or AD8_5=1 or AD9_5=1 or AD10_21=1 or AD11_7=1)) or
+IF (FN3_2=1 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and (AD2_5=1 or AD3_5=1 or AD4_5=1 or AD5_5=1 or AD6_5=1 or AD7_5=1 or AD8_5=1 or AD9_5=1 or AD10_21=1 or AD11_7=1)) or
      (FN4_2=1 and (FN4_4=1 or FN4_5=1 or FN4_6=1 or FN4_7=1) and (AD2_6=1 or AD3_6=1 or AD4_6=1 or AD5_6=1 or AD6_6=1 or AD7_6=1 or AD8_6=1 or AD9_6=1 or AD10_22=1 or AD11_8=1)) or
      (FN5_1=1 and FN5_4=1 and (AD2_7=1 or AD3_7=1 or AD4_7=1 or AD5_7=1 or AD6_7=1 or AD7_7=1 or AD8_7=1 or AD9_7=1 or AD10_23=1 or AD11_11=1)) or
      (FN6_1=1 and FN6_4=1 and (AD2_8=1 or AD3_8=1 or AD4_8=1 or AD5_8=1 or AD6_8=1 or AD7_8=1 or AD8_8=1 or AD9_8=1 or AD10_24=1 or AD11_12=1)) or
-      FN7_2=1 and (AD2_9=1 or AD3_9=1 or AD4_9=1 or AD5_9=1 or AD6_9=1 or AD7_9=1 or AD8_9=1 or AD9_9=1 or AD10_25=1 or AD11_13=1)) REG_NBF_ADV=1.
-*Need double check.
+      (FN7_2=1 and (AD2_9=1 or AD3_9=1 or AD4_9=1 or AD5_9=1 or AD6_9=1 or AD7_9=1 or AD8_9=1 or AD9_9=1 or AD10_25=1 or AD11_13=1)) REG_NBF_ADV=1.
+
 compute ACTIVE_NBFI_BASIC=0.
-if ((FN3_3<=4 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and ad1_5=1) or
+if (FN3_3<=4 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and ad1_5=1) or
     (FN4_3<=4 and (FN4_4=1 or FN4_5=1 or FN4_6=1 or FN4_7=1) and ad1_6=1) or 
     (FN5_1=1 and FN5_4=1 and FN5_3<=4 and ad1_7=1) or
     (FN6_1=1 and FN6_4=1 and FN6_3<=4 and ad1_8=1) or 
-     FN7_3<=4 and ad1_9=1)  ACTIVE_NBFI_BASIC=1.
+     (FN7_3<=4 and ad1_9=1)  ACTIVE_NBFI_BASIC=1.
 
 compute ACTIVE_NBFI_ADV=0.
 IF ((FN3_3<=4 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and
@@ -116,7 +116,7 @@ IF ((FN3_3<=4 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and
      (FN5_1=1 and FN5_4=1 and FN5_3<=4 and (AD2_7=1 or AD3_7=1 or AD4_7=1 or AD5_7=1 or AD6_7=1 or AD7_7=1 or AD8_7=1 or AD9_7=1 or AD10_23=1 or AD11_11=1)) or 
      (FN6_1=1 and FN6_4=1 and FN6_3<=4 and (AD2_8=1 or AD3_8=1 or AD4_8=1 or AD5_8=1 or AD6_8=1 or AD7_8=1 or AD8_8=1 or AD9_8=1 or AD10_24=1 or AD11_12=1)) or 
      (FN7_3<=4 and (AD2_9=1 or AD3_9=1 or AD4_9=1 or AD5_9=1 or AD6_9=1 or AD7_9=1 or AD8_9=1 or AD9_9=1 or AD10_25=1 or AD11_13=1))) ACTIVE_NBFI_ADV=1.
-*Need double check.
+
 compute ACTIVE30_NBFI_ADV=0.
 IF ((FN3_3<=3 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1) and
      (AD2_5=1 or AD3_5=1 or AD4_5=1 or AD5_5=1 or AD6_5=1 or AD7_5=1 or AD8_5=1 or AD9_5=1 or AD10_21=1 or AD11_7=1)) or
