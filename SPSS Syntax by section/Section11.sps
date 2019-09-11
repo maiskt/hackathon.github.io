@@ -1741,7 +1741,7 @@ recode SAVE_KNOW_INTEREST (1 thru hi = 1) (else = 0).
 compute SAVE_FORMAL=0.
 if si1_1=1 or si1_2=1 or si1_6=1 or si1_12=1 SAVE_FORMAL=1.
 compute SAVE_INFML=0.
-if si1_4=1 or si1_5=1 or si1_7=1 or si1_8=1 or si1_14=1 SAVE_INFML=1.
+if si1_4=1 or si1_5=1 or si1_7=1 or si1_8=1 or si1_14=1 or si1_17=1 SAVE_INFML=1.
 
 count SAVE_BANK=FFI16U FFI16V(1).
 recode SAVE_BANK (1 thru hi = 1) (else = 0).
@@ -1753,7 +1753,7 @@ numeric SAVE_GROUP.
 recode SI1_6 (1=1) (2=0) into SAVE_COOP.
 numeric SAVE_POST.
 compute SAVE_CASH_PROPERTY =0.
-if SI1_3 = 1 or SI1_13 = 1 SAVE_CASH_PROPERTY = 1.
+if SI1_3 = 1 or SI1_13 = 1 or si1_18=1 SAVE_CASH_PROPERTY = 1.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
