@@ -1,6 +1,6 @@
-﻿* Encoding: UTF-8.
+﻿* Encoding: windows-1252.
 
-*Section *.
+*Section8.3 .
 **************************************************************************************************************************************************.
 *18Bangladesh.
 rename variables Serial=SBJNUM weight=WEIGHT.
@@ -8,41 +8,39 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2018.
 
-*Need double check.
 compute NBFI_TRANSFER=0.
 if AD1_5=1 or AD1_6=1 or AD1_9=1 or (FN5_1=1 and FN5_4=1 and AD1_7=1) or (FN6_1=1 and FN6_4=1 and AD1_8=1) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 if AD2_5=1 or AD2_6=1 or AD2_9=1 or (FN5_1=1 and FN5_4=1 and AD2_7=1) or (FN6_1=1 and FN6_4=1 and AD2_8=1) NBFI_MERCHANT=1.
-*Need double check.
+
 compute NBFI_BILL=0.
 if AD3_5=1 or AD3_6=1 or (FN5_1=1 and FN5_4=1 and AD3_7=1) or (FN6_1=1 and FN6_4=1 and AD3_8=1) or AD3_9=1 or
    AD4_5=1 or AD4_6=1 or (FN5_1=1 and FN5_4=1 and AD4_7=1) or (FN6_1=1 and FN6_4=1 and AD4_8=1) or AD4_9=1 or
    AD5_5=1 or AD5_6=1 or (FN5_1=1 and FN5_4=1 and AD5_7=1) or (FN6_1=1 and FN6_4=1 and AD5_8=1) or AD5_9=1 NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 if AD6_5=1 or AD6_6=1 or AD6_9=1 or (FN5_1=1 and FN5_4=1 and AD6_7=1) or (FN6_1=1 and FN6_4=1 and AD6_8=1) NBFI_GOV=1.
- *Need double check.
+
 compute NBFI_WAGE=0.
 if AD7_5=1 or AD7_6=1 or AD7_9=1 or (FN5_1=1 and FN5_4=1 and AD7_7=1) or (FN6_1=1 and FN6_4=1 and AD7_7=1) NBFI WAGE=1.
- *Need double check.
+
 compute NBFI_INSURANCE=0.
 if AD8_5=1 or AD8_6=1 or AD8_9=1 or (FN5_1=1 and FN5_4=1 and AD8_7=1) or (FN6_1=1 and FN6_4=1 and AD8_8=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 if AD9_5=1 or AD9_6=1 or AD9_9=1 or (FN5_1=1 and FN5_4=1 and AD9_7=1) or (FN6_1=1 and FN6_4=1 and AD9_8=1) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 if AD10_21=1 or AD10_22=1 or AD10_25=1 or (FN5_1=1 and FN5_4=1 and AD10_23=1) or (FN6_1=1 and FN6_4=1 and AD10_24=1) NBFI_INVEST=1.
- *Need double check.
+
 compute NBFI_LOAN=0.
-if AD11_21=1 or AD11_22=1 or AD11_27=1 or (FN5_1=1 and FN5_4=1 and AD11_25=1) or (FN6_1=1 and FN6_4=1 and AD11_26=1) NBFI_LOAN=1.
+if AD11_7=1 or AD11_8=1 or AD11_13=1 or (FN5_1=1 and FN5_4=1 and AD11_11=1) or (FN6_1=1 and FN6_4=1 and AD11_12=1) NBFI_LOAN=1.
 
 numeric NBFI_AIRTIME.
 
-*Need double check.
 compute ACTIVE_NBFI_TRANSFER=0.
-if AD1_16<=4 or AD1_17<=4 or AD1_20<=4 or (FN5_1=1 and FN5_4=1 and AD1_18<=4) or (FN6_1=1 and FN6_4=1 and AD1_16<=4) ACTIVE_NBFI_TRANSFER=1.
+if AD1_16<=4 or AD1_17<=4 or AD1_20<=4 or (FN5_1=1 and FN5_4=1 and AD1_18<=4) or (FN6_1=1 and FN6_4=1 and AD1_19<=4) ACTIVE_NBFI_TRANSFER=1.
 
 compute ACTIVE_NBFI_MERCHANT=0.
 if AD2_15<=4 or AD2_16<=4 or AD2_19<=4 or (FN5_1=1 and FN5_4=1 and AD2_17<=4) or (FN6_1=1 and FN6_4=1 and AD2_18<=4) ACTIVE_NBFI_MERCHANT=1.
@@ -78,36 +76,36 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2018.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 if AD1_2=1 or AD1_3=1 NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 if AD2_2=1 or AD2_3=1 NBFI_MERCHANT=1.
-*Need double check.
+
 compute NBFI_BILL=0.
 if AD3_2=1 or AD3_3=1 or AD4_2=1 or AD4_3=1 or AD5_2=1 or AD5_3=1 NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 if AD6_2=1 or AD6_3=1 NBFI_GOV=1.
-*Need double check.
+
 compute NBFI_WAGE=0.
 if AD7_2=1 or AD7_3=1 ACTIVE_NBFI WAGE=1.
-*Need double check. 
+
 compute NBFI_INSURANCE=0.
 if AD8_2=1 or AD8_3=1 NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 if AD9_2=1 or AD9_3=1 or (FN6_1=1 and FN6_3=1 and AD9_6=1) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 if AD10_20=1 or AD10_21=1 or (FN6_1=1 and FN6_3=1 and  AD10_28=1) NBFI_INVEST=1.
-*Need double check. 
+
 compute NBFI_LOAN=0.
 if AD11_8=1 or AD11_9=1 or AD11_10=1 or (FN6_1=1 and FN6_3=1 and AD11_6=1) NBFI_LOAN=1.
  
 numeric NBFI_AIRTIME.
-*Need double check.
+
 compute ACTIVE_NBFI_TRANSFER=0.
 if AD1_11<=4 or AD1_12<=4 ACTIVE_NBFI_TRANSFER=1.
 
@@ -143,38 +141,28 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2017.
-*Need double check.
+
 count NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2 (1 thru 6).
 recode NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
 numeric NBFI_MERCHANT.
-*Need double check.
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
-*Need double check.
 numeric NBFI_GOV.
 numeric NBFI_WAGE.
-*Need double check.
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
-*Need double check.
 count NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 6).
 recode NBFI_SAVE (1 thru highest=1).
-*Need double check.
 count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
-*Need double check.
 count NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 6).
 recode NBFI_LOAN (1 thru highest=1).
-*Need double check.
 numeric NBFI_AIRTIME.
 
-*Need double check.
+
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2 (1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
 numeric ACTIVE_NBFI_MERCHANT.
-
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
 recode ACTIVE_NBFI_BILL (1 thru highest=1).
 numeric ACTIVE_NBFI_GOV.
