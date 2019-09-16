@@ -13,26 +13,31 @@ numeric LOAN_CURRENT.
 numeric LOAN_KNOW_INTEREST.
 compute LOAN_INFML = 0.
 if ad11_9=1 or ad11_10=1 or ((FN5_2=2 or FN5_4=2) and ad11_11=1) or ((FN6_2=2 or FN6_4=2) and ad11_12=1)  LOAN_INFML=1.
-numeric loan_formal.
-recode AD11_1 (1=1) (2=0) into LOAN_STORE.
-recode AD11_2 (1=1) (2=0) into LOAN_CREDITCARD.
-recode AD11_3 (1=1) (2=0) into LOAN_BANK.
-IF (ad11_2=1 or ad11_3=1 or ad11_4=1 or ad11_5=1) loan_bank=1.
-recode AD11_6 (1=1) (2=0) into LOAN_MM.
-recode AD11_7 (1=1) (2=0) into LOAN_MFI.
-recode AD11_8 (1=1) (2=0) into LOAN_COOP.
-recode AD11_9 (1=1) (2=0) into LOAN_MLENDER.
-recode AD11_10 (1=1) (2=0) into LOAN_PAWN.
-recode AD11_11 (1=1) (2=0) into LOAN_GROUP.
-recode AD11_13 (1=1) (2=0) into LOAN_POST.
 
+compute LOAN_FORMAL=0.
+IF ad11_2=1 or ad11_3=1 or ad11_4=1 or ad11_5=1 or
+    ad11_6=1 or 
+   (ad11_7=1 or ad11_8=1 or (FN5_1=1 and FN5_4=1 and ad11_11=1) or (FN6_1=1 and FN6_4=1 and ad11_12=1) or ad11_13=1) LOAN_FORMAL=1.
+
+recode AD11_1 (1=1) (else=0) into LOAN_STORE.
+recode AD11_2 (1=1) (else=0) into LOAN_CREDITCARD.
+ * compute LOAN_BANK=0.
+ * IF (ad11_2=1 or ad11_3=1 or ad11_4=1 or ad11_5=1) LOAN_BANK=1.
+ * recode AD11_6 (1=1) (else=0) into LOAN_MM.
+recode AD11_7 (1=1) (else=0) into LOAN_MFI.
+recode AD11_8 (1=1) (else=0) into LOAN_COOP.
+recode AD11_9 (1=1) (else=0) into LOAN_MLENDER.
+recode AD11_10 (1=1) (else=0) into LOAN_PAWN.
+compute LOAN_GROUP=0.
+if ad11_11=1 or ad11_12=1 LOAN_GROUP=1.
+recode AD11_13 (1=1) (else=0) into LOAN_POST.
 numeric LOAN_SACCO.
 *In the last 12 months.
-recode FB19_1 (1=1) (2=0) into LOAN_EMERGENCY.
-recode FB19_2 (1=1) (2=0) into LOAN_DAILY.
-recode FB19_3 (1=1) (2=0) into LOAN_BUSINESS.
-recode FB19_4 (1=1) (2=0) into LOAN_HOME.
-recode FB19_5 (1=1) (2=0) into LOAN_AGRIC.
+recode FB19_1 (1=1) (else=0) into LOAN_EMERGENCY.
+recode FB19_2 (1=1) (else=0) into LOAN_DAILY.
+recode FB19_3 (1=1) (else=0) into LOAN_BUSINESS.
+recode FB19_4 (1=1) (else=0) into LOAN_HOME.
+recode FB19_5 (1=1) (else=0) into LOAN_AGRIC.
 
 save outfile = "data/bng18.sav"
 /keep= SBJNUM COUNTRY YEAR LOAN LOAN_CURRENT LOAN_KNOW_INTEREST LOAN_INFML LOAN_FORMAL 
@@ -45,28 +50,34 @@ DATASET ACTIVATE ind18.
 recode AD11 (1=1) (else=0) into LOAN.
 numeric LOAN_CURRENT.
 numeric LOAN_KNOW_INTEREST.
-numeric LOAN_INFML.
-compute LOAN_FORMAL = 0.
-if (ad11_2=1 or ad11_7=1 or ad11_12=1 or ad11_13=1 or ad11_14=1) or ad11_11=1 or  ad11_3=1 or (ad11_8=1 or ad11_9=1 or ad11_10=1 or (FN6_1=1 and FN6_3=1 and AD11_6=1)) borrow_formal=1.
+compute LOAN_INFML=0.
+if ad11_4=1 or ad11_5=1 or ((FN6_2=2 OR FN6_3=2) and AD11_6=1)  LOAN_INFML=1.
 
-recode AD11_1 (1=1) (2=0) into LOAN_STORE.
-recode AD11_2 (1=1) (2=0) into LOAN_CREDITCARD.
-recode AD11_7 (1=1) (2=0) into LOAN_BANK.
-recode AD11_11 (1=1) (2=0) into LOAN_MM.
-recode AD11_3 (1=1) (2=0) into LOAN_MFI.
-recode AD11_6 (1=1) (2=0) into LOAN_COOP.
-recode AD11_4 (1=1) (2=0) into LOAN_MLENDER.
-recode AD11_10 (1=1) (2=0) into LOAN_PAWN.
+compute LOAN_FORMAL = 0.
+if (ad11_2=1 or ad11_7=1 or ad11_12=1 or ad11_13=1 or ad11_14=1) or 
+    ad11_11=1 or  
+    ad11_3=1 or 
+   (ad11_8=1 or ad11_9=1 or ad11_10=1 or (FN6_1=1 and FN6_3=1 and AD11_6=1)) LOAN_FORMAL=1.
+
+recode AD11_1 (1=1) (else=0) into LOAN_STORE.
+recode AD11_2 (1=1) (else=0) into LOAN_CREDITCARD.
+ * compute LOAN_BANK=0.
+ * if ad11_2=1 or ad11_7=1 or ad11_12=1 or ad11_13=1 or ad11_14=1 LOAN_BANK=1.
+ * recode AD11_11 (1=1) (else=0) into LOAN_MM.
+recode AD11_3 (1=1) (else=0) into LOAN_MFI.
+recode AD11_6 (1=1) (else=0) into LOAN_COOP.
+recode AD11_4 (1=1) (else=0) into LOAN_MLENDER.
+recode AD11_5 (1=1) (else=0) into LOAN_PAWN.
 numeric LOAN_GROUP.
-recode AD11_13 (1=1) (2=0) into LOAN_POST.
+recode AD11_8 (1=1) (else=0) into LOAN_POST.
 numeric LOAN_SACCO.
 
 *In the last 12 months.
-recode FB19_1 (1=1) (2=0) into LOAN_EMERGENCY.
-recode FB19_2 (1=1) (2=0) into LOAN_DAILY.
-recode FB19_3 (1=1) (2=0) into LOAN_BUSINESS.
-recode FB19_4 (1=1) (2=0) into LOAN_HOME.
-recode FB19_5 (1=1) (2=0) into LOAN_AGRIC.
+recode FB19_1 (1=1) (else=0) into LOAN_EMERGENCY.
+recode FB19_2 (1=1) (else=0) into LOAN_DAILY.
+recode FB19_3 (1=1) (else=0) into LOAN_BUSINESS.
+recode FB19_4 (1=1) (else=0) into LOAN_HOME.
+recode FB19_5 (1=1) (else=0) into LOAN_AGRIC.
 
 save outfile = "data/ind18.sav"
 /keep= SBJNUM COUNTRY YEAR LOAN LOAN_CURRENT LOAN_KNOW_INTEREST LOAN_INFML LOAN_FORMAL 
@@ -77,33 +88,38 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 *2017---------------------------------------------------------------------***.
 
 DATASET ACTIVATE bng17.
+*Need confirm.
+*count LOAN=FB13(2 THRU 4).
 
-count LOAN=FB13(2 THRU 4).
-count LOAN_CURRENT = FB16A_1 to FB16A_96 MM17A (1).
+count LOAN_CURRENT = FB16A_1 to FB16A_96(1).
 recode LOAN_CURRENT (1 thru hi = 1) (else = 0).
 *CM4?.
 count LOAN_KNOW_INTEREST = FB17_1 to FB17_96 (lo thru 98 100 thru hi).
 recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
-recode ifi20_2 (1=1)(2=0) into LOAN_INFML.	
+recode ifi20_2 (1=1)(else=0) into LOAN_INFML.	
 count LOAN_FORMAL = fb16a_1 fb16a_2 fb16a_3 fb16a_4(1).	
 recode LOAN_FORMAL (1 thru hi = 0)(else = 0).
+
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
-recode FF14_10 (1=1)(2=0) into LOAN_BANK.
-recode MM15_10 (1=1)(2=0) into LOAN_MM.
-recode IFI10_6 (1 thru 6 = 1)(7=2) into LOAN_MFI.
-recode IFI11_6 (1 thru 6 = 1)(7=2) into LOAN_COOP.
+*Need confirm.
+ * recode FF14_10 (1=1)(2=0) into LOAN_BANK.
+ * recode MM15_10 (1=1)(2=0) into LOAN_MM.
+compute LOAN_MFI=0.
+if (IFI10_6<=6 or FB16A_3=1) LOAN_MFI=1.
+recode IFI11_6 (1 thru 6 = 1)(else=0) into LOAN_COOP.
 numeric LOAN_MLENDER.
 numeric LOAN_PAWN.
-recode IFI12_6 (1 thru 6 = 1)(7=2) into LOAN_GROUP.
-recode IFI13_6 (1 thru 6 = 1)(7=2) into LOAN_POST.
+compute LOAN_GROUP=0.
+if (IFI12_6<=6 or FB16A_4=1) LOAN_GROUP=1.
+recode IFI13_6 (1 thru 6 = 1)(else=0) into LOAN_POST.
 numeric LOAN_SACCO.
 
 *In the last 12 months.
-recode FB19_1 (1=1) (2=0) into LOAN_EMERGENCY.
-recode FB19_2 (1=1) (2=0) into LOAN_DAILY.
-recode FB19_3 (1=1) (2=0) into LOAN_BUSINESS.
-recode FB19_4 (1=1) (2=0) into LOAN_HOME.
+recode FB19_1 (1=1) (else=0) into LOAN_EMERGENCY.
+recode FB19_2 (1=1) (else=0) into LOAN_DAILY.
+recode FB19_3 (1=1) (else=0) into LOAN_BUSINESS.
+recode FB19_4 (1=1) (else=0) into LOAN_HOME.
 numeric LOAN_AGRIC.
 
 save outfile = "data/bng17.sav"
@@ -114,30 +130,36 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE ind17.
 
-count LOAN=FB13(2 THRU 4).
+ * count LOAN=FB13(2 THRU 4).
+
 count LOAN_CURRENT = FB16A_1 to FB16A_96 (1).
 recode LOAN_CURRENT (1 thru hi = 1) (else = 0).
 count LOAN_KNOW_INTEREST = FB17_1 to FB17_96 (lo thru 98 100 thru hi).
 recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
-numeric LOAN_FORMAL.
-recode ifi20_2(1=1)(2=0) into LOAN_INFML.	
+count LOAN_FORMAL = fb16a_1 fb16a_2 fb16a_3 fb16a_4 fb16a_5(1).	
+recode LOAN_FORMAL (1 thru hi = 0)(else = 0).
+recode ifi20_2(1=1)(else=0) into LOAN_INFML.	
+
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
-recode FF14_10 (1=1)(2=0) into LOAN_BANK.
-recode MM15_10 (1=1)(2=0) into LOAN_MM.
-recode IFI10_6 (1 thru 6 = 1)(7=2) into LOAN_MFI.
+ * recode FF14_10 (1=1)(2=0) into LOAN_BANK.
+ * recode MM15_10 (1=1)(2=0) into LOAN_MM.
+compute LOAN_MFI=0.
+if (IFI10_6<=6 or FB16A_2=1) LOAN_MFI=1.
 numeric LOAN_COOP.
 numeric LOAN_MLENDER.
 numeric LOAN_PAWN.
-recode IFI12_6 (1 thru 6 = 1)(7=2) into LOAN_GROUP.
-recode IFI11_6 (1 thru 6 = 1)(7=2) into LOAN_POST.
+compute LOAN_GROUP=0.
+if (IFI12_6<=6 or FB16A_5=1) LOAN_GROUP=1.
+compute LOAN_POST=0.
+if (IFI11_6<=6 or FB16A_3=1) LOAN_POST=1.
 numeric LOAN_SACCO.
 
 *In the last 12 months.
-recode FB19_1 (1=1) (2=0) into LOAN_EMERGENCY.
-recode FB19_2 (1=1) (2=0) into LOAN_DAILY.
-recode FB19_3 (1=1) (2=0) into LOAN_BUSINESS.
-recode FB19_4 (1=1) (2=0) into LOAN_HOME.
+recode FB19_1 (1=1) (else=0) into LOAN_EMERGENCY.
+recode FB19_2 (1=1) (else=0) into LOAN_DAILY.
+recode FB19_3 (1=1) (else=0) into LOAN_BUSINESS.
+recode FB19_4 (1=1) (else=0) into LOAN_HOME.
 numeric LOAN_AGRIC.
 
 save outfile = "data/ind17.sav"
@@ -148,29 +170,34 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE ken17.
 
-count LOAN=FB13(2 THRU 4).
+ * count LOAN=FB13(2 THRU 4).
+
 count LOAN_CURRENT = FB16A_1 to FB16A_96 (1).
 recode LOAN_CURRENT (1 thru hi = 1) (else = 0).
 count LOAN_KNOW_INTEREST = FB17_1 to FB17_96 (lo thru 98 100 thru hi).
 recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
-numeric LOAN_FORMAL.
-recode ifi20_2(1=1)(2=0) into LOAN_INFML.	
+count LOAN_FORMAL = fb16a_1 fb16a_2 fb16a_3 fb16a_4(1).	
+recode LOAN_FORMAL (1 thru hi = 0)(else = 0).
+recode ifi20_2(1=1)(else=0) into LOAN_INFML.	
+
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
-recode FF14_10 (1=1)(2=0) into LOAN_BANK.
-recode MM15_10 (1=1)(2=0) into LOAN_MM.
-recode IFI10_6 (1 thru 6 = 1)(7=2) into LOAN_MFI.
-recode IFI11_6 (1 thru 6 = 1)(7=2) into LOAN_COOP.
+ * recode FF14_10 (1=1)(2=0) into LOAN_BANK.
+ * recode MM15_10 (1=1)(2=0) into LOAN_MM.
+compute LOAN_MFI=0.
+if (IFI10_6<7 or FB16A_3=1) LOAN_MFI=1.
+recode IFI11_6 (1 thru 6 = 1)(else=0) into LOAN_COOP.
 numeric LOAN_MLENDER.
 numeric LOAN_PAWN.
 numeric LOAN_GROUP.
-recode IFI13_6 (1 thru 6 = 1)(7=2) into LOAN_POST.
-recode IFI12_6 (1 thru 6 = 1)(7=2) into LOAN_SACCO.
+recode IFI13_6 (1 thru 6 = 1)(else=0) into LOAN_POST.
+compute LOAN_SACCO=0.
+if (IFI12_6<7 or FB16A_4=1) LOAN_SACCO=1.
 *In the last 12 months.
-recode FB19_1 (1=1) (2=0) into LOAN_EMERGENCY.
-recode FB19_2 (1=1) (2=0) into LOAN_DAILY.
-recode FB19_3 (1=1) (2=0) into LOAN_BUSINESS.
-recode FB19_4 (1=1) (2=0) into LOAN_HOME.
+recode FB19_1 (1=1) (else=0) into LOAN_EMERGENCY.
+recode FB19_2 (1=1) (else=0) into LOAN_DAILY.
+recode FB19_3 (1=1) (else=0) into LOAN_BUSINESS.
+recode FB19_4 (1=1) (else=0) into LOAN_HOME.
 numeric LOAN_AGRIC.
 
 save outfile = "data/ken17.sav"
@@ -181,30 +208,34 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE nga17.
 
-count LOAN=FB13(2 THRU 4).
+ * count LOAN=FB13(2 THRU 4).
 count LOAN_CURRENT = FB16A_1 to FB16A_96 (1).
 recode LOAN_CURRENT (1 thru hi = 1) (else = 0).
 count LOAN_KNOW_INTEREST = FB17_1 to FB17_96 (lo thru 98 100 thru hi).
 recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
-numeric LOAN_FORMAL.
-recode ifi20_2(1=1)(2=0) into LOAN_INFML.	
+count LOAN_FORMAL = fb16a_1 fb16a_2 fb16a_3(1).	
+recode LOAN_FORMAL (1 thru hi = 0)(else = 0).
+recode ifi20_2(1=1)(else=0) into LOAN_INFML.	
+
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
-recode FF14_10 (1=1)(2=0) into LOAN_BANK.
-recode MM15_10 (1=1)(2=0) into LOAN_MM.
-recode IFI10_6 (1 thru 6 = 1)(7=2) into LOAN_MFI.
-recode IFI11_6 (1 thru 6 = 1)(7=2) into LOAN_COOP.
+ * recode FF14_10 (1=1)(2=0) into LOAN_BANK.
+ * recode MM15_10 (1=1)(2=0) into LOAN_MM.
+compute LOAN_MFI=0.
+if (IFI10_6<7 or FB16A_3=1) LOAN_MFI=1.
+recode IFI11_6 (1 thru 6 = 1)(else=0) into LOAN_COOP.
 *IFI12_6 asks about SACCOs for African countries.
 numeric LOAN_GROUP.
 numeric LOAN_MLENDER.
 numeric LOAN_PAWN.
-recode IFI13_6 (1 thru 6 = 1)(7=2) into LOAN_POST.
-recode IFI12_6 (1 thru 6 = 1)(7=2) into LOAN_SACCO.
+recode IFI13_6 (1 thru 6 = 1)(else=0) into LOAN_POST.
+compute LOAN_SACCO=0.
+if (IFI12_6<7 or FB16A_4=1) LOAN_SACCO=1.
 *In the last 12 months.
-recode FB19_1 (1=1) (2=0) into LOAN_EMERGENCY.
-recode FB19_2 (1=1) (2=0) into LOAN_DAILY.
-recode FB19_3 (1=1) (2=0) into LOAN_BUSINESS.
-recode FB19_4 (1=1) (2=0) into LOAN_HOME.
+recode FB19_1 (1=1) (else=0) into LOAN_EMERGENCY.
+recode FB19_2 (1=1) (else=0) into LOAN_DAILY.
+recode FB19_3 (1=1) (else=0) into LOAN_BUSINESS.
+recode FB19_4 (1=1) (else=0) into LOAN_HOME.
 numeric LOAN_AGRIC.
 
 save outfile = "data/nga17.sav"
@@ -215,30 +246,34 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE pak17.
 
-count LOAN=FB13(2 THRU 4).
+ * count LOAN=FB13(2 THRU 4).
 count LOAN_CURRENT = FB16A_1 to FB16A_96 (1).
 recode LOAN_CURRENT (1 thru hi = 1) (else = 0).
 count LOAN_KNOW_INTEREST = FB17_1 to FB17_96 (lo thru 98 100 thru hi).
 recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
-numeric LOAN_FORMAL.
-recode ifi20_2(1=1)(2=0) into LOAN_INFML.	
+count LOAN_FORMAL = fb16a_1 fb16a_2 fb16a_3 fb16a_4(1).	
+recode LOAN_FORMAL (1 thru hi = 0)(else = 0).
+numeric LOAN_INFML.	
+
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
-recode FF14_10 (1=1)(2=0) into LOAN_BANK.
-recode MM15_10 (1=1)(2=0) into LOAN_MM.
-recode IFI10_6 (1 thru 6 = 1)(7=2) into LOAN_MFI.
-recode IFI11_6 (1 thru 6 = 1)(7=2) into LOAN_COOP.
-numeric LOAN_GROUP.
+ * recode FF14_10 (1=1)(2=0) into LOAN_BANK.
+ * recode MM15_10 (1=1)(2=0) into LOAN_MM.
+compute LOAN_MFI=0.
+if (IFI10_6<7 or FB16A_3=1) LOAN_MFI=1.
+recode IFI11_6 (1 thru 6 = 1)(else=0) into LOAN_COOP.
+compute LOAN_GROUP=0.
+if (IFI12_6<7 or FB16A_4=1) LOAN_GROUP=1.
 numeric LOAN_MLENDER.
 numeric LOAN_PAWN.
-recode IFI13_6 (1 thru 6 = 1)(7=2) into LOAN_POST.
+recode IFI13_6 (1 thru 6 = 1)(else=0) into LOAN_POST.
 numeric LOAN_SACCO.
 
 *In the last 12 months.
-recode FB19_1 (1=1) (2=0) into LOAN_EMERGENCY.
-recode FB19_2 (1=1) (2=0) into LOAN_DAILY.
-recode FB19_3 (1=1) (2=0) into LOAN_BUSINESS.
-recode FB19_4 (1=1) (2=0) into LOAN_HOME.
+recode FB19_1 (1=1) (else=0) into LOAN_EMERGENCY.
+recode FB19_2 (1=1) (else=0) into LOAN_DAILY.
+recode FB19_3 (1=1) (else=0) into LOAN_BUSINESS.
+recode FB19_4 (1=1) (else=0) into LOAN_HOME.
 numeric LOAN_AGRIC.
 
 save outfile = "data/pak17.sav"
@@ -249,29 +284,33 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE tza17.
 
-count LOAN=FB13(2 THRU 4).
+ * count LOAN=FB13(2 THRU 4).
 count LOAN_CURRENT = FB16A_1 to FB16A_96 (1).
 recode LOAN_CURRENT (1 thru hi = 1) (else = 0).
 count LOAN_KNOW_INTEREST = FB17_1 to FB17_96 (lo thru 98 100 thru hi).
 recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
-numeric LOAN_FORMAL.
-recode ifi20_2(1=1)(2=0) into LOAN_INFML.	
+count LOAN_FORMAL = fb16a_1 fb16a_2 fb16a_3 fb16a_4(1).	
+recode LOAN_FORMAL (1 thru hi = 0)(else = 0).
+recode ifi20_2(1=1)(else=0) into LOAN_INFML.	
+
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
-recode FF14_10 (1=1)(2=0) into LOAN_BANK.
-recode MM15_10 (1=1)(2=0) into LOAN_MM.
-recode IFI10_6 (1 thru 6 = 1)(7=2) into LOAN_MFI.
-recode IFI11_6 (1 thru 6 = 1)(7=2) into LOAN_COOP.
+ * recode FF14_10 (1=1)(2=0) into LOAN_BANK.
+ * recode MM15_10 (1=1)(2=0) into LOAN_MM.
+compute LOAN_MFI=0.
+if (IFI10_6<7 or fb16a_3=1) LOAN_MFI=1.
+recode IFI11_6 (1 thru 6 = 1)(else=0) into LOAN_COOP.
 numeric LOAN_MLENDER.
 numeric LOAN_PAWN.
 numeric LOAN_GROUP.
-recode IFI13_6 (1 thru 6 = 1)(7=2) into LOAN_POST.
-recode IFI12_6 (1 thru 6 = 1)(7=2) into LOAN_SACCO.
+recode IFI13_6 (1 thru 6 = 1)(else=0) into LOAN_POST.
+compute LOAN_SACCO=0.
+if (IFI12_6<7 or fb16a_4=1) LOAN_SACCO=1.
 *In the last 12 months.
-recode FB19_1 (1=1) (2=0) into LOAN_EMERGENCY.
-recode FB19_2 (1=1) (2=0) into LOAN_DAILY.
-recode FB19_3 (1=1) (2=0) into LOAN_BUSINESS.
-recode FB19_4 (1=1) (2=0) into LOAN_HOME.
+recode FB19_1 (1=1) (else=0) into LOAN_EMERGENCY.
+recode FB19_2 (1=1) (else=0) into LOAN_DAILY.
+recode FB19_3 (1=1) (else=0) into LOAN_BUSINESS.
+recode FB19_4 (1=1) (else=0) into LOAN_HOME.
 numeric LOAN_AGRIC.
 
 save outfile = "data/tza17.sav"
@@ -282,30 +321,34 @@ LOAN_EMERGENCY LOAN_DAILY LOAN_BUSINESS LOAN_HOME LOAN_AGRIC.
 
 DATASET ACTIVATE uga17.
 
-count LOAN=FB13(2 THRU 4).
+ * count LOAN=FB13(2 THRU 4).
 count LOAN_CURRENT = FB16A_1 to FB16A_96 (1).
 recode LOAN_CURRENT (1 thru hi = 1) (else = 0).
 count LOAN_KNOW_INTEREST = FB17_1 to FB17_96 (lo thru 98 100 thru hi).
 recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
-numeric LOAN_FORMAL.
-recode ifi20_2(1=1)(2=0) into LOAN_INFML.	
+count LOAN_FORMAL = fb16a_1 fb16a_2 fb16a_3 fb16a_4 fb16a_5(1).	
+recode LOAN_FORMAL (1 thru hi = 0)(else = 0).
+recode ifi20_2(1=1)(else=0) into LOAN_INFML.	
+
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
-recode FF14_10 (1=1)(2=0) into LOAN_BANK.
-recode MM15_10 (1=1)(2=0) into LOAN_MM.
-recode IFI10_6 (1 thru 6 = 1)(7=2) into LOAN_MFI.
-recode IFI11_6 (1 thru 6 = 1)(7=2) into LOAN_COOP.
+ * recode FF14_10 (1=1)(2=0) into LOAN_BANK.
+ * recode MM15_10 (1=1)(2=0) into LOAN_MM.
+compute LOAN_MFI=0.
+if (IFI10_6<7 or FB16A_3=1) LOAN_MFI=1.
+compute LOAN_COOP=0.
+if (IFI11_6<7 or FB16A_5=1) LOAN_COOP=1.
 numeric LOAN_MLENDER.
 numeric LOAN_PAWN.
 numeric LOAN_GROUP.
-recode IFI13_6 (1 thru 6 = 1)(7=2) into LOAN_POST.
-recode IFI12_6 (1 thru 6 = 1)(7=2) into LOAN_SACCO.
-
+recode IFI13_6 (1 thru 6 = 1)(else=0) into LOAN_POST.
+compute LOAN_SACCO=0.
+if (IFI12_6<7 or FB16A_4=1) LOAN_SACCO=1.
 *In the last 12 months.
-recode FB19_1 (1=1) (2=0) into LOAN_EMERGENCY.
-recode FB19_2 (1=1) (2=0) into LOAN_DAILY.
-recode FB19_3 (1=1) (2=0) into LOAN_BUSINESS.
-recode FB19_4 (1=1) (2=0) into LOAN_HOME.
+recode FB19_1 (1=1) (else=0) into LOAN_EMERGENCY.
+recode FB19_2 (1=1) (else=0) into LOAN_DAILY.
+recode FB19_3 (1=1) (else=0) into LOAN_BUSINESS.
+recode FB19_4 (1=1) (else=0) into LOAN_HOME.
 numeric LOAN_AGRIC.
 
 save outfile = "data/uga17.sav"
@@ -327,11 +370,11 @@ recode LOAN_KNOW_INTEREST (1 thru hi = 1) (else = 0).
 numeric LOAN_INFML.
 numeric LOAN_FORMAL.
 
-recode FB16_11 (1=1)(2=0) into LOAN_STORE.
+recode FB16_11 (1=1)(else=0) into LOAN_STORE.
 numeric LOAN_CREDITCARD.
-recode FB16_1 (1=1)(2=0) into LOAN_BANK.
-count LOAN_MM= MM15_15 FB16_2 (1).
-recode LOAN_MM (1 thru hi = 1) (else = 0).
+ * recode FB16_1 (1=1)(2=0) into LOAN_BANK.
+ * count LOAN_MM= MM15_15 FB16_2 (1).
+ * recode LOAN_MM (1 thru hi = 1) (else = 0).
 
 count LOAN_MFI = FB16_2 IFI10_15 (1).
 recode LOAN_MFI (1 thru hi = 1)(else = 0).
