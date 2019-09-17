@@ -949,8 +949,7 @@ recode SAVE_BANK (1 thru highest=1)(else=0).
 count SAVE_MM=mm15_18 to mm15_20 FB22_2 (1).
 recode SAVE_MM (1 thru highest=1)(else=0).
 
-compute SAVE_MFI=0. 
-if (IFI10_18=1 or IFI10_19=1 or IFI10_20=1) SAVE_MFI=1.
+compute SAVE_MFI. 
 compute SAVE_COOP = 0.
 if ifi11_18 = 1 or IFI11_19 = 1 or IFI11_20 = 1 SAVE_COOP = 1.
 numeric SAVE_GROUP.
