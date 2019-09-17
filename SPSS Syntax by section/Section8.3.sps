@@ -157,8 +157,6 @@ count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
 compute NBFI_LOAN=0.
 if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4) NBFI_LOAN=1.
-count NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 6).
-recode NBFI_LOAN (1 thru highest=1).
 numeric NBFI_AIRTIME.
 
 
