@@ -151,12 +151,12 @@ numeric NBFI_GOV.
 numeric NBFI_WAGE.
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
-count NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 6).
-recode NBFI_SAVE (1 thru highest=1).
+compute NBFI_SAVE=0.
+if IFI10_7<=6 or  IFI11_7<=6 or IFI12_7<=6 or IFI13_7<=6 or any(1, FB22_3, FB22_4) NBFI_SAVE=1.
 count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
-count NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 6).
-recode NBFI_LOAN (1 thru highest=1).
+compute NBFI_LOAN=0.
+if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4) NBFI_LOAN=1.
 numeric NBFI_AIRTIME.
 
 
@@ -183,36 +183,35 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2017.
-*Need double check.
+
 count NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2(1 thru 6).
 recode NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_MERCHANT.
-*Need double check.
+
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3(1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_GOV.
 numeric NBFI_WAGE.
-*Need double check.
+
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5(1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
-*Need double check.
-count NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7(1 thru 6).
-recode NBFI_SAVE (1 thru highest=1).
-*Need double check.
+
+compute NBFI_SAVE=0.
+if IFI10_7<=6 or  IFI11_7<=6 or IFI12_7<=6 or any(1, FB22_3, FB22_4, FB22_5) NBFI_SAVE=1.
+
 count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8(1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
-*Need double check.
-count NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6(1 thru 6).
-recode NBFI_LOAN (1 thru highest=1).
-*Need double check.
+
+compute NBFI_LOAN=0.
+if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or any(1, FB16A_2, FB16A_3, FB16A_5) NBFI_LOAN=1.
+
 numeric NBFI_AIRTIME.
 
-*Need double check.
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3(1 thru 4).
@@ -235,35 +234,34 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2017.
-*Need double check.
+
 count NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 6).
 recode NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_MERCHANT.
-*Need double check.
+
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_GOV.
 numeric NBFI_WAGE.
-*Need double check.
+
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
-*Need double check.
-count NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 6).
-recode NBFI_SAVE (1 thru highest=1).
-*Need double check.
+compute NBFI_SAVE=0.
+if IFI10_7<=6 or  IFI11_7<=6 or IFI12_7<=6 or IFI13_7<=6 or  any(1, FB22_3, FB22_4) NBFI_SAVE=1.
+
 count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
-*Need double check.
-count NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 6).
-recode NBFI_LOAN (1 thru highest=1).
-*Need double check.
+
+compute NBFI_LOAN=0.
+if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4) NBFI_LOAN=1.
+
 numeric NBFI_AIRTIME.
-*Need double check.
+
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
@@ -286,35 +284,34 @@ rename variables SbjNum=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2017.
-*Need double check.
+
 count NBFI_TRANSFER=IFI10_2 IFI11_2(1 thru 6).
 recode NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_MERCHANT.
-*Need double check.
+
 count NBFI_BILL=IFI10_3 IFI11_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_GOV.
 numeric NBFI_WAGE.
-*Need double check.
+
 count NBFI_INSURANCE=IFI10_5 IFI11_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
-*Need double check.
-count NBFI_SAVE=IFI10_7 IFI11_7 (1 thru 6).
-recode NBFI_SAVE (1 thru highest=1).
-*Need double check.
+compute NBFI_SAVE=0.
+if IFI10_7<=6 or  IFI11_7<=6 or FB22_4=1 NBFI_SAVE=1.
+
 count NBFI_INVEST=IFI10_8 IFI11_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
-*Need double check.
-count NBFI_LOAN=IFI10_6 IFI11_6 (1 thru 6).
-recode NBFI_LOAN (1 thru highest=1).
-*Need double check.
+
+compute NBFI_LOAN=0.
+if IFI10_6<=6 or  IFI11_6<=6 or FB16A_3=1 NBFI_LOAN=1.
+
 numeric NBFI_AIRTIME.
-*Need double check.
+
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 (1 thru 4).
@@ -337,35 +334,34 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2017.
-*Need double check.
+
 count NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 6).
 recode NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_MERCHANT.
-*Need double check.
+
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_GOV.
 numeric NBFI_WAGE.
-*Need double check.
+
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
-*Need double check.
-count NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 6).
-recode NBFI_SAVE (1 thru highest=1).
-*Need double check.
+
+compute NBFI_SAVE=0.
+if IFI10_7<=6 or  IFI11_7<=6 or IFI12_7<=6 or IFI13_7<=6 or any(1, FB22_3, FB22_4) NBFI_SAVE=1.
+
 count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
-*Need double check.
-count NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 6).
-recode NBFI_LOAN (1 thru highest=1).
-*Need double check.
+compute NBFI_LOAN=0.
+if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4) NBFI_LOAN=1.
+
 numeric NBFI_AIRTIME.
-*Need double check.
+
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
@@ -388,35 +384,33 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2017.
-*Need double check.
+
 count NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 6).
 recode NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_MERCHANT.
-*Need double check.
+
 count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_GOV.
 numeric NBFI_WAGE.
-*Need double check.
+
 count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
-*Need double check.
-count NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 6).
-recode NBFI_SAVE (1 thru highest=1).
-*Need double check.
+compute NBFI_SAVE=0.
+if IFI10_7<=6 or  IFI11_7<=6 or IFI12_7<=6 or IFI13_7<=6 or any(1, FB22_3, FB22_4) NBFI_SAVE=1.
+
 count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
-*Need double check.
-count NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 6).
-recode NBFI_LOAN (1 thru highest=1).
-*Need double check.
+compute NBFI_LOAN=0.
+if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4) NBFI_LOAN=1.
+
 numeric NBFI_AIRTIME.
-*Need double check.
+
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
@@ -439,36 +433,34 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2017.
-*Need double check.
-count NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 4).
+
+count NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 6).
 recode NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_MERCHANT.
-*Need double check.
-count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
+
+count NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 6).
 recode NBFI_BILL (1 thru highest=1).
-*Need double check.
+
 numeric NBFI_GOV.
 numeric NBFI_WAGE.
-*Need double check.
-count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 4).
+
+count NBFI_INSURANCE=IFI10_5 IFI11_5 IFI12_5 IFI13_5 (1 thru 6).
 recode NBFI_INSURANCE (1 thru highest=1).
-*Need double check.
-count NBFI_SAVE=IFI10_7 IFI11_7 IFI12_7 IFI13_7 (1 thru 4).
-recode NBFI_SAVE (1 thru highest=1).
-*Need double check.
-count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
+compute NBFI_SAVE=0.
+if IFI10_7<=6 or  IFI11_7<=6 or IFI12_7<=6 or IFI13_7<=6 or any(1, FB22_3, FB22_4) NBFI_SAVE=1.
+
+count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
-*Need double check.
-count NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
-recode NBFI_LOAN (1 thru highest=1).
-*Need double check.
+compute NBFI_LOAN=0.
+if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4, FB16A_5) NBFI_LOAN=1.
+
 numeric NBFI_AIRTIME.
 
-*Need double check.
+
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
-*Need double check.
+
 numeric ACTIVE_NBFI_MERCHANT.
 
 count ACTIVE_NBFI_BILL=IFI10_3 IFI11_3 IFI12_3 IFI13_3 (1 thru 4).
@@ -491,13 +483,13 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_9=1 or IFI10_10=1)
  or (IFI11_9=1 or IFI11_10=1)
  or (IFI12_9=1 or IFI12_10=1)
  or (IFI13_9=1 or IFI13_10=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1 or IFI13_20=1) NBFI_MERCHANT=1.
 
@@ -542,19 +534,18 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-
 **************************************************************************************************************************************************.
 *16India.
 rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2016.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_9=1 or IFI10_10=1)
  or (IFI11_9=1 or IFI11_10=1)
  or (IFI12_9=1 or IFI12_10=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1) NBFI_MERCHANT=1.
 
@@ -597,20 +588,19 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-
 **************************************************************************************************************************************************.
 *16Indonesia.
 rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2016.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_9=1 or IFI10_10=1)
  or (IFI11_9=1 or IFI11_10=1)
  or (IFI12_9=1 or IFI12_10=1)
  or (IFI13_9=1 or IFI13_10=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1 or IFI13_20=1) NBFI_MERCHANT=1.
 
@@ -628,7 +618,7 @@ IF(IFI10_12=1 or IFI11_12=1 or IFI12_12=1 or IFI13_12=1) NBFI_WAGE=1.
 
 compute NBFI_INSURANCE=0.
 IF(IFI10_14=1 or IFI11_14=1 or IFI12_14=1 or IFI13_14=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 IF ((IFI10_16=1 or IFI10_17=1 or IFI10_18=1 or FB16_3=1)
 or (IFI11_16=1 or IFI11_17=1 or IFI11_18=1 or FB16_4=1)
@@ -655,22 +645,19 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-
-
-
 **************************************************************************************************************************************************.
 *16Kenya.
 rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2016.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_9=1 or IFI10_10=1)
  or (IFI11_9=1 or IFI11_10=1)
  or (IFI12_9=1 or IFI12_10=1)
  or (IFI13_9=1 or IFI13_10=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1 or IFI13_20=1) NBFI_MERCHANT=1.
 
@@ -715,19 +702,17 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-
-
 **************************************************************************************************************************************************.
 *16Nigeria.
 rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2016.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_9=1 or IFI10_10=1)
  or (IFI11_9=1 or IFI11_10=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1) NBFI_MERCHANT=1.
 
@@ -768,21 +753,19 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-
-
 **************************************************************************************************************************************************.
 *16Pakistan.
 rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2016.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_9=1 or IFI10_10=1)
  or (IFI11_9=1 or IFI11_10=1)
  or (IFI12_9=1 or IFI12_10=1)
  or (IFI13_9=1 or IFI13_10=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1 or IFI13_20=1) NBFI_MERCHANT=1.
 
@@ -827,20 +810,19 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-
 **************************************************************************************************************************************************.
 *16Tanzania.
 rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2016.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_9=1 or IFI10_10=1)
  or (IFI11_9=1 or IFI11_10=1)
  or (IFI12_9=1 or IFI12_10=1)
  or (IFI13_9=1 or IFI13_10=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1 or IFI13_20=1) NBFI_MERCHANT=1.
 
@@ -891,13 +873,13 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2016.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_9=1 or IFI10_10=1)
  or (IFI11_9=1 or IFI11_10=1)
  or (IFI12_9=1 or IFI12_10=1)
  or (IFI13_9=1 or IFI13_10=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1 or IFI13_20=1) NBFI_MERCHANT=1.
 
@@ -942,48 +924,46 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-
-
 **************************************************************************************************************************************************.
 *15Bangladesh.
 rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2015.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_10=1 or IFI10_11=1)
  or (IFI11_10=1 or IFI11_11=1)
  or (IFI12_10=1 or IFI12_11=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
-IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1) NBFI_MERCHANT=1.
-*Need double check.
+IF (IFI10_20=1 or IFI11_20=1 or IFI12_20=1) NBFI_MERCHANT=1.
+
 compute NBFI_BILL=0.
 IF ((IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_25=1)
 or (IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1  or IFI11_25=1)
 or (IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1  or IFI12_25=1)) NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 IF(IFI10_12=1 or IFI11_12=1 or IFI12_12=1) NBFI_GOV=1.
-*Need double check.
+
 compute NBFI_WAGE=0.
 IF(IFI10_13=1 or IFI11_13=1 or IFI12_13=1) NBFI_WAGE=1.
-*Need double check.
+
 compute NBFI_INSURANCE=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 IF ((IFI10_17=1 or IFI10_18=1 or fb22_2=1)
 or (IFI11_17=1 or IFI11_18=1 or fb22_3=1)
 or (IFI12_17=1 or IFI12_18=1)) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1) NBFI_INVEST=1.
-*Need double check.
+
 compute NBFI_LOAN=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or fb16_2=1 or fb16_3=1) NBFI_LOAN=1.
-*Need double check.
+
 compute NBFI_AIRTIME=0.
 IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1) NBFI_AIRTIME=1.
 
@@ -998,47 +978,46 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 
-
 **************************************************************************************************************************************************.
 *15India.
 rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2015.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_10=1 or IFI10_11=1)
  or (IFI11_10=1 or IFI11_11=1)
  or (IFI12_10=1 or IFI12_11=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1) NBFI_MERCHANT=1.
-*Need double check.
+
 compute NBFI_BILL=0.
 IF ((IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_25=1)
 or (IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1  or IFI11_25=1)
 or (IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1  or IFI12_25=1)) NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 IF(IFI10_12=1 or IFI11_12=1 or IFI12_12=1) NBFI_GOV=1.
-*Need double check.
+
 compute NBFI_WAGE=0.
 IF(IFI10_13=1 or IFI11_13=1 or IFI12_13=1) NBFI_WAGE=1.
-*Need double check.
+
 compute NBFI_INSURANCE=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 IF ((IFI10_17=1 or IFI10_18=1 or fb22_2=1)
 or (IFI11_17=1 or IFI11_18=1 or fb22_3=1)
 or (IFI12_17=1 or IFI12_18=1 or fb22_9=1)) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1) NBFI_INVEST=1.
-*Need double check.
+
 compute NBFI_LOAN=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or fb16_2=1 or fb16_3=1 or fb16_6=1) NBFI_LOAN=1.
-*Need double check.
+
 compute NBFI_AIRTIME=0.
 IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1) NBFI_AIRTIME=1.
 
@@ -1059,43 +1038,43 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2015.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_11=1 or IFI10_12=1)
  or (IFI11_11=1 or IFI11_12=1)
  or (IFI12_11=1 or IFI12_12=1)
  or (IFI13_11=1 or IFI13_12=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_22=1 or IFI11_22=1 or IFI12_22=1 or IFI13_22=1) NBFI_MERCHANT=1.
-*Need double check.
+
 compute NBFI_BILL=0.
 IF ((IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_27=1)
 or (IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_27=1)
 or (IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_27=1)
 or (IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1)) NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 IF(IFI10_13=1 or IFI11_13=1 or IFI12_13=1 or IFI13_13=1) NBFI_GOV=1.
-*Need double check.
+
 compute NBFI_WAGE=0.
 IF(IFI10_14=1 or IFI11_14=1 or IFI12_14=1 or IFI13_14=1) NBFI_WAGE=1.
-*Need double check.
+
 compute NBFI_INSURANCE=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or IFI13_16=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 IF ((IFI10_18=1 or IFI10_19=1 or IFI10_20=1)
 or (IFI11_18=1 or IFI11_19=1 or IFI11_20=1)
 or (IFI12_18=1 or IFI12_19=1 or IFI12_20=1)
 or (IFI13_18=1 or IFI13_19=1 or IFI13_20=1)) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
-*Need double check.
+
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1 or fb16_4=1 or fb16_5=1 or fb16_6=1) NBFI_LOAN=1.
-*Need double check.
+
 compute NBFI_AIRTIME=0.
 IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
@@ -1116,43 +1095,43 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2015.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_11=1 or IFI10_12=1)
  or (IFI11_11=1 or IFI11_12=1)
  or (IFI12_11=1 or IFI12_12=1)
  or (IFI13_11=1 or IFI13_12=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_22=1 or IFI11_22=1 or IFI12_22=1 or IFI13_22=1) NBFI_MERCHANT=1.
-*Need double check.
+
 compute NBFI_BILL=0.
 IF ((IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_27=1)
 or (IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_27=1)
 or (IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_27=1)
 or (IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1)) NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 IF(IFI10_13=1 or IFI11_13=1 or IFI12_13=1 or IFI13_13=1) NBFI_GOV=1.
-*Need double check.
+
 compute NBFI_WAGE=0.
 IF(IFI10_14=1 or IFI11_14=1 or IFI12_14=1 or IFI13_14=1) NBFI_WAGE=1.
-*Need double check.
+
 compute NBFI_INSURANCE=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or IFI13_16=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 IF ((IFI10_18=1 or IFI10_19=1 or IFI10_20=1 or fb22_4=1)
 or (IFI11_18=1 or IFI11_19=1 or IFI11_20=1)
 or (IFI12_18=1 or IFI12_19=1 or IFI12_20=1 or fb22_3=1)
 or (IFI13_18=1 or IFI13_19=1 or IFI13_20=1)) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
-*Need double check.
+
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-*Need double check.
+
 compute NBFI_AIRTIME=0.
 IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
@@ -1173,37 +1152,36 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2015.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_11=1 or IFI10_12=1)
  or (IFI11_11=1 or IFI11_12=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_22=1 or IFI11_22=1) NBFI_MERCHANT=1.
-*Need double check.
+
 compute NBFI_BILL=0.
 IF ((IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_27=1)
-or (IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_27=1)) NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 IF(IFI10_13=1 or IFI11_13=1) NBFI_GOV=1.
-*Need double check.
+
 compute NBFI_WAGE=0.
 IF(IFI10_14=1 or IFI11_14=1) NBFI_WAGE=1.
-*Need double check.
+
 compute NBFI_INSURANCE=0.
 IF(IFI10_16=1 or IFI11_16=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 IF ((IFI10_18=1 or IFI10_19=1 or IFI10_20=1 or fb22_4=1)
 or (IFI11_18=1 or IFI11_19=1 or IFI11_20=1)) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
-*Need double check.
+
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1) NBFI_LOAN=1.
-*Need double check.
+
 compute NBFI_AIRTIME=0.
 IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
@@ -1228,35 +1206,35 @@ compute NBFI_TRANSFER=0.
 IF ((IFI10_10=1 or IFI10_11=1)
  or (IFI11_10=1 or IFI11_11=1)
  or (IFI12_10=1 or IFI12_11=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_20=1 or IFI11_20=1 or IFI12_20=1) NBFI_MERCHANT=1.
-*Need double check.
+
 compute NBFI_BILL=0.
 IF ((IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_25=1)
 or (IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1  or IFI11_25=1)
 or (IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1  or IFI12_25=1)) NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 IF(IFI10_12=1 or IFI11_12=1 or IFI12_12=1) NBFI_GOV=1.
-*Need double check.
+
 compute NBFI_WAGE=0.
 IF(IFI10_13=1 or IFI11_13=1 or IFI12_13=1) NBFI_WAGE=1.
-*Need double check.
+
 compute NBFI_INSURANCE=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 IF ((IFI10_17=1 or IFI10_18=1 or fb22_2=1)
 or (IFI11_17=1 or IFI11_18=1 or fb22_3=1)
 or (IFI12_17=1 or IFI12_18=1)) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1) NBFI_INVEST=1.
-*Need double check.
+
 compute NBFI_LOAN=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or fb16_2=1 or fb16_3=1) NBFI_LOAN=1.
-*Need double check.
+
 compute NBFI_AIRTIME=0.
 IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1) NBFI_AIRTIME=1.
 
@@ -1277,43 +1255,43 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2015.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_11=1 or IFI10_12=1)
  or (IFI11_11=1 or IFI11_12=1)
  or (IFI12_11=1 or IFI12_12=1)
  or (IFI13_11=1 or IFI13_12=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_22=1 or IFI11_22=1 or IFI12_22=1 or IFI13_22=1) NBFI_MERCHANT=1.
-*Need double check.
+
 compute NBFI_BILL=0.
 IF ((IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_27=1)
 or (IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_27=1)
 or (IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_27=1)
 or (IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1)) NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 IF(IFI10_13=1 or IFI11_13=1 or IFI12_13=1 or IFI13_13=1) NBFI_GOV=1.
-*Need double check.
+
 compute NBFI_WAGE=0.
 IF(IFI10_14=1 or IFI11_14=1 or IFI12_14=1 or IFI13_14=1) NBFI_WAGE=1.
-*Need double check.
+
 compute NBFI_INSURANCE=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or IFI13_16=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 IF ((IFI10_18=1 or IFI10_19=1 or IFI10_20=1 or fb22_4=1)
 or (IFI11_18=1 or IFI11_19=1 or IFI11_20=1)
 or (IFI12_18=1 or IFI12_19=1 or IFI12_20=1 or fb22_3=1)
 or (IFI13_18=1 or IFI13_19=1 or IFI13_20=1)) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
-*Need double check.
+
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-*Need double check.
+
 compute NBFI_AIRTIME=0.
 IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
@@ -1334,43 +1312,43 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2015.
-*Need double check.
+
 compute NBFI_TRANSFER=0.
 IF ((IFI10_11=1 or IFI10_12=1)
  or (IFI11_11=1 or IFI11_12=1)
  or (IFI12_11=1 or IFI12_12=1)
  or (IFI13_11=1 or IFI13_12=1)) NBFI_TRANSFER=1.
-*Need double check.
+
 compute NBFI_MERCHANT=0.
 IF(IFI10_22=1 or IFI11_22=1 or IFI12_22=1 or IFI13_22=1) NBFI_MERCHANT=1.
-*Need double check.
+
 compute NBFI_BILL=0.
 IF ((IFI10_4=1 or IFI10_5=1 or IFI10_6=1 or IFI10_7=1 or IFI10_8=1 or IFI10_9=1 or IFI10_10=1 or IFI10_27=1)
 or (IFI11_4=1 or IFI11_5=1 or IFI11_6=1 or IFI11_7=1 or IFI11_8=1 or IFI11_9=1 or IFI11_10=1 or IFI11_27=1)
 or (IFI12_4=1 or IFI12_5=1 or IFI12_6=1 or IFI12_7=1 or IFI12_8=1 or IFI12_9=1 or IFI12_10=1 or IFI12_27=1)
 or (IFI13_4=1 or IFI13_5=1 or IFI13_6=1 or IFI13_7=1 or IFI13_8=1 or IFI13_9=1 or IFI13_10=1 or IFI13_27=1)) NBFI_BILL=1.
-*Need double check.
+
 compute NBFI_GOV=0.
 IF(IFI10_13=1 or IFI11_13=1 or IFI12_13=1 or IFI13_13=1) NBFI_GOV=1.
-*Need double check.
+
 compute NBFI_WAGE=0.
 IF(IFI10_14=1 or IFI11_14=1 or IFI12_14=1 or IFI13_14=1) NBFI_WAGE=1.
-*Need double check.
+
 compute NBFI_INSURANCE=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or IFI13_16=1) NBFI_INSURANCE=1.
-*Need double check.
+
 compute NBFI_SAVE=0.
 IF ((IFI10_18=1 or IFI10_19=1 or IFI10_20=1 or fb22_4=1)
 or (IFI11_18=1 or IFI11_19=1 or IFI11_20=1)
 or (IFI12_18=1 or IFI12_19=1 or IFI12_20=1 or fb22_3=1)
 or (IFI13_18=1 or IFI13_19=1 or IFI13_20=1)) NBFI_SAVE=1.
-*Need double check.
+
 compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
-*Need double check.
+
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-*Need double check.
+
 compute NBFI_AIRTIME=0.
 IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
