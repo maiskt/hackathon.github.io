@@ -98,6 +98,7 @@ compute INVEST_OTHER = 0.
 if fb29_2=1 or fb29_3=1 or fb29_4=1 or fb29_5=1 or fb29_6=1  invest_other=1.
 
 count INVEST_INFORMAL=IFI20_7 IFI20_8(1).
+RECODE INVEST_INFORMAL(1 THRU HIGHEST=1).
 
 count INVEST_INSURANCE=FB27_1 to FB27_10 FB29_1 to FB29_6(1).
 recode  INVEST_INSURANCE (1 THRU HIGHEST=1).
@@ -363,13 +364,13 @@ save outfile = "data/uga16.sav"
 *From here, INVEST_INFORMAL could be calculated, but with different variables than more recent surveys.
 DATASET ACTIVATE bng15.
 
-count INVEST FB28_1 to FB28_7(1).
+count INVEST=FB28_1 to FB28_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN = 0.
 if fb28_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FB28_2 to FB28_7(1).
+count INVEST_OTHER=FB28_2 to FB28_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.
@@ -383,13 +384,13 @@ save outfile = "data/bng15.sav"
 
 DATASET ACTIVATE ind15.
 
-count INVEST FB28_1 to FB28_7(1).
+count INVEST=FB28_1 to FB28_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN =  0.
 if fb28_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FB28_2 to FB28_7(1).
+count INVEST_OTHER=FB28_2 to FB28_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 count INVEST_INFORMAL=IFI21_6 IFI21_7(1).
@@ -404,19 +405,19 @@ save outfile = "data/ind15.sav"
 
 DATASET ACTIVATE ida15.
 
-count INVEST FB28_1 to FB28_7(1).
+count INVEST=FB28_1 to FB28_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN =  0.
 if fb28_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FB28_2 to FB28_7(1).
+count INVEST_OTHER=FB28_2 to FB28_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 count INVEST_INFORMAL=IFI21_6 IFI21_7(1).
 recode INVEST_INFORMAL (1 thru highest = 1).
 
-count INVEST_INSURANCE=FB26_1 to FB26_9 FB28_1 to FB28_7(1).
+count INVEST_INSURANCE=FB26_1 to FB26_8 FB28_1 to FB28_7(1).
 recode  INVEST_INSURANCE (1 THRU HIGHEST=1).
 
 save outfile = "data/ida15.sav"
@@ -425,13 +426,13 @@ save outfile = "data/ida15.sav"
 
 DATASET ACTIVATE ken15.
 
-count INVEST FB29_1 to FB29_7(1).
+count INVEST=FB29_1 to FB29_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN =  0.
 if fb29_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FB29_2 to FB29_7(1).
+count INVEST_OTHER=FB29_2 to FB29_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 count INVEST_INFORMAL=IFI20_6 IFI20_7(1).
@@ -446,13 +447,13 @@ save outfile = "data/ken15.sav"
 
 DATASET ACTIVATE nga15.
 
-count INVEST FB29_1 to FB29_7(1).
+count INVEST=FB29_1 to FB29_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN =  0.
 if fb29_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FB29_2 to FB29_7(1).
+count INVEST_OTHER=FB29_2 to FB29_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 count INVEST_INFORMAL=IFI20_6 IFI20_7(1).
@@ -467,13 +468,13 @@ save outfile = "data/nga15.sav"
 
 DATASET ACTIVATE pak15.
 
-count INVEST FB28_1 to FB28_7(1).
+count INVEST=FB28_1 to FB28_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN =  0.
 if fb28_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FB28_2 to FB28_7(1).
+count INVEST_OTHER=FB28_2 to FB28_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.
@@ -487,13 +488,13 @@ save outfile = "data/pak15.sav"
 
 DATASET ACTIVATE tza15.
 
-count INVEST FB29_1 to FB29_7(1).
+count INVEST=FB29_1 to FB29_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN =  0.
 if fb29_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FB29_2 to FB29_7(1).
+count INVEST_OTHER=FB29_2 to FB29_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 count INVEST_INFORMAL=IFI20_6 IFI20_7(1).
@@ -508,13 +509,13 @@ save outfile = "data/tza15.sav"
 
 DATASET ACTIVATE uga15.
 
-count INVEST FB29_1 to FB29_7(1).
+count INVEST=FB29_1 to FB29_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN =  0.
 if fb29_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FB29_2 to FB29_7(1).
+count INVEST_OTHER=FB29_2 to FB29_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 count INVEST_INFORMAL=IFI20_6 IFI20_7(1).
@@ -531,13 +532,13 @@ save outfile = "data/uga15.sav"
 
 DATASET ACTIVATE bng14.
 
-count INVEST FL18_1 to FL18_7(1).
+count INVEST=FL18_1 to FL18_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN = 0.
 IF FL18_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FL18_2 to FL18_7 (1).
+count INVEST_OTHER=FL18_2 to FL18_7 (1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.
@@ -551,13 +552,13 @@ save outfile = "data/bng14.sav"
 
 DATASET ACTIVATE ind14.
 
-count INVEST FL19_1 to FL19_7(1).
+count INVEST=FL19_1 to FL19_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN = 0.
 IF FL19_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FL19_2 to FL19_7(1).
+count INVEST_OTHER=FL19_2 to FL19_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.
@@ -571,13 +572,13 @@ save outfile = "data/ind14.sav"
 
 DATASET ACTIVATE ida14.
 
-count INVEST FL18_1 to FL18_7(1).
+count INVEST=FL18_1 to FL18_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN = 0.
 if FL18_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FL18_2 to FL18_7(1).
+count INVEST_OTHER=FL18_2 to FL18_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.
@@ -591,13 +592,13 @@ save outfile = "data/ida14.sav"
 
 DATASET ACTIVATE ken14.
 
-count INVEST FL18_1 to FL18_8 (1).
+count INVEST=FL18_1 to FL18_8 (1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN = 0.
 if FL18_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FL18_2 to FL18_8 (1).
+count INVEST_OTHER=FL18_2 to FL18_8 (1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.
@@ -611,13 +612,13 @@ save outfile = "data/ken14.sav"
 
 DATASET ACTIVATE nga14.
 
-count INVEST FL18_1 to FL18_7(1).
+count INVEST=FL18_1 to FL18_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN = 0.
 if FL18_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FL18_2 to FL18_7(1).
+count INVEST_OTHER=FL18_2 to FL18_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.
@@ -631,13 +632,13 @@ save outfile = "data/nga14.sav"
 
 DATASET ACTIVATE pak14.
 
-count INVEST FL18_1 to FL18_7(1).
+count INVEST=FL18_1 to FL18_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN = 0.
 if FL18_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FL18_2 to FL18_7(1).
+count INVEST_OTHER=FL18_2 to FL18_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.
@@ -651,13 +652,13 @@ save outfile = "data/pak14.sav"
 
 DATASET ACTIVATE tza14.
 
-count INVEST FL18_1 to FL18_7(1).
+count INVEST=FL18_1 to FL18_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN = 0.
 if FL18_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FL18_2 to FL18_7(1).
+count INVEST_OTHER=FL18_2 to FL18_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.
@@ -671,13 +672,13 @@ save outfile = "data/tza14.sav"
 
 DATASET ACTIVATE uga14.
 
-count INVEST FL18_1 to FL18_7(1).
+count INVEST=FL18_1 to FL18_7(1).
 recode INVEST (1 thru highest = 1).
 
 compute INVEST_OWN = 0.
 if FL18_1 = 1 INVEST_OWN = 1.
 
-count INVEST_OTHER FL18_2 to FL18_7(1).
+count INVEST_OTHER=FL18_2 to FL18_7(1).
 recode INVEST_OTHER (1 thru highest = 1).
 
 numeric INVEST_INFORMAL.

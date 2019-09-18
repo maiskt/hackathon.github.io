@@ -11,26 +11,19 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 IF FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 IF FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 IF FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 IF FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 IF FB27_5 = 1 INSUR_PROPERTY = 1.
-
 NUMERIC INSUR_UNEMPLOY.
 NUMERIC INSUR_DISABLE.
 NUMERIC INSUR_OLDAGE.
-
 compute INSUR_LIVESTOCK = 0.
 IF FB27_6 = 1 INSUR_LIVESTOCK = 1.
-
 compute INSUR_FAMILY = 0.
 IF FB27_7 = 1 INSUR_FAMILY = 1.
 
@@ -45,31 +38,22 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 compute INSUR_DISABLE = 0.
 if FB27_7 = 1 INSUR_DISABLE = 1.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 compute INSUR_LIVESTOCK = 0.
 if FB27_9 = 1 INSUR_LIVESTOCK = 1.
-
 compute INSUR_FAMILY = 0.
 if FB27_10 = 1 INSUR_FAMILY = 1.
 
@@ -85,26 +69,19 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 numeric INSUR_UNEMPLOY.
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
-
 compute INSUR_LIVESTOCK = 0.
 if FB27_6 = 1 INSUR_LIVESTOCK = 1.
-
 compute INSUR_FAMILY = 0.
 if FB27_7 = 1 INSUR_FAMILY = 1.
 
@@ -119,30 +96,21 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_7 = 1 INSUR_OLDAGE = 1.
-
 compute INSUR_LIVESTOCK = 0.
 if FB27_8 = 1 INSUR_LIVESTOCK = 1.
-
 compute INSUR_FAMILY = 0.
 if FB27_9 = 1 INSUR_FAMILY = 1.
 
@@ -157,29 +125,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 or FB27_10=1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/ken17.sav"
@@ -193,27 +152,19 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 or FB27_9= 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
 numeric INSUR_FAMILY.
 
@@ -228,29 +179,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-*EOBI.
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 or FB27_9 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 compute INSUR_FAMILY = 0.
 if FB27_10 = 1 INSUR_FAMILY = 1.
 
@@ -265,29 +207,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 or FB27_10= 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/tza17.sav"
@@ -301,29 +234,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 or FB27_10= 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/uga17.sav"
@@ -338,26 +262,19 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 numeric INSUR_UNEMPLOY.
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
-
 compute INSUR_LIVESTOCK = 0.
 if FB27_6 = 1 INSUR_LIVESTOCK = 1.
-
 compute INSUR_FAMILY = 0.
 if FB27_7 = 1 INSUR_FAMILY = 1.
 
@@ -372,30 +289,21 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_7 = 1 INSUR_OLDAGE = 1.
-
 compute INSUR_LIVESTOCK = 0.
 if FB27_8 = 1 INSUR_LIVESTOCK = 1.
-
 compute INSUR_FAMILY = 0.
 if FB27_9 = 1 INSUR_FAMILY = 1.
 
@@ -410,28 +318,19 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 numeric INSUR_UNEMPLOY.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_7 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/ida16.sav"
@@ -445,29 +344,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 or FB27_10= 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/ken16.sav"
@@ -481,29 +371,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 or FB27_9= 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/nga16.sav"
@@ -517,29 +398,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 compute INSUR_FAMILY = 0.
 if FB27_10 = 1 INSUR_FAMILY = 1.
 
@@ -554,29 +426,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/tza16.sav"
@@ -590,29 +453,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/uga16.sav"
@@ -627,27 +481,19 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB26_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB26_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB26_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB26_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB26_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB26_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB26_7 = 1 INSUR_OLDAGE = 1.
-
 compute INSUR_LIVESTOCK = 0.
 if FB26_8 = 1 INSUR_LIVESTOCK = 1.
 
@@ -664,30 +510,21 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB26_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB26_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB26_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB26_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB26_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB26_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB26_7 = 1 INSUR_OLDAGE = 1.
-
 compute INSUR_LIVESTOCK = 0.
 if FB26_8 = 1 INSUR_LIVESTOCK = 1.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/ind15.sav"
@@ -701,28 +538,19 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB26_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB26_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB26_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB26_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB26_5 = 1 INSUR_PROPERTY = 1.
-
 numeric INSUR_UNEMPLOY.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB26_7 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/ida15.sav"
@@ -736,29 +564,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if  FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/ken15.sav"
@@ -772,29 +591,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if  FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 
@@ -809,30 +619,21 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if fb26_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if fb26_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if fb26_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if fb26_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if fb26_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if fb26_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if fb26_7 = 1 INSUR_OLDAGE = 1.
-
 compute INSUR_LIVESTOCK = 0.
 if fb26_8 = 1 INSUR_LIVESTOCK = 1.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/pak15.sav"
@@ -846,29 +647,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FB27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FB27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FB27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FB27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FB27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FB27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if FB27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/tza15.sav"
@@ -882,29 +674,20 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if fb27_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if fb27_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if fb27_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if fb27_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if fb27_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if fb27_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
-
 compute INSUR_OLDAGE = 0.
 if fb27_8 = 1 INSUR_OLDAGE = 1.
-
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/uga15.sav"
@@ -920,22 +703,16 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FL17_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FL17_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FL17_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FL17_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FL17_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FL17_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
 numeric INSUR_LIVESTOCK.
@@ -952,22 +729,16 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FL18_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FL18_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FL18_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FL18_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FL18_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FL18_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
 numeric INSUR_LIVESTOCK.
@@ -984,22 +755,16 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FL17_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FL17_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FL17_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FL17_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FL17_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FL17_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
 numeric INSUR_LIVESTOCK.
@@ -1017,22 +782,16 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 *two options.
 compute INSUR_MEDICAL = 0.
 if FL17_1 = 1 or FL17_2 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FL17_3 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FL17_4 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FL17_6 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FL17_7 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FL17_8 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
 numeric INSUR_LIVESTOCK.
@@ -1049,22 +808,16 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FL17_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FL17_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FL17_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FL17_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FL17_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FL17_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
 numeric INSUR_LIVESTOCK.
@@ -1081,22 +834,16 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if fl17_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if fl17_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if fl17_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if fl17_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if fl17_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if fl17_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
 numeric INSUR_LIVESTOCK.
@@ -1113,22 +860,16 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FL17_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FL17_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FL17_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FL17_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FL17_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FL17_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
 numeric INSUR_LIVESTOCK.
@@ -1145,22 +886,16 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if FL17_1 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if FL17_2 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if FL17_3 = 1 INSUR_CAR = 1.
-
 compute INSUR_CROP = 0.
 if FL17_4 = 1 INSUR_CROP = 1.
-
 compute INSUR_PROPERTY = 0.
 if FL17_5 = 1 INSUR_PROPERTY = 1.
-
 compute INSUR_UNEMPLOY = 0.
 if FL17_6 = 1 INSUR_UNEMPLOY = 1.
-
 numeric INSUR_DISABLE.
 numeric INSUR_OLDAGE.
 numeric INSUR_LIVESTOCK.
@@ -1178,29 +913,18 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if II1_2 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if II1_1 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if II1_5 = 1 INSUR_CAR = 1.
-
 numeric INSUR_CROP.
-
 compute INSUR_PROPERTY = 0.
 if II1_3 = 1 INSUR_PROPERTY = 1.
-
-*Welfare group.
 numeric INSUR_UNEMPLOY.
-
 compute INSUR_DISABLE = 0.
 if II1_11 = 1 INSUR_DISABLE = 1.
-
 numeric INSUR_OLDAGE.
-
-*crop+livestock combined.
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/bng13.sav"
@@ -1226,8 +950,6 @@ save outfile = "data/ind13.sav"
 
 
 DATASET ACTIVATE ken13.
-
-
 *NP7_ P & Q?.
 numeric INSURANCE.
 numeric INSUR_MEDICAL.
@@ -1252,27 +974,18 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if II1_2 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if II1_1 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if II1_5 = 1 INSUR_CAR = 1.
-
 numeric INSUR_CROP.
-
 compute INSUR_PROPERTY = 0.
 if II1_3 = 1 INSUR_PROPERTY = 1.
-
 numeric INSUR_UNEMPLOY.
-
 compute INSUR_DISABLE = 0.
 if II1_11 = 1 INSUR_DISABLE = 1.
-
 numeric INSUR_OLDAGE.
-*Ag.
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/nga13.sav"
@@ -1285,27 +998,18 @@ recode INSURANCE (1 thru highest = 1)(else = 0).
 
 compute INSUR_MEDICAL = 0.
 if II1_2 = 1 INSUR_MEDICAL = 1.
-
 compute INSUR_LIFE = 0.
 if II1_1 = 1 INSUR_LIFE = 1.
-
 compute INSUR_CAR = 0.
 if II1_5 = 1 INSUR_CAR = 1.
-
 numeric INSUR_CROP.
-
 compute INSUR_PROPERTY = 0.
 if II1_3 = 1 INSUR_PROPERTY = 1.
-
 numeric INSUR_UNEMPLOY.
-
 compute INSUR_DISABLE = 0.
 if II1_11 = 1 INSUR_DISABLE = 1.
-
 numeric INSUR_OLDAGE.
-*Ag.
 numeric INSUR_LIVESTOCK.
-
 numeric INSUR_FAMILY.
 
 save outfile = "data/pak13.sav"
