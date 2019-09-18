@@ -2665,3 +2665,51 @@ save outfile = "data/uga13.sav"
  REG_MM_BASIC REG_MM_ADV ACTIVE_MM_BASIC ACTIVE_MM_ADV ACTIVE30_MM_ADV LENGTH_MM MM_STAGE .
 
 dataset close all.
+
+*Labels.
+variable labels
+AWARE_MM	"Aware of mobile money service"
+AWARE_MM_PROVIDER	"Aware of at least one of the mobile money providers"
+AWARE_NONUSER_MM	"Aware mobile money providers but never used any"
+ACCESS_MM	"Ever used mobile money service"
+REGISTERED_MM	"Have a mobile money account"
+ACTIVE_MM	"Used registered mobile money accounts in past 90 days"
+ACTIVE30_MM	"Used own mobile money accounts in past 30 days"
+INACTIVE_MM	"Mobile money account owner who haven't used any mobile money services in past 90 days"
+DORMANT_MM	"Mobile money account owner who never used any mobile money services"
+OTC_MM	"Nonregistered users of mobile money"
+MM_BASIC	"Ever used mobile money to do basic activities"
+MM_ADV	"Ever used mobile money to do advanced activities"
+REG_MM_BASIC	"Conduct basic activity thru own mobile money account"
+REG_MM_ADV	"Conduct advanced activity thru own mobile money account"
+ACTIVE_MM_BASIC	"Used own mobile money account in past 90 days and have used at least one basic financial service"
+ACTIVE_MM_ADV	"Used own mobile money account in past 90 days and have used at least one advanced financial service"
+ACTIVE30_MM_ADV	"Used own mobile money account in past 30 days and have used at least one advanced financial service"
+LENGTH_MM	"Length of time using mobile money services"
+MM_STAGE	"Customer journey segmentation of mobile money".
+
+value labels AWARE_MM 1"Yes" 0"No".
+value labels AWARE_MM_PROVIDER 1"Yes" 0"No".
+value labels AWARE_NONUSER_MM 1"Yes" 0"No".
+value labels ACCESS_MM 1"Yes" 0"No".
+value labels REGISTERED_MM 1"Yes" 0"No".
+value labels ACTIVE_MM 1"Yes" 0"No".
+value labels ACTIVE30_MM 1"Yes" 0"No".
+value labels INACTIVE_MM 1"Yes" 0"No".
+value labels DORMANT_MM 1"Yes" 0"No".
+value labels OTC_MM 1"Yes" 0"No".
+value labels MM_BASIC 1"Yes" 0"No".
+value labels MM_ADV 1"Yes" 0"No".
+value labels REG_MM_BASIC 1"Yes" 0"No".
+value labels REG_MM_ADV 1"Yes" 0"No".
+value labels ACTIVE_MM_BASIC 1"Yes" 0"No".
+value labels ACTIVE_MM_ADV 1"Yes" 0"No".
+value labels ACTIVE30_MM_ADV 1"Yes" 0"No".
+value labels LENGTH_MM 1"0-6 months" 2"6-12 months" 3"Greater than 12 months".
+value labels MM_STAGE 0"Mobile money nonuser"
+1"Unregistered mobile money user"
+2"Inactive registered mobile money user"
+3"Active mobile money basic user"
+4"Active mobile money advanced user".
+
+
