@@ -8,6 +8,8 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2018.
 
+DATASET ACTIVATE bng18.
+
 compute ACCESS_MFI=0.
 if (FN3_1=1 and (FN3_4=1 or FN3_5=1 or FN3_6=1 or FN3_7=1)) ACCESS_MFI=1.
 
@@ -64,6 +66,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2018.
+
+DATASET ACTIVATE ind18.
 
 compute ACCESS_MFI=0.
 if FN5_1=1 ACCESS_MFI=1.
@@ -125,6 +129,8 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2017.
 
+DATASET ACTIVATE bng17.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -182,6 +188,8 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2017.
 
+DATASET ACTIVATE ind17.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -233,6 +241,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2017.
+
+DATASET ACTIVATE ken17.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -291,6 +301,8 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2017.
 
+DATASET ACTIVATE nga17.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -347,6 +359,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2017.
+
+DATASET ACTIVATE pak17.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -406,6 +420,8 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2017.
 
+DATASET ACTIVATE tza17.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -462,6 +478,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2017.
+
+DATASET ACTIVATE uga17.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -520,6 +538,8 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
 
+DATASET ACTIVATE bng16.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -577,6 +597,8 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2016.
 
+DATASET ACTIVATE ind16.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -628,6 +650,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2016.
+
+DATASET ACTIVATE ida16.
 
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
@@ -688,6 +712,8 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2016.
 
+DATASET ACTIVATE ken16.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -744,6 +770,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2016.
+
+DATASET ACTIVATE nga16.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -802,6 +830,8 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2016.
 
+DATASET ACTIVATE pak16.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -858,6 +888,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2016.
+
+DATASET ACTIVATE tza16.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -916,6 +948,8 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2016.
 
+DATASET ACTIVATE uga16.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -972,6 +1006,8 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2015.
+
+DATASET ACTIVATE bng15.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -1030,6 +1066,8 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2015.
 
+DATASET ACTIVATE ind15.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -1081,6 +1119,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2015.
+
+DATASET ACTIVATE ida15.
 
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
@@ -1141,6 +1181,8 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2015.
 
+DATASET ACTIVATE ken15.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -1197,6 +1239,8 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2015.
+
+DATASET ACTIVATE nga15.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -1255,6 +1299,8 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2015.
 
+DATASET ACTIVATE pak15.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -1307,6 +1353,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2015.
+
+DATASET ACTIVATE tza15.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -1365,6 +1413,8 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2015.
 
+DATASET ACTIVATE uga15.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -1421,6 +1471,8 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2014.
+
+DATASET ACTIVATE bng14.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -1479,6 +1531,8 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2014.
 
+DATASET ACTIVATE ind14.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -1531,6 +1585,8 @@ rename variables ID=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2014.
+
+DATASET ACTIVATE ida14.
 
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
@@ -1591,6 +1647,8 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2014.
 
+DATASET ACTIVATE ken14.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -1648,6 +1706,8 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2014.
 
+DATASET ACTIVATE nga14.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -1698,6 +1758,8 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2014.
+
+DATASET ACTIVATE pak14.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -1757,6 +1819,8 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2014.
 
+DATASET ACTIVATE tza14.
+
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
 
@@ -1813,6 +1877,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2014.
+
+DATASET ACTIVATE uga14.
 
 compute ACCESS_MFI=0.
 if (IFI1_1=1 and IFI5_1=1) ACCESS_MFI=1.
@@ -1871,6 +1937,8 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2013.
 
+DATASET ACTIVATE bng13.
+
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
 numeric ACTIVE_MFI.
@@ -1905,6 +1973,8 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2013.
 
+DATASET ACTIVATE ind13.
+
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
 numeric ACTIVE_MFI.
@@ -1937,6 +2007,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2013.
+
+DATASET ACTIVATE ken13.
 
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
@@ -1971,6 +2043,8 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2013.
 
+DATASET ACTIVATE nga13.
+
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
 numeric ACTIVE_MFI.
@@ -2003,6 +2077,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2013.
+
+DATASET ACTIVATE pak13.
 
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
@@ -2037,6 +2113,8 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2013.
 
+DATASET ACTIVATE tza13.
+
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
 numeric ACTIVE_MFI.
@@ -2069,6 +2147,9 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2013.
+
+DATASET ACTIVATE uga13.
+
 numeric ACCESS_MFI.
 numeric REGISTERED_MFI.
 numeric ACTIVE_MFI.
