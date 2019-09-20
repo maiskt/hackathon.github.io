@@ -8,6 +8,8 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2018.
 
+DATASET ACTIVATE bng18.
+
 recode MM6_1 (sysmis=-2) (else=copy) into ACTION_MM1.
 recode MM6_2 (sysmis=-2) (else=copy) into ACTION_MM2.
 recode MM6_3 (sysmis=-2) (else=copy) into ACTION_MM3.
@@ -38,6 +40,8 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2018.
 
+DATASET ACTIVATE ind18.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -63,6 +67,8 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2017.
 
+DATASET ACTIVATE bng17.
+
 recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
 recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
 recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
@@ -87,6 +93,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2017.
+
+DATASET ACTIVATE ind17.
 
 recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
 recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
@@ -115,6 +123,8 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2017.
 
+DATASET ACTIVATE ken17.
+
 recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
 recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
 recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
@@ -130,9 +140,9 @@ numeric OPN_MM5.
 numeric OPN_MM6.
 
 numeric AWARE_MMP.
-count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10
-                                   mmp1_11 mmp1_12 mmp1_13 mmp1_14 mmp1_15 mmp1_16 mmp1_17 mmp1_18(1).
-recode ACCESS_MMP(1 thru highest=1).
+count ACCESS_MMP=mmp1_1 mmp1_2 mmp1_4 mmp1_5 mmp1_6 mmp1_8 mmp1_9 mmp1_10
+                                   mmp1_11 mmp1_13 mmp1_14 mmp1_15 mmp1_16 mmp1_17 mmp1_18(1).
+recode ACCESS_MMP(1 thru highest=1). 
 numeric REGISTERED_MMP.
 
 **************************************************************************************************************************************************.
@@ -141,6 +151,8 @@ rename variables SbjNum=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2017.
+
+DATASET ACTIVATE nga17.
 
 recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
 recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
@@ -167,6 +179,8 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2017.
 
+DATASET ACTIVATE pak17.
+
 recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
 recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
 recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
@@ -191,6 +205,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2017.
+
+DATASET ACTIVATE tza17.
 
 recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
 recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
@@ -217,6 +233,8 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2017.
 
+DATASET ACTIVATE uga17.
+
 recode MM32_1 (sysmis=-2) (else=copy) into ACTION_MM1.
 recode MM32_2 (sysmis=-2) (else=copy) into ACTION_MM2.
 recode MM32_4 (sysmis=-2) (else=copy) into ACTION_MM3.
@@ -242,6 +260,8 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2016.
 
+DATASET ACTIVATE bng16.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
@@ -266,6 +286,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2016.
+
+DATASET ACTIVATE ind16.
 
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
@@ -296,6 +318,8 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2016.
 
+DATASET ACTIVATE ida16.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
@@ -323,6 +347,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2016.
+
+DATASET ACTIVATE ken16.
 
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
@@ -353,6 +379,8 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2016.
 
+DATASET ACTIVATE nga16.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
@@ -379,6 +407,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2016.
+
+DATASET ACTIVATE pak16.
 
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
@@ -407,6 +437,8 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2016.
 
+DATASET ACTIVATE tza16.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM3.
@@ -433,6 +465,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2016.
+
+DATASET ACTIVATE uga16.
 
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(99,SYSMIS=-2) into ACTION_MM2.
@@ -461,6 +495,8 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2015.
 
+DATASET ACTIVATE bng15.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
@@ -488,12 +524,14 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2015.
 
-recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
-recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
-recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
+DATASET ACTIVATE ind15.
+
+recode mm32_1(4=1)(3=2)(2=4)(1=5)(9,SYSMIS=-2) into ACTION_MM1.
+recode mm32_2(4=1)(3=2)(2=4)(1=5)(9,SYSMIS=-2) into ACTION_MM2.
+recode mm32_4(4=1)(3=2)(2=4)(1=5)(9,SYSMIS=-2) into ACTION_MM3.
 numeric ACTION_MM4.
-recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
-recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6. 
+recode mm32_6(4=1)(3=2)(2=4)(1=5)(9,SYSMIS=-2) into ACTION_MM5.
+recode mm32_7(4=1)(3=2)(2=4)(1=5)(9,SYSMIS=-2) into ACTION_MM6. 
 
 recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
 recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
@@ -517,6 +555,8 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2015.
 
+DATASET ACTIVATE ida15.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
@@ -524,12 +564,12 @@ numeric ACTION_MM4.
 recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
 recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
-recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
-recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
-recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
-recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
-recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+recode mm42_1(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM6.
 
 count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10(1).
 recode AWARE_MMP(1 thru highest=1).
@@ -545,6 +585,8 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2015.
 
+DATASET ACTIVATE ken15.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
@@ -552,12 +594,12 @@ numeric ACTION_MM4.
 recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
 recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
-recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
-recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
-recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
-recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
-recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+recode mm42_1(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM6.
 
 count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7 mmp1_8 mmp1_9 mmp1_10
                                   mmp1_11 mmp1_12 mmp1_13 mmp1_14 mmp1_15(1).
@@ -576,6 +618,8 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2015.
 
+DATASET ACTIVATE nga15.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
@@ -583,12 +627,12 @@ numeric ACTION_MM4.
 recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
 recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
-recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
-recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
-recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
-recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
-recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+recode mm42_1(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM6.
 
 count AWARE_MMP=mmp1_1 mmp1_2(1).
 recode AWARE_MMP(1 thru highest=1).
@@ -603,6 +647,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2015.
+
+DATASET ACTIVATE pak15.
 
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
@@ -631,6 +677,8 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2015.
 
+DATASET ACTIVATE tza15.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
@@ -638,12 +686,12 @@ numeric ACTION_MM4.
 recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
 recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
-recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
-recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
-recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
-recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
-recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+recode mm42_1(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM6.
 
 count AWARE_MMP=mmp1_1 mmp1_2 mmp1_3 mmp1_4 mmp1_5 mmp1_6 mmp1_7(1).
 recode AWARE_MMP(1 thru highest=1).
@@ -658,6 +706,8 @@ string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2015.
 
+DATASET ACTIVATE uga15.
+
 recode mm32_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode mm32_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
 recode mm32_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
@@ -665,12 +715,12 @@ numeric ACTION_MM4.
 recode mm32_6(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM5.
 recode mm32_7(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM6.
 
-recode mm42_1(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM1.
-recode mm42_5(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM2.
-recode mm42_2(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM3.
-recode mm42_3(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM4.
-recode mm42_4(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM5.
-recode mm42_6(1=1)(2=2)(9,SYSMIS=-2) into OPN_MM6.
+recode mm42_1(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM1.
+recode mm42_5(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM2.
+recode mm42_2(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM3.
+recode mm42_3(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM4.
+recode mm42_4(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM5.
+recode mm42_6(1,2=1)(3,4=2)(5,SYSMIS=-2) into OPN_MM6.
 
 count AWARE_MMP=mmp1_1 mmp1_2(1).
 recode AWARE_MMP(1 thru highest=1).
@@ -684,6 +734,8 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2014.
+
+DATASET ACTIVATE bng14.
 
 recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
@@ -710,6 +762,8 @@ string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2014.
 
+DATASET ACTIVATE ind14.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -735,6 +789,8 @@ string COUNTRY (A10).
 compute COUNTRY="Indonesia".
 compute YEAR=2014.
 
+DATASET ACTIVATE ida14.
+
 recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
 recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
@@ -759,6 +815,8 @@ rename variables Serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2014.
+
+DATASET ACTIVATE ken14.
 
 recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
@@ -791,6 +849,8 @@ string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2014.
 
+DATASET ACTIVATE nga14.
+
 recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
 recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
@@ -815,6 +875,8 @@ rename variables QN=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2014.
+
+DATASET ACTIVATE pak14.
 
 recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
@@ -841,6 +903,8 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2014.
 
+DATASET ACTIVATE tza14.
+
 recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
 recode tdl8_4(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM3.
@@ -865,6 +929,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2014.
+
+DATASET ACTIVATE uga14.
 
 recode tdl8_1(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM1.
 recode tdl8_2(4=1)(3=2)(2=4)(1=5)(5,SYSMIS=-2) into ACTION_MM2.
@@ -891,6 +957,8 @@ string COUNTRY (A10).
 compute COUNTRY="Bangladesh".
 compute YEAR=2013.
 
+DATASET ACTIVATE bng13.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -915,6 +983,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="India".
 compute YEAR=2013.
+
+DATASET ACTIVATE ind13.
 
 numeric ACTION_MM1.
 numeric ACTION_MM2.
@@ -941,6 +1011,8 @@ string COUNTRY (A10).
 compute COUNTRY="Kenya".
 compute YEAR=2013.
 
+DATASET ACTIVATE ken13.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -965,6 +1037,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Nigeria".
 compute YEAR=2013.
+
+DATASET ACTIVATE nga13.
 
 numeric ACTION_MM1.
 numeric ACTION_MM2.
@@ -991,6 +1065,8 @@ string COUNTRY (A10).
 compute COUNTRY="Pakistan".
 compute YEAR=2013.
 
+DATASET ACTIVATE pak13.
+
 numeric ACTION_MM1.
 numeric ACTION_MM2.
 numeric ACTION_MM3.
@@ -1016,6 +1092,8 @@ string COUNTRY (A10).
 compute COUNTRY="Tanzania".
 compute YEAR=2013.
 
+DATASET ACTIVATE tza13.
+
 recode TI3_1(4=1)(3=2)(2=4)(1=5)(5,6,SYSMIS=-2) into ACTION_MM1.
 recode TI3_2(4=1)(3=2)(2=4)(1=5)(5,6,SYSMIS=-2) into ACTION_MM2.
 recode TI3_4(4=1)(3=2)(2=4)(1=5)(5,6,SYSMIS=-2) into ACTION_MM3.
@@ -1040,6 +1118,8 @@ rename variables serial=SBJNUM weight=WEIGHT.
 string COUNTRY (A10).
 compute COUNTRY="Uganda".
 compute YEAR=2013.
+
+DATASET ACTIVATE uga13.
 
 numeric ACTION_MM1.
 numeric ACTION_MM2.
