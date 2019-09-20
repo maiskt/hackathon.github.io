@@ -1,68 +1,47 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 *Section 7.2.
 cd "C:/Users/shueym/Documents".
 *2018---------------------------------------------------------------------***.
 DATASET ACTIVATE bng18.
 compute MM_TRANSFER =0.
 if AD1_4 = 1 MM_TRANSFER = 1.
- 
 compute MM_MERCHANT =0.
 if AD2_4 = 1 MM_MERCHANT = 1. 
-
-*No airtime.
 numeric MM_AIRTIME.
-
 compute MM_BILL =0.
 if AD3_4 = 1 or AD4_4 = 1 or AD5_4 = 1 MM_BILL = 1. 
-
 compute MM_GOV =0.
 if AD6_4 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if AD7_4 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if AD8_4 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if AD9_4 = 1 MM_SAVE = 1.
-
 COMPUTE MM_INVEST =0.
 IF AD10_20 = 1 MM_INVEST = 1.
-
 COMPUTE MM_LOAN =0.
 IF AD11_6 = 1 MM_LOAN = 1.
 
 *ACTIVE.
-
 compute ACTIVE_MM_TRANSFER =0.
 if AD1_15 le 4  ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if AD2_14 le 4 ACTIVE_MM_MERCHANT = 1. 
-
 compute ACTIVE_MM_BILL =0.
 if AD3_14 le 4 or AD4_14 le 4 or AD5_14 le 4 ACTIVE_MM_BILL = 1. 
-
 compute ACTIVE_MM_GOV =0.
 if AD6_13 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if AD7_13 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if AD8_14 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if AD9_18 le 4 ACTIVE_MM_SAVE = 1.
-
 COMPUTE ACTIVE_MM_INVEST =0.
 IF AD10_30 le 4 ACTIVE_MM_INVEST = 1.
-
 COMPUTE ACTIVE_MM_LOAN =0.
 IF AD11_20 le 4 ACTIVE_MM_LOAN = 1.
-
-*No airtime/phone bill question.
 numeric ACTIVE_MM_AIRTIME.
 
 save outfile = "data/bng18.sav"
@@ -75,64 +54,46 @@ ACTIVE_MM_GOV ACTIVE_MM_WAGE ACTIVE_MM_INSURANCE
 ACTIVE_MM_SAVE ACTIVE_MM_INVEST ACTIVE_MM_LOAN ACTIVE_MM_AIRTIME.
 
 DATASET ACTIVATE ind18.
+
 compute MM_TRANSFER =0.
 if AD1_4 = 1 MM_TRANSFER = 1.
- 
 compute MM_MERCHANT = 0.
 if AD2_4 = 1 MM_MERCHANT = 1. 
-
 compute MM_BILL =0.
 if AD3_4 = 1 or AD4_4 = 1 or AD5_4 = 1 MM_BILL = 1. 
-
 compute MM_GOV =0.
 if AD6_4 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if AD7_4 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if AD8_4 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if AD9_4 = 1 MM_SAVE = 1.
-
 COMPUTE MM_INVEST =0.
 IF AD10_22 = 1 MM_INVEST = 1.
-
 COMPUTE MM_LOAN =0.
 IF AD11_11 = 1 MM_LOAN = 1.
-
 NUMERIC MM_AIRTIME.
 
 *ACTIVE.
-
 compute ACTIVE_MM_TRANSFER =0.
 if AD1_13 le 4  ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT = 0.
 if AD2_12 le 4 ACTIVE_MM_MERCHANT = 1. 
-
 compute ACTIVE_MM_BILL =0.
 if AD3_12 le 4 or AD4_12 le 4 or AD5_12 le 4 ACTIVE_MM_BILL = 1. 
-
 compute ACTIVE_MM_GOV =0.
 if AD6_12 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if AD7_12 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if AD8_12 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if AD9_18 le 4 ACTIVE_MM_SAVE = 1.
-
 COMPUTE ACTIVE_MM_INVEST =0.
 IF AD10_32 le 4 ACTIVE_MM_INVEST = 1.
-
 COMPUTE ACTIVE_MM_LOAN =0.
 IF AD11_25 le 4 ACTIVE_MM_LOAN = 1.
-
 NUMERIC ACTIVE_MM_AIRTIME.
 *No airtime.
 save outfile = "data/ind18.sav"
@@ -149,63 +110,44 @@ ACTIVE_MM_AIRTIME.
 DATASET ACTIVATE bng17.
 compute MM_TRANSFER =0.
 if MM15_6 = 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_13 = 1 MM_MERCHANT = 1.
-
 compute MM_BILL =0.
 if MM15_3 = 1 or MM15_4 = 1 or MM15_5 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_7 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_8 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_9 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_11 = 1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_12 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_10 = 1 or FB16A_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_2 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_6 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_13 le 4 ACTIVE_MM_MERCHANT = 1.
-
 compute ACTIVE_MM_BILL =0.
 if MM17_3 le 4 or MM17_4 le 4 or MM17_5 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_7 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_8 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_9 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_11 le 4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_12 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_10 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_2 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -219,65 +161,47 @@ ACTIVE_MM_GOV ACTIVE_MM_WAGE ACTIVE_MM_INSURANCE
 ACTIVE_MM_SAVE ACTIVE_MM_INVEST ACTIVE_MM_LOAN ACTIVE_MM_AIRTIME.
 
 DATASET ACTIVATE ind17.
+
 compute MM_TRANSFER =0.
 if MM15_6 = 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_13 = 1 MM_MERCHANT = 1.
-
 compute MM_BILL =0.
 if MM15_3 = 1 or MM15_4 = 1 or MM15_5 = 1MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_7 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_8 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_9 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_11 = 1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_12 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_10 = 1 or FB16A_4=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_2 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_6 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_13 le 4 ACTIVE_MM_MERCHANT = 1.
-
 compute ACTIVE_MM_BILL =0.
 if MM17_3 le 4 or MM17_4 le 4 or MM17_5 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_7 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_8 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_9 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_11 le 4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_12 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_10 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_2 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -289,63 +213,44 @@ DATASET ACTIVATE ken17.
 
 compute MM_TRANSFER =0.
 if MM15_6 = 1 MM_TRANSFER = 1.
- 
 compute MM_MERCHANT =0.
 if MM15_13 = 1 MM_MERCHANT = 1.
-
 compute MM_BILL =0.
 if MM15_3 = 1 or MM15_4 = 1 or MM15_5 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_7 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_8 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_9 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_11 = 1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_12 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_10 = 1 or FB16A_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_2 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_6 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_13 le 4 ACTIVE_MM_MERCHANT = 1.
-
 compute ACTIVE_MM_BILL =0.
 if MM17_3 le 4 or MM17_4 le 4 or MM17_5 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_7 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_8 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_9 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_11 le 4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_12 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_10 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_2 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -356,65 +261,47 @@ ACTIVE_MM_MERCHANT ACTIVE_MM_BILL ACTIVE_MM_GOV ACTIVE_MM_WAGE
 ACTIVE_MM_INSURANCE ACTIVE_MM_SAVE ACTIVE_MM_INVEST ACTIVE_MM_LOAN ACTIVE_MM_AIRTIME.
 
 DATASET ACTIVATE nga17.
+
 compute MM_TRANSFER =0.
 if MM15_6 = 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_13 = 1 MM_MERCHANT = 1.
-
 compute MM_BILL =0.
 if MM15_3 = 1 or MM15_4 = 1 or MM15_5 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_7 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_8 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_9 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_11 = 1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_12 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_10 = 1 or FB16A_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_2 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_6 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_13 le 4 ACTIVE_MM_MERCHANT = 1.
-
 compute ACTIVE_MM_BILL =0.
 if MM17_3 le 4 or  MM17_4 le 4 or MM17_5 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_7 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_8 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_9 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_11 le 4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_12 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_10 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_2 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -424,65 +311,47 @@ MM_INVEST MM_LOAN MM_AIRTIME ACTIVE_MM_TRANSFER ACTIVE_MM_MERCHANT ACTIVE_MM_BIL
 ACTIVE_MM_WAGE ACTIVE_MM_INSURANCE ACTIVE_MM_SAVE ACTIVE_MM_INVEST ACTIVE_MM_LOAN ACTIVE_MM_AIRTIME.
 
 DATASET ACTIVATE pak17.
+
 compute MM_TRANSFER =0.
 if MM15_6 = 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_13 = 1 MM_MERCHANT = 1.
-
 compute MM_BILL =0.
 if MM15_3 = 1 or MM15_4 = 1  or MM15_5 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_7 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_8 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_9 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_11 = 1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_12 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_10 = 1 or FB16A_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_2 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_6 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_13 le 4 ACTIVE_MM_MERCHANT = 1.
-
 compute ACTIVE_MM_BILL =0.
 if MM17_3 le 4 or MM17_4 le 4 or MM17_5 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_7 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_8 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_9 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_11 le 4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_12 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_10 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_2 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -495,63 +364,44 @@ DATASET ACTIVATE tza17.
 
 compute MM_TRANSFER =0.
 if MM15_6 = 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_13 = 1 MM_MERCHANT = 1.
-
 compute MM_BILL =0.
 if MM15_3 = 1 or MM15_4 = 1  or MM15_5 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_7 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_8 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_9 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_11 = 1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_12 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_10 = 1 or FB16A_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_2 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_6 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_13 le 4 ACTIVE_MM_MERCHANT = 1.
-
 compute ACTIVE_MM_BILL =0.
 if MM17_3 le 4 or MM17_4 le 4 or MM17_5 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_7 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_8 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_9 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_11 le 4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_12 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_10 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_2 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -564,63 +414,44 @@ DATASET ACTIVATE uga17.
 
 compute MM_TRANSFER =0.
 if MM15_6 = 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_13 = 1 MM_MERCHANT = 1.
-
 compute MM_BILL =0.
 if MM15_3 = 1 or MM15_4 = 1  or MM15_5 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_7 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_8 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_9 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_11 = 1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_12 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_10 = 1 or FB16A_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_2 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_6 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_13 le 4 ACTIVE_MM_MERCHANT = 1.
-
 compute ACTIVE_MM_BILL =0.
 if MM17_3 le 4 or MM17_4 le 4  or MM17_5 le 4  ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_7 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_8 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_9 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_11 le 4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_12 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_10 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_2 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -634,65 +465,46 @@ DATASET ACTIVATE bng16.
 
 compute MM_TRANSFER =0.
 if MM15_9= 1 or MM15_10= 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *school fees, medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or  MM15_6 = 1 or MM15_7 = 1 or MM15_8=1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_11 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_12 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_14 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_16 = 1 or MM15_17=1 or MM15_18=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_15 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_9<=4 or MM17_10 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_20 le 4 ACTIVE_MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute ACTIVE_MM_BILL =0.
-if MM17_4 le 4 or MM17_5 le 4 or  MM17_6 le 4 or MM17_7 le 4 or MM27_8<=4 ACTIVE_MM_BILL = 1.
-
+if MM17_4 le 4 or MM17_5 le 4 or  MM17_6 le 4 or MM17_7 le 4 or MM17_8<=4 ACTIVE_MM_BILL = 1.
 compute ACTIVE_MM_GOV =0.
 if MM17_11 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_12 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_14 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_16 le 4 or MM17_17<=4 or MM17_18<=4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_19 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_15 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_3 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -705,65 +517,46 @@ DATASET ACTIVATE ind16.
 
 compute MM_TRANSFER =0.
 if MM15_9= 1 or MM15_10= 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or  MM15_6 = 1 or MM15_7 = 1 or MM15_8=1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_11 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_12 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_14 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_16 = 1 or MM15_17=1 or MM15_18=1 or FB22_5=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_15 = 1 or FB16_4=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_9<=4 or MM17_10 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_20 le 4 ACTIVE_MM_MERCHANT = 1.
-
 *school bills, medical bills, utility bills, + rent.
 compute ACTIVE_MM_BILL =0.
-if MM17_4 le 4 or MM17_5 le 4 or  MM17_6 le 4 or MM17_7 le 4 or MM27_8<=4 ACTIVE_MM_BILL = 1.
-
+if MM17_4 le 4 or MM17_5 le 4 or  MM17_6 le 4 or MM17_7 le 4 or MM17_8<=4 ACTIVE_MM_BILL = 1.
 compute ACTIVE_MM_GOV =0.
 if MM17_8 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_12 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_14 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_16 le 4 or MM17_17<=4 or MM17_18<=4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_19 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_15 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_3 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -776,66 +569,46 @@ DATASET ACTIVATE ida16.
 
 compute MM_TRANSFER =0.
 if MM15_9= 1 or MM15_10= 1 MM_TRANSFER = 1.
-
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or  MM15_6 = 1 or MM15_7 = 1 or MM15_8 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_11 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_12 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_14 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_16 = 1 or MM15_17=1 or MM15_18=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_15 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_9<=4 or MM17_10 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_20 le 4 ACTIVE_MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute ACTIVE_MM_BILL =0.
 if MM17_4 le 4 or MM17_5 le 4 or  MM17_6 le 4 or MM17_7 le 4 or MM17_8 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_11 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_12 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_14 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_16 le 4 or MM17_17<=4 or MM17_18<=4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_19 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_15 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_3 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -848,65 +621,46 @@ DATASET ACTIVATE ken16.
 
 compute MM_TRANSFER =0.
 if MM15_9= 1 or MM15_10= 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or  MM15_6 = 1 or MM15_7 = 1 or MM15_8 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_11 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_12 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_14 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_16 = 1 or MM15_17=1 or MM15_18=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_15 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_9<=4 or MM17_10 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_20 le 4 ACTIVE_MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute ACTIVE_MM_BILL =0.
 if MM17_4 le 4 or MM17_5 le 4 or  MM17_6 le 4 or MM17_7 le 4 or MM17_8 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_11 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_12 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_14 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_16 le 4 or MM17_17<=4 or MM17_18<=4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_19 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_15 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_3 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -919,65 +673,46 @@ DATASET ACTIVATE nga16.
 
 compute MM_TRANSFER =0.
 if MM15_9= 1 or MM15_10= 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or  MM15_6 = 1 or MM15_7 = 1 or MM15_8 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_11 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_12 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_14 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_16 = 1 or MM15_17=1 or MM15_18=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_15 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_9<=4 or MM17_10 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_20 le 4 ACTIVE_MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute ACTIVE_MM_BILL =0.
 if MM17_4 le 4 or MM17_5 le 4 or  MM17_6 le 4 or MM17_7 le 4 or MM17_8 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_11 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_12 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_14 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_16 le 4 or MM17_17<=4 or MM17_18<=4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_19 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_15 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_3 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -990,65 +725,46 @@ DATASET ACTIVATE pak16.
 
 compute MM_TRANSFER =0.
 if MM15_9= 1 or MM15_10= 1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or  MM15_6 = 1 or MM15_7 = 1 or MM15_8 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_11 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_12 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_14 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_16 = 1 or MM15_17=1 or MM15_18=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_15 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_9<=4 or MM17_10 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_20 le 4 ACTIVE_MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute ACTIVE_MM_BILL =0.
-if MM17_4 le 4 or MM17_5 le 4 or  MM17_6 le 4 or MM17_7 le 4 or MM27_8<=4 ACTIVE_MM_BILL = 1.
-
+if MM17_4 le 4 or MM17_5 le 4 or  MM17_6 le 4 or MM17_7 le 4 or MM17_8<=4 ACTIVE_MM_BILL = 1.
 compute ACTIVE_MM_GOV =0.
 if MM17_11 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_12 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_14 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_16 le 4 or MM17_17<=4 or MM17_18<=4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_19 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_15 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_3 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -1061,66 +777,46 @@ DATASET ACTIVATE tza16.
 
 compute MM_TRANSFER =0.
 if MM15_9= 1 or MM15_10= 1 MM_TRANSFER = 1.
-
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if  MM15_4 = 1 or MM15_5 = 1 or  MM15_6 = 1 or MM15_7 = 1 or MM15_8 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_11 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_12 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_14 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_16 = 1 or MM15_17=1 or MM15_18=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_15 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_9<=4 or MM17_10 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_20 le 4 ACTIVE_MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute ACTIVE_MM_BILL =0.
 if MM17_4 le 4 or MM17_5 le 4 or MM17_6 le 4 or MM17_7 le 4 or MM17_8 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_11 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_12 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_14 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_16 le 4 or MM17_17<=4 or MM17_18<=4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_19 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_15 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_3 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -1133,66 +829,46 @@ DATASET ACTIVATE uga16.
 
 compute MM_TRANSFER =0.
 if MM15_9= 1 or MM15_10= 1 MM_TRANSFER = 1.
-
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or MM15_6 = 1 or MM15_7 = 1 or MM15_8 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_11 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_12 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_14 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_16 = 1 or MM15_17=1 or MM15_18=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_15 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *Active.
-
 compute ACTIVE_MM_TRANSFER =0.
 if MM17_9<=4 or MM17_10 le 4 ACTIVE_MM_TRANSFER = 1.
-
 compute ACTIVE_MM_MERCHANT =0.
 if MM17_20 le 4 ACTIVE_MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute ACTIVE_MM_BILL =0.
 if MM17_4 le 4 or MM17_5 le 4 or MM17_6 le 4 or MM17_7 le 4 or MM17_8 le 4 ACTIVE_MM_BILL = 1.
-
 compute ACTIVE_MM_GOV =0.
 if MM17_8 le 4 or MM17_11 le 4 ACTIVE_MM_GOV = 1.
-
 compute ACTIVE_MM_WAGE =0.
 if MM17_12 le 4 ACTIVE_MM_WAGE = 1.
-
 compute ACTIVE_MM_INSURANCE =0.
 if MM17_14 le 4 ACTIVE_MM_INSURANCE = 1.
-
 compute ACTIVE_MM_SAVE =0.
 if MM17_16 le 4 or MM17_17<=4 or MM17_18<=4 ACTIVE_MM_SAVE = 1.
-
 compute ACTIVE_MM_INVEST =0.
 if MM17_19 le 4 ACTIVE_MM_INVEST = 1.
-
 compute ACTIVE_MM_LOAN =0.
 if MM17_15 le 4 ACTIVE_MM_LOAN = 1.
-
 compute ACTIVE_MM_AIRTIME =0.
 if MM17_3 le 4 ACTIVE_MM_AIRTIME = 1.
 
@@ -1206,37 +882,27 @@ DATASET ACTIVATE bng15.
 
 compute MM_TRANSFER =0.
 if MM15_10=1 or MM15_11=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or MM15_6 = 1 or MM15_7 = 1 or MM15_8 = 1 or MM15_9 = 1 or MM15_25 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_12 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_13 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_15 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_17 = 1 or MM15_18=1 or FB22_4=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_16 = 1 or FB16_4=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *No  Active.
-
 NUMERIC ACTIVE_MM_TRANSFER.
 NUMERIC ACTIVE_MM_MERCHANT.
 NUMERIC ACTIVE_MM_BILL.
@@ -1257,33 +923,23 @@ DATASET ACTIVATE ind15.
 
 compute MM_TRANSFER =0.
 if MM15_10=1 or MM15_11 =1 MM_TRANSFER = 1.
-
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or  MM15_6 = 1 or MM15_7 = 1 or MM15_8 = 1 or MM15_9 = 1 or MM15_25 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_12 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_13 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_15 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_17 = 1 or MM15_18=1 or FB22_5=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_16 = 1 or FB16_4=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
@@ -1309,32 +965,23 @@ DATASET ACTIVATE ida15.
  
 compute MM_TRANSFER =0.
 if MM15_11=1 or MM15_12 =1 MM_TRANSFER = 1.
- 
 compute MM_MERCHANT =0.
 if MM15_22 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9= 1 or MM15_10=1 or MM15_27=1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_13 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_14 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_16 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_18 = 1 or MM15_19=1 or MM15_20=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_21 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_17 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
@@ -1360,37 +1007,27 @@ DATASET ACTIVATE ken15.
 
 compute MM_TRANSFER =0.
 if MM15_11=1 or MM15_12 =1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_22 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9= 1 or MM15_10=1 or MM15_27=1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_13 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_14 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_16 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_18 = 1 or MM15_19=1 or MM15_20=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_21 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_17 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
 *No active.
-
 NUMERIC ACTIVE_MM_TRANSFER.
 NUMERIC ACTIVE_MM_MERCHANT.
 NUMERIC ACTIVE_MM_BILL.
@@ -1412,32 +1049,23 @@ DATASET ACTIVATE nga15.
 
 compute MM_TRANSFER =0.
 if MM15_11=1 or MM15_12 =1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_22 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9= 1 or MM15_10=1 or MM15_27=1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_13 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_14 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_16 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_18 = 1 or MM15_19=1 or MM15_20=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_21 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_17 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
@@ -1464,32 +1092,23 @@ DATASET ACTIVATE pak15.
 
 compute MM_TRANSFER =0.
 if MM15_10=1 or MM15_11 =1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_20 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4 = 1 or MM15_5 = 1 or MM15_6 = 1 or MM15_7 = 1 or MM15_8 = 1 or MM15_9 = 1 or MM15_25 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_12 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_13 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_15 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_17 = 1 or MM15_18=1 or FB22_5=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_19 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_16 = 1 or FB16_4=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
@@ -1514,32 +1133,23 @@ DATASET ACTIVATE tza15.
 
 compute MM_TRANSFER =0.
 if MM15_11=1 or MM15_12 =1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_22 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9= 1 or MM15_10=1 or MM15_27=1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_13 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_14 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_16 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_18 = 1 or MM15_19=1 or MM15_20=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_21 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_17 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
@@ -1564,32 +1174,23 @@ DATASET ACTIVATE uga15.
 
 compute MM_TRANSFER =0.
 if MM15_11=1 or MM15_12 =1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM15_22 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM15_4=1 or MM15_5=1 or MM15_6=1 or MM15_7=1 or MM15_8=1 or MM15_9= 1 or MM15_10=1 or MM15_27=1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM15_13 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM15_14 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM15_16 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM15_18 = 1 or MM15_19=1 or MM15_20=1 or FB22_2=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM15_21 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM15_17 = 1 or FB16_2=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM15_3 = 1 MM_AIRTIME = 1.
 
@@ -1615,32 +1216,23 @@ DATASET ACTIVATE bng14.
 
 compute MM_TRANSFER =0.
 if MM19_11 = 1 or MM19_12 = 1 or MM19_13=1 or MM19_14=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM19_28 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM19_4 = 1 or MM19_5 = 1 or MM19_6 = 1 or MM19_7 = 1 or MM19_8=1 or  MM19_9 = 1 or MM19_10 = 1 or MM19_32 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
-if MM19_15 = 1 or MM29_16=1 MM_GOV = 1.
-
+if MM19_15 = 1 or MM19_16=1 MM_GOV = 1.
 compute MM_WAGE =0.
 if MM19_17 = 1 or MM19_18=1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM19_20 = 1 or MM19_21 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM19_24 = 1 or MM19_25=1 or MM19_26=1 or FL13_3=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM19_27 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM19_22 = 1 or MM19_23 = 1 or FL10_3=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM19_3 = 1 MM_AIRTIME = 1.
 
@@ -1665,32 +1257,23 @@ DATASET ACTIVATE ind14.
 
 compute MM_TRANSFER =0.
 if MM19_11 = 1 or MM19_12 = 1 or MM19_13=1 or MM19_14=1 MM_TRANSFER = 1.
-
 *No merchant.
 numeric MM_MERCHANT.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM19_4=1 or MM19_5 = 1 or  MM19_6 = 1 or MM19_7 = 1 or MM19_8=1 or MM19_9 = 1 or MM19_10 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
-if MM19_15 = 1 or MM29_16=1 MM_GOV = 1.
-
+if MM19_15 = 1 or MM19_16=1 MM_GOV = 1.
 compute MM_WAGE =0.
 if MM19_17 = 1 or MM19_18=1 MM_WAGE = 1.
-
 *no insurance.
 numeric MM_INSURANCE.
-
 compute MM_SAVE =0.
 if MM19_22 = 1 or MM19_23=1 or MM19_24=1 or FL13_5=1 MM_SAVE = 1.
-
 *no invest.
 numeric MM_INVEST.
-
 compute MM_LOAN =0.
 if MM19_20 = 1 or MM19_21 = 1 or FL10_4=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM19_3 = 1 MM_AIRTIME = 1.
 
@@ -1714,32 +1297,23 @@ DATASET ACTIVATE ida14.
 
 compute MM_TRANSFER =0.
 if MM19_12 = 1 or MM19_13=1 or MM19_14=1 or MM19_15=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM19_29 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM19_4 = 1 or MM19_5 = 1 or MM19_6 = 1 or MM19_7 = 1 or MM19_8 = 1 or MM19_10 = 1 or MM19_11 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM19_16 = 1 or MM19_17=1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM19_18 = 1 or MM19_19=1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM19_21 = 1 or MM19_22 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM19_25 = 1 or MM19_26=1 or MM19_27=1 or FL13_4=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM19_28 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM19_23 = 1 or MM19_24 = 1 or FL10_5=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM19_3 = 1 MM_AIRTIME = 1.
 
@@ -1763,32 +1337,23 @@ DATASET ACTIVATE ken14.
 
 compute MM_TRANSFER =0.
 if MM19_11 = 1 or MM19_12 = 1 or MM19_13=1 or MM19_14=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM19_28 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM19_4 = 1 or MM19_5 = 1 or MM19_6 = 1 or MM19_7 = 1 or MM19_8=1 or  MM19_9 = 1 or MM19_10 = 1 or MM19_32 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
-if MM19_15 = 1 or MM29_16=1 MM_GOV = 1.
-
+if MM19_15 = 1 or MM19_16=1 MM_GOV = 1.
 compute MM_WAGE =0.
 if MM19_17 = 1 or MM19_18=1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM19_20 = 1 or MM19_21 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM19_24 = 1 or MM19_25=1 or MM19_26=1 or FL13_3=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM19_27 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM19_22 = 1 or MM19_23 = 1 or FL10_3=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM19_3 = 1 MM_AIRTIME = 1.
 
@@ -1812,32 +1377,23 @@ DATASET ACTIVATE nga14.
 
 compute MM_TRANSFER =0.
 if MM19_11 = 1 or MM19_12 = 1 or MM19_13=1 or MM19_14=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM19_28 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM19_4 = 1 or MM19_5 = 1 or MM19_6 = 1 or MM19_7 = 1 or MM19_8=1 or  MM19_9 = 1 or MM19_10 = 1 or MM19_32 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
-if MM19_15 = 1 or MM29_16=1 MM_GOV = 1.
-
+if MM19_15 = 1 or MM19_16=1 MM_GOV = 1.
 compute MM_WAGE =0.
 if MM19_17 = 1 or MM19_18=1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM19_20 = 1 or MM19_21 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM19_24 = 1 or MM19_25=1 or MM19_26=1 or FL13_3=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM19_27 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM19_22 = 1 or MM19_23 = 1 or FL10_3=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM19_3 = 1 MM_AIRTIME = 1.
 
@@ -1861,32 +1417,23 @@ DATASET ACTIVATE pak14.
 
 compute MM_TRANSFER =0.
 if MM19_11 = 1 or MM19_12 = 1 or MM19_13=1 or MM19_14=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM19_28 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM19_4 = 1 or MM19_5 = 1 or MM19_6 = 1 or MM19_7 = 1 or MM19_8=1 or  MM19_9 = 1 or MM19_10 = 1 or MM19_32 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
-if MM19_15 = 1 or MM29_16=1 MM_GOV = 1.
-
+if MM19_15 = 1 or MM19_16=1 MM_GOV = 1.
 compute MM_WAGE =0.
 if MM19_17 = 1 or MM19_18=1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM19_20 = 1 or MM19_21 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM19_24 = 1 or MM19_25=1 or MM19_26=1 or FL13_3=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM19_27 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM19_22 = 1 or MM19_23 = 1 or FL10_3=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM19_3 = 1 MM_AIRTIME = 1.
 
@@ -1911,32 +1458,23 @@ DATASET ACTIVATE tza14.
 
 compute MM_TRANSFER =0.
 if MM19_11 = 1 or MM19_12 = 1 or MM19_13=1 or MM19_14=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM19_28 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM19_4 = 1 or MM19_5 = 1 or MM19_6 = 1 or MM19_7 = 1 or MM19_8=1 or  MM19_9 = 1 or MM19_10 = 1 or MM19_32 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
-if MM19_15 = 1 or MM29_16=1 MM_GOV = 1.
-
+if MM19_15 = 1 or MM19_16=1 MM_GOV = 1.
 compute MM_WAGE =0.
 if MM19_17 = 1 or MM19_18=1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM19_20 = 1 or MM19_21 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM19_24 = 1 or MM19_25=1 or MM19_26=1 or FL13_3=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM19_27 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM19_22 = 1 or MM19_23 = 1 or FL10_3=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM19_3 = 1 MM_AIRTIME = 1.
 
@@ -1961,32 +1499,23 @@ DATASET ACTIVATE uga14.
 
 compute MM_TRANSFER =0.
 if MM19_11 = 1 or MM19_12 = 1 or MM19_13=1 or MM19_14=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM19_28 = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM19_4 = 1 or MM19_5 = 1 or MM19_6 = 1 or MM19_7 = 1 or MM19_8=1 or  MM19_9 = 1 or MM19_10 = 1 or MM19_32 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
-if MM19_15 = 1 or MM29_16=1 MM_GOV = 1.
-
+if MM19_15 = 1 or MM19_16=1 MM_GOV = 1.
 compute MM_WAGE =0.
 if MM19_17 = 1 or MM19_18=1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM19_20 = 1 or MM19_21 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM19_24 = 1 or MM19_25=1 or MM19_26=1 or FL13_3=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM19_27 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM19_22 = 1 or MM19_23 = 1 or FL10_3=1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM19_3 = 1 MM_AIRTIME = 1.
 
@@ -2012,32 +1541,23 @@ DATASET ACTIVATE bng13.
 
 compute MM_TRANSFER =0.
 if MM16H = 1 or MM16I = 1 or MM16J=1 or MM16K=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM16X = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM16D = 1 or MM16E = 1 or MM16F = 1 or MM16G = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM16L = 1 or MM16M = 1  MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM16N = 1 or MM16O = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM16Q = 1 or MM16R = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
-if MM16U = 1 or MM26V=1 or SI1_12=1 MM_SAVE = 1.
-
+if MM16U = 1 or MM16V=1 or SI1_12=1 MM_SAVE = 1.
 compute MM_INVEST =0.
 if MM16W = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM16S = 1 or MM16T = 1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM16C = 1 MM_AIRTIME = 1.
 
@@ -2062,31 +1582,22 @@ DATASET ACTIVATE ind13.
 
 compute MM_TRANSFER =0.
 if MM16_8 = 1 or MM16_9 = 1 or MM16_10=1 or MM16_11=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM16_24 = 1 or MM16_25 = 1 MM_MERCHANT = 1.
-
 compute MM_BILL =0.
 if MM16_4 = 1 or MM16_5 = 1 or MM16_6 = 1 or MM16_7 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM16_12=1 or MM16_13 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM16_14 = 1 or MM16_15 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM16_17 = 1 or MM16_18 = 1 MM_WAGE = 1.
-
 compute MM_SAVE =0.
 if MM16_21 = 1 or MM16_22=1 or FB7_3_6=1 or FB7_4_6=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM16_23 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM16_19 = 1 or MM16_20 = 1 or FB7_1_6=1 MM_LOAN = 1.
-
 compute MM_AIRTIME  =0.
 if MM16_3 = 1 MM_AIRTIME = 1.
 
@@ -2111,32 +1622,23 @@ DATASET ACTIVATE ken13.
 
 compute MM_TRANSFER =0.
 if MM16H = 1 or MM16I = 1 or MM16J=1 or MM16K=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM16X = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM16D = 1 or MM16E = 1 or MM16F = 1 or MM16G = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if  MM16L = 1 or MM16M = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM16N = 1 or MM16O = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM16Q = 1 or MM16R = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
-if MM16U = 1 or MM26V=1 MM_SAVE = 1.
-
+if MM16U = 1 or MM16V=1 MM_SAVE = 1.
 compute MM_INVEST =0.
 if MM16W = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM16S = 1 or MM16T = 1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM16C = 1 MM_AIRTIME = 1.
 
@@ -2156,36 +1658,28 @@ save outfile = "data/ken13.sav"
   MM_WAGE MM_INSURANCE MM_SAVE MM_INVEST MM_LOAN MM_AIRTIME 
 ACTIVE_MM_TRANSFER ACTIVE_MM_MERCHANT ACTIVE_MM_BILL ACTIVE_MM_GOV  ACTIVE_MM_WAGE
  ACTIVE_MM_INSURANCE ACTIVE_MM_SAVE ACTIVE_MM_INVEST ACTIVE_MM_LOAN ACTIVE_MM_AIRTIME. 
+
 DATASET ACTIVATE nga13.
 
 compute MM_TRANSFER =0.
 if MM16H = 1 or MM16I = 1 or MM16J=1 or MM16K=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM16X = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM16D = 1 or MM16E = 1 or MM16F = 1 or MM16G = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM16L = 1 or MM16M = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM16N = 1 or MM16O = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM16Q = 1 or MM16R = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
-if MM16U = 1 or MM26V=1 or SI1_12=1 MM_SAVE = 1.
-
+if MM16U = 1 or MM16V=1 or SI1_12=1 MM_SAVE = 1.
 compute MM_INVEST =0.
 if MM16W = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM16S = 1 or MM16T = 1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM16C = 1 MM_AIRTIME = 1.
 
@@ -2205,36 +1699,28 @@ save outfile = "data/nga13.sav"
   MM_WAGE MM_INSURANCE MM_SAVE MM_INVEST MM_LOAN MM_AIRTIME 
 ACTIVE_MM_TRANSFER ACTIVE_MM_MERCHANT ACTIVE_MM_BILL ACTIVE_MM_GOV 
  ACTIVE_MM_WAGE ACTIVE_MM_INSURANCE ACTIVE_MM_SAVE ACTIVE_MM_INVEST ACTIVE_MM_LOAN ACTIVE_MM_AIRTIME. 
+
 DATASET ACTIVATE pak13.
 
 compute MM_TRANSFER =0.
 if MM16H = 1 or MM16I = 1 or MM16J=1 or MM16K=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM16X = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM16D = 1 or MM16E = 1 or MM16F = 1 or MM16G = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM16L = 1 or MM16M = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM16N = 1 or MM16O = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM16Q = 1 or MM16R = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
-if MM16U = 1 or MM26V=1 or SI1_12=1 MM_SAVE = 1.
-
+if MM16U = 1 or MM16V=1 or SI1_12=1 MM_SAVE = 1.
 compute MM_INVEST =0.
 if MM16W = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM16S = 1 or MM16T = 1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM16C = 1 MM_AIRTIME = 1.
 
@@ -2259,32 +1745,23 @@ DATASET ACTIVATE tza13.
 
 compute MM_TRANSFER =0.
 if MM16_8 = 1 or MM16_9 = 1 or MM16_10=1 or MM16_11=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM16_23 = 1 MM_MERCHANT = 1.
-
 *School fees, medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM16_4 = 1 or MM16_5 = 1 or  MM16_6 = 1 or MM16_7 = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM16_12 = 1 or MM16_13 = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM16_14 = 1 or MM16_15 = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM16_17 = 1 or MM16_18 = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
 if MM16_21 = 1 or MM16_22=1 MM_SAVE = 1.
-
 compute MM_INVEST =0.
 if MM16_24 = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM16_19 = 1 or MM16_20 = 1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM16_3 = 1 MM_AIRTIME = 1.
 
@@ -2304,36 +1781,28 @@ save outfile = "data/tza13.sav"
   MM_WAGE MM_INSURANCE MM_SAVE MM_INVEST MM_LOAN MM_AIRTIME 
 ACTIVE_MM_TRANSFER ACTIVE_MM_MERCHANT ACTIVE_MM_BILL ACTIVE_MM_GOV
   ACTIVE_MM_WAGE ACTIVE_MM_INSURANCE ACTIVE_MM_SAVE ACTIVE_MM_INVEST ACTIVE_MM_LOAN ACTIVE_MM_AIRTIME. 
+
 DATASET ACTIVATE uga13.
 
 compute MM_TRANSFER =0.
 if MM16H = 1 or MM16I = 1 or MM16J=1 or MM16K=1 MM_TRANSFER = 1.
-
 compute MM_MERCHANT =0.
 if MM16X = 1 MM_MERCHANT = 1.
-
 *medical bills, utility bills, + rent.
 compute MM_BILL =0.
 if MM16D = 1 or MM16E = 1 or  MM16F = 1 or MM16G = 1 MM_BILL = 1.
-
 compute MM_GOV =0.
 if MM16L = 1 or MM16M = 1 MM_GOV = 1.
-
 compute MM_WAGE =0.
 if MM16N = 1 or MM16O = 1 MM_WAGE = 1.
-
 compute MM_INSURANCE =0.
 if MM16Q = 1 or MM16R = 1 MM_INSURANCE = 1.
-
 compute MM_SAVE =0.
-if MM16U = 1 or MM26V=1 MM_SAVE = 1.
-
+if MM16U = 1 or MM16V=1 MM_SAVE = 1.
 compute MM_INVEST =0.
 if MM16W = 1 MM_INVEST = 1.
-
 compute MM_LOAN =0.
 if MM16S = 1 or MM16T = 1 MM_LOAN = 1.
-
 compute MM_AIRTIME =0.
 if MM16C = 1 MM_AIRTIME = 1.
 
@@ -2355,3 +1824,48 @@ ACTIVE_MM_TRANSFER ACTIVE_MM_MERCHANT ACTIVE_MM_BILL ACTIVE_MM_GOV
   ACTIVE_MM_WAGE ACTIVE_MM_INSURANCE ACTIVE_MM_SAVE ACTIVE_MM_INVEST ACTIVE_MM_LOAN ACTIVE_MM_AIRTIME. 
 
 dataset close all.
+
+*Labels.
+variable labels
+MM_TRANSFER "Ever used MM to send money to, or receive money from someone"
+MM_MERCHANT "Ever used MM to buy goods and service"
+MM_BILL "Ever used MM to pay a bill"
+MM_GOV "Ever used MM to receive money from the government"
+MM_WAGE	 "Ever used MM to receive payment from an exmployer"
+MM_INSURANCE "Ever used MM to pay for insurance or receive payment from insurance"
+MM_SAVE "Ever used MM to save money"
+MM_INVEST "Ever used MM to make an investment"
+MM_LOAN "Ever used MM to borrow money or get credit"
+MM_AIRTIME "Ever used MM to buy airtime top-ups or pay a mobile phone bill"
+ACTIVE_MM_TRANSFER "Used MM to send money to, or receive money from someone in past 90 days"
+ACTIVE_MM_MERCHANT "Used MM to buy goods and service in past 90 days"
+ACTIVE_MM_BILL "Used MM to pay a bill in past 90 days"
+ACTIVE_MM_GOV "Used MM to receive money from the government in past 90 days"
+ACTIVE_MM_WAGE "Used MM to receive payment from an exmployer in past 90 days"
+ACTIVE_MM_INSURANCE "Used MM to pay for insurance or receive payment from insurance in past 90 days"
+ACTIVE_MM_SAVE "Used MM to save money in past 90 days"
+ACTIVE_MM_INVEST "Used MM to make an investment in past 90 days"
+ACTIVE_MM_LOAN "Used MM to borrow money or get credit in past 90 days"
+ACTIVE_MM_AIRTIME "Used MM to buy airtime top-ups or pay a mobile phone bill in past 90 days".
+
+value labels MM_TRANSFER 1"Yes" 0"No".
+value labels MM_MERCHANT 1"Yes" 0"No".
+value labels MM_BILL  1"Yes" 0"No".
+value labels MM_GOV 1"Yes" 0"No".
+value labels MM_WAGE 1"Yes" 0"No".
+value labels MM_INSURANCE 1"Yes" 0"No".
+value labels MM_SAVE 1"Yes" 0"No".
+value labels MM_INVEST 1"Yes" 0"No".
+value labels MM_LOAN 1"Yes" 0"No".
+value labels MM_AIRTIME 1"Yes" 0"No".
+value labels ACTIVE_MM_TRANSFER 1"Yes" 0"No".
+value labels ACTIVE_MM_MERCHANT 1"Yes" 0"No".
+value labels ACTIVE_MM_BILL 1"Yes" 0"No".
+value labels ACTIVE_MM_GOV 1"Yes" 0"No".
+value labels ACTIVE_MM_WAGE 1"Yes" 0"No".
+value labels ACTIVE_MM_INSURANCE 1"Yes" 0"No".
+value labels ACTIVE_MM_SAVE 1"Yes" 0"No".
+value labels ACTIVE_MM_INVEST 1"Yes" 0"No".
+value labels ACTIVE_MM_LOAN 1"Yes" 0"No".
+value labels ACTIVE_MM_AIRTIME 1"Yes" 0"No".
+
