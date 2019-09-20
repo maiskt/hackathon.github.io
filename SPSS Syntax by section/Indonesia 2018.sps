@@ -248,7 +248,7 @@ recode ACTIVE_BANK_LOAN (1 thru highest=1).
 numeric ACTIVE_BANK_AIRTIME.
 *************************************************************************************************************************************.
 *Section 6.3.
-count R_NOBANK1=BI_E2A_G BI_E2 B_GBI_E2C_G (1).
+count R_NOBANK1=BI_E2A_G BI_E2B_G BI_E2C_G (1).
 recode R_NOBANK1 (1 thru highest=1).
 count R_NOBANK2=BI_E2A_E BI_E2B_E BI_E2C_E(1).
 recode R_NOBANK2 (1 thru highest=1).
@@ -282,11 +282,13 @@ numeric USE_BANK_AGENT.
 numeric USE_BANK_WALLET.
 *************************************************************************************************************************************.
 *Section 7.1.
-compute AWARE_MM=0.
-if bi_e24d=1 AWARE_MM=1.
+numeric AWARE_MM.
 
-numeric AWARE_MM_PROVIDER.
-numeric AWARE_NONUSER_MM.
+compute AWARE_MM_PROVIDER=0.
+if bi_e24d=1 AWARE_MM_PROVIDER=1.
+
+compute AWARE_NONUSER_MM = 0.
+if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 0 AWARE_NONUSER_MM = 1.
 
 compute ACCESS_MM=0.
 if BI_E25D=1 ACCESS_MM=1.
