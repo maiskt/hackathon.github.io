@@ -981,8 +981,8 @@ recode IFI12_6 (1=1)(else=0) into LOAN_GROUP.
 recode IFI13_6 (1=1)(else=0) into LOAN_POST.
 numeric LOAN_SACCO.
 
-recode FL9(1=1)(else=0) into LOAN_EMERGENCY.
-recode FL9(5=1)(else=0) into  LOAN_DAILY.
+recode FL9(5=1)(else=0) into LOAN_EMERGENCY.
+recode FL9(1=1)(else=0) into  LOAN_DAILY.
 numeric LOAN_BUSINESS.
 numeric LOAN_HOME.
 numeric LOAN_AGRIC.
@@ -1060,8 +1060,8 @@ recode LOAN_POST (1 thru hi = 1)(else = 0).
 numeric LOAN_GROUP.
 numeric LOAN_SACCO.
 
-recode FL9(1=1)(else=0) into LOAN_EMERGENCY.
-recode FL9(5=1)(else=0) into  LOAN_DAILY.
+recode FL9(5=1)(else=0) into LOAN_EMERGENCY.
+recode FL9(1=1)(else=0) into  LOAN_DAILY.
 numeric LOAN_BUSINESS.
 numeric LOAN_HOME.
 numeric LOAN_AGRIC.
@@ -1097,8 +1097,8 @@ numeric LOAN_GROUP.
 recode IFI13_6 (1=1)(else=0) into LOAN_POST.
 recode IFI12_6 (1=1)(else=0) into LOAN_SACCO.
 
-recode FL9(1=1)(else=0) into LOAN_EMERGENCY.
-recode FL9(5=1)(else=0) into LOAN_DAILY.
+recode FL9(5=1)(else=0) into LOAN_EMERGENCY.
+recode FL9(1=1)(else=0) into LOAN_DAILY.
 numeric LOAN_BUSINESS.
 numeric LOAN_HOME.
 numeric LOAN_AGRIC.
@@ -1133,8 +1133,8 @@ recode IFI12_6 (1=1)(else=0) into LOAN_GROUP.
 recode IFI13_6 (1=1)(else=0) into LOAN_POST.
 numeric LOAN_SACCO.
 
-recode FL9(1=1)(else=0) into LOAN_EMERGENCY.
-recode FL9(5=1)(else=0) into LOAN_DAILY.
+recode FL9(5=1)(else=0) into LOAN_EMERGENCY.
+recode FL9(1=1)(else=0) into LOAN_DAILY.
 numeric LOAN_BUSINESS.
 numeric LOAN_HOME.
 numeric LOAN_AGRIC.
@@ -1169,8 +1169,8 @@ recode IFI12_6 (1=1)(else=0) into LOAN_GROUP.
 recode IFI13_6 (1=1)(else=0) into LOAN_POST.
 numeric LOAN_SACCO.
 
-recode FL9(1=1)(else=0) into LOAN_EMERGENCY.
-recode FL9(5=1)(else=0) into LOAN_DAILY.
+recode FL9(5=1)(else=0) into LOAN_EMERGENCY.
+recode FL9(1=1)(else=0) into LOAN_DAILY.
 numeric LOAN_BUSINESS.
 numeric LOAN_HOME.
 numeric LOAN_AGRIC.
@@ -1205,8 +1205,8 @@ numeric LOAN_GROUP.
 recode IFI13_6 (1=1)(else=0) into LOAN_POST.
 recode IFI12_6 (1=1)(else=0) into LOAN_SACCO.
 
-recode FL9(1=1)(else=0) into LOAN_EMERGENCY.
-recode FL9(5=1)(else=0) into LOAN_DAILY.
+recode FL9(5=1)(else=0) into LOAN_EMERGENCY.
+recode FL9(1=1)(else=0) into LOAN_DAILY.
 numeric LOAN_BUSINESS.
 numeric LOAN_HOME.
 numeric LOAN_AGRIC.
@@ -1241,8 +1241,8 @@ numeric LOAN_GROUP.
 recode IFI13_6 (1=1)(else=0) into LOAN_POST.
 recode IFI12_6 (1=1)(else=0) into LOAN_SACCO.
 
-recode FL9(1=1)(else=0) into LOAN_EMERGENCY.
-recode FL9(5=1)(else=0) into LOAN_DAILY.
+recode FL9(5=1)(else=0) into LOAN_EMERGENCY.
+recode FL9(1=1)(else=0) into LOAN_DAILY.
 numeric LOAN_BUSINESS.
 numeric LOAN_HOME.
 numeric LOAN_AGRIC.
@@ -1291,7 +1291,10 @@ recode LOAN (1 thru hi = 1 )(else = 0).
 numeric LOAN_CURRENT.
 numeric LOAN_INTEREST.
 numeric LOAN_FORMAL.
-numeric LOAN_INFML.
+count LOAN_FORMAL =FB7_1_1 FB7_1_2 FB7_1_3 FB7_1_6 FB7_1_7(1).
+recode LOAN_FORMAL (1 thru hi = 1 )(else = 0).
+count LOAN_INFML =FB7_1_4 FB7_1_5 FB7_1_8 to FB7_1_16(1).
+recode LOAN_INFML (1 thru hi = 1 )(else = 0).
 
 numeric LOAN_STORE.
 numeric LOAN_CREDITCARD.
@@ -1299,7 +1302,7 @@ recode FB7_1_2 (1=1)(else=0) into LOAN_MFI.
 numeric LOAN_COOP.
 recode FB7_1_4 (1=1)(else=0) into LOAN_MLENDER.
 numeric LOAN_PAWN.
-*recode FB7_1_3 (1=1)(2=0) into LOAN_GROUP.
+recode FB7_1_3 (1=1)(else=0) into LOAN_GROUP.
 recode FB7_1_7 (1=1)(else=0) into LOAN_POST.
 numeric LOAN_SACCO.
 
