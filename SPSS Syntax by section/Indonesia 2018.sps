@@ -746,10 +746,10 @@ numeric SACCOKM.
 recode BI_E43_6 (1 THRU 2=1)(3=2)(4=3)(-2=99) into COOPKM.
 
 compute POS=0.
-if (BBKM=99 or ATMKM=99 or MMKM=99 or BAKM=99 or RSKM=99 or MFIKM=99 or GRPKM=99 or INFMLKM=99 or POSTKM=99) POS=99.
-if (BBKM=3 or ATMKM=3 or MMKM=3 or BAKM=3 or RSKM=3 or MFIKM=3 or GRPKM=3 or INFMLKM=3 or POSTKM=3) POS=3.
-if (BBKM=2 or ATMKM=2 or MMKM=2 or BAKM=2 or RSKM=2 or MFIKM=2 or GRPKM=2 or INFMLKM=2 or POSTKM=2) POS=2.
-if (BBKM=1 or ATMKM=1 or MMKM=1 or BAKM=1 or RSKM=1 or MFIKM=1 or GRPKM=1 or INFMLKM=1 or POSTKM=1) POS=1.
+if (BBKM=99 or ATMKM=99 or BAKM=99 or MFIKM=99 or POSTKM=99 or COOPKM=99) POS=99.
+if (BBKM=3 or ATMKM=3 or BAKM=3 or MFIKM=3 or POSTKM=3 or COOPKM=3) POS=3.
+if (BBKM=2 or ATMKM=2 or BAKM=2 or MFIKM=2 or POSTKM=2 or COOPKM=2) POS=2.
+if (BBKM=1 or ATMKM=1 or BAKM=1 or MFIKM=1 or POSTKM=1 or COOPKM=1) POS=1.
 
 *************************************************************************************************************************************.
 *Labels.
