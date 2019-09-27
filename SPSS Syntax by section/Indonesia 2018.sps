@@ -287,20 +287,20 @@ numeric AWARE_MM.
 compute AWARE_MM_PROVIDER=0.
 if bi_e24d=1 AWARE_MM_PROVIDER=1.
 
-compute AWARE_NONUSER_MM = 0.
-if AWARE_MM_PROVIDER = 1 and ACCESS_MM = 0 AWARE_NONUSER_MM = 1.
+compute AWARE_NONUSER_MM=0.
+if AWARE_MM_PROVIDER=1 and ACCESS_MM=0 AWARE_NONUSER_MM=1.
 
 compute ACCESS_MM=0.
 if BI_E25D=1 ACCESS_MM=1.
 
 compute REGISTERED_MM=0.
-if BI_E32A=1 REGISTERED_MM=1.
+if BI_E26D=1 REGISTERED_MM=1.
 
 compute ACTIVE_MM=0.
-if (BI_E32A=1 and GF3B<=2) ACTIVE_MM=1.
+if (BI_E26D=1 and GF3B<=2) ACTIVE_MM=1.
 
 compute ACTIVE30_MM=0.
-if (BI_E32A=1 and GF3B=1) ACTIVE30_MM=1.
+if (BI_E26D=1 and GF3B=1) ACTIVE30_MM=1.
 
 compute INACTIVE_MM=0.
 if registered_mm=1 and active_mm=0 INACTIVE_MM=1.
@@ -312,16 +312,16 @@ compute OTC_MM=0.
 if registered_mm=0 and access_mm=1 OTC_MM=1.
 
 compute MM_BASIC=0.
-if bi_e28d_b=1 or bi_e28d_d=1 MM_BASIC = 1.
+if bi_e28d_b=1 or bi_e28d_d=1 MM_BASIC=1.
 
-compute MM_ADV = 0.
-if bi_e28d_a=1 or bi_e28d_c=1 MM_ADV = 1.
+compute MM_ADV=0.
+if bi_e28d_a=1 or bi_e28d_c=1 MM_ADV=1.
 
-compute REG_MM_BASIC = 0.
-if REGISTERED_MM=1 and MM_BASIC=1 REG_MM_BASIC = 1.
+compute REG_MM_BASIC=0.
+if REGISTERED_MM=1 and MM_BASIC=1 REG_MM_BASIC=1.
 
 compute REG_MM_ADV=0.
-if REGISTERED_MM=1 and MM_ADV=1 REG_MM_ADV = 1.
+if REGISTERED_MM=1 and MM_ADV=1 REG_MM_ADV=1.
 
 compute ACTIVE_MM_BASIC=0.
 if ACTIVE_MM=1 and MM_BASIC=1 ACTIVE_MM_BASIC=1.
@@ -334,7 +334,7 @@ if ACTIVE30_MM=1 and MM_ADV=1 ACTIVE30_MM_ADV=1.
 
 numeric LENGTH_MM.
 
-compute MM_STAGE = 0.
+compute MM_STAGE=0.
 if access_mm=1 MM_STAGE=1.
 if (MM_STAGE=1 and registered_mm=1) MM_STAGE=2.
 if (MM_STAGE=2 and active_mm=1) MM_STAGE=3.
@@ -344,9 +344,9 @@ if (MM_STAGE=3 and ACTIVE_MM_ADV=1) MM_STAGE=4.
 compute MM_TRANSFER =0.
 if bi_e28d_d=1 MM_TRANSFER=1.
 compute MM_MERCHANT =0.
-if bi_e28d_a=1 MM_MERCHANT = 1. 
+if bi_e28d_a=1 MM_MERCHANT=1. 
 compute MM_BILL =0.
-if bi_e28d_c=1 MM_BILL = 1. 
+if bi_e28d_c=1 MM_BILL=1. 
 numeric MM_GOV.
 numeric MM_WAGE.
 numeric MM_INSURANCE.
@@ -467,60 +467,30 @@ IF (OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1 or
      OJK11_1=1 or OJK11_2=1 or OJK11_3=1 or 
      OJK12_1=1 or OJK12_2=1 or OJK12_3=1 or OJK13_1=1 or OJK13_2=1 or OJK13_3=1) ACCESS_NBFI_ALL=1.
 
-compute REGISTERED_NBFI=0.
-if FNX=1 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and
-(BI_E1A=2 or sysmis(BI_E1A)) and (BI_E1B=2 or sysmis(BI_E1B)) and (BI_E1C=2 or sysmis(BI_E1C)) and (BI_E1V=2 or sysmis(BI_E1V)) and
-(BI_E32A=2 or sysmis(BI_E32A)) REGISTERED_NBFI=1.
+NUMERIC REGISTERED_NBFI.
 
-compute REGISTERED_NBFI_ALL=0.
-if FNX=1 and
-(BI_E1A=2 or sysmis(BI_E1A)) and (BI_E1B=2 or sysmis(BI_E1B)) and (BI_E1C=2 or sysmis(BI_E1C)) and (BI_E1V=2 or sysmis(BI_E1V)) and
-(BI_E32A=2 or sysmis(BI_E32A)) REGISTERED_NBFI_ALL=1.
+NUMERIC REGISTERED_NBFI_ALL.
 
-compute REG_DFS_NBFI=0.
-IF FNX=1 and 
-((OJK11_1=2 and OJK11_2=2 and OJK11_3=2 and sysmis(BPR1)) or 
-((OJK11_1=1 or COP2=1) and COP1=1) or 
-(BPR1=2 or BPR2=2 or (BPR2=1 and BPR3=1))) and
-(BI_E1A=2 or sysmis(BI_E1A)) and (BI_E1B=2 or sysmis(BI_E1B)) and (BI_E1C=2 or sysmis(BI_E1C)) and (BI_E1V=2 or sysmis(BI_E1V)) and
-(BI_E32A=2 or sysmis(BI_E32A)) REG_DFS_NBFI=1.
-*double check.
-compute ACTIVE_NBFI=0.
-if FNXA<=2 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and 
-(OJK14_1>2 or sysmis(OJK14_1)) and (OJK14_2>2 or sysmis(OJK14_2)) and (OJK14_3>2 or sysmis(OJK14_3)) and (OJK14_4>2 or sysmis(OJK14_4)) and (OJK14_5>2 or sysmis(OJK14_5)) and 
-(OJK14_6>2 or sysmis(OJK14_6)) and (OJK14_7>2 or sysmis(OJK14_7)) and (OJK14_8>2 or sysmis(OJK14_8)) and (OJK14_9>2 or sysmis(OJK14_9)) and (OJK14_10>2 or sysmis(OJK14_10)) and 
-(OJK14_12>2 or sysmis(OJK14_12)) and (OJK14_13>2 or sysmis(OJK14_13)) and (GF3B>2 or bi_e32a=2) ACTIVE_NBFI=1.
-*double check.
-compute ACTIVE_NBFI_ALL=0.
-if FNXA<=2 and 
-(OJK14_1>2 or sysmis(OJK14_1)) and (OJK14_2>2 or sysmis(OJK14_ 2)) and (OJK14_3>2 or sysmis(OJK14_3)) and (OJK14_4>2 or sysmis(OJK14_4)) and (OJK14_5>2 or sysmis(OJK14_5)) and 
-(OJK14_6>2 or sysmis(OJK14_6)) and (OJK14_7>2 or sysmis(OJK14_7)) and (OJK14_8>2 or sysmis(OJK14_8)) and (OJK14_9>2 or sysmis(OJK14_9)) and (OJK14_10>2 or sysmis(OJK14_10)) and 
-(OJK14_12>2 or sysmis(OJK14_12)) and (OJK14_13>2 or sysmis(OJK14_13)) and (GF3B>2 or bi_e32a=2) ACTIVE_NBFI_ALL=1.
-*double check.
-compute ACTIVE30_NBFI=0.
-if FNXA=1 and ((OJK11_1=2 and OJK11_2=2 and OJK11_3=2) or OJK11_1=1 or COP2=1) and 
-(OJK14_1>1 or sysmis(OJK14_1)) and (OJK14_2>1 or sysmis(OJK14_ 2)) and (OJK14_3>1 or sysmis(OJK14_3)) and (OJK14_4>1 or sysmis(OJK14_4)) and (OJK14_5>1 or sysmis(OJK14_5)) and 
-(OJK14_6>1 or sysmis(OJK14_6)) and (OJK14_7>1 or sysmis(OJK14_7)) and (OJK14_8>1 or sysmis(OJK14_8)) and (OJK14_9>1 or sysmis(OJK14_9)) and (OJK14_10>1 or sysmis(OJK14_10)) and 
-(OJK14_12>1 or sysmis(OJK14_12)) and (OJK14_13>1 or sysmis(OJK14_13)) and (GF3B>1 or bi_e32a=2) ACTIVE30_NBFI=1.
-*double check.
-compute INACTIVE_NBFI=0.
-if REGISTERED_NBFI=1 and ACTIVE_NBFI=0 INACTIVE_NBFI=1.
+NUMERIC REG_DFS_NBFI.
 
-compute DORMANT_NBFI=0.
-if REGISTERED_NBFI=1 and ACCESS_NBFI=0 DORMANT_NBFI=1.
+NUMERIC ACTIVE_NBFI.
 
-compute OTC_NBFI=0.
-if REGISTERED_NBFI=0 and ACCESS_NBFI=1 OTC_NBFI=1.
+NUMERIC ACTIVE_NBFI_ALL.
+
+NUMERIC ACTIVE30_NBFI.
+
+NUMERIC INACTIVE_NBFI.
+
+NUMERIC DORMANT_NBFI.
+
+NUMERIC OTC_NBFI.
 
 numeric NBFI_ALL_BASIC.
 numeric NBFI_ALL_ADV.
 numeric NBFI_BASIC.
 numeric NBFI_ADV.
 numeric REG_NBFI_BASIC.
-*discuss whether derive bank_adv or mm_adv, then derive reg_nbfi_adv.
-*Double check.
-compute REG_NBFI_ADV=0.
-if (GF1=1 or GF2=1) and REG_BANK_ADV=0 and REG_MM_ADV=0  REG_NBFI_ADV=1.
+NUMERIC REG_NBFI_ADV.
 
 numeric ACTIVE_NBFI_BASIC.
 numeric ACTIVE_NBFI_ADV.
@@ -528,21 +498,18 @@ numeric ACTIVE30_NBFI_ADV.
 numeric NBFI_STAGE.
 *************************************************************************************************************************************.
 *Section 8.2.*discuss and decide whether to keep.
-*double check.
 compute ACCESS_MFI=0.
 if (OJK12_1=1 or OJK12_2=1 or OJK12_3=1 or OJK13_1=1 or OJK13_2=1 or OJK13_3=1) ACCESS_MFI=1.
-compute REGISTERED_MFI=0.
-if (OJK12_2=1 or OJK13_2=1) REGISTERED_MFI=1.
-compute ACTIVE_MFI=0.
-if (OJK12_2=1 and (ojk26_1<3 or ojk26_2<3)) or (OJK13_2=1 and (ojk24_1<3 or ojk24_2<3)) ACTIVE_MFI=1.
-*double check.
+NUMERIC REGISTERED_MFI.
+NUMERIC ACTIVE_MFI.
+
 compute ACCESS_COOP=0.
 if OJK11_1=1 or COP2=1 ACCESS_COOP=1.
 compute REGISTERED_COOP=0.
-if (OJK11_1=1 or COP2=1) and ojk11_2=1 REGISTERED_COOP=1.
+if (OJK11_1=1 or COP2=1) and BI_E1D=1 REGISTERED_COOP=1.
 compute ACTIVE_COOP=0.
-if (((OJK11_1=1 or COP2=1) and ojk11_2=1) and (ojk25_1<3 or ojk25_2<3)) ACTIVE_COOP=1.
-*double check.
+if ((OJK11_1=1 or COP2=1) and BI_E1D=1) and (ojk25_1<3 or ojk25_2<3) ACTIVE_COOP=1.
+
 compute ACCESS_POST=0.
 if (OJK10_1=1 or OJK10_2=1 or OJK10_3=1 or OJK10_4=1) ACCESS_POST=1.
 numeric REGISTERED_POST.
@@ -554,13 +521,11 @@ numeric ACTIVE_SACCO.
 numeric ACCESS_BPR.
 numeric REGISTERED_BPR.
 numeric ACTIVE_BPR.
-*double check.
+
 compute ACCESS_PAWNSHOP=0.
 if (OJK6_1=1 or OJK6_2=1 or OJK6_3=1 or OJK6_4=1) ACCESS_PAWNSHOP=1.
-compute REGISTERED_PAWNSHOP=0.
-if (OJK6_1=1 or OJK6_2=1) REGISTERED_PAWNSHOP=1.
-compute ACTIVE_PAWNSHOP=0.
-if ((OJK6_1=1 or OJK6_2=1) and (ojk19_1<3 or ojk19_2<3 or ojk19_3<3)) ACTIVE_PAWNSHOP=1.
+NUMERIC REGISTERED_PAWNSHOP.
+NUMERIC ACTIVE_PAWNSHOP.
 
 numeric AWARE_PAYMENT_BANK_PROVIDER.
 numeric ACCESS_PAYMENT.
@@ -577,7 +542,7 @@ numeric NBFI_BILL.
 numeric NBFI_GOV.
 numeric NBFI_WAGE.
 numeric NBFI_INSURANCE.
-numeric NBFI_SAVE.
+NUMERIC NBFI_SAVE.
 numeric NBFI_INVEST.
 numeric NBFI_LOAN.
 numeric NBFI_AIRTIME.
@@ -593,7 +558,7 @@ numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
 numeric ACTIVE_NBFI_AIRTIME.
 *************************************************************************************************************************************.
-*Section 9 (miss label).
+*Section 9 .
 numeric BELONG_INFML.
 numeric R_INFML.
 numeric R_NOINFML.
@@ -606,12 +571,10 @@ numeric INFML_SERVICE6.
 numeric INFML_SERVICE7.
 numeric INFML_SERVICE8.
 *************************************************************************************************************************************.
-*Section 10 (miss label).
-*double check.
+*Section 10 .
 compute LOAN=0.
 if bi_e14=1 or bi_e16a=1 or BI_E17=1 or BI_E18A=1 LOAN=1.
 
-*double check.
 compute LOAN_CURRENT=0.
 if bi_e14=1 or BI_E17=1 LOAN_CURRENT=1.
 
@@ -620,15 +583,11 @@ numeric LOAN_KNOW_INTEREST.
 compute LOAN_INFML=0.
 if bi_e17=1 or bi_e18a=1 LOAN_INFML=1.
 
-*double check.
 compute LOAN_FORMAL=0.
 if bi_e14=1 or bi_e16a=1 LOAN_FORMAL=1.
 
 numeric LOAN_STORE.
 numeric  LOAN_CREDITCARD.
-compute LOAN_BANK=0.
-IF (ojk1_5=1 or ojk1_6=1 or ojk1_7=1 or ojk1_8=1 or ojk1_9=1 or ojk1_10=1) LOAN_BANK=1.
-numeric LOAN_MM.
 compute LOAN_MFI=0.
 IF (ojk12_2=1 or ojk13_2=1) LOAN_MFI=1.
 recode ojk11_2(1=1)(else=0) into LOAN_COOP.
@@ -645,7 +604,7 @@ numeric LOAN_BUSINESS.
 numeric LOAN_HOME.
 numeric LOAN_AGRIC.
 *************************************************************************************************************************************.
-*Section 11 (miss label).
+*Section 11 .
 compute Save=0.
 if bi_e5s=1 or bi_e6s=1 or
    ojk1_1=1 or ojk10_1=1 or ojk11_1=1 or ojk12_1=1 or ojk13_1=1 Save=1.
@@ -654,7 +613,7 @@ numeric SAVE_KNOW_INTEREST.
 
 recode bi_e13(1=1)(else=0) into SAVE_INFML.
 
-compute SAVE_FORMAL = 0.
+compute SAVE_FORMAL=0.
 if ojk1_1=1 or ojk10_1=1 or ojk11_1=1 or ojk12_1=1 or ojk13_1=1 SAVE_FORMAL=1.
 
 recode ojk1_1(1=1)(else=0) into SAVE_BANK.
@@ -678,7 +637,7 @@ numeric SAVE_CHILDREN_EDU.
 numeric SAVE_WEDDING.
 numeric SAVE_HOUSE.
 *************************************************************************************************************************************.
-*Section 12 (miss label).
+*Section 12 .
 count INSURANCE=ojk2_1 ojk2_2 ojk2_3 ojk2_4 ojk2_5 ojk2_6 ojk2_7 ojk2_8 ojk2_9 ojk2_10 ojk2_11(1).
 recode INSURANCE (1 thru highest=1)(else=0).
 
@@ -693,7 +652,7 @@ numeric INSUR_OLDAGE.
 recode ojk2_9(1=1)(else=0) into INSUR_LIVESTOCK.
 numeric INSUR_FAMILY.
 *************************************************************************************************************************************.
-*Section 13 (miss label).
+*Section 13 .
 compute INVEST=0.
 if ojk7_1=1 or ojk7_2=1 or ojk7_3=1 or ojk7_4=1 or
    ojk8_1=1 or ojk8_2=1 INVEST=1.
@@ -702,10 +661,10 @@ numeric INVEST_OWN.
 numeric INVEST_OTHER.
 numeric INVEST_INFORMAL.
 
-compute INVEST_INSURANCE = 0.
-if INVEST=1 or INSURANCE=1 INVEST_INSURANCE = 1.
+compute INVEST_INSURANCE=0.
+if INVEST=1 or INSURANCE=1 INVEST_INSURANCE=1.
 *************************************************************************************************************************************.
-*Section 14 (miss label).
+*Section 14 .
 compute FIN_SITUATION=dl24.
 numeric MAIN_EARNER.
 
@@ -720,7 +679,7 @@ numeric SCH_FEE_PRB3.
 numeric SCH_FEE_PRB4.
 numeric SCH_FEE_PRB5.
 *************************************************************************************************************************************.
-*Section 15.1 (miss label).
+*Section 15.1 .
 numeric HAVE_PLAN.
 numeric ECO_VUL.
 numeric FIN_SHOCK.
@@ -738,7 +697,7 @@ numeric FIN_HEA8.
 numeric FIN_HEA9.
 numeric FIN_HEA10.
 *************************************************************************************************************************************.
-*Section 15.2 (miss label).
+*Section 15.2 .
 numeric FIN_SHO1.
 numeric FIN_SHO2.
 numeric FIN_SHO3.
@@ -749,48 +708,48 @@ numeric FIN_SHO7.
 numeric FIN_SHO8.
 
 compute MONEY_SOU1=0.
-if dl4_1=1 or fl4_2=1 MONEY_SOU1=1.
+if dl4_1=1 or DL4_2=1 MONEY_SOU1=1.
 recode DL4_3 (2=0)(else=copy) into MONEY_SOU2.
-recode DL4_4 (2=0)(else=copy) into MONEY_SOU3.
-recode DL4_5 (2=0)(else=copy) into MONEY_SOU4.
-recode DL4_6 (2=0)(else=copy) into MONEY_SOU5.
-recode DL4_7 (2=0)(else=copy) into MONEY_SOU6.
-recode DL4_8 (2=0)(else=copy) into MONEY_SOU7.
-recode DL4_9 (2=0)(else=copy) into MONEY_SOU8.
-recode DL4_10 (2=0)(else=copy) into MONEY_SOU9.
-recode DL4_11 (2=0)(else=copy) into MONEY_SOU10.
+compute MONEY_SOU3=0.
+if DL4_4=1 or DL4_5=1 MONEY_SOU3=1.
+recode DL4_6 (2=0)(else=copy) into MONEY_SOU4.
+recode DL4_7 (2=0)(else=copy) into MONEY_SOU5.
+compute MONEY_SOU6=0.
+if DL4_8=1 or DL4_9=1 MONEY_SOU6=1.
+recode DL4_10 (2=0)(else=copy) into MONEY_SOU7.
+recode DL4_11 (2=0)(else=copy) into MONEY_SOU8.
 
 numeric EXPENSE1.
 numeric EXPENSE2.
 numeric EXPENSE3.
 *************************************************************************************************************************************.
-*Section 16(miss label).
-compute ECO_EMP1=gn1.
-compute ECO_EMP2=gn2.
-compute ECO_EMP3=gn3.
-compute ECO_EMP4=gn4.
-compute ECO_EMP5=gn5.
-compute ECO_EMP6=gn6.
-compute ECO_EMP7=gn7.
-compute ECO_EMP8=gn8.
+*Section 16.
+recode GN1 (-3, -2=99)(else=copy) into ECO_EMP1.
+recode GN2 (-3, -2=99)(else=copy) into ECO_EMP2.
+recode GN3 (-3, -2=99)(else=copy) into ECO_EMP3.
+recode GN4 (-3, -2=99)(else=copy) into ECO_EMP4.
+recode GN5 (-3, -2=99)(else=copy) into ECO_EMP5.
+recode GN7 (-3, -2=99)(else=copy) into ECO_EMP6.
+recode GN8 (-3, -2=99)(else=copy) into ECO_EMP7.
 *************************************************************************************************************************************.
-*Section 17(miss label).
-compute BBKM=bi_e43_1.
-compute ATMKM=bi_e43_2.
-numeric MMKM.
-compute BAKM=bi_e43_4.
-numeric RSKM.
-compute MFIKM=bi_e43_9.
-numeric GRPKM.
-numeric INFMLKM.
-compute POSTKM=bi_e43_3.
+*Section 17.
+recode BI_E43_1 (1 THRU 2=1)(3=2)(4=3)(-2=99) into BBKM.
+recode BI_E43_2 (1 THRU 2=1)(3=2)(4=3)(-2=99) into ATMKM.
+NUMERIC MMKM.
+recode BI_E43_4 (1 THRU 2=1)(3=2)(4=3)(-2=99) into BAKM.
+NUMERIC RSKM.
+recode BI_E43_9 (1 THRU 2=1)(3=2)(4=3)(-2=99) into MFIKM.
+NUMERIC GRPKM.
+NUMERIC INFMLKM.
+recode BI_E43_3 (1 THRU 2=1)(3=2)(4=3)(-2=99) into POSTKM.
+numeric SACCOKM.
+recode BI_E43_6 (1 THRU 2=1)(3=2)(4=3)(-2=99) into COOPKM.
 
-compute POS = 0.
-if (BBKM=-2 or ATMKM=-2 or MMKM=-2 or BAKM=-2 or RSKM=-2 or MFIKM=-2 or GRPKM=-2 or INFMLKM=-2 or POSTKM=-2) POS=-2.
-if (BBKM = 4 or ATMKM = 4 or MMKM = 4 or BAKM = 4 or RSKM = 4 or MFIKM = 4 or GRPKM = 4 or INFMLKM = 4 or POSTKM = 4) POS = 4.
-if (BBKM = 3 or ATMKM = 3 or MMKM = 3 or BAKM = 3 or RSKM = 3 or MFIKM = 3 or GRPKM = 3 or INFMLKM = 3 or POSTKM = 3) POS = 3.
-if (BBKM = 2 or ATMKM = 2 or MMKM = 2 or BAKM = 2 or RSKM = 2 or MFIKM = 2 or GRPKM = 2 or INFMLKM = 2 or POSTKM = 2) POS = 2.
-if (BBKM = 1 or ATMKM = 1 or MMKM = 1 or BAKM = 1 or RSKM = 1 or MFIKM = 1 or GRPKM = 1 or INFMLKM = 1 or POSTKM = 1) POS = 1.
+compute POS=0.
+if (BBKM=99 or ATMKM=99 or BAKM=99 or MFIKM=99 or POSTKM=99 or COOPKM=99) POS=99.
+if (BBKM=3 or ATMKM=3 or BAKM=3 or MFIKM=3 or POSTKM=3 or COOPKM=3) POS=3.
+if (BBKM=2 or ATMKM=2 or BAKM=2 or MFIKM=2 or POSTKM=2 or COOPKM=2) POS=2.
+if (BBKM=1 or ATMKM=1 or BAKM=1 or MFIKM=1 or POSTKM=1 or COOPKM=1) POS=1.
 
 *************************************************************************************************************************************.
 *Labels.
