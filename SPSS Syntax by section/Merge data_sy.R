@@ -3,6 +3,7 @@ library(foreign)
 library(dplyr)
 library(haven)
 library(readxl)
+library(tidyverse)
 
 ##Input data
 
@@ -165,34 +166,36 @@ write_sav(ido18,"C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Institute/DA Tea
 
 ###master data
 {
-sec1 <- read_csv("~/bb/Codebook/Dataset/Section1 (full).csv",col_types = cols(SBJNUM = col_number()))
-sec2 <- read_csv("~/bb/Codebook/Dataset/Section 2.csv", 
-                 col_types = cols(PPI_PROB = col_number(), 
+sec1 <- read_csv("~/GitHub/Codebook/Dataset/Section 1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number(),
+                                                                            WEIGHT = col_number(),LATITUDE = col_number(),
+                                                                            LONGITUDE = col_number()))
+sec2 <- read_csv("~/GitHub/Codebook/Dataset/Section 2.csv", 
+                 col_types = cols(.default = col_character(),PPI_PROB = col_number(), 
                                   PPI_SCORE = col_number(), SBJNUM = col_number()))
-sec3 <- read_csv("~/bb/Codebook/Dataset/Section 3.csv",col_types = cols(SBJNUM = col_number()))
-sec4 <- read_csv("~/bb/Codebook/Dataset/Section 4.csv",col_types = cols(SBJNUM = col_number()))
-sec5 <- read_csv("~/bb/Codebook/Dataset/Section 5.csv",col_types = cols(SBJNUM = col_number()))
-sec6.1 <- read_csv("~/bb/Codebook/Dataset/Section 6.1.csv",col_types = cols(SBJNUM = col_number()))
-sec6.2 <- read_csv("~/bb/Codebook/Dataset/Section 6.2.csv",col_types = cols(SBJNUM = col_number()))
-sec6.3 <- read_csv("~/bb/Codebook/Dataset/Section 6.3.csv",col_types = cols(SBJNUM = col_number()))
-sec7.1 <- read_csv("~/bb/Codebook/Dataset/Section 7.1.csv",col_types = cols(SBJNUM = col_number()))
-sec7.2 <- read_csv("~/bb/Codebook/Dataset/Section 7.2.csv",col_types = cols(SBJNUM = col_number()))
-sec7.3 <- read_csv("~/bb/Codebook/Dataset/Section 7.3.csv",col_types = cols(SBJNUM = col_number()))
-sec7.4 <- read_csv("~/bb/Codebook/Dataset/Section 7.4.csv",col_types = cols(SBJNUM = col_number()))
-sec7.5 <- read_csv("~/bb/Codebook/Dataset/Section 7.5.csv",col_types = cols(SBJNUM = col_number()))
-sec8.1 <- read_csv("~/bb/Codebook/Dataset/Section 8.1.csv",col_types = cols(SBJNUM = col_number()))
-sec8.2 <- read_csv("~/bb/Codebook/Dataset/Section 8.2.csv",col_types = cols(SBJNUM = col_number()))
-sec8.3 <- read_csv("~/bb/Codebook/Dataset/Section 8.3.csv",col_types = cols(SBJNUM = col_number()))
-sec9 <- read_csv("~/bb/Codebook/Dataset/Section 9.csv",col_types = cols(SBJNUM = col_number()))
-sec10 <- read_csv("~/bb/Codebook/Dataset/Section 10.csv",col_types = cols(SBJNUM = col_number()))
-sec11 <- read_csv("~/bb/Codebook/Dataset/Section 11.csv",col_types = cols(SBJNUM = col_number()))
-sec12 <- read_csv("~/bb/Codebook/Dataset/Section 12.csv",col_types = cols(SBJNUM = col_number()))
-sec13 <- read_csv("~/bb/Codebook/Dataset/Section 13.csv",col_types = cols(SBJNUM = col_number()))
-sec14 <- read_csv("~/bb/Codebook/Dataset/Section 14.csv",col_types = cols(SBJNUM = col_number()))
-sec15.1 <- read_csv("~/bb/Codebook/Dataset/Section 15.1.csv",col_types = cols(SBJNUM = col_number()))
-sec15.2 <- read_csv("~/bb/Codebook/Dataset/Section 15.2.csv",col_types = cols(SBJNUM = col_number()))
-sec16 <- read_csv("~/bb/Codebook/Dataset/Section 16.csv",col_types = cols(SBJNUM = col_number()))
-sec17 <- read_csv("~/bb/Codebook/Dataset/Section 17.csv",col_types = cols(SBJNUM = col_number()))
+sec3 <- read_csv("~/GitHub/Codebook/Dataset/Section 3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec4 <- read_csv("~/GitHub/Codebook/Dataset/Section 4.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec5 <- read_csv("~/GitHub/Codebook/Dataset/Section 5.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec6.1 <- read_csv("~/GitHub/Codebook/Dataset/Section 6.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec6.2 <- read_csv("~/GitHub/Codebook/Dataset/Section 6.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec6.3 <- read_csv("~/GitHub/Codebook/Dataset/Section 6.3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.1 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.2 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.3 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.4 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.4.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.5 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.5.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec8.1 <- read_csv("~/GitHub/Codebook/Dataset/Section 8.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec8.2 <- read_csv("~/GitHub/Codebook/Dataset/Section 8.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec8.3 <- read_csv("~/GitHub/Codebook/Dataset/Section 8.3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec9 <- read_csv("~/GitHub/Codebook/Dataset/Section 9.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec10 <- read_csv("~/GitHub/Codebook/Dataset/Section 10.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec11 <- read_csv("~/GitHub/Codebook/Dataset/Section 11.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec12 <- read_csv("~/GitHub/Codebook/Dataset/Section 12.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec13 <- read_csv("~/GitHub/Codebook/Dataset/Section 13.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec14 <- read_csv("~/GitHub/Codebook/Dataset/Section 14.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec15.1 <- read_csv("~/GitHub/Codebook/Dataset/Section 15.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec15.2 <- read_csv("~/GitHub/Codebook/Dataset/Section 15.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec16 <- read_csv("~/GitHub/Codebook/Dataset/Section 16.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec17 <- read_csv("~/GitHub/Codebook/Dataset/Section 17.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
 }
 
 #da_master <- inner_join(sec1,sec2,sec3,sec4,sec5,sec6.1,sec6.2,sec6.3,sec7.1,
@@ -226,7 +229,7 @@ da_master <- inner_join(sec1,sec2,by=c("COUNTRY","YEAR","SBJNUM")) %>%
   inner_join(.,sec16,by=c("COUNTRY","YEAR","SBJNUM")) %>%
   inner_join(.,sec17,by=c("COUNTRY","YEAR","SBJNUM"))
 
-indonesia18 <- read_csv("~/bb/Codebook/Dataset/Indo_2018.csv", 
+indonesia18 <- read_csv("~/GitHub/Codebook/Dataset/Indo_2018.csv", 
                  col_types = cols(PPI_PROB = col_number(), 
                                   PPI_SCORE = col_number(), SBJNUM = col_number(),
                                   ACTION_MM1 = col_character(),ACTION_MM2 = col_character(),
