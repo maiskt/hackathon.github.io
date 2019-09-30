@@ -2075,7 +2075,6 @@ value labels REGISTERED_BANK 1"Yes" 0"No".
 value labels ACTIVE_BANK 1"Yes" 0"No".
 value labels ACTIVE30_BANK 1"Yes" 0"No".
 value labels INACTIVE_BANK 1"Yes" 0"No".
-value labels DORMANT_BANK 1"Yes" 0"No".
 value labels BANK_BASIC 1"Yes" 0"No".
 value labels BANK_ADV 1"Yes" 0"No".
 value labels REG_BANK_BASIC 1"Yes" 0"No".
@@ -2095,7 +2094,6 @@ REGISTERED_BANK	"Have a bank account"
 ACTIVE_BANK	"Used own bank accounts in past 90 days"
 ACTIVE30_BANK	"Used own bank accounts in past 30 days"
 INACTIVE_BANK	"Bank account owner who haven't used any bank services in past 90 days"
-DORMANT_BANK	"Bank account owner who never used any bank services"
 BANK_BASIC	"Ever used bank to do basic activities"
 BANK_ADV	"Ever used bank to do advanced activities"
 REG_BANK_BASIC	"Conduct basic activity thru own bank account"
