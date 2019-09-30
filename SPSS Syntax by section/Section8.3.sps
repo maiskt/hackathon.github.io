@@ -1739,13 +1739,6 @@ value labels ACTIVE_NBFI_SAVE 1"Yes" 0"No".
 value labels ACTIVE_NBFI_INVEST 1"Yes" 0"No".
 value labels ACTIVE_NBFI_LOAN 1"Yes" 0"No".
 value labels ACTIVE_NBFI_AIRTIME 1"Yes" 0"No".
-value labels R_STOPMFI1 1"Yes" 2"No".
-value labels R_STOPMFI2 1"Yes" 2"No".
-value labels R_STOPMFI3 1"Yes" 2"No".
-value labels R_STOPMFI4 1"Yes" 2"No".
-value labels R_STOPMFI5 1"Yes" 2"No".
-value labels R_STOPMFI6 1"Yes" 2"No".
-value labels R_STOPMFI7 1"Yes" 2"No".
 
 variable labels NBFI_TRANSFER	"Ever used NBFI to send money to, or receive money from someone"
 NBFI_MERCHANT	"Ever used NBFI to buy goods and service"
