@@ -56,8 +56,8 @@ if DL6=1 OWN_FARM=1.
 compute WORK_FARM=0.
 if DL7=1 WORK_FARM=1.
 
-compute SELL_CROP=0.
-if DL4_1=1  or DL4_2=1 SELL_CROP=1.
+ * compute SELL_CROP=0.
+ * if DL4_1=1  or DL4_2=1 SELL_CROP=1.
 
 compute ID=0.
 if dg5_1=1 or dg5_3=1 or dg5_6=1 ID=1.  
@@ -551,7 +551,7 @@ numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
 numeric ACTIVE_NBFI_BILL.
 numeric ACTIVE_NBFI_GOV.
-numeric ACTIVE_NBFI WAGE.
+numeric ACTIVE_NBFI_WAGE.
 numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
@@ -578,7 +578,7 @@ if bi_e14=1 or bi_e16a=1 or BI_E17=1 or BI_E18A=1 LOAN=1.
 compute LOAN_CURRENT=0.
 if bi_e14=1 or BI_E17=1 LOAN_CURRENT=1.
 
-numeric LOAN_KNOW_INTEREST.
+numeric LOAN_INTEREST.
 
 compute LOAN_INFML=0.
 if bi_e17=1 or bi_e18a=1 LOAN_INFML=1.
@@ -605,9 +605,9 @@ numeric LOAN_HOME.
 numeric LOAN_AGRIC.
 *************************************************************************************************************************************.
 *Section 11 .
-compute Save=0.
+compute SAVE=0.
 if bi_e5s=1 or bi_e6s=1 or
-   ojk1_1=1 or ojk10_1=1 or ojk11_1=1 or ojk12_1=1 or ojk13_1=1 Save=1.
+   ojk1_1=1 or ojk10_1=1 or ojk11_1=1 or ojk12_1=1 or ojk13_1=1 SAVE=1.
 
 numeric SAVE_KNOW_INTEREST.
 
@@ -624,12 +624,13 @@ recode ojk11_1(1=1)(else=0) into SAVE_COOP.
 numeric SAVE_GROUP.
 recode ojk10_1(1=1)(else=0) into SAVE_POST.
 numeric SAVE_CASH_PROPERTY.
+numeric SAVE_SACCO.
 
 numeric SAVE_BUSINESS.
 numeric SAVE_EDUCATION.
 numeric SAVE_RETIREMENT.
 numeric SAVE_PRESTIGE.
-numeric SAVE_SECURITY.
+numeric SAVE_FAMILY.
 numeric SAVE_EMERGENCY.
 numeric SAVE_DAILY.
 numeric SAVE_COMMUNITY.
