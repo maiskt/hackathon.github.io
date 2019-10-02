@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  word_document: default
+---
 # Survey Dataset Identification
 
 Any given survey dataset can be identified using together the following 3 variables: SBJNUM, COUNTRY, and YEAR. 
@@ -5,25 +10,21 @@ Any given survey dataset can be identified using together the following 3 variab
 ## SBJNUM
 This is the identification variable that uniquely identifies each respondent within an individual survey dataset.  It is worth noting that two respondents from two different survey datasets can have the same SBJNUM value. For this reason, it is important to use variables SBJNUM, COUNTRY, and YEAR at the same time when using multiple survey datasets.
 
-## COUNTRY
-This is the name of the country where the survey was conducted. The following countries were surveyed:
+## COUNTRY, YEAR
+These are the variable shows the country and year where/when the survey was conducted. The survey was conducted in 8 countries and runs from 2013 to 2018, data was colllected for marked country/year as shown below.
 
-* Bangladesh
-* India
-* Indonesia
-* Kenya
-* Nigeria
-* Pakistan
-* Tanzania
-* Uganda
 
-## YEAR
-This is the year in which data collection place. It runs from 2013 to 2018, except for Indonesia where it ranges from 2014 to 2016.
+|Country/Year       |2013         |2014          |2015          |2016          |2017          |2018          |
+|----------------   |------------  |------------  |------------  |------------  |------------  |------------  |
+|**Bangladesh**     |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |
+|**India**          |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |
+|**Indonesia**      |              |$\checkmark$  |$\checkmark$  |$\checkmark$  |              |$\checkmark$  |
+|**Kenya**          |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |              |
+|**Nigeria**        |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |              |
+|**Pakistan**       |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |              |
+|**Tanzania**       |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |              |
+|**Uganda**         |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |              |
 
-****
-**Other variables**
-
-****
 
 Each individual survey dataset also includes the following variables:
 
@@ -38,7 +39,7 @@ The cluster number is the number identifiying the sample point as used during th
 
 Due to inadequate data, cluster data for Nigeria in 2013 are not available.
 
-## ANON_LAT, ANON_LONG
+## LATITUDE, LONGITUDE
 Anonymized latitude and longitude of the approximate household location.
 
 The method of anonymization is very similar to the one practiced by the Demographic Health Surveys project. All respondents within a cluster share the same coordinates. Cluster centers were initially calculated by averaging all longitudes and latitudes, then displacing the point randomly within a radius inside the second-level geographic area (e.g. counties). The maximum radius for displacement is within 2km for an urban area and 5km for a rural area, with a 1/100 chance of the maximum rural radius being 10km. This method is intended to preserve location anonymity while still being usable for basic spatial analysis purposes. 
