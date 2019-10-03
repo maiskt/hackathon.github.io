@@ -98,7 +98,6 @@ Levels:
 + Yes  
 + No
 
-
 ## REG_NBFI_BASIC
 
 ## REG_NBF_ADV
