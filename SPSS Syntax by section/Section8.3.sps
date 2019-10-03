@@ -1,4 +1,4 @@
-﻿* Encoding: windows-1252.
+﻿* Encoding: UTF-8.
 
 *Section8.3 .
 **************************************************************************************************************************************************.
@@ -30,7 +30,7 @@ compute NBFI_INVEST=0.
 if AD10_21=1 or AD10_22=1 or AD10_25=1 or (FN5_1=1 and FN5_4=1 and AD10_23=1) or (FN6_1=1 and FN6_4=1 and AD10_24=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 if AD11_7=1 or AD11_8=1 or AD11_13=1 or (FN5_1=1 and FN5_4=1 and AD11_11=1) or (FN6_1=1 and FN6_4=1 and AD11_12=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 compute ACTIVE_NBFI_TRANSFER=0.
 if AD1_16<=4 or AD1_17<=4 or AD1_20<=4 or (FN5_1=1 and FN5_4=1 and AD1_18<=4) or (FN6_1=1 and FN6_4=1 and AD1_19<=4) ACTIVE_NBFI_TRANSFER=1.
@@ -52,7 +52,7 @@ compute ACTIVE_NBFI_INVEST=0.
 if AD10_31<=4 or AD10_32<=4 or AD10_35<=4 or (FN5_1=1 and FN5_4=1 and AD10_33<=4) or (FN6_1=1 and FN6_4=1 and AD10_34<=4) ACTIVE_NBFI_INVEST=1.
 compute ACTIVE_NBFI_LOAN=0.
 if AD11_21<=4 or AD11_22<=4 or AD11_27<=4 or (FN5_1=1 and FN5_4=1 and AD11_25<=4) or (FN6_1=1 and FN6_4=1 and AD11_26<=4) ACTIVE_NBFI_LOAN=1.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *18India.
@@ -81,7 +81,7 @@ compute NBFI_INVEST=0.
 if AD10_20=1 or AD10_21=1 or (FN6_1=1 and FN6_3=1 and  AD10_28=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 if AD11_8=1 or AD11_9=1 or AD11_10=1 or (FN6_1=1 and FN6_3=1 and AD11_6=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 compute ACTIVE_NBFI_TRANSFER=0.
 if AD1_11<=4 or AD1_12<=4 ACTIVE_NBFI_TRANSFER=1.
@@ -101,7 +101,7 @@ compute ACTIVE_NBFI_INVEST=0.
 if AD10_30<=4 or AD10_31<=4 or (FN6_1=1 and FN6_3=1 and  AD10_38<=4) ACTIVE_NBFI_INVEST=1.
 compute ACTIVE_NBFI_LOAN=0.
 if AD11_23<=4 or AD11_24<=4 or (FN6_1=1 and FN6_3=1 and AD11_21<=4) ACTIVE_NBFI_LOAN=1.
-numeric ACTIVE_NBFI_AIRTIME.
+
  
 **************************************************************************************************************************************************.
 *17Bangladesh.
@@ -127,7 +127,7 @@ count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
 compute NBFI_LOAN=0.
 if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2 (1 thru 4).
@@ -145,7 +145,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *17India.
@@ -171,7 +171,7 @@ count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8(1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
 compute NBFI_LOAN=0.
 if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or any(1, FB16A_2, FB16A_3, FB16A_5) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
@@ -188,7 +188,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8(1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6(1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *17Kenya.
@@ -214,7 +214,7 @@ count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
 compute NBFI_LOAN=0.
 if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
@@ -231,7 +231,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *17Nigeria.
@@ -257,7 +257,7 @@ count NBFI_INVEST=IFI10_8 IFI11_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
 compute NBFI_LOAN=0.
 if IFI10_6<=6 or  IFI11_6<=6 or FB16A_3=1 NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
@@ -274,7 +274,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *17Paksitan.
@@ -300,7 +300,7 @@ count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
 compute NBFI_LOAN=0.
 if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
@@ -317,7 +317,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *17Tanzania.
@@ -343,7 +343,7 @@ count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
 compute NBFI_LOAN=0.
 if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
@@ -360,7 +360,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *17Uganda.
@@ -386,7 +386,7 @@ count NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 6).
 recode NBFI_INVEST (1 thru highest=1).
 compute NBFI_LOAN=0.
 if IFI10_6<=6 or  IFI11_6<=6 or IFI12_6<=6 or IFI13_6<=6 or any(1, FB16A_3, FB16A_4, FB16A_5) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 count ACTIVE_NBFI_TRANSFER=IFI10_2 IFI11_2 IFI12_2 IFI13_2(1 thru 4).
 recode ACTIVE_NBFI_TRANSFER (1 thru highest=1).
@@ -403,7 +403,7 @@ count ACTIVE_NBFI_INVEST=IFI10_8 IFI11_8 IFI12_8 IFI13_8 (1 thru 4).
 recode ACTIVE_NBFI_INVEST (1 thru highest=1).
 count ACTIVE_NBFI_LOAN=IFI10_6 IFI11_6 IFI12_6 IFI13_6 (1 thru 4).
 recode ACTIVE_NBFI_LOAN (1 thru highest=1).
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *16Bangladesh.
@@ -441,8 +441,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1 or IFI13_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1 or IFI13_15=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -453,7 +451,6 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *16India.
@@ -488,8 +485,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1 or fb16_2=1 or fb16_3=1 or fb16_6=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -500,7 +495,6 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
 
 **************************************************************************************************************************************************.
 *16Indonesia.
@@ -538,8 +532,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1 or IFI13_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1 or IFI13_15=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -550,7 +542,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *16Kenya.
@@ -588,8 +580,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1 or IFI13_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1 or IFI13_15=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -600,7 +590,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *16Nigeria.
@@ -632,8 +622,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_15=1 or IFI11_15=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -644,7 +632,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *16Pakistan.
@@ -682,8 +670,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1 or IFI13_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1 or IFI13_15=1  or fb16_3=1 or fb16_6=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -694,7 +680,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *16Tanzania.
@@ -732,8 +718,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1 or IFI13_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1 or IFI13_15=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -744,7 +728,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *16Uganda.
@@ -782,8 +766,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1 or IFI13_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_15=1 or IFI11_15=1 or IFI12_15=1 or IFI13_15= 1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -794,7 +776,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *15Bangladesh.
@@ -829,8 +811,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or fb16_2=1 or fb16_3=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -841,7 +821,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *15India.
@@ -876,8 +856,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or fb16_2=1 or fb16_3=1 or fb16_6=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -888,7 +866,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *15Indonesia.
@@ -926,8 +904,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1 or fb16_4=1 or fb16_5=1 or fb16_6=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -938,7 +914,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *15Kenya.
@@ -976,8 +952,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -988,7 +962,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *15Nigeria.
@@ -1020,8 +994,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1032,7 +1004,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *15Pakistan.
@@ -1067,8 +1039,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_19=1 or IFI11_19=1 or IFI12_19=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_16=1 or IFI11_16=1 or IFI12_16=1 or fb16_2=1 or fb16_3=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1079,7 +1049,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *15Tanzania.
@@ -1117,8 +1087,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1129,7 +1097,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *15Uganda.
@@ -1167,8 +1135,6 @@ compute NBFI_INVEST=0.
 IF(IFI10_21=1 or IFI11_21=1 or IFI12_21=1 or IFI13_21=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_17=1 or IFI11_17=1 or IFI12_17=1 or IFI13_17=1 or fb16_3=1 or fb16_4=1) NBFI_LOAN=1.
-compute NBFI_AIRTIME=0.
-IF(IFI10_3=1 or IFI11_3=1 or IFI12_3=1 or IFI13_3=1) NBFI_AIRTIME=1.
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1179,7 +1145,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *14Bangladesh.
@@ -1208,7 +1174,7 @@ compute NBFI_INVEST=0.
 IF(IFI10_7=1 or IFI11_7=1 or IFI12_7=1 or IFI13_7=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_6=1 or IFI11_6=1 or IFI12_6=1 or IFI13_6=1 or fl10_2=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1219,7 +1185,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *14India.
@@ -1247,7 +1213,7 @@ compute NBFI_INVEST=0.
 IF(IFI10_7=1 or IFI11_7=1 or IFI12_7=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_6=1 or IFI11_6=1 or IFI12_6=1 or fl10_2=1 or fl10_3=1 or fl10_6=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1258,7 +1224,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *14Indonesia.
@@ -1287,7 +1253,7 @@ compute NBFI_INVEST=0.
 IF(IFI10_7=1 or IFI11_7=1 or IFI12_7=1 or IFI13_7=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_6=1 or IFI11_6=1 or IFI12_6=1 or IFI13_6=1 or fl10_2=1 or fl10_3=1 or fl10_4=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1298,7 +1264,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *14Kenya.
@@ -1327,7 +1293,7 @@ compute NBFI_INVEST=0.
 IF(IFI10_7=1 or IFI11_7=1 or IFI12_7=1 or IFI13_7=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_6=1 or IFI11_6=1 or IFI12_6=1 or IFI13_6=1 or fl10_2=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1338,7 +1304,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 
 **************************************************************************************************************************************************.
@@ -1366,7 +1332,7 @@ compute NBFI_INVEST=0.
 IF(IFI10_7=1 or IFI11_7=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_6=1 or IFI11_6=1 or fl10_2=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1377,7 +1343,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *14Pakistan.
@@ -1406,7 +1372,7 @@ compute NBFI_INVEST=0.
 IF(IFI10_7=1 or IFI11_7=1 or IFI12_7=1 or IFI13_7=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_6=1 or IFI11_6=1 or IFI12_6=1 or IFI13_6=1 or fl10_2=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1417,7 +1383,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *14Tanzania.
@@ -1446,7 +1412,7 @@ compute NBFI_INVEST=0.
 IF(IFI10_7=1 or IFI11_7=1 or IFI12_7=1 or IFI13_7=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_6=1 or IFI11_6=1 or IFI12_6=1 or IFI13_6=1 or fl10_2=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1457,7 +1423,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *14Uganda.
@@ -1486,7 +1452,7 @@ compute NBFI_INVEST=0.
 IF(IFI10_7=1 or IFI11_7=1 or IFI12_7=1 or IFI13_7=1) NBFI_INVEST=1.
 compute NBFI_LOAN=0.
 IF(IFI10_6=1 or IFI11_6=1 or IFI12_6=1 or IFI13_6=1 or fl10_2=1) NBFI_LOAN=1.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1497,7 +1463,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *13Bangladesh.
@@ -1517,7 +1483,7 @@ numeric NBFI_INSURANCE.
 numeric NBFI_SAVE.
 numeric NBFI_INVEST.
 numeric NBFI_LOAN.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1528,7 +1494,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *13India.
@@ -1548,7 +1514,7 @@ numeric NBFI_INSURANCE.
 numeric NBFI_SAVE.
 numeric NBFI_INVEST.
 numeric NBFI_LOAN.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1559,7 +1525,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *13Kenya.
@@ -1579,7 +1545,7 @@ numeric NBFI_INSURANCE.
 numeric NBFI_SAVE.
 numeric NBFI_INVEST.
 numeric NBFI_LOAN.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1590,7 +1556,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *13Nigeria.
@@ -1610,7 +1576,7 @@ numeric NBFI_INSURANCE.
 numeric NBFI_SAVE.
 numeric NBFI_INVEST.
 numeric NBFI_LOAN.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1621,7 +1587,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *13Pakistan.
@@ -1641,7 +1607,7 @@ numeric NBFI_INSURANCE.
 numeric NBFI_SAVE.
 numeric NBFI_INVEST.
 numeric NBFI_LOAN.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1652,7 +1618,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *13Tanzania.
@@ -1672,7 +1638,7 @@ numeric NBFI_INSURANCE.
 numeric NBFI_SAVE.
 numeric NBFI_INVEST.
 numeric NBFI_LOAN.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1683,7 +1649,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 **************************************************************************************************************************************************.
 *13Uganda.
@@ -1703,7 +1669,7 @@ numeric NBFI_INSURANCE.
 numeric NBFI_SAVE.
 numeric NBFI_INVEST.
 numeric NBFI_LOAN.
-numeric NBFI_AIRTIME.
+
 
 numeric ACTIVE_NBFI_TRANSFER.
 numeric ACTIVE_NBFI_MERCHANT.
@@ -1714,7 +1680,7 @@ numeric ACTIVE_NBFI_INSURANCE.
 numeric ACTIVE_NBFI_SAVE.
 numeric ACTIVE_NBFI_INVEST.
 numeric ACTIVE_NBFI_LOAN.
-numeric ACTIVE_NBFI_AIRTIME.
+
 
 *****************************************************************************************************************************.
 *Labels.
