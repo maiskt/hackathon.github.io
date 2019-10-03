@@ -16,12 +16,12 @@ Note:
 
 Levels: 
 
-+ 1="15-24"
-+ 2="25-34"
-+ 3="35-44"
-+ 4="45-54"
-+ 5="55 and over"
-+ -2= DK
++ 15-24
++ 25-34
++ 35-44
++ 45-54
++ 55 and over
++ DK
        
 Note: 
 
@@ -29,20 +29,53 @@ Note:
 * Coded missing value into DK=-2.
        
 ## EDU
- Educational attainment: highest level of education grouped into 5 categories, derived from DG4. 
+ Educational attainment: highest level of education grouped into 5 categories.
  
-
- Question Index   |                       Question
-  ----------------|-------------------------------------------------------------
-      DG4         |  What is your highest level of education?
-      
 Levels:
 
-+ 1=No formal education
-+ 2=Primary education
-+ 3=Secondary education
-+ 4=Higher education
-+ 5=Other
++ No formal education
++ Primary education
++ Secondary education
++ Higher education
++ Other
+
+## ID
+
+A binary variable determining whether the respondent has any of the necessary forms of identification to become financially included. The definitions vary by country and year.
+
+For all countries, these include: Passports, Driver's licenses, National IDs, and Military IDs.
+
+ID forms unique to each country include:
+Bangladesh:
+
+* Bank passbook
+* Post office account
+* Blue card
+* Education ID
+* Voter card
+
+India: Aadhaar card
+
+Indonesia:
+* Kartu Tanda Penduduk (KTP/KITAS/KITAP) (National ID)
+* Passport
+* SIM (Driving license)
+
+Kenya:
+
+Nigeria:
+
+Pakistan:
+
+Tanzania:
+* 
+* Village/LC ID (2014-2017)
+* Zanzibar resident ID (2013)
+
+Uganda:
+
+* Birth certificate (2014-2017)
+* Village/LC ID (2014-2017)
 
 ## LITERACY
 
@@ -57,8 +90,8 @@ Literacy, derived from literary questions. For example, Kenya 2017 uses the foll
 
 Levels: 
 
-+ 1="Basic literacy"
-+ 0="Lack of basic literacy"
++ Basic literacy
++ Lack of basic literacy
        
        
 ## NUMERACY
@@ -74,8 +107,8 @@ Levels:
  
  Levels: 
  
- + 1=Basic numeracy
- + 0=Lack of basic numeracy    
+ + Basic numeracy
+ + Lack of basic numeracy    
        
 ## FINANCIAL_LITERACY
  Financial literacy, derived from 5 questions. For example Bangladesh 2018 uses the following 5 questions. For each correct answer, the first 3 questions are each assigned 1 point and the last 2 questions are assigned each 0.5 point.  Respondents with a score of 3 points or more are considered to be financially literate. 
@@ -91,8 +124,8 @@ Levels:
 
 Levels: 
 
-+ 1=Yes
-+ 0=No
++ Yes
++ No
     
 Note:
 
@@ -116,10 +149,10 @@ Digital literacy index, derived from questions on mobile phone ownership and usa
 
 Levels: 
 
-+ 0=Not applicable
-+ 1=Low
-+ 2=Moderate
-+ 3=High
++ Not applicable
++ Low
++ Moderate
++ High
 
 Note:
 
@@ -130,21 +163,21 @@ Gender of the respondent
 
 Levels: 
 
-+ 1=Male
-+ 2=Female
++ Male
++ Female
 
 ## MARRIAGE
 Respondent's marital status
 
 Levels: 
  
-+ 1=Single/never married
-+ 2=Married
-+ 3=Divorced/Separated
-+ 4=Widowed
-+ 5=Living together/Cohabiting 
-+ 96=Other
-+ -2=DK
++ Single/never married
++ Married
++ Divorced/Separated
++ Widowed
++ Living together/Cohabiting 
++ Other
++ DK
 
 Note:
 
@@ -160,8 +193,8 @@ Question Index    |                       Question
 
 Levels: 
 
-+ 1=Yes
-+ 0=No
++ Yes
++ No
 
 Note:
 
@@ -178,8 +211,8 @@ Year              |                       Question
       
 Levels: 
 
-+ 1=Yes
-+ 0=No
++ Yes
++ No
 
 Notes:
 
@@ -190,18 +223,18 @@ Employment status of the respondent.
 
 Levels: 
 
-+ 1=Working full-time for a regular salary
-+ 2=Working part-time for a regular salary
-+ 3=Working occasionally, irregular pay (whenever the work is available)
-+ 4=Working per season (e.g., only during the harvest season)
-+ 5=Self-employed, working for yourself
-+ 6=Not working but looking for a job
-+ 7=Housewife or stay-at-home husband doing household chores
-+ 8=Full-time student
-+ 9=Not working because of retirement
-+ 10=Not working because of sickness, disability, etc.
-+ 96=Other
-+ -2=DK
++ Working full-time for a regular salary
++ Working part-time for a regular salary
++ Working occasionally, irregular pay (whenever the work is available)
++ Working per season (e.g., only during the harvest season)
++ Self-employed, working for yourself
++ Not working but looking for a job
++ Housewife or stay-at-home husband doing household chores
++ Full-time student
++ Not working because of retirement
++ Not working because of sickness, disability, etc.
++ Other
++ DK
        
 Notes:
 
@@ -220,8 +253,8 @@ Question Index    |                       Question
 
 Levels: 
 
-+ 1=Yes
-+ 0=No
++ Yes
++ No
        
        
 ## OWN_FARM
@@ -229,8 +262,8 @@ Own farm: counts respondents whose household owns or leases a farm/farmland, der
 
 Levels: 
 
-+ 1=Yes
-+ 0=No
++ Yes
++ No
        
 Note:
 
@@ -241,21 +274,9 @@ Farm work: counts respondents who work on the farm that their household owns or 
 
 Levels: 
 
-+ 1=Yes
-+ 0=No
++ Yes
++ No
        
 Note:
 
 * 2013 and 2014 surveys didn't include this question.
-       
-## SELL_CROP
-Sell agricultural product: counts respondents who sell agricultural products or livestock reared, derived from DL4 set quesions.
-
-Levels:  
-
-+ 1=Yes
-+ 0=No
-       
-Note:
-
-* 2013 and 2014 surveys didn't include this quesion.
