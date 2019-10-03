@@ -525,13 +525,14 @@
             <section class="normal" id="section-">
 <div id="poverty-probability-index-ppi" class="section level1">
 <h1><span class="header-section-number">Section 2</span> Poverty Probability Index (PPI)</h1>
+<p>The Poverty Probability Index (PPI) is a poverty measurement tool for organizations and businesses with a mission to serve the poor. The PPI is statistically-sound, yet simple to use: the answers to 10 questions about a household’s characteristics and asset ownership are scored to compute the likelihood that the household is living below the poverty line.</p>
 <div id="ppi_score" class="section level2">
 <h2><span class="header-section-number">2.1</span> PPI_SCORE</h2>
-<p>PPI score: sum of response values for all PPI 10 questions. Value ranges between 0 and 100.</p>
+<p>PPI score: sum of scores of response values for all PPI 10 questions. Value ranges between 0 and 100.</p>
 </div>
 <div id="ppi_prob" class="section level2">
 <h2><span class="header-section-number">2.2</span> PPI_PROB</h2>
-<p>PPI probability score: poverty likelihood value using the corresponding PPI look-up table.</p>
+<p>PPI probability: poverty likelihood value using the corresponding PPI look-up table.</p>
 </div>
 <div id="poverty1" class="section level2">
 <h2><span class="header-section-number">2.3</span> POVERTY1</h2>
@@ -605,20 +606,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
