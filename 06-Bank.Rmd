@@ -15,12 +15,9 @@ Have access to banks: Counts individuals who have ever used a bank, or who have 
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
-Note: 
-
-* The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
 
 ## REGISTERED_BANK
 
@@ -34,12 +31,9 @@ Have a bank account: Counts individuals who hold an account with a bank that pro
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
-Note: 
-
-* The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
        
 ## ACTIVE_BANK
 
@@ -54,12 +48,9 @@ Active bank account use in last 90 days: Counts individual who have an account r
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
-Note: 
-
-* The full-service filter(FF5) was not applied for the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
        
 ## ACTIVE30_BANK
 
@@ -74,12 +65,9 @@ Active bank account use in last 30 days: Counts individuals who have an account 
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
-Note: 
-
-* The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
        
 ## INACTIVE_BANK
 
@@ -94,12 +82,9 @@ Inactive bank account for last 90 days: Counts individuals who have an account r
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
-Note: 
-
-* The full-service filter(FF5) was not applied to the following surveys: Bangladesh(2016-2018), India(2016-2018), Nigeria(2017), Pakistan(2017), and all 2013 surveys.
 
 ## DORMANT_BANK
 
@@ -107,8 +92,8 @@ Bank account dormancy: Counts individuals who have an account registered in thei
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 ## BANK_BASIC
 
@@ -124,13 +109,8 @@ Ever use of bank account for basic activities: Counts individuals who have ever 
       
 Levels
 
-* 1=Yes
-* 0=No
-
-Note: 
-
-* 2018 surveys didn't include questions on cash-in (deposit), cash-out (withdraw) and conducting account maintenance.
-* 2013, 2014, and 2017 surveys didn't include questions on conducting account maintenance.
+* Yes
+* No
 
 
 ## BANK_ADV
@@ -153,8 +133,8 @@ Ever use of bank account for advanced activities: Counts individuals who have ev
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## REG_BANK_BASIC
 
@@ -162,8 +142,8 @@ Basic use of registered bank account: Counts individuals who have an account reg
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 ## REG_BANK_ADV
 
@@ -171,8 +151,8 @@ Advance use of registered bank account: Counts individuals who have an account r
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## ACTIVE_BANK_BASIC
 
@@ -180,8 +160,8 @@ Basic use of registered bank account in last 90 days: Counts individuals who hav
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## ACTIVE_BANK_ADV
 
@@ -189,8 +169,8 @@ Advance use of registered bank account in the last 90 days: Counts individuals w
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 ## ACTIVE30_BANK_ADV
 
@@ -198,8 +178,8 @@ Advance use of registered bank account in the last 30 days:Counts individuals wh
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## BANK_STAGE
 
@@ -215,11 +195,11 @@ Customer journey segmentation of bank: A series of progressive stages through wh
 
 Levels 
 
-* 0=Bank nonuser
-* 1=Unregistered bank user
-* 2=Inactive registered bank user
-* 3=Active bank basic user
-* 4=Active bank advanced user
+* Bank nonuser
+* Unregistered bank user
+* Inactive registered bank user
+* Active bank basic user
+* Active bank advanced user
 
 ## BANK_TRANSFER
 Ever used a bank for transfers: Counts individuals who ever sent money to, or received money from someone using a bank account. For example, Bangladesh 2017 uses FF14_6.
@@ -230,8 +210,8 @@ Question Index    |                       Questions
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## BANK_MERCHANT
 Ever used a bank to buy goods and services: Counts individuals who ever paid for goods or services at a store, shop, restaurant or other place of business using a bank account. For example, Bangladesh 2017 uses FF14_13.
@@ -242,8 +222,8 @@ Question Index    |                       Questions
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## BANK_BILL
 Ever used a bank for bill payment: Counts individuals who ever paid for a bill using a bank account. For example, Bangladesh 2017 uses the following questions.
@@ -256,8 +236,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## BANK_GOV
 Ever used a bank to receive money from the government: Counts individuals who ever received money from the government using a bank account. For example, Bangladesh 2017 uses FF14_7.
@@ -268,8 +248,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## BANK_WAGE
 Ever used a bank for wages:  Counts individuals who ever received payment from an employer using a bank account. For example, Bangladesh 2017 uses FF14_8.
@@ -280,8 +260,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## BANK_INSURANCE
 Ever used a bank for insurance: Counts individuals who ever paid for insurance or received payment from insurance using a bank account. For example, Bangladesh 2017 uses FF14_9.
@@ -292,8 +272,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## BANK_SAVE
 Ever used a bank for savings: Counts individuals who ever saved using a bank account. For example, Bangladesh 2017 uses FF14_11 and FB22_1.
@@ -305,8 +285,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 ## BANK_INVEST
 Ever used a bank for investments: Counts individuals who ever made an investment using a bank account. For example, Bangladesh 2017 uses FF14_12.
@@ -317,8 +297,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## BANK_LOAN
 Ever used a bank for loans: Counts individuals who ever borrowed money using a bank account. For example, Bangladesh 2017 uses FF14_10 and FB16A_1.
@@ -330,8 +310,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 ## BANK_AIRTIME
 Ever used a bank for airtime top-up:  Counts individuals who ever bought airtime top-ups or paid a mobile phone bill using a bank account. For example, Bangladesh 2017 uses from FF14_2.
@@ -342,8 +322,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -358,8 +338,8 @@ Question Index    |                       Questions
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 Note:
 
@@ -375,8 +355,8 @@ Question Index    |                       Questions
 
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 Note:
 
@@ -394,8 +374,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 Note:
 
@@ -410,8 +390,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -426,8 +406,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 Note:
 
@@ -442,8 +422,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 Note:
 
@@ -458,8 +438,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
        
 Note:
 
@@ -474,8 +454,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -490,8 +470,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -506,64 +486,21 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
 * ACTIVE_BANK_AIRTIME questions are not available for 2013 and 2014 surveys.
 
-## R_NOBANK1
-Have no bank account due lack of required documents: Counts individuals who do not have a bank account because of the lack of required documents. For example, Bangladesh 2018 uses FF3_1.
+## R_NOBANK
+Reason why people do not register bank account in their name applies to your situation:
 
-Question Index    |                       Questions 
-  ----------------|-------------------------------------------------------------
-      FF3_1       |  Is this a reason why you do not have a bank account? You don't have the required documents
-      
-Levels
-
-* 1=Yes
-* 0=No
-
-Note:
-
-* R_NOBANK1 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Lack of official identification or other required documents".  Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
-
-
-## R_NOBANK2
-Have no bank account due to high costs: Counts individuals who do not have a bank account because since fees and expenses for using banks are too high. For example, Bangladesh 2018 uses FF3_2.
-
-Question Index    |                       Questions 
-  ----------------|-------------------------------------------------------------
-      FF3_2       |  Is this a reason why you do not have a bank account? Fees and expenses for using banks are too high
-      
-Levels
-
-* 1=Yes
-* 0=No
-
-Note:
-
-* R_NOBANK2 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Fees and expenses for owning an account are too high FF3". Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
-
-## R_NOBANK3
-Have no bank account due to lack of need: Counts individuals who do not have a bank account because they do not need one. For example, Bangladesh 2018 uses FF3_3.
-
-Question Index    |                       Questions 
-  ----------------|-------------------------------------------------------------
-      FF3_3       |  Is this a reason why you do not have a bank account? You don't need a bank account
-      
-Levels
-
-* 1=Yes
-* 0=No
-
-Note:
-
-* R_NOBANK3 is only available for 2017 and 2018 surveys. In 2017 surveys, FF3 reads as follows: "FF3.1.How much you agree or disagree with the reason why people do not register bank accounts in their name applies to your situation? Do not need one or have never thought of using one". Response codes are 1=Strongly disagree 2=Somewhat disagree 3=Neither diagree, nor agree 4=Somewhat agree 5=Strongly agree 99=DK. For 2017 surveys, we grouped codes 4 and 5 into "Yes" and the remaining codes and missing value into "No".
-
-## R_NOBANK4
-Have no bank account due to distance: Counts individuals who do not have a bank account because the closest bank is too far away. For example, Bangladesh 2018 uses FF3_5.
+Variable|Description
+---|-------
+R_NOBANK1|Have no bank account due lack of required documents: Counts individuals who do not have a bank account because of the lack of required documents. R_NOBANK2| Have no bank account due to high costs: Counts individuals who do not have a bank account because since fees and expenses for using banks are too high.
+R_NOBANK3|Have no bank account due to lack of need: Counts individuals who do not have a bank account because they do not need one. 
+R_NOBANK4|Have no bank account due to distance: Counts individuals who do not have a bank account because the closest bank is too far away. For example, Bangladesh 2018 uses FF3_5.
 
 Question Index    |                       Questions 
   ----------------|-------------------------------------------------------------
@@ -571,8 +508,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -587,8 +524,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -604,8 +541,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -620,8 +557,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -636,8 +573,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -652,8 +589,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -668,8 +605,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -684,8 +621,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -700,8 +637,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -716,8 +653,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -732,8 +669,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -748,8 +685,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -764,8 +701,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -781,8 +718,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -797,8 +734,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -813,8 +750,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -829,8 +766,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -845,8 +782,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -861,8 +798,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -877,8 +814,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 
@@ -893,8 +830,8 @@ Question Index    |                       Questions
       
 Levels
 
-* 1=Yes
-* 0=No
+* Yes
+* No
 
 Note:
 

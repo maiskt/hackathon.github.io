@@ -8,7 +8,7 @@ Respondent's age, derived from birth year and survey year
 Note: 
 
 * These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
-* Coded missing value into DK=-2.
+* Coded missing value into DK.
 
 ## AGE_GROUP
 
@@ -26,7 +26,7 @@ Levels:
 Note: 
 
 * These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
-* Coded missing value into DK=-2.
+* Coded missing value into DK.
        
 ## EDU
  Educational attainment: highest level of education grouped into 5 categories.

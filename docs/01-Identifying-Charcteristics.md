@@ -14,7 +14,7 @@ This is the identification variable that uniquely identifies each respondent wit
 These are the variable shows the country and year where/when the survey was conducted. The survey was conducted in 8 countries and runs from 2013 to 2018, data was colllected for marked country/year as shown below.
 
 
-|Country/Year       |2013         |2014          |2015          |2016          |2017          |2018          |
+|Country/Year       |2013          |2014          |2015          |2016          |2017          |2018          |
 |----------------   |------------  |------------  |------------  |------------  |------------  |------------  |
 |**Bangladesh**     |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |
 |**India**          |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |
