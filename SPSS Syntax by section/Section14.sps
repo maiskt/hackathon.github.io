@@ -216,7 +216,7 @@ save outfile = "data/bng16.sav"
 DATASET ACTIVATE ind16.
 
 recode DL0 (1=1)(else=copy) into MAIN_EARNER.
-recode DL24 (99 = -2) (else = copy) into FIN_SITUATION.
+recode DL24 (99,9 = -2) (else = copy) into FIN_SITUATION.
 
 recode FL8_1 (1=1) (else=copy) into FIN_ATT1.
 recode FL8_2 (1=1) (else=copy) into FIN_ATT2.
@@ -386,7 +386,7 @@ save outfile = "data/bng15.sav"
 DATASET ACTIVATE ind15.
 
 recode DL0 (1=1)(else=copy) into MAIN_EARNER.
-recode DL24 (6 = -2) (else = copy) into FIN_SITUATION.
+recode DL24 (9 = -2) (else = copy) into FIN_SITUATION.
 
 recode FL10_1 (1=1) (else=copy) into FIN_ATT1.
 recode FL10_2 (1=1) (else=copy) into FIN_ATT2.
