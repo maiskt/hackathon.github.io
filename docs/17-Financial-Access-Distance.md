@@ -5,137 +5,116 @@ Distance from residence to a point of service(POS): measures the approximate dis
 
 Levels:
 
- + 1 = Less than 1 km
- + 2 = Between 1 and 5 km
- + 3 = Greater than 5 km
- + -2 = Don't know
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
  
 ## BBKM
 Distance from residence to a bank branch: measures the distance from the respondent'home to a bank branch.
 
 Levels:
 
- + 1 = Less than 1 km
- + 2 = Between 1 and 5 km
- + 3 = Greater than 5 km
- + 99 = Don't know
- 
- Notes:
- 
- * Data unavailable for all 2013 and 2014 datasets.
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
  
 ## ATMKM
 Distance from residence to an ATM: measures the distance from the respondent's home to an ATM.
 
 Levels:
 
- + 1 = Less than 1 km
- + 2 = Between 1 and 5 km
- + 3 = Greater than 5 km
- + 99 = Don't know
- 
- Notes:
- 
- * Data unavailable for all 2013 datasets.
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
  
 ## MMKM
 Distance from residence to a mobile money agent: measures the distance from the respondent's home to a mobile money agent. 
 
 Levels:
- + 1 = Less than 1 km
- + 2 = Between 1 and 5 km
- + 3 = Greater than 5 km
- + 99 = Don't know
-  
- Notes:
- 
- * Data unavailable for all 2013 datasets.
+
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
  
 ## BAKM
 Distance from residence to a bank agent: measures the distance from the respondent's home to a bank agent. 
 
 Levels:
 
- + 1 = Less than 1 km
- + 2 = Between 1 and 5 km
- + 3 = Greater than 5 km
- + 99 = Don't know
-  
- Notes:
- 
- * Data unavailable for Bangladesh 2015.
- * Data unavailable for all 2014 and 2013 datasets.
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
  
 ## RSKM
 Distance from residence to a store/kiosk with OTC services : measures the distance from the respondent's home to a retail store/kiosk with over-the-counter mobile money services. 
 
 Levels:
 
- + 1 = Less than 1 km
- + 2 = Between 1 and 5 km
- + 3 = Greater than 5 km
- + 99 = Don't know
- 
- Notes:
- 
- * Data not available for India in 2017.
- 
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
  
 ## MFIKM
 Distance from residence to a micro finance institution (MFI): measures the distance from the respondent's home to a MFI. 
 
 Levels:
 
- + 1 = Less than 1 km
- + 2 = Between 1 and 5 km
- + 3 = Greater than 5 km
- + 99 = Don't know
-
-Notes:
-
-* Data not available for Indonesia datasets.
-* Data not available for all 2014 and 2013 datasets.
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
 
 ## GRPKM
-Distance from residence to a VSLA: measures the distance from the respondent's home to a community savings group, such as a SACCO or a village savings and loan association.
+Distance from residence to a VSLA: measures the distance from the respondent's home to a community savings group, such as a village savings and loan association.
 
 Levels:
 
- + 1 = Less than 1 km
- + 2 = Between 1 and 5km
- + 3 = Greater than 5 km
- + 99 = Don't know
- 
- Notes:
- 
- * Data only available for India in 2017.
- * Data not available for Pakistan in 2015.
- * Data not available for all datasets in 2014 and 2013.
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
  
 ## INFMLKM
 Distance from residence to an informal self-help or savings group.
 Levels:
 
- + 1 = Less than 1 km
- + 2 = Between 1 and 5 km
- + 3 = Greater than 5 km
- + 99 = Don't know
- 
- Notes:
- 
- * Data is unavailable for all datasets in 2014 and 2013.
- * Data is unavailable for India in 2017 and 2015.
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
  
 ## POSTKM
 Distance from residence to the post offfice bank.
 
 Levels:
 
- + 1 = Less than 1 km
- + 2 = Between 1 and 5 km
- + 3 = Greater than 5 km
- + 99 = Don't know
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
+
+## SACCOKM
+Distance from residence to the SACCO.
+
+Levels:
+
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
  
- Notes:
- 
- * Data only available for Bangladesh and India in 2018 and 2017, and Indonesia in 2015.
+## COOPKM
+Distance from residence to the cooperative.
+
+Levels:
+
+ + Less than 1 km
+ + Between 1 and 5 km
+ + Greater than 5 km
+ + DK
