@@ -3,16 +3,12 @@
 
 
 ## AGE
-Respondent's age, derived from birth year and survey year
+Respondent's age, derived from birth year and survey year. 
 
-Note: 
-
-* These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
-* Coded missing value into DK.
 
 ## AGE_GROUP
 
- 10-year age group, derived from AGE
+ 10-year age group, derived from AGE.
 
 Levels: 
 
@@ -23,10 +19,6 @@ Levels:
 + 55 and over
 + DK
        
-Note: 
-
-* These countries have missing values: Nigeria 2015, Tanzania 2015, Indonesia 2015, Uganda 2014-2013.
-* Coded missing value into DK.
        
 ## EDU
  Educational attainment: highest level of education grouped into 5 categories.
@@ -43,10 +35,14 @@ Levels:
 
 A binary variable determining whether the respondent has any of the necessary forms of identification to become financially included. The definitions vary by country and year.
 
+Levels: 
+
++ Yes
++ No
 
 ## LITERACY
 
-Literacy, derived from literary questions. For example, Kenya 2017 uses the following questions. Respondents are considered as having basic literacy skills if they can write or read with understanding in the survey language. 
+Literacy, derived from literary questions. Respondents are considered as having basic literacy skills if they can write or read with understanding in the survey language. 
 
 Levels: 
 
@@ -92,20 +88,8 @@ Note:
 * Financial literacy questions are only available from 2016 to 2018.
 
 ## DIGITAL_LITERACY_INDEX
-Digital literacy index, derived from questions on mobile phone ownership and usage. Using Bangladesh 2018 as an example, respondents who never use a mobile phone(MT2, MT7) are defined as having "no digital literacy" skills. Respondents who only use a mobile phone to make or receive a call(MT17_1, MT17_2) have "low digital literacy" skills.  Respondents who also use a mobile phone for texting(MT17_3) have "moderate digital literacy" skills. Respondents who also use a mobile phone for advanced activities(MT17_4-MT17_9) have "high digital literacy" skills.
+Digital literacy index, derived from questions on mobile phone ownership and usage. Respondents who never use a mobile phone are defined as having "no digital literacy" skills. Respondents who use a mobile phone only to make or receive a call have "low digital literacy" skills.  Respondents who also use a mobile phone for texting have "moderate digital literacy" skills. Respondents who also use a mobile phone for advanced activities have "high digital literacy" skills.
 
- Question Index   |                       Question
-  ----------------|-------------------------------------------------------------
-      MT2         |  Do you personally own a mobile phone?
-      MT7         |  Do you use a mobile phone that belongs to someone else or is shared?
-      MT17_1      |  When was the last time you used a mobile phone to do the following? Call someone
-      MT17_2      |  When was the last time you used a mobile phone to do the following? Receive a call from someone
-      MT17_3      |  When was the last time you used a mobile phone to do the following? Send or receive a text message
-      MT17_4      |  When was the last time you used a mobile phone to do the following? Search the internet
-      MT17_5      |  When was the last time you used a mobile phone to do the following? Download music, video or games
-      MT17_6      |  When was the last time you used a mobile phone to do the following? Make a financial transaction such as send                        or receive money, or make a payment, or a bank transaction
-      MT17_7      |  When was the last time you used a mobile phone to do the following? Use Facebook, WhatsApp, Twitter, Instagram                      or another social networking application
-      MT17_9      |  When was the last time you used a mobile phone to do the following? Download an application
 
 Levels: 
 
@@ -135,9 +119,6 @@ Levels:
 + Other
 + DK
 
-Note:
-
-* There is no data for the "Living together/Cohabiting" category in Pakistan and Bangladesh.
 
 ## HAVE_CHILDREN
 HAVE_CHILDREN specifies whether households contain children under 18 years of age. For 2017 and 2018 surveys, this information was derived from the household roster which listed all household members with their individual characteristics including their ages. For 2016 and 2015 surveys, it was derived from the following 2 questions: 
@@ -154,7 +135,7 @@ Levels:
 
 Note:
 
-* No household information available for 2017 Pakistan.
+* No household information available for 2017 Pakistan and Nigeria.
 * Questions about children were not collected in 2013 and 2014 surveys.
        
 ## SCHOOL_FEE
@@ -213,7 +194,7 @@ Levels:
        
        
 ## OWN_FARM
-Own farm: counts respondents whose household owns or leases a farm/farmland, derived from DL6.
+Own farm: counts respondents whose household owns or leases a farm/farmland.
 
 Levels: 
 
@@ -225,7 +206,7 @@ Note:
 * 2013 and 2014 surveys didn't include this quesion.
 
 ## WORK_FARM
-Farm work: counts respondents who work on the farm that their household owns or leases, derived from DL7.
+Farm work: counts respondents who work on the farm that their household owns or leases.
 
 Levels: 
 

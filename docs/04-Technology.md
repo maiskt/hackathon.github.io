@@ -27,7 +27,7 @@ Levels:
 + No
 
 ## BASIC_PHONE, FEATURE_PHONE，SMART_PHONE
-These three varialbes indicate wnership of diffrent type of phone: 
+Ownership of three types of mobile phone: 
 
 Variables|Description
 ---|--------
@@ -145,51 +145,32 @@ Levels:
 + No
 
 ## PHONE_TSCREEN
+Ever used the touch screen with a mobile phone
+
+Levels:
+
++ Yes
++ No
+
 ## PHONE_MAP
-
-
-## R_NOPHONE1
-Reason for no phone: lack of money to buy a mobile phone.
+Ever used navigation, maps with a mobile phone
 
 Levels:
 
 + Yes
 + No
 
-## R_NOPHONE2
-Reason for no phone: No need for a mobile phone.
+## R_NOPHONE
+Reasons for not having a mobile phone:
 
-Levels:
-
-+ Yes
-+ No
-
-## R_NOPHONE3
-Reason for no phone: Mobile phone lost, broken or stopped working.
-
-Levels:
-
-+ Yes
-+ No
-
-## R_NOPHONE4
-Reason for no phone: Family members do not want me to have a mobile phone.
-
-Levels:
-
-+ Yes
-+ No
-
-## R_NOPHONE5
-Reason for no phone: No mobile phone network where I live.
-
-Levels:
-
-+ Yes
-+ No
-
-## R_NOPHONE6
-Reason for no phone: Don't know how to use a mobile phone.
+Variable|Description
+---|---------
+R_NOPHONE1|Reason for no phone: lack of money to buy a mobile phone.
+R_NOPHONE2|Reason for no phone: No need for a mobile phone.
+R_NOPHONE3|Reason for no phone: Mobile phone lost, broken or stopped working.
+R_NOPHONE4|Reason for no phone: Family members do not want me to have a mobile phone.
+R_NOPHONE5|Reason for no phone: No mobile phone network where I live.
+R_NOPHONE6|Reason for no phone: Don't know how to use a mobile phone.
 
 Levels:
 
