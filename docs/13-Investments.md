@@ -7,58 +7,39 @@ Have an investment
 
 Levels:
 
-+ 1=Yes
-+ 0=No
++ Yes
++ No
 
-Notes:
-
-* Data not available for 2013.
 
 ## INVEST_OWN
 Have an investment in own business
 
 Levels:
 
-+ 1=Yes
-+ 0=No
-
-Notes:
-
-* Data not available in 2013.
++ Yes
++ No
 
 ## INVEST_OTHER
 Have an investment in other places: counts respondents who invest in other people's businesses, assets, or buy shares of foreign or local enterprises, or government bonds. 
 
 Levels:
 
-+ 1=Yes
-+ 0=No
-
-Notes:
-
-* Data not available for 2013.
++ Yes
++ No
 
 ## INVEST_INFORMAL
 Invest in informal institution: counts respondents, who are not members of, but who have ever invested money in a self-help group or cooperative that doesn't offer a bank account. 
 
 Levels:
 
-+ 1=Yes
-+ 0=No
-
-Notes:
-
-* Data only available 2016-2018.
++ Yes
++ No
 
 ## INVEST_INSURANCE
 Have an investment or insurance: counts respondents who invest in their own business or in other places or have insurance.
 
 Levels:
 
-+ 1=Yes
-+ 0=No
-
-Notes:
-
-* Data not available for 2013.
++ Yes
++ No
 

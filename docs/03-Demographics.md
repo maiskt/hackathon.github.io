@@ -43,50 +43,10 @@ Levels:
 
 A binary variable determining whether the respondent has any of the necessary forms of identification to become financially included. The definitions vary by country and year.
 
-For all countries, these include: Passports, Driver's licenses, National IDs, and Military IDs.
-
-ID forms unique to each country include:
-Bangladesh:
-
-* Bank passbook
-* Post office account
-* Blue card
-* Education ID
-* Voter card
-
-India: Aadhaar card
-
-Indonesia:
-* Kartu Tanda Penduduk (KTP/KITAS/KITAP) (National ID)
-* Passport
-* SIM (Driving license)
-
-Kenya:
-
-Nigeria:
-
-Pakistan:
-
-Tanzania:
-* 
-* Village/LC ID (2014-2017)
-* Zanzibar resident ID (2013)
-
-Uganda:
-
-* Birth certificate (2014-2017)
-* Village/LC ID (2014-2017)
 
 ## LITERACY
 
 Literacy, derived from literary questions. For example, Kenya 2017 uses the following questions. Respondents are considered as having basic literacy skills if they can write or read with understanding in the survey language. 
-
-  Question Index  |                       Question
-  ----------------|-------------------------------------------------------------
-      LN1A        |  Reading ability (1=Read fluently with no help;   2=Read well with little help; 3= Struggle to read even with help;  4= Unable to read
-      LN1B        |  Reading comprehension (1= Read with full understanding;   2= Read with good understanding but needed some help; 3= Struggle to understand; 4=Unable to understand)
-      LN2_1       |  Reading in (survey language):  1=cannot do at all; 2=Very badly; 3=Somewhat badly; 4= Good; 5=Excellent
-      LN2_2       |  Writing in (survey language): 1=cannot do at all; 2=Very badly; 3=Somewhat badly; 4= Good; 5=Excellent
 
 Levels: 
 
@@ -153,10 +113,6 @@ Levels:
 + Low
 + Moderate
 + High
-
-Note:
-
-* Digital literacy questions are only available for 2013 Kenya, Uganda, Tanzania and India surveys.
        
 ## GENDER
 Gender of the respondent
@@ -188,8 +144,8 @@ HAVE_CHILDREN specifies whether households contain children under 18 years of ag
 
 Question Index    |                       Question
   ----------------|-------------------------------------------------------------
-      DG8B        |  How many adults and children do you have in the household? (999 for DK/Refused): Number of children (boys) (Below 18 years)
-      DGBC        |  How many adults and children do you have in the household? (999 for DK/Refused): Number of children (girls) (Below 18 years)
+      DG8B        |  How many adults and children do you have in the household?: Number of children (boys) (Below 18 years)
+      DGBC        |  How many adults and children do you have in the household?: Number of children (girls) (Below 18 years)
 
 Levels: 
 
@@ -238,7 +194,6 @@ Levels:
        
 Notes:
 
-* Pakistan(2015) has one more category "Landlord", which is recoded into "Other".
 * 2013 surveys didn't include this question.
        
 ## INVOL_AGRI
