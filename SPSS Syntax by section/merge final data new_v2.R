@@ -51,4 +51,5 @@ write.csv(finalData,gzfile("C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Insti
 rr<-read_csv("C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Institute/DA Team - General/Shiyun/2019/Datathon/Data/FIIdata.csv.gz",
              col_types = cols(.default = col_character(),SBJNUM = col_number(),PPI_PROB = col_number(),
                WEIGHT = col_number(),LATITUDE = col_number(),LONGITUDE = col_number(),PPI_SCORE = col_number()))
+rr<-read_csv("C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Institute/DA Team - General/Shiyun/2019/Datathon/Data/FIIdata.csv.gz")
 rr<-rr[,-1]
