@@ -42,7 +42,7 @@ value labels R_INFML 1"To have a lump sum to use when it is your turn"
 14"You can’t save at home – money gets used on other things"
 15"It encourages you to work harder"
 96"Other(specify)"
--4"NA".
+-4"Not belong to informal group".
 
 value labels R_NOINFML 1"You have an account in a bank or mobile money account/ other formal institution"
 2"You don’t have any money left for savings"
@@ -54,7 +54,7 @@ value labels R_NOINFML 1"You have an account in a bank or mobile money account/ 
 8"You have just dissolved your membership in one and are still debating joining another one"
 9"You have not found a group that suits your needs"
 96"Others (Specify)"
--4"NA".
+-4"Belong to informal group".
 
 exe.
 
