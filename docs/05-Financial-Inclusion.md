@@ -13,18 +13,22 @@ Levels:
 + No
     
 ## ACCESS_FINANCIAL 
-Ever used full-service formal financial services: counts the same respondents as for variable ACCESS_FINANCIAL_ALL but uses only full-service banks and non-bank financial institutions. 
+Ever used full-service formal financial services: counts the same respondents as for variable ACCESS_FINANCIAL_ALL but uses only full-service non-bank financial institutions. 
 
 Levels: 
 
 + Yes
+
 + No
 
 ## FI
 Financially included - counts respondents who: 
-    Have an account registered in thier name or a joint account registered in their name and someone's else in a full-service           bank or
-    Have a mobile money account registered in their name or
-    Have an account/membership in a full-service non-bank financial institution. 
+
+Have an account registered in thier name or a joint account registered in their name and someone's else in a bank or 
+
+Have a mobile money account registered in their name or 
+
+Have an account/membership in a full-service non-bank financial institution. 
 
 Levels: 
 

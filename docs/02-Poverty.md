@@ -21,6 +21,7 @@ PPI cut off: groups respondents into 3 poverty classes as follows.
 
 Levels:
 
-+ Extreme poverty- living with less than USD 1.25/day
-+ Poor- living with USD1.25 -USD2.5/day
++ Below poverty line of USD1.25/day
++ Between poverty line of USD1.25 -USD2.5/day
 + Above poverty line of USD2.5/day
+
