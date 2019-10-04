@@ -26,7 +26,11 @@ Levels:
 + No
 
 ## FI
-Financially included - counts respondents who:  
+Financially inclusion - Individuals who hold an account with an 
+institution that provides a full suite of financial services and comes 
+under some form of government regulation. 
+
+Counts respondents who:  
 Have an account registered in thier name or a joint account registered in their name and someone's else in a full-service bank or  
 Have a mobile money account registered in their name or  
 Have an account/membership in a full-service non-bank financial institution. 
