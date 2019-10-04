@@ -3,7 +3,7 @@
 ## ECO_EMP1
 Your typical involvement in deciding how to spend your household’s income
 
-Values:
+Levels:
 
 * Very uninvolved
 * Somewhat uninvolved
@@ -16,7 +16,7 @@ Values:
 
 Respondent's typical involvement in deciding how the household’s income is spent on basic needs like food and clothing
 
-Values:
+Levels:
 
 * Very uninvolved
 * Somewhat uninvolved
@@ -29,6 +29,8 @@ Values:
 
 This variable gagues the respondents' percieved typical involvement in deciding how your household’s income is spent on other things beyond basic needs
 
+Levels:
+
 * Very uninvolved
 * Somewhat uninvolved
 * Neither uninvolved, nor involved
@@ -39,7 +41,8 @@ This variable gagues the respondents' percieved typical involvement in deciding 
 ## ECO_EMP4
 This variable gagues the respondents' percieved influence they have on the final decision to spend their household income.
 
-Values:
+Levels:
+
 * None
 * A little
 * About half
@@ -50,7 +53,7 @@ Values:
 ## ECO_EMP5
 This variable gagues the likeliness the respondent would voice disagreement if they happened to disagree with a typical decision about how their household’s income is spent.
 
-Values:
+Levels:
 
 * Very unlikely
 * Somewhat unlikely
@@ -62,6 +65,8 @@ Values:
 ## ECO_EMP6
 This variable asks if the respondent makes the final decision on how their money is spent or saved
 
+Levels:
+
 * Strongly disagree
 * Somewhat disagree
 * Neither disagree, nor agree
@@ -71,6 +76,8 @@ This variable asks if the respondent makes the final decision on how their money
 
 ## ECO_EMP7
 This variable asks if the respondent trusts financial service providers to keep their personal information private (unless they allow it to be shared).
+
+Levels:
 
 * Strongly disagree
 * Somewhat disagree
