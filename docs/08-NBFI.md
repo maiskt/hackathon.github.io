@@ -89,6 +89,12 @@ Levels:
 + No
 
 ## NBFI_BASIC
+Ever use non-bank financial institutions (NBFI) for basic activities: counts respondents who ever used an NBFI for any basic financial activity (deposit, withdrawal, sending or receiving money, or account maintenance). 
+
+Levels:
+
++ Yes  
++ No
 
 ## NBFI_ADV
 Ever used a non-bank financial institution (NBFI) for advanced activities: counts respondents who ever used an NBFI for any advanced financial activity (other than deposit, withdrawal, sending or receiving money, or account maintenance). 
@@ -99,13 +105,31 @@ Levels:
 + No
 
 ## REG_NBFI_BASIC
+Ever use non-bank financial institutions (NBFI) account for basic activities: counts respondents who ever used an NBFI account for any basic financial activity (deposit, withdrawal, sending or receiving money, or account maintenance). 
+
+Levels:
+
++ Yes  
++ No
 
 ## REG_NBF_ADV
+Ever used a non-bank financial institution (NBFI) account for advanced activities: counts respondents who ever used an NBFI account for any advanced financial activity (other than deposit, withdrawal, sending or receiving money, or account maintenance). 
+
+Levels:
+
++ Yes  
++ No
 
 ## ACTIVE_NBFI_BASIC
+Basic active NBFI account holder: counts respondents who have an account/membership with a full-service non-bank financial institution and have used their account in the last 90 days before the survey to conduct a basic activity (i.e., deposit, withdrawal, sending or receiving money, or account maintenance).
+
+Levels: 
+ 
++ Yes  
++ No
 
 ## ACTIVE_NBFI_ADV
-Advanced active NBFI account holder: counts respondents who have an account/membership with a full-service non-bank financial institution and have used their account in the last 90 days before the survey to conduct an advanced activity (i.e., activity other than deposit, withdrawal, sending and receiving money.
+Advanced active NBFI account holder: counts respondents who have an account/membership with a full-service non-bank financial institution and have used their account in the last 90 days before the survey to conduct an advanced activity (i.e., activity other than deposit, withdrawal, sending and receiving money).
 
 Levels: 
  
@@ -276,6 +300,13 @@ Levels:
 + No
  
 ## AWARE_PAYMENT_BANK_PROVIDER
+Aware payment banks providers: counts respondents who awared payment banks providers.
+
+Levels: 
+ 
++ Yes  
++ No
+
 
 ## ACCESS_PAYMENT
 Ever used a full-service Payment Bank: counts respondents who have ever used a full-service Payment Bank.
@@ -302,99 +333,170 @@ Levels:
 + No
  
 ## ACCESS_GROUP
+Ever used a full-service community savings group: counts respondents who have ever used a full-service community savings group, such as a village savings and loan association.
+
+Levels: 
+ 
++ Yes  
++ No
+
 ## REGISTERED_GROUP
+Have a full-service a full-service community savings group account: counts respondents who have a full-service community savings group account, such as a village savings and loan association.
+
+Levels: 
+ 
++ Yes  
++ No
+
 ## ACTIVE_GROUP
+Active registered community savings group account users: counts respondents who have a full-service community savings group account and have used it in the last 90 days, such as a village savings and loan association.
+
+Levels: 
+ 
++ Yes  
++ No
 
 ## NBFI_TRANSFER
+Ever used non-bank financial institutions (NBFI) to send money to, or receive money from someone: counts respondents who have used their NBFI account to send money to, or receive money from someone.
+
+Levels: 
+ 
++ Yes  
++ No
+
 ## NBFI_MERCHANT
+Ever used non-bank financial institutions (NBFI) to buy goods and service: counts respondents who have used their NBFI account to buy goods and service.
+
+Levels: 
+ 
++ Yes  
++ No
 
 ## NBFI_BILL
 Ever used non-bank financial institutions (NBFI) to pay bills: counts respondents who have used their NBFI account to pay bills.
 
 Levels: 
  
-+ 1 ="Yes" 
-+ 0 ="No"
++ Yes  
++ No
  
 ## NBFI_GOV
-## NBFI WAGE
+Ever used non-bank financial institutions (NBFI) to receive money from the government: counts respondents who have used their NBFI account to receive money from the government.
+
+Levels: 
+ 
++ Yes  
++ No
+
+## NBFI_WAGE
+Ever used non-bank financial institutions (NBFI) to receive payment from an exmployer: counts respondents who have used their NBFI account to receive payment from an exmployer.
+
+Levels: 
+ 
++ Yes  
++ No
 
 ## NBFI_INSURANCE
 Ever used non-bank financial institutions (NBFI) for insurance: counts respondents who have ever used their NBFI account to pay insurance or receive insurance claims.
 
 Levels: 
  
-+ 1 ="Yes" 
-+ 0 ="No"
++ Yes  
++ No
  
 ## NBFI_SAVE
 Ever used non-bank financial institutions (NBFI) to save: counts respondents who have ever used their NBFI account to save.
 
 Levels: 
 
-+ 1 ="Yes" 
-+ 0 ="No"
++ Yes  
++ No
  
 ## NBFI_INVEST
 Ever used non-bank financial institutions (NBFI) for investments: counts respondents who have ever used their NBFI account to make investments.
 
 Levels: 
  
-+ 1 ="Yes" 
-+ 0 ="No"
++ Yes  
++ No
  
 ## NBFI_LOAN
 Ever used non-bank financial institutions (NBFI) for loans: counts respondents who have ever used their NBFI account to take or repay a loan. 
 
 Levels: 
  
-+ 1 ="Yes" 
-+ 0 ="No"
++ Yes  
++ No
  
-## NBFI_AIRTIME
 ## ACTIVE_NBFI_TRANSFER
+Active use of non-bank financial institutions (NBFI) for sending or receiving money: counts respondents who used their NBFI account to send money to, or receive money from someone in the last 90 days.
+
+Levels: 
+ 
++ Yes  
++ No
+
 ## ACTIVE_NBFI_MERCHANT
+Active use of non-bank financial institutions (NBFI) for buying goods and service: counts respondents who used their NBFI account to buy goods and service in the last 90 days.
+
+Levels: 
+ 
++ Yes  
++ No
+
 ## ACTIVE_NBFI_BILL
+Active use of non-bank financial institutions (NBFI) for paying bills: counts respondents who used their NBFI account to pay bills in the last 90 days.
+
+Levels: 
+ 
++ Yes  
++ No
+
 ## ACTIVE_NBFI_GOV
-## ACTIVE_NBFI WAGE
+Active use of non-bank financial institutions (NBFI) for receiving money from the government: counts respondents who used their NBFI account to receive money from the government in the last 90 days.
+
+Levels: 
+ 
++ Yes  
++ No
+
+## ACTIVE_NBFI_WAGE
+Active use of non-bank financial institutions (NBFI) for receiving payment from an exmployer: counts respondents who used their NBFI account to receive payment from an exmployer in the last 90 days.
+
+Levels: 
+ 
++ Yes  
++ No
 
 ## ACTIVE_NBFI_INSURANCE
 Active use of non-bank financial institutions (NBFI) for insurance: counts respondents who used their NBFI account to pay insurance or receive insurance claims in the last 90 days.
 
 Levels: 
  
-+ 1 ="Yes" 
-+ 0 ="No"
++ Yes  
++ No
  
 ## ACTIVE_NBFI_SAVE
 Active use of non-bank financial institutions (NBFI) for saving: counts respondents who used their NBFI account to save money for any reason in the last 90 days.
 
 Levels: 
  
-+ 1 ="Yes" 
-+ 0 ="No"
++ Yes  
++ No
  
 ## ACTIVE_NBFI_INVEST
 Active use of non-bank financial institutions (NBFI) for investmentse: counts respondents who used their NBFI account for investments in the last 90 days.
 
 Levels: 
 
-+ 1 ="Yes" 
-+ 0 ="No"
++ Yes  
++ No
  
 ## ACTIVE_NBFI_LOAN
 Active use of non-bank financial institutions (NBFI) for loans: counts respondents who used their NBFI account to take or repay a loan in the last 90 days.
 
 Levels: 
  
-+ 1 ="Yes" 
-+ 0 ="No"
++ Yes  
++ No
  
-## ACTIVE_NBFI_AIRTIME
-## R_STOPMFI1
-## R_STOPMFI2
-## R_STOPMFI3
-## R_STOPMFI4
-## R_STOPMFI5
-## R_STOPMFI6
-## R_STOPMFI7
