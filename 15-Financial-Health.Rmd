@@ -11,6 +11,8 @@ Levels:
 ## ECO_VUL
 This variable uses multiple questions within surveys to determine if the respondent is economically vulnerable.
 
+Levels:
+
 + Yes
 + No
 

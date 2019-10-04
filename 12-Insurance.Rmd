@@ -33,7 +33,15 @@ Levels:
 + No
 
 ## INSUR_CROP     
-Have crop insurance: counts respondents who have insurance that pays them when their crops are destroyed by a natural calamity. ## INSUR_PROPERTY | Have property insurance: counts respondents who have insurance that pays them in case their house or other belongings are destroyed by a fire or other calamity. 
+Have crop insurance: counts respondents who have insurance that pays them when their crops are destroyed by a natural calamity. 
+
+Levels:
+
++ Yes
++ No
+
+## INSUR_PROPERTY 
+Have property insurance: counts respondents who have insurance that pays them in case their house or other belongings are destroyed by a fire or other calamity. 
 
 Levels:
 
