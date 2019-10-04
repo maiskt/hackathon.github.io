@@ -120,8 +120,8 @@ Levels:
 + Yes
 + No
 
-## SAVE_SECURITY
-Save for security: counts respondents who save to protect their families from poverty and crime or protect their belongings.
+## SAVE_FAMILY
+Save for family: counts respondents who save to protect their families from poverty and crime or protect their belongings.
 
 Levels: 
 
