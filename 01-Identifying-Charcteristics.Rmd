@@ -21,8 +21,6 @@ These are the variable shows the country and year where/when the survey was cond
 |**Uganda**         |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |$\checkmark$  |              |
 
 
-Each individual survey dataset also includes the following variables:
-
 ## WEIGHT
 This is the survey weight to use in analyses.  Each survey dataset contains its own set of weights. The weight, when implemented, increases or increases the influence of a specific subgroup based on sample size. Weights were originally calculated in proportion to key regional or demographic census data.
 
@@ -30,7 +28,7 @@ This is the survey weight to use in analyses.  Each survey dataset contains its 
 Type of place residence where the respondent resides as either urban or rural.
 
 ## CLUSTER
-The cluster number is the number identifiying the sample point as used during the filedwork. Clusters with names have been converted to numbers.
+The cluster number is the number identifiying the sample point as used during the filedwork. 
 
 Due to inadequate data, cluster data for Nigeria in 2013 are not available.
 

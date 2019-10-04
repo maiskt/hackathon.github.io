@@ -4,8 +4,7 @@
 
 ## ACCESS_FINANCIAL_ALL
 Ever used formal financial services - counts respondents who:  
-    Have a full-service bank account registered in thier name or a joint account registered in their name and someone's else or  
-    Use a bank account that belongs to someone else or  
+    Have a full-service bank account registered in thier name or a joint account registered in their name and someone's else or Use a bank account that belongs to someone else or  
     Ever used a mobile money service or  
     Ever used a non-bank financial institution for any financial activity. 
 
@@ -16,7 +15,7 @@ Levels:
 
 Note:
 
-ACCESS_FINANCIAL_ALL is missing for 2013, it shares the same definition with ACCESS_FINANCIAL in due to data limitation. 
+* ACCESS_FINANCIAL_ALL is empty for 2013, it shares the same definition with ACCESS_FINANCIAL in 2013 due to data limitation. 
     
 ## ACCESS_FINANCIAL 
 Ever used full-service formal financial services: counts the same respondents as for variable ACCESS_FINANCIAL_ALL but uses only full-service non-bank financial institutions. 
@@ -60,6 +59,11 @@ Levels:
 + Yes
 + No 
 
+Note:
+
+* ACCESS_DFS is empty for 2013, it shares the same definition with ACCESS_FINANCIAL in 2013 due to data limitation. 
+ 
+ 
 ## REGISTERED_DFS		
 Digitally included: counts respondents who:  
     Have an account registered in thier name or a joint account registered in their name and someone's else in a full-service bank that offers digital services, or   
@@ -71,6 +75,10 @@ Levels:
 + Yes
 + No
 
+Note:
+
+* REGISTERED_DFS is empty for 2013, it shares the same definition with FI in 2013 due to data limitation. 
+
 ## ACTIVE_DFS		
 Actively use digital stored-value accounts - Counts the same respondents as variable ACCESS_DFS but who used their account in the last 90 days before the survey. 
 
@@ -78,6 +86,11 @@ Levels:
 
 + Yes
 + No
+
+Note:
+
+* ACTIVE_DFS is empty for 2013, it shares the same definition with ACTIVE_FINANCIAL in 2013 due to data limitation. 
+
 
 ## ACTIVE_DFS_ADV		
 Actively use digital stored-value accounts and have used at least one advanced financial service (beyond basic wallet & P2P)
@@ -88,6 +101,11 @@ Levels:
 
 + Yes
 + No
+
+Note:
+
+* ACTIVE_DFS_ADV is empty for 2013, it shares the same definition with ACTIVE_FINANCIAL_ADV in 2013 due to data limitation. 
+
 
 ## ACCESS_DFS_PAYMENT_TRANSFER		
 Ever used bank or mobile money for digital bill payment or transfer: Counts respondents who have ever used a bank or a mobile money service to pay bills or transfer money. 
@@ -114,7 +132,15 @@ Levels:
 + No
 
 ## FINANCIAL_STAGE		
-Customer journey segmentation
+Customer journey segmentation: A series of progressive stages through which individuals become more active users of more sophisticated financial services.  
+
+  FINANCIAL_STAGE              |                       Descriptions
+  -----------------------------|------------------------------------------------------
+  Nonuser |  Never used bank, mobile money or non-bank financial institution
+  Unregistered user |  Don't have a bank, mobile money or non-bank financial institution account but used the services.
+  Inactive registered user|  Have a bank, mobile money or non-bank financial institution account but have not used it in the last 90 days.
+  Active basic user|  Have a bank, mobile money or non-bank financial institution account and only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out (withdraw), money transfer to another individual, or conducting account maintenance.
+  Active advanced user   |   Have a bank, mobile money or non-bank financial institution account and used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment, paying bills or receiving wages or government benefits).
 
 Levels:
 
