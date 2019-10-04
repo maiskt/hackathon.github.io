@@ -7,8 +7,8 @@ Access to phone: counts respondents who own a personnal mobile phone or use a mo
 
 Levels: 
 
-+ Phone user
-+ Nonuser
++ Yes
++ No
 
 ## OWN_PHONE
 Own a phone: counts respondents who personally own a mobile phone.

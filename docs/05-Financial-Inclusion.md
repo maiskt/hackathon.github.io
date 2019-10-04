@@ -4,9 +4,9 @@
 
 ## ACCESS_FINANCIAL_ALL
 Ever used formal financial services - counts respondents who:  
-    Have a full-service bank account registered in thier name or a joint account registered in their name and someone's else or Use a bank account that belongs to someone else or  
-    Ever used a mobile money service or  
-    Ever used a non-bank financial institution for any financial activity. 
+Have a full-service bank account registered in thier name or a joint account registered in their name and someone's else or Use a bank account that belongs to someone else or  
+Ever used a mobile money service or  
+Ever used a non-bank financial institution for any financial activity. 
 
 Levels:
 
@@ -26,7 +26,11 @@ Levels:
 + No
 
 ## FI
-Financially included - counts respondents who:  
+Financially inclusion - Individuals who hold an account with an 
+institution that provides a full suite of financial services and comes 
+under some form of government regulation. 
+
+Counts respondents who:  
 Have an account registered in thier name or a joint account registered in their name and someone's else in a full-service bank or  
 Have a mobile money account registered in their name or  
 Have an account/membership in a full-service non-bank financial institution. 

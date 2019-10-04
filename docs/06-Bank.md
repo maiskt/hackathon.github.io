@@ -218,9 +218,6 @@ Levels
 * Yes
 * No
 
-Note:
-
-* BANK_AIRTIME questions are not available for 2018 surveys.
 
 ## ACTIVE_BANK_TRANSFER
 Active use of bank for transfers: Counts individuals who sent money to, or received money from someone using a bank in the last 90 days.  
@@ -229,10 +226,6 @@ Levels
 
 * Yes
 * No
-       
-Note:
-
-* ACTIVE_BANK_TRANSFER is not available for 2013, 2014 and 2015 surveys. 
        
 
 ## ACTIVE_BANK_MERCHANT
@@ -243,10 +236,6 @@ Levels
 * Yes
 * No
        
-Note:
-
-* ACTIVE_BANK_MERCHANT is not available for 2013 and 2014 surveys.
-              
 
 ## ACTIVE_BANK_BILL
 Active use of bank for bill payment: Counts individuals who paid bills using a bank account in the last 90 days. 
@@ -256,9 +245,6 @@ Levels
 * Yes
 * No
        
-Note:
-
-* ACTIVE_BANK_BILL questions are not available for 2013 and 2014 surveys.       
 
 ## ACTIVE_BANK_GOV
 Active use of bank for receiving money: Counts individuals who received money from the government using a bank account in the last 90 days. 
@@ -268,9 +254,6 @@ Levels
 * Yes
 * No
 
-Note:
-
-* ACTIVE_BANK_GOV questions are not available for 2013 and 2014 surveys.  
 
 ## ACTIVE_BANK_WAGE
 Active use of bank for wages: Counts individuals who received a payment from an employer using a bank account in the last 90 days. 
@@ -280,9 +263,6 @@ Levels
 * Yes
 * No
        
-Note:
-
-* ACTIVE_BANK_WAGE questions are not available for 2013 and 2014 surveys.        
 
 ## ACTIVE_BANK_INSURANCE
 Active use of bank for insurance: Counts individuals who paid for insurance or received payment from insurance using a bank account in the last 90 days. 
@@ -292,9 +272,6 @@ Levels
 * Yes
 * No
        
-Note:
-
-* ACTIVE_BANK_INSURANCE questions are not available for 2013 and 2014 surveys.  
 
 ## ACTIVE_BANK_SAVE
 Active use of bank for saving: Counts individuals who saved using a bank account in the last 90 days. 
@@ -304,9 +281,6 @@ Levels
 * Yes
 * No
        
-Note:
-
-* ACTIVE_BANK_SAVE questions are not available for 2013 and 2014 surveys.         
 
 ## ACTIVE_BANK_INVEST
 Active use of bank for investment: Counts individuals who made an investment using a bank account in the last 90 days. 
@@ -316,9 +290,6 @@ Levels
 * Yes
 * No
 
-Note:
-
-* ACTIVE_BANK_INVEST questions are not available for 2013 and 2014 surveys.           
 
 ## ACTIVE_BANK_LOAN
 Active use of bank for loans: Counts individuals who borrowed money from a bank in the last 90 days. 
@@ -328,9 +299,6 @@ Levels
 * Yes
 * No
 
-Note:
-
-* ACTIVE_BANK_LOAN questions are not available for 2013 and 2014 surveys.         
 
 ## ACTIVE_BANK_AIRTIME
 Active use of bank for airtime top-ups: Counts individuals who bought airtime top-ups or paid a mobile phone bill in the last 90 days using a bank account. 
@@ -340,9 +308,6 @@ Levels
 * Yes
 * No
 
-Note:
-
-* ACTIVE_BANK_AIRTIME questions are not available for 2013 and 2014 surveys.
 
 ## R_NOBANK
 Reason why people do not register bank account in their name applies to respondent's situation:
@@ -360,10 +325,6 @@ Levels
 * Yes
 * No
 
-Note:
-
-* R_NOBANK's are only available for 2017 and 2018 surveys. 
-
 
 ## R_NOBANK_BUSI
 Reasons for not using banks for business payments/purchases.
@@ -377,9 +338,6 @@ R_NOBANK_BUSI4|Reasons for not using banks for business payments/purchases (need
 R_NOBANK_BUSI5|Reasons for not using banks for business payments/purchases (small business): Counts individuals who do not use banks for business payments/purchases because thier business is too small to need a bank account. 
 R_NOBANK_BUSI6|Reasons for not using banks for business payments/purchases (Use other methods of payment): Counts individuals who do not use banks for business payments/purchases because they use other methods of payment. 
 
-Note:
-
-* R_NOBANK_BUSI's are only available for 2013, 2014 and 2015 surveys.
 
 ## EXP_BANK
 Experience using a bank account in the past 6 months.
@@ -398,9 +356,6 @@ Levels
 * Yes
 * No
 
-Note:
-
-* EXP_BANK's are only available for 2015 and 2016 surveys.
 
 ## USE_BANK_OTC
 Use over the counter at a bank branch: Counts individuals who use a bank account for any financial activity over the counter at a bank branch. 

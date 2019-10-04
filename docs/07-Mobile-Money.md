@@ -57,7 +57,7 @@ Levels:
 + No
 
 ## INACTIVE_MM
-Inactive mobile user: counts respondents who have not used their mobile money account for any activity in the last 90 days.
+Inactive mobile money user: counts respondents who have not used their mobile money account for any activity in the last 90 days.
 
 Levels:
 
@@ -147,8 +147,15 @@ Levels:
 + DK/NA
 
 ## MM_STAGE
-This variable represents the stage of the respondents' customer journey, specifically for mobile money.
-This variable is derived from the previous variables as follows:
+Customer journey segmentation for mobile money users: A series of progressive stages through which individuals become more active users of more sophisticated financial services. 
+
+  Mobile Money Stages                  |                       Descriptions
+  -------------------------------------|----- -------------------------------------------------------------------------------------------------
+  Mobile money nonuser                 |  Never used mobile money.
+  Unregistered mobile money user       |  Don't have mobile money account but use mobile money service.
+  Inactive registered mobile money user|  Have a mobile money account but have not used it in the last 90 days.
+  Active mobile money basic user       |  Have a mobile money account and only used it in the last 90 days for basic activities: cash deposit or withdrawal, sending or receiving money, airtime top up, or account management.
+  Active mobile money advanced user   |   Have a mobile money account and used it in the last 90 days for advanced activities (other than cash deposit or withdrawal, sending or receiving money, airtime top up, or account management).
 
 Levels:
 
@@ -183,7 +190,7 @@ Levels:
 + No
 
 ## MM_GOV
-Ever used mobile money to receive money from the government using mobile money.
+Ever used mobile money to receive money from the government: counts respondents who have ever received money from the government using mobile money.
 
 Levels:
 
@@ -191,7 +198,7 @@ Levels:
 + No
 
 ## MM_WAGE
-Ever used mobile money to recieve working wages.
+Ever used mobile money to recieve working wages: counts respondents who have ever recieved working wages using mobile money.
 
 Levels:
 
@@ -199,7 +206,7 @@ Levels:
 + No
 
 ## MM_INSURANCE
-Ever used mobile money to pay for insurance or receive benefits.
+Ever used mobile money to pay for insurance or receive benefits: counts respondents who have ever paid for insurance or received benefits using mobile money.
 
 Levels:
 
@@ -207,7 +214,7 @@ Levels:
 + No
 
 ## MM_SAVE
-Ever used mobile money for savings.
+Ever used mobile money for savings: counts respondents who have ever saved using mobile money.
 
 Levels:
 
@@ -215,7 +222,7 @@ Levels:
 + No
 
 ## MM_INVEST
-Ever used mobile to make an investment.
+Ever used mobile to make an investment: counts respondents who have ever made a investment using mobile money.
 
 Levels:
 
@@ -231,7 +238,7 @@ Levels:
 + No
 
 ## MM_AIRTIME
-Ever used mobile money to purchase airtime top-ups or pay for a mobile phone bill.
+Ever used mobile money to purchase airtime top-ups or pay for a mobile phone bill: counts respondents who have ever purchased airtime top-ups or paid for a mobile phone bill using mobile money.
 
 Levels:
 
@@ -263,7 +270,7 @@ Levels:
 + No
 
 ## ACTIVE_MM_GOV
-Used mobile money to receive money from the government in the last 90 days.
+Active use of mobile money for receiving money from government: counts respondents who received money from the government using mobile money in the last 90 days.
 
 Levels:
 
@@ -271,7 +278,7 @@ Levels:
 + No
 
 ## ACTIVE_MM_WAGE
-Used mobile money in the last 90 days to recieve working wages from an employer.
+Active use of mobile money for recieving working wages: counts respondents who have ever recieved working wages using mobile money in the last 90 days.
 
 Levels:
 
@@ -323,24 +330,24 @@ These variables count the respondents who have a selection of experience with mo
 
 Variable   | Description
 ---------- | ---------------------------------------------------------------------------------------------------
-EXP_MA1    | Experience with mobile money agent -Agent absent
-EXP_MA2    | Experience with mobile money agent - Poor customer service
-EXP_MA3    | Experience with mobile money agent - Agent lacks enough money for the transaction
-EXP_MA4    | Experience with mobile money agent - Agent didn't know how perform the transaction
-EXP_MA5    | Experience with mobile money agent - Agent overcharged for transaction
-EXP_MA6    | Experience with mobile money agent -Agent didn't give all the cash due
-EXP_MA7    | Experience with mobile money agent -system/network down
-EXP_MA8    | Experience with mobile money agent -Agent dismissive of women
-EXP_MA9    | Experience with mobile money agent -Agent's place not safe
-EXP_MA10   | Experience with mobile money agent -Agent shared personal/account information with others without consent 
-EXP_MA11   | Experience with mobile money agent - Rude agent
-EXP_MA12   | Experience with mobile money agent -Agent's refusal to perform transaction for no reason
-EXP_MA13   | Experience with mobile money agent -Transaction was time-consuming
-EXP_MA14   | Experience with mobile money agent - Didn't get a receipt
-EXP_MA15   | Experience with mobile money agent -Agent charged for depositing money
-EXP_MA16   | Experience with mobile money agent -Agent asked for PIN number
-EXP_MA17   | Experience with mobile money agent - Agent committed fraud
-EXP_MA18   | Experience with mobile money agent - Agent's refusal to do transaction due to lack of ID
+EXP_MA1    | Experience with mobile money agent: Agent absent
+EXP_MA2    | Experience with mobile money agent: Poor customer service
+EXP_MA3    | Experience with mobile money agent: Agent lacks enough money for the transaction
+EXP_MA4    | Experience with mobile money agent: Agent didn't know how perform the transaction
+EXP_MA5    | Experience with mobile money agent: Agent overcharged for transaction
+EXP_MA6    | Experience with mobile money agent: Agent didn't give all the cash due
+EXP_MA7    | Experience with mobile money agent: system/network down
+EXP_MA8    | Experience with mobile money agent: Agent dismissive of women
+EXP_MA9    | Experience with mobile money agent: Agent's place not safe
+EXP_MA10   | Experience with mobile money agent: Agent shared personal/account information with others without consent 
+EXP_MA11   | Experience with mobile money agent: Rude agent
+EXP_MA12   | Experience with mobile money agent: Agent's refusal to perform transaction for no reason
+EXP_MA13   | Experience with mobile money agent: Transaction was time-consuming
+EXP_MA14   | Experience with mobile money agent: Didn't get a receipt
+EXP_MA15   | Experience with mobile money agent: Agent charged for depositing money
+EXP_MA16   | Experience with mobile money agent: Agent asked for PIN number
+EXP_MA17   | Experience with mobile money agent: Agent committed fraud
+EXP_MA18   | Experience with mobile money agent: Agent's refusal to do transaction due to lack of ID
 
 Levels
 
@@ -373,6 +380,7 @@ EXPSV_MA17 | Issue with MM agent solved: Agent refused to do the transaction bec
 
 ## R_NOTUSE_MM
 These variables count the respondents who do not use mobile money with a selection of reasons:
+
 Variable      | Description
 ------------- | ---------------------------------------------------------------------------------------------------
 R_NOTUSE_MM1	| Reason to NOT use MM: You don't know enough about mobile money services
@@ -392,6 +400,7 @@ Levels:
 
 ## R_NOTREG_MM
 These variables count the respondents who do not register mobile money with a selection of reasons:
+
 Variable      | Description
 ------------- | ---------------------------------------------------------------------------------------------------
 R_NOTREG_MM1	| Reason to NOT register MM: A friend or family member has an account that you can use
@@ -413,6 +422,7 @@ Levels:
 
 ## R_USE_MM
 These variables count the respondents who start to use mobile money with a selection of reasons:
+
 Variable      | Description
 ------------- | ---------------------------------------------------------------------------------------------------
 R_USE_MM1	    | Reason to start use MM: To send or receive money
@@ -432,6 +442,7 @@ Levels:
 
 ## ACTION_MM
 These variables count the respondents who perform the action without assistance on different difficulty:
+
 Variable      | Description
 ------------- | ---------------------------------------------------------------------------------------------------
 ACTION_MM1	  | Difficulty or ease to perform the action without assistance: Open the mobile money menu
@@ -452,6 +463,7 @@ Levels:
 
 ## OPN_MM
 These variables count the respondents who use mobile money with a selection of opioions:
+
 Variable      | Description
 ------------- | ---------------------------------------------------------------------------------------------------
 OPN_MM1	      | Mobile money allows you to keep money on your phone  

@@ -34,7 +34,7 @@ Levels:
 
 ## LOAN_FORMAL
 
-This variable counts respondents who have borrowed from a formal bank or other institution.
+This variable counts respondents who have borrowed from a formal bank or other formal institution.
 
 Levels: 
 
@@ -58,7 +58,7 @@ Levels:
 + No
 
 ## LOAN_BANK
-Ever borrowed money or used credit from a bank.
+Ever borrowed money or used credit from a bank: counts respondents who have ever purchased something using a bank.
 
 Levels: 
 
@@ -66,7 +66,7 @@ Levels:
 + No
 
 ## LOAN_MM
-Ever borrowed money or used credit from a mobile money service.
+Ever borrowed money or used credit from a mobile money service: counts respondents who have ever purchased something using mobile money service.
 
 Levels: 
 
@@ -74,7 +74,7 @@ Levels:
 + No
 
 ## LOAN_MFI
-Ever borrowed money or used credit from a microfinance institution.
+Ever borrowed money or used credit from a microfinance institution: counts respondents who have ever purchased something using a microfinance institution.
 
 Levels: 
 
@@ -82,7 +82,7 @@ Levels:
 + No
 
 ## LOAN_COOP
-Ever borrowed money or used credit from a cooperative.
+Ever borrowed money or used credit from a cooperative: counts respondents who have ever purchased something using a cooperative.
 
 Levels: 
 
@@ -90,7 +90,7 @@ Levels:
 + No
 
 ## LOAN_MLENDER
-Ever borrowed money from a private moneylender.
+Ever borrowed money from a private moneylender: counts respondents who have ever purchased something using a private moneylender.
 
 Levels: 
 
@@ -98,7 +98,7 @@ Levels:
 + No
 
 ## LOAN_PAWN
-Ever borrowed money from a pawnshop.
+Ever borrowed money from a pawnshop: counts respondents who have ever purchased something using a pawnshop.
 
 Levels: 
 
@@ -106,7 +106,7 @@ Levels:
 + No
 
 ## LOAN_GROUP
-Ever borrowed money from a village savings and loan association.
+Ever borrowed money from a village savings and loan association: counts respondents who have ever purchased something using a village savings and loan association.
 
 Levels: 
 
@@ -114,7 +114,7 @@ Levels:
 + No
 
 ## LOAN_POST
-Ever borrowed money from a post office bank.
+Ever borrowed money from a post office bank: counts respondents who have ever purchased something using a post office bank.
 
 Levels: 
 
@@ -122,7 +122,7 @@ Levels:
 + No
 
 ## LOAN_SACCO
-Ever borrowed money from a SACCO.
+Ever borrowed money from a SACCO: counts respondents who have ever purchased something using a SACCO.
 
 Levels: 
 
@@ -130,7 +130,7 @@ Levels:
 + No
 
 ## LOAN_EMERGENCY
-Borrowed money for emergency expenses: counts respondents who have borrowed money in the 12 months to pay for emergency expenses such as medical bills.
+Reason to borrow money: counts respondents who have borrowed money in the 12 months to pay for emergency expenses such as medical bills.
 
 Levels: 
 
@@ -138,7 +138,7 @@ Levels:
 + No
 
 ## LOAN_DAILY
-Borrowed money for daily expenses: counts respondents who have borrowed money in the last 12 months to pay for daily expenses (e.g, fodd, transportation).
+Reason to borrow money: counts respondents who have borrowed money in the last 12 months to pay for daily expenses (e.g, fodd, transportation).
 
 Levels: 
 
@@ -146,7 +146,7 @@ Levels:
 + No
 
 ## LOAN_BUSINESS
-Borrowed money for business expenses: counts respondents who have borrowed money in the last 12 months to pay for business expenses or invest in a business.
+Reason to borrow money: counts respondents who have borrowed money in the last 12 months to pay for business expenses or invest in a business.
 
 Levels: 
 
@@ -154,7 +154,7 @@ Levels:
 + No
 
 ## LOAN_HOME
-Borrowed money for home improvement: counts respondents who have borrowed money in the last 12 months to invest in home improvement or construction.
+Reason to borrow money: counts respondents who have borrowed money in the last 12 months to invest in home improvement or construction.
 
 Levels: 
 
@@ -162,7 +162,7 @@ Levels:
 + No
 
 ## LOAN_AGRIC
-Borrowed for agricultural inputs: counts respondents who have borrowed money in the last 12 months to pay for agricultural inputs. 
+Reason to borrow money: counts respondents who have borrowed money in the last 12 months to pay for agricultural inputs. 
 
 Levels: 
 
