@@ -145,7 +145,15 @@ Levels:
 + No
 
 ## NBFI_STAGE
-Customer journey segmentation for NBFI users: classifies non-bank financial institution (NBFI) users into 5 mutually exclusive groups.
+Customer journey segmentation for NBFI users: A series of progressive stages through which individuals become more active users of more sophisticated financial services. 
+
+  NBFI stages                  |                       Descriptions
+  -----------------------------|---------------------------------------------------------------------------------------------------------------
+  NBFI nonuser                 |  Never used a NBFI.
+  Unregistered NBFI user       |  Don't have a NBFI account but use NBFI service.
+  Inactive registered NBFI user|  Have a NBFI account but have not used it in the last 90 days.
+  Active NBFI basic user       |  Have a NBFI account and only used it in the last 90 days for basic activities: cash-in (deposit) or cash-out (withdraw), money transfer to another individual, or conducting account maintenance.
+  Active NBFI advanced user   |   Have a NBFI account and used it in the last 90 days for advanced activities (saving, borrowing, insurance, investment, paying bills or receiving wages or government benefits).
 
 Levels:
 
