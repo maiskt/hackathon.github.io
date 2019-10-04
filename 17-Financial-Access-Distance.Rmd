@@ -81,7 +81,8 @@ Levels:
  + DK
  
 ## INFMLKM
-Distance from residence to an informal self-help or savings group.
+Distance from residence to an informal self-help or savings group : measures the distance from the respondent's home to an informal self-help or savings group.
+
 Levels:
 
  + Less than 1 km
@@ -90,7 +91,7 @@ Levels:
  + DK
  
 ## POSTKM
-Distance from residence to the post offfice bank.
+Distance from residence to the post offfice bank : measures the distance from the respondent's home to a post offfice bank.
 
 Levels:
 
@@ -100,7 +101,7 @@ Levels:
  + DK
 
 ## SACCOKM
-Distance from residence to the SACCO.
+Distance from residence to the SACCO: measures the distance from the respondent's home to a SACCO.
 
 Levels:
 
@@ -110,7 +111,7 @@ Levels:
  + DK
  
 ## COOPKM
-Distance from residence to the cooperative.
+Distance from residence to the cooperative: measures the distance from the respondent's home to a cooperative.
 
 Levels:
 
