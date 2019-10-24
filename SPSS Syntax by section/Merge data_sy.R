@@ -67,7 +67,7 @@ merge.FII.da <- function(sec_num){
                "b14","i14","ido14","k14","n14","p14","t14","u14",
                "b13", "i13","k13","n13","p13","t13","u13")
   key <- c("SBJNUM","COUNTRY","YEAR")
-  var_list <- read_excel("C:/Users/maish.KTPDCLHB1JQV2/Documents/GitHub/Codebook/Variable list_2019.xlsx")
+  var_list <- read_excel("C:/Users/maish.KTPDCLHB1JQV2/Documents/GitHub/Codebook/Documents/Variable list_2019.xlsx")
   var_list <- as.data.frame(var_list)[which(var_list$Section==sec_num),c(2,3)]
   sec <- as.character(var_list$`Variable name in Datathon`)
   sec <- c(key,sec)
@@ -155,7 +155,7 @@ merge.FII.da(8.1)
 merge.FII.da(1)
 
 ##Indonesia 2018
-var_list <- read_excel("C:/Users/maish.KTPDCLHB1JQV2/Documents/GitHub/Codebook/Variable list_2019.xlsx")
+var_list <- read_excel("C:/Users/maish.KTPDCLHB1JQV2/Documents/GitHub/Codebook/Documents/Variable list_2019.xlsx")
 var_list <- as.character(as.data.frame(var_list)[,3])
 
 ido18<-read.spss("C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Institute/DA Team - General/Shiyun/2019/Datathon/Data/Indonesia 2014-2016/FII Indonesia 2018 (public+ANONGPS).sav",to.data.frame=T,use.value.labels = T)
@@ -240,8 +240,5 @@ indonesia18 <- read_csv("~/GitHub/Codebook/Dataset/Indo_2018.csv",
                                   OPN_MM5 = col_character(),OPN_MM6 = col_character(),
                                   CLUSTER = col_character(),
                                   R_INFML = col_character(),R_NOINFML = col_character()))
-indonesia18 <- indonesia18[,-1]
-
-
 da_master <- bind_rows(da_master,indonesia18)
 
