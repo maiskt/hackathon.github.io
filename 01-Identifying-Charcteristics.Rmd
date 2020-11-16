@@ -1,9 +1,9 @@
 # Survey Dataset Identification
 
-Any given survey dataset can be identified using together the following 3 variables: SBJNUM, COUNTRY, and YEAR. 
+Any given survey dataset can be identified using together the following 3 variables: UID, COUNTRY, and YEAR. 
 
-## SBJNUM
-This is the identification variable that uniquely identifies each respondent within an individual survey dataset.  It is worth noting that two respondents from two different survey datasets can have the same SBJNUM value. For this reason, it is important to use variables SBJNUM, COUNTRY, and YEAR at the same time as the unique idenfitifer when using multiple survey datasets.
+## UID
+This is the identification variable that uniquely identifies each respondent within an individual survey dataset.  It is worth noting that two respondents from two different survey datasets can have the same SBJNUM value. For this reason, it is important to use variables UID, COUNTRY, and YEAR at the same time as the unique idenfitifer when using multiple survey datasets.
 
 ## COUNTRY, YEAR
 These are the variable shows the country and year where/when the survey was conducted. The survey was conducted in 8 countries and runs from 2013 to 2018, data was colllected for marked country/year as shown below.

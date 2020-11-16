@@ -67,7 +67,7 @@ merge.FII.da <- function(sec_num){
                "b14","i14","ido14","k14","n14","p14","t14","u14",
                "b13", "i13","k13","n13","p13","t13","u13")
   key <- c("SBJNUM","COUNTRY","YEAR")
-  var_list <- read_excel("C:/Users/maish.KTPDCLHB1JQV2/Documents/GitHub/Codebook/Documents/Variable list_2019.xlsx")
+  var_list <- read_excel("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Documents/Variable list_2019.xlsx")
   var_list <- as.data.frame(var_list)[which(var_list$Section==sec_num),c(2,3)]
   sec <- as.character(var_list$`Variable name in Datathon`)
   sec <- c(key,sec)
@@ -155,8 +155,8 @@ merge.FII.da(8.1)
 merge.FII.da(1)
 
 ##Indonesia 2018
-var_list <- read_excel("C:/Users/maish.KTPDCLHB1JQV2/Documents/GitHub/Codebook/Documents/Variable list_2019.xlsx")
-var_list <- as.character(as.data.frame(var_list)[,3])
+var_list <- read_excel("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Documents/Variable list_2019.xlsx")
+var_list <- as.character(as.data.frame(var_list)[,2])
 
 ido18<-read.spss("C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Institute/DA Team - General/Shiyun/2019/Datathon/Data/Indonesia 2014-2016/FII Indonesia 2018 (public+ANONGPS).sav",to.data.frame=T,use.value.labels = T)
 ido18 <- select(ido18,var_list)
@@ -166,36 +166,36 @@ write_sav(ido18,"C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Institute/DA Tea
 
 ###master data
 {
-sec1 <- read_csv("~/GitHub/Codebook/Dataset/Section 1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number(),
-                                                                            WEIGHT = col_number(),LATITUDE = col_number(),
-                                                                            LONGITUDE = col_number()))
-sec2 <- read_csv("~/GitHub/Codebook/Dataset/Section 2.csv", 
+sec1 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 1.csv",
+                 col_types = cols(.default = col_character(),LONGITUDE = col_number(),LATITUDE = col_number(),
+                                  WEIGHT = col_number(), SBJNUM = col_number()))
+sec2 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 2.csv", 
                  col_types = cols(.default = col_character(),PPI_PROB = col_number(), 
                                   PPI_SCORE = col_number(), SBJNUM = col_number()))
-sec3 <- read_csv("~/GitHub/Codebook/Dataset/Section 3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec4 <- read_csv("~/GitHub/Codebook/Dataset/Section 4.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec5 <- read_csv("~/GitHub/Codebook/Dataset/Section 5.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec6.1 <- read_csv("~/GitHub/Codebook/Dataset/Section 6.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec6.2 <- read_csv("~/GitHub/Codebook/Dataset/Section 6.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec6.3 <- read_csv("~/GitHub/Codebook/Dataset/Section 6.3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec7.1 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec7.2 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec7.3 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec7.4 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.4.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec7.5 <- read_csv("~/GitHub/Codebook/Dataset/Section 7.5.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec8.1 <- read_csv("~/GitHub/Codebook/Dataset/Section 8.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec8.2 <- read_csv("~/GitHub/Codebook/Dataset/Section 8.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec8.3 <- read_csv("~/GitHub/Codebook/Dataset/Section 8.3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec9 <- read_csv("~/GitHub/Codebook/Dataset/Section 9.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec10 <- read_csv("~/GitHub/Codebook/Dataset/Section 10.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec11 <- read_csv("~/GitHub/Codebook/Dataset/Section 11.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec12 <- read_csv("~/GitHub/Codebook/Dataset/Section 12.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec13 <- read_csv("~/GitHub/Codebook/Dataset/Section 13.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec14 <- read_csv("~/GitHub/Codebook/Dataset/Section 14.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec15.1 <- read_csv("~/GitHub/Codebook/Dataset/Section 15.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec15.2 <- read_csv("~/GitHub/Codebook/Dataset/Section 15.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec16 <- read_csv("~/GitHub/Codebook/Dataset/Section 16.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
-sec17 <- read_csv("~/GitHub/Codebook/Dataset/Section 17.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec3 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec4 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 4.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec5 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 5.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec6.1 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 6.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec6.2 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 6.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec6.3 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 6.3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.1 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 7.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.2 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 7.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.3 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 7.3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.4 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 7.4.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec7.5 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 7.5.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec8.1 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 8.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec8.2 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 8.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec8.3 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 8.3.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec9 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 9.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec10 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 10.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec11 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 11.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec12 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 12.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec13 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 13.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec14 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 14.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec15.1 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 15.1.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec15.2 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 15.2.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec16 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 16.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
+sec17 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/all/Section 17.csv",col_types = cols(.default = col_character(),SBJNUM = col_number()))
 }
 
 #da_master <- inner_join(sec1,sec2,sec3,sec4,sec5,sec6.1,sec6.2,sec6.3,sec7.1,
@@ -229,16 +229,44 @@ da_master <- inner_join(sec1,sec2,by=c("COUNTRY","YEAR","SBJNUM")) %>%
   inner_join(.,sec16,by=c("COUNTRY","YEAR","SBJNUM")) %>%
   inner_join(.,sec17,by=c("COUNTRY","YEAR","SBJNUM"))
 
-indonesia18 <- read_csv("~/GitHub/Codebook/Dataset/Indo_2018.csv", 
-                 col_types = cols(PPI_PROB = col_number(), 
-                                  PPI_SCORE = col_number(), SBJNUM = col_number(),
-                                  ACTION_MM1 = col_character(),ACTION_MM2 = col_character(),
-                                  ACTION_MM3 = col_character(),ACTION_MM4 = col_character(),
-                                  ACTION_MM5 = col_character(),ACTION_MM6 = col_character(),
-                                  OPN_MM1 = col_character(),OPN_MM2 = col_character(),
-                                  OPN_MM3 = col_character(),OPN_MM4 = col_character(),
-                                  OPN_MM5 = col_character(),OPN_MM6 = col_character(),
-                                  CLUSTER = col_character(),
-                                  R_INFML = col_character(),R_NOINFML = col_character()))
+indonesia18 <- read_csv("C:/Users/maish.KTPDCLHB1JQV2/Kantar/Financial Inclusion Insights - Datathon/Codebook/Dataset/Indo_2018.csv", col_types = cols(.default = col_character(),LONGITUDE = col_number(),LATITUDE = col_number(),
+                                         WEIGHT = col_number(), SBJNUM = col_number(),PPI_PROB = col_number(), 
+                                         PPI_SCORE = col_number()))
 da_master <- bind_rows(da_master,indonesia18)
+write.csv(da_master,gzfile("C:/Users/maish.KTPDCLHB1JQV2/OneDrive - Kantar/2019/Datathon/FIIdata_1126.csv.gz"),row.names = FALSE)
 
+
+rr<-read.csv("C:/Users/maish.KTPDCLHB1JQV2/OneDrive - Kantar/2019/Datathon/FIIdata_1126.csv.gz")
+
+
+t13$CLUSTER <- as.numeric(t13$CLUSTER)
+u13$CLUSTER <- as.numeric(u13$CLUSTER)
+n14$CLUSTER <- as.numeric(n14$CLUSTER)
+u14$CLUSTER <- as.numeric(u14$CLUSTER)
+n15$CLUSTER <- as.numeric(n15$CLUSTER)
+##10/25 New section 1 with new cluster
+  da_name <- c("u14","u13","n14","n15")
+  key <- c("SBJNUM","COUNTRY","YEAR")
+  sec <- c(key,"CLUSTER")
+  m_sec <- select(t13,sec)
+  for(i in 1:length(da_name)){
+    m_sec <- rbind(m_sec,select(eval(parse(text=da_name[i])),sec))
+  }
+  write.csv(m_sec,paste0("C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Institute/DA Team - General/Shiyun/2019/Datathon/Data/Sec1_fix.csv")) 
+ 
+  
+  #m_sec <- read.csv("C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Institute/DA Team - General/Shiyun/2019/Datathon/Data/Sec1_fix.csv", stringsAsFactors=FALSE)
+                                                                                                                                                       
+  
+  m_sec$COUNTRY <- as.character(m_sec$COUNTRY)
+  m_sec$CLUSTER <- as.character(m_sec$CLUSTER)
+  new_sec1 <- left_join(sec1,m_sec,by=c("COUNTRY","YEAR","SBJNUM"))
+  new_sec1$a <- coalesce(new_sec1$CLUSTER.y,new_sec1$CLUSTER.x)
+  new_sec1[which(new_sec1$COUNTRY=="Nigeria" & new_sec1$YEAR=="2015"),10] <- NA
+
+  write.csv(new_sec1,paste0("C:/Users/maish.KTPDCLHB1JQV2/Intermedia Survey Institute/DA Team - General/Shiyun/2019/Datathon/Data/Sec1_update.csv"))
+  
+  
+  temp <-  select(m_sec, SBJNUM, COUNTRY, YEAR, CLUSTER) %>%
+    filter(COUNTRY=="Uganda" & YEAR=="2014" &  SBJNUM==120 )
+  view(temp)
